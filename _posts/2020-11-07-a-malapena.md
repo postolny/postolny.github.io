@@ -7,7 +7,6 @@ tags: Locuzione
 ---
 
 ### Значение
-
 Еле; с трудом, едва; с горем пополам (alla meno peggio); еле-еле; с грехом пополам
 
 malapéna s. f. – Grafia unita di mala pena (v. pena, n. 2 e), usata esclusivam. nella locuz. avv. a m., a stento, a fatica: si trascina a m.; a m. riesce a campare. [Treccani](https://www.treccani.it/vocabolario/ricerca/a-malapena/){: target="_blank"}
@@ -15,11 +14,9 @@ malapéna s. f. – Grafia unita di mala pena (v. pena, n. 2 e), usata esclusiva
 malapena – _solo nella locuzione avverbiale «a malapena»_ a stento (только в наречном выражении (_locuzione avverbiale_) _«a malapena»_ a stento (с трудом). [Olivetti](https://www.dizionario-italiano.it/dizionario-italiano.php?parola=malapena){:target="_blank"}
 
 ### Синонимы
-
 a fat**i**{: style="color: red"}ca; a stento
 
 ### Примеры употребления
-
 poco / a malapena distinguibile  |  плохо / еле различимый
 Molti di loro a malapena leggono o scrivono.  | Большинство из них едва умеет писать и читать.
 Probabilmente [tira avanti]({{ site.baseurl }}/2020-11-07/tirare-avanti){: target="_blank"} a malapena coi sussidi.  |  Он, наверняка, едва сводит концы с концами.
