@@ -8,7 +8,7 @@ tags: Locuzione
 
 ### Значение
 
-Еле; с трудом, едва; с горем пополам (alla meno peggio); еле-еле; с грехом пополам
+Еле; с трудом, едва; с горем пополам (alla meno peggio); еле-еле; с грехом пополам.
 
 malapéna s. f. – Grafia unita di mala pena (v. pena, n. 2 e), usata esclusivam. nella locuz. avv. a m., a stento, a fatica: si trascina a m.; a m. riesce a campare. [Treccani](https://www.treccani.it/vocabolario/ricerca/a-malapena/){: target="_blank"}
 
