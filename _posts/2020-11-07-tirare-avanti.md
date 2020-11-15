@@ -19,12 +19,12 @@ Tirare avanti mandare avanti, fare procedere: t. avanti un affare _da sola tira 
 
 ### Синонимы
 
-arrangiarsi (устраиваться, выкручиваться, выходить (из положения); arrangiati! — сам выкручивайся, думай сам! tra di noi ci si arrangia sempre — мы всегда сочтёмся). Tirare a campare — кое-как перебиваться. Si campa. — Так себе, живём потихоньку.
+arrangiarsi (устраиваться, выкручиваться, выходить (из положения); arrangiati! – сам выкручивайся, думай сам! tra di noi ci si arrangia sempre – мы всегда сочтёмся). Tirare a campare – кое-как перебиваться. Si campa. – Так себе, живём потихоньку.
 
 ### Примеры употребления
 
 Tirerò avanti.  |  Как-нибудь проживу.
-Come va? — Non c’è male, tiro avanti!  |  Как дела? — Ничего, тяну!
+Come va? – Non c’è male, tiro avanti!  |  Как дела? – Ничего, тяну!
 Probabilmente tira avanti [a malapena](/2020-11-07/a-malapena){: target="_blank"} coi sussidi.  |  Он, наверняка, едва сводит концы с концами.
 Non potrà tirare avanti a lungo.  |  Он долго не протянет.
 Da sola tira avanti tre figli.  |  Она одна воспитывает трёх дочерей.
