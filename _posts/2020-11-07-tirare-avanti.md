@@ -3,7 +3,7 @@ layout: post
 title:  "tirare avanti"
 author: "И. Постольный"
 comments: false
-tags: Тег
+tags: Locuzione
 ---
 
 ### Значение
