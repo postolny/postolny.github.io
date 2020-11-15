@@ -8,7 +8,7 @@ tags: Locuzione
 
 ### Значение
 
-Перебиваться; жить потихоньку; скрипеть; двигать вперёд
+Перебиваться; жить потихоньку; скрипеть; двигать вперёд.
 
 1. trascinare un’esistenza grama e faticosa: si tira avanti alla meno peggio (влачить
     жалкое и тяжкое существование: перебиваться с горем пополам).
@@ -16,7 +16,6 @@ tags: Locuzione
     делать то, что делается: тянуть историю). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/tirare-avanti){: target="_blank"}
 
 Tirare avanti mandare avanti, fare procedere: t. avanti un affare _da sola tira avanti tre figli_ (тянуть дело (лямку); она одна воспитывает трёх дочерей. [Grande Dizionario Italiano di GABRIELLI ALDO](https://www.grandidizionari.it/Dizionario_Italiano/parola/T/tirare.aspx?query=tirare"){: target="_blank"}
-
 
 ### Синонимы
 
