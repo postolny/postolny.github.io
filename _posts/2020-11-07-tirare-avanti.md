@@ -17,6 +17,7 @@ tags: Locuzione
 
 Tirare avanti mandare avanti, fare procedere: t. avanti un affare _da sola tira avanti tre figli_ (тянуть дело (лямку); она одна воспитывает трёх дочерей. [Grande Dizionario Italiano di GABRIELLI ALDO](https://www.grandidizionari.it/Dizionario_Italiano/parola/T/tirare.aspx?query=tirare"){: target="_blank"}
 
+
 ### Синонимы
 
 arrangiarsi (устраиваться, выкручиваться, выходить (из положения); arrangiati! – сам выкручивайся, думай сам! tra di noi ci si arrangia sempre – мы всегда сочтёмся). Tirare a campare – кое-как перебиваться. Si campa. – Так себе, живём потихоньку.
