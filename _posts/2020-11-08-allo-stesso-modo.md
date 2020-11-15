@@ -10,7 +10,7 @@ tags: Locuzione
 
 Одинаково; равным образом; на один манер; аналогично.
 
-allo, nello stesso modo — in ugual maniera, similmente: comportarsi, pensare allo stesso modo (подобным образом, подобно: вести себя, думать так же). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/allo_nello_stesso_modo"){: target="_blank"}
+allo, nello stesso modo – in ugual maniera, similmente: comportarsi, pensare allo stesso modo (подобным образом, подобно: вести себя, думать так же). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/allo_nello_stesso_modo"){: target="_blank"}
 
 ### Синонимы
 
@@ -18,7 +18,7 @@ ugualmente; egualmente
 
 ### Антонимы
 
-diversamente, non allo stesso modo — неодинаково</p>
+diversamente, non allo stesso modo – неодинаково</p>
 
 ### Примеры употребления
 
