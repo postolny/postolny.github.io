@@ -14,14 +14,14 @@ tags: Тег
 
 malapéna s. f. – Grafia unita di mala pena (v. pena, n. 2 e), usata esclusivam. nella locuz. avv. a m., a stento, a fatica: si trascina a m.; a m. riesce a campare. [Treccani](https://www.treccani.it/vocabolario/ricerca/a-malapena/){:target="_blank"}
 
-malapena – <i>solo nella locuzione avverbiale «a malapena»</i> a stento (только
+malapena – _solo nella locuzione avverbiale «a malapena»_ a stento (только
   в наречном выражении (_locuzione avverbiale_) _«a malapena»_ a stento
   (с трудом). [Olivetti](https://www.dizionario-italiano.it/dizionario-italiano.php?parola=malapena){:target="_blank"}
 
 
 **Синонимы**  
 
-a fat**<span style="color: #ff0000">i</span>**ca; a stento
+a fat**i**{: style="color: red"}ca; a stento
 
 **Примеры употребления**  
 
