@@ -25,43 +25,12 @@ a fat**<span style="color: #ff0000">i</span>**ca; a stento
 
 **Примеры употребления**  
 
-<table>
-<tbody>
-  <tr>
-    <td>poco / a malapena distinguibile</td>
-    <td>плохо / еле различимый</td>
-  </tr>
-  <tr>
-    <td>Molti di loro a malapena leggono o scrivono.</td>
-    <td>Большинство из них едва умеет писать и читать.</td>
-  </tr>
-  <tr>
-    <td>Probabilmente tira avanti a malapena coi sussidi.</td>
-    <td>Он, наверняка, едва сводит концы с концами.</td>
-  </tr>
-  <tr>
-    <td>Kelly, conosci a malapena questa donna.</td>
-    <td>Так, Келли, ты едва знаешь эту женщину.</td>
-  </tr>
-  <tr>
-    <td>Sei scappata in Spagna con un ragazzo che conosci a malapena.</td>
-    <td>Ты улетела в Испанию с парнем, которого едва знаешь.</td>
-  </tr>
-  <tr>
-    <td>So che vi conoscete a malapena.</td>
-    <td>Знаю, что вы все едва знакомы.</td>
-  </tr>
-  <tr>
-    <td>Stasera mi hai a malapena rivolto la parola.</td>
-    <td>За весь вечер, ты едва перекинулась со мной парой слов.</td>
-  </tr>
-  <tr>
-    <td>Respirava a malapena ed era livida.</td>
-    <td>Она была синей и едва дышала.</td>
-  </tr>
-  <tr>
-    <td>Tutto il nostro bagaglio è stato a malapena in macchina.</td>
-    <td>Весь наш багаж еле уместился в машине.</td>
-  </tr>
-</tbody>
-</table>
+poco / a malapena distinguibile  |  плохо / еле различимый
+Molti di loro a malapena leggono o scrivono.  | Большинство из них едва умеет писать и читать.
+Probabilmente tira avanti a malapena coi sussidi.  |  Он, наверняка, едва сводит концы с концами.
+Kelly, conosci a malapena questa donna.  |  Так, Келли, ты едва знаешь эту женщину.
+Sei scappata in Spagna con un ragazzo che conosci a malapena.  | Ты улетела в Испанию с парнем, которого едва знаешь.
+So che vi conoscete a malapena.  |  Знаю, что вы все едва знакомы.
+Stasera mi hai a malapena rivolto la parola.  |  За весь вечер, ты едва перекинулась со мной парой слов.
+Respirava a malapena ed era livida.  |  Она была синей и едва дышала.
+Tutto il nostro bagaglio è stato a malapena in macchina.  |  Весь наш багаж еле уместился в машине.
