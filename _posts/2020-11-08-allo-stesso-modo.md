@@ -18,7 +18,7 @@ ugualmente; egualmente
 
 ### Антонимы
 
-diversamente, non allo stesso modo – неодинаково</p>
+diversamente, non allo stesso modo – неодинаково
 
 ### Примеры употребления
 
