@@ -1,5 +1,5 @@
 # Site settings
-title:          Tale
+title:          Блог
 description:    "Minimal Jekyll theme for storytellers"
 baseurl:        "/"
 url:            "https://postolny.github.io"
@@ -39,8 +39,3 @@ exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
 # Disqus (Set to your disqus id)
 disqus:         jekyll-tale
-
-header_pages:
- - 404.html
- - about.md
- - tags.html
