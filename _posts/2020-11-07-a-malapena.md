@@ -19,7 +19,7 @@ a fat**i**{: style="color: red"}ca; a stento
 ### Примеры употребления
 poco / a malapena distinguibile  |  плохо / еле различимый
 Molti di loro a malapena leggono o scrivono.  | Большинство из них едва умеет писать и читать.
-Probabilmente [tira avanti]({{ site.baseurl }}/2020-11-07/tirare-avanti){: target="_blank"} a malapena coi sussidi.  |  Он, наверняка, едва сводит концы с концами.
+Probabilmente [tira avanti]({{ site.baseurl }}/2020-11-07/tirare-avanti) a malapena coi sussidi.  |  Он, наверняка, едва сводит концы с концами.
 Kelly, conosci a malapena questa donna.  |  Так, Келли, ты едва знаешь эту женщину.
 Sei scappata in Spagna con un ragazzo che conosci a malapena.  | Ты улетела в Испанию с парнем, которого едва знаешь.
 So che vi conoscete a malapena.  |  Знаю, что вы все едва знакомы.
