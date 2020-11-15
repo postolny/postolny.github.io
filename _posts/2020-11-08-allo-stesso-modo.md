@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "tirare avanti"
+title:  "allo-stesso-modo"
 author: "И. Постольный"
 comments: false
 tags: Locuzione
