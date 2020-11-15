@@ -3,7 +3,7 @@ layout: post
 title:  "a malapena"
 author: "И. Постольный"
 comments: false
-tags: Тег
+tags: Locuzione
 ---
 
 ### Значение
