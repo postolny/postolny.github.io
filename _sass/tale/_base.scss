@@ -61,6 +61,17 @@ img {
   max-width: 100%;
 }
 
+table {
+  tbody {
+    tr:nth-child(odd){
+	  background: #fff;
+    }
+    tr:nth-child(even){
+	  background: #F7F7F7;
+    }
+  }
+}
+
 td {
   vertical-align: top;
 }
