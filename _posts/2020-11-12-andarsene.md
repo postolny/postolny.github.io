@@ -13,7 +13,7 @@ tags: Locuzione
 3. исчезать, проходить, кончаться
 4. растрачиваться; изнашиваться
 
-1a) con valore intens., andare: _andarsene a casa_, _al cinema (пойти домой, в кино)_ | allontanarsi, partire: _è meglio andarsene_ (удалиться, уехать: _лучше уйти_)  
+1a) con valore intens., andare: _andarsene a casa_, _al cinema (пойти домой, в кино)_ / allontanarsi, partire: _è meglio andarsene_ (удалиться, уехать: _лучше уйти_)  
 1b) eufem., morire: _se n’è andato per sempre_ (умереть: _ушёл навечно_)  
 2) fig., di tempo, dileguarsi; trascorrere, passare
 
