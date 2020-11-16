@@ -33,7 +33,7 @@ chissà, forse
 |Nessuno mi ha avvisato che avrei dovuto cantare a cappella.|Ник то меня не предупреждал, что я должен петь a cappella.|
 |Ok, di certo loro non cantano i cori natalizi a cappella.|Хорошо, наверняка они не поют рождественские хоры a cappella.|
 
-### Perchè si dice a cappella
+## Perchè si dice a cappella
 
 ### Origini e storia del modo di dire "a cappella" che deriva dagli antichi canti sacri gregoriani
 
@@ -51,7 +51,7 @@ Durante il Rinascimento, **le esibizioni corali dei canti gregoriani avevano luo
 
 Con il progredire dei tempi, il canto a cappella non è rimasto confinato nell'ambito sacro, ma **si è allargato anche in altre aree musicali.** Questo tipo di esibizione, che dà molto spazio all'espressione delle emozioni, si è rivisto infatti nel canto popolare, nella musica jazz, nel pop, nello swing, nel gospel, negli spiritual, nel folk tradizionale e nel doo-wop americano degli anni Cinquanta.
 
-### Почему говорят a cappella
+## Почему говорят a cappella
 
 ### Происхождение и история выражения "a cappella", восходящего к древним грегорианским священным песнопениям
 
