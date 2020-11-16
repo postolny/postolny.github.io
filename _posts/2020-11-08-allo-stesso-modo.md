@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "allo-stesso-modo"
+title:  "allo stesso modo"
 author: "И. Постольный"
 comments: false
 tags: Locuzione
