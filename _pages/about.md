@@ -23,7 +23,7 @@ v.procompl. – verbo procomplementare – прокомпиляционный г
 
 qd – quacheduno – кто-то
 
-### Dizionari
+## Dizionari
 
 * [Treccani](://www.treccani.it/){: target="_blank"}
 * [Olivetti](://www.dizionario-italiano.it/){: target="_blank"}
