@@ -19,7 +19,7 @@ valore intens. – valore intensivo – интенсивное значение
 
 fig. – figurato – фигуральный, образный, иносказательный
 
-eufem. - eufemistico - эвфемистический
+eufem. – eufemistico – эвфемистический
 
 v.procompl. – verbo procomplementare – прокомпиляционный глагол
 
