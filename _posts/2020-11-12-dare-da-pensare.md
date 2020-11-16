@@ -8,7 +8,7 @@ tags: Locuzione
 
 ### Значение
 
-Заставлять задуматься; вызывать тревогу, тревожить, заботить
+Заставлять задуматься; вызывать тревогу, тревожить, заботить.
 
 loc.v. preoccupare: la tua lunga malattia mi dava da pensare (беспокойство: твоя продолжительная болезнь заставила меня задуматься) / far riflettere, suscitare dubbi: è un comportamento che dà da pensare (заставлять думать, вызывать сомнения: это поведение, которое заставляет нас задуматься) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/dare-da-pensare){: target="_blank"}
 
