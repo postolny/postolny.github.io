@@ -43,7 +43,7 @@ Oggi si definisce **_a cappella_** ogni **esibizione sonora che non preveda**, d
 
 La pratica del **canto a cappella** ha origini che risalgono alla preistoria, quando gli uomini e le donne dei villaggi si riunivano attorno al fuoco per cantare musiche propiziatorie o di ringraziamento per le divinità o di altro genere.
 
-### Questo tipo di canto ha, però, le sue radici vere e proprie nella <b>prassi esecutiva del canto gregoriano</b> che non prevede l'ausilio di alcun altro strumento, ed è praticato dalle sole voci dei monaci o dei chierici che costituiscono il gruppo di cantori, chiamato schola cantorum.
+Questo tipo di canto ha, però, le sue radici vere e proprie nella <b>prassi esecutiva del canto gregoriano</b> che non prevede l'ausilio di alcun altro strumento, ed è praticato dalle sole voci dei monaci o dei chierici che costituiscono il gruppo di cantori, chiamato schola cantorum.
 
 ### Origini del modo dire "a cappella"
 
