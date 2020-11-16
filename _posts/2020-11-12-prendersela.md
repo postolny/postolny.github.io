@@ -8,7 +8,7 @@ tags: Locuzione
 
 ### Значение
 
-v.procompl. (io me la prendo)
+v.procompl.
 
 1. offendersi, mostrarsi offeso per qcs.: non prendertela per così poco (обижаться, выказывать обиду по поводу чего-либо: не обижайся из-за такой малости.
 2. avere un atteggiamento d'ira o risentimento, arrabbiarsi: te la prendi sempre con lui (относиться с гневом или возмущением, злиться: ты всегда злишься на него.
