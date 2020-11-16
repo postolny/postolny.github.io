@@ -13,7 +13,7 @@ loc.v. – locuzione verbale – устойчивое выражение
 
 a fatica – ударение обозначается цветом и жирным начертанием
 
-муз – музыкальный термин
+муз. – музыкальный термин
 
 valore intens. – valore intensivo – интенсивное значение
 
@@ -23,7 +23,9 @@ eufem. – eufemistico – эвфемистический
 
 v.procompl. – verbo procomplementare – прокомпиляционный глагол
 
-qd – quacheduno – кто-то
+qd. – quacheduno – кто-то
+
+qcs. – qualcosa – что-либо
 
 ## Dizionari
 
