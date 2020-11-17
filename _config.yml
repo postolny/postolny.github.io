@@ -1,7 +1,7 @@
 # Site settings
 title:          Блог
 description:    "Игорь Постольный • L'Italiano"
-baseurl:        "/"
+baseurl:        ""
 url:            "https://postolny.github.io"
 
 # Google Analytics
