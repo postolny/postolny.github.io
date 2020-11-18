@@ -5,6 +5,8 @@ author: "И. Постольный"
 permalink: /about/
 ---
 
+Benvenuti nel mio sito! In questa pagina vi metterò una lista delle abbreviazioni che potete trovare nei post.
+
 ## Abbreviazioni
 
 loc.avv. – locuzione avverbiale – наречное выражение
