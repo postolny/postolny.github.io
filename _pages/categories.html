@@ -28,7 +28,12 @@ permalink: /categories/
         {% assign sorted_posts = site.posts | sort: 'title' %}
         {% for post in sorted_posts %}
             {%if post.categories contains category[0]%}
-                <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} </a></h3>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+                    <div>
+                        <span class="tags-post-title">{{ post.title }}</span>
+                        <div class="tags-post-line"></div>
+                    </div>
+                </a>
             {%endif%}
         {% endfor %}
     {% endfor %}
