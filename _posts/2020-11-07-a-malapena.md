@@ -3,7 +3,7 @@ layout: post
 title:  "a malapena"
 author: "И. Постольный"
 comments: false
-categories: A
+categories: a
 tags:
 ---
 

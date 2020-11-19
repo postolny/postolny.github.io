@@ -3,7 +3,7 @@ layout: post
 title:  "tirare avanti"
 author: "И. Постольный"
 comments: false
-categories: T
+categories: t
 tags:
 ---
 

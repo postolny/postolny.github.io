@@ -3,7 +3,7 @@ layout: post
 title:  "dar da mangiare"
 author: "И. Постольный"
 comments: false
-categories: D
+categories: d
 tags:
 ---
 

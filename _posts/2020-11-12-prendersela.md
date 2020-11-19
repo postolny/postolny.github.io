@@ -3,7 +3,7 @@ layout: post
 title:  "prendersela"
 author: "И. Постольный"
 comments: false
-categories: P
+categories: p
 tags:
 ---
 

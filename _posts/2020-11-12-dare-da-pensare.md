@@ -3,7 +3,7 @@ layout: post
 title:  "dare da pensare"
 author: "И. Постольный"
 comments: false
-categories: D
+categories: d
 tags:
 ---
 

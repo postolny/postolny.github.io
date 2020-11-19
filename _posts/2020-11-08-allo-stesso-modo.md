@@ -3,7 +3,7 @@ layout: post
 title:  "allo stesso modo"
 author: "И. Постольный"
 comments: false
-categories: A
+categories: a
 tags:
 ---
 

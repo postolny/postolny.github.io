@@ -3,7 +3,7 @@ layout: post
 title:  "intendersene"
 author: "И. Постольный"
 comments: false
-categories: I
+categories: i
 tags:
 ---
 
