@@ -3,7 +3,8 @@ layout: post
 title:  "andarsene"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: A
+tags:
 ---
 
 ### Значение

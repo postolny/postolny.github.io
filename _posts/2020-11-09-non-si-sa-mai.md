@@ -3,7 +3,8 @@ layout: post
 title:  "non si sa mai"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: N
+tags:
 ---
 
 ### Значение

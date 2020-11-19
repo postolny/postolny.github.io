@@ -3,7 +3,8 @@ layout: post
 title:  "intendersene"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: I
+tags:
 ---
 
 ### Значение

@@ -3,7 +3,8 @@ layout: post
 title:  "allo stesso modo"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: A
+tags:
 ---
 
 ### Значение

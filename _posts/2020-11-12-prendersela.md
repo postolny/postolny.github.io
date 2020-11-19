@@ -3,7 +3,8 @@ layout: post
 title:  "prendersela"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: P
+tags:
 ---
 
 ### Значение

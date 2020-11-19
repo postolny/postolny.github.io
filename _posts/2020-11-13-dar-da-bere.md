@@ -3,7 +3,8 @@ layout: post
 title:  "dar da bere"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: D
+tags:
 ---
 
 ### Значение

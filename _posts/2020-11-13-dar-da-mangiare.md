@@ -3,7 +3,8 @@ layout: post
 title:  "dar da mangiare"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: D
+tags:
 ---
 
 ### Значение

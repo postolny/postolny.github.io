@@ -3,7 +3,8 @@ layout: post
 title:  "dare da pensare"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: D
+tags:
 ---
 
 ### Значение

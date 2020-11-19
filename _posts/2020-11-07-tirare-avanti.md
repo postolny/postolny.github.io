@@ -3,7 +3,8 @@ layout: post
 title:  "tirare avanti"
 author: "И. Постольный"
 comments: false
-tags: Locuzione
+categories: T
+tags:
 ---
 
 ### Значение
@@ -16,6 +17,7 @@ tags: Locuzione
     делать то, что делается: тянуть историю). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/tirare-avanti){: target="_blank"}
 
 Tirare avanti mandare avanti, fare procedere: t. avanti un affare _da sola tira avanti tre figli_ (тянуть дело (лямку); она одна воспитывает трёх дочерей. [Grande Dizionario Italiano di GABRIELLI ALDO](https://www.grandidizionari.it/Dizionario_Italiano/parola/T/tirare.aspx?query=tirare"){: target="_blank"}
+
 
 ### Синонимы
 
