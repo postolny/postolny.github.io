@@ -15,15 +15,15 @@
       this.classList.toggle('active');
     });
 
-    $('a[href^="#"]').click(function() {
+    $('.tags-clouds a').click(function() {
       $('html, body').animate({
         scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-      }, 500);
+      }, "fast");
       return false;
     });
 
-    $("a[href='#top']").click(function() {
-      $("html, body").animate({ scrollTop: 0 }, "slow");
+    $(".top").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "fast");
       return false;
     });
 
