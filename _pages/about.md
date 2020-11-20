@@ -5,7 +5,7 @@ author: "И. Постольный"
 permalink: /about/
 ---
 
-Benvenuti nel mio sito! In questa pagina vi metterò una lista delle abbreviazioni che potete trovare nei post.
+Benvenuti nel mio sito! In questa pagina vi metterò una lista di abbreviazioni che potete trovare nei post.
 
 ## Abbreviazioni
 
@@ -28,6 +28,8 @@ v.procompl. – verbo procomplementare – прокомпиляционный г
 qd. – quacheduno – кто-то
 
 qcs. – qualcosa – что-либо
+
+Qui sotto ho fatto anche un elenco di dizionari.
 
 ## Dizionari
 
