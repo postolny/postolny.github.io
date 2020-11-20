@@ -27,5 +27,26 @@
       return false;
     });
 
+    var Mwidth = 960;
+    if ($(window).width() > Mwidth) {
+      var headerHeight = $('.navigation').height();
+      $(window).on('scroll', {
+          TopPrev: 0
+        },
+        function() {
+          var TopCurrent = $(window).scrollTop();
+          if (TopCurrent < this.TopPrev) {
+            if (TopCurrent > 0 && $('.navigation').hasClass('fixed-menu')) {
+              $('.navigation').addClass('visible-scroll-up');
+            } else {
+              $('.navigation').removeClass('visible-scroll-up fixed-menu');
+            }
+          } else {
+            $('.navigation').removeClass('visible-scroll-up');
+            if (TopCurrent > headerHeight && !$('.navigation').hasClass('fixed-menu')) $('.navigation').addClass('fixed-menu');
+          }
+          this.TopPrev = TopCurrent;
+        });
+    }
   });
 })(jQuery);
