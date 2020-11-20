@@ -12,7 +12,14 @@ footer {
   width: 80%;
 }
 
-// Navigation Variables
+.banner {
+  width: 100%;
+  height: 400px;
+  background-image: url(../assets/Rome-Parco-degli-Acquedotti1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
 $content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 70px;
@@ -20,13 +27,26 @@ $nav-background: #262626;
 $nav-font-color: #ffffff;
 $link-hover-color: #2581DC;
 
-// Outer navigation wrapper
+
 .navigation {
   height: $nav-height;
   background: $nav-background;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  backface-visibility: hidden;
+  transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate3d(0px, 0px, 0px);
 }
 
-// Logo and branding
+
 .brand {
   position: absolute;
   padding-left: 20px;
@@ -34,6 +54,7 @@ $link-hover-color: #2581DC;
   line-height: $nav-height;
   text-transform: uppercase;
   font-size: 1.4em;
+
   a,
   a:visited {
     color: $nav-font-color;
@@ -41,22 +62,25 @@ $link-hover-color: #2581DC;
   }
 }
 
-// Container with no padding for navbar
+
 .nav-container {
   max-width: $content-width;
   margin: 0 auto;
 }
 
-// Navigation 
+
 nav {
   float: right;
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
     li {
       float: left;
       position: relative;
+
       a,
       a:visited {
         display: block;
@@ -65,17 +89,22 @@ nav {
         background: $nav-background;
         color: $nav-font-color;
         text-decoration: none;
+
         &:hover {
           background: $link-hover-color;
           color: $nav-font-color;
         }
+
         &:not(:only-child):after {
           padding-left: 4px;
           content: ' ▾';
         }
-      } // Dropdown list
+      }
+
+      // Dropdown list
       ul li {
         min-width: 190px;
+
         a {
           padding: 15px;
           line-height: 20px;
@@ -85,7 +114,7 @@ nav {
   }
 }
 
-// Dropdown list binds to JS toggle event
+
 .nav-dropdown {
   position: absolute;
   display: none;
@@ -93,9 +122,6 @@ nav {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobile navigation */
-
-// Binds to JS Toggle
 .nav-mobile {
   display: none;
   position: absolute;
@@ -105,43 +131,52 @@ nav {
   height: $nav-height;
   width: $nav-height;
 }
+
 @media only screen and (max-width: 798px) {
-  // Hamburger nav visible on mobile only
   .nav-mobile {
     display: block;
   }
+
   nav {
-   width: 100%;
+    width: 100%;
     padding: $nav-height 0 15px;
+
     ul {
       display: none;
+
       li {
         float: none;
+
         a {
           padding: 15px;
           line-height: 20px;
         }
+
         ul li a {
           padding-left: 30px;
         }
       }
     }
   }
+
   .nav-dropdown {
     position: static;
   }
 }
+
 @media screen and (min-width: $breakpoint) {
   .nav-list {
     display: block !important;
   }
 }
+
 #nav-toggle {
   position: absolute;
   left: 18px;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
+
   span,
   span:before,
   span:after {
@@ -155,25 +190,51 @@ nav {
     content: '';
     transition: all 300ms ease-in-out;
   }
+
   span:before {
     top: -10px;
   }
+
   span:after {
     bottom: -10px;
   }
+
   &.active span {
     background-color: transparent;
+
     &:before,
     &:after {
       top: 0;
     }
+
     &:before {
       transform: rotate(45deg);
     }
+
     &:after {
       transform: rotate(-45deg);
     }
   }
+}
+
+/* Скрытие навигации при сроллировании */
+
+.navigation.visible-scroll-up {
+  transform: translate3d(0px, 100%, 0px);
+  -webkit-transform: translate3d(0px, 100%, 0px);
+  -moz-transform: translate3d(0px, 100%, 0px);
+  -ms-transform: translate3d(0px, 100%, 0px);
+  -o-transform: translate3d(0px, 100%, 0px);
+}
+
+.navigation.fixed-menu {
+  position: fixed;
+  top: -70px;
+  transition: transform 0.3s ease 0s;
+  -webkit-transition: transform 0.3s ease 0s;
+  -moz-transition: transform 0.3s ease 0s;
+  -ms-transition: transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
 }
 
 footer {
