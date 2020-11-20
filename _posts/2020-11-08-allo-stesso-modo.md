@@ -23,7 +23,7 @@ diversamente, non allo stesso modo – неодинаково
 
 ### Примеры употребления
 
-Le sorelle erano vestite allo stesso modo.  |  Cёстры были одинаково одеты.
-La pensiamo allo stesso modo.  |  У нас близкие взгляды.
-Avere le stesse idee (pensarla allo stesso modo).  |  Разделять взгляды.
-Suo fratello si comportò allo stesso modo.  |  Аналогично поступил его брат.
+|Le sorelle erano vestite allo stesso modo.|Cёстры были одинаково одеты.|
+|La pensiamo allo stesso modo.|У нас близкие взгляды.|
+|Avere le stesse idee (pensarla allo stesso modo).|Разделять взгляды.|
+|Suo fratello si comportò allo stesso modo.|Аналогично поступил его брат.|
