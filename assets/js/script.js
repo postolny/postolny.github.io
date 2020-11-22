@@ -27,6 +27,12 @@
       return false;
     });
 
+    $('.post a:not([href^="#"').on('click', function() {
+      var href = $(this).attr('href');
+      window.open(href, '_blank').focus();
+      return false;
+    });
+
     var Mwidth = 960;
     if ($(window).width() > Mwidth) {
       var headerHeight = $('.navigation').height();
