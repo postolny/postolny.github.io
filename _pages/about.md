@@ -9,6 +9,14 @@ Benvenuti nel mio sito! In questa pagina vi metterò una lista delle abbreviazio
 
 ## Abbreviazioni
 
+CO – comune – употребительный
+
+OB – obsoleto – устаревший
+
+v.pronom.tr. – verbo pronominale transitivo – местоименный переходный (транзитивный) глагол
+
+v.pronom.intr. – verbo pronominale intransitivo – местоименный непереходный (интранзитивный) глагол
+
 loc.avv. – locuzione avverbiale – наречное выражение
 
 loc.v. – locuzione verbale – устойчивое выражение
