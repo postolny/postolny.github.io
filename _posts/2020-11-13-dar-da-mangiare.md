@@ -7,15 +7,15 @@ categories: d
 tags:
 ---
 
-### Значение
-
 Кормить (питать).
 
-### Синонимы
+### Sinonimi
 
 кормить – nutrire; alimentare; dare il mangime (домашних животных); allatare (грудью).
 
-### Примеры употребления
+### Esempi d'uso
 
-|Ogni mattina la piccola Lucia da da mangiare al suo fratellino. Il piccolo mangia volentieri ciò che gle da Lucia.|Маленькая Люся каждое утро кормит с ложечки своего крошку брата. Малыш охотно ест то, что даёт ему Люся.|
-|La terra dà da mangiare e da bere alla gente; la terra nutre tutti.|Людей земля кормит и поит; земля питает всех.|
+Italiano                                                                                                           | Русский
+-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------
+Ogni mattina la piccola Lucia da da mangiare al suo fratellino. Il piccolo mangia volentieri ciò che gle da Lucia. | Маленькая Люся каждое утро кормит с ложечки своего крошку брата. Малыш охотно ест то, что даёт ему Люся.
+La terra dà da mangiare e da bere alla gente; la terra nutre tutti.                                                | Людей земля кормит и поит; земля питает всех.
