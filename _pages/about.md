@@ -9,46 +9,50 @@ Benvenuti nel mio sito! In questa pagina vi metterò una lista delle abbreviazio
 
 ## Abbreviazioni
 
+a fatica – ударение обозначается цветом и жирным начертанием
+
 CO – comune – употребительный
 
-OB – obsoleto – устаревший
+eufem. – eufemistico – эвфемистический
 
-v.pronom.tr. – verbo pronominale transitivo – местоименный переходный (транзитивный) глагол
+fig. – figurato – фигуральный, образный, иносказательный
 
-v.pronom.intr. – verbo pronominale intransitivo – местоименный непереходный (интранзитивный) глагол
+loc.agg. – locuzione aggettivale – выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)
 
 loc.avv. – locuzione avverbiale – наречное выражение
 
 loc.v. – locuzione verbale – устойчивое выражение
 
-a fatica – ударение обозначается цветом и жирным начертанием
-
-муз. – музыкальный термин
-
-valore intens. – valore intensivo – интенсивное значение
-
-fig. – figurato – фигуральный, образный, иносказательный
-
-eufem. – eufemistico – эвфемистический
-
-v.procompl. – verbo procomplementare – прокомпиляционный глагол
-
-qd. – quacheduno – кто-то
+OB – obsoleto – устаревший
 
 qcs. – qualcosa – что-либо
 
+qd. – quacheduno – кто-то
+
 Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
+
+s.f.inv. – sostantivo femminile invariabile – несклоняемое имя существительное женского рода
+
+v.procompl. – verbo procomplementare – прокомпиляционный глагол
+
+v.pronom.intr. – verbo pronominale intransitivo – местоименный непереходный (интранзитивный) глагол
+
+v.pronom.tr. – verbo pronominale transitivo – местоименный переходный (транзитивный) глагол
+
+valore intens. – valore intensivo – интенсивное значение
+
+муз. – музыкальный термин
 
 ## Dizionari
 
-* [Treccani](https://www.treccani.it/){: target="_blank"}
-* [Olivetti](https://www.dizionario-italiano.it/){: target="_blank"}
-* [Dizionario italiano De Mauro](https://dizionario.internazionale.it/){: target="_blank"}
-* [Dizionari Garzanti Linguistica](https://www.garzantilinguistica.it/){: target="_blank"}
-* [La Repubblica](https://dizionari.repubblica.it/italiano.html){: target="_blank"}
-* [Corriere della sera](https://dizionari.corriere.it/){: target="_blank"}
-* [Grande Dizionario Italiano di GABRIELLI ALDO](https://www.grandidizionari.it/dizionario_italiano.aspx){: target="_blank"}
-* [Dizionario d'ortografia e di pronunzia](http://www.dizionario.rai.it/){: target="_blank"}
-* [Glosbe](https://ru.glosbe.com/){: target="_blank"}
-* [Dialetti d'Italia](https://www.dialettando.com/){: target="_blank"}
-* [Lingvo Live](https://www.lingvolive.com/ru-ru){: target="_blank"}
+* [Treccani](https://www.treccani.it/)
+* [Olivetti](https://www.dizionario-italiano.it/)
+* [Dizionario italiano De Mauro](https://dizionario.internazionale.it/)
+* [Dizionari Garzanti Linguistica](https://www.garzantilinguistica.it/)
+* [La Repubblica](https://dizionari.repubblica.it/italiano.html)
+* [Corriere della sera](https://dizionari.corriere.it/)
+* [Grande Dizionario Italiano di GABRIELLI ALDO](https://www.grandidizionari.it/dizionario_italiano.aspx)
+* [Dizionario d'ortografia e di pronunzia](http://www.dizionario.rai.it/)
+* [Glosbe](https://ru.glosbe.com/)
+* [Dialetti d'Italia](https://www.dialettando.com/)
+* [Lingvo Live](https://www.lingvolive.com/ru-ru)
