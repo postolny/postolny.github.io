@@ -62,26 +62,16 @@ img {
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
-  thead {
-    background: #4caf50;
-    color: #fff;
-  }
   td {
-    padding: 5px;
-    border: 1px solid #ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
   }
   th {
-    padding: 5px;
-    border: 1px solid #ddd;
-  }
-  tbody {
-    tr {
-      &:nth-child(even) {
-        background: #f0f0f0;
-      }
-    }
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #c1d3ff;
   }
 }
 
