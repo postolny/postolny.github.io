@@ -70,8 +70,6 @@ table {
     border: 1px solid #ccc;
     vertical-align: top;
     width: 100%;
-    table-layout: fixed;
-    width: 100%;
   }
   th {
     padding: 10px;
@@ -83,27 +81,27 @@ table {
 
 /* адаптивная */
 @media screen and (max-width: 768px) {
-	table {
-		thead {
-			display: none;
-		}
-		tr {
-			display: block;
-			border: 1px solid #e8e9eb;
-			margin-bottom: 1rem;
-		}
-		td {
-			display: block;
-			border: none;
-			padding: 7px;
-			border: 1px solid #ccc;
-			&:before {
-				content: attr(aria-label);
-				float: left;
-				font-weight: bold;
-			}
-		}
-	}
+  table {
+    thead {
+      display: none;
+    }
+    tr {
+      display: block;
+      border: 1px solid #e8e9eb;
+      margin-bottom: 1rem;
+    }
+    td {
+      display: block;
+      border: none;
+      padding: 7px;
+      border: 1px solid #ccc;
+      &:before {
+        content: attr(aria-label);
+        float: left;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 .center {
