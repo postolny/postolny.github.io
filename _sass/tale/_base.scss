@@ -81,6 +81,31 @@ table {
   }
 }
 
+/* адаптивная */
+@media screen and (max-width: 768px) {
+	table {
+		thead {
+			display: none;
+		}
+		tr {
+			display: block;
+			border: 1px solid #e8e9eb;
+			margin-bottom: 1rem;
+		}
+		td {
+			display: block;
+			border: none;
+			padding: 7px;
+			border: 1px solid #ccc;
+			&:before {
+				content: attr(aria-label);
+				float: left;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
 .center {
   text-align: center;
 }
