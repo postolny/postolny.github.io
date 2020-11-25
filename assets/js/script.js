@@ -33,6 +33,13 @@
       return false;
     });
 
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() > 100) $('#albero').removeClass('off').addClass('tornasu', setTimeout(function() {
+        $('#albero').addClass('albero');
+      }, 500));
+        else $('#albero').removeClass('tornasu').addClass('off').removeClass('albero');
+    });
+
     var Mwidth = 960;
     if ($(window).width() > Mwidth) {
       var headerHeight = $('.navigation').height();
