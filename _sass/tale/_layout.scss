@@ -38,7 +38,8 @@ $link-hover-color: #2581DC;
   top: 0;
   width: 100%;
   z-index: 3;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   transform: translate3d(0px, 0px, 0px);
   -webkit-transform: translate3d(0px, 0px, 0px);
   -moz-transform: translate3d(0px, 0px, 0px);
@@ -101,7 +102,7 @@ nav {
         }
       }
 
-      // Dropdown list
+      /* Dropdown list*/
       ul li {
         min-width: 190px;
 
