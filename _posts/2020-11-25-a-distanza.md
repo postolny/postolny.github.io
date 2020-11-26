@@ -34,9 +34,21 @@ loc.s.f. TS fis. f. che si esercita tra corpi posti a distanza in un mezzo mater
 
 manovra a distanza
 
-loc.s.f. TS ferr. operazione o movimento atto a comandare organi motori, circuiti elettrici, fuori da un immediato contatto, con l'aiuto di trasmissioni meccaniche, elettriche, pneumatiche e sim (акт операции или движение, предпринимаемый для управления частями двигателя, электрическими цепями, без непосредственного контакта, с помощью механических, электрических, пневматических и аналогичных передач).
+loc.s.f. TS ferr. operazione o movimento atto a comandare organi motori, circuiti elettrici, fuori da un immediato contatto, con l'aiuto di trasmissioni meccaniche, elettriche, pneumatiche e sim (операция или акт движения, предпринимаемый для управления частями двигателя, электрическими цепями, без непосредственного контакта, с помощью механических, электрических, пневматических и аналогичных передач).
 
 Nella tecnica ferroviaria: manovre a distanza, complesso di operazioni o di movimenti atti a comandare organi motori, macchine, circuiti elettrici, ecc., fuori da un immediato contatto, servendosi di trasmissioni meccaniche, elettriche, pneumatiche, ecc.; banco o tavolo di manovra, quello dove sono centralizzati i comandi per eseguire manovre a distanza; apparato centrale di manovra, complesso di impianti fissi che concentra in una o più cabine, collegate tra loro, tutti gli organi di comando degli scambî, dei segnali e delle barriere dei passaggi a livello di una stazione vincolandole tra loro in modo da garantire sicurezza e regolarità nella circolazione dei treni. [Treccani](https://www.treccani.it/vocabolario/manovra/)
+
+metastasi a distanza (дистантные метастазы)
+
+loc.s.f. TS med.
+m. di cellule neoplastiche in sedi lontane da quelle del tumore principale (метастаз неопластических клеток в местах, удаленных от основной опухоли).
+
+metatesi a distanza ([дистантные метатезы](https://dic.academic.ru/dic.nsf/etymology_terms/271/Дистантная) [Metatesi (linguistica)](https://it.wikipedia.org/wiki/Metatesi_(linguistica)))
+
+loc.s.f.
+
+1. TS ling. m. che comporta l'inversione di due suoni appartenenti a sillabe diverse e non contigui (метатез, который влечёт за собой инверсию двух звуков, принадлежащих к разным и не соседствующим слогам).
+2. TS ret. => [iperbato](https://dizionario.internazionale.it/parola/iperbato)
 
 [Dizionario italiano De Mauro](https://dizionario.internazionale.it/cerca/a%20distanza)
 
