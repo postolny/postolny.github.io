@@ -25,6 +25,8 @@ fon. – fonetica – фонетика
 
 inform. – informatica – информатика
 
+ling. – linguistica – лингвистика
+
 loc.agg. – locuzione aggettivale – выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)
 
 loc.avv. – locuzione avverbiale – наречное выражение
@@ -35,6 +37,8 @@ loc.s.m. – locuzione sostantivale maschile – субстантивное вы
 
 loc.v. – locuzione verbale – устойчивое выражение
 
+med. – medicina – медицина
+
 OB – obsoleto – устаревший
 
 qcs. – qualcosa – что-либо
@@ -42,6 +46,8 @@ qcs. – qualcosa – что-либо
 qd. – quacheduno – кто-то
 
 Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
+
+ret. – retorica – риторика
 
 scol. – scuola e università – школа и университет
 
