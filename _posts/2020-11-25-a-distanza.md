@@ -14,7 +14,7 @@ loc.avv., loc.agg.inv.
 
 accesso a distanza (удалённый доступ)
 
-loc.s.m. TS inform., rapidità della comunicazione, esaltata dalle tecniche moderne di elaborazione elettronica e di trasmissione dei dati attraverso reti di terminali (скорость связи, повышенная с помощью современных технологий электронной обработки и передачи данных через терминальные сети).
+loc.s.m. TS inform., telecom. rapidità della comunicazione, esaltata dalle tecniche moderne di elaborazione elettronica e di trasmissione dei dati attraverso reti di terminali (скорость связи, повышенная с помощью современных технологий электронной обработки и передачи данных через терминальные сети).
 
 adozione a distanza (дистанционное усыновление)
 
@@ -30,9 +30,17 @@ loc.s.f. TS fis. forza che agisce fra due corpi non a contatto (per es. la forza
 
 forza a distanza (дистантная сила)
 
-loc.s.f. TS fis. f. che si esercita tra corpi posti a distanza in un mezzo materiale o nel vuoto (что осуществляется между телами, расположенными на расстоянии в материальной среде или в вакууме(un mezzo materiale è un mezzo dotato di massa (acqua, tubo di acciaio, aria, legno… (Материальная среда - это среда, снабжённая массой (вода, стальная труба, воздух, дерево ...)).
+loc.s.f. TS fis. f. che si esercita tra corpi posti a distanza in un mezzo materiale o nel vuoto (сила, действующая между телами, расположенными на расстоянии в материальной среде или в вакууме (un mezzo materiale è un mezzo dotato di massa (acqua, tubo di acciaio, aria, legno… (Материальная среда - это среда, снабжённая массой (вода, стальная труба, воздух, дерево ...)). Hечь идёт о силах, которые не нуждаются в соприкосновения, чтобы себя проявить, напр.: сила тяжести, электромагнитная сила)
+
+manovra a distanza
+
+loc.s.f. TS ferr. operazione o movimento atto a comandare organi motori, circuiti elettrici, fuori da un immediato contatto, con l'aiuto di trasmissioni meccaniche, elettriche, pneumatiche e sim (акт операции или движение, предпринимаемый для управления частями двигателя, электрическими цепями, без непосредственного контакта, с помощью механических, электрических, пневматических и аналогичных передач).
+
+Nella tecnica ferroviaria: manovre a distanza, complesso di operazioni o di movimenti atti a comandare organi motori, macchine, circuiti elettrici, ecc., fuori da un immediato contatto, servendosi di trasmissioni meccaniche, elettriche, pneumatiche, ecc.; banco o tavolo di manovra, quello dove sono centralizzati i comandi per eseguire manovre a distanza; apparato centrale di manovra, complesso di impianti fissi che concentra in una o più cabine, collegate tra loro, tutti gli organi di comando degli scambî, dei segnali e delle barriere dei passaggi a livello di una stazione vincolandole tra loro in modo da garantire sicurezza e regolarità nella circolazione dei treni. [Treccani](https://www.treccani.it/vocabolario/manovra/)
 
 [Dizionario italiano De Mauro](https://dizionario.internazionale.it/cerca/a%20distanza)
+
+### Esempi d'uso
 
 |Italiano|Русский|
 |---|---|
