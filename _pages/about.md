@@ -23,6 +23,8 @@ fis. – fisica – физика
 
 fon. – fonetica – фонетика
 
+gener. – generalmente – в целом; обычно
+
 inform. – informatica – информатика
 
 ling. – linguistica – лингвистика
