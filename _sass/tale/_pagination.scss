@@ -31,14 +31,17 @@
     background-color: #fff;
   }
 }
+
 @media screen and (max-width: 768px) {
-  a {
-    padding: 6px 12px;
-  }
-  span.previous {
-    padding: 6px 12px;
-  }
-  span.next {
-    padding: 6px 12px;
-  }
+	.pagination {
+		a {
+			padding: 6px 12px;
+		}
+		span.previous {
+			padding: 6px 12px;
+		}
+		span.next {
+			padding: 6px 12px;
+		}
+	}
 }
