@@ -15,11 +15,23 @@ CO – comune – употребительный
 
 eufem. – eufemistico – эвфемистический
 
+ferr. – ferrovia – относящееся к железной дороге
+
 fig. – figurato – фигуральный, образный, иносказательный
+
+fis. – fisica – физика
+
+fon. – fonetica – фонетика
+
+inform. – informatica – информатика
 
 loc.agg. – locuzione aggettivale – выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)
 
 loc.avv. – locuzione avverbiale – наречное выражение
+
+loc.s.f. – locuzione sostantivale femminile – субстантивное выражение женского рода
+
+loc.s.m. – locuzione sostantivale maschile – субстантивное выражение мужского рода
 
 loc.v. – locuzione verbale – устойчивое выражение
 
@@ -36,6 +48,8 @@ scol. – scuola e università – школа и университет
 spec. – specialmente - особенно
 
 s.f.inv. – sostantivo femminile invariabile – несклоняемое имя существительное женского рода
+
+telecom. – telecomunicazione – телекоммуникация
 
 TS – Tecnico-Specialistico – специально-технический
 
@@ -56,6 +70,7 @@ valore intens. – valore intensivo – интенсивное значение
 * [Treccani](https://www.treccani.it/)
 * [Olivetti](https://www.dizionario-italiano.it/)
 * [Dizionario italiano De Mauro](https://dizionario.internazionale.it/)
+* [Dizionario italiano De Mauro – Abbreviazioni](https://dizionario.internazionale.it/abbreviazioni)
 * [Dizionari Garzanti Linguistica](https://www.garzantilinguistica.it/)
 * [La Repubblica](https://dizionari.repubblica.it/italiano.html)
 * [Corriere della sera](https://dizionari.corriere.it/)
