@@ -157,15 +157,15 @@ nav {
         }
       }
     }
-    .navigation {
-      background:transparent;
-      box-shadow:none;
-    }
   }
 
   .nav-dropdown {
     position: static;
   }
+  .navigation {
+     background:transparent;
+     box-shadow:none;
+   }
 }
 
 @media screen and (min-width: $breakpoint) {
