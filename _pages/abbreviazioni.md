@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "О сайте"
+title: "Abbreviazioni"
 author: "И. Постольный"
 permalink: /abbreviazioni/
 ---
