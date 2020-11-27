@@ -74,8 +74,16 @@ table {
   th {
     padding: 10px;
     border: 1px solid #ccc;
-    background-color: #c1d3ff;
+    background-color: #c9e3fe;
     text-align: left;
+  }
+}
+
+.abbreviazioni {
+  td {
+    &:first-child {
+      background: #c9e3fe;
+    }
   }
 }
 
