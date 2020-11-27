@@ -5,7 +5,11 @@ author: "И. Постольный"
 permalink: /abbreviazioni/
 ---
 
+Benvenuti nel mio sito!
+
 ## Abbreviazioni
+
+In questa pagina vi metterò una lista delle abbreviazioni che potete trovare nei post.
 
 <input id="search" type="text" placeholder="Найти...">
 
