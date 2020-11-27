@@ -87,6 +87,36 @@ table {
   }
 }
 
+input#search {
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  border: 1px solid #bbb;
+  color: #555;
+  display: block;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 300;
+  outline: 0;
+  padding: 2px 8px;
+  margin: 0;
+  width: 50%;
+  transition: box-shadow .25s ease-in-out, border-color .25s ease-in-out;
+  -webkit-transition: -webkit-box-shadow .25s ease-in-out, border-color .25s ease-in-out;
+  -moz-transition: -moz-box-shadow .25s ease-in-out, border-color .25s ease-in-out;
+  &:focus {
+    -o-box-shadow: 0 0 5px 0 #c9e3fe;
+    box-shadow: 0 0 5px 0 #c9e3fe;
+    border-color: #c9e3fe;
+  }
+}
+@media (max-width:1050px) {
+  input#search {
+    width: 100%;
+    float: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   table {
     thead {
