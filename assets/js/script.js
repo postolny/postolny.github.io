@@ -40,6 +40,14 @@
         else $('#albero').removeClass('tornasu').addClass('off').removeClass('albero');
     });
 
+    $("#search").keyup(function() {
+      var value = this.value.toLowerCase().trim();
+      $(".abbreviazioni").find("tr").each(function(index) {
+        var id = $(this).find("td").first().text().toLowerCase().trim();
+        $(this).toggle(id.indexOf(value) !== -1);
+      });
+    });
+
     var Mwidth = 960;
     if ($(window).width() > Mwidth) {
       var headerHeight = $('.navigation').height();
