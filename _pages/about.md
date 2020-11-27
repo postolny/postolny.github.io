@@ -9,6 +9,8 @@ Benvenuti nel mio sito! In questa pagina vi metterò una lista delle abbreviazio
 
 ## Abbreviazioni
 
+<input id="search" type="text" placeholder="Найти...">
+
 {:.abbreviazioni}
 |Abbreviazione|Italiano|Русский|
 |---|---|
