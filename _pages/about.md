@@ -9,69 +9,47 @@ Benvenuti nel mio sito! In questa pagina vi metterò una lista delle abbreviazio
 
 ## Abbreviazioni
 
+{:.abbreviazioni}
+|Abbreviazione|Italiano|Русский|
+|---|---|
+|CO|comune|употребительный|
+|eufem.|eufemistico|эвфемистический|
+|ferr.|ferrovia|относящееся к железной дороге|
+|fig.|figurato|фигуральный, образный, иносказательный|
+|fis.|fisica|физика|
+|fon.|fonetica|фонетика|
+|gener.|generalmente|в целом; обычно|
+|inform.|informatica|информатика|
+|ling.|linguistica|лингвистика|
+|loc.agg.|locuzione aggettivale|выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)|
+|loc.avv.|locuzione avverbiale|наречное выражение|
+|loc.s.f.|locuzione sostantivale femminile|субстантивное выражение женского рода|
+|loc.s.m.|locuzione sostantivale maschile|субстантивное выражение мужского рода|
+|loc.v.|locuzione verbale|устойчивое выражение|
+|med.|medicina|медицина|
+|OB|obsoleto|устаревший|
+|qcs.|qualcosa|что-либо|
+|qd.|quacheduno|кто-то|
+|ret.|retorica|риторика|
+|scol.|scuola e università|школа и университет|
+|spec.|specialmente|особенно|
+|s.f.inv.|sostantivo femminile invariabile|несклоняемое имя существительное женского рода|
+|telecom.|telecomunicazione|телекоммуникация|
+|TS|Tecnico-Specialistico|специально-технический|
+|v.procompl.|verbo procomplementare|прокомпиляционный глагол|
+|v.pronom.intr.|verbo pronominale intransitivo|местоименный непереходный (интранзитивный) глагол|
+|v.pronom.tr.|verbo pronominale transitivo|местоименный переходный (транзитивный) глагол|
+|valore intens.|valore intensivo|интенсивное значение|
+
+## Altri
+
 a fatica – ударение обозначается цветом и жирным начертанием
-
-CO – comune – употребительный
-
-eufem. – eufemistico – эвфемистический
-
-ferr. – ferrovia – относящееся к железной дороге
-
-fig. – figurato – фигуральный, образный, иносказательный
-
-fis. – fisica – физика
-
-fon. – fonetica – фонетика
-
-gener. – generalmente – в целом; обычно
-
-inform. – informatica – информатика
-
-ling. – linguistica – лингвистика
-
-loc.agg. – locuzione aggettivale – выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)
-
-loc.avv. – locuzione avverbiale – наречное выражение
-
-loc.s.f. – locuzione sostantivale femminile – субстантивное выражение женского рода
-
-loc.s.m. – locuzione sostantivale maschile – субстантивное выражение мужского рода
-
-loc.v. – locuzione verbale – устойчивое выражение
-
-med. – medicina – медицина
-
-OB – obsoleto – устаревший
-
-qcs. – qualcosa – что-либо
-
-qd. – quacheduno – кто-то
-
-Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
-
-ret. – retorica – риторика
-
-scol. – scuola e università – школа и университет
-
-spec. – specialmente - особенно
-
-s.f.inv. – sostantivo femminile invariabile – несклоняемое имя существительное женского рода
-
-telecom. – telecomunicazione – телекоммуникация
-
-TS – Tecnico-Specialistico – специально-технический
-
-v.procompl. – verbo procomplementare – прокомпиляционный глагол
-
-v.pronom.intr. – verbo pronominale intransitivo – местоименный непереходный (интранзитивный) глагол
-
-v.pronom.tr. – verbo pronominale transitivo – местоименный переходный (транзитивный) глагол
-
-valore intens. – valore intensivo – интенсивное значение
 
 лат. – латинское
 
 муз. – музыкальный термин
+
+Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 
 ## Dizionari
 
