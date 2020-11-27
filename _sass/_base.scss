@@ -1,0 +1,213 @@
+* {
+  @include box-sizing;
+  line-height: 1.5;
+}
+
+html,
+body {
+  color: $default-color;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $serif-primary;
+  font-size: 14px;
+  overflow-y: scroll;
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $default-shade;
+  font-family: $sans-serif;
+  line-height: normal;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+blockquote {
+  border-left: .25rem solid $grey-2;
+  color: $grey-1;
+  margin: .8rem 0;
+  padding: .5rem 1rem;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 600px) {
+    padding: 0 5rem 0 1.25rem;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 0 1rem;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    width: 100%;
+  }
+  th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #c9e3fe;
+    text-align: left;
+  }
+}
+
+.abbreviazioni {
+  td {
+    &:first-child {
+      background: #c9e3fe;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    thead {
+      display: none;
+    }
+    tr {
+      display: block;
+      border: 1px solid #e8e9eb;
+      margin-bottom: 1rem;
+    }
+    td {
+      display: block;
+      border: none;
+      padding: 7px;
+      border: 1px solid #ccc;
+      &:before {
+        content: attr(aria-label);
+        float: left;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes "albero" {
+  0% {
+    transform: scale3d(1,1,1);
+  }
+  30% {
+    transform: scale3d(1.25,0.75,1);
+  }
+  40% {
+    transform: scale3d(0.75,1.25,1);
+  }
+  50% {
+    transform: scale3d(1.15,0.85,1);
+  }
+  65% {
+    transform: scale3d(0.95,1.05,1);
+  }
+  75% {
+    transform: scale3d(1.05,0.95,1);
+  }
+  100% {
+    transform: scale3d(1,1,1);
+  }
+}
+@keyframes "albero" {
+  0% {
+    transform: scale3d(1,1,1);
+  }
+  30% {
+    transform: scale3d(1.25,0.75,1);
+  }
+  40% {
+    transform: scale3d(0.75,1.25,1);
+  }
+  50% {
+    transform: scale3d(1.15,0.85,1);
+  }
+  65% {
+    transform: scale3d(0.95,1.05,1);
+  }
+  75% {
+    transform: scale3d(1.05,0.95,1);
+  }
+  100% {
+    transform: scale3d(1,1,1);
+  }
+}
+#albero {
+  width: 102px;
+  height: 110px;
+  background: url(../assets/albero.png);
+  right: -102px;
+  bottom: 5px;
+  z-index: 9998;
+  transition: right 0.5s ease;
+  transform-origin: bottom;
+  overflow: hidden;
+  position: fixed;
+  text-indent: -9999%;
+}
+.albero {
+  -webkit-animation: albero 0.9s both;
+  animation: albero 0.9s both;
+}
+.off {
+  webkit-animation: none;
+  -webkit-animation: none;
+  animation: none;
+}
+#neve {
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 30px;
+  background: url(../assets/neve.png) left;
+  display: block;
+  border: 0;
+  z-index: 9997;
+  position: fixed;
+  text-indent: -9999%;
+}
+.tornasu {
+  right: 0 !important;
+}
