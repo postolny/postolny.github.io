@@ -29,7 +29,6 @@
 
   p {
     margin: 0 0 1rem;
-    /*text-align: justify;*/
   }
 
   a:hover {
@@ -38,6 +37,8 @@
 
   img {
     margin: 0 auto 0.5rem;
+    padding: 5px;
+    border: 5px solid #3a3a3a;
   }
 
   img + em {
