@@ -5,12 +5,15 @@
             $('.nav-dropdown').not($(this).siblings()).hide();
             e.stopPropagation();
         });
+
         $('html').click(function() {
             $('.nav-dropdown').hide();
         });
+
         $('#nav-toggle').click(function() {
             $('nav ul').slideToggle();
         });
+
         $('#nav-toggle').on('click', function() {
             this.classList.toggle('active');
         });
@@ -49,6 +52,13 @@
             snd.play();
             $('html, body').delay(700).animate({
                 scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+            }, "fast");
+            return false;
+        });
+
+        $('.tags-anchor a').on('click', function() {
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
             }, "fast");
             return false;
         });
