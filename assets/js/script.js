@@ -53,13 +53,6 @@
             return false;
         });
 
-        $('.tags-clouds a').click(function() {
-            $('html, body').animate({
-                scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-            }, "fast");
-            return false;
-        });
-
         $(".top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, "fast");
             return false;
