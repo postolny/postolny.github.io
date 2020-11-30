@@ -24,14 +24,15 @@
       display: inline-block;
       margin: 0 0.1rem 0.2rem;
       padding: 0.2rem 0.5rem;
-      background: rgba(0, 0, 0, 0.05);
+      background: #03c03c;
       border-radius: 5px;
-      color: $default-color;
+      color: #fff;
       text-decoration: none;
+      transition: background 300ms ease-in-out;
 
       &:hover,
       &:active {
-        background: rgba(0, 0, 0, 0.1);
+        background: #019a2f;
       }
     }
   }
