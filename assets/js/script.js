@@ -19,36 +19,36 @@
         });
 
         var lettere = {
-            '#a': '/audio/a.mp3',
-            '#b': '/audio/bi.mp3',
-            '#c': '/audio/ci.mp3',
-            '#d': '/audio/di.mp3',
-            '#e': '/audio/e.mp3',
-            '#f': '/audio/effe.mp3',
-            '#g': '/audio/gi.mp3',
-            '#h': '/audio/acca.mp3',
-            '#i': '/audio/i.mp3',
-            '#j': '/audio/i_lunga.mp3',
-            '#k': '/audio/cappa.mp3',
-            '#l': '/audio/elle.mp3',
-            '#m': '/audio/emme.mp3',
-            '#n': '/audio/enne.mp3',
-            '#o': '/audio/o.mp3',
-            '#p': '/audio/pi.mp3',
-            '#q': '/audio/cu.mp3',
-            '#r': '/audio/erre.mp3',
-            '#s': '/audio/esse.mp3',
-            '#t': '/audio/ti.mp3',
-            '#u': '/audio/u.mp3',
-            '#v': '/audio/vu.mp3',
-            '#w': '/audio/doppia_vu.mp3',
-            '#x': '/audio/ics.mp3',
-            '#y': '/audio/ipsilon.mp3',
-            '#z': '/audio/zeta.mp3'
+            '#a': 'a',
+            '#b': 'bi',
+            '#c': 'ci',
+            '#d': 'di',
+            '#e': 'e',
+            '#f': 'effe',
+            '#g': 'gi',
+            '#h': 'acca',
+            '#i': 'i',
+            '#j': 'i_lunga',
+            '#k': 'cappa',
+            '#l': 'elle',
+            '#m': 'emme',
+            '#n': 'enne',
+            '#o': 'o',
+            '#p': 'pi',
+            '#q': 'cu',
+            '#r': 'erre',
+            '#s': 'esse',
+            '#t': 'ti',
+            '#u': 'u',
+            '#v': 'vu',
+            '#w': 'doppia_vu',
+            '#x': 'ics',
+            '#y': 'ipsilon',
+            '#z': 'zeta'
         };
         $('.categories a').click(function() {
             var lettereIndex = $(this).attr('href');
-            var snd = new Audio(lettere[lettereIndex]);
+            var snd = new Audio('/audio/' + lettere[lettereIndex] + '.mp3');
             snd.play();
             $('html, body').delay(700).animate({
                 scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
