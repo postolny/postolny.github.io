@@ -8,6 +8,6 @@
 #block-result{font-size:14px;margin-bottom:20px;}
 #next_num{margin-left:3px}
 #text_num{font-size:4em;color:#3a3a3a;text-shadow:3px 4px 3px rgba(0,0,0,0.5);font-weight:bold;}
-#an_num{border:1px solid #ddd;box-sizing:border-box;padding:5px 0;text-indent:8px;width:100%;font-weight:bold;font-size:2em;color:#555;margin-bottom:10px;-webkit-transition:all ease-out 0.2s;transition:all ease-out 0.2s;}
+#an_num{border:1px solid #ddd;box-sizing:border-box;padding:5px 0;text-indent:8px;width:100%;font-weight:bold;font-size:2em;color:#555;margin-bottom:10px;transition:all ease-out 0.2s;}
 #an_num:focus{outline:none;border-color:#aaa;}
 #suggerimento{display:none;transform:rotate(180deg);text-align:right;}
