@@ -1,0 +1,10 @@
+<h2>Все статьи с тегом {{ include.tagName }}</h2>
+{% for post in site.tags[include.tagName] %}
+<a class="tags-post" href="{{ post.url | prepend: site.baseurl }}">
+    <div>
+        <span class="tags-post-title">{{ post.title }}</span>
+        <div class="tags-post-line"></div>
+    </div>
+</a>
+other stuff here
+{% endfor %}
