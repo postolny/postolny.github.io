@@ -5,5 +5,10 @@
         <span class="tags-post-title">{{ post.title }}</span>
         <div class="tags-post-line"></div>
     </div>
+    <span class="tags-post-meta">
+        <time datetime="{{ post.date }}">
+            {{ post.date | date:"%Y-%m-%d" }}
+        </time>
+    </span>
 </a>
 {% endfor %}
