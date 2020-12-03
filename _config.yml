@@ -11,7 +11,7 @@ defaults:
       image:     /assets/Rome-Parco-degli-Acquedotti1200x627.jpg
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X
+google_analytics:
 
 # Author
 author:
