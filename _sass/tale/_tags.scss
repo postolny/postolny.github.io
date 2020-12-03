@@ -88,3 +88,15 @@
     }
   }
 }
+
+/* Заголовок с классом tag-item-label на странице с одиночным тегом (в файле tagPagesLoop.html) */
+.tag {
+  &-item {
+    &-label {
+      display: inline-block;
+      margin: 0 0 0.5rem;
+      font-family: $sans-serif;
+      color: $default-color;
+    }
+  }
+}
