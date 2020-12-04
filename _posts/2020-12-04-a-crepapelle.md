@@ -4,7 +4,7 @@ title:  "a crepapelle"
 description: "Слово crepapelle состоит из двух частей: crepa (глагол crepare – трескаться, лопаться) и pelle (кожа; шкура)."
 author: "И. Постольный"
 comments: false
-categories: [a, c]
+categories: a
 tags:
 ---
 
