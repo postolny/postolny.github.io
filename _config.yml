@@ -38,7 +38,7 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       30
+paginate:       10
 seo_paginator_message: "Страница %<current>s | "
 
 # Excludes
