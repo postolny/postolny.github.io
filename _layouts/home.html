@@ -6,7 +6,14 @@ layout: default
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%m %d, %Y" }}</time>
+        <time class="catalogue-time">
+          {% assign months = "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь" | split: "|" %}
+          {% assign m = page.date | date: "%-m" | minus: 1 %}
+          {% assign day = page.date | date: "%d" %}
+          {% assign month = months[m] %}
+          {% assign year = page.date | date: "%Y" %}
+          <span class="date">{{ day }}/{{ month }}/{{ year }}</span>
+        </time>
         <h1 class="catalogue-title">{{ post.title }}</h1>
         <div class="catalogue-line"></div>
 

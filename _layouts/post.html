@@ -12,8 +12,15 @@ layout: default
     {% endif %}
 
     {% if page.date %}
-      <br>
-      <!-- <span>on&nbsp;</span> --><time datetime="{{ page.date }}">{{ page.date | date: "%m %d, %Y" }}</time>
+    <br>
+    <time>
+      {% assign months = "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь" | split: "|" %}
+      {% assign m = page.date | date: "%-m" | minus: 1 %}
+      {% assign day = page.date | date: "%d" %}
+      {% assign month = months[m] %}
+      {% assign year = page.date | date: "%Y" %}
+      <span class="date">{{ day }}/{{ month }}/{{ year }}</span>
+    </time>
     {% endif %}
   </div>
 
