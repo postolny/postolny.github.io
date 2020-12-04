@@ -44,4 +44,7 @@ paginate:       10
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
 # Disqus (Set to your disqus id)
-disqus:         jekyll-tale
+disqus:
+
+# Customizing title modifier for paginated pages
+seo_paginator_message: "%<current>s / %<total>s | "
