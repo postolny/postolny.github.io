@@ -23,7 +23,6 @@ loc.avv. CO ancora di più, molto di più: ne sono convinto più che mai (ещё
 |Ho bisogno di lei ora, più che mai.|Я нуждаюсь в ней, теперь, более чем когда-либо.|
 |Ora siete necessari più che mai.|Вы нужны больше, чем когда-либо.|
 |E ora io vorrei vivere più che mai.|А теперь мне захотелось жить больше, чем когда-либо.|
-|(2 Timoteo 3:1, 13) Più che mai, quindi, dovete continuare a stare attenti alla musica che scegliete.|Поэтому больше, чем когда-либо, тебе необходимо продолжать строго следить за тем, какую музыку ты выбираешь (2 от Матфея 3:1, 13).|
 |Ma alla fine, gli affari sono cresciuti più che mai.|И, в конце концов, бизнес вырос больше, чем когда либо.|
 |Quand'è che sentiamo più che mai il bisogno di avere speranza?|Когда мы больше всего нуждаемся в надежде?|
 |Eppure la pace mondiale continua ad essere più che mai illusoria.|Однако мир на земле так и остается чем-то призрачным.|
