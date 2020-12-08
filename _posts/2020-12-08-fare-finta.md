@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "fare finta"
-description: ""
+description: "loc.v. CO fingere: facciamo finta che questo non sia successo / immaginare, supporre: facciamo finta di aver ottenuto il lavoro: riusciremo a finirlo in tempo? (притворяться: давайте представим, что этого не случилось / воображать, допускать: предположим, что мы получили работу: мы сможем закончить её вовремя?)"
 author: "И. Постольный"
 comments: false
 categories: f
