@@ -14,7 +14,9 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 {:.abbreviazioni}
 |Abbreviazione|Italiano|Русский|
 |---|---|
+|centr.|centrale|центральный|
 |CO|comune|употребительный|
+|colloq.|colloquiale|разговорный|
 |eufem.|eufemistico|эвфемистический|
 |ferr.|ferrovia|относящееся к железной дороге|
 |fig.|figurato|фигуральный, образный, иносказательный|
@@ -22,6 +24,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |fon.|fonetica|фонетика|
 |gener.|generalmente|в целом; обычно|
 |inform.|informatica|информатика|
+|iron.|ironico|ироничский|
 |ling.|linguistica|лингвистика|
 |loc.agg.|locuzione aggettivale|выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)|
 |loc.avv.|locuzione avverbiale|наречное выражение|
@@ -30,8 +33,10 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |loc.v.|locuzione verbale|устойчивое выражение|
 |med.|medicina|медицина|
 |OB|obsoleto|устаревший|
+|pl.|plurale|множественное число|
 |qcs.|qualcosa|что-либо|
 |qd.|quacheduno|кто-то|
+|RE|regionale|областной, региональный|
 |ret.|retorica|риторика|
 |scol.|scuola e università|школа и университет|
 |spec.|specialmente|особенно|
