@@ -88,6 +88,11 @@
                 $(this).toggle(id.indexOf(value) !== -1);
             });
         });
+        
+        $('.brand a').html(function(i, html) {
+            var chars = $.trim(html).split("");
+            return '<span>' + chars.join('</span><span>') + '</span>';
+        });
 
         var Mwidth = 960;
         if ($(window).width() > Mwidth) {
