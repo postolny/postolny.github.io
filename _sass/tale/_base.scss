@@ -317,16 +317,16 @@ input#search {
     }
 }
 @media screen and (max-width: 1200px) {
-  .brand {
-     padding-left: 105px!important;
-   }
+	.brand {
+		padding-left: 105px!important;
+	}
 }
 @media screen and (max-width: 768px) {
-   #palla {
-     left: -30px;
-     z-index: 2;
-   }
-  .brand {
-     padding-left: 20px!important;
-   }
+	#palla {
+		left: -30px;
+		z-index: 2;
+	}
+	.brand {
+	    padding-left: 20px!important;
+	}
 }
