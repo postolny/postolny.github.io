@@ -313,6 +313,8 @@ input#search {
   z-index: 10;
   opacity: 0.8;
   transition: opacity 0.5s ease-in-out;
+  transform-origin: top;
+  animation: palla 10s ease-in-out 0s 1;
     &:hover {
 	opacity: 1;
     }
@@ -330,4 +332,18 @@ input#search {
 	.brand {
 	    padding-left: 20px!important;
 	}
+}
+@keyframes palla{
+    0% { transform: rotate(0); }
+    5% { transform: rotate(12deg); }
+    10% { transform: rotate(-10deg); }
+    15% { transform: rotate(9deg); }
+    20% { transform: rotate(-8deg); }
+    25% { transform: rotate(7deg); }
+    30% { transform: rotate(-6deg); }
+    35% { transform: rotate(5deg); }
+    40% { transform: rotate(-4deg); }
+    45% { transform: rotate(3deg); }
+    50% { transform: rotate(0); }
+    100% { transform: rotate(0); }
 }
