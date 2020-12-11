@@ -301,3 +301,24 @@ input#search {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #c5ed11, 0 0 30px #c5ed11, 0 0 40px #c5ed11, 0 0 55px #c5ed11, 0 0 75px #c5ed11;
     }
 }
+
+#palla {
+	position: fixed;
+	top: -2px;
+	left: 5px;
+	background-image: url(../assets/palla_rossa.png);
+	width: 100px;
+	height: 104px;
+	z-index: 10;
+	opacity: 0.8;
+	transition: opacity 0.5s ease-in-out;
+	&:hover {
+		opacity: 1;
+	}
+}
+@media screen and (max-width: 768px) {
+	#palla {
+		left: -30px;
+		z-index: 2;
+	}
+}
