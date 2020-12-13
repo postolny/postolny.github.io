@@ -21,6 +21,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |ferr.|ferrovia|относящееся к железной дороге|
 |fig.|figurato|фигуральный, образный, иносказательный|
 |fis.|fisica|физика|
+|FO|fondamentale|основной|
 |fon.|fonetica|фонетика|
 |gener.|generalmente|в целом; обычно|
 |inform.|informatica|информатика|
