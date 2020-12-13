@@ -20,7 +20,7 @@ fare una domanda – задать вопрос (менее официально,
 
 |Italiano|Русский|
 |------|------|
-|Vorrei porre una domanda circa la chiusura dell'attività piscatoria a seguito del Decreto Presidenziale n. 28 del 07.08.2013: ma il periodo dell'infezione del "gambero" fino a quando dura ???|Я хотел бы задать вопрос о закрытии промысловой деятельности в соответствии с Указом Президента РФ №1. 28 от 07.08.2013: а "креветочный[^1]" инфекционый период сколько длится???|
+|Vorrei porre una domanda circa la chiusura dell'attività piscatoria a seguito del Decreto Presidenziale n. 28 del 07.08.2013: ma il periodo dell'infezione del "gambero" fino a quando dura ???|Я хотел бы задать вопрос относительно закрытия промысловой деятельности в соответствии с Указом Президента РФ №1. 28 от 07.08.2013: а "креветочный[^1]" инфекционый период сколько длится???|
 |Posso prendermi un minuto per porre una domanda che ho in mente?|Могу ли я задать вопрос, который вертится у меня в голове?|
 |Le sto per porre una domanda adesso, e la domanda è la seguente:|Я хочу задать вам сейчас вопрос, и вопрос следующий:|
 |Lasciami porre una domanda.|Позволь кое-что спросить.|
