@@ -29,10 +29,4 @@ fare una domanda – задать вопрос (менее официально,
 |È impossibile porre una domanda piu'complessa.|Невозможно придумать более сложный вопрос.|
 |Vorrei porre una domanda al Direttore.|Я хотел бы задать вопрос директору.|
 
-[^1]: Il termine generico "gambero" viene utilizzato per indicare sia le specie marine sia quelle d'acqua dolce (p.es. famiglia Astacidae).
-
-Comunemente vengono chiamati "gamberi" o "gamberetti" i rappresentanti dei generi Alpheus, Crangon, Heteropenaeus, Palaemon, Parapenaeus, Penaeus e Periclimenes. Sono detti comunemente "gamberi rossi" le due specie marine Aristeus antennatus e Aristaeomorpha foliacea, raramente Aristaeopsis edwardsiana.
-
-Общее слово gambero (рак) используется для обозначения как морских видов, так и пресноводных (семейство Astacidae)
-
-Приянято называть "gamberi" (раки) o "gamberetti" (креветки) представителей родов Alpheus, Crangon, Heteropenaeus, Palaemon, Parapenaeus, Penaeus и Periclimenes. Обычно называют "красными раками" ("gamberi rossi") два морских вида: Aristeus антеннатус и Aristaeomorpha foliacea, реже Aristaeopsis edwardsiana. [Gambero](https://it.wikipedia.org/wiki/Gambero)
+[^1]: Il termine generico "gambero" viene utilizzato per indicare sia le specie marine sia quelle d'acqua dolce (p.es. famiglia Astacidae).  Comunemente vengono chiamati "gamberi" o "gamberetti" i rappresentanti dei generi Alpheus, Crangon, Heteropenaeus, Palaemon, Parapenaeus, Penaeus e Periclimenes. Sono detti comunemente "gamberi rossi" le due specie marine Aristeus antennatus e Aristaeomorpha foliacea, raramente Aristaeopsis edwardsiana.  Общее слово gambero (рак) используется для обозначения как морских видов, так и пресноводных (семейство Astacidae)  Приянято называть "gamberi" (раки) o "gamberetti" (креветки) представителей родов Alpheus, Crangon, Heteropenaeus, Palaemon, Parapenaeus, Penaeus и Periclimenes. Обычно называют "красными раками" ("gamberi rossi") два морских вида: Aristeus антеннатус и Aristaeomorpha foliacea, реже Aristaeopsis edwardsiana. [Gambero](https://it.wikipedia.org/wiki/Gambero)
