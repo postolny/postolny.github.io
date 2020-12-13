@@ -35,4 +35,4 @@ Comunemente vengono chiamati "gamberi" o "gamberetti" i rappresentanti dei gener
 
 Общее слово gambero (рак) используется для обозначения как морских видов, так и пресноводных (семейство Astacidae)
 
-Приянято называть "gamberi" (раки) o "gamberetti" (креветки) представителей родов Alpheus, Crangon, Heteropenaeus, Palaemon, Parapenaeus, Penaeus и Periclimenes. Обычно называют "красными раками" ("gamberi rossi") два морских вида: Aristeus антеннатус и Aristaeomorpha foliacea, реже Aristaeopsis edwardsiana. [ambero](https://it.wikipedia.org/wiki/Gambero)
+Приянято называть "gamberi" (раки) o "gamberetti" (креветки) представителей родов Alpheus, Crangon, Heteropenaeus, Palaemon, Parapenaeus, Penaeus и Periclimenes. Обычно называют "красными раками" ("gamberi rossi") два морских вида: Aristeus антеннатус и Aristaeomorpha foliacea, реже Aristaeopsis edwardsiana. [Gambero](https://it.wikipedia.org/wiki/Gambero)
