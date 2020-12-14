@@ -46,3 +46,6 @@ exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
 # Disqus (Set to your disqus id)
 disqus:
+
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
