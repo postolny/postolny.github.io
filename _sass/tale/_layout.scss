@@ -128,7 +128,7 @@ nav {
   /*background: $nav-background;*/
   height: $nav-height;
   width: $nav-height;
-  
+
   z-index:1;
 }
 
@@ -143,6 +143,8 @@ nav {
 
     ul {
       display: none;
+      /* Фон ul для исключения просвета, образовавшегося из-за отступа */
+      background: #262626;
 
       li {
         float: none;
@@ -155,6 +157,10 @@ nav {
         ul li a {
           padding-left: 30px;
         }
+        /* Отступ первого эл-та li для выравнивания с гамбургером */
+        &:first-child {
+          padding-top:9px;
+        }
       }
     }
   }
@@ -163,9 +169,9 @@ nav {
     position: static;
   }
   .navigation {
-     background:transparent;
-     box-shadow:none;
-   }
+    background:transparent;
+    box-shadow:none;
+  }
 }
 
 @media screen and (min-width: $breakpoint) {
@@ -220,8 +226,6 @@ nav {
     }
   }
 }
-
-/* Скрытие навигации при сроллировании */
 
 .navigation.visible-scroll-up {
   transform: translate3d(0px, 100%, 0px);
