@@ -51,8 +51,6 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 
 ## Altri
 
-a fatica – ударение обозначается цветом и жирным начертанием
-
 лат. – латинское
 
 муз. – музыкальный термин
