@@ -1,0 +1,180 @@
+/* Numerali */
+
+#wrap_num {
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+.mostrami {
+	cursor: pointer;
+	display: inline-block;
+	color: #fff;
+	width: 90px;
+	padding: 5px 0;
+	text-align: center;
+	background-color: #3a3a3a;
+}
+#risultato {
+	display: inline-block;
+}
+.esatto {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 2px;
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+	background: url(../assets/esatto.png);
+}
+.sbagliato {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 2px;
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+	background: url(../assets/sbagliato.png);
+}
+#block-result {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+#next_num {
+	margin-left: 3px;
+}
+#text_num {
+	font-size: 4em;
+	color: #3a3a3a;
+	text-shadow: 3px 4px 3px rgba(0,0,0,0.5);
+	font-weight: bold;
+}
+#an_num {
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	padding: 5px 0;
+	text-indent: 8px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 2em;
+	color: #555;
+	margin-bottom: 10px;
+	transition: all ease-out 0.2s;
+	&:focus {
+		outline: none;
+		border-color: #aaa;
+	}
+}
+#suggerimento {
+	display: none;
+	transform: rotate(180deg);
+	text-align: right;
+}
+
+/* Radio buttons */
+
+.domanda {
+	padding: 1em;
+	background: #efede7;
+	margin-bottom: 1em;
+	p {
+		margin-bottom: 10px;
+	}
+}
+.radio {
+	display: block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-align: left;
+	+ {
+		.radio {
+			margin-top: 5px;
+		}
+	}
+	input {
+		display: none;
+		+ {
+			span {
+				display: inline-block;
+				position: relative;
+				padding-left: 20px;
+				line-height: normal;
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					border-radius: 50%;
+					margin-right: 5px;
+					width: 16px;
+					height: 16px;
+					border: 1px solid #ccc;
+					background: #fff;
+					line-height: normal;
+				}
+				&:after {
+					content: '';
+					display: block;
+					width: 10px;
+					height: 10px;
+					background: #222;
+					position: absolute;
+					border-radius: 50%;
+					top: 4px;
+					left: 4px;
+					opacity: 0;
+					-webkit-transform: scale(0,0);
+					transform: scale(0,0);
+					transition: all 0.2s cubic-bezier(0.64,0.57,0.67,1.53);
+				}
+			}
+		}
+		&:checked {
+			+ {
+				span {
+					&:after {
+						opacity: 1;
+						-webkit-transform: scale(1,1);
+						transform: scale(1,1);
+					}
+				}
+			}
+		}
+	}
+}
+.quiz-msg {
+	padding: 0.5em;
+	margin-top: 1em;
+}
+.quiz-msg.correct {
+	background: #e8ffc6;
+}
+.quiz-msg.incorrect {
+	background: #ffe5cc;
+}
+label.correct {
+	background: #8dc692;
+	padding: 0.2em;
+	color: #fff;
+	margin-left: -0.2em;
+}
+.risultati {
+	font-size: 14px;
+	margin: 10px 0;
+}
+.quiz-submit {
+	display: inline-block;
+	padding: 5px;
+	cursor: pointer;
+	color: #fff;
+	width: 90px;
+	padding: 5px 0;
+	text-align: center;
+	background-color: #3a3a3a;
+}
+.score {
+	display: inline-block;
+	padding: 5px;
+}
