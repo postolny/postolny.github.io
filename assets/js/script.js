@@ -263,6 +263,19 @@
       );
     });
     
+    $("#accento input").keyup(function () {
+      if (
+        $(this).val().match(/^\d{1}$/)) {
+        $(this).closest("li").next("li").find("input").focus();
+      } else {
+        $(this).val("");
+      }
+    });
+    $("#acc_dacapo").click(function () {
+      $("input").val("");
+      $("#accento input").first().focus();
+    });
+    
     $('.brand a').html(function(i, html) {
             var chars = $.trim(html).split("");
             return '<span>' + chars.join('</span><span>') + '</span>';
