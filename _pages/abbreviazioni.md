@@ -7,25 +7,36 @@ permalink: /abbreviazioni/
 
 In questa pagina vi metterò una lista delle abbreviazioni che potete trovare nei post.
 
-## Abbreviazioni
-
 <input id="search" type="text" placeholder="Найти...">
+
+## Abbreviazioni
 
 {:.abbreviazioni}
 |Abbreviazione|Italiano|Русский|
 |---|---|
+|accez.|accezione|значение (nell'accezione di... – в смысле..., в значении)|
+|agg.|aggettivo|прилагательное|
+|alim.|alimentazione|питание|
+|ant.|antico|древний|
+|av.|avanti|до|
 |centr.|centrale|центральный|
+|cfr.|confronta|совпадает|
 |CO|comune|употребительный|
 |colloq.|colloquiale|разговорный|
+|estens.|estensivo|экстенсивный|
 |eufem.|eufemistico|эвфемистический|
 |ferr.|ferrovia|относящееся к железной дороге|
 |fig.|figurato|фигуральный, образный, иносказательный|
+|fin.|finanza|финансы|
 |fis.|fisica|физика|
 |FO|fondamentale|основной|
 |fon.|fonetica|фонетика|
+|fr.|francese|французский|
 |gener.|generalmente|в целом; обычно|
 |inform.|informatica|информатика|
 |iron.|ironico|ироничский|
+|LE.|letterario|литературный|
+|lett.|letteratura|литература|
 |ling.|linguistica|лингвистика|
 |loc.agg.|locuzione aggettivale|выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)|
 |loc.avv.|locuzione avverbiale|наречное выражение|
@@ -33,27 +44,48 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |loc.s.m.|locuzione sostantivale maschile|субстантивное выражение мужского рода|
 |loc.v.|locuzione verbale|устойчивое выражение|
 |med.|medicina|медицина|
+|merceol.|merceologia|товароведение|
+|numism.|numismatica|нумизматика|
 |OB|obsoleto|устаревший|
+|pop.|popolare|народный|
 |pl.|plurale|множественное число|
+|prob.|probabilmente|возможно|
+|propr.|propriamente|точно, правильно|
 |qcs.|qualcosa|что-либо|
 |qd.|quacheduno|кто-то|
 |RE|regionale|областной, региональный|
 |ret.|retorica|риторика|
 |scol.|scuola e università|школа и университет|
+|sim.|simile|подобный|
+|s.m.|sostantivo maschile|существительное мужского рода|
 |spec.|specialmente|особенно|
 |s.f.inv.|sostantivo femminile invariabile|несклоняемое имя существительное женского рода|
 |telecom.|telecomunicazione|телекоммуникация|
 |TS|Tecnico-Specialistico|специально-технический|
+|var.|variante|вариант|
 |v.procompl.|verbo procomplementare|прокомпиляционный глагол|
 |v.pronom.intr.|verbo pronominale intransitivo|местоименный непереходный (интранзитивный) глагол|
 |v.pronom.tr.|verbo pronominale transitivo|местоименный переходный (транзитивный) глагол|
 |valore intens.|valore intensivo|интенсивное значение|
 
-## Altri
+## Аббревиатуры
 
-лат. – латинское
-
-муз. – музыкальный термин
+{:.abbreviazioni}
+|Аббревиатура|Значение|
+|---|---|
+|лат.|латинское|
+|лит.|литературный|
+|мн.ч.|множественное число|
+|муз.|музыкальный термин|
+|нар.|народный|
+|нум.|нумизматика|
+|прил.|прилагательное|
+|спец.-тех.|специально-технический|
+|сущ. м.р.|существительное мужского рода|
+|товаровед.|товароведение|
+|уст.|устаревший|
+|фиг.|фигурально|
+|экст.|экстенсивный|
 
 Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 
