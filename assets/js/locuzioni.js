@@ -45,7 +45,18 @@ $(function () {
     "Non prendertela per qualcosa di così insignificante. – Не надо себя мучить из-за этого пустяка.",
     "Non prendertela per quel che è successo. – Не переживай из-за того, что случилось.",
     "È questo che mi dà da pensare. – Это меня больше всего и заботит.",
-    "Sai cosa mi dà da pensare? – Знаешь что меня беспокоит?"
+    "Sai cosa mi dà da pensare? – Знаешь что меня беспокоит?",
+    "i giorni se ne vanno – дни проходят",
+    "la macchia se n'è andata – пятно исчезло",
+    "Lui siede in camera mia e non ha intenzione di andarsene. – Он сидит в моей комнате и уходить не собирается.",
+    "Me ne vado. – Я ухожу.",
+    "Te ne intendi di vini? No, non me ne intendo. – Ты рабираешься в винах? Нет, не разбираюсь.",
+    "Te ne intendi di arte? Sì, me ne intendo, la mia prima laurea è in storia dell'arte. – Ты знаток в искусстве? Да, знаток, – мой первый диплом – по истории искусств.",
+    "Devi intendertene di macchine. –	Должно быть ты эксперт по машинам.",
+    "Conosco una persona… che se ne intende di queste cose. – Я знаю одного человека… которые разбирается в этих вещах.",
+    "Da allora sono trascorsi cinque anni. – С тех пор прошло пять лет.",
+    "da allora passarono più di cinquant'anni – с тех пор прошло свыше полувека",
+    "sono trascorsi molti anni da allora – с тех пор протекло много лет"
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
