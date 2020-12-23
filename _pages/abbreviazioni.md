@@ -14,17 +14,20 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 {:.abbreviazioni}
 |Abbreviazione|Italiano|Русский|
 |---|---|
+|abl.|ablativo|отложительный падеж; творительный падеж|
 |accez.|accezione|значение (nell'accezione di... – в смысле..., в значении)|
 |agg.|aggettivo|прилагательное|
 |alim.|alimentazione|питание|
 |ant.|antico|древний|
 |av.|avanti|до|
+|avv.|avverbio|наречие|
 |centr.|centrale|центральный|
 |cfr.|confronta|совпадает|
 |CO|comune|употребительный|
 |colloq.|colloquiale|разговорный|
 |estens.|estensivo|экстенсивный|
 |eufem.|eufemistico|эвфемистический|
+|f.|femminile|женский род|
 |ferr.|ferrovia|относящееся к железной дороге|
 |fig.|figurato|фигуральный, образный, иносказательный|
 |fin.|finanza|финансы|
@@ -35,6 +38,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |gener.|generalmente|в целом; обычно|
 |inform.|informatica|информатика|
 |iron.|ironico|ироничский|
+|lat.|latino|латинский|
 |LE.|letterario|литературный|
 |lett.|letteratura|литература|
 |ling.|linguistica|лингвистика|
@@ -49,13 +53,16 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |OB|obsoleto|устаревший|
 |pop.|popolare|народный|
 |pl.|plurale|множественное число|
+|prep.|preposizione|предлог|
 |prob.|probabilmente|возможно|
 |propr.|propriamente|точно, правильно|
 |qcs.|qualcosa|что-либо|
 |qd.|quacheduno|кто-то|
 |RE|regionale|областной, региональный|
 |ret.|retorica|риторика|
+|scherz.|scherzoso|шутливый|
 |scol.|scuola e università|школа и университет|
+|sec.|secolo|век|
 |sim.|simile|подобный|
 |s.m.|sostantivo maschile|существительное мужского рода|
 |spec.|specialmente|особенно|
