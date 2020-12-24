@@ -118,7 +118,6 @@ $(function () {
     "Ne abbiamo già parlato fin troppo. – Мы и так слишком много об этом говорим.",
     "fino a quando non saranno date altre direttive – пока не будут даны другие директивы",
     "nella melma fino al collo – по уши в грязи",
-    "essere nella merda fino al collo – быть по уши в говне",
     "essere indebitato fino al collo (essere sommerso dai debiti) – быть в долгу, как в шелку",
     "fino ai / nei capelli; fin sopra i capelli; fino alla punta dei capelli – по уши, по горло; до мозга костей",
     "Noi siamo soldati dell'Armata Rossa, e difenderemo la nostra madre patria fino all'ultima goccia di sangue. – Мы – бойцы Красной армии и будем защищать нашу Родину до последней капли крови.",
