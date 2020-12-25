@@ -28,6 +28,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |estens.|estensivo|экстенсивный|
 |eufem.|eufemistico|эвфемистический|
 |f.|femminile|женский род|
+|fam.|familiare|обиходный|
 |ferr.|ferrovia|относящееся к железной дороге|
 |fig.|figurato|фигуральный, образный, иносказательный|
 |fin.|finanza|финансы|
@@ -44,6 +45,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |ling.|linguistica|лингвистика|
 |loc.agg.|locuzione aggettivale|выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)|
 |loc.avv.|locuzione avverbiale|наречное выражение|
+|loc.pragm.|[locuzione pragmatica](https://dizionario.internazionale.it/parola/locuzione-pragmatica)|прогматическое выражение|
 |loc.s.f.|locuzione sostantivale femminile|субстантивное выражение женского рода|
 |loc.s.m.|locuzione sostantivale maschile|субстантивное выражение мужского рода|
 |loc.v.|locuzione verbale|устойчивое выражение|
@@ -107,6 +109,6 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [Corriere della sera](https://dizionari.corriere.it/)
 * [Grande Dizionario Italiano di GABRIELLI ALDO](https://www.grandidizionari.it/dizionario_italiano.aspx)
 * [Dizionario d'ortografia e di pronunzia](http://www.dizionario.rai.it/)
-* [Glosbe](https://ru.glosbe.com/)
+* [Glosbe](https://ru.glosbe.com/it/ru)
 * [Dialetti d'Italia](https://www.dialettando.com/)
 * [Lingvo Live](https://www.lingvolive.com/ru-ru)
