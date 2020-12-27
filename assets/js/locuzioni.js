@@ -164,6 +164,7 @@ $(function () {
     "Questa non ci voleva. – А это не очень хорошо.",
     "Questa non ci voleva proprio oggi. – Это не то, что мне бы сегодня понадобилось.",
     "Te l'ho detto che non ci voleva niente. – Говорил тебе – это не займет много времени.",
+    "Ma non è la stessa cosa. – Это не одно и то же."
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
