@@ -8,7 +8,7 @@ categories: v
 tags: Мысли
 ---
 
-В итальянском языке также часто употребляют глагол amare – любить. Но есть ли разница между voler bene и amare. Я знаю, что оба варианта часто смешивают и употребляют при схожих обстоятельствах. За разъяснениями я обратился к Элене Меллано (Elenna Mellano). Я спросил её нельзя ли объяснить "voler bene" как "volere il bene di qualcuno" (желать кому-то добра) и если нет, то какова разница? Вот её ответ:
+В итальянском языке также часто употребляют глагол amare – любить. Но есть ли разница между voler bene и amare. Я знаю, что оба варианта часто смешивают и употребляют при схожих обстоятельствах. За разъяснениями я обратился к Элене Меллано (Elena Mellano). Я спросил её нельзя ли объяснить "voler bene" как "volere il bene di qualcuno" (желать кому-то добра) и если нет, то какова разница? Вот её ответ:
 
 "la differenza tra voler bene, voler il bene e amare? Credo che non si possa spiegare in alcuna lingua. Si... voler bene vuol dire voler il bene di qualcuno. Un fratello, un amico, un conoscente, il marito, la moglie. Amare forse è più complesso, amare è volere il bene di qualcuno ma non solo. È sentirlo dentro, portarlo nel cuore, averne bisogno, vedere coi suoi occhi, respirare la sua aria... Molto difficile da spiegare.
 
@@ -40,7 +40,7 @@ nutrire affetto o amore per qcn., amare: voglio molto bene ai miei figli (пит
 |Ti voglio molto bene.|Я тебя очень люблю.|
 |Voglio bene a Maria.|Я люблю Марию.|
 |Ti amo molto!|Я очень тебя люблю!|
-|Ti amo tanto|Я так сильно люблю тебя!|
+|Ti amo tanto!|Я так сильно люблю тебя!|
 |Ti voglio bene ma non ti amo.|Люблю тебя как брат.|
 |Ti amo con tutto il cuore.|Я люблю тебя всем сердцем.|
 |Ti amo con tutta l'anima.|Я люблю тебя всей душей.|
