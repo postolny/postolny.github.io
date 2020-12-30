@@ -12,7 +12,7 @@ tags: Мысли
 
 "la differenza tra voler bene, voler il bene e amare? Credo che non si possa spiegare in alcuna lingua. Si... voler bene vuol dire voler il bene di qualcuno. Un fratello, un amico, un conoscente, il marito, la moglie. Amare forse è più complesso, amare è volere il bene di qualcuno ma non solo. È sentirlo dentro, portarlo nel cuore, averne bisogno, vedere coi suoi occhi, respirare la sua aria... Molto difficile da spiegare.
 
-Да... voler bene значит желать кому-то добра. Брату, другу, знакомому, мужу, жене. Amare вероятно понятие более сложное, amare – это желать кому-то добра, но не только. Это ощущать его внутри, носить в своём сердце, нуждаться в нём, видеть перед своими глазами, дышать его воздухом...
+"Разница между voler bene, voler il bene и amare? Думаю, что невозможно это объяснить ни на каком другом языке. Да... voler bene значит желать кому-то добра. Брату, другу, знакомому, мужу, жене. Amare вероятно понятие более сложное, amare – это желать кому-то добра, но не только. Это ощущать его внутри, носить в своём сердце, нуждаться в нём, видеть перед своими глазами, дышать его воздухом..." Это очень трудно объяснить".
 
 Объяснение между двумя этими понятиями я обнаружил у Катулла:
 
