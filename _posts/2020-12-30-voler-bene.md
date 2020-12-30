@@ -57,7 +57,7 @@ nutrire affetto o amore per qcn., amare: voglio molto bene ai miei figli (пит
 |Ogni giorno che passa, ringrazio Dio che mi ha dato la migliore madre del mondo. Ti voglio bene mamma!|Каждый прожитый день я благодарю Бога за то, что он дал мне самую лучшую мать в мире. Я люблю тебя, мама!|
 |Ti amo mamma e ti amerò per sempre!|Я люблю тебя, мама и я буду любить тебя вечно!|
 |Papà, i tuoi baci e abbracci mi contengono e mi guidano. Tu sei il migliore e io ti amo molto.|Папа, твои поцелуи и объятья сдерживают меня и управляют мной. Ты – лучший и я очень тебя люблю.|
-|Non importa quanto ci pensi, voglio sempre stare con te perche ti voglio bene.|Не важно что ты думаешь, я хочу всегда быть с тобой, потому что я люблю тебя|
+|Non importa quanto ci pensi, voglio sempre stare con te perche ti voglio bene.|Не важно что ты думаешь, я хочу всегда быть с тобой, потому что я люблю тебя.|
 |La carità del povero è di voler bene al ricco. ([Diane de Beausacq](https://fr.wikipedia.org/wiki/Diane_de_Beausacq))|Милосердие бедных - любить богатых.|
 |Può voler bene agli altri chi non vuol bene a se stesso? ([Erasmo da Rotterdam](https://it.wikipedia.org/wiki/Erasmo_da_Rotterdam))|Может ли любить (желать добра) тот, кто не любит самого себя (не желает добра самому себе)? ([Эразм Роттердамский](https://ru.wikipedia.org/wiki/Эразм_Роттердамский))|
 |Se dovessimo costruire l'amicizia su solide fondamenta, dovremmo voler bene agli amici per amor loro e non per amor nostro. ([Charlotte Brontë](https://en.wikipedia.org/wiki/Charlotte_Brontë))|Если бы мы собирались строить дружбу на прочном фундаменте, мы должны были бы любить друзей ради них, а не ради нас самих. ([Шарлотта Бронте](https://ru.wikipedia.org/wiki/Бронте,_Шарлотта))|
