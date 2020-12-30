@@ -164,7 +164,11 @@ $(function () {
     "Questa non ci voleva. – А это не очень хорошо.",
     "Questa non ci voleva proprio oggi. – Это не то, что мне бы сегодня понадобилось.",
     "Te l'ho detto che non ci voleva niente. – Говорил тебе – это не займет много времени.",
-    "Ma non è la stessa cosa. – Это не одно и то же."
+    "Ma non è la stessa cosa. – Это не одно и то же.",
+    "Ti amo con tutta me stessa / tutto me stesso, e anche di più. – Я люблю тебя как саму себя / самого себя и даже больше.",
+    "Quando una donna dice: \"Non ti amo più\" c'è ancora un filo dI speranza; ma quando dIce: \"Amo un altro\" è davvero finita. (Henry Fielding)	– Когда женщина говорит: \"Я больше тебя не люблю\", есть ещё лучик надежды; но когда она говорит: \"Я люблю другого\", то действительно всё кончено. (Генри Филдинг)",
+    "Sei la cosa migliore che potrebbe accadermi nella vita, ti amerò per sempre. – Ты – самое лучшее, что только могло случиться со мной в жизни, я буду любить тебя вечно.",
+    "Ogni giorno che passa, ringrazio Dio che mi ha dato la migliore madre del mondo. Ti voglio bene mamma! – Каждый прожитый день я благодарю Бога за то, что он дал мне самую лучшую мать в мире. Я люблю тебя, мама!",
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
