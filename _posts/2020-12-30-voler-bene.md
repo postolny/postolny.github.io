@@ -20,6 +20,41 @@ tags: Мысли
 
 «[Катулл](https://ru.wikipedia.org/wiki/Гай_Валерий_Катулл) [в [стихе 72](http://ancientrome.ru/antlitr/t.htm?a=1449001000#72)] констатирует, что предательства Лесбии увеличивают его любовь, возбуждая и обостряя огонь желания. Но в то же время он чувствует, что из-за тех же предательств безвозвратно теряется другая часть его любви к Лесбии: уважение, доброжелательность (благожелательность).
 
+Mi metto anche qui i testi:
+
+### Testo latino carme 72 Catullo:
+
+> Dicebas quondam solum te nosse Catullum,  
+Lesbia, nec prae me velle tenere Iovem.  
+Dilexi tum te non tantum ut vulgus amicam,  
+sed pater ut gnatos diligit et generos.  
+Nunc te cognovi: quare etsi impensius uror,  
+multo mi tamen es vilior et levior. Omoteleuto  
+« Qui potis est ? », inquis quod amantem iniuria talis  
+cogit amare magis, sed bene velle minus.
+
+### Testo del carme 72 di Catullo con traduzione fedele alla grammatica:
+
+> Una volta dicevi che avresti fatto l'amore solo con Catullo,  
+Lesbia, e che al posto mio non avresti voluto abbracciare (neanche) Giove.  
+Ti amai, in quel tempo, non tanto come la gente ama l'amica,  
+ma come il padre ama i figli e i generi.  
+Adesso so chi sei: perciò, anche se brucio di fiamma più ardente,  
+sei per me molto più vile e spregevole.  
+"Com'è possibile?", dici. Perché un'offesa del genere  
+impone l'amante ad amare di più, ma a voler bene di meno.
+
+### Гай Валерий Катулл Веронский, стих 72 (перевод с лат. С. В. Шервинского):
+
+> Ты говорила не раз, что любишь только Катулла,  
+Лесбия, — не предпочтешь даже Юпитера мне,  
+И полюбил я тебя не так, как обычно подружек,  
+Но как родитель — сынов или дочерних мужей.  
+Ныне тебя я узнал и ежели жарче пылаю,  
+Много ты кажешься мне хуже и ниже теперь.  
+Спросишь: как? почему? При таком вероломстве любовник  
+Может сильнее любить, но уж не так уважать,
+
 Поскольку сайту я дал назначение быть словарным, приведу, конечно, определение этого замечательного выражения из словаря De Mauro:
 
 loc.v.  CO
