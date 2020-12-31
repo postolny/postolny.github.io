@@ -14,9 +14,9 @@ tags: Мысли
 
 "Разница между voler bene, voler il bene и amare? Думаю, что невозможно это объяснить ни на каком другом языке. Да... voler bene значит желать кому-то добра. Брату, другу, знакомому, мужу, жене. Amare вероятно понятие более сложное, amare – это желать кому-то добра, но не только. Это ощущать его внутри, носить в своём сердце, нуждаться в нём, видеть перед своими глазами, дышать его воздухом..." Это очень трудно объяснить".
 
-Объяснение между двумя этими понятиями я обнаружил у Катулла:
+Объяснение между двумя этими понятиями я обнаружил у Катулла ([статья](http://www.accademianuovaitalia.it/index.php/cultura-e-filosofia/filosofia/2180-catullo-amare-e-voler-bene)):
 
-«[Catullo](https://it.wikipedia.org/wiki/Gaio_Valerio_Catullo) [nel carme 72] constata che i tradimenti di Lesbia accrescono il suo amore, eccitando e rendendo più acuto il fuoco del desiderio. Ma allo stesso tempo egli sente che a causa di questi stessi tradimenti va perduta irrimediabilmente un'altra componente del suo amore per Lesbia: la stima, la benevolenza.
+«[Catullo](https://it.wikipedia.org/wiki/Gaio_Valerio_Catullo) [nel [carme 72](https://catullopoesiecarmi.altervista.org/carme-72-di-catullo-testo-latino-e-traduzione-in-italiano/)] constata che i tradimenti di Lesbia accrescono il suo amore, eccitando e rendendo più acuto il fuoco del desiderio. Ma allo stesso tempo egli sente che a causa di questi stessi tradimenti va perduta irrimediabilmente un'altra componente del suo amore per Lesbia: la stima, la benevolenza.
 
 «[Катулл](https://ru.wikipedia.org/wiki/Гай_Валерий_Катулл) [в стихе 72] констатирует, что предательства Лесбии увеличивают его любовь, возбуждая и обостряя огонь желания. Но в то же время он чувствует, что из-за тех же предательств безвозвратно теряется другая часть его любви к Лесбии: уважение, доброжелательность (благожелательность).
 
