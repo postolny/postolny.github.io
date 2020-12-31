@@ -18,7 +18,7 @@ tags: Мысли
 
 «[Catullo](https://it.wikipedia.org/wiki/Gaio_Valerio_Catullo) [nel [carme 72](https://catullopoesiecarmi.altervista.org/carme-72-di-catullo-testo-latino-e-traduzione-in-italiano/)] constata che i tradimenti di Lesbia accrescono il suo amore, eccitando e rendendo più acuto il fuoco del desiderio. Ma allo stesso tempo egli sente che a causa di questi stessi tradimenti va perduta irrimediabilmente un'altra componente del suo amore per Lesbia: la stima, la benevolenza.
 
-«[Катулл](https://ru.wikipedia.org/wiki/Гай_Валерий_Катулл) [в стихе 72] констатирует, что предательства Лесбии увеличивают его любовь, возбуждая и обостряя огонь желания. Но в то же время он чувствует, что из-за тех же предательств безвозвратно теряется другая часть его любви к Лесбии: уважение, доброжелательность (благожелательность).
+«[Катулл](https://ru.wikipedia.org/wiki/Гай_Валерий_Катулл) [в [стихе 72](http://ancientrome.ru/antlitr/t.htm?a=1449001000#72)] констатирует, что предательства Лесбии увеличивают его любовь, возбуждая и обостряя огонь желания. Но в то же время он чувствует, что из-за тех же предательств безвозвратно теряется другая часть его любви к Лесбии: уважение, доброжелательность (благожелательность).
 
 Поскольку сайту я дал назначение быть словарным, приведу, конечно, определение этого замечательного выражения из словаря De Mauro:
 
