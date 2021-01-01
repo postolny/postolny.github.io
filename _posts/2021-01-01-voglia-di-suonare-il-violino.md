@@ -16,7 +16,7 @@ Ora la vita è troppo impegnativa. E se una persona non ha la passione vera e la
 
 Tu hai la passione per la musica, io ho la passione per il disegno... Giulia non ha passione per nulla. Un po' mi dispiace, ma mi sento anche meglio perchè forse soffrirà meno.
 
-У тебя страсть к музыке, у меня – к рисованию... У Джулия ни к чему нет страсти. Мне жаль немного, но мне даже лучше, потому что так она будет меньше страдать.
+У тебя страсть к музыке, у меня – к рисованию... У Джулии ни к чему нет страсти. Мне жаль немного, но мне даже лучше, потому что так она будет меньше страдать.
 
 Я задумался над этим. Тем более, что у меня самого время от времени пропадало желание заниматься и даже слушать музыку. Сегодня я написал Элене:
 
