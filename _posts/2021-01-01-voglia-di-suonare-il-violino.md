@@ -20,7 +20,7 @@ Tu hai la passione per la musica, io ho la passione per il disegno... Giulia non
 
 Я задумался над этим. Тем более, что у меня самого время от времени пропадало желание заниматься и даже слушать музыку. Сегодня я написал Элене:
 
-Ciao, Elena! Buon giorno. Volevo dirti qualcosa. Ho un amico che aveva suonato il violino anche lui e anche lui ha perso la passione. Mi pare che la causa stia nel fatto che il violino non è lo strumento amato così come il pianoforte. Poi se Giulia non ama ascoltare il violino, non vorrà suonarlo.
+Ciao, Elena! Volevo dirti qualcosa. Ho un amico che aveva suonato il violino anche lui e anche lui ha perso la passione. Mi pare che la causa stia nel fatto che il violino non è lo strumento amato così come il pianoforte. Poi se Giulia non ama ascoltare il violino, non vorrà suonarlo.
 
 ... У меня есть друг, который тоже играл на скрипке и он тоже потерял страсть. Мне кажется что причина кроется в том, что скрипка не такой любимый инструмент как фортепиано. Кроме того, если Джулия не любит слушать скрипку, то не захочет и играть на ней.
 
