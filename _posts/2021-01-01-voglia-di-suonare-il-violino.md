@@ -16,11 +16,11 @@ Ora la vita è troppo impegnativa. E se una persona non ha la passione vera e la
 
 Tu hai la passione per la musica, io ho la passione per il disegno... Giulia non ha passione per nulla. Un po' mi dispiace, ma mi sento anche meglio perchè forse soffrirà meno.
 
-У тебя страсть к музыке, у меня – к рисованию... У Джулии ни к чему нет страсти. Мне жаль немного, но мне даже лучше, потому что так она будет меньше страдать.
+У тебя есть страсть к музыке, у меня – к рисованию... У Джулии ни к чему нет страсти. Мне жаль немного, но мне даже лучше, потому что так она будет меньше страдать.
 
-Я задумался над этим. Тем более, что у меня самого время от времени пропадало желание заниматься и даже слушать музыку. На следующий день я написал Элене:
+Я задумался над этим. Тем более, что у меня самого время от времени пропадало желание заниматься и даже слушать музыку. Сегодня я написал Элене:
 
-Ciao, Elena! Volevo dirti una cosa. Ho un amico che aveva suonato il violino anche lui e anche lui ha perso la passione. Mi pare che la causa stia nel fatto che il violino non è lo strumento così amato come il pianoforte. Poi se Giulia non ama ascoltare il violino, non vorrà suonarlo.
+Ciao, Elena! Volevo dirti una cosa. Ho un amico che aveva suonato il violino anche lui e anche lui ha perso la passione. Mi pare che la causa stia nel fatto che il violino non è uno strumento così amato come il pianoforte. Poi se Giulia non ama ascoltare il violino, non vorrà suonarlo.
 
 ... У меня есть друг, который тоже играл на скрипке и он тоже потерял страсть. Мне кажется, что причина кроется в том, что скрипка не такой любимый инструмент, как фортепиано. Кроме того, если Джулия не любит слушать скрипку, то не захочет и играть на ней.
 
