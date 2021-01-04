@@ -11,7 +11,7 @@ tags:
 ### Significato
 сидеть
 
-Faccio un lavoro sedentario... Attualmente lavoro come pianista accompagnatore del coro in una scuola di musica.
+> Faccio un lavoro sedentario... Attualmente lavoro come pianista accompagnatore del coro in una scuola di musica.
 
 ### Esempi d'uso
 
