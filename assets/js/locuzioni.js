@@ -177,7 +177,11 @@ $(function () {
     "Penso di non essere solito ingannare gli amici. – Думаю, я не имею привычку обманывать друзей.",
     "Ne riparleremo al mio ritorno. – Мы поговорим об этом (снова), когда я вернусь.",
     "Ne riparleremo dopo, a cena. – Мы поговорим об этом позже, за ужином.",
-    "Ne parleremo più tardi. – Мы поговорим об этом позже."
+    "Ne parleremo più tardi. – Мы поговорим об этом позже.",
+    "parlare fluentemente una lingua – бегло говорить на языке; parlare fluentemente un'altra lingua – бегло говорить на другом языке; parlare fluentemente l'italiano – бегло говорить на итальянском; parlare correntemente l'italiano – свободно говорить на итальянском; parlare perfettamente l'italiano – отлично говорить на итальянском",
+    "Lo conosco perfettamente. – Я его отлично знаю.",
+    "Credimi, ti capisco alla perfezione. – Поверь мне, я тебя прекрасно понимаю.",
+    "Come sappiamo tutti, non ci sono limiti alla perfezione. – Как нам всем известно, нет предела совершенству."
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
