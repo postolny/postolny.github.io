@@ -33,5 +33,8 @@ Nicoletta Panni aveva quello che comunemente viene chiamato: Un dono di natura -
 
 {% include audio.html id='W._A._Mozart_Laudate_dominum.mp3' %}
 
+Mozart, Laudate Dominum, K. 339
+{: .center}
+
 ![Nicoletta Panni]({{ site.baseurl }}/img/zerlina.jpg "Nicoletta Panni")
-_Mozart, Laudate Dominum, K. 339_
+_Nicoletta Panni_
