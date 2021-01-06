@@ -1,34 +1,37 @@
 ---
 layout: post
 title:  "a cappella"
+description: "В статья рассказывается о происхождении музыкального термина \"a capella\", а также представлены примеры употребления."
 author: "И. Постольный"
 comments: false
 categories: a
 tags:
 ---
 
+### Significato
+
 Без сопровождения (муз.)
 
 ### Esempi d'uso
 
-Italiano                                                                                                                               | Русский
----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------
-È una nuova stagione per il canto a cappella.                                                                                          | Начинается новый сезон пения а капелла.
-No, a cappella, per favore.                                                                                                            | Нет, a cappella, пожалуйста.
-Avevamo il club del libro e i cori natalizi a cappella.                                                                                | У нас был книжный клуб и святочные хоры a cappella.
-Siamo dell'associazione universitaria del canto a cappella.                                                                            | Мы из студенческой ассоциации пения a cappella.
-Potremmo cantare... a cappella, quello funziona sempre.                                                                                | Мы можем спеть a cappella, это всегда срабатывает.
-Ha detto solo che era qualcuno dalla gara di canto a cappella.                                                                         | Она сказала, что это кто-то из участников конкурса по пению a cappella .
-No, è... facciamo parte del coro a cappella, siamo solo amici.                                                                         | Нет, он... мы вместе поём в хоре a cappella, мы просто друзья.
-Benvenuti alla finale 2012 del Campionato Universitario Internazionale del Canto A Cappella.                                           | Добро пожаловать на финал международного студенческого конкурса a cappella 2012 года.
-Il canto a cappella è il mio pastore.                                                                                                  | Пение a cappella ведет меня по жизни! (Пение a cappella – мой пастырь.)
-Adoro l'a cappella.                                                                                                                    | Обожаю "а капелла".
-Io direi a cappella.                                                                                                                   | Думаю, без сопровождения.
-Allora canti a cappella.                                                                                                               | Тогда спойте а капелла!
-Ok, per sua informazione, sono un fotografo affermato, cantavo a cappella al college e posso far parlare un paio di scarpe da tip tap. | К вашему сведению, я профессиональный фотограф, я пел акапелла в колледже а также владею несколькими элементами чечетки.
-Siamo dell'associazione universitaria del canto a cappella.                                                                            | Мы – из "Университетской Ассоциации Акапелльного Пения".
-Nessuno mi ha avvisato che avrei dovuto cantare a cappella.                                                                            | Ник то меня не предупреждал, что я должен петь a cappella.
-Ok, di certo loro non cantano i cori natalizi a cappella.                                                                              | Хорошо, наверняка они не поют рождественские хоры a cappella.
+| Italiano | Русский |
+|----------|---------|
+| È una nuova stagione per il canto a cappella. | Начинается новый сезон пения а капелла. |
+| No, a cappella, per favore. | Нет, a cappella, пожалуйста. |
+| Avevamo il club del libro e i cori natalizi a cappella. | У нас был книжный клуб и святочные хоры a cappella. |
+| Siamo dell'associazione universitaria del canto a cappella. | Мы из студенческой ассоциации пения a cappella. |
+| Potremmo cantare... a cappella, quello funziona sempre. | Мы можем спеть a cappella, это всегда срабатывает. |
+| Ha detto solo che era qualcuno dalla gara di canto a cappella. | Она сказала, что это кто-то из участников конкурса по пению a cappella . |
+| No, è... facciamo parte del coro a cappella, siamo solo amici. | Нет, он... мы вместе поём в хоре a cappella, мы просто друзья. |
+| Benvenuti alla finale 2012 del Campionato Universitario Internazionale del Canto A Cappella. | Добро пожаловать на финал международного студенческого конкурса a cappella 2012 года. |
+| Il canto a cappella è il mio pastore. | Пение a cappella ведет меня по жизни! (Пение a cappella – мой пастырь.) |
+| Adoro l'a cappella. | Обожаю "а капелла". |
+| Io direi a cappella. | Думаю, без сопровождения. |
+| Allora canti a cappella. | Тогда спойте а капелла! |
+| Ok, per sua informazione, sono un fotografo affermato, cantavo a cappella al college e posso far parlare un paio di scarpe da tip tap. | К вашему сведению, я профессиональный фотограф, я пел акапелла в колледже а также владею несколькими элементами чечетки. |
+| Siamo dell'associazione universitaria del canto a cappella. | Мы – из "Университетской Ассоциации Акапелльного Пения". |
+| Nessuno mi ha avvisato che avrei dovuto cantare a cappella. | Ник то меня не предупреждал, что я должен петь a cappella. |
+| Ok, di certo loro non cantano i cori natalizi a cappella. | Хорошо, наверняка они не поют рождественские хоры a cappella. |
 
 ## Perchè si dice a cappella
 
@@ -66,5 +69,5 @@ Con il progredire dei tempi, il canto a cappella non è rimasto confinato nell'a
 
 С течением времени пение а капелла не ограничивалось священной сферой, но распространилось и на другие музыкальные области. Такой тип исполнения, дающий большой простор для выражения эмоций, на самом деле был пересмотрен в народном пении, в джазовой музыке, в музыке поп, в свинге, в госпеле (жанр духовной музыки), в спиричуэле (духовные песни афроамериканцев – протестантов), традиционном фолке, ду-вопе пятидесятых.
 
-![Cappelle laterali]({{ site.baseurl }}/img/dettaglio-cappelle-laterali.jpg "Cappelle laterali")
+![Cappelle laterali]({{ site.baseurl }}/img/dettaglio-cappelle-laterali.jpg "Cappelle laterali"){.border}
 _Cappelle laterali_
