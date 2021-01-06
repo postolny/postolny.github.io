@@ -69,5 +69,5 @@ Con il progredire dei tempi, il canto a cappella non è rimasto confinato nell'a
 
 С течением времени пение а капелла не ограничивалось священной сферой, но распространилось и на другие музыкальные области. Такой тип исполнения, дающий большой простор для выражения эмоций, на самом деле был пересмотрен в народном пении, в джазовой музыке, в музыке поп, в свинге, в госпеле (жанр духовной музыки), в спиричуэле (духовные песни афроамериканцев – протестантов), традиционном фолке, ду-вопе пятидесятых.
 
-![Cappelle laterali]({{ site.baseurl }}/img/dettaglio-cappelle-laterali.jpg "Cappelle laterali"){.border}
+![Cappelle laterali]({{ site.baseurl }}/img/dettaglio-cappelle-laterali.jpg "Cappelle laterali"){: .border}
 _Cappelle laterali_
