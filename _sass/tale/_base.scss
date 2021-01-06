@@ -62,6 +62,18 @@ img {
   max-width: 100%;
 }
 
+audio {
+	&:active {
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+	&::-moz-focus-inner {
+		border: 0;
+	}
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -154,6 +166,12 @@ input#search {
   }
 }
 
+.audio-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @-webkit-keyframes "albero" {
   0% {
     transform: scale3d(1,1,1);
@@ -239,122 +257,7 @@ input#search {
 }
 
 #locuzioni {
-  padding: 10px;
-  margin: 20px 0;
-  border-left: 0.2rem dashed #353535;
-}
-
-.brand a span:nth-child(1) {
-    animation: lumicino-1 1s infinite;
-}
-
-.brand a span:nth-child(2) {
-    animation: lumicino-2 1s infinite;
-}
-
-.brand a span:nth-child(3) {
-    animation: lumicino-3 1s infinite;
-}
-
-.brand a span:nth-child(4) {
-    animation: lumicino-4 1s infinite;
-}
-
-@keyframes lumicino-1 {
-
-    0%,
-    100% {
-
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
-    }
-
-    50% {
-        text-shadow: none;
-    }
-}
-
-@keyframes lumicino-2 {
-
-    0%,
-    100% {
-        text-shadow: none;
-    }
-
-    50% {
-
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ed1111, 0 0 30px #ed1111, 0 0 40px #ed1111, 0 0 55px #ed1111, 0 0 75px #ed1111;
-    }
-}
-
-@keyframes lumicino-3 {
-
-    0%,
-    100% {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #11b2ed, 0 0 30px #11b2ed, 0 0 40px #11b2ed, 0 0 55px #11b2ed, 0 0 75px #11b2ed;
-    }
-
-    50% {
-        text-shadow: none;
-    }
-}
-
-@keyframes lumicino-4 {
-
-    0%,
-    100% {
-        text-shadow: none;
-    }
-
-    50% {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #c5ed11, 0 0 30px #c5ed11, 0 0 40px #c5ed11, 0 0 55px #c5ed11, 0 0 75px #c5ed11;
-    }
-}
-
-#palla {
-  position: fixed;
-  top: -2px;
-  left: 5px;
-  background-image: url(../assets/palla_rossa.png);
-  width: 100px;
-  height: 104px;
-  z-index: 4;
-  opacity: 0.8;
-  transition: opacity 0.5s ease-in-out;
-  transform-origin: top;
-  animation: palla 10s ease-in-out 0s 1;
-    &:hover {
-	opacity: 1;
-    }
-}
-@media screen and (max-width: 1200px) {
-	.brand {
-		padding-left: 105px!important;
-	}
-}
-@media screen and (max-width: 799px) {
-	#palla {
-		z-index: 2;
-	}
-}
-@media screen and (max-width: 768px) {
-	#palla {
-		left: -30px;
-	}
-	.brand {
-	    padding-left: 20px!important;
-	}
-}
-@keyframes palla{
-    0% { transform: rotate(0); }
-    5% { transform: rotate(12deg); }
-    10% { transform: rotate(-10deg); }
-    15% { transform: rotate(9deg); }
-    20% { transform: rotate(-8deg); }
-    25% { transform: rotate(7deg); }
-    30% { transform: rotate(-6deg); }
-    35% { transform: rotate(5deg); }
-    40% { transform: rotate(-4deg); }
-    45% { transform: rotate(3deg); }
-    50% { transform: rotate(0); }
-    100% { transform: rotate(0); }
+	padding: 10px;
+	margin: 20px 0;
+	border-left: 0.2rem dashed #353535;
 }
