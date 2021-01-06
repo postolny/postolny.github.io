@@ -275,11 +275,6 @@
       $("input").val("");
       $("#accento input").first().focus();
     });
-    
-    $('.brand a').html(function(i, html) {
-            var chars = $.trim(html).split("");
-            return '<span>' + chars.join('</span><span>') + '</span>';
-    });
 
     var Mwidth = 960;
     if ($(window).width() > Mwidth) {
