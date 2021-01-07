@@ -9,6 +9,7 @@ tags:
 ---
 
 ### Significato
+
 сидеть
 
 > Faccio un lavoro sedentario... Attualmente lavoro come pianista accompagnatore del coro in una scuola di musica.
@@ -69,3 +70,4 @@ tags:
 |Sono seduto su questo sgabello da quasi due ore.|Я тут в уголке уже два часа сижу.|
 |Sono seduto qui e sono così sconvolto che a malapena riesco a parlare!|Я сижу здесь и так расстроен, что едва могу говорить!|
 |Sono seduto qui all'ingresso da sei ore.|Сижу здесь в прихожей уже 6 часов.|
+|Fuori nevicava. Mark era seduto in classe vicino alla finestra e fantasticava su cosa avrebbe fatto in estate.|На улице шёл снег. Марк сидел в школе у окна и представлял, что он будет делать летом.|
