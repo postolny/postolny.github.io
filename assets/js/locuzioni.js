@@ -190,10 +190,12 @@ $(function () {
     "Comportati bene a scuola e stai attento.	– Хорошо себя веди в школе и слушай все внимательно.",
     "Ma stai attento a non fare stupidaggini.	– Но не делай глупостей.",
     "Mamma, ti prego, stai attento quando attraversi la strada.	– Мама, пожалуйста, будь осторожнее, когда переходишь улицу.",
-    "Stai attento e non farti male. –	Будь осторожен и не нарывайся на неприятности.",
+    "Stai attento e non farti male. – Будь осторожен и не нарывайся на неприятности.",
     "Stai attento sulle scale. – Поосторожней на ступеньках.",
     "Stai attento, non sai quello che fai. – Ты сам не знаешь что творишь!",
-    "Stai attento a quello che fai.	– Следи за тем, что делаешь!"
+    "Stai attento a quello che fai.	– Следи за тем, что делаешь!",
+    "Stai attento, è pericoloso! – Будь осторожен, это опасно!",
+    "Tutto è bene quel che finisce bene. (Shakespeare) – Хорошо всё то, что хорошо кончается. (Шекспир)"
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
