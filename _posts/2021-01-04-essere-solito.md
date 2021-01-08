@@ -8,6 +8,8 @@ categories: e
 tags:
 ---
 
+### Significato
+
 loc.v. CO svolgere abitualmente una determinata azione, tenere abitualmente un determinato comportamento: è solito alzarsi alle sette del mattino, è solito indossare camicie a fiori (привычно выполнять определенное действие, обычно вести себя определённым образом: обычно вставать в семь утра, обычно носить рубашки в цветочек). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/essere-solito)
 
 ### Sinonimi

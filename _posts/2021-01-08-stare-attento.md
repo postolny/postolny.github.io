@@ -10,7 +10,7 @@ tags:
 
 ### Significato
 
-loc.v. CO osservare, ascoltare con molta attenzione: s. attento a una spiegazione / essere prudente e vigile per evitare un pericolo, un rischio, un errore e sim., badare: s. attento a non sbagliare; stai attento, è pericoloso! (Слушать очень внимательно: слушать внимательно то, что объясняют / быть осторожным и бдительным, чтобы избежать опасности, риска, ошибок и т.п., обращать внимание, остерегать: остерегать от ошибок; будь осторожен, это опасно!)
+loc.v. CO osservare, ascoltare con molta attenzione: s. attento a una spiegazione / essere prudente e vigile per evitare un pericolo, un rischio, un errore e sim., badare: s. attento a non sbagliare; stai attento, è pericoloso! (Слушать очень внимательно: слушать внимательно то, что объясняют / быть осторожным и бдительным, чтобы избежать опасности, риска, ошибок и т.п., обращать внимание, остерегать: остерегать от ошибок; будь осторожен, это опасно!) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/stare-attento)
 
 ### Sinonimi
 
