@@ -145,6 +145,7 @@ $(function () {
     "ci vogliono gli argani per (+ inf) – нужны невероятные усилия, чтобы (сделать что-либо)",
     "Mi ci vorrebbe più tempo. – Мне нужно больше времени",
     "pazienza! (che ci vuoi fare!) – ничего не поделаешь (ничего не попишешь)!",
+    "Che ci vuoi fare? Sono donne! – Что тут поделаешь? Это женщины!",
     "ci vorranno almeno quattro mesi – потребуется по крайней мере четыре месяца",
     "ci volle del buono e del bello per... – больших усилий стоило, чтобы...",
     "Questo è proprio quello che ci voleva. – Это именно то, что надо",
@@ -181,7 +182,18 @@ $(function () {
     "parlare fluentemente una lingua – бегло говорить на языке; parlare fluentemente un'altra lingua – бегло говорить на другом языке; parlare fluentemente l'italiano – бегло говорить на итальянском; parlare correntemente l'italiano – свободно говорить на итальянском; parlare perfettamente l'italiano – отлично говорить на итальянском",
     "Lo conosco perfettamente. – Я его отлично знаю.",
     "Credimi, ti capisco alla perfezione. – Поверь мне, я тебя прекрасно понимаю.",
-    "Come sappiamo tutti, non ci sono limiti alla perfezione. – Как нам всем известно, нет предела совершенству."
+    "Come sappiamo tutti, non ci sono limiti alla perfezione. – Как нам всем известно, нет предела совершенству.",
+    "Il diavolo si è impossessato di lei. – Дьявол вселился в неё.",
+    "Le farfale possono essere di vari colori: bianche, gialle, marroni. – Бабочки могут быть разного цвета: белые, жёлтые, коричневые.",
+    "Stai attento sulla strada.	– Будь осторожен по дороге домой.",
+    "Stai attento, ho una brutta sensazione. – Будь осторожен, у меня плохое предчувствие.",
+    "Comportati bene a scuola e stai attento.	– Хорошо себя веди в школе и слушай все внимательно.",
+    "Ma stai attento a non fare stupidaggini.	– Но не делай глупостей.",
+    "Mamma, ti prego, stai attento quando attraversi la strada.	– Мама, пожалуйста, будь осторожнее, когда переходишь улицу.",
+    "Stai attento e non farti male. –	Будь осторожен и не нарывайся на неприятности.",
+    "Stai attento sulle scale. – Поосторожней на ступеньках.",
+    "Stai attento, non sai quello che fai. – Ты сам не знаешь что творишь!",
+    "Stai attento a quello che fai.	– Следи за тем, что делаешь!"
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
