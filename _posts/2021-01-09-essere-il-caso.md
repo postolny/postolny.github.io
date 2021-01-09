@@ -8,6 +8,8 @@ categories: e
 tags:
 ---
 
+### Significato
+
 loc.v. CO convenire: è il caso che tu venga (надлежать: тебе стоит (нужно) придти). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/essere-il-caso)
 
 ### Esempi d'uso
