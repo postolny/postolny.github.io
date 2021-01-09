@@ -187,15 +187,18 @@ $(function () {
     "Le farfale possono essere di vari colori: bianche, gialle, marroni. – Бабочки могут быть разного цвета: белые, жёлтые, коричневые.",
     "Stai attento sulla strada.	– Будь осторожен по дороге домой.",
     "Stai attento, ho una brutta sensazione. – Будь осторожен, у меня плохое предчувствие.",
-    "Comportati bene a scuola e stai attento.	– Хорошо себя веди в школе и слушай все внимательно.",
-    "Ma stai attento a non fare stupidaggini.	– Но не делай глупостей.",
+    "Comportati bene a scuola e stai attento. – Хорошо себя веди в школе и слушай все внимательно.",
+    "Ma stai attento a non fare stupidaggini. – Но не делай глупостей.",
     "Mamma, ti prego, stai attento quando attraversi la strada.	– Мама, пожалуйста, будь осторожнее, когда переходишь улицу.",
     "Stai attento e non farti male. – Будь осторожен и не нарывайся на неприятности.",
     "Stai attento sulle scale. – Поосторожней на ступеньках.",
     "Stai attento, non sai quello che fai. – Ты сам не знаешь что творишь!",
-    "Stai attento a quello che fai.	– Следи за тем, что делаешь!",
+    "Stai attento a quello che fai. – Следи за тем, что делаешь!",
     "Stai attento, è pericoloso! – Будь осторожен, это опасно!",
-    "Tutto è bene quel che finisce bene. (Shakespeare) – Хорошо всё то, что хорошо кончается. (Шекспир)"
+    "Tutto è bene quel che finisce bene. (Shakespeare) – Хорошо всё то, что хорошо кончается. (Шекспир)",
+    "Flavio è sgarbato di quando in quando. – Флавио иногда груб.",
+    "I piccoli vanno sgridati in silenzio. – Маленьких надо ругать молча.",
+    "è il caso che tu venga – тебе стоит (нужно) придти",
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
