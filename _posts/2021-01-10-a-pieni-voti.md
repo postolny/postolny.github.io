@@ -4,7 +4,7 @@ title: "a pieni voti"
 description: "con il massimo dei voti (с наивысшими оценками)"
 author: "И. Постольный"
 comments: false
-categories: 
+categories: a
 tags:
 ---
 
