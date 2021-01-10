@@ -35,5 +35,5 @@ loc.avv. CO con il massimo dei voti (с наивысшими оценками) [
 |Passerò a pieni voti l'esame di storia.|Я сдам на отлично экзамен по истории.|
 |Mi sono laureata a pieni voti all'università di medicina di Harvard, quindi so di cosa sto parlando.|Я стала лучшей выпускницей курса на факультете медицины в Гарварде, так что я знаю, о чём говорю.|
 |Laureata a pieni voti in Fisica, ha poi mollato la carriera accademica.|Была лучшей на своем курсе среди физиков, а затем просто бросила учебу.
-|Ho appena saputo che uno sei miei studenti è stato promosso a pieni voti nel suo esame di italiano.|Я только что узнала, что один из моих учеников отлично сдал экзамен по итальянскому языку.|
+|Ho appena saputo che uno dei miei studenti è stato promosso a pieni voti nel suo esame di italiano.|Я только что узнала, что один из моих учеников отлично сдал экзамен по итальянскому языку.|
 |Supererò l'esame finale a pieni voti.|Я сдам выпускной экзамен с отличием!|
