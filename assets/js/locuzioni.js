@@ -199,6 +199,15 @@ $(function () {
     "Flavio è sgarbato di quando in quando. – Флавио иногда груб.",
     "I piccoli vanno sgridati in silenzio. – Маленьких надо ругать молча.",
     "è il caso che tu venga – тебе стоит (нужно) придти",
+    "su, scuci la grana! – ну, раскошеливайся!",
+    "Forse è il caso che tu vada all'ospedale. – Может, стоит съездить в больницу?",
+    "Magari è il caso di comprare un tappeto. – Возможно, вам следует купить ковёр.",
+    "Supererò l'esame finale a pieni voti. – Я сдам выпускной экзамен на отлично!",
+    "Ho una laurea in chimica, presa a pieni voti. – У меня диплом с отличием по химии.",
+    "Mi sono diplomata al conservatorio a pieni voti. – Я окончила консерваторию с отличием.",
+    "Glielo faccio sapere appena posso. – Я дам ему знать, как только смогу.",
+    "È scoccata l'ora della verità. – Настал (пробил) час истины.",
+    "è scoccata l'ora di... пробил час...",
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
