@@ -29,11 +29,11 @@ loc.avv. CO con il massimo dei voti (с наивысшими оценками) [
 |Sì, ma ha superato gli esami invernali a pieni voti, non è così?|Да, но зимние экзамены сдал с отличием, верно?|
 |A pieni voti, se vuole saperlo.|Блестяще, чтоб вы знали!|
 |Passeremo questa ispezione a pieni voti.|Мы пройдем проверку наилучшим образом.|
-|Sai, con tutto questo studio, dovremo superare l'esame a pieni voti.|Знаешь, мы так много учимся, мы должны быть лучшими в классе.|
+|Sai, con tutto questo studio, dovremo superare l'esame a pieni voti.|Знаешь, так занимаясь, мы должны сдать эезамен на отлично.|
 |Ho una laurea in chimica, presa a pieni voti.|У меня диплом с отличием по химии.|
-|Mi sono diplomata al conservatorio a pieni voti.|Я закончила консерваторию с отличием.|
+|Mi sono diplomata al conservatorio a pieni voti.|Я окончила консерваторию с отличием.|
 |Passerò a pieni voti l'esame di storia.|Я сдам на отлично экзамен по истории.|
 |Mi sono laureata a pieni voti all'università di medicina di Harvard, quindi so di cosa sto parlando.|Я стала лучшей выпускницей курса на факультете медицины в Гарварде, так что я знаю, о чём говорю.|
 |Laureata a pieni voti in Fisica, ha poi mollato la carriera accademica.|Была лучшей на своем курсе среди физиков, а затем просто бросила учебу.
-|Ho appena saputo che uno dei miei studenti è stato promosso a pieni voti nel suo esame di italiano.|Я только что узнала, что один из моих учеников отлично сдал экзамен по итальянскому языку.|
-|Supererò l'esame finale a pieni voti.|Я сдам выпускной экзамен с отличием!|
+|Ho appena saputo che uno dei miei studenti è stato promosso a pieni voti nel suo esame di italiano.|Я только что узнала, что один из моих учеников на отлично сдал экзамен по итальянскому языку.|
+|Supererò l'esame finale a pieni voti.|Я сдам выпускной экзамен на отлично!|
