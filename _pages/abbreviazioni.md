@@ -55,6 +55,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |numism.|numismatica|нумизматика|
 |OB|obsoleto|устаревший|
 |pop.|popolare|народный|
+|portogh.|portoghese|португальский|
 |pl.|plurale|множественное число|
 |prep.|preposizione|предлог|
 |prob.|probabilmente|возможно|
