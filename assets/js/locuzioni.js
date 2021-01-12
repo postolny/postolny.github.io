@@ -107,7 +107,7 @@ $(function () {
     "E Dolly, con sua grande meraviglia, vide che Anna era arrossita fino alle orecchie, fino alle nere ciocche dei capelli che le fluivano sul collo. (I grandi romanzi russi: Nuove traduzioni) – И Долли, к своему удивлению, увидела, что Анна покраснела до ушей, до черных прядей волос, струившихся по ее шее.",
     "L'ho scoperto troppo tardi... ma te lo prometto, recupererò tutto ciò che ti spetta, fino all'ultimo centesimo. – Я обнаружил это слишком поздно, но обещаю, что я верну тебе все, что тебе причитается до последней копейки.",
     "E mio zio poteva sollevare fino a 80 chili di riso con una mano sola. – Мой дядя мог поднимать до 80 кг риса одной рукой.",
-    "E non posso prendere niente fino a quando non lo so di sicuro. – Пока не узнаю, ничего принимать не буду (о лекарсве).",
+    "E non posso prendere niente fino a quando non lo so di sicuro. – Пока не узнаю, ничего принимать не буду (о лекарстве).",
     "Non prenderò alcuna decisione fino a quando tu non ci abbia pensato. – А окончательное решение приму, когда ты все обдумаешь.",
     "E mi commuovo fino alle lacrime. – Я тронута этим до слез.",
     "La storia mi ha commosso fino alle lacrime. – Рассказ тронул меня до слёз.",
@@ -208,6 +208,10 @@ $(function () {
     "Glielo faccio sapere appena posso. – Я дам ему знать, как только смогу.",
     "È scoccata l'ora della verità. – Настал (пробил) час истины.",
     "è scoccata l'ora di... пробил час...",
+    "Non c'è niente da ridere. – Тут нет ничего смешного.",
+    "C'è poco da ridere. – Тут не до смеха! (не до шуток!; это дело нешуточное!), нечего смеяться!, это не смешно.",
+    "Nulla è per caso. – Ничто не случайно.",
+    "Siamo legati l'uno all'altro. – Мы связаны друг с другом.",
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
