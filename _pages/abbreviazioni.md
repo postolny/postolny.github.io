@@ -39,6 +39,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |gener.|generalmente|в целом; обычно|
 |inform.|informatica|информатика|
 |iron.|ironico|ироничский|
+|itt.com.|termine generico di ittiologia|общий термин ихтиологии|
 |lat.|latino|латинский|
 |LE.|letterario|литературный|
 |lett.|letteratura|литература|
@@ -66,7 +67,8 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |scol.|scuola e università|школа и университет|
 |sec.|secolo|век|
 |sim.|simile|подобный|
-|s.m.|sostantivo maschile|существительное мужского рода|
+|s.m.|sostantivo maschile|имя существительное мужского рода|
+|s.m.inv.|sostantivo maschile invariabile|несклоняемое имя существительное мужского рода|
 |spec.|specialmente|особенно|
 |s.f.inv.|sostantivo femminile invariabile|несклоняемое имя существительное женского рода|
 |telecom.|telecomunicazione|телекоммуникация|
