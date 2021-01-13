@@ -4,7 +4,7 @@ title:  "Le stagioni"
 author: "И. Постольный"
 comments: false
 categories:
-tags: Italiano
+tags: Frasi
 ---
 
 {% include youtube.html id='BjAaK4rA0bQ' %}
