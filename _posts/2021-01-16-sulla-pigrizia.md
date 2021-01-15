@@ -53,10 +53,10 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 |cosa stai lì a cincischiare! (ma quanto ti ci vuole!)|что ты там ковыряешься?|
 |non star lì a covare!|пошевеливайся!, кончай баланду!; хватит яйца высиживать!|
 |cosa stai lì a poltrire, è ora di alzarsi!|ты что-то сегодня заспался, пора вставать!|
-|"\È un peccato il non fare niente col pretesto che non possiamo fare tutto.\" (Sir Winston Leonard Spencer Churchill)|Грешно ничего не делать под предлогом, что мы не можем ничего сделать. ([Сэр Уинстон Леонард Спенсер-Черчилль](https://ru.wikipedia.org/wiki/Черчилль,_Уинстон))|
-|\"Un uomo non è pigro se è assorto nei propri pensieri; esiste un lavoro visibile ed uno invisibile.\" (Victor Hugo)|Человек не ленив, если он погружён в собственные мысли; существует работа видимая и невидимая ([Виктор Мари Гюго](https://ru.wikipedia.org/wiki/Гюго,_Виктор))|
-|\"Il pigro è d'ostacolo a se stesso.\" ([Lucio Anneo Seneca](https://it.wikipedia.org/wiki/Lucio_Anneo_Seneca))|Ленивый – помеха самому себе. ([Луций Анней Сенека](https://ru.wikipedia.org/wiki/Луций_Анней_Сенека))|
-|Se ti accade, al mattino, di svegliarti pigro e indolente, tieni presente[^2] questo pensiero: \"Mi alzo per riprendere la mia opera di uomo\". ([Marco Aurelio](https://it.wikipedia.org/wiki/Marco_Aurelio))|Если тебе случается утром просыпаться ленивым и апатичным, припомни эту мысль: "я встаю, чтобы возобновить свою работу как человек". ([Марк Аврелий](https://ru.wikipedia.org/wiki/Марк_Аврелий))|
+|"È un peccato il non fare niente col pretesto che non possiamo fare tutto." (Sir Winston Leonard Spencer Churchill)|Грешно ничего не делать под предлогом, что мы не можем ничего сделать. ([Сэр Уинстон Леонард Спенсер-Черчилль](https://ru.wikipedia.org/wiki/Черчилль,_Уинстон))|
+|"Un uomo non è pigro se è assorto nei propri pensieri; esiste un lavoro visibile ed uno invisibile." (Victor Hugo)|Человек не ленив, если он погружён в собственные мысли; существует работа видимая и невидимая ([Виктор Мари Гюго](https://ru.wikipedia.org/wiki/Гюго,_Виктор))|
+|"Il pigro è d'ostacolo a se stesso." ([Lucio Anneo Seneca](https://it.wikipedia.org/wiki/Lucio_Anneo_Seneca))|Ленивый – помеха самому себе. ([Луций Анней Сенека](https://ru.wikipedia.org/wiki/Луций_Анней_Сенека))|
+|Se ti accade, al mattino, di svegliarti pigro e indolente, tieni presente[^2] questo pensiero: "Mi alzo per riprendere la mia opera di uomo". ([Marco Aurelio](https://it.wikipedia.org/wiki/Marco_Aurelio))|Если тебе случается утром просыпаться ленивым и апатичным, припомни эту мысль: "я встаю, чтобы возобновить свою работу как человек". ([Марк Аврелий](https://ru.wikipedia.org/wiki/Марк_Аврелий))|
 
 [^1]: tanto per – лишь/только бы.
 
