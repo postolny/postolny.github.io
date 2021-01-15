@@ -24,15 +24,9 @@ Non ha voglia di studiare. – ему лень заниматься (букв.: 
 
 Non mi va di andarci. – Мне лень туда идти (у меня нет желания идти туда, мне не хочется идти туда). С помощью этой конструкции мы также можем выразить нежелание делать что-либо по разным причинам, например, по причине упрямства, в знак протеста: tu vai se vuoi, non mi va di andarci!
 
-Следующий вариант – использование конструкции: avere una pigrizia (di fare qualcosa):
-
-Anch'io ho una forte pigrizia che mi deriva dalla depressione. – У меня тоже сильная лень, которая возникла у меня от депрессии.
-
 Следующий вариант – использование конструкции: esserci la pigrizia di fare qualcosa:
 
 Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[^1] capire com'era la mentalità della squadra. – Вот было лень пройти 50 метров до раздевалки, чтобы только понять каким был настрой команды.
-
-Последние два примера наиболее близки к русской форме: я имею лень, была лень → мне лень.
 
 Другие примеры для выражения этого популярного порока:
 
@@ -43,14 +37,14 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 |Non ho voglia di fare niente.|Я не хочу ничего делать.|
 |...mi fa lavorare quando mi viene la pigrizia|...он заставляет меня работать, когда ко мне приходит (на меня находит) лень|
 |Che pigrizia che mi è venuta addosso[^2]...|Что за лень на меня навалилась (напала)...|
+|Davvero la pigrizia è più forte di te?|Неужто лень сильнее тебя?|
 |La pigrizia è la madre di tutti i vizi.|Лень – мать всех пороков.|
 |chiunque voglia (nani e ballerine)|все, кому не лень|
 |Dolce far niente.|Сладкое безделье.|
 |Pigrizia: l'abitudine di riposarsi ancor prima di essere stanchi. (Jules Renard)|Лень – это привычка отдыхать ещё до наступления усталости. ([Жюль Ренар](https://ru.wikipedia.org/wiki/Ренар,_Жюль))|
 |Non starò semplicemente seduto qui a far niente.|Я не намерен сидеть здесь, сложа руки.|
 |Volete stare lì a far niente?|Желаете сидеть там сложа руки?|
-|Come vincere la pigrizia: con i nostri consigli si può!|Как победить лень: с нашими советами возможно!|
-|Come vincere la pigrizia: 12 consigli per metterla a tappeto.|Как победить лень: 12 советов, чтобы положить её на лопатки (ковёр).|
+|Anch'io ho una forte pigrizia che mi deriva dalla depressione.|У меня тоже сильная лень, которая возникла у меня от депрессии.|
 |cosa stai lì a cincischiare! (ma quanto ti ci vuole!)|что ты там ковыряешься?|
 |non star lì a covare!|пошевеливайся!, кончай баланду!; хватит яйца высиживать!|
 |cosa stai lì a poltrire, è ora di alzarsi!|ты что-то сегодня заспался, пора вставать!|
@@ -63,6 +57,6 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 
 [^1]: tanto per – лишь/только бы.
 
-[^2]: essere / venire addosso a qd – навалиться / напасть на кого-либо
+[^2]: essere / venire addosso a qd – навалиться / напасть на кого-либо.
 
 [^3]: tener presente – иметь в виду, учитывать; avere / tenere presente – помнить.
