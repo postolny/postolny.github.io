@@ -58,6 +58,6 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 |\"Il pigro è d'ostacolo a se stesso.\" ([Lucio Anneo Seneca](https://it.wikipedia.org/wiki/Lucio_Anneo_Seneca))|Ленивый – помеха самому себе. ([Луций Анней Сенека](https://ru.wikipedia.org/wiki/Луций_Анней_Сенека))|
 |Se ti accade, al mattino, di svegliarti pigro e indolente, tieni presente[^2] questo pensiero: \"Mi alzo per riprendere la mia opera di uomo\". ([Marco Aurelio](https://it.wikipedia.org/wiki/Marco_Aurelio))|Если тебе случается утром просыпаться ленивым и апатичным, припомни эту мысль: "я встаю, чтобы возобновить свою работу как человек". ([Марк Аврелий](https://ru.wikipedia.org/wiki/Марк_Аврелий))|
 
-[^1]: tanto per — лишь/только бы.
+[^1]: tanto per – лишь/только бы.
 
-[^2]: tener presente — иметь в виду, учитывать; avere / tenere presente — помнить.
+[^2]: tener presente – иметь в виду, учитывать; avere / tenere presente – помнить.
