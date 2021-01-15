@@ -41,6 +41,7 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 | Italiano | Русский |
 |----------|---------|
 |Non ho voglia di fare niente.|Я не хочу ничего делать.|
+|...mi fa lavorare quando mi viene la pigrizia|...он заставляет меня работать, когда ко мне приходит (на меня находит) лень|
 |La pigrizia è la madre di tutti i vizi.|Лень – мать всех пороков.|
 |chiunque voglia (nani e ballerine)|все, кому не лень|
 |Dolce far niente.|Сладкое безделье.|
