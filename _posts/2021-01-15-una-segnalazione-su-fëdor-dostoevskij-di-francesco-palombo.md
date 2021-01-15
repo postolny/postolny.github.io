@@ -40,6 +40,9 @@ Buona lettura!
 
 Приятного чтения!
 
+![Le notti bianche di Fëdor Dostoevskij]({{ site.baseurl }}/img/le_notti_bianche.jpg "Le notti bianche di Fëdor Dostoevskij")
+_Le notti bianche di Fëdor Dostoevskij_
+
 [^1]: chiamiamo+lo - назовём это (его).
 
 [^2]: breve romanzo - короткий рассказ.
@@ -73,6 +76,3 @@ Buona lettura!
 [^16]: capitare tra le mani - попадаться в руки.
 
 [^17]: rimanere impresso nell'anima - запасть в душу. "На всю жизнь запомнилась мне эта ночь" (В. Каверин) — "Quella notte è rimasta impressa nella mia mente per sempre" (V. Kaverin).
-
-![Le notti bianche di Fëdor Dostoevskij]({{ site.baseurl }}/img/le_notti_bianche.jpg "Le notti bianche di Fëdor Dostoevskij")
-_Le notti bianche di Fëdor Dostoevskij_
