@@ -65,7 +65,7 @@ _Le notti bianche di Fëdor Dostoevskij_
 
 [^11]: a sua volta - в свой черёд, в свою очередь.
 
-[^12]: si apriranno l'uno con l'altra - откроются друг другу (букв. один другой).
+[^12]: si apriranno l'uno con l'altra - откроются друг другу.
 
 [^13]: pensando+ci bene - думая об этом хорошенько.
 
