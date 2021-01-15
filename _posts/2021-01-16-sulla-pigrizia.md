@@ -63,6 +63,6 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 
 [^1]: tanto per – лишь/только бы.
 
-[^2]: essere / venire addosso a qd — навалиться / напасть на кого-либо
+[^2]: essere / venire addosso a qd – навалиться / напасть на кого-либо
 
 [^3]: tener presente – иметь в виду, учитывать; avere / tenere presente – помнить.
