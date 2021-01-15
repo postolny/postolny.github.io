@@ -40,7 +40,7 @@ Buona lettura!
 
 Приятного чтения!
 
-![Le notti bianche di Fëdor Dostoevskij]({{ site.baseurl }}/img/le_notti_bianche.jpg "Le notti bianche di Fëdor Dostoevskij")
+![Le notti bianche di Fëdor Dostoevskij]({{ site.baseurl }}/img/le_notti_bianche.jpg "Le notti bianche di Fëdor Dostoevskij"){: .border}
 _Le notti bianche di Fëdor Dostoevskij_
 
 [^1]: chiamiamo+lo - назовём это (его).
