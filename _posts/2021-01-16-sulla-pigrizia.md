@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "О лени"
-description: "Как по-итальянски сказать \"мне лень делать что-либо\"? Выражение \"мне лень делать что-то\" – специфическое русское выражение и не имеет соответсивия в итальянском языке."
+description: "Как по-итальянски сказать \"мне лень делать что-либо\"? Выражение \"мне лень делать что-то\" – специфическое русское выражение и не имеет соответствия в итальянском языке."
 author: "И. Постольный"
 comments: false
 categories: 
@@ -42,6 +42,7 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 |----------|---------|
 |Non ho voglia di fare niente.|Я не хочу ничего делать.|
 |...mi fa lavorare quando mi viene la pigrizia|...он заставляет меня работать, когда ко мне приходит (на меня находит) лень|
+|Che pigrizia che mi è venuta addosso[^2]...|Что за лень на меня навалилась (напала)...|
 |La pigrizia è la madre di tutti i vizi.|Лень – мать всех пороков.|
 |chiunque voglia (nani e ballerine)|все, кому не лень|
 |Dolce far niente.|Сладкое безделье.|
@@ -56,10 +57,12 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 |"È un peccato il non fare niente col pretesto che non possiamo fare tutto." (Sir Winston Leonard Spencer Churchill)|Грешно ничего не делать под предлогом, что мы не можем ничего сделать. ([Сэр Уинстон Леонард Спенсер-Черчилль](https://ru.wikipedia.org/wiki/Черчилль,_Уинстон))|
 |"Un uomo non è pigro se è assorto nei propri pensieri; esiste un lavoro visibile ed uno invisibile." (Victor Hugo)|Человек не ленив, если он погружён в собственные мысли; существует работа видимая и невидимая ([Виктор Мари Гюго](https://ru.wikipedia.org/wiki/Гюго,_Виктор))|
 |"Il pigro è d'ostacolo a se stesso." ([Lucio Anneo Seneca](https://it.wikipedia.org/wiki/Lucio_Anneo_Seneca))|Ленивый – помеха самому себе. ([Луций Анней Сенека](https://ru.wikipedia.org/wiki/Луций_Анней_Сенека))|
-|Se ti accade, al mattino, di svegliarti pigro e indolente, tieni presente[^2] questo pensiero: "Mi alzo per riprendere la mia opera di uomo". ([Marco Aurelio](https://it.wikipedia.org/wiki/Marco_Aurelio))|Если тебе случается утром просыпаться ленивым и апатичным, припомни эту мысль: "я встаю, чтобы возобновить свою работу как человек". ([Марк Аврелий](https://ru.wikipedia.org/wiki/Марк_Аврелий))|
+|Se ti accade, al mattino, di svegliarti pigro e indolente, tieni presente[^3] questo pensiero: "Mi alzo per riprendere la mia opera di uomo". ([Marco Aurelio](https://it.wikipedia.org/wiki/Marco_Aurelio))|Если тебе случается утром просыпаться ленивым и апатичным, припомни эту мысль: "я встаю, чтобы возобновить свою работу как человек". ([Марк Аврелий](https://ru.wikipedia.org/wiki/Марк_Аврелий))|
 
 Цитаты знаменитых людей, которые я включил в мою статью, взяты отсюда: [https://www.frasicelebri.it/argomento/pigrizia/](https://www.frasicelebri.it/argomento/pigrizia/).
 
 [^1]: tanto per – лишь/только бы.
 
-[^2]: tener presente – иметь в виду, учитывать; avere / tenere presente – помнить.
+[^2]: essere / venire addosso a qd — навалиться / напасть на кого-либо
+
+[^3]: tener presente – иметь в виду, учитывать; avere / tenere presente – помнить.
