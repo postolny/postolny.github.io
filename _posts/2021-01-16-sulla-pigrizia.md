@@ -48,7 +48,7 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 |Non starò semplicemente seduto qui a far niente.|Я не намерен сидеть здесь, сложа руки.|
 |Volete stare lì a far niente?|Желаете сидеть там сложа руки?|
 |Come vincere la pigrizia: con i nostri consigli si può!|Как победить лень: с нашими советами возможно!|
-|Come vincere la pigrizia: 12 consigli per metterla a tappeto.|Как победить лень: 12 советов положить её на лопатки.|
+|Come vincere la pigrizia: 12 consigli per metterla a tappeto.|Как победить лень: 12 советов, чтобы положить её на лопатки (ковёр).|
 |cosa stai lì a cincischiare! (ma quanto ti ci vuole!)|что ты там ковыряешься?|
 |non star lì a covare!|пошевеливайся!, кончай баланду!; хватит яйца высиживать!|
 |cosa stai lì a poltrire, è ora di alzarsi!|ты что-то сегодня заспался, пора вставать!|
