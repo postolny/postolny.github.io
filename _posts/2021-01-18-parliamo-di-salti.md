@@ -19,7 +19,7 @@ tags: Frasi
 |Ha cercato di saltare dalla finestra.|Он пытался выпрыгнуть из окна.|
 |Bar della spiaggia. Un ragazzo e una ragazza, appoggiati al bancone, seduti vicini senza darsi attenzione. Poi una piccola distrazione e tutto inizia: lei fa cadere il bicchiere di coca che le hanno appena servito. Con uno scatto, pronto ad evitare quella cascata gelida e appiccicosa, il ragazzo salta giù dallo sgabello, lasciando al suo destino il giornale che stava leggendo. La ragazza si scusa, è mortificata per il disastro che ha combinato. È maldestra e sempre di fretta, per questo non riesce ad evitare certe situazioni.|Бар на пляже. Парень и девушка, прислонившись к стойке, сидят близко друг к другу, не обращая друг на друга внимания. Потом маленькая невнимательность и все началось: она роняет стакан кока-колы, который ей только что подали. Единым порывом, готовый избежать этого холодного и липкого водопада, парень спрыгнул со стула, оставив газету, которую он читал, на произвол судьбы. Девушка приносит извинения, смущеная бедой, которую она устроила. Она неуклюжая и всегда торопится, поэтому не может избежать некоторых ситуаций.|
 
-### Запрыгнуть
+### Запрыгнуть на что-то (или куда-то)
 
 Для того, чтобы было ясно, что мы намереваемся запрыгнуть на что-то (или куда-то), к глаголу saltare добавляем наречие su (вверх): saltare su – вскочить, подпрыгнуть.
 
@@ -73,3 +73,32 @@ salterellare, balzellare; [ballonzolare](https://www.treccani.it/vocabolario/bal
 |balzare addosso a...|наброситься на|
 |balzare all'assalto|броситься в атаку|
 |balzare agli occhi|бросаться в глаза|
+
+### Перепрыгивать
+
+scavalcare; saltare; passare al di sopra/oltre
+
+|Italiano|Русский|
+|---|---|
+|saltare il fosso|перепрыгивать через ров|
+|saltare oltre il recinto|перепрыгнуть через изгородь|
+|È saltato oltre la recinzione alta almeno due metri, ed è piombato nel nostro giardino.|Он перепрыгнул через забор, через забор метра два высотой, и приземлился в нашем саду.|
+
+### Отпрыгивать
+
+saltare da parte (отскочить в сторону), fare un salto di lato (сделать прыжок, прыгнуть в сторону); saltare/balzare di lato
+
+|Italiano|Русский|
+|---|---|
+|Già, in alto, non di lato.|Да вверх, а не в сторону|
+|Il portiere è saltato di lato.|Вратарь отпрыгнул в сторону.|
+|L'uomo si accasciò e gli sarebbe caduto addosso se lui non fosse balzato di lato.|Человек упал и упал бы на него, если бы тот не отскочил в сторону.|
+|Nel frattempo Lario era balzato di lato gridando inutili consigli.|Тем временем Ларио отпрыгнул в сторону, выкрикивая бесполезные советы.|
+
+### Прыгать на одной ноге
+
+saltare su una gamba
+
+|Italiano|Русский|
+|---|---|
+|Salta su una sola gamba.|Прыгай на одной ноге.|
