@@ -16,6 +16,7 @@ tags: Frasi
 
 |Italiano|Русский|
 |---|---|
+|Ha cercato di saltare dalla finestra.|Он пытался выпрыгнуть из окна.|
 |Bar della spiaggia. Un ragazzo e una ragazza, appoggiati al bancone, seduti vicini senza darsi attenzione. Poi una piccola distrazione e tutto inizia: lei fa cadere il bicchiere di coca che le hanno appena servito. Con uno scatto, pronto ad evitare quella cascata gelida e appiccicosa, il ragazzo salta giù dallo sgabello, lasciando al suo destino il giornale che stava leggendo. La ragazza si scusa, è mortificata per il disastro che ha combinato. È maldestra e sempre di fretta, per questo non riesce ad evitare certe situazioni.|Бар на пляже. Парень и девушка, прислонившись к стойке, сидят близко друг к другу, не обращая друг на друга внимания. Потом маленькая невнимательность и все началось: она роняет стакан кока-колы, который ей только что подали. Единым порывом, готовый избежать этого холодного и липкого водопада, парень спрыгнул со стула, оставив газету, которую он читал, на произвол судьбы. Девушка приносит извинения, смущеная бедой, которую она устроила. Она неуклюжая и всегда торопится, поэтому не может избежать некоторых ситуаций.|
 
 ### Запрыгнуть
