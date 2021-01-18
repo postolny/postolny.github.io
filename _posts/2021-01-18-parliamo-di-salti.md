@@ -8,6 +8,8 @@ categories:
 tags: Frasi
 ---
 
+> Ad ognuno di noi, più di una volta, è capitato di saltare.
+
 ### Прыгать с чего-либо
 
 Для того, чтобы было ясно, что мы намереваемся спрыгнуть с чего-либо, к глаголу saltare добавляем наречие giù (вниз): saltare giù – прыгать вниз; saltare giù dal cavallo – спрыгнуть с лошади; saltare giù col paracadute – совершить прыжок с парашютом. При этом значение "вниз" наречия giù может быть условным, если значение переносное: saltare giù dal letto – вскочить с постели.
