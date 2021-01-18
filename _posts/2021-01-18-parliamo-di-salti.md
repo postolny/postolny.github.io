@@ -60,7 +60,7 @@ salterellare, balzellare; [ballonzolare](https://www.treccani.it/vocabolario/bal
 |Sì, scappa, salta e saltella!|Да, беги, прыгай и скачи!|
 |Sì, ecco... saltella qua e là.|Прямо так... вприпрыжку, так и носится кругом.|
 
-### Esempi d'uso del verbo balzare:
+### Esempi d'uso del verbo balzare
 
 |Italiano|Русский|
 |---|---|
