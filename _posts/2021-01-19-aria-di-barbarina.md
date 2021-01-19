@@ -12,11 +12,11 @@ tags: Музыка
 
 > (cercando[^1] qualche cosa per terra[^2])  
 L'ho perduta, me meschina[^3],  
-ah, chissà dove sarа[^4],  
-ah, chissà dove sarа?  
+ah, chissà dove sarà[^4],  
+ah, chissà dove sarà?  
 Non la trovo, non la trovo,  
 l'ho perduta, meschinella,  
-ah, chissà dove sarа?  
+ah, chissà dove sarà?  
 
 > Non la trovo, ah, non la trovo  
 meschinella,  
