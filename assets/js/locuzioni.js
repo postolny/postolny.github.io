@@ -227,6 +227,17 @@ $(function () {
     "Volete stare lì a far niente? – Желаете сидеть там сложа руки?",
     "Senti... non avrebbe potuto far niente. – Слушай, я не смог бы ничего сделать.",
     "cosa stai lì a cincischiare! (ma quanto ti ci vuole!) – что ты там ковыряешься?",
+    "Non può fare a meno di sorridere. – Он не мог не улыбнуться.",
+    "qui qualcosa va storto – тут что-то не ладится, что-то тут не так",
+    "Mi va tutto storto. – У меня всё не ладится (le cose non vanno bene).",
+    "Giuro di dire la verità, tutta la verità, nient'altro che la verità. – Клянусь говорить правду, всю правду, ничего кроме правды.",
+    "Che sciocco! – Как глупо! Какой дурак!",
+    "Okay... Se lo dici tu. – Ладно... Как скажешь (va bene, ma non sono d'accordo con te).",
+    "Ho fatto un salto al negozio. – Я заскочил в магазин.",
+    "La felicità non è qualcosa di già pronto. Proviene dalle nostre azioni. (Dalai Lama). – Счастье – это не что-то уже готовое. Оно происходит из наших действий.",
+    "mi dispiace dover rifiutare – мне жаль, что вынужден отказаться",
+    "non posso venire, mi dispiace – сожалею, но не могу прийти",
+    "mi è venuta voglia di... – мне захотелось...",
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
