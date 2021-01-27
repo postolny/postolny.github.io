@@ -10,13 +10,13 @@ tags:
 
 ### Significato
 
-loc.v. 1577; cfr. fr. valoir la peine, ca. 1590 CO esserci un motivo sufficientemente valido da giustificare l'azione, l'impegno, lo sforzo e sim.: valeva proprio la pena di visitare quella città, non vale la pena di prendersela tanto, non vale la pena che tu venga fin qui (имеется достаточно веская причина, чтобы оправдать действие, усердие, усилие и тому подобное: действительно стоило посетить этот город, не стоит так сердиться, тебе не стоит приезжать сюда). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/valere-la-pena)
+loc.v. 1577; cfr. fr. valoir la peine, ca. 1590 CO esserci un motivo sufficientemente valido da giustificare l'azione, l'impegno, lo sforzo e sim.: valeva proprio la pena di visitare quella città, non vale la pena di [prendersela]({{ site.baseurl }}/2020-11-12/prendersela) tanto, non vale la pena che tu venga fin qui (имеется достаточно веская причина, чтобы оправдать действие, усердие, усилие и тому подобное: действительно стоило посетить этот город, не стоит так сердиться, тебе не стоит приезжать сюда). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/valere-la-pena)
 
 La locuzione valere la pena di deriva dal francese valoir la peine de e assume il significato di "convenire, tener conto[^1] di una cosa per dedicarvi un po' di fatica o di attenzione" (Выражение "valere la pena" происходит от французского valoir la peine de и принимает значение "допускать, учесть что-либо, чтобы посвятить немного усилий или внимания").
 
 1. Allora Guglielmo decise che valeva la pena di non dargli respiro. (Тогда Гульермо решил, что не стоит давать ему передышку)
 2. Valeva proprio la pena di visitare quella città. (Действительно стоило посетить этот город)
-3. Non vale la pena di prendersela tanto. (Не стоит так сердиться)
+3. Non vale la pena di [prendersela]({{ site.baseurl }}/2020-11-12/prendersela) tanto. (Не стоит так сердиться)
 4. Un romanzo che vale la pena di leggere. (Роман, который стоит прочитать)
 
 Quando è necessario esprimere il soggetto, si può ricorrere al costrutto esplicito vale la pena che + congiuntivo (Когда нужно выразить подлежащее, можно прибегнуть к конструкции costrutto esplicito vale la pena che + congiuntivo):
