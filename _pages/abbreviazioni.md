@@ -21,10 +21,12 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |ant.|antico|древний|
 |av.|avanti|до|
 |avv.|avverbio|наречие|
+|ca.|circa|примерно|
 |centr.|centrale|центральный|
 |cfr.|confronta|совпадает|
 |CO|comune|употребительный|
 |colloq.|colloquiale|разговорный|
+|comp.|composto|состоит|
 |estens.|estensivo|экстенсивный|
 |eufem.|eufemistico|эвфемистический|
 |f.|femminile|женский род|
@@ -78,6 +80,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |v.procompl.|verbo procomplementare|прокомпиляционный глагол|
 |v.pronom.intr.|verbo pronominale intransitivo|местоименный непереходный (интранзитивный) глагол|
 |v.pronom.tr.|verbo pronominale transitivo|местоименный переходный (транзитивный) глагол|
+|v.tr.|verbo transitivo|переходный (транзитивный) глагол|
 |valore intens.|valore intensivo|интенсивное значение|
 
 ## Аббревиатуры
@@ -115,3 +118,5 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [Glosbe](https://ru.glosbe.com/it/ru)
 * [Dialetti d'Italia](https://www.dialettando.com/)
 * [Lingvo Live](https://www.lingvolive.com/ru-ru)
+* [Detti e proverbi](https://dettieproverbi.it/)
+* [dic.academic.ru](https://dic.academic.ru/)
