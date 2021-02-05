@@ -19,6 +19,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |agg.|aggettivo|прилагательное|
 |alim.|alimentazione|питание|
 |ant.|antico|древний|
+|AU|Alto Uso|широкое использование|
 |av.|avanti|до|
 |avv.|avverbio|наречие|
 |ca.|circa|примерно|
@@ -40,6 +41,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |fr.|francese|французский|
 |gener.|generalmente|в целом; обычно|
 |inform.|informatica|информатика|
+|inter.|interiezione|междометие|
 |iron.|ironico|ироничский|
 |itt.com.|termine generico di ittiologia|общий термин ихтиологии|
 |lat.|latino|латинский|
@@ -56,6 +58,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |merceol.|merceologia|товароведение|
 |numism.|numismatica|нумизматика|
 |OB|obsoleto|устаревший|
+|onom.|onomatopeico|звукоподражательный|
 |pop.|popolare|народный|
 |portogh.|portoghese|португальский|
 |pl.|plurale|множественное число|
