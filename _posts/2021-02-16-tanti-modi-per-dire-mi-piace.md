@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tanti modi per dire \"Mi piace"\"
+title: "Tanti modi per dire \"Mi piace\""
 description: "Как мы можем выразить своё мнение о чём-то или о ком-то не использую выражение \"mi piace\"?"
 author: "И. Постольный"
 comments: false
