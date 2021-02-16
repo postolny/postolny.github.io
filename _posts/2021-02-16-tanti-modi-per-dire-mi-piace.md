@@ -10,7 +10,7 @@ tags: Frasi
 
 ### Множество способов сказать "Мне нравится"
 
-Come possiamo esprimere apprezzamento per qualcosa o per qualcuno senza utilizzare l'espressione "mi piace"? Как мы можем выразить своё мнение (свою оценку) о чём-то или о ком-то не используя выражение "mi piace"?
+Come possiamo esprimere apprezzamento per qualcosa o per qualcuno senza utilizzare l'espressione "mi piace"? Как мы можем выразить свою похвалу чего-то или кого-то не используя выражение "mi piace"?
 
 La lingua italiana offre molte sfumature legate agli oggetti e alla nostra reazione emotiva: quali sono e come vanno usate? Итальянский язык предлагает множество нюансов (оттенков), связанных с объектами и нашей эмоциональной реакцией: что это такое и как их использовать?
 
