@@ -180,7 +180,6 @@ label.correct {
 }
 
 /* Accento */
-
 #accento {
 	margin-left: 0;
 	margin-bottom: 0;
@@ -216,4 +215,52 @@ label.correct {
 	text-decoration: underline;
 	cursor: pointer;
 	display: inline-block;
+}
+
+/* Completare */
+
+.questions {
+	font: 18px Tahoma,Arial,sans-serif;
+	input[type="text"] {
+		display: inline-block;
+		height: 20px;
+		font: 18px Tahoma,Arial,sans-serif !important;
+		width: 100px;
+		border: 1px solid #ccc;
+		border-width: 0px 0px 1px 0px;
+		padding: 0px 5px;
+		margin-top: 10px;
+		outline: none;
+		background-color: #fff;
+	}
+}
+.question {
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+.corretto {
+	background: #8dc692 !important;
+	color: #fff !important;
+}
+.errato {
+	background: coral !important;
+	color: #fff !important;
+}
+.block-result {
+	font-size: 14px;
+	margin: 10px 0;
+}
+.mostrami {
+	display: inline-block;
+	padding: 5px;
+	cursor: pointer;
+	color: #fff;
+	width: 90px;
+	padding: 5px 0;
+	text-align: center;
+	background-color: #3a3a3a;
+}
+.result {
+	display: inline-block;
+	padding: 5px;
 }
