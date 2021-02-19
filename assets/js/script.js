@@ -262,10 +262,13 @@
           "</strong>"
       );
     });
-    
+
     $("#accento input").keyup(function () {
       if (
-        $(this).val().match(/^\d{1}$/)) {
+        $(this)
+          .val()
+          .match(/^\d{1}$/)
+      ) {
         $(this).closest("li").next("li").find("input").focus();
       } else {
         $(this).val("");
@@ -274,6 +277,23 @@
     $("#acc_dacapo").click(function () {
       $("input").val("");
       $("#accento input").first().focus();
+    });
+
+    $(".mostrami").on("click", function () {
+      var score = 0;
+      var total = 0;
+      $("span[data-answer]").each(function () {
+        total++;
+        let input = $(this).find("input");
+        input.removeClass();
+        if ($(this).data("answer") == input.val().toUpperCase()) {
+          score++;
+          input.addClass("corretto");
+        } else {
+          input.addClass("errato");
+        }
+      });
+      $(".result").text("Правильных ответов: " + score + " из " + total);
     });
 
     var Mwidth = 960;
