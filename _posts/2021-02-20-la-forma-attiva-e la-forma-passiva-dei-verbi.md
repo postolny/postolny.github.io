@@ -33,7 +33,7 @@ La forma passiva si può formare anche con il verbo "venire" invece dell'ausilia
 - Lo studente apre il libro.
 - Il libro viene aperto dallo studente.
 
-Si può formare con le voci del verbo andare, stare, restare, rimanere + il participio passato del verbo: Оно может быть образовано формами глагола andare, stare, restare, rimanere + il participio passato (причастие прошедшего времени):
+Si può formare con le voci del verbo andare, stare, restare, rimanere + il participio passato del verbo: Пассивная форма может быть образована с помощью форм глагола andare, stare, restare, rimanere + il participio passato (причастие прошедшего времени):
 
 - La città andò distrutta durante il terremoto.
 - La città è stata distrutta durante il terremoto.
