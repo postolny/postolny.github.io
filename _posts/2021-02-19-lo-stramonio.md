@@ -54,7 +54,7 @@ Fra gli effetti dello stramonio vi è[^2] anche la secchezza delle fauci che pro
 
 Questo a comportato che alcune persone siano state trovate morte ai bordi di ruscelli poco profondi nel tentativo di bere. Это привело к тому, что некоторые люди были найдены мертвыми на берегах неглубоких ручьев, пытавшихся напиться.
 
-[La forma attiva e la forma passiva dei verbi]({{ site.baseurl }}/2021-02-20/la-forma-attiva-e la-forma-passiva-dei-verbi)
+[La forma attiva e la forma passiva dei verbi]({{ site.baseurl }}/2021-02-20/la-forma-attiva-e-la-forma-passiva-dei-verbi)
 
 [^1]: В некоторых источниках используется глагол risvegliate вместо sedate
 
