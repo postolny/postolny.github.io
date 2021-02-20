@@ -5,7 +5,7 @@ description: "Coniuga i verbi all'imperfetto o al trapassato prossimo, in forma 
 author: "И. Постольный"
 comments: false
 categories: 
-tags: [Тесты, Грамматика, Переводы]
+tags: [Тесты, Переводы]
 ---
 
 Coniuga i verbi all'imperfetto o al trapassato prossimo, in forma attiva o in forma passiva. Проспрягай глаголы в imperfetto или в trapassato prossimo, в активной или а пассивной форме.
@@ -24,7 +24,7 @@ Al risveglio, poteva annunciare a tutta la popolazione i messaggi che gli erano 
 
 Durante i riti di iniziazione, lo stramonio era utilizzato come mezzo per ottenere visioni della vita futura dei ragazzi che passavano dalla giovinezza alla vita adulta. Во время обрядов посвящения, дурман использовался как средство достижения видений о будущей жизни мальчиков, переходящих от юности к взрослой жизни.
 
-In alcuni riti notturni africani, lo stramonio veniva fatto ingerire a ragazze filatrici di cotone, che riuscivano poi a essere risvegliate (sedate) solo da un battitore di tamburo che le induceva a ballare una danza liberatoria. В некоторых африканских ночных ритуалах, дурман заставляли проглотить девушек, прядильщиц хлопка, которых после удавалось разбудить (усмирить) только ударом в барабан, который побуждал их танцевать танец освобождения.
+In alcuni riti notturni africani, lo stramonio veniva fatto ingerire a ragazze filatrici di cotone, che riuscivano poi a essere risvegliate (sedate)[^1] solo da un battitore di tamburo che le induceva a ballare una danza liberatoria. В некоторых африканских ночных ритуалах, дурман заставляли проглотить девушек, прядильщиц хлопка, которых после удавалось разбудить (усмирить) только ударом в барабан, который побуждал их танцевать танец освобождения.
 
 Presso alcune popolazioni indiane, parti della piana venivano considerate fondamentali, mischiate ad altri ingredienti, per la preparazione di un potente afrodisiaco che veniva utilizzato per amplificare ed accelerare il piacere femminile. Среди некоторых популяций индейцев, части растения считались основным компонентом, который в смеси с другими ингредиентами, использовался для приготовления мощного средства, повышающее половое влечение, для усиления и ускорения женского удовольствия.
 
@@ -50,8 +50,12 @@ Le foglie di questa pianta spesso vengono essiccate e fumate come metodo di sbal
 
 Dalle allucinazioni si arriva a deliri, convulsioni, disturbi gravi della vista, coma per anossia cerebrale e nei casi più gravi provoca la morte. Галлюцинации приводят к бредовым состояниям, судорогам, серьезным нарушениям зрения, коме из-за церебральной аноксии и в самых тяжелых случаях вызывают смерть.
 
-Fra gli effetti dello stramonio vi è[^1] anche la secchezza delle fauci che provoca una voglia irrefrenabile di bere. Среди явлений дурмана также имеет место сухость во рту, вызывающая неудержимое желание пить.
+Fra gli effetti dello stramonio vi è[^2] anche la secchezza delle fauci che provoca una voglia irrefrenabile di bere. Среди явлений дурмана также имеет место сухость во рту, вызывающая неудержимое желание пить.
 
 Questo a comportato che alcune persone siano state trovate morte ai bordi di ruscelli poco profondi nel tentativo di bere. Это привело к тому, что некоторые люди были найдены мертвыми на берегах неглубоких ручьев, пытавшихся напиться.
 
-[^1]: vi è – (там) имеется/есть
+[La forma attiva e la forma passiva dei verbi]({{ site.baseurl }}/2021-02-20/la-forma-attiva-e la-forma-passiva-dei-verbi)
+
+[^1]: В некоторых источниках используется глагол risvegliate вместо sedate
+
+[^2]: vi è – (там) имеется/есть
