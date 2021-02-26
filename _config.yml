@@ -50,4 +50,4 @@ disqus:
 kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
   
-locale: ""
+locale: "it_IT"
