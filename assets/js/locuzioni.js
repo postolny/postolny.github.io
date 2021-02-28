@@ -287,6 +287,16 @@ $(function () {
     "Cosa intendi dire con \"forse\"? – Что значит \"может быть\"?",
     "che cosa intende (di) dire (con questo)? – что вы (этим) хотите сказать?; что вы имеете в виду?",
     "Che cosa volevi dire con quello? – Что ты имел ввиду?",
+    "Anche se io stessa sbaglio spesso... A volte per pigrizia... Spesso per voler scrivere di fretta. – Даже если я сама часто ошибаюсь... Иногда из-за лени... Часто из желания написать быстро.",
+    "Penso di essere un po' fuori luogo. – Кажется я немного не в своей тарелке.",
+    "Ho l'impressione di essere un po' fuori posto qui. – Я чувствую себя очень странно.",
+    "Non riesco a pensare, a far bene il mio lavoro. – Плохо соображаю и не могу работать как следует.",
+    "Non riesco a pensare lucidamente, con quell'uomo accanto. – Рядом с этим человеком я плохо соображаю.",
+    "Non so dove ho la testa oggi. – Что-то я сегодня плохо соображаю.",
+    "Senti, sono un po' fuori adesso, quindi non ho capito nemmeno una parola. – Верно? Послушай, я сейчас немного плохо соображаю, поэтому я ничего из этого не понял.",
+    "Non riesco a pensare se sono stanco. – Я плохо соображаю, когда устаю.",
+    "Vorrei... vorrei capire, e non ci riesco. – Просто... Я хочу понять и не могу.",
+    "Ti ho già detto che non ci riesco. – Я уже сказал тебе, что я не могу.",
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);
