@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "L'articolo partitivo"
+title: "Частичный артикль – L'articolo partitivo"
 description: "Частичный артикли используется для указания части или неопределённого количества целого, он эквивалентен \"un po', alquanto\""
 author: "И. Постольный"
 comments: false
@@ -61,7 +61,7 @@ _un'espressione adatta:_
  
 L'articolo partitivo in alcuni casi viene usato per attenuare il significato di un sostantivo astratto in espressioni particolari:
 
-В некоторых случаях частичный артикль используется для смягчения (уменьшеия) смысла абстрактного существительного в определённых выражениях:
+В некоторых случаях частичный артикль используется для смягчения (уменьшения) значения абстрактного существительного в определённых выражениях:
  
 - per praticare questo sport ci vuole del coraggio 
 - ci vuole dell'ingegno per creare queste cose
