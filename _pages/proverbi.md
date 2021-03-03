@@ -14,3 +14,6 @@ permalink: /proverbi/
 - Chi lascia la strada vecchia per la nuova, sa quel che lascia e non sa quel che trova. Кто покидает старый путь ради нового, знает то, что покидает и не знает то, что находит.
 - L'onestà tra i ricchi è un'utopia. Честность среди богатых – это утопия.
 - Il miglior amico dell'uomo è la sua coscienza. Лучший друг человека – его совесть.
+- Il tempo è oro. Время – золото.
+- Non tutto è vero quello che sembra. Не всё правда, что кажется.
+- Misura sette volte e taglia una. Семь раз отмерь, один (раз) отрежь.
