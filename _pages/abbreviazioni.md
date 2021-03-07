@@ -54,6 +54,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |loc.s.f.|locuzione sostantivale femminile|субстантивное выражение женского рода|
 |loc.s.m.|locuzione sostantivale maschile|субстантивное выражение мужского рода|
 |loc.v.|locuzione verbale|устойчивое выражение|
+|m.|(sostantivo) maschile|существительное мужского рода|
 |med.|medicina|медицина|
 |merceol.|merceologia|товароведение|
 |numism.|numismatica|нумизматика|
