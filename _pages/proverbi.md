@@ -22,7 +22,7 @@ permalink: /proverbi/
 
 ### C
 
-- Chi dà presto/per primo dà due volte. Кто даёт первый, даёт два раза.
+- Chi dà presto/per primo dà due volte. Кто даёт быстро/первым, даёт вдвойне.
 - Chi fa può sbagliare. Кто делает, может ошибаться (Не ошибается тот, кто ничего не делает).
 - Chi lascia la strada vecchia per la nuova, sa quel che lascia e non sa quel che trova. Кто покидает старый путь ради нового, знает то, что покидает и не знает то, что находит.
 - Chi mal fa mal pensa. – Кто зло творит, тот и о других плохо думает.
@@ -105,4 +105,4 @@ permalink: /proverbi/
 - Un asino gratta l'altro. Один осёл чешет другого (Бес беса хвалит).
 - Uomo avvisato, mezzo salvato. Предупреждённый человек – наполовину спасённый (Одним глазом спит, другим видит; [предупреждён – значит вооружён](https://ru.wikipedia.org/wiki/Предупреждён_—_значит_вооружён))
 
-[^1]: [Spiegazione del proverbio](https://www.proverbi-italiani.com/cerca-131-A.html): (unicuique suum) È il principio fondamentale della giustizia che si può leggere in alcuni scritti di [Cicerone](https://it.wikipedia.org/wiki/Marco_Tullio_Cicerone) e nelle "[Istituzioni di Giustiniano](https://it.wikipedia.org/wiki/Istituzioni_di_Giustiniano)". Толкование пословицы: (лат. unicuique suum) Это основной принцип справедливости, о котором можно прочесть в некоторых произведениях [Цицерона](https://ru.wikipedia.org/wiki/Цицерон) и в [Институциях Юстиниана](https://ru.wikipedia.org/wiki/Институции_Юстиниана).
+[^1]: A ciascuno il suo. [Spiegazione del proverbio](https://www.proverbi-italiani.com/cerca-131-A.html): (unicuique suum) È il principio fondamentale della giustizia che si può leggere in alcuni scritti di [Cicerone](https://it.wikipedia.org/wiki/Marco_Tullio_Cicerone) e nelle "[Istituzioni di Giustiniano](https://it.wikipedia.org/wiki/Istituzioni_di_Giustiniano)". Толкование пословицы: (лат. unicuique suum) Это основной принцип справедливости, о котором можно прочесть в некоторых произведениях [Цицерона](https://ru.wikipedia.org/wiki/Цицерон) и в [Институциях Юстиниана](https://ru.wikipedia.org/wiki/Институции_Юстиниана).
