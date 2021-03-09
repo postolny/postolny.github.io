@@ -9,14 +9,16 @@ permalink: /proverbi/
 ### A
 
 - A bue vecchio, campanaccio d'oro. Старому быку – золотой колокольчик (Старому коню – новое седло (золотую уздечку)).
-- A buon intenditor, poche parole.  Хорошему знатоку – мало слов (Умный смыслит с полуслова).
+- A buon intenditor, poche parole. Хорошему знатоку – мало слов (Умный смыслит с полуслова).
+- A caval donato, non si guarda in bocca. Дарёному коню в пасть не смотрят (Дарёному коню в зубы не смотрят).
+- A ciascuno il suo. Каждому своё[^1].
 - A fare troppo i santi si diventa diavoli. Кто слишком усердствует в святости, тот становится сатаной.
 
 ### B
 
 - Batti il ferro finché/quando è caldo. Куй железо пока горячо.
 - Bisogna far buon viso a cattivo qioco. Нужно делать хорошую мину (хорошее лицо) при плохой игре (Держи хвост трубой. Выше голову!).
-- Bisogna saper vedere (Michelangelo Buonarroti). Нужно уметь видеть (Микеланджело Буонарроти).
+- Bisogna saper vedere ([Michelangelo Buonarroti](https://it.wikipedia.org/wiki/Michelangelo_Buonarroti)). Нужно уметь видеть ([Микеланджело Буонарроти](https://ru.wikipedia.org/wiki/Микеланджело)).
 
 ### C
 
@@ -96,9 +98,11 @@ permalink: /proverbi/
 
 ### T
 
-- Tutto è bene quel che finisce bene. Всё хорошо, что хорошо кончается.
+- [Tutto è bene quel che finisce bene](https://it.wikipedia.org/wiki/Tutto_è_bene_quel_che_finisce_bene) ([William Shakespeare](https://it.wikipedia.org/wiki/William_Shakespeare)). Всё хорошо, что хорошо кончается ([Уильям Шекспир](https://ru.wikipedia.org/wiki/Шекспир,_Уильям)).
 
 ### U
 
 - Un asino gratta l'altro. Один осёл чешет другого (Бес беса хвалит).
 - Uomo avvisato, mezzo salvato. Предупреждённый человек – наполовину спасённый (Одним глазом спит, другим видит; [предупреждён – значит вооружён](https://ru.wikipedia.org/wiki/Предупреждён_—_значит_вооружён))
+
+[^1]: [Spiegazione del proverbio](https://www.proverbi-italiani.com/cerca-131-A.html): (unicuique suum) È il principio fondamentale della giustizia che si può leggere in alcuni scritti di [Cicerone](https://it.wikipedia.org/wiki/Marco_Tullio_Cicerone) e nelle "[Istituzioni di Giustiniano](https://it.wikipedia.org/wiki/Istituzioni_di_Giustiniano)". Толкование пословицы: (лат. unicuique suum) Это основной принцип справедливости, о котором можно прочесть в некоторых произведениях [Цицерона](https://ru.wikipedia.org/wiki/Цицерон) и в [Институциях Юстиниана](https://ru.wikipedia.org/wiki/Институции_Юстиниана).
