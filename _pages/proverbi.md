@@ -43,14 +43,28 @@ permalink: /proverbi/
 
 ### M
 
+- Meglio tardi che mai. Лучше поздно, чем никогда.
 - Misura sette volte e taglia una. Семь раз отмерь, один (раз) отрежь.
-- Nel paese dei ciechi un guercio è re. Среди слепых и кривой король.
 
 ### N
 
+- Nel paese dei ciechi un guercio è re. Среди слепых и кривой король.
 - Nessun uomo senza diffeti. Не бывает человека без недостатков (Нет Ивана без изъяна).
 - Nessuno è perfetto. Никто не совершенен.
 - Nessuno è profeta in patria. Нет пророка в своём отечестве.
 - Nessuno nasce maesto. Никто не рождается учителем (на ошибках учатся).
 - Non tutto è vero quello che sembra. Не всё правда, что кажется.
 - Non tutto il male viene per nuocere. Не всякое зло приходит, чтобы навредить (Нет худа без добра).
+
+### P
+
+- Pancia piena porta gioia. Полное брюхо приносит радость (Серёдочка сыта и кончики играют).
+- Pari con pari ben sta e dura. Равному с равным живёт хорошо и долго (Каждый ищет себе подобного).
+- Parola detta e sasso tirato non fu più suo. Сказанное слово и брошенный камень больше не своё (Слово – не воробей, вылетит – не поймаешь).
+- Parole di santo e unghie di gatto. Слова святого и когти кота (Волк в овечьей шкуре).
+- Passo a passo/Pian piano si va lontano. Шаг за шагом/Потихоньку уходят далеко. (Тише едешь – дальше будешь).
+
+### R
+
+- Risponde il frate come l'abate cante. Отвечает (вторит) монах как абат поёт (Каков поп, таков и приход).
+- Roma non fu fatta/Il mondo non fu fatto in un giorno. Рим/Мир не сделали (создавался, строился) за день (Не сразу Москва строилась).
