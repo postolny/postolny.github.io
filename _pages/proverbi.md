@@ -10,7 +10,7 @@ permalink: /proverbi/
 
 - A bue vecchio, campanaccio d'oro. Старому быку – золотой колокольчик (Старому коню – новое седло (золотую уздечку)).
 - A buon intenditor, poche parole.  Хорошему знатоку – мало слов (Умный смыслит с полуслова).
-- A fare troppo i santi si diventa diavoli. Кто слишком усердствует в святости, то становится сатаной.
+- A fare troppo i santi si diventa diavoli. Кто слишком усердствует в святости, тот становится сатаной.
 
 ### B
 
