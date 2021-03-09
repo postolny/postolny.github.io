@@ -16,6 +16,7 @@ permalink: /proverbi/
 
 - Batti il ferro finché/quando è caldo. Куй железо пока горячо.
 - Bisogna far buon viso a cattivo qioco. Нужно делать хорошую мину (хорошее лицо) при плохой игре (Держи хвост трубой. Выше голову!).
+- Bisogna saper vedere (Michelangelo Buonarroti). Нужно уметь видеть (Микеланджело Буонарроти).
 
 ### C
 
@@ -30,6 +31,10 @@ permalink: /proverbi/
 - Chi vivrà, vedrà. Кто поживёт, увидит (Поживём – увидим).
 - Cosa rara, cosa cara. Редкая вещь – дорогая вещь (Что редко, то ценно).
 
+### F
+
+- Finché c'è vita (fiato) c'è speranza. Пока есть жизнь (дыхание), есть надежда (по сути совпадает с известным высказыванием [Цицерона](https://ru.wikipedia.org/wiki/Цицерон) ([Cicerone](https://it.wikipedia.org/wiki/Marco_Tullio_Cicerone)) "[Dum spiro, spero](https://it.wikipedia.org/wiki/Dum_spiro,_spero)").
+
 ### I
 
 - I gusti sono gusti. Вкусы есть вкусы (О вкусах не спорят).
@@ -42,8 +47,11 @@ permalink: /proverbi/
 
 ### L
 
+- L'abitudine è quasi una seconda natura (Aristotele). Привычка – почти вторая натура (Аристотель).
 - La belezza è effimera. Красота недолговечна.
 - La critica è facile, l'arte è difficile. Критика легка, искусство трудно.
+- La speranza è la ricchezza dei poveri. Надежда – богатство бедных.
+- La speranza è l'ultima a morire. Надежда умирает последней.
 - L'onestà tra i ricchi è un'utopia. Честность среди богатых – это утопия.
 
 ### M
@@ -89,3 +97,8 @@ permalink: /proverbi/
 ### T
 
 - Tutto è bene quel che finisce bene. Всё хорошо, что хорошо кончается.
+
+### U
+
+- Un asino gratta l'altro. Один осёл чешет другого (Бес беса хвалит).
+- Uomo avvisato, mezzo salvato. Предупреждённый человек – наполовину спасённый (Одним глазом спит, другим видит; [предупреждён – значит вооружён](https://ru.wikipedia.org/wiki/Предупреждён_—_значит_вооружён))
