@@ -24,9 +24,9 @@ permalink: /proverbi/
 - Chi lascia la strada vecchia per la nuova, sa quel che lascia e non sa quel che trova. Кто покидает старый путь ради нового, знает то, что покидает и не знает то, что находит.
 - Chi mal fa mal pensa. – Кто зло творит, тот и о других плохо думает.
 - Chi non sa tacer, non sa parlare. Кто не умеет молчать, не умеет говорить.
-- Chi tace acconsente. Молчание – знак согласия.
+- Chi tace acconsente. Кто молчит, соглашается (Молчание – знак согласия).
 - Chi vivrà, vedrà. Кто поживёт, увидит (Поживём – увидим).
-- Cosa rara, cosa cara.  Редкая вещь – дорогая вещь (Что редко, то ценно).
+- Cosa rara, cosa cara. Редкая вещь – дорогая вещь (Что редко, то ценно).
 
 ### I
 
@@ -37,9 +37,9 @@ permalink: /proverbi/
 
 ### L
 
-- L'onestà tra i ricchi è un'utopia. Честность среди богатых – это утопия.
 - La belezza è effimera. Красота недолговечна.
 - La critica è facile, l'arte è difficile. Критика легка, искусство трудно.
+- L'onestà tra i ricchi è un'utopia. Честность среди богатых – это утопия.
 
 ### M
 
@@ -53,4 +53,4 @@ permalink: /proverbi/
 - Nessuno è profeta in patria. Нет пророка в своём отечестве.
 - Nessuno nasce maesto. Никто не рождается учителем (на ошибках учатся).
 - Non tutto è vero quello che sembra. Не всё правда, что кажется.
-- Non tutto il male viene per nuocere. – Нет худа без добра.
+- Non tutto il male viene per nuocere. Не всякое зло приходит, чтобы навредить (Нет худа без добра).
