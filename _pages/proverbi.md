@@ -25,15 +25,20 @@ permalink: /proverbi/
 - Chi mal fa mal pensa. – Кто зло творит, тот и о других плохо думает.
 - Chi non sa tacer, non sa parlare. Кто не умеет молчать, не умеет говорить.
 - Chi tace acconsente. Кто молчит, соглашается (Молчание – знак согласия).
+- Chi va piano va sano e va lontano. Кто едёт тихо, едет здоровым и далеко (Тише едешь – дальше будешь).
+- Chi va veloce va incontro alla croce. Кто едет быстро, едет навстречу кресту (Кто поспешит, в могилу угодит).
 - Chi vivrà, vedrà. Кто поживёт, увидит (Поживём – увидим).
 - Cosa rara, cosa cara. Редкая вещь – дорогая вещь (Что редко, то ценно).
 
 ### I
 
 - I gusti sono gusti. Вкусы есть вкусы (О вкусах не спорят).
+- Il male viene a cavallo e va via a piedi. (Беда приходит пудами, а уходит золотниками).
 - Il miglior amico dell'uomo è la sua coscienza. Лучший друг человека – его совесть.
+- Il pesce grosso mangia il/quello piccolo. Большая рыба есть мелкую.
 - Il tacere è la risposta dei saggi. Молчание – ответ мудрых.
 - Il tempo è oro. Время – золото.
+- Insegnando s'impara. Обучая учатся.
 
 ### L
 
@@ -45,6 +50,7 @@ permalink: /proverbi/
 
 - Meglio tardi che mai. Лучше поздно, чем никогда.
 - Misura sette volte e taglia una. Семь раз отмерь, один (раз) отрежь.
+- Morì il povero nessuno lo sentì, morì il ricco il corno sonava. Умер бедный – никто о том не слышал, умер богатый – рог играл.
 
 ### N
 
@@ -75,6 +81,10 @@ permalink: /proverbi/
 
 - Risponde il frate come l'abate cante. Отвечает (вторит) монах как абат поёт (Каков поп, таков и приход).
 - Roma non fu fatta/Il mondo non fu fatto in un giorno. Рим/Мир не сделали (создавался, строился) за день (Не сразу Москва строилась).
+
+### S
+
+- Sbagliando s'impara. Ошибаясь учатся (Обжёгшись на молоке, будешь дуть на воду).
 
 ### T
 
