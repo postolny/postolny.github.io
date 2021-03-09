@@ -15,7 +15,7 @@ permalink: /proverbi/
 ### B
 
 - Batti il ferro finché/quando è caldo. Куй железо пока горячо.
-- Bisogna far buon viso a cattivo qiocco. Держи хвост трубой. Выше голову! (Нужно делать хорошую мину (хорошее лицо) при плохой игре).
+- Bisogna far buon viso a cattivo qioco. Держи хвост трубой. Выше голову! (Нужно делать хорошую мину (хорошее лицо) при плохой игре).
 
 ### C
 
