@@ -56,6 +56,13 @@ permalink: /proverbi/
 - Non tutto è vero quello che sembra. Не всё правда, что кажется.
 - Non tutto il male viene per nuocere. Не всякое зло приходит, чтобы навредить (Нет худа без добра).
 
+### O
+
+- Ogni cosa a suo tempo. Всякая вещь в своё время (Всему своё время).
+- Ognuno è buono a qualcosa. Каждый в чём-то хорош.
+- Ognuno ha i suoi gusti. Каждый имеет свои вкусы (О вкусах не спорят).
+- Ognuno ha/porta la sua croce. Каждый имеет/несёт свой крест.
+
 ### P
 
 - Pancia piena porta gioia. Полное брюхо приносит радость (Серёдочка сыта и кончики играют).
@@ -68,3 +75,7 @@ permalink: /proverbi/
 
 - Risponde il frate come l'abate cante. Отвечает (вторит) монах как абат поёт (Каков поп, таков и приход).
 - Roma non fu fatta/Il mondo non fu fatto in un giorno. Рим/Мир не сделали (создавался, строился) за день (Не сразу Москва строилась).
+
+### T
+
+- Tutto è bene quel che finisce bene. Всё хорошо, что хорошо кончается.
