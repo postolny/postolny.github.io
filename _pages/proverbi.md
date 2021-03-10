@@ -28,12 +28,15 @@ permalink: /proverbi/
 - Cessato il guadagno, cessata l'amicizia. Кончена выгода (прибыль), кончена дружба (Лопнула дружба, как выгода пропала).
 - Chi agisce adagio e bene, buon risultato ottiene. Кто действует медленно и хорошо (верно), добивается хорошего результата (Тише едешь – дальше будешь).
 - Chi ama me, ama il mio cane. Кто любит меня, любит мою собаку (Любишь меня. так люби и мою собачку!).
+- Chi cerca trova. Кто ищет, находит.
 - Chi asino nasce, asino muore. Кто родился ослом, ослом и помрёт (Кто родился волком, тому не бывать лисой).
 - Chi dà presto/per primo dà due volte. Кто даёт быстро/первым, даёт вдвойне.
+- Chi due lepri caccia, l'una non piglia e l'altra lascia. Кто на двух зайцев охотится, одного не хватает и другого упускает (За двумя зайцами погонишься – ни одного не поймаешь).
 - Chi fa può sbagliare. Кто делает, может ошибаться (Не ошибается тот, кто ничего не делает).
 - Chi lascia la strada vecchia per la nuova, sa quel che lascia e non sa quel che trova. Кто покидает старый путь ради нового, знает то, что покидает и не знает то, что находит.
 - Chi mal fa mal pensa. – Кто зло творит, тот и о других плохо думает.
 - Chi non sa tacer, non sa parlare. Кто не умеет молчать, не умеет говорить.
+- Chi ride il venerdì, piange la domenica. Кто смеётся в пятницу, плачет в воскресенье (Хорошо смеётся тот, кто смеётся последним).
 - Chi tace acconsente. Кто молчит, соглашается (Молчание – знак согласия).
 - Chi va piano va sano e va lontano. Кто едёт тихо, едет здоровым и далеко (Тише едешь – дальше будешь).
 - Chi va veloce va incontro alla croce. Кто едет быстро, едет навстречу кресту (Кто поспешит, в могилу угодит).
@@ -53,6 +56,7 @@ permalink: /proverbi/
 - Il pesce grosso mangia il/quello piccolo. Большая рыба есть мелкую.
 - Il tacere è la risposta dei saggi. Молчание – ответ мудрых.
 - Il tempo è oro. Время – золото.
+- Il ventre pieno fa la testa vuota. Набитое брюхо делает голову пустой.
 - Insegnando s'impara. Обучая учатся.
 
 ### L
@@ -95,8 +99,13 @@ permalink: /proverbi/
 - Parole di santo e unghie di gatto. Слова святого и когти кота (Волк в овечьей шкуре).
 - Passo a passo/Pian piano si va lontano. Шаг за шагом/Потихоньку уходят далеко. (Тише едешь – дальше будешь).
 
+### Q
+
+- Quel che si fa con piacere, non è fatica. То, что делается с удовольствием, не труд (Охота пуще неволи).
+
 ### R
 
+- Ride bene chi ride l'ultimo. Хорошо смеётся тот, кто смеётся последним.
 - Risponde il frate come l'abate cante. Отвечает (вторит) монах как абат поёт (Каков поп, таков и приход).
 - Roma non fu fatta/Il mondo non fu fatto in un giorno. Рим/Мир не сделали (создавался, строился) за день (Не сразу Москва строилась).
 
