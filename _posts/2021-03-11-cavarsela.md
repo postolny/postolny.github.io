@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "cavarsela"
-description: "uscire fortunosamente da una situazione di pericolo (удачно выбраться из опасной ситуации): me la sono cavata (мне сошло с рук), siamo riusciti a cavarcela (нам удалось выкрутится), cavarsela per miracolo (чудом спастись), per il rotto della cuffia (из-за сломанных наушников)."
+description: "uscire fortunosamente da una situazione di pericolo (удачно выбраться из опасной ситуации): me la sono cavata (мне сошло с рук), siamo riusciti a cavarcela (нам удалось выкрутиться), cavarsela per miracolo (чудом спастись), per il rotto della cuffia (из-за сломанных наушников)."
 author: "И. Постольный"
 comments: false
 categories: с
@@ -12,11 +12,11 @@ tags:
 
 v.procompl. CO
 
-1) uscire fortunosamente da una situazione di pericolo (удачно выбраться из опасной ситуации): me la sono cavata (мне сошло с рук), siamo riusciti a cavarcela (нам удалось выкрутится), cavarsela per miracolo (чудом спастись), per il rotto della cuffia (из-за сломанных наушников).
+1) uscire fortunosamente da una situazione di pericolo (удачно выбраться из опасной ситуации): me la sono cavata (мне сошло с рук), siamo riusciti a cavarcela (нам удалось выкрутиться), cavarsela per miracolo (чудом спастись), per il rotto della cuffia (из-за сломанных наушников).
 
 **Sinonimi**: farcela, scamparla.
 
-2a) superare o evitare le difficoltà, spec. con astuzia o accortezza (преодолевать или избегать трудности, особенно хитростью или прозорливостью:): cavarsela bene, con poco, a buon mercato (удачно отделаться – cavarsela a buon mercato (con poco)).
+2a) superare o evitare le difficoltà, spec. con astuzia o accortezza (преодолевать или избегать трудности, особенно хитростью или прозорливостью): cavarsela bene, con poco, a buon mercato (удачно отделаться – cavarsela a buon mercato (con poco)).
 
 **Sinonimi**: togliersela.
 
@@ -41,5 +41,5 @@ v.procompl. CO
 |Ha avuto un incidente ma è riuscito a cavarsela (ho avuto un incidente, ma me la sono cavata)|Он попал в аварию, но сумел избежать наказания (я попал в аварию, но мне это сошло с рук)|
 |È stata una scalata difficile ma sono riusciti a cavarsela (ma siamo riusciti a cavarcela)|Это был трудный подъем, но они смогли его преодолеть (но мы справились)|
 |È riuscita a cavarsela per miracolo.|Ей каким-то чудом удалось спастись.|
-|Potevano perdere tutto, ma grazie alla loro bravura sono riusciti a cavarsela con poco.|Они могли потерять все, но благодаря своему искусству им удалось почти ничего не потерять.|
+|Potevano perdere tutto, ma grazie alla loro bravura sono riusciti a cavarsela con poco.|Они могли потерять всё, но благодаря своему искусству им удалось не потерять почти ничего.|
 |Hanno fatto un grosso guaio, ma sono riusciti a cavarsela a buon mercato.|Они устроили большой беспорядок, но они дёшево отделались.|
