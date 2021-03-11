@@ -4,7 +4,7 @@ title: "cavarsela"
 description: "uscire fortunosamente da una situazione di pericolo (удачно выбраться из опасной ситуации): me la sono cavata (мне сошло с рук), siamo riusciti a cavarcela (нам удалось выкрутиться), cavarsela per miracolo (чудом спастись), per il rotto della cuffia (из-за сломанных наушников)."
 author: "И. Постольный"
 comments: false
-categories: с
+categories: c
 tags:
 ---
 
