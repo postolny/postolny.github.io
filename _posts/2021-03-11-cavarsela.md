@@ -35,9 +35,9 @@ v.procompl. CO
 |Marina se la cava abbastanza bene col tennis.|Марина достаточно хорошо справляется с теннисом.|
 |Marco ha studiato abbastanza, quindi credo che all'esame se la caverà.|Марко выучил достаточно хорошо, поэтому я думаю что во время экзамена он справится.|
 |Sei grande d'ora in poi dovrai cavartela [da solo]({{ site.baseurl }}/2020-11-08/da-solo).|Ты уже большой, отныне ты должен справляться сам.|
-|Com'è andato l'esame? Me la sono cavata! cioè "l'ho superato" (anche se ho avuto difficoltà).|Как прошёл экзамен?  Me la sono cavata! То есть "Справился!" (хоть мне и было сложно).|
-|"Come sta?" "Se la caverà", significa che non morirà, supererà la malattia.|Как он? –Выживет, т.е. "не умрёт, преодолеет болезнь".|
-|All'esame me la sono cavata per un pelo! (= con il minimo dei voti).|На экзамене я был на волоске от провала.|
+|Com'è andato l'esame? Me la sono cavata! cioè "l'ho superato" (anche se ho avuto difficoltà).|Как прошёл экзамен?  Me la sono cavata! То есть "Справилась!" (хоть мне и было сложно).|
+|"Come sta?" "Se la caverà", significa che non morirà, supererà la malattia.|Как он? – Выживет, т.е. "не умрёт, преодолеет болезнь".|
+|All'esame me la sono cavata per un pelo! (= con il minimo dei voti).|На экзамене я была на волоске от провала.|
 |Ha avuto un incidente ma è riuscito a cavarsela (ho avuto un incidente, ma me la sono cavata)|Он попал в аварию, но сумел избежать наказания (я попал в аварию, но мне это сошло с рук)|
 |È stata una scalata difficile ma sono riusciti a cavarsela (ma siamo riusciti a cavarcela)|Это был трудный подъем, но они смогли его преодолеть (но мы справились)|
 |È riuscita a cavarsela per miracolo.|Ей каким-то чудом удалось спастись.|
