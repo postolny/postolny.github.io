@@ -13,6 +13,7 @@ permalink: /proverbi/
 - A caval donato, non si guarda in bocca. Дарёному коню в пасть не смотрят (Дарёному коню в зубы не смотрят).
 - A ciascuno il suo. Каждому своё[^1].
 - A fare troppo i santi si diventa diavoli. Кто слишком усердствует в святости, тот становится сатаной.
+- Al cuor non si comanda. Сердцу не прикажешь.
 
 ### B
 
@@ -36,6 +37,7 @@ permalink: /proverbi/
 - Chi lascia la strada vecchia per la nuova, sa quel che lascia e non sa quel che trova. Кто покидает старый путь ради нового, знает то, что покидает и не знает то, что находит.
 - Chi mal fa mal pensa. – Кто зло творит, тот и о других плохо думает.
 - Chi non sa tacer, non sa parlare. Кто не умеет молчать, не умеет говорить.
+- Chi parla poco dice tanto. Кто говорит мало, скажет много (Много говорено, да мало сказано).
 - Chi ride il venerdì, piange la domenica. Кто смеётся в пятницу, плачет в воскресенье (Хорошо смеётся тот, кто смеётся последним).
 - Chi tace acconsente. Кто молчит, соглашается (Молчание – знак согласия).
 - Chi va piano va sano e va lontano. Кто едёт тихо, едет здоровым и далеко (Тише едешь – дальше будешь).
@@ -55,6 +57,7 @@ permalink: /proverbi/
 - Il miglior amico dell'uomo è la sua coscienza. Лучший друг человека – его совесть.
 - Il pesce grosso mangia il/quello piccolo. Большая рыба есть мелкую.
 - Il tacere è la risposta dei saggi. Молчание – ответ мудрых.
+- Il tempo è denaro. Время — деньги.
 - Il tempo è oro. Время – золото.
 - Il ventre pieno fa la testa vuota. Набитое брюхо делает голову пустой.
 - Insegnando s'impara. Обучая учатся.
@@ -80,7 +83,11 @@ permalink: /proverbi/
 - Nessun uomo senza diffeti. Не бывает человека без недостатков (Нет Ивана без изъяна).
 - Nessuno è perfetto. Никто не совершенен.
 - Nessuno è profeta in patria. Нет пророка в своём отечестве.
+- Nessuno nasce imparato. Никто не рождается ученым.
 - Nessuno nasce maesto. Никто не рождается учителем (на ошибках учатся).
+- Non c'è rosa senza spine. Нет розы без шипов.
+- Non è bello ciò che è bello, ma è bello ciò che piace. Не то красиво, что красиво, а то, что нравится.
+- Non è tutto oro quel che luccica. Не всё то золото, что блестит.
 - Non tutto è vero quello che sembra. Не всё правда, что кажется.
 - Non tutto il male viene per nuocere. Не всякое зло приходит, чтобы навредить (Нет худа без добра).
 
@@ -122,6 +129,6 @@ permalink: /proverbi/
 - Un asino gratta l'altro. Один осёл чешет другого (Бес беса хвалит).
 - Uomo avvisato, mezzo salvato. Предупреждённый человек – наполовину спасённый (Одним глазом спит, другим видит; [предупреждён – значит вооружён](https://ru.wikipedia.org/wiki/Предупреждён_—_значит_вооружён)).
 
-[^1]: A ciascuno il suo. [Spiegazione del proverbio](https://www.proverbi-italiani.com/cerca-131-A.html): (unicuique suum) È il principio fondamentale della giustizia che si può leggere in alcuni scritti di [Cicerone](https://it.wikipedia.org/wiki/Marco_Tullio_Cicerone) e nelle "[Istituzioni di Giustiniano](https://it.wikipedia.org/wiki/Istituzioni_di_Giustiniano)". Толкование пословицы: (лат. unicuique suum) Это основной принцип справедливости, о котором можно прочесть в некоторых произведениях [Цицерона](https://ru.wikipedia.org/wiki/Цицерон) и в [Институциях Юстиниана](https://ru.wikipedia.org/wiki/Институции_Юстиниана).
+[^1]: A ciascuno il suo. [Spiegazione del proverbio](https://www.proverbi-italiani.com/cerca-131-A.html): (unicuique suum) È il principio fondamentale della giustizia che si può leggere in alcuni scritti di [Cicerone](https://it.wikipedia.org/wiki/Marco_Tullio_Cicerone) e nelle "[Istituzioni di Giustiniano](https://it.wikipedia.org/wiki/Istituzioni_di_Giustiniano)". Толкование пословицы: (лат. unicuique suum) Это основной принцип справедливости, о котором можно прочесть в некоторых сочинениях [Цицерона](https://ru.wikipedia.org/wiki/Цицерон) и в [Институциях Юстиниана](https://ru.wikipedia.org/wiki/Институции_Юстиниана).
 
 [^2]: Finché c'è vita (fiato) c'è speranza. По сути совпадает с известным высказыванием [Цицерона](https://ru.wikipedia.org/wiki/Цицерон) ([Cicerone](https://it.wikipedia.org/wiki/Marco_Tullio_Cicerone)) "[Dum spiro, spero](https://it.wikipedia.org/wiki/Dum_spiro,_spero)".
