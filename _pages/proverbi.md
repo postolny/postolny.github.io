@@ -43,16 +43,19 @@ permalink: /proverbi/
 - Chi va piano va sano e va lontano. Кто едёт тихо, едет здоровым и далеко (Тише едешь – дальше будешь).
 - Chi va veloce va incontro alla croce. Кто едет быстро, едет навстречу кресту (Кто поспешит, в могилу угодит).
 - Chi vivrà, vedrà. Кто поживёт, увидит (Поживём – увидим).
+- Ciò che dobbiamo imparare a fare, lo impariamo facendolo ([Aristotele](https://it.wikipedia.org/wiki/Aristotele)). Тому, что мы должны научиться делать, мы учимся, делая ([Аристотель](https://ru.wikipedia.org/wiki/Аристотель)).
 - Cosa rara, cosa cara. Редкая вещь – дорогая вещь (Что редко, то ценно).
 
 ### F
 
+- Fare un nuovo passo, dire una nuova parola, è ciò che la gente teme di più ([Fëdor Dostoevskij](https://it.wikipedia.org/wiki/Fëdor_Dostoevskij)). Люди больше всего боятся сделать новый шаг, сказать новое слово ([Фёдор Достоевский](https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович)).
 - Finché c'è vita (fiato) c'è speranza[^2]. Пока есть жизнь (дыхание), есть надежда.
 
 ### I
 
 - I gusti sono gusti. Вкусы есть вкусы (О вкусах не спорят).
 - Il filo si rompe dove è più debole. Нить рвётся там, где слабее (Где тонко, там и рвётся).
+- Il male mette le radici quando un uomo comincia a pensare di essere migliore degli altri ([Madre Teresa di Calcutta](https://it.wikipedia.org/wiki/Madre_Teresa_di_Calcutta)). Зло пускает корни, когда человек начинает думать, что он лучше других ([Мать Тереза](https://ru.wikipedia.org/wiki/Мать_Тереза)).
 - Il male viene a cavallo e va via a piedi. (Беда приходит пудами, а уходит золотниками).
 - Il miglior amico dell'uomo è la sua coscienza. Лучший друг человека – его совесть.
 - Il pesce grosso mangia il/quello piccolo. Большая рыба есть мелкую.
@@ -64,12 +67,14 @@ permalink: /proverbi/
 
 ### L
 
-- L'abitudine è quasi una seconda natura (Aristotele). Привычка – почти вторая натура (Аристотель).
+- L'abitudine è quasi una seconda natura ([Aristotele](https://it.wikipedia.org/wiki/Aristotele)). Привычка – почти вторая натура ([Аристотель](https://ru.wikipedia.org/wiki/Аристотель)).
 - La belezza è effimera. Красота недолговечна.
 - La critica è facile, l'arte è difficile. Критика легка, искусство трудно.
 - La speranza è la ricchezza dei poveri. Надежда – богатство бедных.
 - La speranza è l'ultima a morire. Надежда умирает последней.
 - L'onestà tra i ricchi è un'utopia. Честность среди богатых – это утопия.
+- La struttura alare del calabrone, in relazione al suo peso, non è adatta al volo, ma lui non lo sa e vola lo stesso ([Albert Einstein](https://it.wikipedia.org/wiki/Albert_Einstein)). Строение крыла шмеля, относительно его веса, не пригодна для полета, но он этого не знает и всё равно летает ([Альберт Эйнштейн](https://ru.wikipedia.org/wiki/Эйнштейн,_Альберт)).
+- L'unica vera saggezza è sapere di non sapere nulla ([Socrate](https://it.wikipedia.org/wiki/Socrate)). Единственная истинная мудрость – знать, что ты ничего не знаешь ([Сократ](https://ru.wikipedia.org/wiki/Сократ)).
 
 ### M
 
@@ -88,6 +93,7 @@ permalink: /proverbi/
 - Non c'è rosa senza spine. Нет розы без шипов.
 - Non è bello ciò che è bello, ma è bello ciò che piace. Не то красиво, что красиво, а то, что нравится.
 - Non è tutto oro quel che luccica. Не всё то золото, что блестит.
+- Non si dà fumo senza fuoco. Нет дыма без огня.
 - Non tutto è vero quello che sembra. Не всё правда, что кажется.
 - Non tutto il male viene per nuocere. Не всякое зло приходит, чтобы навредить (Нет худа без добра).
 
@@ -95,6 +101,7 @@ permalink: /proverbi/
 
 - Ogni cosa a suo tempo. Всякая вещь в своё время (Всему своё время).
 - Ognuno è buono a qualcosa. Каждый в чём-то хорош.
+- Ognuno è un genio. Ma se si giudica un pesce dalla sua abilità di arrampicarsi sugli alberi, passerà tutta la sua vita a credersi stupido ([Albert Einstein](https://it.wikipedia.org/wiki/Albert_Einstein)). Все мы гении. Но если вы будете судить рыбу по ее способности взбираться на дерево, она проживет всю жизнь, считая себя глупой ([Альберт Эйнштейн](https://ru.wikipedia.org/wiki/Эйнштейн,_Альберт)).
 - Ognuno ha i suoi gusti. Каждый имеет свои вкусы (О вкусах не спорят).
 - Ognuno ha/porta la sua croce. Каждый имеет/несёт свой крест.
 
@@ -108,6 +115,7 @@ permalink: /proverbi/
 
 ### Q
 
+- Quando ami qualcuno, lo ami così com’è e non come vorresti che fosse ([Lev Tolstoj](https://it.wikipedia.org/wiki/Lev_Tolstoj)). Когда вы любите кого-то, вы любите их такими, какие они есть, а не такими, какими вы хотели бы, чтобы они были ([Лев Николаевич Толстой](https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич)).
 - Quel che si fa con piacere, non è fatica. То, что делается с удовольствием, не труд (Охота пуще неволи).
 
 ### R
@@ -119,6 +127,8 @@ permalink: /proverbi/
 ### S
 
 - Sbagliando s'impara. Ошибаясь учатся (Обжёгшись на молоке, будешь дуть на воду).
+- So una cosa sola, di non saper nulla (Io so una sola cosa, di nulla sapere; Una sola cosa so: di non sapere) ([Socrate](https://it.wikipedia.org/wiki/Socrate)). Я знаю только то, что ничего не знаю ([Сократ](https://ru.wikipedia.org/wiki/Сократ)).
+- Spesso è peggiore il rimedio che il male. Часто лекарство хуже болезни (Лекарство хуже болезни).
 
 ### T
 
