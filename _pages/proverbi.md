@@ -13,12 +13,14 @@ permalink: /proverbi/
 - A caval donato, non si guarda in bocca. Дарёному коню в пасть не смотрят (Дарёному коню в зубы не смотрят).
 - A ciascuno il suo. Каждому своё[^1].
 - A fare troppo i santi si diventa diavoli. Кто слишком усердствует в святости, тот становится сатаной.
+- A goccia a goccia si scava/s'incava/fora la pietra. Капля по капле и камень долбит (Вода камень точит).
 - Al cuor non si comanda. Сердцу не прикажешь.
 
 ### B
 
 - Batti il ferro finché/quando è caldo. Куй железо пока горячо.
 - Bisogna far buon viso a cattivo qioco. Нужно делать хорошую мину (хорошее лицо) при плохой игре (Держи хвост трубой. Выше голову!).
+- Bisogna pigliar le venture quando Dio le manda. Нужно хватать удачу, когда Бог её посылает (Когда курица в руках, её надо ощипать).
 - Bisogna saper vedere ([Michelangelo Buonarroti](https://it.wikipedia.org/wiki/Michelangelo_Buonarroti)). Нужно уметь видеть ([Микеланджело Буонарроти](https://ru.wikipedia.org/wiki/Микеланджело)).
 - Bue vecchio, solco diritto. Старый вол – прямая борозда (Старый конь борозды не портит).
 - Buon grano fa buon pane. Хорошее зерно делат хороший хлеб (Хорошее дерево даёт хорошие плоды).
@@ -32,6 +34,7 @@ permalink: /proverbi/
 - Chi cerca trova. Кто ищет, находит.
 - Chi asino nasce, asino muore. Кто родился ослом, ослом и помрёт (Кто родился волком, тому не бывать лисой).
 - Chi dà presto/per primo dà due volte. Кто даёт быстро/первым, даёт вдвойне.
+- Chi di gatta nasce, sorci piglia. Кто кошкой родился, ловит мышей (Как волка ни корми, он всё в лес глядит).
 - Chi due lepri caccia, l'una non piglia e l'altra lascia. Кто на двух зайцев охотится, одного не хватает и другого упускает (За двумя зайцами погонишься – ни одного не поймаешь).
 - Chi fa può sbagliare. Кто делает, может ошибаться (Не ошибается тот, кто ничего не делает).
 - Chi lascia la strada vecchia per la nuova, sa quel che lascia e non sa quel che trova. Кто покидает старый путь ради нового, знает то, что покидает и не знает то, что находит.
@@ -55,6 +58,7 @@ permalink: /proverbi/
 
 - I gusti sono gusti. Вкусы есть вкусы (О вкусах не спорят).
 - Il filo si rompe dove è più debole. Нить рвётся там, где слабее (Где тонко, там и рвётся).
+- Il libro serrato non fa l'uomo letterato. Закрытая книга не делает человека образованным.
 - Il male mette le radici quando un uomo comincia a pensare di essere migliore degli altri ([Madre Teresa di Calcutta](https://it.wikipedia.org/wiki/Madre_Teresa_di_Calcutta)). Зло пускает корни, когда человек начинает думать, что он лучше других ([Мать Тереза](https://ru.wikipedia.org/wiki/Мать_Тереза)).
 - Il male viene a cavallo e va via a piedi. (Беда приходит пудами, а уходит золотниками).
 - Il miglior amico dell'uomo è la sua coscienza. Лучший друг человека – его совесть.
@@ -91,6 +95,9 @@ permalink: /proverbi/
 - Nessuno nasce imparato. Никто не рождается ученым.
 - Nessuno nasce maesto. Никто не рождается учителем (на ошибках учатся).
 - Non c'è rosa senza spine. Нет розы без шипов.
+- Non chiudere la stalla quando i buoi sono scappati. Не закрывай хлев, когда быки сбежали (Когда зубов не стало, тогда и орехов привезли).
+- Non dire gatto finchè non ce l'hai nel sacco. Не говори кот, пока он не будет у тебя в мешке (Не говори гоп, пока не перепрыгнешь).
+- Non dire hop finchè non hai saltato. Не говори гоп, пока не перепрыгнешь (русская поговорка, в переводе на итальянский).
 - Non è bello ciò che è bello, ma è bello ciò che piace. Не то красиво, что красиво, а то, что нравится.
 - Non è tutto oro quel che luccica. Не всё то золото, что блестит.
 - Non si dà fumo senza fuoco. Нет дыма без огня.
@@ -115,6 +122,7 @@ permalink: /proverbi/
 
 ### Q
 
+- Quale madre, tale figlia. Какова мать, такова и дочь.
 - Quando ami qualcuno, lo ami così com’è e non come vorresti che fosse ([Lev Tolstoj](https://it.wikipedia.org/wiki/Lev_Tolstoj)). Когда вы любите кого-то, вы любите их такими, какие они есть, а не такими, какими вы хотели бы, чтобы они были ([Лев Николаевич Толстой](https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич)).
 - Quel che si fa con piacere, non è fatica. То, что делается с удовольствием, не труд (Охота пуще неволи).
 
@@ -137,6 +145,7 @@ permalink: /proverbi/
 ### U
 
 - Un asino gratta l'altro. Один осёл чешет другого (Бес беса хвалит).
+- Un re non letterato è un asino incoronato. Необразованный король – это коронованный осёл.
 - Uomo avvisato, mezzo salvato. Предупреждённый человек – наполовину спасённый (Одним глазом спит, другим видит; [предупреждён – значит вооружён](https://ru.wikipedia.org/wiki/Предупреждён_—_значит_вооружён)).
 
 [^1]: A ciascuno il suo. [Spiegazione del proverbio](https://www.proverbi-italiani.com/cerca-131-A.html): (unicuique suum) È il principio fondamentale della giustizia che si può leggere in alcuni scritti di [Cicerone](https://it.wikipedia.org/wiki/Marco_Tullio_Cicerone) e nelle "[Istituzioni di Giustiniano](https://it.wikipedia.org/wiki/Istituzioni_di_Giustiniano)". Толкование пословицы: (лат. unicuique suum) Это основной принцип справедливости, о котором можно прочесть в некоторых сочинениях [Цицерона](https://ru.wikipedia.org/wiki/Цицерон) и в [Институциях Юстиниана](https://ru.wikipedia.org/wiki/Институции_Юстиниана).
