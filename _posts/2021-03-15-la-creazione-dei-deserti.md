@@ -10,6 +10,12 @@ tags: Переводы
 ## fiaba araba
 {: .center}
 
+## Сотворение пустынь
+{: .center}
+
+## арабская сказка
+{: .center}
+
 | Italiano | Русский |
 |----------|---------|
 |Molti secoli fa, che ci crediate[^1] o no, la terra era verde e fresca, migliaia di ruscelli la percorrevano, gli alberi erano ricchi d'ogni genere[^2] di frutta e gli uomini, che ignoravano il male, vivevano felici senza farsi la guerra[^3].|Много веков назад, верите вы тому или нет, земля была зелёной и прохладной, тысячи ручьёв текли по ней, деревья были богаты всевозможными плодами и люди не знали зла и жили счастливо, не затевая войн.|
