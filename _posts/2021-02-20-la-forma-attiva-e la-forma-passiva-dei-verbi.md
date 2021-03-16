@@ -65,31 +65,31 @@ Quando trasformiamo una frase dalla forma attiva alla forma passiva dobbiamo pre
 
 | Italiano | Русский |
 |----------|---------|
-|I prjaniki _vengono prodotti_[^2] in molte località russe ma i più famosi sono quelli di Tula, diventata il simbolo della città conosciuta anche per la fabbricazione delle armi. Per comprendere perché proprio i prjaniki di Tula abbiano conquistato la fiducia e l'amore dei russi, è necessario immergersi nel passato e seguire le tappe dello sviluppo di questo commercio.|Пряники производятся во многих местах России, но самые известные из них – из Тулы, которая стала символом города, известного также производством оружия. Чтобы понять, почему тульские прьяники завоевали доверие и любовь россиян, необходимо погрузиться в прошлое и проследить этапы развития этого промысла.|
-|Dove _vengono fabbricati_ i prodotti KIKO MILANO?|Где производятся товары KIKO MILANO?|
-|Il cellulare che avete in mano, al 90% _è stato prodotto_ in Cina.|Cотовый телефон, который вы держите в руке, на 90% производится в Китае.|
-|Con le forbici si può tagliare la carta o la stoffa. Le forbici _sono fatte_ di metallo.|При момощи ножниц люди могут разрезать бумагу или ткани. Ножницы делают из металла|
-|Le persone mangiano con le forchette che _sono fatte_ di metallo. All'estremità delle forchette ci sono dei denti appuntiti.|Люди едят при помощи вилок, которые сделаны из металла. На конце вилок находятся острые зубья.|
-|La focaccia _va fatta_[^3] oggi.|Фокачча должна быть приготовлена сегодня.|
-|Cairo: "Prima la salute. Se il campionato potrà ripartire, _va finito_ entro il 30 giugno".|Каир: "Сначала здоровье. Если чемпионат возобновится, он будет закончен до 30 июня".|
-|Questo lavoro _va finito_ entro le 17:00.|Эта работа должна быть выполнена до пяти часов вечера.|
-|Capito? _Va finito_.|Понятно? Всё должно быть сделано.|
-|I vestiti colorati _vanno lavati_ a 30 gradi.|Цветное бельё должно стираться при температуре не выше 30 градусов.|
-|Questo lavoro _va fatto_ meglio.|Эта работа должна быть сделана лучше.|
-|Questa lettera _andava spedita_ ieri.|Это письмо должно было быть отправлено вчера.|
+|I prjaniki **vengono prodotti**[^2] in molte località russe ma i più famosi sono quelli di Tula, diventata il simbolo della città conosciuta anche per la fabbricazione delle armi. Per comprendere perché proprio i prjaniki di Tula abbiano conquistato la fiducia e l'amore dei russi, è necessario immergersi nel passato e seguire le tappe dello sviluppo di questo commercio.|Пряники производятся во многих местах России, но самые известные из них – из Тулы, которая стала символом города, известного также производством оружия. Чтобы понять, почему тульские прьяники завоевали доверие и любовь россиян, необходимо погрузиться в прошлое и проследить этапы развития этого промысла.|
+|Dove **vengono fabbricati** i prodotti KIKO MILANO?|Где производятся товары KIKO MILANO?|
+|Il cellulare che avete in mano, al 90% **è stato prodotto** in Cina.|Cотовый телефон, который вы держите в руке, на 90% производится в Китае.|
+|Con le forbici si può tagliare la carta o la stoffa. Le forbici **sono fatte** di metallo.|При момощи ножниц люди могут разрезать бумагу или ткани. Ножницы делают из металла|
+|Le persone mangiano con le forchette che **sono fatte** di metallo. All'estremità delle forchette ci sono dei denti appuntiti.|Люди едят при помощи вилок, которые сделаны из металла. На конце вилок находятся острые зубья.|
+|La focaccia **va fatta**[^3] oggi.|Фокачча должна быть приготовлена сегодня.|
+|Cairo: "Prima la salute. Se il campionato potrà ripartire, **va finito** entro il 30 giugno".|Каир: "Сначала здоровье. Если чемпионат возобновится, он будет закончен до 30 июня".|
+|Questo lavoro **va finito** entro le 17:00.|Эта работа должна быть выполнена до пяти часов вечера.|
+|Capito? **Va finito**.|Понятно? Всё должно быть сделано.|
+|I vestiti colorati **vanno lavati** a 30 gradi.|Цветное бельё должно стираться при температуре не выше 30 градусов.|
+|Questo lavoro **va fatto** meglio.|Эта работа должна быть сделана лучше.|
+|Questa lettera **andava spedita** ieri.|Это письмо должно было быть отправлено вчера.|
 |Il cancello andava chiuso.|Ворота должны были быть закрыты.|
-|Qui _si vendono_ medicine.|Здесь продают (продаются) лекарства.|
-|Le medicine _si comprano_ in farmacia.|Лекарства покупают в аптеке.|
-|In quel ristorante _si mangia_ bene.|В этои этом ресторане можно хорошо поесть.|
-|Nel ristorante indiano _si mangia_ cibo piccante.|В этом индийском ресторане едят пикантную пищу.|
-|Federica _si pente_ di ciò.|Федерика сожалеет об этом.|
-|_Si vergogna_ di ciò che ha fatto.|.Ему стыдно за то, что он сделал.|
-|I miei genitori _si sono arrabbiati_ molto.|Мои родители очень разозлились.|
-|La forma passiva dei verbi _è_ molto _usata_ in italiano.|Страдательная форма глагола в итальянском языке очень часто используется.|
-|_Sono stata chiamata_ da Marco.|Мне позвонил Марко.|
-|I piatti devono _essere lavati_.|Посуда должна быть помыта.|
-|La bambina deve _essere vestita_ bene, fuori fa freddo.|Малышка должна быть хорошо одета, на улице холодно.|
-|Questa strada _fu costruita_ ancora dagli antichi romani.|Эта дорога была построена ещё древними римлянами.|
+|Qui **si vendono** medicine.|Здесь продают (продаются) лекарства.|
+|Le medicine **si comprano** in farmacia.|Лекарства покупают в аптеке.|
+|In quel ristorante **si mangia** bene.|В этои этом ресторане можно хорошо поесть.|
+|Nel ristorante indiano **si mangia** cibo piccante.|В этом индийском ресторане едят пикантную пищу.|
+|Federica **si pente** di ciò.|Федерика сожалеет об этом.|
+|**Si vergogna** di ciò che ha fatto.|.Ему стыдно за то, что он сделал.|
+|I miei genitori **si sono arrabbiati** molto.|Мои родители очень разозлились.|
+|La forma passiva dei verbi **è** molto **usata** in italiano.|Страдательная форма глагола в итальянском языке очень часто используется.|
+|**Sono stata chiamata** da Marco.|Мне позвонил Марко.|
+|I piatti devono **essere lavati**.|Посуда должна быть помыта.|
+|La bambina deve **essere vestita** bene, fuori fa freddo.|Малышка должна быть хорошо одета, на улице холодно.|
+|Questa strada **fu costruita** ancora dagli antichi romani.|Эта дорога была построена ещё древними римлянами.|
 
 [^1]: si passivante – частица, придающая глаголам значение страдательного залога.
 
