@@ -15,7 +15,7 @@ Quando descriviamo un'azione possiamo farlo in due forme diverse, per esprimere 
 
 Nella prima frase d'esempio, il verbo ha forma attiva perché il soggetto compie l'azione, mentre nella seconda frase d'esempio il verbo ha forma passiva perché il soggetto subisce l'azione. В первом примере глагол имеет активную форму, потому что подлежащее выполняет действие, тогда как во втором примере глагол имеет пассивную форму, потому что подлежащее подвергается действию.
 
-I verbi intransitivi non hanno la forma passiva, infatti questa è propria dei verbi transitivi, dove il vero agente della frase non è il soggetto, ma passa al complemento, che si chiama infatti complemento d'agente. Непереходные глаголы не имеют пассивной формы, на самом деле это свойственно переходных глаголов, где настоящее действующее лицо (агент) предложения не является подлежащим, а переходит в дополнение, которое в действительности называется дополнением действующего лица (complemento d'agente).
+I verbi intransitivi non hanno la forma passiva, infatti questa è propria dei verbi transitivi, dove il vero agente della frase non è il soggetto, ma passa al complemento, che si chiama infatti complemento d'agente. Непереходные глаголы не имеют пассивной формы, на самом деле она свойственна переходным глаголам, где настоящее действующее лицо (агент) предложения не является подлежащим, а переходит в дополнение, которое в действительности называется дополнением действующего лица (complemento d'agente).
 
 Sia nella forma attiva che nella forma passiva di un verbo, il significato non cambia, ciò che cambia è il risalto che viene dato a chi compie o a chi subisce l'azione. Как в активной, так и в пассивной форме глагола значение не меняется, но что меняется, так это различие возникающее от того, кто выполняет или претерпевает действие.
 
@@ -61,4 +61,38 @@ Quando trasformiamo una frase dalla forma attiva alla forma passiva dobbiamo pre
 
 Перевод [статьи](https://grammaticaitaliana.net/la-forma-attiva-e-la-forma-passiva-dei-verbi/)
 
+### Esempi d'uso
+
+| Italiano | Русский |
+|----------|---------|
+|I prjaniki _vengono prodotti_[^2] in molte località russe ma i più famosi sono quelli di Tula, diventata il simbolo della città conosciuta anche per la fabbricazione delle armi. Per comprendere perché proprio i prjaniki di Tula abbiano conquistato la fiducia e l'amore dei russi, è necessario immergersi nel passato e seguire le tappe dello sviluppo di questo commercio.|Пряники производятся во многих местах России, но самые известные из них – из Тулы, которая стала символом города, известного также производством оружия. Чтобы понять, почему тульские прьяники завоевали доверие и любовь россиян, необходимо погрузиться в прошлое и проследить этапы развития этого промысла.|
+|Dove _vengono fabbricati_ i prodotti KIKO MILANO?|Где производятся товары KIKO MILANO?|
+|Il cellulare che avete in mano, al 90% _è stato prodotto_ in Cina.|Cотовый телефон, который вы держите в руке, на 90% производится в Китае.|
+|Con le forbici si può tagliare la carta o la stoffa. Le forbici _sono fatte_ di metallo.|При момощи ножниц люди могут разрезать бумагу или ткани. Ножницы делают из металла|
+|Le persone mangiano con le forchette che _sono fatte_ di metallo. All'estremità delle forchette ci sono dei denti appuntiti.|Люди едят при помощи вилок, которые сделаны из металла. На конце вилок находятся острые зубья.|
+|La focaccia _va fatta_[^3] oggi.|Фокачча должна быть приготовлена сегодня.|
+|Cairo: "Prima la salute. Se il campionato potrà ripartire, _va finito_ entro il 30 giugno".|Каир: "Сначала здоровье. Если чемпионат возобновится, он будет закончен до 30 июня".|
+|Questo lavoro _va finito_ entro le 17:00.|Эта работа должна быть выполнена до пяти часов вечера.|
+|Capito? _Va finito_.|Понятно? Всё должно быть сделано.|
+|I vestiti colorati _vanno lavati_ a 30 gradi.|Цветное бельё должно стираться при температуре не выше 30 градусов.|
+|Questo lavoro _va fatto_ meglio.|Эта работа должна быть сделана лучше.|
+|Questa lettera _andava spedita_ ieri.|Это письмо должно было быть отправлено вчера.|
+|Il cancello andava chiuso.|Ворота должны были быть закрыты.|
+|Qui _si vendono_ medicine.|Здесь продают (продаются) лекарства.|
+|Le medicine _si comprano_ in farmacia.|Лекарства покупают в аптеке.|
+|In quel ristorante _si mangia_ bene.|В этои этом ресторане можно хорошо поесть.|
+|Nel ristorante indiano _si mangia_ cibo piccante.|В этом индийском ресторане едят пикантную пищу.|
+|Federica _si pente_ di ciò.|Федерика сожалеет об этом.|
+|_Si vergogna_ di ciò che ha fatto.|.Ему стыдно за то, что он сделал.|
+|I miei genitori _si sono arrabbiati_ molto.|Мои родители очень разозлились.|
+|La forma passiva dei verbi _è_ molto _usata_ in italiano.|Страдательная форма глагола в итальянском языке очень часто используется.|
+|_Sono stata chiamata_ da Marco.|Мне позвонил Марко.|
+|I piatti devono _essere lavati_.|Посуда должна быть помыта.|
+|La bambina deve _essere vestita_ bene, fuori fa freddo.|Малышка должна быть хорошо одета, на улице холодно.|
+|Questa strada _fu costruita_ ancora dagli antichi romani.|Эта дорога была построена ещё древними римлянами.|
+
 [^1]: si passivante – частица, придающая глаголам значение страдательного залога.
+
+[^2]: Глагол venire часто употребляется с такими глаголами, как produrre, vendere, consegnare.
+
+[^3]: Употребление в страдательном залоге вспомогательного глагола andare добавляет фразе значение безусловности исполнения: действие должно быть выполнено (= deve essere fatto). Другое важное отличие — отсутсвие так называемого дополнения действующего лица. Используя вспомогательный глагол andare, мы не называем исполнителя действия: La focaccia va fatta oggi – Фокачча должна быть приготовлена сегодня.
