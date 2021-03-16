@@ -77,7 +77,7 @@ Quando trasformiamo una frase dalla forma attiva alla forma passiva dobbiamo pre
 |I vestiti colorati **vanno lavati** a 30 gradi.|Цветное бельё должно стираться при температуре не выше 30 градусов.|
 |Questo lavoro **va fatto** meglio.|Эта работа должна быть сделана лучше.|
 |Questa lettera **andava spedita** ieri.|Это письмо должно было быть отправлено вчера.|
-|Il cancello andava chiuso.|Ворота должны были быть закрыты.|
+|Il cancello **andava chiuso**.|Ворота должны были быть закрыты.|
 |Qui **si vendono** medicine.|Здесь продают (продаются) лекарства.|
 |Le medicine **si comprano** in farmacia.|Лекарства покупают в аптеке.|
 |In quel ristorante **si mangia** bene.|В этои этом ресторане можно хорошо поесть.|
