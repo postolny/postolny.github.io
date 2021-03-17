@@ -111,6 +111,17 @@
         });
     });
 
+    $("audio").on("play", function () {
+      var id = $(this).attr("id");
+
+      $("audio")
+        .not(this)
+        .each(function (index, audio) {
+          audio.pause();
+          audio.currentTime = 0;
+        });
+    });
+
     var myArray = [
       { q1: "21", an: "ventuno" },
       { q1: "28", an: "ventotto" },
