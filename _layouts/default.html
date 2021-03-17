@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="{% if page.style %}{{ page.style }}{% endif %}">
 
     {% include navigation.html %}
 
