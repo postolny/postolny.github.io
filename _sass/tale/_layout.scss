@@ -50,8 +50,7 @@ $link-hover-color: #2581DC;
   padding-left: 20px;
   float: left;
   line-height: $nav-height;
-  text-transform: uppercase;
-  font-size: 1.4em;
+  font-size: 1.3em;
 
   a,
   a:visited {
@@ -254,4 +253,33 @@ footer {
     color: $default-color;
     font-size: .8rem;
   }
+}
+
+/* Сочинения */
+.opere {
+	p {
+		text-indent: 1.5em;
+		margin: 0;
+	}
+	h2, h4 {
+		text-align: center;
+	}
+	hr {
+		border: none;
+		border-top: 1px solid #333;
+		max-width: 192px;
+		margin: 20px 0 5px;
+		text-align: left;
+		clear: both;
+	}
+	sup {
+		font-size: 9px;
+		vertical-align: super;
+		line-height: 0;
+	}
+	.postilla {
+		font-size: 12px;
+		line-height: 14px;
+		margin-bottom: 20px;
+	}
 }
