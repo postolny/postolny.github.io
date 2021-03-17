@@ -283,3 +283,22 @@ footer {
 		margin-bottom: 20px;
 	}
 }
+
+.float_left {
+  margin: 10px 40px 30px 0;
+  float: left;
+}
+
+.float_right {
+  margin: 10px 0 30px 40px;
+  float: right;
+}
+
+@media screen and (max-width:768px) {
+  /* Отменить обтекание */
+  .float_left,
+  .float_right {
+    float: none;
+    margin: 0 auto;
+  }
+}
