@@ -12,6 +12,11 @@ footer {
   width: 80%;
 }
 
+.largo main,
+.largo footer {
+  max-width: 1200px;
+}
+
 .banner img {
   width: 100%;
   height: auto;
