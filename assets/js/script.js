@@ -307,6 +307,43 @@
       $(".result").text("Правильных ответов: " + score + " из " + total);
     });
 
+    var biglietti = [
+      "Тебе подарят новые ботинки",
+      "Завтра найдёшь одну лиру",
+      "Тебя пригласят на праздник",
+      "Угостят конфеткой",
+      "Подарят новую куртку",
+      "Ты найдёшь друга",
+      "Сможешь отдыхать весь день",
+      "Получишь письмо",
+      "Прокатишься на велосипеде",
+      "Ты поправишься",
+      "Найдёшь хорошую работу",
+      "Ты найдёшь подругу",
+      "Тебя угостят кофе",
+      "Посетишь Рим",
+      "У тебя будет собака",
+      "У тебя будет кошка",
+      "Жди гостей",
+      "Улыбнёшься прямо сейчас",
+      "Скоро влюбишься",
+      "Получишь пятёрку",
+    ];
+    var color = ["LimeGreen", "OrangeRed"];
+    var pappagallo = new Audio("/audio/pappagallo.mp3");
+    $("#rt").click(function () {
+      $("#pappagallo").addClass("rt");
+      setTimeout(function () {
+        pappagallo.play();
+        $("#pappagallo").removeClass("rt");
+        $("#biglietto").css("display", "block");
+        randomNum = Math.floor(Math.random() * biglietti.length);
+        $("#biglietto").text(biglietti[randomNum]);
+        bgcolor = Math.floor(Math.random() * color.length);
+        $("#biglietto").css("background", color[bgcolor]);
+      }, 1500);
+    });
+
     var Mwidth = 960;
     if ($(window).width() > Mwidth) {
       var headerHeight = $(".navigation").height();
