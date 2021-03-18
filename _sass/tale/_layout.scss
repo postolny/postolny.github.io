@@ -360,3 +360,57 @@ footer {
 .verse {
   white-space: pre-wrap;
 }
+
+/* Цветные маркеры в списке */
+#list-colored {
+  list-style: none;
+}
+
+#list-colored li:before {
+  content: "\2022";
+  color: #8dc692;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Выравнивание audio HTML5 */
+#musica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Ссылка для скачивания */
+#download_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#dowload_wrapper {
+  background-image: url(../assets/files-text-icon.png);
+  background-repeat: no-repeat;
+  padding-left: 34px;
+  line-height: 32px;
+}
+
+#dowload_wrapper:not(:last-child) {
+  margin: 0 0 10px 0;
+}
