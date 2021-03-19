@@ -102,7 +102,7 @@ table {
   }
 }
 
-input#search {
+.search {
   box-sizing: border-box;
   border: 1px solid #ddd;
   color: #555;
@@ -121,7 +121,7 @@ input#search {
   }
 }
 @media (max-width: 1050px) {
-  input#search {
+  .search {
     width: 100%;
     float: none;
   }
