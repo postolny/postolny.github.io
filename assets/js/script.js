@@ -111,6 +111,13 @@
         });
     });
 
+    $("#search-all").on("keyup", function () {
+      var s = $(this).val().toLowerCase();
+      $(".animali tbody tr").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(s) > -1);
+      });
+    });
+
     $("audio").on("play", function () {
       var id = $(this).attr("id");
 
