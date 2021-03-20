@@ -2,7 +2,6 @@
 layout: default
 ---
 
-{% include locuzioni.html %}
 <div class="catalogue">
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
