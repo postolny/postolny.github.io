@@ -330,6 +330,23 @@ $(function () {
     "Significa molto che tu sia qui. – Так много значит, что ты здесь.",
     "La saluterò da parte tua. – Я передам ей привет от тебя.",
     "Ci sono molte cose da vedere. – Там есть много чего посмотреть.",
+    "che ti piglia? – что это тебе взбрело на ум?, что тебя разбирает?, ты что, белены объелся?",
+    "ciascuno di noi vorrebbe farlo. – Каждый из нас хотел бы это делать",
+    "Me l'avevi già detto. – Ты уже мне это говорил.",
+    "L'avevo già notato. – Я уже это заметил.",
+    "Ma figurati! – Ага, ну конечно! (это не правда); Да ты что! Конечно, нет! Figurati! – Конечно же нет! Ага, конечно! (отрицание); Не за что! (благодарность).",
+    "Ci mancherebbe! – Вот ещё!; Non c'è di che – Пожалуйста!; Не за что!; Non c'è nessun problema – Нет проблем; Di niente! – Не за что!",
+    "Ho fatto del mio meglio. – Я старался изо всех сил.",
+    "Ho bisogno di staccarmi da ...; mi serve una pausa da ... – Я хочу отдохнуть от...",
+    "Mi serviva una pausa dalla tua faccia. – Мне нужно было отдохнуть от тебя (от твоей физиономии).",
+    "chi sarà mai? – кто бы это мог быть? Che cosa sarà mai? – И что же это? Cosa sarà mai questa cosa? – Что это может значить? È mai possibile? – Возможно ли?; где это слыхано?",
+    "la prudenza non è mai troppa – осторожность никогда не (по)мешает",
+    "Mi sento come se potessi fare tutto. – Я чувствую, что мог бы сделать всё.",
+    "Stai facendo uno sbaglio, un grosso sbaglio. – Ты совершаешь ошибку, серьезную ошибку.",
+    "Ho commesso un grosso sbaglio. – Я совершил большую ошибку.",
+    "Non c’e niente di piu rilassante di due chiacchiere di fronte a una tazza di caffé. – Нет ничего более расслабляющего, чем поболтать за чашкой кофе.",
+    "Già, hai ragione, si è fatto tardi. – Ты прав, время уже позднее.",
+    "Ci sono molte cose su cui vorrei la tua opinione. – Есть масса вопросов, о которых я хотел бы услышать твое мнение.",
   ];
   var rand = Math.floor(Math.random() * locuzioniAry.length);
   $("#locuzioni").text(locuzioniAry[rand]);

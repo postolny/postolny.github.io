@@ -103,7 +103,7 @@
 
     $("#search").keyup(function () {
       var value = this.value.toLowerCase().trim();
-      $(".abbreviazioni")
+      $(".search")
         .find("tr")
         .each(function (index) {
           var id = $(this).find("td").first().text().toLowerCase().trim();
@@ -113,7 +113,7 @@
 
     $("#search-all").on("keyup", function () {
       var s = $(this).val().toLowerCase();
-      $(".animali tbody tr").filter(function () {
+      $(".search-all tbody tr").filter(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(s) > -1);
       });
     });
