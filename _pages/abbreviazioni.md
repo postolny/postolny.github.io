@@ -7,11 +7,11 @@ permalink: /abbreviazioni/
 
 In questa pagina vi metterò una lista delle abbreviazioni che potete trovare nei post.
 
-<input class="search" id="search" type="text" placeholder="Найти...">
+<input class="input-search" id="search" type="text" placeholder="Найти...">
 
 ## Abbreviazioni
 
-{:.abbreviazioni}
+{:.search}
 |Abbreviazione|Italiano|Русский|
 |---|---|
 |abl.|ablativo|отложительный падеж; творительный падеж|
