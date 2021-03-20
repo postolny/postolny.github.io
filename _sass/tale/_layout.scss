@@ -402,11 +402,15 @@ footer {
 
 /* Сочинения */
 .indice {
-  li {
-    a {
-      span {
-        color: #8dc692;
-      }
+  a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+    &:hover {
+      color: #f44336;
+    }
+    &:focus {
+      color: #f44336;
     }
   }
 }
