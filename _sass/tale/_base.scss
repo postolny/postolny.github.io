@@ -178,34 +178,46 @@ table {
 .gatto {
   background-image: url("../assets/search-icon.png");
 }
-&::-webkit-input-placeholder {
+
+/* placeholder opacity */
+::-webkit-input-placeholder {
+  /* Chrome */
   transition: opacity 250ms ease-in-out;
 }
-&:focus {
-  &::-webkit-input-placeholder {
-    opacity: 0.5;
-  }
-  &:-ms-input-placeholder {
-    opacity: 0.5;
-  }
-  &::-moz-placeholder {
-    opacity: 0.5;
-  }
-  &:-moz-placeholder {
-    opacity: 0.5;
-  }
+
+:focus::-webkit-input-placeholder {
+  opacity: 0.5;
 }
-&:-ms-input-placeholder {
+
+:-ms-input-placeholder {
+  /* IE 10+ */
   transition: opacity 250ms ease-in-out;
 }
-&::-moz-placeholder {
+
+:focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
   opacity: 1;
   transition: opacity 250ms ease-in-out;
 }
-&:-moz-placeholder {
+
+:focus::-moz-placeholder {
+  opacity: 0.5;
+}
+
+:-moz-placeholder {
+  /* Firefox 4 - 18 */
   opacity: 1;
   transition: opacity 250ms ease-in-out;
 }
+
+:focus:-moz-placeholder {
+  opacity: 0.5;
+}
+
 @media (max-width: 1050px) {
   .input-search {
     width: 100%;
