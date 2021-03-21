@@ -10,14 +10,17 @@ body {
   padding: 0;
 }
 
-html {
-  font-family: $serif-primary;
-  font-size: 14px;
-  overflow-y: scroll;
+main {
+  font-family: main-primary;
+  font-size: 18px;
 
   @media (min-width: 600px) {
-    font-size: 16px;
+    font-size: 20px;
   }
+}
+.catalogue-time,
+.post-info {
+  font-size: 16px;
 }
 
 body {
@@ -39,6 +42,56 @@ h6 {
 a {
   color: $blue;
   text-decoration: none;
+}
+
+main {
+  p {
+    a {
+      transition: color 0.25s ease-in-out;
+      &:hover {
+        color: #f44336;
+      }
+    }
+    &:focus {
+      color: #f44336;
+    }
+  }
+  ul {
+    li {
+      a {
+        transition: color 0.25s ease-in-out;
+        &:hover {
+          color: #f44336;
+        }
+        &:focus {
+          color: #f44336;
+        }
+      }
+    }
+  }
+  table {
+    td {
+      a {
+        transition: color 0.25s ease-in-out;
+        &:hover {
+          color: #f44336;
+        }
+        &:focus {
+          color: #f44336;
+        }
+      }
+    }
+  }
+}
+#dowload_wrapper {
+  a {
+    &:hover {
+      color: #f44336;
+    }
+    &:focus {
+      color: #f44336;
+    }
+  }
 }
 
 blockquote {

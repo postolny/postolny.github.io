@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   max-width: 800px;
-  width: 80%;
+  width: 90%;
 }
 
 main,
@@ -9,7 +9,7 @@ footer {
   display: block;
   margin: 0 auto;
   max-width: 800px;
-  width: 80%;
+  width: 90%;
 }
 
 .largo main,
@@ -31,6 +31,7 @@ $nav-font-color: #ffffff;
 $link-hover-color: #2581dc;
 
 .navigation {
+  font-family: $serif-primary;
   height: $nav-height;
   background: $nav-background;
   box-shadow: 0 5px 30px #000;
@@ -81,6 +82,7 @@ nav {
 
       a,
       a:visited {
+        font-size: 16px;
         display: block;
         padding: 0 20px;
         line-height: $nav-height;
@@ -342,7 +344,7 @@ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: none;
-  font-size: 12px;
+  font: 14px Times, Times New Roman, serif;
   line-height: 12px;
   -webkit-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
@@ -401,19 +403,6 @@ footer {
 }
 
 /* Сочинения */
-.indice {
-  a {
-    color: #333333;
-    text-decoration: none;
-    transition: color 0.25s ease-in-out;
-    &:hover {
-      color: #f44336;
-    }
-    &:focus {
-      color: #f44336;
-    }
-  }
-}
 
 .monte_cassino {
   background: url(../assets/Monte_Cassino_View_WWII.jpg) no-repeat center;
