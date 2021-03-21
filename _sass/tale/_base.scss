@@ -156,22 +156,55 @@ table {
 }
 
 .input-search {
-  box-sizing: border-box;
+  background-image: url("../assets/06-magnify-icon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 1em;
+  padding: 10px 20px 10px 50px;
   border: 1px solid #ddd;
   color: #555;
   display: block;
-  font-size: 1.5em;
   font-style: normal;
   font-weight: 300;
   outline: 0;
-  padding: 2px 8px;
-  margin: 0;
-  width: 50%;
+  margin-bottom: 12px;
   transition: all ease-out 0.2s;
   &:focus {
     outline: none;
     border-color: #aaa;
   }
+}
+.gatto {
+  background-image: url("../assets/search-icon.png");
+}
+&::-webkit-input-placeholder {
+  transition: opacity 250ms ease-in-out;
+}
+&:focus {
+  &::-webkit-input-placeholder {
+    opacity: 0.5;
+  }
+  &:-ms-input-placeholder {
+    opacity: 0.5;
+  }
+  &::-moz-placeholder {
+    opacity: 0.5;
+  }
+  &:-moz-placeholder {
+    opacity: 0.5;
+  }
+}
+&:-ms-input-placeholder {
+  transition: opacity 250ms ease-in-out;
+}
+&::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+&:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
 }
 @media (max-width: 1050px) {
   .input-search {
