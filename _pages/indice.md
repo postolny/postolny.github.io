@@ -1,9 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Сочинения"
-author: "И. Постольный"
 permalink: /indice/
 ---
+
+# {{ page.title }}
+{: .center}
 
 * [Безмозглый и безухий • повесть]({{ '/bezmozglyj-i-bezuhij/' | prepend: site.baseurl }})
 * [Il scervellato e Il senza orecchie • povest']({{ '/il-scervellato-e-il-senza-orecchie/' | prepend: site.baseurl }})
