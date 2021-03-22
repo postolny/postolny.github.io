@@ -1,5 +1,6 @@
 .pagination {
-  font-family: $serif-secondary;
+  font-family: $main-primary;
+  font-size: 14px;
   padding-top: 2rem;
   position: relative;
   text-align: center;
@@ -33,18 +34,18 @@
 }
 
 @media screen and (max-width: 768px) {
-	.pagination {
-		a {
-			padding: 6px 12px;
-		}
-		span.previous {
-			padding: 6px 12px;
-		}
-		span.next {
-			padding: 6px 12px;
-		}
-		.page_number {
-			display: none;
-		}
-	}
+  .pagination {
+    a {
+      padding: 6px 12px;
+    }
+    span.previous {
+      padding: 6px 12px;
+    }
+    span.next {
+      padding: 6px 12px;
+    }
+    .page_number {
+      display: none;
+    }
+  }
 }
