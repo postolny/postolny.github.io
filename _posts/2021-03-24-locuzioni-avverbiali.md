@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Locuzioni avverbiali: come riconoscerle e utilizzarle"
-description: "Наречные выражения: что такое, для чего нужны, какие бывают, как их распознать, как провести их грамматический анализ."
+description: "Наречные выражения: что это такое, для они чего нужны, какие они бывают, как их распознать, как провести их грамматический анализ."
 author: "И. Постольный"
 comments: false
 categories: 
@@ -12,13 +12,13 @@ tags: Грамматика
 
 Locuzioni avverbiali: cosa sono, a cosa servono, quali sono, come riconoscerle, come farne l'analisi grammaticale.
 
-Наречные выражения: что такое, для чего нужны, какие бывают, как их распознать, как провести их грамматический анализ.
+Наречные выражения: что это такое, для они чего нужны, какие они бывают, как их распознать, как провести их грамматический анализ.
 
 ### Cosa sono e a cosa servono
 
 Le locuzioni avverbiali sono combinazioni fisse di due o più parole che vanno a sostituire l'avverbio.
 
-Наречные выражения – это устойчивые сочетания, состоящие из двух или более слов, которые заменяют наречие.
+Наречные выражения – это устойчивые сочетания двух или более слов, которые заменяют наречие.
 
 ### Quali sono e come riconoscerle
 
