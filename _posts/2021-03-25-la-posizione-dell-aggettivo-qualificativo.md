@@ -20,13 +20,13 @@ Cinghiale – la grande marca della perfezione. Per dipingere, verniciare, tinte
 – Devo dipingere una parete grande. Ci vuole un pennello grande.  
 – Ma non ci vuole un pennello grande ma un grande pennello. Cinghiale.
 
-– Но Вы делаете с этой штуковиной? Вы препятствуете движению!  
-– Я должен покрасить большую стену. Требуется большая кисть.  
-– Не требуется большая кисть, но великая кисть. Cinghiale.  
+– Но что Вы делаете с этой штуковиной? Вы препятствуете движению!  
+– Я должен покрасить большую стену. Нужна большая кисть.  
+– Не нужна большая кисть, но великая кисть. Cinghiale.  
 Cinghiale – великая марка совершенства. Для рисования, лакировки, покраски, для творчества, всегда есть марка Cinghiale.  
-– Но что Вы делает? С ума сошли?  
-– Я должен покрасить большую стену. Требуется большая кисть.  
-– Не требуется большая кисть, но великая кисть. Cinghiale.
+– Но что Вы делаете? Вы с ума сошли?  
+– Я должен покрасить большую стену. Нужна большая кисть.  
+– Не нужна большая кисть, но великая кисть. Cinghiale.
 
 Ricordiamo che un aggettivo si dice qualificativo quando specifica una qualità di un nome, può trattarsi dell'aspetto, del colore, della grandezza, della forma ecc.
 
