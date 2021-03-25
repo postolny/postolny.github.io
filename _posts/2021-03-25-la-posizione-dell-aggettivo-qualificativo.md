@@ -44,7 +44,7 @@ In genere l'aggettivo che precede il nome ha una funzione descrittiva, mentre qu
 
 Facciamo un esempio, consideriamo queste due frasi:
 
-Сделаем пример, разберём эти два предложения:
+Приведём пример, разберём эти два предложения:
 
 "andrò ad abitare nella vecchia casa dei nonni"; "andrò ad abitare per un po' nella casa vecchia";
 
