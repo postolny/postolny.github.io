@@ -46,11 +46,12 @@ Facciamo un esempio, consideriamo queste due frasi:
 
 Приведём пример, разберём эти два предложения:
 
-"andrò ad abitare nella vecchia casa dei nonni"; "andrò ad abitare per un po' nella casa vecchia";
+- andrò ad abitare nella vecchia casa dei nonni (я поеду пожить в старом доме дедушки и бабушки (где я жил раньше));
+- andrò ad abitare per un po' nella casa vecchia  (я поеду пожить немного в старом доме (а, не в другом, новом));
 
 Nella prima frase l'aggettivo vecchia indica una qualità aggiuntiva della casa, infatti togliendolo il significato della frase rimarrebbe sostanzialmente lo stesso, nella seconda si può capire che esiste anche una casa nuova e l'aggettivo vecchia serve a identificare la casa e a distinguerla dalle altre.
 
-В первом предложении прилагательное vecchia указывает на дополнительное качество дома, и если его убрать, значение предложения в основном осталось бы тем же, во втором предложении можно понять, что существует также новый дом и прилагательное vecchia служит, чтобы идентифицировать дом и отличать его от других.
+В первом предложении прилагательное vecchia указывает на дополнительное качество дома и убрав это прилагательное, мы не потеряем основное значение предложения, во втором предложении можно понять, что существует также новый дом и прилагательное vecchia служит, чтобы идентифицировать дом и отличать его от других.
 
 La collocazione dell'aggettivo prima del nome è frequente quando l'aggettivo è usato in senso figurato.
 
