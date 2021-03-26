@@ -13,14 +13,14 @@ tags: Грамматика
 ### Un grande pennello o un pennello grande?
 
 – Ma cosa fa con quell'arnese? Ostacola il traffico!  
-– Devo dipingere una parete grande. Ci vuole il pennello grande.  
+– Devo dipingere una parete grande. [Ci vuole]({{ site.baseurl }}/2020-12-25/volerci) il pennello grande.  
 – Non ci vuole un pennello grande ma un grande pennello. Cinghiale.  
 – Cinghiale – la grande marca della perfezione. Per dipingere, verniciare, tinteggiare, per il fai da te[^1], c'e sempre un pennello marca Cinghiale che ti aiuta.  
 – Presto e bene, sempre avviene, con Pennelli Cinghiale!
 
 – Но что Вы делаете с этой штуковиной? Вы препятствуете движению!  
 – Я должен покрасить большую стену. Нужна большая кисть.  
-– Не нужна большая кисть, но великая кисть. Cinghiale.  
+– Тут нужна не большая кисть, а великая кисть. Cinghiale.  
 – Cinghiale – великая марка совершенства. Для рисования, лакировки, покраски, для творчества, всегда есть марка Cinghiale, которая поможет тебе.  
 – Быстро и хорошо, будет всегда, с Pennelli Cinghiale!
 
@@ -122,7 +122,7 @@ Nei seguenti casi l'aggettivo va collocato obbligatoriamente dopo il nome:
 
 – Но что Вы делаете? Вы с ума сошли?  
 – Я должен покрасить большую стену. Нужна большая кисть.  
-– Не нужна большая кисть, но великая кисть. Cinghiale.  
+– Тут нужна не большая кисть, а великая кисть. Cinghiale.  
 – Cinghiale – великая марка.
 
 Перевод [статьи](https://aulalingue.scuola.zanichelli.it/benvenuti/2014/11/20/la-posizione-dellaggettivo-qualificativo/)
