@@ -126,6 +126,11 @@ video {
   &::-moz-focus-inner {
     border: 0;
   }
+}
+
+audio,
+.youtube-wrapper,
+.video-wrapper {
   margin: 0 auto 0.5rem;
 }
 
