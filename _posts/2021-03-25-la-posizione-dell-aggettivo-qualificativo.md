@@ -8,25 +8,21 @@ categories:
 tags: Грамматика
 ---
 
-{% include youtube.html id='BXsYuS_F1Pw' %}
+{% include video.html id='cinghiale.mp4' poster='cinghiale.jpg' width='100%' %}
 
 ### Un grande pennello o un pennello grande?
 
 – Ma cosa fa con quell'arnese? Ostacola il traffico!  
 – Devo dipingere una parete grande. Ci vuole il pennello grande.  
 – Non ci vuole un pennello grande ma un grande pennello. Cinghiale.  
-Cinghiale – la grande marca della perfezione. Per dipingere, verniciare, tinteggiare, per il fai da te[^1], c'e sempre un pennello marca Cinghiale.  
-– Ma cosa fa? È impazzito?  
-– Devo dipingere una parete grande. Ci vuole un pennello grande.  
-– Ma non ci vuole un pennello grande ma un grande pennello. Cinghiale.
+– Cinghiale – la grande marca della perfezione. Per dipingere, verniciare, tinteggiare, per il fai da te[^1], c'e sempre un pennello marca Cinghiale che ti aiuta.  
+– Presto e bene, sempre avviene, con Pennelli Cinghiale!
 
 – Но что Вы делаете с этой штуковиной? Вы препятствуете движению!  
 – Я должен покрасить большую стену. Нужна большая кисть.  
 – Не нужна большая кисть, но великая кисть. Cinghiale.  
-Cinghiale – великая марка совершенства. Для рисования, лакировки, покраски, для творчества, всегда есть марка Cinghiale.  
-– Но что Вы делаете? Вы с ума сошли?  
-– Я должен покрасить большую стену. Нужна большая кисть.  
-– Не нужна большая кисть, но великая кисть. Cinghiale.
+– Cinghiale – великая марка совершенства. Для рисования, лакировки, покраски, для творчества, всегда есть марка Cinghiale, которая поможет тебе.  
+– Быстро и хорошо, будет всегда, с Pennelli Cinghiale!
 
 Ricordiamo che un aggettivo si dice qualificativo quando specifica una qualità di un nome, può trattarsi dell'aspetto, del colore, della grandezza, della forma ecc.
 
@@ -116,6 +112,18 @@ Nei seguenti casi l'aggettivo va collocato obbligatoriamente dopo il nome:
 - quando regge un complemento (когда имеется дополнение): una casa piena di mobili (non: una piena casa di mobili);
 - quando deriva da un participio presente o passato (когда оно образуется от причастия настоящего или прошедшего времени): una commedia esilarante, un edificio ristrutturato (ma ci sono delle eccezioni (но есть исключения): un emozionante romanzo);
 - quando sono aggettivi di relazione, ovvero aggettivi che derivano da nomi (sole-solare; estate-estivo; elettricità-elettrico) e indicano una relazione con il nome di base: un biglietto aereo (non: un aereo biglietto). Когда они являются прилагательными связей, то есть прилагательными, которые образуются от существительных (sole-solare; estate-estivo; elettricità-elettrico) и указывают на связь с исходным существительным: un biglietto aereo (non: un aereo biglietto).
+
+{% include video.html id='cinghiale1.mp4' poster='cinghiale1.jpg' width='100%' %}
+
+– Ma cosa fa? È impazzito?  
+– Devo dipingere una parete grande. Ci vuole un pennello grande.  
+– Ma non ci vuole un pennello grande ma un grande pennello. Cinghiale.  
+– Cinghiale – la grande marca.
+
+– Но что Вы делаете? Вы с ума сошли?  
+– Я должен покрасить большую стену. Нужна большая кисть.  
+– Не нужна большая кисть, но великая кисть. Cinghiale.  
+– Cinghiale – великая марка.
 
 Перевод [статьи](https://aulalingue.scuola.zanichelli.it/benvenuti/2014/11/20/la-posizione-dellaggettivo-qualificativo/)
 
