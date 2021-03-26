@@ -137,13 +137,15 @@
         .each(function (index, video) {
           video.pause();
           video.currentTime = 0;
-          this.src = this.src;
+          var src = $(this).attr("src");
+          $(this).attr("src", src);
         });
     });
 
     $("video").on("ended", function () {
       $("video").currentTime = 0;
-      this.src = this.src;
+      var src = $(this).attr("src");
+      $(this).attr("src", src);
     });
 
     var myArray = [
