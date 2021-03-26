@@ -129,6 +129,23 @@
         });
     });
 
+    $("video").on("play", function () {
+      var id = $(this).attr("id");
+
+      $("video")
+        .not(this)
+        .each(function (index, video) {
+          video.pause();
+          video.currentTime = 0;
+          this.src = this.src;
+        });
+    });
+
+    $("video").on("ended", function () {
+      $("video").currentTime = 0;
+      this.src = this.src;
+    });
+
     var myArray = [
       { q1: "21", an: "ventuno" },
       { q1: "28", an: "ventotto" },
