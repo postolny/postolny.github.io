@@ -27,8 +27,8 @@ Antonio ride → che cosa? = !?! → chi? = !?! (verbo intransitivo). Антон
 
 **Basta tener conto[^3] che** (важно учесть, что):
 
-- Tutti i verbi transitivi formano i tempi composti con l’ausiliare avere: Tutti lodano Gianni → Tutti hanno lodato Gianni. Все переходные глаголы образуют сложное время со вспомогательным глаголом avere: Tutti lodano Gianni (Все хвалят Джанни) → Tutti hanno lodato Gianni (Все хвалили Джанни).
-- I verbi intransitivi, invece, formano i tempi composti con l’ausiliare avere, in alcuni casi: Il bambino piange → Il bambino ha pianto. Непереходные глаголы, напротив, в одних случаях образуют сложные времена со вспомогательным глаголом avere: Il bambino piange (Ребенок плачет) → Il bambino ha pianto (Ребенок плакал). In altri casi, con l’ausiliare essere: Paolo parte → Paolo è partito. В других случаях – со вспомогательным глаголом essere: Paolo parte (Паоло уходит) → Paolo è partito (Паоло ушёл).
+- Tutti i verbi transitivi formano i tempi composti con l'ausiliare avere: Tutti lodano Gianni → Tutti hanno lodato Gianni. Все переходные глаголы образуют сложное время со вспомогательным глаголом avere: Tutti lodano Gianni (Все хвалят Джанни) → Tutti hanno lodato Gianni (Все хвалили Джанни).
+- I verbi intransitivi, invece, formano i tempi composti con l'ausiliare avere, in alcuni casi: Il bambino piange → Il bambino ha pianto. Непереходные глаголы, напротив, в одних случаях образуют сложные времена со вспомогательным глаголом avere: Il bambino piange (Ребенок плачет) → Il bambino ha pianto (Ребенок плакал). In altri casi, con l'ausiliare essere: Paolo parte → Paolo è partito. В других случаях – со вспомогательным глаголом essere: Paolo parte (Паоло уходит) → Paolo è partito (Паоло ушёл).
 
 **Basta ricordare che** (достаточно запомнить, что):
 
