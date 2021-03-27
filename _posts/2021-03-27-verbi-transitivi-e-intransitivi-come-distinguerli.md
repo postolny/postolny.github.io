@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "la posizione dell'aggettivo qualificativo"
-description: "Verbi transitivi e intransitivi come distinguerli"
+title:  "Verbi transitivi e intransitivi come distinguerli"
+description: "Как различить переходные и непереходные глаголы? Вот полное руководство с примерами, простое и полезное, чтобы не делать ошибки."
 comments: false
 categories:
 tags: Грамматика
