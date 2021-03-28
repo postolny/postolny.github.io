@@ -39,6 +39,6 @@ Antonio ride → che cosa? = !?! → chi? = !?! (verbo intransitivo). Антон
 
 [^1]: complemento oggetto / diretto – прямое дополнение.
 
-[^2]: in questione – данный, рассматриваемый, обсуждаемый.
+[^2]: [in questione]({{ site.baseurl }}/2021-03-28/tirare-avanti#in-questione) – данный, рассматриваемый, обсуждаемый.
 
 [^3]: tenere conto – учесть.

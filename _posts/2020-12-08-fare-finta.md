@@ -10,11 +10,15 @@ tags:
 
 ### Significato
 
-loc.v. CO fingere: facciamo finta che questo non sia successo / immaginare, supporre: facciamo finta di aver ottenuto il lavoro: riusciremo a finirlo in tempo? (притворяться: давайте представим, что этого не случилось / воображать, допускать: предположим, что мы получили работу: мы сможем закончить её вовремя?) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/fare-finta)
+loc.v. CO
+
+fingere: facciamo finta che questo non sia successo / immaginare, supporre: facciamo finta di aver ottenuto il lavoro: riusciremo a finirlo in tempo? (притворяться: давайте представим, что этого не случилось / воображать, допускать: предположим, что мы получили работу: мы сможем закончить её вовремя?) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/fare-finta)
 
 fare finta di niente (не подать виду, делать вид, делать вид, что ничего (особенного) не случилось, (продолжать) как ни в чём не бывало)
 
-loc.v. CO ignorare ostentatamente ciò che è accaduto di male o di dannoso: è stato lui a romperlo, ma ha fatto finta di niente / fare qcs. cercando di non dare nell'occhio: passa e guarda facendo finta di niente (демонстративно игнорировать то, что случилось плохо или нанесло вред: это он сломал, но сделал вид, что ничего не произошло / делать что-либо, пытаясь не привлечь внимания: проходи и смотри, стараясь не броситься в глаза). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/fare-finta-di-niente)
+loc.v. CO
+
+ignorare ostentatamente ciò che è accaduto di male o di dannoso: è stato lui a romperlo, ma ha fatto finta di niente / fare qcs. cercando di non dare nell'occhio: passa e guarda facendo finta di niente (демонстративно игнорировать то, что случилось плохо или нанесло вред: это он сломал, но сделал вид, что ничего не произошло / делать что-либо, пытаясь не привлечь внимания: проходи и смотри, стараясь не броситься в глаза). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/fare-finta-di-niente)
 
 ### Sinonimi
 

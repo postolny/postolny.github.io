@@ -12,10 +12,14 @@ tags:
 
 Еле; с трудом, едва; с горем пополам (alla meno peggio); еле-еле; с грехом пополам.
 
-loc.avv. CO a stento: è riuscito a malapena a vincere (едва: ему едва удалось выиграть). Sinonimi: appena.
+loc.avv. CO
+
+a stento: è riuscito a malapena a vincere (едва: ему едва удалось выиграть). Sinonimi: appena.
  [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/a-malapena)
 
-malapena s.f.inv. CO dalla loc. mala pena. (произошло от выражения mala pena); solo nella loc. a malapenа (только в выражении a malapena) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/malapena)
+malapena s.f.inv. CO
+
+dalla loc. mala pena. (произошло от выражения mala pena); solo nella loc. a malapenа (только в выражении a malapena) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/malapena)
 
 malapéna s. f. – Grafia unita di mala pena (v. pena, n. 2 e), usata esclusivam. nella locuz. avv. a m., a stento, a fatica: si trascina a m.; a m. riesce a campare. (объединённое написание mala pena, используется исключительно в наречном выражении a malapena, с трудом: он тащился с трудом; с трудом ему удавалось выживать ) [Treccani](https://www.treccani.it/vocabolario/ricerca/a-malapena/)
 

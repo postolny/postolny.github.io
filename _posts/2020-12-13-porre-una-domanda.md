@@ -10,7 +10,9 @@ tags:
 
 ### Significato
 
-FO formulare, prospettare: porre una domanda, un quesito, un problema, una questione (сформулировать, изложить: поставить вопрос, изложить проблему). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/porre)
+FO
+
+formulare, prospettare: porre una domanda, un quesito, un problema, una questione (сформулировать, изложить: поставить вопрос, изложить проблему). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/porre)
 
 ### Sinonimi
 

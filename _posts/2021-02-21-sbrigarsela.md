@@ -10,7 +10,9 @@ tags:
 
 ### Significato
 
-v.procompl. CO risolvere una situazione complicata in poco tempo, trarsi d'impaccio: non preoccuparti, me la sbrigo io (решить сложную ситуацию за короткое время, выйти из затруднения: не беспокойся, об этом я позабочусь) [Dizionario italiano De Mauro](https://educalingo.com/ru/dic-it/sbrigarsela)
+v.procompl. CO
+
+risolvere una situazione complicata in poco tempo, trarsi d'impaccio: non preoccuparti, me la sbrigo io (решить сложную ситуацию за короткое время, выйти из затруднения: не беспокойся, об этом я позабочусь) [Dizionario italiano De Mauro](https://educalingo.com/ru/dic-it/sbrigarsela)
 
 ### Sinonimi
 

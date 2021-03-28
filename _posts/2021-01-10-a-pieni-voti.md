@@ -10,7 +10,9 @@ tags:
 
 ### Significato
 
-loc.avv. CO con il massimo dei voti (с наивысшими оценками) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/a-pieni-voti)
+loc.avv. CO
+
+con il massimo dei voti (с наивысшими оценками). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/a-pieni-voti)
 
 ### Esempi d'uso
 

@@ -10,7 +10,9 @@ tags:
 
 ### Significato
 
-v.procompl. CO avere la forza, il coraggio di affrontare una situazione gravosa, difficile, problematica, ecc. (иметь силы, мужество, чтобы столкнуться с обременительной, сложной, проблемной ситуацией и т. д .): te la senti di accompagnarmi all'ospedale? (ты не хочешь отвезти меня в больницу?) / essere sufficientemente in forma per fare qcs. (быть в достаточно хорошей форме, чтобы сделать что-либо): te la senti stasera di andare a ballare? (ты не против пойти сегодня на танцы?) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/sentirsela)
+v.procompl. CO
+
+avere la forza, il coraggio di affrontare una situazione gravosa, difficile, problematica, ecc. (иметь силы, мужество, чтобы столкнуться с обременительной, сложной, проблемной ситуацией и т. д .): te la senti di accompagnarmi all'ospedale? (ты не хочешь отвезти меня в больницу?) / essere sufficientemente in forma per fare qcs. (быть в достаточно хорошей форме, чтобы сделать что-либо): te la senti stasera di andare a ballare? (ты не против пойти сегодня на танцы?) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/sentirsela)
 
 sentirsela + di + fare qualcosa — быть расположенным что-то сделать, хотеть что-то сделать, иметь храбрость, чтобы сделать что-то.
 

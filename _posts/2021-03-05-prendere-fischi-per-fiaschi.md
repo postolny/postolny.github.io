@@ -10,7 +10,9 @@ tags:
 
 ### Significato
 
-loc.v. CO spec. scherz., capire una cosa per un'altra, fraintendere (понять всё наоборот, неправильно понять / истолковать) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/prendere-fischi-per-fiaschi)
+loc.v. CO spec. scherz.,
+
+capire una cosa per un'altra, fraintendere (понять всё наоборот, неправильно понять / истолковать) [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/prendere-fischi-per-fiaschi)
 
 "Prendere fischi per fiaschi" è un'espressione usata comunemente in italiano. Significa scambiare una cosa per un'altra.
 

@@ -12,7 +12,9 @@ tags:
 
 Больше, чем когда-либо.
 
-loc.avv. CO ancora di più, molto di più: ne sono convinto più che mai (ещё больше, гораздо больше: я убеждён (в этом) больше, чем когда-либо). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/piu-che-mai)
+loc.avv. CO
+
+ancora di più, molto di più: ne sono convinto più che mai (ещё больше, гораздо больше: я убеждён (в этом) больше, чем когда-либо). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/piu-che-mai)
 
 ### Esempi d'uso
 
