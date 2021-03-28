@@ -29,7 +29,7 @@ FO
 
 loc.agg.inv. CO
 
-spec. in funzione predicativa, che non è o non può essere soggetto a discussioni, dibattiti o rettifiche, ritrattazioni e sim.: che si debba finire entro l'anno prossimo[^6] è fuori di questione (особенно в предикативной функции, которая не является или не может быть предметом обсуждений, дебатов или опровержений, отречений от своих слов и т. п.: о том, что это должно быть закончено к следующему году, не может быть и речи).
+spec. in funzione predicativa, che non è o non può essere soggetto a discussioni, dibattiti o rettifiche, ritrattazioni e sim.: che si debba finire entro l'anno prossimo[^7] è fuori di questione (особенно в предикативной функции, которая не является или не может быть предметом обсуждений, дебатов или опровержений, отречений от своих слов и т. п.: о том, что это должно быть закончено к следующему году, не может быть и речи).
 
 **fuori questione**
 
@@ -48,7 +48,7 @@ di cui si sta parlando, cui ci si riferisce: l'argomento in questione non sarà 
 
 loc.v. CO
 
-porre in dubbio[^7], in discussione; sottoporre a esame critico[^8] (поставить под сомнение, поставить на рассмотрение; подлежит критическому рассмотрению).
+porre in dubbio[^8], in discussione; sottoporre a esame critico[^9] (поставить под сомнение, поставить на рассмотрение; подлежит критическому рассмотрению).
 
 **porre in questione**
 
@@ -72,7 +72,7 @@ loc.s.f. TS stor.
 
 loc.s.f. TS ling.
 
-disputa sorta nella cultura italiana riguardo alla[^9] lingua da usare in letteratura sia, fino alla prima metà del Cinquecento, rispetto al[^10] latino, sia, anche in seguito[^11], per quanto[^12] concerne il tipo[^13] di [volgare](https://it.wikipedia.org/wiki/Lingua_volgare) da scegliere / estens., insieme dei problemi e delle discussioni sullo stato della lingua italiana (спор, возникший в итальянской культуре относительно языка, который должен использоваться в литературе как, вплоть до первой половины шестнадцатого века по отношению к латыни, так и позднее, в отношении выбора вида "[вольгаре](https://ru.wikipedia.org/wiki/Вольгаре)" / экстенсивное значение: совокупность проблем и дискуссий о состоянии итальянского языка).
+disputa sorta nella cultura italiana riguardo alla[^10] lingua da usare in letteratura sia, fino alla prima metà del Cinquecento, rispetto al[^11] latino, sia, anche in seguito[^12], per quanto[^13] concerne il tipo[^14] di [volgare](https://it.wikipedia.org/wiki/Lingua_volgare) da scegliere / estens., insieme dei problemi e delle discussioni sullo stato della lingua italiana (спор, возникший в итальянской культуре относительно языка, который должен использоваться в литературе как, вплоть до первой половины шестнадцатого века по отношению к латыни, так и позднее, в отношении выбора вида "[вольгаре](https://ru.wikipedia.org/wiki/Вольгаре)" / экстенсивное значение: совокупность проблем и дискуссий о состоянии итальянского языка).
 
 **questione di fatto**
 
@@ -86,7 +86,7 @@ loc.s.f. TS polit.
 
 richiesta posta dal governo al parlamento affinché gli riconfermi la fiducia (запрос, сделанный правительством в парламент, с целью подтвердить свое к нему доверие).
 
-**questione di lana caprina[^14]**
+**questione di lana caprina[^15]**
 
 loc.s.f. CO
 
@@ -96,7 +96,7 @@ problema futile e ozioso: discutere sui gusti personali è una questione di lana
 
 loc.s.f. CO
 
-affermazione o comportamento che concerne convinzioni etiche che vanno al di là[^15] di opportunità contingenti anche favorevoli: non bere alcolici è per me una questione di principio (утверждение или поведение, которые касаются этических убеждений, выходящих за рамки случайных, либо благоприятных возможностей: отказ от алкоголя является для меня вопросом принципа).
+affermazione o comportamento che concerne convinzioni etiche che vanno al di là[^16] di opportunità contingenti anche favorevoli: non bere alcolici è per me una questione di principio (утверждение или поведение, которые касаются этических убеждений, выходящих за рамки случайных, либо благоприятных возможностей: отказ от алкоголя является для меня вопросом принципа).
 
 **questione di vita o di morte**
 
