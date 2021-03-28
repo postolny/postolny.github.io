@@ -12,14 +12,14 @@ tags:
 
 s.f. fine XIII sec (конец XIII века);
 
-dal lat. quaestiōne(m), der. di quaerĕre "domandare, interrogare" (с латинского quaestiōne(m), производный от "domandare, interrogare").
+dal lat. quaestiōne(m), der. di quaerĕre "domandare, interrogare" (с латинского quaestiōne(m), производное от "domandare, interrogare").
 
 FO
 
 1. disputa, discussione: è sorta una questione sull'argomento, una questione filosofica / i termini di una questione: i punti che la caratterizzano e la circoscrivono[^1] (спор, дискуссия: возникновение вопроса по теме, философский вопрос / условия вопроса: пункты, которые характеризуют и описывают его).
 2. argomento, materia che richiede un esame, una trattazione: una questione spinosa, affrontare ed esaurire una questione[^2] (предмет, тема, требующий рассмотрения, трактования: острый вопрос, подойти вплотную к вопросу и исчерпать его).
-3. problema d'interesse storico, sociale, politico o culturale che è o è stato dibattuto e per cui si sono date o si danno varie proposte di soluzione: questione politica, sociale (проблема (в смысле вопрос) исторического, социального, политического или культурного интереса, которая обсуждается или обсуждалась и для которой были даны или предлагаются различные решения: политический вопрос, социальный вопрос).
-4. a) lite, diverbio (ссора спор, распря): finitela con queste sciocche questioni (кончайте с этими глупыми спорами); venire a questione con qcn.[^3] (ссориться с кем-то), intavolare[^4] un'accesa discussione (затеять жаркий спор). b) obiezione, difficoltà: accettare senza fare alcuna questione / dubbio, incertezza: non c'è questione (возражение, затруднение: принять, не задавая каких-либо вопросов / сомнение, неуверенность: нет вопросов, не вопрос). c) nel linguaggio giuridico, causa, contesa: essere in questione per un'eredità (в юридическом языке, причина, спор: по делам наследства).
+3. problema d'interesse storico, sociale, politico o culturale che è o è stato dibattuto e per cui si sono date o si danno varie proposte di soluzione: questione politica, sociale (проблема исторического, социального, политического или культурного интереса, которая обсуждается или обсуждалась и для которой были даны или предлагаются различные решения: политический вопрос, социальный вопрос).
+4. a) lite, diverbio (ссора спор, распря): finitela con queste sciocche questioni (кончайте с этими глупыми спорами); venire a questione con qcn.[^3] (ссориться с кем-то), intavolare[^4] un'accesa discussione (затеять жаркий спор). b) obiezione, difficoltà: accettare senza fare alcuna questione / dubbio, incertezza: non c'è questione (возражение, затруднение: принять, не задавая каких-либо вопросов / сомнение, неуверенность: нет вопросов, не вопрос). c) nel linguaggio giuridico, causa, contesa: essere in questione per un'eredità (в юридической лексике – причина, спор: по делам наследства).
 5. TS dir. dubbio di fatto[^5] o di diritto[^6] che si pone all'inizio o nel corso di un processo, la cui soluzione è necessaria per il regolare svolgimento del processo stesso (сомнения по факту или по праву, которые возникают в ходе процесса, решение которых необходимо для урегулирования осуществления самого процесса).
 6. OB domanda, interrogazione (вопрос).
 
@@ -32,6 +32,7 @@ loc.agg.inv. CO
 spec. in funzione predicativa, che non è o non può essere soggetto a discussioni, dibattiti o rettifiche, ritrattazioni e sim.: che si debba finire entro l'anno prossimo[^6] è fuori di questione (особенно в предикативной функции, которая не является или не может быть предметом обсуждений, дебатов или опровержений, отречений от своих слов и т. п.: о том, что это должно быть закончено к следующему году, не может быть и речи).
 
 **fuori questione**
+
 loc.agg.inv. CO
 
 fuori di questione
@@ -70,13 +71,13 @@ loc.s.f. TS stor.
 
 loc.s.f. TS ling.
 
-disputa sorta nella cultura italiana riguardo alla[^9] lingua da usare in letteratura sia, fino alla prima metà del Cinquecento, rispetto al[^10] latino, sia, anche in seguito[^11], per quanto[^12] concerne il tipo[^13] di volgare da scegliere / estens., insieme dei problemi e delle discussioni sullo stato della lingua italiana (спор, возникший в итальянской культуре относительно языка, который должен использоваться в литературе как, вплоть до первой половины шестнадцатого века по отношению к латыни, так и позднее, в отношении вульгарного языка, который будет выбран / экстенсивное значение: совокупность проблем и дискуссий о состоянии итальянского языка).
+disputa sorta nella cultura italiana riguardo alla[^9] lingua da usare in letteratura sia, fino alla prima metà del Cinquecento, rispetto al[^10] latino, sia, anche in seguito[^11], per quanto[^12] concerne il tipo[^13] di [volgare](https://it.wikipedia.org/wiki/Lingua_volgare) da scegliere / estens., insieme dei problemi e delle discussioni sullo stato della lingua italiana (спор, возникший в итальянской культуре относительно языка, который должен использоваться в литературе как, вплоть до первой половины шестнадцатого века по отношению к латыни, так и позднее, в отношении выбора вида "[вольгаре](https://ru.wikipedia.org/wiki/Вольгаре)" / экстенсивное значение: совокупность проблем и дискуссий о состоянии итальянского языка).
 
 **questione di fatto**
 
 loc.s.f. TS dir.
 
-argomento inerente all'accertamento dei fatti che non costituiscono una norma giuridica (аргумент, имеющий отношение к установления фактов, которые не является правовой нормой).
+argomento inerente all'accertamento dei fatti che non costituiscono una norma giuridica (аргумент, имеющий отношение к установлению фактов, которые не являются правовой нормой).
 
 **questione di fiducia**
 
@@ -104,8 +105,7 @@ fatto a cui si attribuisce importanza decisiva o eccessiva: trovare un lavoro è
 
 **questione d'onore**
 
-loc.s.f.
-CO
+loc.s.f. CO
 
 contesa su motivi d'onore, che un tempo[^17] richiedeva un duello per essere risolta (спор, распря по поводу чести, который когда-то требовал дуэли для его разрешения).
 
@@ -113,7 +113,7 @@ contesa su motivi d'onore, che un tempo[^17] richiedeva un duello per essere ris
 
 loc.s.f. TS stor.
 
-problema internazionale riguardante l'assetto territoriale e politico dei paesi già soggetti al dominio turco dopo lo sfaldamento dell'Impero Ottomano, dalla fine del sec. XVIII alla prima guerra mondiale (международная проблема, касающаяся территориального и политического устройства стран, уже находящихся под турецким господством после распада Османской империи, с конца века. XVIII и до Первой мировой войны).
+problema internazionale riguardante l'assetto territoriale e politico dei paesi già soggetti al dominio turco dopo lo sfaldamento dell'Impero Ottomano, dalla fine del sec. XVIII alla prima guerra mondiale (международная проблема, касающаяся территориального и политического устройства стран, уже находящихся под турецким господством после распада Османской империи, с конца XVIII века и до Первой мировой войны).
 
 **questione femminile**
 
@@ -127,7 +127,7 @@ loc.s.f. TS dir.
 
 q. attinente a singoli problemi emersi nel corso di un processo che danno luogo[^18] ad appositi procedimenti inseriti in quello principale e decisi dal giudice con provvedimenti autonomi (вопрос, связанный с отдельными проблемами, возникшими в ходе судебного разбирательства, которые приводят к конкретным разбирательствам, включенными в основной вопрос и решаемыми судьей с помощью автономных мер).
 
-**questione meridionale**
+[**questione meridionale**](https://it.wikipedia.org/wiki/Questione_meridionale)
 
 loc.s.f. TS stor.
 
@@ -137,7 +137,7 @@ q. sorta in seguito all'unificazione dell'Italia, riguardante l'insieme dei prob
 
 loc.s.f. TS polit.
 
-nella pubblicistica italiana, dagli anni Settanta in poi, manifestazione della necessità di un impegno da parte dei[^19] partiti al rispetto dei principi di onestà e correttezza nella gestione del denaro pubblico (в итальянских публикациях, начиная с семидесятых годов и позднее, проявление обязательства со стороны партий уважения принципов честности и справедливости в управлении государственными деньгами).
+nella pubblicistica italiana, dagli anni Settanta in poi, manifestazione della necessità di un impegno da parte dei[^19] partiti al rispetto dei principi di onestà e correttezza nella gestione del denaro pubblico (в итальянских публицистике, начиная с семидесятых годов и позднее, проявление обязательства со стороны партий уважения принципов честности и справедливости в управлении государственными деньгами).
 
 **questione omerica**
 
@@ -149,15 +149,15 @@ insieme dei problemi e delle ipotesi formulate riguardo all'esistenza del poeta 
 
 loc.s.f. TS stor.
 
-insieme delle tematiche riguardanti il trattamento economico[^20] e le condizioni di vita della classe operaia dalla [rivoluzione industriale](https://it.wikipedia.org/wiki/Rivoluzione_industriale) a oggi (набор тематик, касающихся оплаты труда и условий жизни рабочего класса от промышленной революции до наших дней).
+insieme delle tematiche riguardanti il trattamento economico[^20] e le condizioni di vita della classe operaia dalla [rivoluzione industriale](https://it.wikipedia.org/wiki/Rivoluzione_industriale) a oggi (совокупность тематик, касающихся оплаты труда и условий жизни рабочего класса от промышленной революции до наших дней).
 
-**questione palestinese**
+[**questione palestinese**](https://it.wikipedia.org/wiki/Conflitto_arabo-israeliano)
 
 loc.s.f. CO
 
 insieme dei problemi relativi all'integrazione e alla convivenza tra ebrei e palestinesi (комплекс проблем, связанных с интеграцией и сосуществованием евреев и палестинцев).
 
-**questione romana**
+[**questione romana**](https://it.wikipedia.org/wiki/Questione_romana)
 
 loc.s.f. TS stor.
 
@@ -207,6 +207,6 @@ conflitto politico-religioso riguardante la coesistenza tra lo stato italiano e 
 
 [^21]: a causa di – по причине, ввиду, вследствии.
 
-[^22]: [L'annessione](https://it.wikipedia.org/wiki/Annessione) è l'atto tramite cui uno Stato amplia il proprio territorio, nella maggior parte dei casi a scapito di un altro Stato. Аннексия - это акт, посредством которого одно государство расширяет свою территорию, в большинстве случаев в ущерб другому государству. a scapito di qc – в ущерб чему-либо.
+[^22]: [L'annessione](https://it.wikipedia.org/wiki/Annessione) è l'atto tramite cui uno Stato amplia il proprio territorio, nella maggior parte dei casi a scapito di un altro Stato. Аннексия - это акт, посредством которого одно государство расширяет свою территорию, в большинстве случаев в ущерб другому государству; a scapito di qc – в ущерб чему-либо.
 
 [^23]: [Аннексия](https://ru.wikipedia.org/wiki/Аннексия) (лат. annexio, от лат. annexus – "присоединённый") – насильственное присоединение государством всей или части территории другого государства в одностороннем порядке.
