@@ -172,7 +172,7 @@ conflitto politico-religioso riguardante la coesistenza tra lo stato italiano e 
 
 [^3]: intavolare – расстилать; здесь употребляется в переносном значении: начать, затеять.
 
-[^4]: non è il caso di venire a questione per cose di così poco conto – не стоит ссориться из-за такой малости (non è il caso di ((+ ) ...) – не следует..., незачем...; cosa di poco conto – малость)
+[^4]: non è il caso di venire a questione per cose di così poco conto – не стоит ссориться из-за такой малости (non è il caso di ((+ inf) ...) – не следует..., незачем...; cosa di poco conto – малость)
 
 [^5]: di fatto – фактически, фактический.
 
