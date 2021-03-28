@@ -54,9 +54,7 @@
         .delay(700)
         .animate(
           {
-            scrollTop: $(
-              '[name="' + $.attr(this, "href").substr(1) + '"]'
-            ).offset().top,
+            scrollTop: $($.attr(this, "href")).offset().top,
           },
           "fast"
         );
