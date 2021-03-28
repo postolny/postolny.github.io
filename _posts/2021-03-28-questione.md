@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "questione"
-description: "fine XIII sec; dal lat. quaestiōne(m), der. di quaerĕre "domandare, interrogare". Конец XIII века; с латинского quaestiōne(m), производный от "domandare, interrogare"."
+description: "fine XIII sec; dal lat. quaestiōne(m), der. di quaerĕre \"domandare, interrogare\". Конец XIII века; с латинского quaestiōne(m), производный от \"domandare, interrogare\"."
 author: "И. Постольный"
 comments: false
 categories: q
