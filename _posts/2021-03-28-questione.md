@@ -10,9 +10,9 @@ tags:
 
 ### Significato
 
-s.f. fine XIII sec;
+s.f. fine XIII sec (конец XIII века);
 
-dal lat. quaestiōne(m), der. di quaerĕre "domandare, interrogare". Конец XIII века; с латинского quaestiōne(m), производный от "domandare, interrogare".
+dal lat. quaestiōne(m), der. di quaerĕre "domandare, interrogare" (с латинского quaestiōne(m), производный от "domandare, interrogare").
 
 FO
 
