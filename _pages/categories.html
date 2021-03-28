@@ -15,7 +15,7 @@ permalink: /categories/
     {% for category in categories %}
     <span class="site-tag">
       <a href="#{{ category | first | slugify }}">
-        {{ category[0] | capitalize }}
+        {{ category[0] | replace:'-', ' ' | capitalize }}
       </a>
     </span>
     {% endfor %}
@@ -24,7 +24,7 @@ permalink: /categories/
     {% assign sorted_cats = site.categories | sort %}
     {% for category in sorted_cats %}
     {% assign sorted_posts = category[1] | sort: 'title' %}
-    <h2 id="{{category[0] | downcase }}">{{category[0] | capitalize }} ({{ category | last | size }})</h2>
+    <h2 id="{{category[0] | downcase }}">{{category[0] | replace:'-', ' ' | capitalize }} ({{ category | last | size }})</h2>
     {% for post in sorted_posts %}
     <a class="tags-post" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
       <div>
