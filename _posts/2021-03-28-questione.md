@@ -163,7 +163,7 @@ loc.s.f. TS stor.
 
 conflitto politico-religioso riguardante la coesistenza tra lo stato italiano e il papato, sorto a partire dal Risorgimento, acuitosi a causa delle[^21] annessioni[^22] dello Stato Pontificio e di Roma e conclusosi nel 1929 con i Patti Lateranensi (политико-религиозный конфликт относительно сосуществования итальянского государства и папства, возникший от Рисорджименто (эпоха воссоединения Италии), обострившийся по причине аннексии[^23] Папского государства и Рима и завершившийся в 1929 году Латеранскими пактами).
 
-[Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/avercelahttps://dizionario.internazionale.it/parola/questione)
+[Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/questione)
 
 [^1]: circoscrivere un argomento – сузить тему.
 
