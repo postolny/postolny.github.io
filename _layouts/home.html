@@ -4,7 +4,7 @@ layout: default
 
 <div class="catalogue">
   {% for post in paginator.posts %}
-  <div>
+  <div class="catalogue-item">
     <time class="catalogue-time">
       {% assign months = "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь" | split: "|" %}
       {% assign m = post.date | date: "%-m" | minus: 1 %}
