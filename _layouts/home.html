@@ -4,43 +4,44 @@ layout: default
 
 <div class="catalogue">
   {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-      <div>
-        <time class="catalogue-time">
-          {% assign months = "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь" | split: "|" %}
-          {% assign m = post.date | date: "%-m" | minus: 1 %}
-          {% assign day = post.date | date: "%d" %}
-          {% assign month = months[m] %}
-          {% assign year = post.date | date: "%Y" %}
-          <span>{{ day }}/{{ month }}/{{ year }}</span>
-        </time>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
-        <div class="catalogue-line"></div>
+  <div>
+    <time class="catalogue-time">
+      {% assign months = "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь" | split: "|" %}
+      {% assign m = post.date | date: "%-m" | minus: 1 %}
+      {% assign day = post.date | date: "%d" %}
+      {% assign month = months[m] %}
+      {% assign year = post.date | date: "%Y" %}
+      <span>{{ day }}/{{ month }}/{{ year }}</span>
+    </time>
+    <h1 class="catalogue-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
 
-        <p>
-          {{ post.content | strip_html | truncatewords: 30 }}
-        </p>
+    <p>
+      {{ post.content | strip_html | truncatewords: 30 }}
+    </p>
 
-      </div>
-    </a>
+    <div class="btn_container">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="btn">Читать статью</a>
+    </div>
+
+  </div>
   {% endfor %}
 </div>
 
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">
-      Назад
-    </a>
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">
+    Назад
+  </a>
   {% else %}
-    <span class="previous">Первая</span>
+  <span class="previous">Первая</span>
   {% endif %}
   <span class="page_number ">
     {{ paginator.page }} из {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Вперёд</a>
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Вперёд</a>
   {% else %}
-    <span class="next ">Последняя</span>
+  <span class="next ">Последняя</span>
   {% endif %}
 </div>
