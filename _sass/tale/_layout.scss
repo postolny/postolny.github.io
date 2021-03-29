@@ -422,7 +422,7 @@ footer {
   }
 }
 
-.btn_container {
+.opere .btn_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,6 +440,7 @@ footer {
   line-height: 40px;
   padding: 0 20px;
   color: white;
+  font-family: $serif-secondary;
   font-size: 14px;
   background: #383d48;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);

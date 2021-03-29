@@ -134,6 +134,18 @@ video {
   margin: 0 auto 0.5rem;
 }
 
+::-moz-selection {
+  color: #fff;
+  background: #8dc692;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #8dc692;
+  text-shadow: none;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;

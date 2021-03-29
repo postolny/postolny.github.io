@@ -3,7 +3,7 @@
     border-bottom: 1px solid $grey-2;
     color: $default-color;
     display: block;
-    padding: 2rem 0;
+    padding: 1.8rem 0;
 
     &:hover .catalogue-line,
     &:focus .catalogue-line {
@@ -18,26 +18,21 @@
   &-time {
     color: $default-tint;
     font-family: $serif-secondary;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 
   &-title {
     color: $default-shade;
     display: block;
-
-    font-family:Segoe Print;
-    font-size:3rem;
+    font-family: Segoe Print;
+    font-size: 3rem;
     text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
     line-height: 1.2;
-
     font-weight: 700;
-    margin: .5rem 0;
-  }
-
-  &-line {
-    @include transition(width .3s ease-out);
-    border-top: .2rem solid $default-shade;
-    display: block;
-    width: 2rem;
+    margin: 0.5rem 0;
+    a {
+      color: $default-shade;
+      line-height: 1.2;
+    }
   }
 }
