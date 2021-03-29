@@ -1,12 +1,14 @@
-<h2 class="tag-item-label">Все статьи с тегом {{ include.tagName }}</h2>
-<ul>
-  {% for post in site.tags[include.tagName] %}
-  <li><a class="tags-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    <span class="tags-post-meta">
-      <time datetime="{{ post.date }}">
-        ({{ post.date | date:"%Y-%m-%d" }})
-      </time>
-    </span>
-  </li>
-  {% endfor %}
-</ul>
+<div class="tags">
+    <h2 class="tags-list-title">Все статьи с тегом {{ include.tagName }}</h2>
+    <ul class="tags-list">
+        {% for post in site.tags[include.tagName] %}
+        <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <span class="tags-post-meta">
+                <time datetime="{{ post.date }}">
+                    ({{ post.date | date:"%Y-%m-%d" }})
+                </time>
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
