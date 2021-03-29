@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "la posizione dell'aggettivo qualificativo"
+title:  "La posizione dell'aggettivo qualificativo"
 description: "Изменение значения качественных прилагательных в зависимости от их положения в предложении."
 author: "И. Постольный"
 comments: false
