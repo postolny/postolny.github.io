@@ -76,7 +76,7 @@ Il poliziotto (soggetto) bloccò (verbo in forma attiva) il rapinatore (compleme
 
 [^4]: complemento d'agente – дополнение действующего лица.
 
-[^5]: грам. вспомогательный глагол.
+[^5]: ausiliare – грам. вспомогательный глагол.
 
 [^6]: il tempo del verbo – время глагола.
 
