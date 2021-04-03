@@ -10,7 +10,7 @@ tags: Грамматика
 
 Come passare dalla frase attiva alla frase passiva e viceversa (cioè come passare dalla frase passiva alla frase attiva), spiegato in modo semplice[^1] e con opportuni esempi.
 
-Как перейти от активного предложения к пассивному и наоборот (т. е. как перейти от пассивного предложения к активному), объяснено просто с подходящими примерами.
+Как перейти от активного предложения к пассивному и наоборот (т. е. как перейти от пассивного предложения к активному), простое объяснение с подходящими примерами.
 
 Innanzitutto Ricorda!!!
 
