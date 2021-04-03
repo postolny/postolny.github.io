@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="{% if page.style %}{{ page.style }}{% endif %}">
+<body class="{% if page.style %}{{ page.style }}{% endif %}">
 
-    {% include navigation.html %}
+  {% include navigation.html %}
 
-    {% include banner.html %}
+  {% include banner.html %}
 
-    <main>
-      {{ content }}
-    </main>
+  <main>
+    {{ content }}
+  </main>
 
-    {% include footer.html %}
-    
-    {% include albero.html %}
-  </body>
+  {% include footer.html %}
+
+  {% include albero.html %}
+
+  <script type="text/javascript" src="{{ " /assets/js/jquery.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ " /assets/js/script.js" | relative_url }}"></script>
+</body>
+
 </html>
