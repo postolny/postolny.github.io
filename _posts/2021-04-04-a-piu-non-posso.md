@@ -20,7 +20,7 @@ con la massima velocità possibile, a perdifiato: correva a più non posso / ipe
 |----------|---------|
 |"La cornacchia gracchiò a più non posso" (I. Krylov).|"Ворона гаркнула во всё воронье горло" (И. Крылов).|
 |"La contessa si mise a scampanellare a più non posso" (A. Puškin).|"Графиня начала звонить изо всей мочи" (А. Пушкин).|
-|a più non posso|изо всех / из последних сил, дальше некуда; изо всех / из последних сил, дальше некуда; до потери сознания; вовсю; донельзя|
+|a più non posso|изо всех / из последних сил, дальше некуда; до потери сознания; вовсю; донельзя|
 |a tutta birra, a più non posso, a tutta forza|изо всей мочи (что есть мочи)|
 |correre per strada a tutta birra (a più non posso)|чесать по улице|
 |correre a più non posso, andare a tutto gas|нестись сломя голову|
