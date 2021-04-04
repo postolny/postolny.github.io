@@ -44,6 +44,14 @@ a {
   text-decoration: none;
 }
 
+a.footnote:before {
+  content: "[";
+}
+
+a.footnote:after {
+  content: "]";
+}
+
 main {
   p {
     a {
