@@ -30,4 +30,4 @@ con la massima velocità possibile, a perdifiato: correva a più non posso / ipe
 |a sazietà, a volontà; a più non posso|всласть|
 |Ordinerò il gelato... e una coppa di champagne, e faremo festa a più non posso.|Я закажу мороженое и бокал шампанского, и мы славно повеселимся.|
 
-[^1]: sganasciarsi – вывихнуть себе челюсти (от зевоты, от смеха).
+[^1]: sganasciarsi – вывихнуть себе челюсти (от зевоты, от смеха); sganasciarsi dalle risate – умирать (чуть не лопнуть) со смеху.
