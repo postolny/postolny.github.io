@@ -28,12 +28,15 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |CO|comune|употребительный|
 |colloq.|colloquiale|разговорный|
 |comp.|composto|состоит|
+|der.|derivato|производный|
+|dir.|diritto|право|
 |estens.|estensivo|экстенсивный|
 |eufem.|eufemistico|эвфемистический|
 |f.|femminile|женский род|
 |fam.|familiare|обиходный|
 |ferr.|ferrovia|относящееся к железной дороге|
 |fig.|figurato|фигуральный, образный, иносказательный|
+|filol.|filologia|филология|
 |fin.|finanza|финансы|
 |fis.|fisica|физика|
 |FO|fondamentale|основной|
@@ -42,6 +45,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |gener.|generalmente|в целом; обычно|
 |inform.|informatica|информатика|
 |inter.|interiezione|междометие|
+|iperb.|iperbolico|гиперболический|
 |iron.|ironico|ироничский|
 |itt.com.|termine generico di ittiologia|общий термин ихтиологии|
 |lat.|latino|латинский|
@@ -49,6 +53,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |lett.|letteratura|литература|
 |ling.|linguistica|лингвистика|
 |loc.agg.|locuzione aggettivale|выражение в форме прилагательного (l'uso aggettivale – употребление в функции прилагательного)|
+|loc.agg.inv.|locuzione aggettivale invariabile|неизменяемое выражение в форме прилагательного|
 |loc.avv.|locuzione avverbiale|наречное выражение|
 |loc.pragm.|[locuzione pragmatica](https://dizionario.internazionale.it/parola/locuzione-pragmatica)|прогматическое выражение|
 |loc.s.f.|locuzione sostantivale femminile|субстантивное выражение женского рода|
@@ -60,6 +65,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |numism.|numismatica|нумизматика|
 |OB|obsoleto|устаревший|
 |onom.|onomatopeico|звукоподражательный|
+|polit.|politica|политика|
 |pop.|popolare|народный|
 |portogh.|portoghese|португальский|
 |pl.|plurale|множественное число|
@@ -73,11 +79,14 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |scherz.|scherzoso|шутливый|
 |scol.|scuola e università|школа и университет|
 |sec.|secolo|век|
+|s.f.|sostantivo femminile|существительное женского рода|
+|s.f.inv.|sostantivo femminile invariabile|несклоняемое имя существительное женского рода|
 |sim.|simile|подобный|
 |s.m.|sostantivo maschile|имя существительное мужского рода|
 |s.m.inv.|sostantivo maschile invariabile|несклоняемое имя существительное мужского рода|
+|sociol.|sociologia|социология|
 |spec.|specialmente|особенно|
-|s.f.inv.|sostantivo femminile invariabile|несклоняемое имя существительное женского рода|
+|stor.|storia|история|
 |telecom.|telecomunicazione|телекоммуникация|
 |TS|Tecnico-Specialistico|специально-технический|
 |var.|variante|вариант|
