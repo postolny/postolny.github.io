@@ -14,7 +14,7 @@ loc.avv. CO
 
 con tutto il fiato che si ha in gola, a gran voce, molto forte: cantare a squarciagola (со всем духом, что только есть в глотке, громким голосом, очень громко: горланить песни, громко петь). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/a-squarciagola)
 
-Слово squarciagola – сложносоставное – образовано из глагола squarciare (разрывать, раздирать) и gola (горло, глотка; зев).
+Слово squarciagola – сложносоставное ([parola composta](https://www.treccani.it/enciclopedia/parole-composte_%28La-grammatica-italiana%29/))  – образовано из глагола squarciare (разрывать, раздирать) и gola (горло, глотка; зев).
 
 ### Esempi d'uso
 
