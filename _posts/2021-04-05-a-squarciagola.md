@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "a squarciagola"
-description: "con tutto il fiato che si ha in gola, a gran voce, molto forte: cantare a squarciagola (со всем дыханием, что только есть в глотке, громким голосом, очень громко: горланить песни, громко петь)."
+description: "con tutto il fiato che si ha in gola, a gran voce, molto forte: cantare a squarciagola (со всем духом, что только есть в глотке, громким голосом, очень громко: горланить песни, громко петь)."
 author: "И. Постольный"
 comments: false
 categories: a
