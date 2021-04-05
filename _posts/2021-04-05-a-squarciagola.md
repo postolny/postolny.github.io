@@ -12,7 +12,7 @@ tags:
 
 loc.avv. CO
 
-con tutto il fiato che si ha in gola, a gran voce, molto forte: cantare a squarciagola (со всем дыханием, что только есть в глотке, громким голосом, очень громко: горланить песни, громко петь). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/a-squarciagola)
+con tutto il fiato che si ha in gola, a gran voce, molto forte: cantare a squarciagola (со всем духом, что только есть в глотке, громким голосом, очень громко: горланить песни, громко петь). [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/a-squarciagola)
 
 Слово squarciagola – сложносоставное – образовано из глагола squarciare (разрывать, раздирать) и gola (горло, глотка; зев).
 
@@ -30,8 +30,8 @@ con tutto il fiato che si ha in gola, a gran voce, molto forte: cantare a squarc
 |È meglio che mi lasci andare prima che urli a squarciagola e ti faccia buttare fuori anche da qui.|Отпусти меня сейчас же. А то я закричу, и тебя отсюда тоже выкинут.|
 |Sei pronto a cantare a squarciagola nel coro?|Ты готов погорланить в хоре?|
 |Tuo papà cantava a squarciagola.|Твой отец пел во весь голос.|
-|So i testi di tutte le sue canzoni... e il fatto che io sia sorda non mi impedisce di cantarle a squarciagola... ogni volta che posso!|Я знаю слова всех его песен, и тот факт, что я глуха, не помешает мне петь во весь голос... каждый раз когда я могу!|
+|So i testi di tutte le sue canzoni... e il fatto che io sia sorda non mi impedisce di cantarle a squarciagola... ogni volta che posso!|Я знаю слова всех его песен, и тот факт, что я глуха, не помешает мне петь во весь голос... каждый раз, когда я могу!|
 |Cadendo da lassù, griderei a squarciagola.|Падая оттуда, я бы кричал что есть мочи.|
-|Sento la tua vocina interiore che urla a squarciagola.|Я слышу твой внутренний голосочек, кторый вопит что есть мочи.|
+|Sento la tua vocina interiore che urla a squarciagola.|Я слышу твой внутренний голосочек, который вопит что есть мочи.|
 
 [^1]: разг. очень громко кричать. Ну, и сбился с панталыку Максим Степанович: стал водку пить да буянить, драки заводил в кабаках; когда певал в церкви, кричал во всю ивановскую, – а у него басина был здоровый, протодьякону не уступал. Ф. М. Решетников, "Горнозаводские люди", 1863 г. Этимология: происходит от названия Ивановской площади в московском Кремле, на которой дьяки оглашали для всеобщего сведения царские указы. Им приходилось читать громко, чтобы было слышно всем.
