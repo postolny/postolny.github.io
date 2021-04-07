@@ -16,12 +16,18 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |---|---|
 |abl.|ablativo|отложительный падеж; творительный падеж|
 |accez.|accezione|значение (nell'accezione di... – в смысле..., в значении)|
+|aer.|aeronautica|воздухоплавание, аэронавтика|
 |agg.|aggettivo|прилагательное|
 |alim.|alimentazione|питание|
+|anat.|anatomia|анатомия|
 |ant.|antico|древний|
+|aram.|aramaico|арамейский|
+|astron.|astronomia|астрономия|
 |AU|Alto Uso|широкое использование|
 |av.|avanti|до|
 |avv.|avverbio|наречие|
+|BU|Basso Uso|редкое использование|
+|biol.|biologia|биология|
 |ca.|circa|примерно|
 |centr.|centrale|центральный|
 |cfr.|confronta|совпадает|
@@ -43,6 +49,8 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |fon.|fonetica|фонетика|
 |fr.|francese|французский|
 |gener.|generalmente|в целом; обычно|
+|gerg.|gergale|жаргонный, арготический|
+|gr.|greco|греческий|
 |inform.|informatica|информатика|
 |inter.|interiezione|междометие|
 |iperb.|iperbolico|гиперболический|
@@ -58,13 +66,18 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |loc.pragm.|[locuzione pragmatica](https://dizionario.internazionale.it/parola/locuzione-pragmatica)|прогматическое выражение|
 |loc.s.f.|locuzione sostantivale femminile|субстантивное выражение женского рода|
 |loc.s.m.|locuzione sostantivale maschile|субстантивное выражение мужского рода|
+|loc.s.m.pl.|locuzione sostantivale maschile plurale|субстантивное выражение мужского рода множественного числа|
 |loc.v.|locuzione verbale|устойчивое выражение|
 |m.|(sostantivo) maschile|существительное мужского рода|
+|mar.|marina|флот|
 |med.|medicina|медицина|
 |merceol.|merceologia|товароведение|
+|mus.|musica|музыка|
+|metrol.|metrologia|метрология|
 |numism.|numismatica|нумизматика|
 |OB|obsoleto|устаревший|
 |onom.|onomatopeico|звукоподражательный|
+|pesc.|pesca|рыбалка, рыболовство|
 |polit.|politica|политика|
 |pop.|popolare|народный|
 |portogh.|portoghese|португальский|
