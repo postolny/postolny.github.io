@@ -68,7 +68,7 @@ Il modo congiuntivo dispone di quattro tempi: due semplici (**presente** e **imp
 
 [^1]: sotto forma di qualcosa – в форме чего-либо, в виде чего-либо; in / sotto forma di... – в виде, в облике.
 
-[^2]: Stare per + infinito in italiano si usa per parlare di un'azione che succede in un futuro vicino. Конструкция Stare per + инфинитив в итальянском языке используется для обозначения действия, которое произойдет в ближайшем будущем.
+[^2]: [stare per + infinito]({{ site.baseurl }}/2021-04-09/il-modo-congiuntivo-uso-tempi-esempi) in italiano si usa per parlare di un'azione che succede in un futuro vicino. Конструкция stare per + инфинитив в итальянском языке используется для обозначения действия, которое произойдет в ближайшем будущем.
 
 [^3]: presuntuoso – самонадеянный, высокомерный; дерзкий, спесивый; один из синонимов – pretenzioso (= pretensioso) – 1) самонадеянный, претенциозный, высокомерный 2) требовательный; притязательный.
 
