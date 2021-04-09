@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "Stare per + infinito"
-description: "La costruzione \"stare per + infinito\" si usa per indicare un'azione (o avvenimento) che succederà in un futuro prossimo (Конструкция \"stare per + infinito\" используется для обозначения действия (или события), которое произойдет в ближайшем будущем)."
+description: "La costruzione \"stare per + infinito\" si usa per indicare un'azione (o avvenimento) che succederà in un futuro prossimo (Конструкция \"stare per + ифинитив\" используется для обозначения действия (или события), которое произойдет в ближайшем будущем)."
 author: "И. Постольный"
 comments: false
 categories: 
 tags: Грамматика
 ---
 
-La costruzione "stare per + infinito" si usa per indicare un'azione (o avvenimento) che succederà in un futuro prossimo (Конструкция "stare per + infinito" используется для обозначения действия (или события), которое произойдет в ближайшем будущем). Se la stessa costruzione viene usata al passato, indica un momento futuro rispetto a un'altra azione (Если та же конструкция используется в прошлом, она указывает на будущий момент по отношению к другому действию).
+La costruzione "stare per + infinito" si usa per indicare un'azione (o avvenimento) che succederà in un futuro prossimo (Конструкция "stare per + ифинитив" используется для обозначения действия (или события), которое произойдет в ближайшем будущем). Se la stessa costruzione viene usata al passato, indica un momento futuro rispetto a un'altra azione (Если та же конструкция используется в прошлом, она указывает на будущий момент по отношению к другому действию).
 
-Nella costruzione stare per + infinito vengono usate solo le forme semplici di stare, di solito al presente, imperfetto o futuro (В конструкции "stare per + infinito" используются только простые формы глагола stare, обычно в настоящем времени, имперфекте или будущем).
+Nella costruzione stare per + infinito vengono usate solo le forme semplici di stare, di solito al presente, imperfetto o futuro (В конструкции "stare per + ифинитив" используются только простые формы глагола stare, обычно в настоящем времени, имперфекте или будущем).
 
 | | presente | imperfetto | futuro |
 |--|----------|------------|--------|
