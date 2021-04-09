@@ -26,7 +26,7 @@ Fate attenzione agli esempi! Обратите внимание на пример
 - Carlo e Anna stanno per sposarsi → Carlo e Anna si sposeranno tra pochi giorni. Карло и Анна собираются пожениться → Через пару дней Карло и Анна поженятся.
 - Anna stava per uscire quando la sua amica Francesca l'ha chiamata. Анна собиралась выходить, когда её подруга Франческа позвала её.
 - Fiorella sta per prendere il treno → Tra pochi minuti, Fiorella prenderà il treno. Фиорелла собирается сесть в поезд → Через несколько минут Фиорелла сядет в поезд.  
-- Sono le 13, l'aereo di Cinzia starà per atterrare → Sono le 13, l'aereo di Cinzia atterrerà tra pocchi minuti. Сейчас час дня, самолёт Чинции вот-вот приземлится → Сейчас час дня, самолёт Чинции приземлится.
+- Starà per piovere? → Tra poco pioverà? Собирается дождь? → Скоро пойдёт дождь?
 - Sto per mangiare una pizza → Tra pochi secondi mangio una pizza. Я собираюсь есть пиццу → Через пару секунд я буду есть пиццу.
 - Stiamo per andare al cinema → Tra poco[^1] andiamo al cinema. Мы собираемся в кино → Скоро мы пойдем в кино.
 - Marco e Luisa stanno per tornare → Tra pochi minuti, Marco e Luisa tornano. Марко и Луиза вот-вот вернутся → Через несколько минут Марко и Луиза вернутся.
