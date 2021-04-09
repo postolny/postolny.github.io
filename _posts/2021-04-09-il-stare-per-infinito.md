@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Stare per + infinito"
-description: "La costruzione "stare per + infinito" si usa per indicare un'azione (o avvenimento) che succederà in un futuro prossimo (Конструкция "stare per + infinito" используется для обозначения действия (или события), которое произойдет в ближайшем будущем)."
+description: "La costruzione \"stare per + infinito\" si usa per indicare un'azione (o avvenimento) che succederà in un futuro prossimo (Конструкция \"stare per + infinito\" используется для обозначения действия (или события), которое произойдет в ближайшем будущем)."
 author: "И. Постольный"
 comments: false
 categories: 
