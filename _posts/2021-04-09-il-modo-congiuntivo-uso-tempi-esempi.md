@@ -66,7 +66,7 @@ Il modo congiuntivo dispone di quattro tempi: due semplici (**presente** e **imp
 
 ### L'uso corretto del congiuntivo
 
-L'uso corretto del congiuntivo sia nel parlato sia nello scritto è indice di una buona conoscenza della lingua italiana: Il congiuntivo: come usarlo correttamente (Правильное использование сослагательного наклонения как в устной, так и письменной речи указывает на хорошее знание итальянского языка: [Il congiuntivo: come usarlo correttamente]({{ site.baseurl }}/2021-04-09/il-modo-congiuntivo-uso-tempi-esempi).
+L'uso corretto del congiuntivo sia nel parlato sia nello scritto è indice di una buona conoscenza della lingua italiana: Il congiuntivo: come usarlo correttamente (Правильное использование сослагательного наклонения как в устной, так и письменной речи указывает на хорошее знание итальянского языка: [Il congiuntivo: come usarlo correttamente]({{ site.baseurl }}/2021-04-10/il-congiuntivo-usarlo-correttamente).
 
 Перевод [статьи](https://www.studiarapido.it/il-modo-congiuntivo-uso-tempi-esempi/)
 
