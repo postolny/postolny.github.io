@@ -14,4 +14,6 @@ Si dice "Pietro" perché fa rima con "indietro". Говорится "Pietro", п
 
 La prossima volta che presti una cosa a qualcuno e vuoi sottolineare che quella cosa ti deve essere restituita, puoi dire "Si chiama Pietro". В следующий раз, когда ты одолжишь что-то кому-нибудь и захочешь подчеркнуть, что эта вещь должна быть возвращена, можешь сказать "Si chiama Pietro".
 
-Spesso, ci fermiamo alla prima parte di questa espressione, la persona alla quale ci rivolgiamo ricorderà sicuramente la seconda. Часто мы останавливаемся на первой части этого выражения, человек, к которому мы обращаемся, непременно вспомнит вторую.
+Spesso, ci fermiamo alla prima parte di questa espressione, la persona alla quale ci rivolgiamo ricorderà sicuramente la seconda. Часто мы останавливаемся на первой части (ограничиваемся первой частью) этого выражения, человек, к которому мы обращаемся, непременно вспомнит вторую.
+
+Русский вариант этой итальянской идиомы может быть таким: "Его зовут Кондрат, вернётся он назад". Источник итальянского текста – Facebook.
