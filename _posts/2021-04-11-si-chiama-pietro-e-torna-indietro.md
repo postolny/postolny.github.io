@@ -5,12 +5,12 @@ description: "Conosci questa simpatica espressione idiomatica? Ты знаешь
 author: "И. Постольный"
 comments: false
 categories: 
-tags: modi-di-dire
+tags: Modi-di-dire
 ---
 
 Conosci questa simpatica espressione idiomatica? Ты знаешь это симпатичное идиоматическое выражение? Si usa quando prestiamo qualcosa a qualcuno ma vogliamo ricordare alla persona che è solo un prestito, l'oggetto che prestiamo deve tornare a noi che ne siamo i proprietari. Оно используется когда мы одалживаем что-то кому-то, но хотим напомнить человеку, что это только в долг, что вещь, которую мы дали в долг, должна быть нам возвращена, что мы её владельцы.
 
-Si dice "Pietro" perché fa rima con "indietro". Говорят "Pietro", потому что это слово образовывает рифму со словом "indietro".
+Si dice "Pietro" perché fa rima con "indietro". Говорится "Pietro", потому что это слово образовывает рифму со словом "indietro".
 
 La prossima volta che presti una cosa a qualcuno e vuoi sottolineare che quella cosa ti deve essere restituita, puoi dire "Si chiama Pietro". В следующий раз, когда ты одолжишь что-то кому-нибудь и захочешь подчеркнуть, что эта вещь должна быть возвращена, можешь сказать "Si chiama Pietro".
 
