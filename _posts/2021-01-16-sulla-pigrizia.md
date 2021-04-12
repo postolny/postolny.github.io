@@ -5,7 +5,7 @@ description: "Как по-итальянски сказать \"мне лень 
 author: "И. Постольный"
 comments: false
 categories: 
-tags: Frasi
+tags: Un-po'-di-tutto
 ---
 
 ![Pigrizia]({{ site.baseurl }}/img/pigrizia.jpg "Pigrizia")

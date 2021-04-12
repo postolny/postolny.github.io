@@ -4,7 +4,7 @@ title:  "Le stagioni"
 author: "И. Постольный"
 comments: false
 categories:
-tags: Frasi
+tags: Un-po'-di-tutto
 ---
 
 {% include youtube.html id='BjAaK4rA0bQ' %}
@@ -20,6 +20,7 @@ tags: Frasi
 |Aprile è un mese primaverile. Aprile ha 30 giorni.|Апрель – весенний месяц. В апреле 30 дней.|
 |Nel bosco crescono delle belle betulle. In primavera le loro foglie diventano verdi, in autunno invece ingialliscono.|В лесу растут красивые берёзы. Весной их листья зеленеют, а осенью желтеют.|
 |Quando si avvicina la primavera, gli uccelli incominciano a cantare.|С приближением весны птицы начинают петь.|
+|Fra poco arriverà la primavera e gli uccelli torneranno dai paesi caldi.|Скоро наступит весна, и птицы вернутся из тёплых стран.|
 
 ### L'estate
 {: .center}
@@ -65,3 +66,5 @@ tags: Frasi
 |Il piccolo Vittorio ancora adesso crede a Babbo Natale. Ogni anno Babbo Natale mette dei bei regali sotto il cuscino di Vittorio.|Маленький Витя до сих пор верит в Деда Мороза. Каждый год Дед Мороз кладёт Вите под подушку красивые подарки.|
 |Decembre è l'ultimo mese dell'anno. Decembre ha 31 giorni.|Декабрь – последний месяц года. В декабре 31 день.|
 |Fuori nevicava. Mark era seduto in classe vicino alla finestra e fantasticava su cosa avrebbe fatto in estate.|На улице шёл снег. Марк сидел в школе у окна и представлял, что он будет делать летом.|
+|Febbraio è il mese più freddo dell'anno. Ogni anno febraio ha 28 giorni, ogni 4 anni ne ha 29. Quest'anno si chiamo bisestile.|Февраль – самый холодный месяц года. Каждый год в феврале бывает по 28 дней, а каждый четвёртый год – 29 дней. Этот год называется високосным.|
+|Il fieno è erba tagliata e seccata. Il fieno viene messo in silos e conservato fino a primavera. In inverno si nutrono i cavalli con il fieno.|Сеер – это скошенная и высушенная трава. Сено складывают в силосные ямы и хранят до весны. Сеном зимой кормят лошадей.|
