@@ -7,7 +7,7 @@ categories:
 tags: Un-po'-di-tutto
 ---
 
-{% include youtube.html id='BjAaK4rA0bQ' %}
+{% include youtube.html id='BjAaK4rA0bQ?controls=0' %}
 
 ## Le stagioni dell'anno
 {: .center}
