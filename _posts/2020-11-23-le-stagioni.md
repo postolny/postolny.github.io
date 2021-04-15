@@ -68,3 +68,4 @@ tags: Un-po'-di-tutto
 |Fuori nevicava. Mark era seduto in classe vicino alla finestra e fantasticava su cosa avrebbe fatto in estate.|На улице шёл снег. Марк сидел в школе у окна и представлял, что он будет делать летом.|
 |Febbraio è il mese più freddo dell'anno. Ogni anno febraio ha 28 giorni, ogni 4 anni ne ha 29. Quest'anno si chiamo bisestile.|Февраль – самый холодный месяц года. Каждый год в феврале бывает по 28 дней, а каждый четвёртый год – 29 дней. Этот год называется високосным.|
 |Il fieno è erba tagliata e seccata. Il fieno viene messo in silos e conservato fino a primavera. In inverno si nutrono i cavalli con il fieno.|Сеер – это скошенная и высушенная трава. Сено складывают в силосные ямы и хранят до весны. Сеном зимой кормят лошадей.|
+|È molto difficile per gli uccelli vivere in inverno quando fa freddo. I bambini devovo prendersi cura di loro.|Птицам очень тяжело живётся зимой, когда холодно. Дети должны заботиться о них.|
