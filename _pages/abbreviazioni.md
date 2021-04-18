@@ -18,6 +18,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |accez.|accezione|значение (nell'accezione di... – в смысле..., в значении)|
 |aer.|aeronautica|воздухоплавание, аэронавтика|
 |agg.|aggettivo|прилагательное|
+|agg.indef.|aggettivo indefinito|неопределённое прилагательное|
 |alim.|alimentazione|питание|
 |anat.|anatomia|анатомия|
 |ant.|antico|древний|
@@ -64,6 +65,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |loc.agg.inv.|locuzione aggettivale invariabile|неизменяемое выражение в форме прилагательного|
 |loc.avv.|locuzione avverbiale|наречное выражение|
 |loc.pragm.|[locuzione pragmatica](https://dizionario.internazionale.it/parola/locuzione-pragmatica)|прогматическое выражение|
+|loc.pron.indef.|locuzione pronominale indefinita|неопределённое местоименное выражение|
 |loc.s.f.|locuzione sostantivale femminile|субстантивное выражение женского рода|
 |loc.s.m.|locuzione sostantivale maschile|субстантивное выражение мужского рода|
 |loc.s.m.pl.|locuzione sostantivale maschile plurale|субстантивное выражение мужского рода множественного числа|
@@ -97,10 +99,12 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |sim.|simile|подобный|
 |s.m.|sostantivo maschile|имя существительное мужского рода|
 |s.m.inv.|sostantivo maschile invariabile|несклоняемое имя существительное мужского рода|
+|sing.|singolare|единственное число|
 |sociol.|sociologia|социология|
 |spec.|specialmente|особенно|
 |stor.|storia|история|
 |telecom.|telecomunicazione|телекоммуникация|
+|tosc.|toscano|тосканский диалект|
 |TS|Tecnico-Specialistico|специально-технический|
 |var.|variante|вариант|
 |v.procompl.|verbo procomplementare|прокомпиляционный глагол|
