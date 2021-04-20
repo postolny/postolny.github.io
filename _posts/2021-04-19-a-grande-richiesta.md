@@ -14,6 +14,8 @@ tags:
 
 Также "[A grande richiesta](https://it.wikipedia.org/wiki/A_grande_richiesta)" это итальянская телевизионная программа.
 
+Выражение отсутствует в словаре De Mauro.
+
 ### Esempi d'uso
 
 | Italiano | Русский |
