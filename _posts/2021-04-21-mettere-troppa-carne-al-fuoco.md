@@ -34,5 +34,7 @@ avere (или mettere, porre) molta (или troppa) carne al fuoco (или a bol
 
 | Italiano | Русский |
 |----------|---------|
-|"No, no, ho troppa carne al fuoco!.. poi non vorrei fare uno sgarbo al cugino Zacco! (G. Verga, "Mastro-don Gesualdo").|Нет, нет, у меня много других забот. К тому же я бы не хотел делать неприятное кузену Дзакко.
+|"No, no, ho troppa carne al fuoco!.. poi non vorrei fare uno sgarbo[^1] al cugino Zacco! (G. Verga, "Mastro-don Gesualdo").|Нет, нет, у меня много других забот. К тому же я бы не хотел делать неприятное кузену Дзакко.
 |Il cognato tagliò corto, come uno che ha molta altra carne al fuoco, e non ha tempo da perdere inutilmente (G. Verga, "Mastro-don Gesualdo").|Шурин прервал их, как человек, у которого много других дел и которому некогда терять время.|
+
+[^1]: fare uno sgarbo – допускать бестактность; sgarbo (употребляется редко) = sgarberia – грубость, грубый поступок.
