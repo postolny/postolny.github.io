@@ -20,7 +20,7 @@ di sorpresa, inaspettatamente (врасплох, неожиданно): cogliere
 
 loc.v. CO
 
-[spiazzare]({{ site.baseurl }}/2021-04-25-spiazzare).
+[spiazzare]({{ site.baseurl }}/2021-04-25/spiazzare).
 
 [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/prendere-alla-sprovvista)
 
