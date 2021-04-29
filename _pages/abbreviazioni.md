@@ -35,6 +35,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |CO|comune|употребительный|
 |colloq.|colloquiale|разговорный|
 |comp.|composto|состоит|
+|dat.|dativo|дательный (падеж)|
 |der.|derivato|производный|
 |dir.|diritto|право|
 |estens.|estensivo|экстенсивный|
@@ -107,6 +108,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |tosc.|toscano|тосканский диалект|
 |TS|Tecnico-Specialistico|специально-технический|
 |var.|variante|вариант|
+|v.|vedi|смотри|
 |v.procompl.|verbo procomplementare|прокомпиляционный глагол|
 |v.pronom.intr.|verbo pronominale intransitivo|местоименный непереходный (интранзитивный) глагол|
 |v.pronom.tr.|verbo pronominale transitivo|местоименный переходный (транзитивный) глагол|
