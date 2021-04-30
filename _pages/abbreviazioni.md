@@ -117,7 +117,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 
 ## Аббревиатуры
 
-{:.abbreviazioni}
+{:.search}
 |Аббревиатура|Значение|
 |---|---|
 |лат.|латинское|
