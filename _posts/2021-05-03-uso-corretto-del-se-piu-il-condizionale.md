@@ -23,7 +23,7 @@ L'uso del condizionale nelle **frasi indipendenti** è frequente e non è motivo
 
 Nelle **frasi dipendenti**, invece, si registrano i problemi maggiori e in esse l'uso o il mancato uso del condizionale costituisce un errore grossolano[^2]. В зависимых предложениях, наоборот, наблюдаются серьезные проблемы, и в них использование или неиспользование условного наклонения является грубой ошибкой.
 
-Il caso più emblematico è connesso con la congiunzione **se**, da cui sono introdotti due tipi di frasi dipendenti che richiedono modi verbali diversi. Наиболее характерный случай связан с союзом se, который вводит два типа зависимых предложений, требующие раличные наклонения глагола.
+Il caso più emblematico è connesso con la congiunzione **se**, da cui sono introdotti due tipi di frasi dipendenti che richiedono modi verbali diversi. Наиболее характерный случай связан с союзом se, который вводит два типа зависимых предложений, требующих раличные наклонения глагола.
 
 Il **se** che introduce una **frase condizionale** non può mai essere seguito dal verbo al modo condizionale; richiede invece l'**indicativo**, se la frase presenta l'ipotesi come un dato di fatto[^3], il **congiuntivo**, se la propone come possibile o irrealizzabile. За союзом se, вводящим условное предложение, никогда не может следовать глагол в условном наклонении; вместо этого следует использовать глагол в изъявительном наклонении, если предложение подразумевает гипотезу как свершившийся факт, в сослагательном наклонении, если оно предполагает возможное или недостижимое.
 
@@ -39,6 +39,7 @@ Il **condizionale** deve essere invece usato nella **frase reggente** – l'apod
 
   - Mi domando **se** lei mi avrebbe **aiutato** (Интересно, поможет ли она мне).
   - Non so **se** **avrei finito** in tempo, senza il tuo aiuto (Не знаю, успел бы я закончить вовремя без твоей помощи).
+  - Dimmi se non vorresti andare a Roma? Скажи мне, не хотел бы ты поехать в Рим?
 
 Перевод [статьи](https://www.studiarapido.it/uso-corretto-del-se-piu-il-condizionale)
 
