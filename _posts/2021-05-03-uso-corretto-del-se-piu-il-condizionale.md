@@ -37,9 +37,9 @@ Il **condizionale** deve essere invece usato nella **frase reggente** – l'apod
 
 - Può invece reggere il modo **condizionale**[^6] il **se** che introduce un'**interrogativa indiretta**[^7], cioè una frase che dipende da un verbo come chiedere, domandarsi, non sapere ed esprime una domanda o un dubbio. С другой стороны союз se, который вводит косвенное вопросительное предложение, то есть предложение, которое зависит от глаголов, таких как chiedere, domandarsi, non sapere и выражает вопрос или сомнение, может управлять глаголом в условном наклонении.
 
-  - Mi domando **se** lei mi avrebbe **aiutato** (Интересно, поможет ли она мне).
+  - Mi domando **se** lei mi **avrebbe aiutato** (Интересно, поможет ли она мне).
   - Non so **se** **avrei finito** in tempo, senza il tuo aiuto (Не знаю, успел бы я закончить вовремя без твоей помощи).
-  - Dimmi se non vorresti andare a Roma? Скажи мне, не хотел бы ты поехать в Рим?
+  - Dimmi se non **vorresti** andare a Roma? Скажи мне, не хотел бы ты поехать в Рим?
 
 Перевод [статьи](https://www.studiarapido.it/uso-corretto-del-se-piu-il-condizionale)
 
