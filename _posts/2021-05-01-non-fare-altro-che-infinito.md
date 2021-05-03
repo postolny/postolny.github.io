@@ -10,7 +10,6 @@ tags:
 
 ### Significato
 
-
 Questa costruzione italiana significa "fare una sola cosa in continuazione". Эта итальянская конструкция означает "заниматься постоянно только одним делом".
 
 Esiste anche la costruzione "non poter fare altro che" (+ infinito) che significa "Non ho altra scelta / possibilità se non quella di...".
