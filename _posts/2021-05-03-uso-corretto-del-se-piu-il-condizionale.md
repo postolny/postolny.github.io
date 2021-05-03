@@ -39,7 +39,7 @@ Il **condizionale** deve essere invece usato nella **frase reggente** – l'apod
 
   - Mi domando **se** lei mi **avrebbe aiutato**. Интересно, поможет ли она мне.
   - Non so **se** **avrei finito** in tempo, senza il tuo aiuto. Не знаю, успел бы я закончить вовремя без твоей помощи.
-  - Dimmi se non **vorresti** andare a Roma? Скажи мне, не хотел бы ты поехать в Рим?
+  - Dimmi **se** non **vorresti** andare a Roma? Скажи мне, не хотел бы ты поехать в Рим?
 
 Перевод [статьи](https://www.studiarapido.it/uso-corretto-del-se-piu-il-condizionale)
 
