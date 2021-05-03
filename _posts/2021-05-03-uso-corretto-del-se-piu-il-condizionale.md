@@ -19,7 +19,7 @@ L'uso del condizionale nelle **frasi indipendenti** è frequente e non è motivo
 - un **dubbio**: non saprei proprio che cosa fare (сомнения: я просто не знаю, что делать);
 - una **richiesta cortese** o un **desiderio**: Gradirei una bibita; Mi potresti aiutare? (вежливую просьбу или пожелание: Я был бы признателен за напиток; Не мог бы ты помочь мне?);
 - un'**opinione personale** attenuata: Direi che ha ragione lui (смягчённого личного мнения: Я бы сказал, что прав он);
-- una supposizione: Potrebbe essere lui il responsabile dell'incidente; Potrebbe accadere il contrario di quanto dici (предположения: должно быть он виновник аварии; Может произойти обратное тому, о чём ты говоришь).
+- una **supposizione**: Potrebbe essere lui il responsabile dell'incidente; Potrebbe accadere il contrario di quanto dici (предположения: должно быть он виновник аварии; Может произойти обратное тому, о чём ты говоришь).
 
 Nelle **frasi dipendenti**, invece, si registrano i problemi maggiori e in esse l'uso o il mancato uso del condizionale costituisce un errore grossolano[^2]. В зависимых предложениях, наоборот, наблюдаются серьезные проблемы, и в них использование или неиспользование условного наклонения является грубой ошибкой.
 
