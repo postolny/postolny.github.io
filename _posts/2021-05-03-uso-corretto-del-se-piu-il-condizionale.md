@@ -31,14 +31,14 @@ Il **condizionale** deve essere invece usato nella **frase reggente** – l'apod
 
 | No | Sì |
 |----|----|
-| Se pioverebbe non andrei al mare | Se **piove** non **vado** al mare (Если идет дождь, я не пойду к морю)<br>Se **piovesse** non **andrei** al mare (Если бы шёл дождь, я бы не пошёл к морю) |
-| Se sarei ricco comprerei una Ferrari | Se **fossi** ricco **comprerei** una Ferrari (Если бы я был богат, я бы купил Феррари) |
-| Se avrei avuto tempo ti aiutavo | Se **avessi avuto** tempo ti **avrei aiutato** (Если бы у меня было время, я бы помог тебе) |
+| Se pioverebbe non andrei al mare. | Se **piove** non **vado** al mare. Если идёт дождь, я не пойду к морю.<br>Se **piovesse** non **andrei** al mare. Если бы шёл дождь, я бы не пошёл к морю. |
+| Se sarei ricco comprerei una Ferrari. | Se **fossi** ricco **comprerei** una Ferrari. Если бы я был богат, я бы купил Феррари. |
+| Se avrei avuto tempo ti aiutavo | Se **avessi avuto** tempo ti **avrei aiutato**. Если бы у меня было время, я бы помог тебе. |
 
 - Può invece reggere il modo **condizionale**[^6] il **se** che introduce un'**interrogativa indiretta**[^7], cioè una frase che dipende da un verbo come chiedere, domandarsi, non sapere ed esprime una domanda o un dubbio. С другой стороны союз se, который вводит косвенное вопросительное предложение, то есть предложение, которое зависит от глаголов, таких как chiedere, domandarsi, non sapere и выражает вопрос или сомнение, может управлять глаголом в условном наклонении.
 
-  - Mi domando **se** lei mi **avrebbe aiutato** (Интересно, поможет ли она мне).
-  - Non so **se** **avrei finito** in tempo, senza il tuo aiuto (Не знаю, успел бы я закончить вовремя без твоей помощи).
+  - Mi domando **se** lei mi **avrebbe aiutato**. Интересно, поможет ли она мне.
+  - Non so **se** **avrei finito** in tempo, senza il tuo aiuto. Не знаю, успел бы я закончить вовремя без твоей помощи.
   - Dimmi se non **vorresti** andare a Roma? Скажи мне, не хотел бы ты поехать в Рим?
 
 Перевод [статьи](https://www.studiarapido.it/uso-corretto-del-se-piu-il-condizionale)
