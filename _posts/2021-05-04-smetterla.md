@@ -14,6 +14,10 @@ v.procompl. (io la ṣmétto) CO
 
 smettere di dire o di fare qcs.: è ora di smetterla coi piagnistei! (пора прекратить ныть! (пора покончить с нытьём!)) / smettila! (перестань!, брось!, кончай!), smettetela! (перестаньте!, бросьте!), la smetta! (прекратите! (вежливая форма)), per far cessare qcn. da ciò che sta facendo o dicendo (для того, чтобы заставить прекратить кого-то что-либо делать или говорить).
 
+### Sinonimi
+
+farla finita, finirla, piantarla.
+
 [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/smetterla)
 
 ### Esempi d'uso
