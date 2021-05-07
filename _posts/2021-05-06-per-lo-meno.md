@@ -50,10 +50,10 @@ perlomeno.
 |O perlomeno ero convinto di esserlo.|Или, по крайней мере, я так думал.|
 |O perlomeno, così mi ha detto.|Или, по крайней мере, он так мне сказал.|
 |O perlomeno, avere entrambi i piedi a terra.|Или, по меньшей мере, стоять обеими ногами на твёрдой земле.|
-|Ma perlomeno... il naso migliora a vista d'occhio[^2].|Но, хотя бы... нос быстро заживает.|
+|Ma perlomeno... il naso migliora a [vista d'occhio]({{ site.baseurl }}/2021-05-07/a-vista-docchio)[^2].|Но, хотя бы... нос быстро заживает.|
 |Dico, avrà perlomeno 50 anni.|Говорю, ему лет 50, как минимум.|
 |O perlomeno, è ciò che mi è stato detto.|Во всяком случае, мне так сказали.|
 
 [^1]: La fata dai capelli turchini o fata turchina è un personaggio del romanzo per ragazzi Le avventure di Pinocchio. Storia di un burattino di Carlo Collodi. Nell'adattamento cinematografico di Walt Disney si chiama fata azzurra (Blue Fairy). Фея с голубыми волосами (fata dai capelli turchini) или fata turchina – это персонаж романа для детей "Приключения Пиноккио" (Le avventure di Pinocchio). История одной куклы (burattino – кукла; марионетка) Карло Коллоди. В кинематографической версии Уолта Диснея её называют fata azzurra (Blue Fairy).
 
-[^2]: a vista d'occhio – 1) на первый взгляд..., как мне кажется...; 2) на глазах; не по дням, а по часам.
+[^2]: на глазах; не по дням, а по часам.
