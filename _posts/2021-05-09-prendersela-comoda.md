@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "prendersela comoda"
-description: "fare qcs. con agio, senza affannarsi o anche con eccessiva lentezza e poco entusiasmo (делать что-либо не спеша, не утруждая себя или же с чрезмерной медлительностью, и небольшим энтузиазмом): prenditela pure comoda, non c'è fretta (не спеши, спешить некуда)."
+description: "fare qcs. con agio, senza affannarsi o anche con eccessiva lentezza e poco entusiasmo (делать что-либо не спеша, не утруждая себя или же с чрезмерной медлительностью и небольшим энтузиазмом): prenditela pure comoda, non c'è fretta (не спеши, спешить некуда)."
 author: "И. Постольный"
 comments: false
 categories: p
@@ -12,7 +12,7 @@ tags:
 
 loc.v. CO
 
-fare qcs. con agio, senza affannarsi o anche con eccessiva lentezza e poco entusiasmo (делать что-либо не спеша, не утруждая себя или же с чрезмерной медлительностью, и небольшим энтузиазмом): prenditela pure comoda, non c'è fretta (не спеши, спешить некуда).
+fare qcs. con agio, senza affannarsi o anche con eccessiva lentezza e poco entusiasmo (делать что-либо не спеша, не утруждая себя или же с чрезмерной медлительностью и небольшим энтузиазмом): prenditela pure comoda, non c'è fretta (не спеши, спешить некуда).
 
 [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/prendersela-comoda)
 
