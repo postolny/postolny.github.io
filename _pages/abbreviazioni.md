@@ -22,6 +22,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |alim.|alimentazione|питание|
 |anat.|anatomia|анатомия|
 |ant.|antico|древний|
+|anticam.|anticamente|в старину, издревле|
 |aram.|aramaico|арамейский|
 |astron.|astronomia|астрономия|
 |AU|Alto Uso|широкое использование|
@@ -106,6 +107,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |stor.|storia|история|
 |telecom.|telecomunicazione|телекоммуникация|
 |tosc.|toscano|тосканский диалект|
+|trans.|transitivo, transitivamente|переходный (транзитивный)|
 |TS|Tecnico-Specialistico|специально-технический|
 |var.|variante|вариант|
 |v.|vedi|смотри|
@@ -154,3 +156,4 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [Lingvo Live](https://www.lingvolive.com/ru-ru)
 * [Detti e proverbi](https://dettieproverbi.it/)
 * [dic.academic.ru](https://dic.academic.ru/)
+* [dizy.com](https://www.dizy.com/)
