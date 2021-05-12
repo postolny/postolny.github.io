@@ -5,7 +5,7 @@ description: "Perché si dice \"A buon rendere\": origine, spiegazione e come si
 author: "И. Постольный"
 comments: false
 categories: 
-tags: [Modi-di-dire, Переводы]
+tags: Modi-di-dire
 ---
 
 Perché si dice "A buon rendere": origine, spiegazione e come si usa nella lingua italiana. 
@@ -78,6 +78,8 @@ Per quanto riguarda[^14] le **risposte** da dare alle persone che dicono "a buon
 Questo perché è una frase fatta[^16] e non un impegno da prendere sul serio, a meno che il favore ricevuto o concesso non sia davvero impegnativo e che la sua non restituzione non abbia causato un danno a una delle due parti.
 
 Это потому, что это стандартная фраза, а не обязательство, которое следует воспринимать всерьез, если только полученная или предоставленная услуга не является действительно обязательной и её невозврат не послужит причиной ущерба одной из двух сторон.
+
+Перевод [статьи](https://www.scuolissima.com/2019/06/a-buon-rendere-significato.html)
 
 [^1]: bontà d'animo – доброта души; un uomo di segnalata bontà d'animo – широчайшей души человек.
 
