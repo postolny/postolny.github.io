@@ -42,7 +42,7 @@ fuori di questione
 
 loc.agg.inv. CO
 
-di cui si sta parlando, cui ci si riferisce: l'argomento in questione non sarà materia d'interrogazione (о котором мы в настоящий момент говорим, чего мы касаемся: данная тема не будет предметом опроса (экзамена)).
+di cui si sta parlando, cui ci si riferisce: l'argomento in questione non sarà materia d'interrogazione (о чём мы в настоящий момент говорим, чего мы касаемся: данная тема не будет предметом опроса (экзамена)).
 
 **mettere in questione**
 
