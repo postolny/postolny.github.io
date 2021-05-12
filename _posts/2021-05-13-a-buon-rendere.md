@@ -71,7 +71,7 @@ Per quanto riguarda[^14] le **risposte** da dare alle persone che dicono "a buon
 Что касается **ответов**, которые нужно давать людям, которые говорят "a buon rendere", вместо того, чтобы расплачиваться в короткий срок, мы рекомендуем использовать некоторые из следующих выражений, сопровождаемых искренней улыбкой, чтобы не выглядеть как человек, который больше связан с материальными благами, а не абстрактными, такими как дружба:
 
 > – Ti restituirò il favore quando potrò. A buon Rendere!  
-> – "Figurati!", "È stato un piacere!", "Ci mancherebbe!", "Va bene così!", "Con Piacere!", "Quando vuoi!".
+> – "Figurati!", "È stato un piacere!", "Ci mancherebbe!", "Va bene così!", "Con Piacere!", "Quando vuoi!".  
 > – Я верну долг, когда смогу. Долг платежом красен!  
 > – "Figurati!" (Ну конечно!), "È stato un piacere!" (Мне было очень приятно!), "Ci mancherebbe!" (Вот ещё!), "Va bene così!" (Всё нормально!), "Quando vuoi!" (Когда захочешь!).
 
