@@ -105,7 +105,7 @@ Questo perché è una frase fatta[^16] e non un impegno da prendere sul serio, a
 
 [^12]: dato, presente, attuale, in questione – данный.
 
-[^13]: approfittarsene – использование людей и обстоятельств в своих личных целях. [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/approfittarsene)
+[^13]: [approfittarsene]({{ site.baseurl }}/2021-05-13/approfittarsene) – approfittare di persone e situazioni per propri fini personali (использование людей и ситуации в своих личных целях).
 
 [^14]: per quanto riguarda... – что касется..., по поводу..., насчёт...; per quel che riguarda... – что касается...
 
