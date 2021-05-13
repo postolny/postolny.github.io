@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "approfittarsene"
-description: "approfittare di persone e situazioni per propri fini personali (использование людей и ситуации в своих личных целях)."
+description: "approfittare di persone e situazioni per propri fini personali (использовать людей и ситуации в своих личных целях)."
 author: "И. Постольный"
 comments: false
 categories: a
@@ -12,7 +12,7 @@ tags:
 
 v.procompl. CO (прокомпиляционный глагол; употребительный).
 
-approfittare di persone e situazioni per propri fini personali (использование людей и ситуации в своих личных целях).
+approfittare di persone e situazioni per propri fini personali (использовать людей и ситуации в своих личных целях).
 
 [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/approfittarsene)
 
