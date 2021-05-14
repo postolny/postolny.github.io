@@ -24,7 +24,7 @@ approfittare di persone e situazioni per propri fini personali (использо
 |Se sei buono la gente se ne approfitta.|Если ты добрый, тобой пользуются.|
 |Se sei buono la gente se ne approfitta.|Добреньким все сядут на шею.|
 |La gente ti crede debole e se ne approfitta.|Люди считают тебя слабым и пользуются этим.|
-|Andiamo[^1], la gente se ne approfitta dei vecchi e li truffa in continuazione.|Да ладно, люди используют стариков и постоянно надувают их.|
+|Andiamo[^1], la gente se ne approfitta dei vecchi e li truffa in continuazione.|Да ну, люди используют стариков и постоянно надувают их.|
 |Mia sorella e suo marito la viziano e lei se ne approfitta.|Моя сестра и ее муж балуют её, и она этим пользуется.|
 |In realtà... c'è anche chi se ne approfitta... di quel dolore.|На самом деле... есть также те, кто на этой боли хочет нажиться.|
 |Non mi piace quando la gente se ne approfitta.|Мне не нравится быть использованным.|
@@ -37,4 +37,4 @@ approfittare di persone e situazioni per propri fini personali (использо
 |Appena hanno un po' di potere se ne approfittano.|Некоторым дай волю, и начинается тирания.|
 |Continui a fare favori a chiunque e tutti se ne approfittano.|Ты продолжаешь делать кому-нибудь одолжения, а они все этим пользуются.|
 
-[^1]: В этом случае глагол andare возможно имеет примерно следующее значение: "dai, dimmi se ho ragione o no!".
+[^1]: dai, dimmi se ho ragione o no!
