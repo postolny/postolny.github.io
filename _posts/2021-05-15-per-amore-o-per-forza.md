@@ -25,4 +25,4 @@ necessariamente (обязательно).
 |Devi fare il vaccino, per amore o per forza.|Нравится или нет, ты должен сделать прививку.|
 |Per amore o per forza, si potrebbe dire.|По любви или по принуждению, можно сказать.|
 
-[^1]: frustata – colpa di frusta (удар кнутом, хлыстом, плетью); frustare – colpire con la frusta (ударять кнутом, хлыстом, плетью). 
+[^1]: frustata – colpa di frusta (удар кнутом, хлыстом, плетью); frustare – colpire con la frusta (ударять кнутом, хлыстом, плетью).
