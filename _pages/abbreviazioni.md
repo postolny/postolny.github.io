@@ -143,13 +143,14 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 ## Dizionari
 
 * [Treccani](https://www.treccani.it/)
-* [Olivetti](https://www.dizionario-italiano.it/)
+* [Dizionario Italiano Olivetti](https://www.dizionario-italiano.it/)
+* [Dizionario Russo-Italiano Olivetti](https://www.dizionario-russo.com/dizionario-russo-italiano.php)
 * [Dizionario italiano De Mauro](https://dizionario.internazionale.it/)
 * [Dizionario italiano De Mauro – Abbreviazioni](https://dizionario.internazionale.it/abbreviazioni)
 * [Dizionari Garzanti Linguistica](https://www.garzantilinguistica.it/)
 * [La Repubblica](https://dizionari.repubblica.it/italiano.html)
-* [Corriere della sera](https://dizionari.corriere.it/)
-* [Grande Dizionario Italiano di GABRIELLI ALDO](https://www.grandidizionari.it/dizionario_italiano.aspx)
+* [Corriere della Sera](https://dizionari.corriere.it/)
+* [Grande Dizionario Italiano di Gabrielli Aldo](https://www.grandidizionari.it/dizionario_italiano.aspx)
 * [Dizionario d'ortografia e di pronunzia](http://www.dizionario.rai.it/)
 * [Glosbe](https://ru.glosbe.com/it/ru)
 * [Dialetti d'Italia](https://www.dialettando.com/)
@@ -157,3 +158,4 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [Detti e proverbi](https://dettieproverbi.it/)
 * [dic.academic.ru](https://dic.academic.ru/)
 * [dizy.com](https://www.dizy.com/)
+* [Dizionario Etimologico](https://www.etimo.it/)
