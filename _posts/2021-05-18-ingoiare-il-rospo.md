@@ -22,7 +22,7 @@ fig. Ingoiare, mandare giù un r. o il r., essere costretto, per necessità[^2] 
 
 fig. Sopportare qualcosa di sgradevole: i. un'umiliazione / ingoiare un rospo, sottostare a una situazione spiacevole contro la propria volontà, non potendo fare altrimenti (фиг. сносить что-то неприятное: ingoiare un'umiliazione / ingoiare un rospo, подчиниться неприятной ситуации против своей воли, не имея возможности поступить иначе).
 
-[Grande Dizionario Italiano di Gabrielli Aldo](https://dizionari.corriere.it/dizionario-modi-di-dire/R/rospo.shtml)
+[Grande Dizionario Italiano di Gabrielli Aldo](https://www.grandidizionari.it/Dizionario_Italiano/parola/I/ingoiare.aspx?query=ingoiare)
 
 Costringersi a sopportare qualcosa di molto sgradevole o umiliante perché non si può fare altrimenti, possibilmente senza manifestare il proprio disappunto (Быть вынужденным сносить что-то очень неприятное или унизительное, потому что нельзя сделать иначе, возможно, без выражения своей досады).
 
