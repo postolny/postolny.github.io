@@ -10,7 +10,7 @@ tags:
 
 ### Significato
 
-Questa costruzione italiana viene tradotta in russo come: "разве можно..., как можно... и т. д." e anche con l'avverbio di negazione "non": "как не..., разве можно не..., как можно не... и т. д".  In qusto caso le espressioni si usano per esprimere sdegno.
+Questa costruzione italiana viene tradotta in russo come: "разве можно..., как можно... и т. д." e anche con l'avverbio di negazione "non": "как не..., разве можно не..., как можно не... и т. д".  In questo caso le espressioni si usano per esprimere sdegno.
 
 ### Esempi d'uso
 
