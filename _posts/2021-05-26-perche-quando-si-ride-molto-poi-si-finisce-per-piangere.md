@@ -9,6 +9,7 @@ tags: Переводы
 ---
 
 ## Почему смех до колик потом заканчивается плачем?
+{: .center}
 
 | Italiano | Русский |
 |----------|---------|
@@ -16,6 +17,7 @@ tags: Переводы
 |Capita a tutti, quando ci viene la classica "[ridarola]({{ site.baseurl }}/2021-05-21/ridarella)": ci si sbellica dalle risate[^2] e non si riesce più a smettere, tanto che ci si fa venire il mal di pancia e si comincia a lacrimare. Ma non per il dolore!|Это случается со всеми, когда на нас находит классическая "смешинка": мы лопаемся от смеха и уже не можем остановиться, настолько, что у нас начинает болеть живот и мы начинаем плакать. Но не от боли!|
 
 ### La reazione del corpo umano (Реакция человеческого тела)
+{: .center}
 
 | Italiano | Русский |
 |----------|---------|
