@@ -8,6 +8,8 @@ categories:
 tags: Переводы
 ---
 
+## Почему смех до колик потом заканчивается плачем?
+
 | Italiano | Русский |
 |----------|---------|
 |Alza la mano se non ti è mai capitato: quando "muori dal ridere", a un certo punto[^1] ti vengono le lacrime agli occhi! Sai perché?|Подними руку, если с тобой этого никогда не случалось: когда ты "умираешь от смеха", в какой-то момент у тебя на глазах выступают слезы! Ты знаешь почему?|
