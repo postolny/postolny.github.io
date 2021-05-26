@@ -29,7 +29,7 @@ Ma c'è di più[^7]! Analizzando il contenuto delle lacrime  versate dopo una "s
 
 [^1]: improvvisamente, (tutto) d'un tratto, a un certo punto – неожиданно.
 
-[^2]: crepare dalle risa (ridere [a crepapelle]({{ site.baseurl }}/2020-12-04/a-crepapelle), sbellicarsi dalle risa) – лопаться от смеха, ржать, надорвать живот от хохота, надорвать кишки со смеху, помирать со смеху, умирать с хохота.
+[^2]: ci si sbellica – безличная конструкция с возвратным глаголом sbellicasi (si заменяется на ci для того, чтобы избежать повторения si); crepare dalle risa (ridere [a crepapelle]({{ site.baseurl }}/2020-12-04/a-crepapelle), sbellicarsi dalle risa) – лопаться от смеха, ржать, надорвать живот от хохота, надорвать кишки со смеху, помирать со смеху, умирать с хохота.
 
 [^3]: a questo punto – в этот момент, тут.
 
