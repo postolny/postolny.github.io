@@ -23,7 +23,6 @@ _Finocchio_
 Перевод [статьи](https://cultura.biografieonline.it/infinocchiare/)
 
 ### Farsi/lasciarsi infinocchiare (da qualcuno)
-{: .center}
 
 | Italiano | Русский |
 |----------|---------|
