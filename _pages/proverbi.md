@@ -73,7 +73,9 @@ permalink: /proverbi/
 
 - L'abitudine è quasi una seconda natura ([Aristotele](https://it.wikipedia.org/wiki/Aristotele)). Привычка – почти вторая натура ([Аристотель](https://ru.wikipedia.org/wiki/Аристотель)).
 - La belezza è effimera. Красота недолговечна.
+- L'acqua scava la roccia. Вода камень точит.
 - La critica è facile, l'arte è difficile. Критика легка, искусство трудно.
+- L'apparenza inganna. Внешность обманчива.
 - La speranza è la ricchezza dei poveri. Надежда – богатство бедных.
 - La speranza è l'ultima a morire. Надежда умирает последней.
 - L'onestà tra i ricchi è un'utopia. Честность среди богатых – это утопия.
@@ -125,6 +127,7 @@ permalink: /proverbi/
 - Quale madre, tale figlia. Какова мать, такова и дочь.
 - Quando ami qualcuno, lo ami così com’è e non come vorresti che fosse ([Lev Tolstoj](https://it.wikipedia.org/wiki/Lev_Tolstoj)). Когда вы любите кого-то, вы любите их такими, какие они есть, а не такими, какими вы хотели бы, чтобы они были ([Лев Николаевич Толстой](https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич)).
 - Quel che si fa con piacere, non è fatica. То, что делается с удовольствием, не труд (Охота пуще неволи).
+- Quello che ha da essere sarà. То, что должно быть, будет (Чему быть, того не миновать).
 
 ### R
 
@@ -144,6 +147,7 @@ permalink: /proverbi/
 
 ### U
 
+- Una mela al giorno toglie (leva) il medico di torno. Одно яблоко в день – и доктора не нужны (В день по яблоку съедать – век болезней не видать).
 - Un asino gratta l'altro. Один осёл чешет другого (Бес беса хвалит).
 - Un re non letterato è un asino incoronato. Необразованный король – это коронованный осёл.
 - Uomo avvisato, mezzo salvato. Предупреждённый человек – наполовину спасённый (Одним глазом спит, другим видит; [предупреждён – значит вооружён](https://ru.wikipedia.org/wiki/Предупреждён_—_значит_вооружён)).
