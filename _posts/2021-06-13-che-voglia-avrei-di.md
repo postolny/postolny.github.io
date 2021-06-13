@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "che voglia avrei di..."
-description: "Costruzione italiana \"che voglia avrei di...\" viene usata come quella russa: \"Как бы мне хотелось...\"."
+description: "La costruzione italiana \"che voglia (che) avrei di...\" viene usata come quella russa: \"Как бы мне хотелось...\"."
 author: "И. Постольный"
 comments: false
 categories: c
@@ -10,7 +10,7 @@ tags:
 
 ### Significato
 
-Costruzione italiana "che voglia avrei di..." viene usata come quella russa: "Как бы мне хотелось...".
+La costruzione italiana "che voglia (che) avrei di..." viene usata come quella russa: "Как бы мне хотелось...".
 
 ### Esempi d'uso
 
