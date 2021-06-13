@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "che voglia avrei di..."
+title: "che voglia (che) avrei di..."
 description: "La costruzione italiana \"che voglia (che) avrei di...\" viene usata come quella russa: \"Как бы мне хотелось...\"."
 author: "И. Постольный"
 comments: false
