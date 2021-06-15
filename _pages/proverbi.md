@@ -29,6 +29,7 @@ permalink: /proverbi/
 ### C
 
 - Cessato il guadagno, cessata l'amicizia. Кончена выгода (прибыль), кончена дружба (Лопнула дружба, как выгода пропала).
+- Che sarà, sarà. Что будет, то будет (Чему быть, того не миновать).
 - Chi agisce adagio e bene, buon risultato ottiene. Кто действует медленно и хорошо (верно), добивается хорошего результата (Тише едешь – дальше будешь).
 - Chi ama me, ama il mio cane. Кто любит меня, любит мою собаку (Любишь меня. так люби и мою собачку!).
 - Chi cerca trova. Кто ищет, находит.
@@ -127,7 +128,7 @@ permalink: /proverbi/
 - Quale madre, tale figlia. Какова мать, такова и дочь.
 - Quando ami qualcuno, lo ami così com’è e non come vorresti che fosse ([Lev Tolstoj](https://it.wikipedia.org/wiki/Lev_Tolstoj)). Когда вы любите кого-то, вы любите их такими, какие они есть, а не такими, какими вы хотели бы, чтобы они были ([Лев Николаевич Толстой](https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич)).
 - Quel che si fa con piacere, non è fatica. То, что делается с удовольствием, не труд (Охота пуще неволи).
-- Quello che ha da essere sarà. То, что должно быть, будет (Чему быть, того не миновать).
+- Quel che ha da essere, sarà. То, что должно быть, будет (Чему быть, того не миновать).
 
 ### R
 
