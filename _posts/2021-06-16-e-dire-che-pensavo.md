@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "e dire che pensavo... (e io che pensavo...)"
-description: "La costruzione italiana \"e dire che pensavo... (e io che pensavo...)\" viene tradotta in russo come: \"а я-то думал...; и подумать только...\"."
+description: "Le costruzioni italiane \"e dire che pensavo...\" e \"e io che pensavo...\" sono praticamente uguali e vengono tradotte in russo come: \"а я-то думал...; и подумать только...\"."
 author: "И. Постольный"
 comments: false
 categories: e
@@ -10,7 +10,7 @@ tags:
 
 ### Significato
 
-La costruzione italiana "e dire che pensavo... (e io che pensavo...)" viene tradotta in russo come: "а я-то думал...; и подумать только...".
+Le costruzioni italiane "e dire che pensavo..." e "e io che pensavo..." sono praticamente uguali e vengono tradotte in russo come: "а я-то думал...; и подумать только...".
 
 ### Esempi d'uso
 
