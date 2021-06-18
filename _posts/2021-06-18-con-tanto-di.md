@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "con tanto di..."
-description: "L'espressione \"con tanto di qualcosa\" serve per enfatizzare la quantità o la qualità di qualcosa o per sottolineare qualcosa con un \"pure\". Potrebbe essere tradotto in russo come \"настолько большое\". Però, il suo significato dipende dal contesto."
+description: "L'espressione \"con tanto di qualcosa\" serve per enfatizzare la quantità o la qualità di qualcosa o per sottolineare qualcosa con un \"pure\". Può essere tradotto in russo come \"настолько большое\". Però, il suo significato dipende dal contesto."
 author: "И. Постольный"
 comments: false
 categories: c
@@ -10,7 +10,7 @@ tags:
 
 ### Significato
 
-L'espressione "con tanto di qualcosa" serve per enfatizzare la quantità o la qualità di qualcosa o per sottolineare qualcosa con un "pure". Potrebbe essere tradotto in russo come "настолько большое". Però, il suo significato dipende dal contesto.
+L'espressione "con tanto di qualcosa" serve per enfatizzare la quantità o la qualità di qualcosa o per sottolineare qualcosa con un "pure". Può essere tradotto in russo come "настолько большое". Però, il suo significato dipende dal contesto.
 
 ### Esempi d'uso
 
