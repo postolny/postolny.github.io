@@ -32,7 +32,7 @@ avere i grilli[^1] per la testa; avere dei grilli per la testa; avere dei grilli
 |Anch'io a vent'anni avevo molti grilli per la testa!|В двадцать лет у меня тоже было много тараканов в голове!|
 |È una brava ragazza ma ha un po' troppi grilli per la testa!|Она хорошая девушка, но у неё слишком много тараканов в голове!|
 
-[^1]: grillo – общее название для насекомых семества Gryllidae; grillo domestico o grillo del focolare – сверчок; grillo campestre или grillo canterino – кузнечик.
+[^1]: grillo – общее название для насекомых семества Gryllidae; grillo domestico или grillo del focolare – сверчок; grillo campestre или grillo canterino – кузнечик.
 
 [^2]: da (di) per sé – сам по себе.
 

@@ -23,4 +23,4 @@ L'espressione "con tanto di qualcosa" serve per enfatizzare la quantità o la qu
 |chiudere con tanto di catenaccio|хорошенько задвинуть засов, крепко закрыть на засов|
 |rimanere / lasciare con un palmo / con tanto di naso|остаться / оставить с носом|
 
-[^1]: grillo – общее название для насекомых семества Gryllidae; grillo domestico o grillo del focolare – сверчок; grillo campestre или grillo canterino – кузнечик. На самом деле Джулия нашла перед дверью не кузничика, а саранчу (locusta или cavalletta).
+[^1]: grillo – общее название для насекомых семества Gryllidae; grillo domestico или grillo del focolare – сверчок; grillo campestre или grillo canterino – кузнечик. На самом деле Джулия нашла перед дверью не кузничика, а саранчу (locusta или cavalletta).
