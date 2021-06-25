@@ -105,6 +105,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |sociol.|sociologia|социология|
 |spec.|specialmente|особенно|
 |stor.|storia|история|
+|strum.|stumentale, творительный (падеж)|
 |telecom.|telecomunicazione|телекоммуникация|
 |tosc.|toscano|тосканский диалект|
 |trans.|transitivo, transitivamente|переходный (транзитивный)|
@@ -148,6 +149,7 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [Dizionario italiano De Mauro](https://dizionario.internazionale.it/)
 * [Dizionario italiano De Mauro – Abbreviazioni](https://dizionario.internazionale.it/abbreviazioni)
 * [Dizionari Garzanti Linguistica](https://www.garzantilinguistica.it/)
+* [Zanichelli Dizionari Più](https://dizionaripiu.zanichelli.it/)
 * [La Repubblica](https://dizionari.repubblica.it/italiano.html)
 * [Corriere della Sera](https://dizionari.corriere.it/)
 * [Grande Dizionario Italiano di Gabrielli Aldo](https://www.grandidizionari.it/dizionario_italiano.aspx)
