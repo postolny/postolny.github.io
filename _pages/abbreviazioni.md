@@ -105,7 +105,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |sociol.|sociologia|социология|
 |spec.|specialmente|особенно|
 |stor.|storia|история|
-|strum.|stumentale, творительный (падеж)|
+|strum.|stumentale|творительный (падеж)|
 |telecom.|telecomunicazione|телекоммуникация|
 |tosc.|toscano|тосканский диалект|
 |trans.|transitivo, transitivamente|переходный (транзитивный)|
