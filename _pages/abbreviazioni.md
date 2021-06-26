@@ -86,6 +86,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |pop.|popolare|народный|
 |portogh.|portoghese|португальский|
 |pl.|plurale|множественное число|
+|p.pass.|participio passato|причастие прошедшего времени|
 |prep.|preposizione|предлог|
 |prob.|probabilmente|возможно|
 |propr.|propriamente|точно, правильно|
