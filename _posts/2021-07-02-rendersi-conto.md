@@ -25,11 +25,9 @@ avvedersi, capacitarsi, capire, raccapezzarsi, vedere.
 | Italiano | Русский |
 |----------|---------|
 |E non me ne rendevo conto.|А я этого не понимала.|
-|rendersi conto|отдавать себе отчёт|
 |rendersi conto di qc|отдавать себе отчёт в чём-либо; понимать что-либо|
 |comprendere, rendersi conto|осмысливать|
-|essere consapevole, avere la coscienza (di + inf), rendersi conto (di + inf)|сознавать|
-|avere coscienza, essere cosciente; essere consapevole di; rendersi conto di|сознавать|
+|essere consapevole di, avere la coscienza (di + inf), essere cosciente, rendersi conto (di + inf)|сознавать|
 |prendere coscienza, rendersi conto; avere piena coscienza di qc., rendersi conto di|осознавать|
 |rendersi conto dei propri errori|сознавать свои ошибки|
 |rendersi conto di avere ragione|утвердиться в своём (в прежнем) мнении|
