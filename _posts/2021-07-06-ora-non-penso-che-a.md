@@ -10,7 +10,7 @@ tags:
 
 ### Significato
 
-La costruzione italiana "ora non penso che a..." viene tradotta in russo come: "сейчас (теперь) я только и думаю о...". La congiunzione "che" cambia completamente il senso della frase. Per esempio, la frase "ora non penso al futuro" viene tradotta in russo come "сейчас я не думаю о будущем", mentre quella "ora non penso che al futuro" viene tradotta in russo come "сейчас я только о будущем и думаю".
+La costruzione italiana "ora non penso che a..." viene tradotta in russo come: "сейчас (теперь) я только и думаю о...". La congiunzione "che" cambia completamente il senso della frase. Per esempio, la frase "ora non penso al futuro" viene tradotta in russo come "сейчас я не думаю о будущем", mentre questa "ora non penso che al futuro" viene tradotta in russo come "сейчас я только о будущем и думаю".
 
 ### Esempi d'uso
 
