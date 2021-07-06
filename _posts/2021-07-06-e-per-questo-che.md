@@ -22,7 +22,7 @@ La costruzione italiana "è per questo che..." viene tradotta in russo come: "в
 |È per questo che non me l'avete detto.|Вот почему вы не сказали мне.|
 |Ed è per questo che devo dirtelo.|И поэтому я должна тебе сказать одну вещь.|
 |È per questo che non me ne sono mai andata.|Поэтому я всё это время оставалась здесь.|
-|È per questo che non dovete fare [^1]cose del genere senza parlare con i genitori.|Вот почему вы не должны делать то, что родители запрещают.|
+|È per questo che non dovete fare cose del genere[^1] senza parlare con i genitori.|Вот почему вы не должны делать то, что родители запрещают.|
 |È per questo che ho lasciato Mat.|Из-за этого я рассталась с Мэтом.|
 |È per questo che sei solo, Jake.|Вот почему ты одинок, Джейк.|
 |È per questo che sono ancora single.|Вот поэтому, я до сих пор не женат.|

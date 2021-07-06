@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "come si fa a..."
-description: "Questa costruzione italiana viene tradotta in russo come: \"разве можно..., как можно... и т. д.\" e anche con l'avverbio di negazione \"non\": \"как не..., разве можно не..., как можно не... и т. д\".  In questo caso le espressioni si usano per esprimere sorpresa o sdegno."
+description: "Questa costruzione italiana viene tradotta in russo come: \"разве можно..., как можно... и т. д.\" e anche con l'avverbio di negazione \"non\": \"как не..., разве можно не..., как можно не... и т. д.\".  In questo caso le espressioni si usano per esprimere sorpresa o sdegno."
 author: "И. Постольный"
 comments: false
 categories: c
@@ -29,6 +29,7 @@ Questa costruzione italiana viene tradotta in russo come: "разве можно
 |Come si fa a non aiutare un parente!|Как не порадеть родному человеку!|
 |Come si fa a non trovarlo divertente?|Разве это не весело?|
 |Come si fa a non capirlo?|Разве это не видно?|
+|Ma come si fa a non capire?|Но как можно не понимать?|
 |Come si fa a non amare Venezia?|Как можно не любить Венецию?|
 |Ma come si fa a non essere mai stati a Londra!|Как можно ни разу не побывать в Лондоне!|
 |Come si fa a non amarla?|Как такую не любить?|
@@ -44,3 +45,4 @@ Questa costruzione italiana viene tradotta in russo come: "разве можно
 |Come si fa a non essere d'accordo con voi?|Как можно не согласиться с вами?|
 |Come si fa a non andarci?|Как можно не пойти туда?|
 |Come si fa a non arrivarci?|Как можно не догадаться?|
+|Come si fa a resistere?|Как можно устоять?|
