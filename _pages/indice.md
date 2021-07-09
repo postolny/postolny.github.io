@@ -10,6 +10,7 @@ permalink: /indice/
 * [Безмозглый и безухий • повесть]({{ '/bezmozglyj-i-bezuhij/' | prepend: site.baseurl }})
 * [Il scervellato e Il senza orecchie • povest']({{ '/il-scervellato-e-il-senza-orecchie/' | prepend: site.baseurl }})
 * [Ангел времени • сборник рассказов для детей]({{ '/angelo-del-tempo/' | prepend: site.baseurl }})
+* [Миниатюры]({{ '/miniature/' | prepend: site.baseurl }})
 * [Стихотворения]({{ '/poesia/' | prepend: site.baseurl }})
 * [Моя музыка]({{ '/musica/' | prepend: site.baseurl }})
 
