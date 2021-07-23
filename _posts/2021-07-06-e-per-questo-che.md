@@ -17,8 +17,7 @@ La costruzione italiana "è (proprio) per questo che..." viene tradotta in russo
 | Italiano | Русский |
 |----------|---------|
 |È per questo che non parlo con le persone.|Вот почему я не разговариваю с людьми.|
-|È per questo che devo dirgli la verità.|Поэтому я должна рассказать ему правду.
-|
+|È per questo che devo dirgli la verità.|Поэтому я должна рассказать ему правду.|
 |È per questo che non me l'avete detto.|Вот почему вы не сказали мне.|
 |Ed è per questo che devo dirtelo.|И поэтому я должна тебе сказать одну вещь.|
 |È per questo che non me ne sono mai andata.|Поэтому я всё это время оставалась здесь.|
