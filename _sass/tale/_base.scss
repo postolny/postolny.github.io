@@ -368,9 +368,6 @@ table {
   z-index: 9998;
   transition: right 0.5s ease;
   transform-origin: bottom;
-  overflow: hidden;
-  position: fixed;
-  text-indent: -9999%;
 }
 .albero {
   -webkit-animation: albero 0.9s both;
@@ -382,12 +379,14 @@ table {
   animation: none;
 }
 #neve {
-  left: 0;
-  bottom: -6px;
   width: 100%;
   height: 30px;
   background: url(../assets/neve.png) left;
+  left: 0;
+  bottom: -6px;
   z-index: 9997;
+}
+#albero, #neve {
   position: fixed;
   text-indent: -9999%;
 }
