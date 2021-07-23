@@ -267,10 +267,8 @@ $(function() {
     i = 0;
   });
 
-  if ($('.brand a:contains("Игорь Постольный")').length) {
-    $('body').css('display', 'block');
-  } else {
-    $('body').css('display', 'none');
+  if ($(".brand a:not(:contains('Игорь Постольный'))").length) {
+    $("body").css("display", "none");
   }
 
   $(".quiz-submit").on("click", function() {
