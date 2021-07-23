@@ -43,9 +43,11 @@
   }
   #text_num {
 	font-size: 4em;
+	line-height: normal;
 	color: #3a3a3a;
 	text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.5);
 	font-weight: bold;
+	word-break: break-all;
   }
   #an_num {
 	border: 1px solid #ddd;
@@ -56,7 +58,7 @@
 	font-weight: bold;
 	font-size: 2em;
 	color: #555;
-	margin-bottom: 10px;
+	margin: 30px 0 10px;
 	transition: all ease-out 0.2s;
 	&:focus {
 	  outline: none;
