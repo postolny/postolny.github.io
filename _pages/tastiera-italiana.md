@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title: "Tastiera italiana"
+author: "И. Постольный"
 permalink: /tastiera-italiana/
 ---
 
