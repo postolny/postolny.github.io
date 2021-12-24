@@ -12,17 +12,17 @@ permalink: /tastiera-italiana/
 
 | Символ | Клавиша или комбинация |
 |----------|---------|
-|'|<code>-</code>|
-|ù|<code>\</code>|
-|è|<code>[</code>|
-|é|<code>shift</code> + <code>[</code>|
-|à|<code>э</code>|
-|ò|<code>ж</code>|
-|ì|<code>+</code>|
-|È|<code>Alt</code> + комбинация цифр <code>0200</code> на боковой цифровой клавиатуре|
-|É|<code>Alt</code> + комбинация цифр <code>0201</code> на боковой цифровой клавиатуре|
-|?|<code>shift</code> + <code>-</code>|
-|(|<code>shift</code> + <code>8</code> (горизонтальный ряд)|
-|)|<code>shift</code> + <code>9</code> (горизонтальный ряд)|
-|-|<code>/</code> или <code>—</code> на боковой цифровой клавиатуре|
-|_|<code>shift</code> + <code>?</code>|
+|'|<kbd>-</kbd>|
+|ù|<kbd>\</kbd>|
+|è|<kbd>[</kbd>|
+|é|<kbd>shift</kbd> + <kbd>[</kbd>|
+|à|<kbd>э</kbd>|
+|ò|<kbd>ж</kbd>|
+|ì|<kbd>+</kbd>|
+|È|<kbd>Alt</kbd> + комбинация цифр <kbd>0200</kbd> на боковой цифровой клавиатуре|
+|É|<kbd>Alt</kbd> + комбинация цифр <kbd>0201</kbd> на боковой цифровой клавиатуре|
+|?|<kbd>shift</kbd> + <kbd>-</kbd>|
+|(|<kbd>shift</kbd> + <kbd>8</kbd> (горизонтальный ряд)|
+|)|<kbd>shift</kbd> + <kbd>9</kbd> (горизонтальный ряд)|
+|-|<kbd>/</kbd> или <kbd>—</kbd> на боковой цифровой клавиатуре|
+|_|<kbd>shift</kbd> + <kbd>?</kbd>|
