@@ -395,20 +395,21 @@ table {
 }
 
 #wrapper-toc {
-	color: #777;
-	background: white;
-	border: solid 2px;
-	box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #777, 15px 11px 0 0 #777, 11px 15px 0 0 #777;
-	padding: 1em;
-	margin-bottom: 2em;
-	h3 {
-		text-align: center;
-		text-transform: uppercase;
-		font-weight: 900;
-	}
-	ul {
-		list-style: decimal;
-	}
+  color: #777;
+  background: white;
+  border: solid 2px;
+  box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #777, 15px 11px 0 0 #777,
+    11px 15px 0 0 #777;
+  padding: 1em;
+  margin-bottom: 2em;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  ul {
+    list-style: decimal;
+  }
 }
 
 .cornice {
