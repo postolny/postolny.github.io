@@ -568,20 +568,6 @@ footer {
   white-space: pre-wrap;
 }
 
-/* Цветные маркеры в списке */
-#list-colored {
-  list-style: none;
-}
-
-#list-colored li:before {
-  content: "\2022";
-  color: #8dc692;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
 /* Выравнивание audio HTML5 */
 #musica {
   display: -webkit-box;
@@ -615,17 +601,6 @@ footer {
     box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #777, 15px 11px 0 0 #777, 11px 15px 0 0 #777;
     padding: 1em;
   }
-}
-
-#dowload_wrapper {
-  background-image: url(../assets/files-text-icon.png);
-  background-repeat: no-repeat;
-  padding-left: 34px;
-  line-height: 32px;
-}
-
-#dowload_wrapper:not(:last-child) {
-  margin: 0 0 10px 0;
 }
 
 .usn {
