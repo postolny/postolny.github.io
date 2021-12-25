@@ -59,7 +59,7 @@ $(function() {
     return false;
   });
 
-  $(".tags a").on("click", function() {
+  $(".tags a, .toc a").on("click", function() {
     $("html, body").animate({
         scrollTop: $($.attr(this, "href")).offset().top,
       },
