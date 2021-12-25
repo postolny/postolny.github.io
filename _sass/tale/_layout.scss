@@ -610,9 +610,10 @@ footer {
   align-items: center;
   padding: 10px 0;
   > div {
-    padding: 20px;
-    border: solid 2px #41403e;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    background: white;
+    border: solid 2px;
+    box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #777, 15px 11px 0 0 #777, 11px 15px 0 0 #777;
+    padding: 1em;
   }
 }
 
