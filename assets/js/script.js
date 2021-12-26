@@ -404,6 +404,28 @@ $(function() {
     }, 1500);
   });
 
+  $(".lightbox").click(function() {
+    $(".overlay").fadeIn(300);
+    $('.image').css("background-image", "url(" + $(this).attr("src") + ")");
+    $("html").css("overflow", "hidden");
+  });
+
+  $(".overlay").click(function() {
+    $(this).fadeOut(300);
+    setTimeout(function() {
+      $("html").css("overflow", "auto");
+    }, 300);
+  });
+
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+      $(".overlay").fadeOut(300);
+      setTimeout(function() {
+        $("html").css("overflow", "auto");
+      }, 300);
+    }
+  });
+
   var Mwidth = 960;
   if ($(window).width() > Mwidth) {
     var headerHeight = $(".navigation").height();
