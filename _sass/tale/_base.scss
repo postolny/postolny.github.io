@@ -90,14 +90,15 @@ main {
       }
     }
   }
-}
-#dowload_wrapper {
-  a {
-    &:hover {
-      color: #f44336;
-    }
-    &:focus {
-      color: #f44336;
+  .toc {
+    a {
+      transition: color 0.25s ease-in-out;
+      &:hover {
+        color: #f44336;
+      }
+      &:focus {
+        color: #f44336;
+      }
     }
   }
 }
