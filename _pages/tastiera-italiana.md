@@ -16,8 +16,8 @@ permalink: /tastiera-italiana/
 |à|<kbd>э</kbd>|
 |ò|<kbd>ж</kbd>|
 |ì|<kbd>+</kbd>|
-|È|<kbd>Alt</kbd> + комбинация цифр <kbd>0200</kbd> на боковой цифровой клавиатуре|
-|É|<kbd>Alt</kbd> + комбинация цифр <kbd>0201</kbd> на боковой цифровой клавиатуре|
+|È|<kbd>Alt</kbd> + комбинация цифр <kbd>0</kbd> <kbd>2</kbd> <kbd>0</kbd> <kbd>0</kbd> на боковой цифровой клавиатуре|
+|É|<kbd>Alt</kbd> + комбинация цифр <kbd>0</kbd> <kbd>2</kbd> <kbd>0</kbd> <kbd>1</kbd> на боковой цифровой клавиатуре|
 |?|<kbd>shift</kbd> + <kbd>-</kbd>|
 |(|<kbd>shift</kbd> + <kbd>8</kbd> (горизонтальный ряд)|
 |)|<kbd>shift</kbd> + <kbd>9</kbd> (горизонтальный ряд)|
