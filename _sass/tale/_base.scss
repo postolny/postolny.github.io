@@ -107,8 +107,8 @@ main {
 
 #wrapper-toc {
   background: white;
-  border: solid 2px;
-  box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #353535, 15px 11px 0 0 #353535, 11px 15px 0 0 #353535;
+  border: solid 2px #777;
+  box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #777, 15px 11px 0 0 #777, 11px 15px 0 0 #777;
   padding: 1em;
   margin-bottom: 2em;
   h3 {
@@ -129,7 +129,6 @@ main {
       color: white;
       background: #353535;
       display: inline-block;
-      text-align: center;
       line-height: normal;
       height: auto;
       width: auto;
