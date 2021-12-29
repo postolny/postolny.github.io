@@ -40,16 +40,8 @@ h6 {
 }
 
 a {
-  color: $blue;
+  color: $green;
   text-decoration: none;
-}
-
-a.footnote:before {
-  content: "[";
-}
-
-a.footnote:after {
-  content: "]";
 }
 
 main {
@@ -57,10 +49,10 @@ main {
     a {
       transition: color 0.25s ease-in-out;
       &:hover {
-        color: #f44336;
+        color: #00ff4d;
       }
       &:focus {
-        color: #f44336;
+        color: #00ff4d;
       }
     }
   }
@@ -69,23 +61,36 @@ main {
       a {
         transition: color 0.25s ease-in-out;
         &:hover {
-          color: #f44336;
+          color: #00ff4d;
         }
         &:focus {
-          color: #f44336;
+          color: #00ff4d;
         }
       }
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        vertical-align: middle;
+        border-radius: 50%;
+        background-color: #353535;
+        margin: 0 8px 3px;
+      }
     }
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   table {
     td {
       a {
         transition: color 0.25s ease-in-out;
         &:hover {
-          color: #f44336;
+          color: #00ff4d;
         }
         &:focus {
-          color: #f44336;
+          color: #00ff4d;
         }
       }
     }
@@ -94,9 +99,56 @@ main {
     a {
       transition: color 0.25s ease-in-out;
       &:hover {
-        color: #f44336;
+        color: #00ff4d;
       }
     }
+  }
+}
+
+#wrapper-toc {
+  background: white;
+  border: solid 2px;
+  box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #353535, 15px 11px 0 0 #353535, 11px 15px 0 0 #353535;
+  padding: 1em;
+  margin-bottom: 2em;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  ol {
+    counter-reset: myCounter;
+    padding-left: 10px;
+  }
+  li {
+    list-style: none;
+    margin: 0 0 5px 0;
+    &:before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: white;
+      background: #353535;
+      display: inline-block;
+      text-align: center;
+      line-height: normal;
+      height: auto;
+      width: auto;
+      margin: 0 10px 0 0;
+      padding: 0 8px;
+    }
+  }
+}
+
+.footnote {
+  &:before {
+    content: "[";
+  }
+  &:after {
+    content: "]";
+  }
+  transition: color 0.25s ease-in-out;
+  &:hover {
+    color: #00ff4d;
   }
 }
 
@@ -390,20 +442,6 @@ table {
 }
 .tornasu {
   right: 0 !important;
-}
-
-#wrapper-toc {
-  color: #777;
-  background: white;
-  border: solid 2px;
-  box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #777, 15px 11px 0 0 #777, 11px 15px 0 0 #777;
-  padding: 1em;
-  margin-bottom: 2em;
-  h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-  }
 }
 
 .cornice {
