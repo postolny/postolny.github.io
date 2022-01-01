@@ -68,18 +68,17 @@ main {
         }
       }
       &:before {
-        content: "";
-        display: inline-block;
-        height: 10px;
-        width: 10px;
-        vertical-align: middle;
-        border-radius: 50%;
-        background-color: #353535;
-        margin: 0 8px 3px;
+        content: "\2022";
+        position: absolute;
+        left: 0;
+        font-size: 1.6em;
+        line-height: 1;
+        color: #353535;
       }
     }
+    position: relative;
     list-style: none;
-    padding: 0;
+    padding-left: 1em;
   }
   table {
     td {
