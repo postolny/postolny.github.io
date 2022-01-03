@@ -251,6 +251,7 @@ table {
 /* placeholder opacity */
 ::-webkit-input-placeholder {
   /* Chrome */
+  -webkit-transition: opacity 250ms ease-in-out;
   transition: opacity 250ms ease-in-out;
 }
 
@@ -260,6 +261,7 @@ table {
 
 :-ms-input-placeholder {
   /* IE 10+ */
+  -ms-transition: opacity 250ms ease-in-out;
   transition: opacity 250ms ease-in-out;
 }
 
@@ -270,6 +272,7 @@ table {
 ::-moz-placeholder {
   /* Firefox 19+ */
   opacity: 1;
+  -moz-transition: opacity 250ms ease-in-out;
   transition: opacity 250ms ease-in-out;
 }
 
@@ -280,6 +283,7 @@ table {
 :-moz-placeholder {
   /* Firefox 4 - 18 */
   opacity: 1;
+  -moz-transition: opacity 250ms ease-in-out;
   transition: opacity 250ms ease-in-out;
 }
 
@@ -419,7 +423,6 @@ table {
   animation: albero 0.9s both;
 }
 .off {
-  webkit-animation: none;
   -webkit-animation: none;
   animation: none;
 }
