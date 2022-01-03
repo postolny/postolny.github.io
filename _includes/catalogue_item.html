@@ -8,7 +8,7 @@
     <span>{{ day }}/{{ month }}/{{ year }}</span>
   </time>
   {% if include.sticky == 'true' %}
-  <span class="catalogue-pinned">&middot; Закреплено</span>
+  <span class="catalogue-pinned">запись закреплена</span>
   {% endif %}
   <h1 class="catalogue-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
   <p>
