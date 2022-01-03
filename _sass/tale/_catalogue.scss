@@ -13,14 +13,16 @@
   &-pinned {
     color: $default-tint;
     font-family: $serif-secondary;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     font-size: 16px;
+    background: url(../assets/pinned.png) no-repeat center left;
+    padding-left: 20px;
   }
 
   &-time {
     color: $default-tint;
     font-family: $serif-secondary;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     font-size: 16px;
   }
 
