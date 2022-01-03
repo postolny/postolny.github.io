@@ -5,20 +5,23 @@
     padding: 30px 0 40px 0;
     background: url(../assets/divider.png) repeat-x center bottom;
 
-    &:hover .catalogue-line,
-    &:focus .catalogue-line {
-      width: 5rem;
-    }
-
     &:last-child {
       background: none;
     }
   }
 
+  &-pinned {
+    color: $default-tint;
+    font-family: $serif-secondary;
+    letter-spacing: .5px;
+    font-size: 16px;
+  }
+
   &-time {
     color: $default-tint;
     font-family: $serif-secondary;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
+    font-size: 16px;
   }
 
   &-title {
