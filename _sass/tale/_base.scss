@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+sup {
+  font-size: 14px;
+}
+
 main {
   p {
     a {
@@ -126,7 +130,6 @@ main {
 
 .footnote {
   transition: color 0.25s ease-in-out;
-  font-size: 14px;
   &:before {
     content: "[";
   }
