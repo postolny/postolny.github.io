@@ -63,18 +63,10 @@ main {
           color: #00ff4d;
         }
       }
-      &:before {
-        content: "\2022";
-        position: absolute;
-        left: 0;
-        font-size: 1.6em;
-        line-height: 1;
+      &::marker {
         color: #353535;
       }
     }
-    position: relative;
-    list-style: none;
-    padding-left: 1em;
   }
   table {
     td {
