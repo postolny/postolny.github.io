@@ -126,7 +126,7 @@ main {
 
 .footnote {
   transition: color 0.25s ease-in-out;
-  font-size: 12px;
+  font-size: 14px;
   &:before {
     content: "[";
   }
@@ -139,8 +139,7 @@ main {
 }
 
 .footnotes {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
   &:before {
     content: "";
     display: block;
