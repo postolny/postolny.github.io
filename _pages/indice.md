@@ -48,5 +48,5 @@ permalink: /indice/
 * [Глава XXII. К спасению.]({{ '/verso-la-salvezza/' | prepend: site.baseurl }})
 * [Глава XXIII. Дамба.]({{ '/largine/' | prepend: site.baseurl }})
 * [Глава XXIV. Дорога страха.]({{ '/la-strada-della-paura/' | prepend: site.baseurl }})
-* [Глава XXV. Знак на стене.]({{ '/il-segno-sul-muro.html/' | prepend: site.baseurl }})
+* [Глава XXV. Знак на стене.]({{ '/il-segno-sul-muro/' | prepend: site.baseurl }})
 * [О переводе]({{ '/sulla-traduzione/' | prepend: site.baseurl }})
