@@ -125,20 +125,32 @@ main {
 }
 
 .footnote {
+  transition: color 0.25s ease-in-out;
+  font-size: 12px;
   &:before {
     content: "[";
   }
   &:after {
     content: "]";
   }
-  transition: color 0.25s ease-in-out;
   &:hover {
     color: #00ff4d;
   }
 }
 
 .footnotes {
-  border-top: 1px solid #333;
+  font-size: 12px;
+  line-height: 14px;
+  &:before {
+    content: "";
+    display: block;
+    max-width: 192px;
+    height: 1px;
+    background: #353535;
+  }
+  p {
+    margin: 0 !important;
+  }
 }
 
 blockquote {

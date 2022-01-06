@@ -437,30 +437,38 @@ footer {
     text-indent: 1.5em;
     margin: 0;
   }
-  h1,
-  h2,
-  h3,
+  h1 {
+    text-align: center;
+    clear: both;
+  }
+  h2 {
+    text-align: center;
+    clear: both;
+  }
+  h3 {
+    text-align: center;
+    clear: both;
+  }
   h4 {
     text-align: center;
     clear: both;
   }
-  hr {
-    border: none;
-    border-top: 1px solid #333;
-    max-width: 192px;
-    margin: 20px 0 5px;
-    text-align: left;
-    clear: both;
-  }
   sup {
-    font-size: 9px;
+    font-size: 12px;
     vertical-align: super;
     line-height: 0;
   }
   .postilla {
+    padding: 10px 0 10px;
     font-size: 12px;
     line-height: 14px;
-    margin-bottom: 20px;
+    &:before {
+      content: "";
+      display: block;
+      max-width: 192px;
+      height: 1px;
+      background: #353535;
+    }
   }
   .scritta {
     text-indent: 0;
