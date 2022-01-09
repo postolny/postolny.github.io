@@ -17,6 +17,14 @@ $serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqu
 $sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
 $monospaced: Menlo, Monaco, monospace !default;
 
+// Navigation
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #262626;
+$nav-font-color: #ffffff;
+$link-hover-color: #0f9962;
+
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
      -moz-box-sizing: $type;
