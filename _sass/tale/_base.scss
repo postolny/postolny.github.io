@@ -47,7 +47,7 @@ sup {
 main {
   p {
     a {
-      transition: color 0.25s ease-in-out;
+      transition: color 0.2s linear;
       &:hover {
         color: #00ff4d;
       }
@@ -59,7 +59,7 @@ main {
   ul {
     li {
       a {
-        transition: color 0.25s ease-in-out;
+        transition: color 0.2s linear;
         &:hover {
           color: #00ff4d;
         }
@@ -75,7 +75,7 @@ main {
   table {
     td {
       a {
-        transition: color 0.25s ease-in-out;
+        transition: color 0.2s linear;
         &:hover {
           color: #00ff4d;
         }
@@ -87,7 +87,7 @@ main {
   }
   .toc {
     a {
-      transition: color 0.25s ease-in-out;
+      transition: color 0.2s linear;
       &:hover {
         color: #00ff4d;
       }

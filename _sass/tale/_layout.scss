@@ -82,12 +82,11 @@ nav {
         background: $nav-background;
         color: $nav-font-color;
         text-decoration: none;
-        transition: background-color 0.3s ease-in;
+        transition: background-color 0.25s ease-in-out;
 
         &:hover {
           background: $link-hover-color;
           color: $nav-font-color;
-          transition: background-color 0.01s;
         }
 
         &:not(:only-child):after {
