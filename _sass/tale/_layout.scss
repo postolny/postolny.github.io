@@ -82,6 +82,7 @@ nav {
         background: $nav-background;
         color: $nav-font-color;
         text-decoration: none;
+        transition: background-color 0.25s ease-out;
 
         &:hover {
           background: $link-hover-color;
