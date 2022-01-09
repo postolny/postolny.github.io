@@ -20,11 +20,11 @@
 
     a {
       margin: 0 0.1rem 0.2rem;
-      background: #03c03c;
+      background: #262626;
       border-radius: 5px;
       color: #fff;
       text-decoration: none;
-      transition: background 300ms ease-in-out;
+      transition: background-color 0.3s ease-in-out;
       height: 2rem;
 
       display: flex;
@@ -32,7 +32,7 @@
       align-items: center;
       &:hover,
       &:active {
-        background: #019a2f;
+        background: #03c03c;
       }
     }
   }
