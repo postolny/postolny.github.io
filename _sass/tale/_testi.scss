@@ -187,9 +187,6 @@ label.correct {
 	li {
 		display: inline-block;
 		list-style-type: none;
-		&:before {
-			content: none;
-		}
 	}
 	input {
 		outline: none;
