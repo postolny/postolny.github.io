@@ -47,6 +47,7 @@ sup {
 main {
   p {
     a {
+      font-weight: 600;
       transition: color 0.2s linear;
       &:hover {
         color: #00ff4d;
@@ -59,6 +60,7 @@ main {
   ul {
     li {
       a {
+        font-weight: 600;
         transition: color 0.2s linear;
         &:hover {
           color: #00ff4d;
@@ -75,6 +77,7 @@ main {
   table {
     td {
       a {
+        font-weight: 600;
         transition: color 0.2s linear;
         &:hover {
           color: #00ff4d;
@@ -87,6 +90,7 @@ main {
   }
   .toc {
     a {
+      font-weight: 600;
       transition: color 0.2s linear;
       &:hover {
         color: #00ff4d;
