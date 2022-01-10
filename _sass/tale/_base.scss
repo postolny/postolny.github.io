@@ -74,8 +74,8 @@ main {
       }
     }
   }
-  table {
-    td {
+  ol {
+    li {
       a {
         font-weight: 600;
         transition: color 0.2s linear;
@@ -88,12 +88,17 @@ main {
       }
     }
   }
-  .toc {
-    a {
-      font-weight: 600;
-      transition: color 0.2s linear;
-      &:hover {
-        color: #00ff4d;
+  table {
+    td {
+      a {
+        font-weight: 600;
+        transition: color 0.2s linear;
+        &:hover {
+          color: #00ff4d;
+        }
+        &:focus {
+          color: #00ff4d;
+        }
       }
     }
   }
