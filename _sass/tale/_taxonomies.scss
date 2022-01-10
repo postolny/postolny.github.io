@@ -24,7 +24,7 @@
       border-radius: 5px;
       color: #fff;
       text-decoration: none;
-      transition: background-color 0.25s ease-in-out;
+      transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
       height: 2rem;
 
       display: flex;
@@ -33,6 +33,7 @@
       &:hover,
       &:active {
         background: #03c03c;
+        box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.8) inset;
       }
     }
   }
