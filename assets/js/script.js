@@ -1,19 +1,19 @@
-$(function() {
-  $("nav ul li a:not(:only-child)").click(function(e) {
+$(function () {
+  $("nav ul li a:not(:only-child)").click(function (e) {
     $(this).siblings(".nav-dropdown").toggle();
     $(".nav-dropdown").not($(this).siblings()).hide();
     e.stopPropagation();
   });
 
-  $("html").click(function() {
+  $("html").click(function () {
     $(".nav-dropdown").hide();
   });
 
-  $("#nav-toggle").click(function() {
+  $("#nav-toggle").click(function () {
     $("nav ul").slideToggle();
   });
 
-  $("#nav-toggle").on("click", function() {
+  $("#nav-toggle").on("click", function () {
     this.classList.toggle("active");
   });
 
@@ -45,13 +45,14 @@ $(function() {
     "#y": "ipsilon",
     "#z": "zeta",
   };
-  $(".categories a").click(function() {
+  $(".categories a").click(function () {
     var lettereIndex = $(this).attr("href");
     var snd = new Audio("/audio/" + lettere[lettereIndex] + ".mp3");
     snd.play();
     $("html, body")
       .delay(700)
-      .animate({
+      .animate(
+        {
           scrollTop: $($.attr(this, "href")).offset().top,
         },
         "fast"
@@ -59,8 +60,9 @@ $(function() {
     return false;
   });
 
-  $(".tags a, .toc a").on("click", function() {
-    $("html, body").animate({
+  $(".tags a, .toc a").on("click", function () {
+    $("html, body").animate(
+      {
         scrollTop: $($.attr(this, "href")).offset().top,
       },
       "fast"
@@ -68,68 +70,65 @@ $(function() {
     return false;
   });
 
-  $(".top").click(function() {
+  $(".top").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "fast");
     return false;
   });
 
-  $('.post a:not([href^="#"').on("click", function() {
+  $('.post a:not([href^="#"').on("click", function () {
     var href = $(this).attr("href");
     window.open(href, "_blank").focus();
     return false;
   });
 
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     if ($(window).scrollTop() > 100)
       $("#albero")
-      .removeClass("off")
-      .addClass(
-        "tornasu",
-        setTimeout(function() {
-          $("#albero").addClass("albero");
-        }, 500)
-      );
+        .removeClass("off")
+        .addClass(
+          "tornasu",
+          setTimeout(function () {
+            $("#albero").addClass("albero");
+          }, 500)
+        );
     else
-      $("#albero")
-      .removeClass("tornasu")
-      .addClass("off")
-      .removeClass("albero");
+      $("#albero").removeClass("tornasu").addClass("off").removeClass("albero");
   });
 
-  $("#search").keyup(function() {
+  $("#search").keyup(function () {
     var value = this.value.toLowerCase().trim();
     $(".search")
       .find("tr")
-      .each(function(index) {
+      .each(function (index) {
         var id = $(this).find("td").first().text().toLowerCase().trim();
         $(this).toggle(id.indexOf(value) !== -1);
       });
   });
 
-  $("#search-all").on("keyup", function() {
+  $("#search-all").on("keyup", function () {
     var s = $(this).val().toLowerCase();
-    $(".search-all tbody tr").filter(function() {
+    $(".search-all tbody tr").filter(function () {
       $(this).toggle($(this).text().toLowerCase().indexOf(s) > -1);
     });
   });
 
-  $("audio").on("play", function() {
+  $("audio").on("play", function () {
     var id = $(this).attr("id");
 
     $("audio")
       .not(this)
-      .each(function(index, audio) {
+      .each(function (index, audio) {
         audio.pause();
         audio.currentTime = 0;
       });
   });
 
-  $("video").on("play", function() {
+  $("video").on("play", function () {
     var id = $(this).attr("id");
 
     $("video")
       .not(this)
-      .each(function(index, video) {
+      .each(function (index, video) {
         video.pause();
         video.currentTime = 0;
         var src = $(this).attr("src");
@@ -137,7 +136,7 @@ $(function() {
       });
   });
 
-  $("video").on("ended", function() {
+  $("video").on("ended", function () {
     $("video").currentTime = 0;
     var src = $(this).attr("src");
     $(this).attr("src", src);
@@ -263,7 +262,7 @@ $(function() {
   var rand = Math.floor(Math.random() * myArray.length);
   var i = 0;
   $("#q_num").html("<div id='text_num'>" + myArray[rand].q1 + "</div>");
-  $("#q_ris").click(function() {
+  $("#q_ris").click(function () {
     i = i + 1;
     if (!$.trim($("#an_num").val())) {
       $("#risultato").html(
@@ -287,7 +286,7 @@ $(function() {
       $("#risultato").show();
     }
   });
-  $("#next_num").click(function() {
+  $("#next_num").click(function () {
     var newRand = rand;
     while (rand == newRand) {
       newRand = Math.floor(Math.random() * myArray.length);
@@ -306,10 +305,10 @@ $(function() {
     $("body").css("display", "none");
   }
 
-  $(".quiz-submit").on("click", function() {
+  $(".quiz-submit").on("click", function () {
     var correctAnswers = 0;
     var total = 0;
-    $(".domanda").each(function() {
+    $(".domanda").each(function () {
       total++;
       $(".quiz-msg", this).remove();
       var correct = $(this).find(":checked[data-correct]").length;
@@ -327,33 +326,33 @@ $(function() {
     });
     $(".score").html(
       "Правильных ответов <strong>" +
-      correctAnswers +
-      "</strong> из <strong>" +
-      total +
-      "</strong>"
+        correctAnswers +
+        "</strong> из <strong>" +
+        total +
+        "</strong>"
     );
   });
 
-  $("#accento input").keyup(function() {
+  $("#accento input").keyup(function () {
     if (
       $(this)
-      .val()
-      .match(/^\d{1}$/)
+        .val()
+        .match(/^\d{1}$/)
     ) {
       $(this).closest("li").next("li").find("input").focus();
     } else {
       $(this).val("");
     }
   });
-  $("#acc_dacapo").click(function() {
+  $("#acc_dacapo").click(function () {
     $("input").val("");
     $("#accento input").first().focus();
   });
 
-  $(".mostrami").on("click", function() {
+  $(".mostrami").on("click", function () {
     var score = 0;
     var total = 0;
-    $("span[data-answer]").each(function() {
+    $("span[data-answer]").each(function () {
       total++;
       let input = $(this).find("input");
       input.removeClass();
@@ -391,9 +390,9 @@ $(function() {
   ];
   var color = ["LimeGreen", "OrangeRed"];
   var pappagallo = new Audio("/audio/pappagallo.mp3");
-  $("#rt").click(function() {
+  $("#rt").click(function () {
     $("#pappagallo").addClass("rt");
-    setTimeout(function() {
+    setTimeout(function () {
       pappagallo.play();
       $("#pappagallo").removeClass("rt");
       $("#biglietto").css("display", "block");
@@ -404,23 +403,30 @@ $(function() {
     }, 1500);
   });
 
-  $(".lightbox").click(function() {
+  var scrollbarWidth = window.innerWidth - $(window).width() + "px";
+  $(".lightbox").click(function () {
     $(".overlay").fadeIn(300);
-    $('.image').css("background-image", "url(" + $(this).attr("src") + ")");
+    $(".image").css("background-image", "url(" + $(this).attr("src") + ")");
+    $("body,.navigation").css("paddingRight", scrollbarWidth);
+    $(".albero").css("marginRight", scrollbarWidth);
     $("html").css("overflow", "hidden");
   });
 
-  $(".overlay").click(function() {
+  $(".overlay").click(function () {
     $(this).fadeOut(300);
-    setTimeout(function() {
+    setTimeout(function () {
+      $("body,.navigation").css("paddingRight", 0);
+      $(".albero").css("marginRight", 0);
       $("html").css("overflow", "auto");
     }, 300);
   });
 
-  $(document).keyup(function(e) {
+  $(document).keyup(function (e) {
     if (e.keyCode == 27) {
       $(".overlay").fadeOut(300);
-      setTimeout(function() {
+      setTimeout(function () {
+        $("body,.navigation").css("paddingRight", 0);
+        $(".albero").css("marginRight", 0);
         $("html").css("overflow", "auto");
       }, 300);
     }
@@ -430,10 +436,11 @@ $(function() {
   if ($(window).width() > Mwidth) {
     var headerHeight = $(".navigation").height();
     $(window).on(
-      "scroll", {
+      "scroll",
+      {
         TopPrev: 0,
       },
-      function() {
+      function () {
         var TopCurrent = $(window).scrollTop();
         if (TopCurrent < this.TopPrev) {
           if (TopCurrent > 0 && $(".navigation").hasClass("fixed-menu")) {
