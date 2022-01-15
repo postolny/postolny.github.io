@@ -5,7 +5,6 @@ title: "Мои музыкальные сочинения"
 description: "Постольный Игорь Анатольевич – музыкальные сочинения для фортепиано, скрипки, струнного ансамбля, голоса."
 permalink: /musica/
 ---
-
 <h1>{{ page.title }}</h1>
 <div id="musica">
   <audio oncontextmenu="return false;" controls controlslist="nodownload">
@@ -32,19 +31,8 @@ permalink: /musica/
 <div id="download_row">
   <div>
     <ul>
-      <li><a href="{{ site.baseurl }}/pdf/rondo.pdf" target="_blank">Rondo (для фортепиано)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/rondo(con_diteggiatura).pdf" target="_blank">Rondo (для фортепиано, с аппликатурой)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/elegia.pdf" target="_blank">Elegia (для фортепиано)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/elegia(con_diteggiatura).pdf" target="_blank">Elegia (для фортепиано, с аппликатурой)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/adagio.pdf" target="_blank">Adagio соль-мажор (для фортепиано)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/adagio(con_diteggiatura).pdf" target="_blank">Adagio соль-мажор (для фортепиано, с аппликатурой)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/adagio-f.pdf" target="_blank">Adagio фа-мажор (для фортепиано)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/vezzoso.pdf" target="_blank">Vezzoso (для фортепиано)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/duetti.pdf" target="_blank">Четыре скрипичных дуэта</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/valzer.pdf" target="_blank">Вальс (для скрипки и фортепиано)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/valzer-strumentale.pdf" target="_blank">Вальс (для струнного ансамбля)</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/romanza_picchi_di_montagna.pdf" target="_blank">Горные вершины</a></li>
-      <li><a href="{{ site.baseurl }}/pdf/arietta.pdf" target="_blank">Ариетта Мефистофеля</a></li>
-    </ul>
+      {% for item in site.data.composizioni %}
+      <li><a href="/pdf/{{item.pdf}}" target="_blank">{{item.title}}</a></li>
+      {% endfor %}
   </div>
 </div>
