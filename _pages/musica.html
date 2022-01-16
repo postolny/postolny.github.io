@@ -5,28 +5,16 @@ title: "Мои музыкальные сочинения"
 description: "Постольный Игорь Анатольевич – музыкальные сочинения для фортепиано, скрипки, струнного ансамбля, голоса."
 permalink: /musica/
 ---
+
 <h1>{{ page.title }}</h1>
 <div id="musica">
+  {% for item in site.data.audio %}
   <audio oncontextmenu="return false;" controls controlslist="nodownload">
-    <source src="{{ site.baseurl }}/audio/elegia.mp3" type="audio/mpeg">
+    <source src="/mp3/{{item.mp3}}" type="audio/mpeg">
     Ваш браузер не поддерживает элемент audio.
   </audio>
-  <div>«Elegia» (для фортепиано)</div>
-  <audio oncontextmenu="return false;" controls controlslist="nodownload">
-    <source src="{{ site.baseurl }}/audio/adagio.mp3" type="audio/mpeg">
-    Ваш браузер не поддерживает элемент audio.
-  </audio>
-  <div>«Adagio» (для струнного ансамбля)</div>
-  <audio oncontextmenu="return false;" controls controlslist="nodownload">
-    <source src="{{ site.baseurl }}/audio/duetti.mp3" type="audio/mpeg">
-    Ваш браузер не поддерживает элемент audio.
-  </audio>
-  <div>«Четыре скрипичных дуэта»</div>
-  <audio oncontextmenu="return false;" controls controlslist="nodownload">
-    <source src="{{ site.baseurl }}/audio/walzer.mp3" type="audio/mpeg">
-    Ваш браузер не поддерживает элемент audio.
-  </audio>
-  <div>«Вальс» (для струнного ансамбля)</div>
+  <div>{{item.nome}}</div>
+  {% endfor %}
 </div>
 <div id="download_row">
   <div>
