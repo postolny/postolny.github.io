@@ -17,9 +17,10 @@ permalink: /indice/
 ## Переводы
 {: .center}
 
-* [Крестьянин-астролог • Сказка Итало Кальвино]({{ '/il-contadino-astrologo' | prepend: site.baseurl }})
-* [Смоковница • Леонардо да Винчи]({{ '/il-fico' | prepend: site.baseurl }})
-* [Про собаку, которая с мясом реку переплывала • Федр]({{ '/il-cane-che-porta-la-carne-al-fiume' | prepend: site.baseurl }})
+* [Крестьянин-астролог • Сказка Итало Кальвино]({{ '/il-contadino-astrologo/' | prepend: site.baseurl }})
+* [Смоковница • Леонардо да Винчи]({{ '/il-fico/' | prepend: site.baseurl }})
+* [Про собаку, которая с мясом реку переплывала • Федр]({{ '/il-cane-che-porta-la-carne-al-fiume/' | prepend: site.baseurl }})
+* [Башня лестница и луна • Сказка Алессандры Фелла]({{ 'la-torre-la scala-e-la-luna/' | prepend: site.baseurl }})
 
 ## Джанни Родари, Маленькие бродяги
 {: .center}
