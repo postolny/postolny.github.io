@@ -1,0 +1,79 @@
+libri:
+  - titolo: Разные сочинения
+    subfolderitems:
+      - page: Безмозглый и безухий • повесть
+        url: /bezmozglyj-i-bezuhij/
+      - page: Il scervellato e Il senza orecchie • povest'
+        url: /il-scervellato-e-il-senza-orecchie/
+      - page: Ангел времени • сборник рассказов для детей
+        url: /angelo-del-tempo/
+      - page: Миниатюры
+        url: /miniature/
+      - page: Стихотворения
+        url: /poesia/
+      - page: Моя музыка
+        url: /musica/
+  - titolo: Переводы
+    subfolderitems:
+      - page: Крестьянин-астролог • Сказка Итало Кальвино
+        url: /il-contadino-astrologo/
+      - page: Смоковница • Леонардо да Винчи
+        url: /il-fico/
+      - page: 'Про собаку, которая с мясом реку переплывала • Федр'
+        url: /il-cane-che-porta-la-carne-al-fiume/
+      - page: Башня лестница и луна • Сказка Алессандры Фелла
+        url: la-torre-la scala-e-la-luna/
+  - titolo: 'Джанни Родари, Маленькие бродяги'
+    subfolderitems:
+      - page: Глава I. Серое одеяло.
+        url: /la-coperta-grigia/
+      - page: Глава II. Человек с бумагой.
+        url: /l-uomo-con-la-carta/
+      - page: Глава III. В путь!
+        url: /in-cammino/
+      - page: Глава IV. Клетка с попугаем.
+        url: /la-gabbia-col-pappagallo/
+      - page: Глава V. Белый флаг.
+        url: /bandiera-bianca/
+      - page: Глава VI. Фонтан сокровищ.
+        url: la-fontana-del-tesoro/
+      - page: Глава VII. Вор!
+        url: il-ladro/
+      - page: Глава VIII. Потерявшиеся.
+        url: sperduti/
+      - page: Глава IX. Колизей.
+        url: il-colosseo/
+      - page: Глава X. Белая дорога.
+        url: strada-bianca/
+      - page: Глава XI. Навстречу морю.
+        url: verso-il-mare/
+      - page: Глава XII. Вдоль моря.
+        url: lungo-il-mare/
+      - page: Глава XIII. Азбука Франческо.
+        url: l-abc-di-francesco/
+      - page: Глава XIV. Синьора из Феррары.
+        url: la-signora-di-ferrara/
+      - page: Глава XV. Большая стоянка.
+        url: il-grande-accampamento/
+      - page: Глава XVI. Альбинос показывает себя.
+        url: l-albino-si-rivela/
+      - page: Глава XVII. Башмаки Анны.
+        url: le-scarpe-di-anna/
+      - page: Глава XVIII. Приготовления.
+        url: preparativi/
+      - page: Глава XIX. А теперь вперёд!
+        url: e-adesso-avanti/
+      - page: Глава XX. В Феррару.
+        url: verso-ferrara/
+      - page: Глава XXI. Невесёлое пробуждение.
+        url: triste-risveglio/
+      - page: Глава XXII. К спасению.
+        url: verso-la-salvezza/
+      - page: Глава XXIII. Дамба.
+        url: largine/
+      - page: Глава XXIV. Дорога страха.
+        url: la-strada-della-paura/
+      - page: Глава XXV. Знак на стене.
+        url: il-segno-sul-muro/
+      - page: О переводе
+        url: sulla-traduzione/
