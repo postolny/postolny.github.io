@@ -1,0 +1,25 @@
+nav:
+  - primo-livello: Статьи
+    url: /
+  - primo-livello: Сочинения
+    url: /indice/
+  - primo-livello: A–Z
+    url: /categories/
+  - primo-livello: Теги
+    url: /tags/
+  - primo-livello: Разное
+    url: 'javascript: void(0);'
+    items:
+      - secondo-livello: Abbreviazioni
+        url: /abbreviazioni/
+      - secondo-livello: Tastiera italiana
+        url: /tastiera-italiana/
+      - secondo-livello: Тесты
+        url: /tests/
+      - secondo-livello: Proverbi
+        url: /proverbi/
+      - secondo-livello: Venice Classic Radio
+        url: /venice-classic-radio/
+        target: target="_blank"
+  - primo-livello: О сайте
+    url: /about/
