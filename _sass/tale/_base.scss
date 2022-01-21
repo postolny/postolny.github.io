@@ -67,7 +67,7 @@ main {
     }
 
     &::marker {
-      color: #353535;
+      color: $default-shade;
     }
   }
 
@@ -110,7 +110,7 @@ main {
       counter-increment: myCounter;
       content: counter(myCounter);
       color: white;
-      background: #353535;
+      background: $default-shade;
       display: inline-block;
       line-height: normal;
       height: auto;
@@ -141,7 +141,7 @@ main {
     display: block;
     max-width: 192px;
     height: 1px;
-    background: #353535;
+    background: $default-shade;
   }
   p {
     margin: 0 !important;
@@ -452,7 +452,7 @@ table {
 .proverbi h2 {
   font-weight: bold;
   box-shadow: 5px 5px 0 #03c03c;
-  background: #353535;
+  background: $default-shade;
   color: #fff;
   margin: 0 auto;
   width: 1.4em;
