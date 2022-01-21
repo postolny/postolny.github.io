@@ -4,15 +4,6 @@
 	padding: 20px 0;
 	box-sizing: border-box;
 }
-.mostrami {
-	cursor: pointer;
-	display: inline-block;
-	color: #fff;
-	width: 90px;
-	padding: 5px 0;
-	text-align: center;
-	background-color: #3a3a3a;
-}
 #risultato {
 	display: inline-block;
 }
@@ -89,58 +80,54 @@
 	-ms-user-select: none;
 	user-select: none;
 	text-align: left;
-	+ {
-		.radio {
-			margin-top: 5px;
-		}
+
+	+ .radio {
+		margin-top: 5px;
 	}
+
 	input {
 		display: none;
-		+ {
-			span {
-				display: inline-block;
-				position: relative;
-				padding-left: 25px;
+
+		+ span {
+			display: inline-block;
+			position: relative;
+			padding-left: 25px;
+			line-height: normal;
+
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				border-radius: 50%;
+				margin-right: 5px;
+				width: 20px;
+				height: 20px;
+				border: 1px solid #ccc;
+				background: #fff;
 				line-height: normal;
-				&:before {
-					content: "";
-					display: block;
-					position: absolute;
-					top: 0px;
-					left: 0px;
-					border-radius: 50%;
-					margin-right: 5px;
-					width: 20px;
-					height: 20px;
-					border: 1px solid #ccc;
-					background: #fff;
-					line-height: normal;
-				}
-				&:after {
-					content: "";
-					display: block;
-					width: 14px;
-					height: 14px;
-					background: #222;
-					position: absolute;
-					border-radius: 50%;
-					top: 4px;
-					left: 4px;
-					opacity: 0;
-					transform: scale(0, 0);
-					transition: all 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
-				}
+			}
+
+			&:after {
+				content: "";
+				display: block;
+				width: 14px;
+				height: 14px;
+				background: #222;
+				position: absolute;
+				border-radius: 50%;
+				top: 4px;
+				left: 4px;
+				opacity: 0;
+				transform: scale(0, 0);
+				transition: all 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
 			}
 		}
-		&:checked {
-			+ {
-				span {
-					&:after {
-						opacity: 1;
-						transform: scale(1, 1);
-					}
-				}
-			}
+
+		&:checked + span:after {
+			opacity: 1;
+			transform: scale(1, 1);
 		}
 	}
 }
@@ -166,11 +153,9 @@ label.correct {
 }
 .quiz-submit {
 	display: inline-block;
-	padding: 5px;
 	cursor: pointer;
 	color: #fff;
-	width: 90px;
-	padding: 5px 0;
+	padding: 5px 10px;
 	text-align: center;
 	background-color: #3a3a3a;
 }
@@ -210,26 +195,29 @@ label.correct {
 	}
 }
 #acc_dacapo {
-	text-decoration: underline;
-	cursor: pointer;
 	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+	color: #fff;
+	padding: 5px 10px;
+	text-align: center;
+	background-color: #383d48;
+	margin: 10px 0;
 }
 
 /* Completare */
 
-.questions {
-	input[type="text"] {
-		display: inline-block;
-		height: 20px;
-		font: inherit !important;
-		width: 100px;
-		border: 1px solid #ccc;
-		border-width: 0px 0px 1px 0px;
-		padding: 0px 5px;
-		margin-top: 10px;
-		outline: none;
-		background-color: #fff;
-	}
+.questions input[type="text"] {
+	display: inline-block;
+	height: 20px;
+	font: inherit !important;
+	width: 100px;
+	border: 1px solid #ccc;
+	border-width: 0px 0px 1px 0px;
+	padding: 0px 5px;
+	margin-top: 10px;
+	outline: none;
+	background-color: #fff;
 }
 .question {
 	margin-bottom: 10px;
@@ -248,13 +236,11 @@ label.correct {
 }
 .mostrami {
 	display: inline-block;
-	padding: 5px;
 	cursor: pointer;
 	color: #fff;
-	width: 90px;
-	padding: 5px 0;
+	padding: 5px 10px;
 	text-align: center;
-	background-color: #3a3a3a;
+	background-color: #383d48;
 }
 .result {
 	display: inline-block;
