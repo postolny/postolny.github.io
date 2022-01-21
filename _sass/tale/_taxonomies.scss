@@ -48,6 +48,15 @@
   }
   &-list-title {
     margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      flex: 1 0 auto;
+      margin-left: 0.5em;
+      height: 2px;
+      background: currentColor;
+    }
   }
   &-list {
     margin: 0;
