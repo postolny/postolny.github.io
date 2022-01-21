@@ -35,7 +35,7 @@
 #text_num {
   font-size: 4em;
   line-height: normal;
-  color: #353535;
+  color: $default-shade;
   text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.5);
   font-weight: bold;
   word-break: break-all;
@@ -157,7 +157,7 @@ label.correct {
   color: #fff;
   padding: 5px 10px;
   text-align: center;
-  background-color: #353535;
+  background-color: $default-shade;
 }
 .score {
   display: inline-block;
@@ -201,7 +201,7 @@ label.correct {
   color: #fff;
   padding: 5px 10px;
   text-align: center;
-  background-color: #353535;
+  background-color: $default-shade;
   margin: 10px 0;
 }
 
@@ -240,7 +240,7 @@ label.correct {
   color: #fff;
   padding: 5px 10px;
   text-align: center;
-  background-color: #353535;
+  background-color: $default-shade;
 }
 .result {
   display: inline-block;
