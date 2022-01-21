@@ -431,25 +431,16 @@ footer {
     text-indent: 1.5em;
     margin: 0;
   }
-  h1 {
+
+  h1, h2, h3, h4 {
     text-align: center;
     clear: both;
   }
-  h2 {
-    text-align: center;
-    clear: both;
-  }
-  h3 {
-    text-align: center;
-    clear: both;
-  }
-  h4 {
-    text-align: center;
-    clear: both;
-  }
+
   .postilla {
     padding: 10px 0 0;
     font-size: 14px;
+
     &:before {
       content: "";
       display: block;
@@ -458,6 +449,7 @@ footer {
       background: #353535;
     }
   }
+
   .scritta {
     text-indent: 0;
     text-align: right;
