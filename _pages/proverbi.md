@@ -1,22 +1,24 @@
 ---
 layout: post
+style: proverbi
 title: "Proverbi"
 description: "Raccolta dei proverbi italiani"
 author: "И. Постольный"
 permalink: /proverbi/
 ---
 
-### A
+## A
 
 - A bue vecchio, campanaccio d'oro. Старому быку – золотой колокольчик (Старому коню – новое седло (золотую уздечку)).
 - A buon intenditor, poche parole. Хорошему знатоку – мало слов (Умный смыслит с полуслова).
 - A caval donato, non si guarda in bocca. Дарёному коню в пасть не смотрят (Дарёному коню в зубы не смотрят).
 - A ciascuno il suo. Каждому своё[^1].
+- Acqua passata non macina più. Утекшая вода больше не мелет. (Дело прошлое; что прошло, то быльём поросло).
 - A fare troppo i santi si diventa diavoli. Кто слишком усердствует в святости, тот становится сатаной.
 - A goccia a goccia si scava/s'incava/fora la pietra. Капля по капле и камень долбит (Вода камень точит).
 - Al cuor non si comanda. Сердцу не прикажешь.
 
-### B
+## B
 
 - Batti il ferro finché/quando è caldo. Куй железо пока горячо.
 - Bisogna far buon viso a cattivo qioco. Нужно делать хорошую мину (хорошее лицо) при плохой игре (Держи хвост трубой. Выше голову!).
@@ -26,7 +28,7 @@ permalink: /proverbi/
 - Buon grano fa buon pane. Хорошее зерно делат хороший хлеб (Хорошее дерево даёт хорошие плоды).
 - Buon tempo e mal tempo non dura tutto il tempo. Хорошие времена и плохие времена не длятся вечно (Удача и ветер переменчивы как дети).
 
-### C
+## C
 
 - Cessato il guadagno, cessata l'amicizia. Кончена выгода (прибыль), кончена дружба (Лопнула дружба, как выгода пропала).
 - Che sarà, sarà. Что будет, то будет (Чему быть, того не миновать).
@@ -41,6 +43,7 @@ permalink: /proverbi/
 - Chi lascia la strada vecchia per la nuova, sa quel che lascia e non sa quel che trova. Кто покидает старый путь ради нового, знает то, что покидает и не знает то, что находит.
 - Chi mal fa mal pensa. – Кто зло творит, тот и о других плохо думает.
 - Chi non sa tacer, non sa parlare. Кто не умеет молчать, не умеет говорить.
+- Chi non lavora non mangia. Кто не работает, тот не ест.
 - Chi parla poco dice tanto. Кто говорит мало, скажет много (Много говорено, да мало сказано).
 - Chi ride il venerdì, piange la domenica. Кто смеётся в пятницу, плачет в воскресенье (Хорошо смеётся тот, кто смеётся последним).
 - Chi tace acconsente. Кто молчит, соглашается (Молчание – знак согласия).
@@ -50,13 +53,14 @@ permalink: /proverbi/
 - Ciò che dobbiamo imparare a fare, lo impariamo facendolo ([Aristotele](https://it.wikipedia.org/wiki/Aristotele)). Тому, что мы должны научиться делать, мы учимся, делая ([Аристотель](https://ru.wikipedia.org/wiki/Аристотель)).
 - Cosa rara, cosa cara. Редкая вещь – дорогая вещь (Что редко, то ценно).
 
-### F
+## F
 
 - Fare un nuovo passo, dire una nuova parola, è ciò che la gente teme di più ([Fëdor Dostoevskij](https://it.wikipedia.org/wiki/Fëdor_Dostoevskij)). Люди больше всего боятся сделать новый шаг, сказать новое слово ([Фёдор Достоевский](https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович)).
 - Finché c'è vita (fiato) c'è speranza[^2]. Пока есть жизнь (дыхание), есть надежда.
 
-### I
+## I
 
+- Il gioco è bello quando dura poco. Игра хороша, когда длится недолго (Хорошего – понемногу).
 - I gusti sono gusti. Вкусы есть вкусы (О вкусах не спорят).
 - Il filo si rompe dove è più debole. Нить рвётся там, где слабее (Где тонко, там и рвётся).
 - Il libro serrato non fa l'uomo letterato. Закрытая книга не делает человека образованным.
@@ -70,7 +74,7 @@ permalink: /proverbi/
 - Il ventre pieno fa la testa vuota. Набитое брюхо делает голову пустой.
 - Insegnando s'impara. Обучая учатся.
 
-### L
+## L
 
 - L'abitudine è quasi una seconda natura ([Aristotele](https://it.wikipedia.org/wiki/Aristotele)). Привычка – почти вторая натура ([Аристотель](https://ru.wikipedia.org/wiki/Аристотель)).
 - La belezza è effimera. Красота недолговечна.
@@ -83,13 +87,14 @@ permalink: /proverbi/
 - La struttura alare del calabrone, in relazione al suo peso, non è adatta al volo, ma lui non lo sa e vola lo stesso ([Albert Einstein](https://it.wikipedia.org/wiki/Albert_Einstein)). Строение крыла шмеля, относительно его веса, не пригодна для полета, но он этого не знает и всё равно летает ([Альберт Эйнштейн](https://ru.wikipedia.org/wiki/Эйнштейн,_Альберт)).
 - L'unica vera saggezza è sapere di non sapere nulla ([Socrate](https://it.wikipedia.org/wiki/Socrate)). Единственная истинная мудрость – знать, что ты ничего не знаешь ([Сократ](https://ru.wikipedia.org/wiki/Сократ)).
 
-### M
+## M
 
 - Meglio tardi che mai. Лучше поздно, чем никогда.
 - Misura sette volte e taglia una. Семь раз отмерь, один (раз) отрежь.
 - Morì il povero nessuno lo sentì, morì il ricco il corno sonava. Умер бедный – никто о том не слышал, умер богатый – рог играл (Богаты – так здравствуйте, а убоги – так прощайте).
+- Morto un papa se ne fa un altro. Умирает папа (Папа римский), другой становится папой (Незаменимых нет).
 
-### N
+## N
 
 - Nel paese dei ciechi un guercio è re. Среди слепых и кривой король.
 - Nessun uomo senza diffeti. Не бывает человека без недостатков (Нет Ивана без изъяна).
@@ -107,15 +112,17 @@ permalink: /proverbi/
 - Non tutto è vero quello che sembra. Не всё правда, что кажется.
 - Non tutto il male viene per nuocere. Не всякое зло приходит, чтобы навредить (Нет худа без добра).
 
-### O
+## O
 
+- Ogni bel giocco dura poco. Всякая хорошая игра длится недолго (Хорошего понемножку).
 - Ogni cosa a suo tempo. Всякая вещь в своё время (Всему своё время).
+- Ogni cosa vuol misura (proverbio toscano). Всё хорошо в меру. Во всём нужна мера.
 - Ognuno è buono a qualcosa. Каждый в чём-то хорош.
 - Ognuno è un genio. Ma se si giudica un pesce dalla sua abilità di arrampicarsi sugli alberi, passerà tutta la sua vita a credersi stupido ([Albert Einstein](https://it.wikipedia.org/wiki/Albert_Einstein)). Все мы гении. Но если вы будете судить рыбу по ее способности взбираться на дерево, она проживет всю жизнь, считая себя глупой ([Альберт Эйнштейн](https://ru.wikipedia.org/wiki/Эйнштейн,_Альберт)).
 - Ognuno ha i suoi gusti. Каждый имеет свои вкусы (О вкусах не спорят).
 - Ognuno ha/porta la sua croce. Каждый имеет/несёт свой крест.
 
-### P
+## P
 
 - Pancia piena porta gioia. Полное брюхо приносит радость (Серёдочка сыта и кончики играют).
 - Pari con pari ben sta e dura. Равному с равным живёт хорошо и долго (Каждый ищет себе подобного).
@@ -123,30 +130,31 @@ permalink: /proverbi/
 - Parole di santo e unghie di gatto. Слова святого и когти кота (Волк в овечьей шкуре).
 - Passo a passo/Pian piano si va lontano. Шаг за шагом/Потихоньку уходят далеко. (Тише едешь – дальше будешь).
 
-### Q
+## Q
 
 - Quale madre, tale figlia. Какова мать, такова и дочь.
 - Quando ami qualcuno, lo ami così com’è e non come vorresti che fosse ([Lev Tolstoj](https://it.wikipedia.org/wiki/Lev_Tolstoj)). Когда вы любите кого-то, вы любите их такими, какие они есть, а не такими, какими вы хотели бы, чтобы они были ([Лев Николаевич Толстой](https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич)).
+- Quando ci vuole, ci vuole. Раз нужно, значит нужно.
 - Quel che si fa con piacere, non è fatica. То, что делается с удовольствием, не труд (Охота пуще неволи).
 - Quel che ha da essere, sarà. То, что должно быть, будет (Чему быть, того не миновать).
 
-### R
+## R
 
 - Ride bene chi ride l'ultimo. Хорошо смеётся тот, кто смеётся последним.
 - Risponde il frate come l'abate cante. Отвечает (вторит) монах как абат поёт (Каков поп, таков и приход).
 - Roma non fu fatta/Il mondo non fu fatto in un giorno. Рим/Мир не сделали (создавался, строился) за день (Не сразу Москва строилась).
 
-### S
+## S
 
 - Sbagliando s'impara. Ошибаясь учатся (Обжёгшись на молоке, будешь дуть на воду).
 - So una cosa sola, di non saper nulla (Io so una sola cosa, di nulla sapere; Una sola cosa so: di non sapere) ([Socrate](https://it.wikipedia.org/wiki/Socrate)). Я знаю только то, что ничего не знаю ([Сократ](https://ru.wikipedia.org/wiki/Сократ)).
 - Spesso è peggiore il rimedio che il male. Часто лекарство хуже болезни (Лекарство хуже болезни).
 
-### T
+## T
 
 - [Tutto è bene quel che finisce bene](https://it.wikipedia.org/wiki/Tutto_è_bene_quel_che_finisce_bene) ([William Shakespeare](https://it.wikipedia.org/wiki/William_Shakespeare)). Всё хорошо, что хорошо кончается ([Уильям Шекспир](https://ru.wikipedia.org/wiki/Шекспир,_Уильям)).
 
-### U
+## U
 
 - Una mela al giorno toglie (leva) il medico di torno. Одно яблоко в день – и доктора не нужны (В день по яблоку съедать – век болезней не видать).
 - Un asino gratta l'altro. Один осёл чешет другого (Бес беса хвалит).
