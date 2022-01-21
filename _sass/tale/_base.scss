@@ -45,61 +45,49 @@ sup {
 }
 
 main {
-  p {
+  p a {
+    font-weight: 600;
+    transition: color 0.2s linear;
+
+    &:hover,
+    &:focus {
+      color: #00ff4d;
+    }
+  }
+
+  ul li {
     a {
       font-weight: 600;
       transition: color 0.2s linear;
-      &:hover {
-        color: #00ff4d;
-      }
+
+      &:hover,
       &:focus {
         color: #00ff4d;
       }
     }
-  }
-  ul {
-    li {
-      a {
-        font-weight: 600;
-        transition: color 0.2s linear;
-        &:hover {
-          color: #00ff4d;
-        }
-        &:focus {
-          color: #00ff4d;
-        }
-      }
-      &::marker {
-        color: #353535;
-      }
+
+    &::marker {
+      color: #353535;
     }
   }
-  ol {
-    li {
-      a {
-        font-weight: 600;
-        transition: color 0.2s linear;
-        &:hover {
-          color: #00ff4d;
-        }
-        &:focus {
-          color: #00ff4d;
-        }
-      }
+
+  ol li a {
+    font-weight: 600;
+    transition: color 0.2s linear;
+
+    &:hover,
+    &:focus {
+      color: #00ff4d;
     }
   }
-  table {
-    td {
-      a {
-        font-weight: 600;
-        transition: color 0.2s linear;
-        &:hover {
-          color: #00ff4d;
-        }
-        &:focus {
-          color: #00ff4d;
-        }
-      }
+
+  table td a {
+    font-weight: 600;
+    transition: color 0.2s linear;
+
+    &:hover,
+    &:focus {
+      color: #00ff4d;
     }
   }
 }
@@ -459,6 +447,18 @@ table {
   padding: 10px;
   border: 2px solid #41403e;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.proverbi h2 {
+  font-weight: bold;
+  box-shadow: 5px 5px 0 #03c03c;
+  background: #353535;
+  color: #fff;
+  display: table;
+  margin: 0 auto;
+  width: 1.4em;
+  height: 1.4em;
+  text-align: center;
 }
 
 #wrapper-toc,
