@@ -32,7 +32,7 @@
       align-items: center;
       &:hover,
       &:active {
-        background: #03c03c;
+        background: $green;
         box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.8) inset;
       }
     }

@@ -51,7 +51,7 @@ main {
 
     &:hover,
     &:focus {
-      color: #00ff4d;
+      color: $hover-color;
     }
   }
 
@@ -62,7 +62,7 @@ main {
 
       &:hover,
       &:focus {
-        color: #00ff4d;
+        color: $hover-color;
       }
     }
 
@@ -77,7 +77,7 @@ main {
 
     &:hover,
     &:focus {
-      color: #00ff4d;
+      color: $hover-color;
     }
   }
 
@@ -87,7 +87,7 @@ main {
 
     &:hover,
     &:focus {
-      color: #00ff4d;
+      color: $hover-color;
     }
   }
 }
@@ -130,7 +130,7 @@ main {
     content: "]";
   }
   &:hover {
-    color: #00ff4d;
+    color: $hover-color;
   }
 }
 
@@ -451,7 +451,7 @@ table {
 
 .proverbi h2 {
   font-weight: bold;
-  box-shadow: 5px 5px 0 #03c03c;
+  box-shadow: 5px 5px 0 $green;
   background: $default-shade;
   color: #fff;
   margin: 0 auto;
