@@ -70,29 +70,10 @@ $(function () {
     return false;
   });
 
-  $(".top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, "fast");
-    return false;
-  });
-
   $('.post a:not([href^="#"').on("click", function () {
     var href = $(this).attr("href");
     window.open(href, "_blank").focus();
     return false;
-  });
-
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 100)
-      $("#albero")
-        .removeClass("off")
-        .addClass(
-          "tornasu",
-          setTimeout(function () {
-            $("#albero").addClass("albero");
-          }, 500)
-        );
-    else
-      $("#albero").removeClass("tornasu").addClass("off").removeClass("albero");
   });
 
   $("#search").keyup(function () {
