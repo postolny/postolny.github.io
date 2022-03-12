@@ -102,21 +102,22 @@ main {
   ol {
     counter-reset: myCounter;
     padding-left: 10px;
+    list-style: none;
   }
   li {
-    list-style: none;
     margin: 0 0 5px 0;
+    position: relative;
+    padding-left: 45px;
     &:before {
+      position: absolute;
+      left: 0;
       counter-increment: myCounter;
       content: counter(myCounter);
       color: white;
       background: $default-shade;
-      display: inline-block;
-      line-height: normal;
-      height: auto;
-      width: auto;
-      margin: 0 10px 0 0;
-      padding: 0 8px;
+      height: 30px;
+      width: 30px;
+      text-align: center;
     }
   }
 }
