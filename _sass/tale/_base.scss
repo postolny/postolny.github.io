@@ -108,6 +108,7 @@ main {
     margin: 0 0 5px 0;
     position: relative;
     padding-left: 45px;
+    line-height: 30px;
     &:before {
       position: absolute;
       left: 0;
@@ -118,6 +119,7 @@ main {
       height: 30px;
       width: 30px;
       text-align: center;
+      line-height: 30px;
     }
   }
 }
