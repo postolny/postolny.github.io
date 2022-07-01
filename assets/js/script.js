@@ -368,7 +368,7 @@ $(function() {
     "Получишь пятёрку",
   ];
   var biglietti_bgcolor = ["LimeGreen", "OrangeRed"];
-  var pappagallo = new Audio('./audio/pappagallo.mp3');
+  var pappagallo = new Audio("/audio/pappagallo.mp3");
   $('#rt').click(function() {
     $('#pappagallo').addClass('rt');
     setTimeout(function() {
