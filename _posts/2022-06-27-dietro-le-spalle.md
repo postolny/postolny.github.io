@@ -38,7 +38,7 @@ dietro la schiena
 
 [^1]: sparlare alle spalle – шептаться по углам; сплетничать, злословить за спиной.
 
-[^2]: Non che fosse innamorato di Rosy... – Не то, чтобы он был влюблён в Рози... (конструкция non che + essere в сослагательном наклонении или non che non + essere в сослагательном наклонении, например: non che non fosse contento – не то, чтобы он был доволен).
+[^2]: Non che fosse innamorato di Rosy... – Не то, чтобы он был влюблён в Рози... (конструкция non che + essere в сослагательном наклонении или [non che non]({{ site.baseurl }}/2022-07-01/non-che-non) + essere в сослагательном наклонении, например: non che non fosse contento – не то, чтобы он был доволен).
 
 [^3]: resa dei conti; regolamento di conti – разборка.
 
