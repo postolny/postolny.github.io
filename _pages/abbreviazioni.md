@@ -24,6 +24,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |ant.|antico|древний|
 |anticam.|anticamente|в старину, издревле|
 |aram.|aramaico|арамейский|
+|ass.|assoluto|абсолютный, безотносительный|
 |astron.|astronomia|астрономия|
 |AU|Alto Uso|широкое использование|
 |av.|avanti|до|
@@ -154,7 +155,8 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [La Repubblica](https://dizionari.repubblica.it/italiano.html)
 * [Corriere della Sera](https://dizionari.corriere.it/)
 * [Grande Dizionario Italiano di Gabrielli Aldo](https://www.grandidizionari.it/dizionario_italiano.aspx)
-* [Dizionario d'ortografia e di pronunzia](http://www.dizionario.rai.it/)
+* [DIPI Online – Dizionario di Pronuncia Italiana](https://www.dipionline.it/)
+* [Tommaseo-Bellini](https://www.tommaseobellini.it/#/)
 * [Glosbe](https://ru.glosbe.com/it/ru)
 * [Dialetti d'Italia](https://www.dialettando.com/)
 * [Lingvo Live](https://www.lingvolive.com/ru-ru)
