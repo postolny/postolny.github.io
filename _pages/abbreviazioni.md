@@ -145,7 +145,8 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 
 ## Dizionari
 
-* [Treccani](https://www.treccani.it/)
+* [Vocabolario ed Enciclopedie Treccani](https://www.treccani.it/)
+* [Grande Dizionario della Lingua Italiana (Battaglia)](https://www.gdli.it/)
 * [Dizionario Italiano Olivetti](https://www.dizionario-italiano.it/)
 * [Dizionario Russo-Italiano Olivetti](https://www.dizionario-russo.com/dizionario-russo-italiano.php)
 * [Dizionario italiano De Mauro](https://dizionario.internazionale.it/)
@@ -164,3 +165,4 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [dic.academic.ru](https://dic.academic.ru/)
 * [dizy.com](https://www.dizy.com/)
 * [Dizionario Etimologico](https://www.etimo.it/)
+* [Accademia della Crusca: Consulenza linguistica](https://accademiadellacrusca.it/it/contenuti/consulenza-linguistica/6945)
