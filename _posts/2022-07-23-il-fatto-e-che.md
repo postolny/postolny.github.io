@@ -28,11 +28,11 @@ La locuzione italiana "il fatto è che..." è simile a quella russa "дело в
 |Voglio dire, il fatto è che ora il nostro rapporto è strettamente professionale.|То есть, смысл в том, что теперь наши отношения чисто деловые.|
 |O forse il fatto è che non hai nessun amico.|Или может у тебя вообще друзей не бывает.|
 |Vedi, il fatto è che non ho bisogno di[^4] essere salvato.|Видишь ли в чем дело, меня не нужно спасать.|
-|Sai, io... ti volevo ringraziare per il disegno... ma il fatto è che... ho di nuovo bisogno[^4] del tuo aiuto.|Я хотел поблагодарить тебя за тот рисунок но дело вот в чём, мне снова нужна твоя помощь.|
-|Il fatto è che ho bisogno di[^4] aiuto.|Суть в том, что мне нужна будет кое-какая помощь.|
-|Il fatto è che ho bisogno di[^4] un piccolo aiuto.|Только вот, мне нужна небольшая помощь.|
-|E... il punto è che hai neanche bisogno di[^4] credere a te stessa o a me.|И дело в том, что тебе даже не нужно верить мне или себе.|
-|Vedi, il fatto è che ho davvero bisogno di[^4] parlare con Blanca.|Видишь ли, дело в том, что мне очень нужно поговорить с Бланкой.|
+|Sai, io... ti volevo ringraziare per il disegno... ma il fatto è che... ho di nuovo bisogno del tuo aiuto.|Я хотел поблагодарить тебя за тот рисунок но дело вот в чём, мне снова нужна твоя помощь.|
+|Il fatto è che ho bisogno di aiuto.|Суть в том, что мне нужна будет кое-какая помощь.|
+|Il fatto è che ho bisogno di un piccolo aiuto.|Только вот, мне нужна небольшая помощь.|
+|E... il punto è che hai neanche bisogno di credere a te stessa o a me.|И дело в том, что тебе даже не нужно верить мне или себе.|
+|Vedi, il fatto è che ho davvero bisogno di parlare con Blanca.|Видишь ли, дело в том, что мне очень нужно поговорить с Бланкой.|
 |Ma il fatto è che ci serve il suo aiuto.|Но дело в том, что нам нужна его помощь.|
 |E il fatto è che potrei anche non fare schifo[^5].|И всё дело в том, что я, может, не так и плох.|
 |Okay, il fatto è che sto cercando di evitare una situazione spiacevole.|Дело в том, что я пытаюсь избежать неприятной ситуации.|
