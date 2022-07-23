@@ -10,7 +10,7 @@ tags:
 
 ### Significato
 
-La locuzione italiana "il fatto è che..." è simile a quella russa "дело в том, что...". Si usa quando vogliamo spiegare a qualcuno la causa di un problema o di una situazione oppure dire che qualcosa è un fatto evidente (dire di qualcosa che è un fatto evidente). Ci sono anche molti altre locuzioni simili come "è un fatto che...", "fatto sta che...", "sta di fatto che...", "il problema è che...", "il punto è che...", "la questione è che...", "la verità è che...", "il trucco è..." etc.
+La locuzione italiana "il fatto è che..." è simile a quella russa "дело в том, что...". Si usa quando vogliamo spiegare a qualcuno la causa di un problema o di una situazione oppure dire che qualcosa è un fatto evidente (dire di qualcosa che è un fatto evidente). Ci sono anche molte altre locuzioni simili come "è un fatto che...", "fatto sta che...", "sta di fatto che...", "il problema è che...", "il punto è che...", "la questione è che...", "la verità è che...", "il trucco è..." etc.
 
 ### Esempi d'uso
 
