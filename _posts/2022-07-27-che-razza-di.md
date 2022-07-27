@@ -26,7 +26,7 @@ La locuzione italiana "che razza di..." viene tradotta in russo come "что з�
 |che razza di medicine stai prendendo?|что за таблетки ты принимаешь?|
 |che razza di maleducato!|что за нахал!|
 |Non ha idea di[^3] che razza di vaso di Pandora[^2] sta scoperchiando.|Вы не представляете, что за ящик Пандоры вы открываете.|
-|с кем ты водишься!|che razza di gente frequenti!|
+|che razza di gente frequenti!|с кем ты водишься!|
 |che razza di gente!|что за люди!|
 |che razza di gente ti viene a trovare[^4]?|что за люди к тебе приходят?|
 |Amico, con che razza di gente vai in giro[^5]?|Чувак, да ты с какими людьми тусуешься?|
