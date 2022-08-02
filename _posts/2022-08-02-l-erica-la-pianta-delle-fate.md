@@ -8,11 +8,11 @@ categories:
 tags: Переводы
 ---
 
-È da sempre considerata un'erba magica. La leggenda narra che fosse abitata dalle fatine[^1] che dormivano tranquille tra i suoi fiori, al sicuro dai folletti[^2] dispettosi.
+È da sempre considerata[^1] un'erba magica. La leggenda narra che fosse abitata dalle fatine[^2] che dormivano tranquille tra i suoi fiori, al sicuro dai folletti[^3] dispettosi.
 
-L'erica, _Calluna Vulgaris_, appartiene alla famiglia delle Ericacee[^3]. Il suo nome, Calluna, deriva dalla parola greca _Kalluno_[^4], che significa spazzare, perché nell'antichità si usavano i ramoscelli più teneri per creare delle scope che venivano usate[^5] per spazzare, appunto, i templi degli Dei. Si riteneva, infatti, che la pianta ripulisse dalle energie negative ogni ambiente. Ancora oggi i suoi fiori sono considerati[^6] un portafortuna, infatti è credenza comune che portare l'erica in tasca aiuti ad eliminare le negatività. È proprio per questo, infatti, che viene regalata[^7] alle persone a cui si vuole bene.
+L'erica, _Calluna Vulgaris_, appartiene alla famiglia delle Ericacee[^4]. Il suo nome, Calluna, deriva dalla parola greca _Kalluno_[^5], che significa spazzare, perché nell'antichità si usavano i ramoscelli più teneri per creare delle scope che venivano usate[^6] per spazzare, appunto, i templi degli Dei. Si riteneva, infatti, che la pianta ripulisse dalle energie negative ogni ambiente. Ancora oggi i suoi fiori sono considerati[^7] un portafortuna, infatti è credenza comune che portare l'erica in tasca aiuti ad eliminare le negatività. È proprio per questo, infatti, che viene regalata[^8] alle persone a cui si vuole bene.
 
-Delle sue proprietà terapeutiche[^8] ne parlava già Plinio: ha potere astringente, utile in caso di diarrea[^9], è diuretica e antireumatica. È un ottimo rimedio per la cicatrizzazione delle ferite cutanee. Le sue proprietà antinfiammatorie[^10] curano soprattutto le infiammazioni dell'apparato urinario[^11]. Infine, un recente studio ha messo in luce[^12] anche le sue proprietà antivirali: in particolare[^13] la capacità di inibire il virus dell'epatite C.
+Delle sue proprietà terapeutiche[^9] ne parlava già Plinio: ha potere astringente, utile in caso di diarrea[^10], è diuretica e antireumatica. È un ottimo rimedio per la cicatrizzazione delle ferite cutanee. Le sue proprietà antinfiammatorie[^11] curano soprattutto le infiammazioni dell'apparato urinario[^12]. Infine, un recente studio ha messo in luce[^13] anche le sue proprietà antivirali: in particolare[^14] la capacità di inibire il virus dell'epatite C.
 
 ![decotto erica]({{ site.baseurl }}/img/decotto-erica.jpg)
 
@@ -25,7 +25,7 @@ Con il legno rossiccio dell'erica arborea si costruiscono le pipe.
 - 1 cucchiaio di fiori di erica T.T.
 - 250 ml di acqua
 
-Portare ad ebollizione l'acqua e versarla nella tazza dove sono stati posti i fiori. Lasciare in infusione[^14] qualche minuto, filtrare e servire calda.
+Portare ad ebollizione l'acqua e versarla nella tazza dove sono stati posti i fiori. Lasciare in infusione[^15] qualche minuto, filtrare e servire calda.
 
 ### Decotto di fiori e foglie di erica
 
@@ -65,30 +65,32 @@ Lasciare in infusione i fiori e le foglie nell'acqua precedentemente portata ad 
 
 Оставить цветы и листья настаиваться в предварительно прокипячённой воде на ночь. На следующий день процедить и разлить по бутылкам.
 
-[^1]: fosse abitata dalle fatine – была заселена маленькими феями (пассивная конструкция); la parola fatina è il diminutivo della parola fata.
+[^1]: è da sempre considerata – она всегда считалась (passivo analitico).
 
-[^2]: folletto – дух воздуха; essere al sicuro da qc. – быть в безопасности от кого-то.
+[^2]: fosse abitata dalle fatine – была заселена маленькими феями (passivo analitico); la parola fatina è il diminutivo della parola fata.
 
-[^3]: Ericaceae (лат.) –  Вересковые, или Эриковые (семейство растений).
+[^3]: folletto – дух воздуха; essere al sicuro da qc. – быть в безопасности от кого-то.
 
-[^4]: Kalluno – [καλλύνω (kallýnō)](https://it.wikipedia.org/wiki/Calluna_vulgaris).
+[^4]: Ericaceae (лат.) –  Вересковые, или Эриковые (семейство растений).
 
-[^5]: venivano usate – используются (пассивная форма (passivo analitico) образуется с помощью глагола venire + participio passato; глагол venire может использоваться вместо глагола essere в том случае, когда речь идёт о продолженном действии, процессе происходящего).
+[^5]: Kalluno – [καλλύνω (kallýnō)](https://it.wikipedia.org/wiki/Calluna_vulgaris).
 
-[^6]: sono considerati – считаются (passivo analitico).
+[^6]: venivano usate – используются (пассивная форма (passivo analitico) образуется с помощью глагола venire + participio passato; глагол venire может использоваться вместо глагола essere в том случае, когда речь идёт о продолженном действии, процессе происходящего).
 
-[^7]: viene regalata – дарится (passivo analitico).
+[^7]: sono considerati – считаются (passivo analitico).
 
-[^8]: proprietà terapeutiche – терепевтические, лечебные свойства.
+[^8]: viene regalata – дарится (passivo analitico).
 
-[^9]: in caso di diarrea – при диареи (дословно: в случае диареи).
+[^9]: proprietà terapeutiche – терепевтические, лечебные свойства.
 
-[^10]: proprietà antinfiammatorie – противовоспалительные свойства.
+[^10]: in caso di diarrea – при диареи (дословно: в случае диареи).
 
-[^11]: apparato urinario – мочевыделительная система (мочевая система).
+[^11]: proprietà antinfiammatorie – противовоспалительные свойства.
 
-[^12]: mettere in luce – вскрыть (например, недостатки – mettere in luce le deficienze), обнаружить.
+[^12]: apparato urinario – мочевыделительная система (мочевая система).
 
-[^13]: in particolare – в частности.
+[^13]: mettere in luce – вскрыть (например, недостатки – mettere in luce le deficienze), обнаружить.
 
-[^14]: lasciare in infusione – оставить настаиваться, дать настояться; lascia il tè in infusione! – пусть чай натянет!
+[^14]: in particolare – в частности.
+
+[^15]: lasciare in infusione – оставить настаиваться, дать настояться; lascia il tè in infusione! – пусть чай натянет!
