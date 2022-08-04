@@ -13,7 +13,7 @@ tags:
 v.pronom.intr. FO
 
 1. contenersi (ограничиваться), non eccedere: limitarsi nel cibo, nel fumo (ограничивать себя в еде, в курении) / limitarsi a dire, a fare qcs., dire o fare soltanto quella (просто / только сказать, делать что-либо, говорить или делать только это).
-2. racchiudersi (заключаться), ridursi (уменьшаться): la sua attività si limita a dei lavori saltuari (его деятельность сводится к случайными заработкам).
+2. racchiudersi, ridursi: la sua attività si limita a dei lavori saltuari (его деятельность сводится к случайным заработкам).
 
 [Dizionario italiano De Mauro](https://dizionario.internazionale.it/parola/limitarsi)
 
@@ -21,8 +21,8 @@ v.pronom.intr. FO
 
 | Italiano | Русский |
 |----------|---------|
-|Devi imparare a limitarti|Ты должен научиться ограничивать себя.|
-|Bisogna sapersi limitare|Нужно уметь себя ограничивать.|
+|Devi imparare a limitarti.|Ты должен научиться ограничивать себя.|
+|Bisogna sapersi limitare.|Нужно уметь себя ограничивать.|
 |limitarsi nel mangiare|ограничивать себя в еде|
 |Bisogna limitarsi nelle spese.|Нужно ограничивать себя в расходах.|
 |limitarsi al puro necessario|ограничиться самым необходимым|
