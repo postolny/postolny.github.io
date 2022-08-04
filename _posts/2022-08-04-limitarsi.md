@@ -46,7 +46,7 @@ v.pronom.intr. FO
 |Ma... perché non ti limiti a dire la verità?|Но... почему ты просто не скажешь правду?|
 |Perché non ti limiti ad ammetterlo?|Почему бы просто не признаться?|
 |Senti, funzionerà molto meglio se ti limiti a stare seduta ed ascolti quello che devo dirti.|Слушай, будет гораздо лучше, если ты посидишь и послушаешь, что я скажу.|
-|Non importa quanto mi sforzi di fare[^3] la cosa giusta, ti limiti a credere sempre al peggio[^4].|Не важно насколько я стараюсь поступать правильно в жизни, ты всё время видишь только плохое.|
+|Non importa quanto mi sforzi di fare[^4] la cosa giusta, ti limiti a credere sempre al peggio[^5].|Не важно насколько я стараюсь поступать правильно в жизни, ты всё время видишь только плохое.|
 |Perché non ti limiti a chiederglielo?|Почему тебе самому её не спросить?|
 |Perché non ti limiti a dire "Bel lavoro"?|Может, просто скажешь, что я отлично справилась?|
 |È più divertente se ti limiti a dire: "sì".|Будет веселее, если ты просто согласишься.|
@@ -62,8 +62,8 @@ v.pronom.intr. FO
 
 [^3]: cercare di fare qc. – стремиться, стараться, пытаться сделать что-то.
 
-[^3]: sforzarsi di fare qc. – стараться, силиться сделать что-то.
+[^4]: sforzarsi di fare qc. – стараться, силиться сделать что-то.
 
-[^4]: credere al peggio – верить в худшее.
+[^5]: credere al peggio – верить в худшее.
 
 [^6]: avere un'idea di qc – иметь представление о чём-либо.
