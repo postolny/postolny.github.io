@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "essere pronto"
-description: "La costruzione \"essere pronto\" viene tradotta in russa come \"быть готовым; быть наготове\", può anche essere seguita dalla preposizione a o per, per esempio: Sono pronto a farlo. Я готов сделать это."
+description: "La costruzione \"essere pronto\" viene tradotta in russo come \"быть готовым; быть наготове\", può anche essere seguita dalla preposizione a o per, per esempio: Sono pronto a farlo. Я готов сделать это."
 author: "И. Постольный"
 comments: false
 categories: e
@@ -10,7 +10,7 @@ tags:
 
 ### Significato
 
-La costruzione "essere pronto" viene tradotta in russa come "быть готовым; быть наготове", può anche essere seguita dalla preposizione a o per, per esempio:
+La costruzione "essere pronto" viene tradotta in russo come "быть готовым; быть наготове", può anche essere seguita dalla preposizione a o per, per esempio:
 
 - Sono pronto a farlo. Я готов сделать это.
 - Siamo pronti per partire. Мы готовы отправиться.
