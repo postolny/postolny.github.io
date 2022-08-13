@@ -14,6 +14,7 @@ permalink: /proverbi/
 - A caval donato, non si guarda in bocca. Дарёному коню в пасть не смотрят (Дарёному коню в зубы не смотрят).
 - A ciascuno il suo. Каждому своё[^1].
 - Acqua passata non macina più. Утекшая вода больше не мелет. (Дело прошлое; что прошло, то быльём поросло).
+- Ad ogni uccello il proprio nido è bello. Всякой птице своё гнездо прекрасно (Всяк кулик своё болото хвалит).
 - A fare troppo i santi si diventa diavoli. Кто слишком усердствует в святости, тот становится сатаной.
 - A goccia a goccia si scava/s'incava/fora la pietra. Капля по капле и камень долбит (Вода камень точит).
 - Al cuor non si comanda. Сердцу не прикажешь.
@@ -57,6 +58,7 @@ permalink: /proverbi/
 
 - Fare un nuovo passo, dire una nuova parola, è ciò che la gente teme di più ([Fëdor Dostoevskij](https://it.wikipedia.org/wiki/Fëdor_Dostoevskij)). Люди больше всего боятся сделать новый шаг, сказать новое слово ([Фёдор Достоевский](https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович)).
 - Finché c'è vita (fiato) c'è speranza[^2]. Пока есть жизнь (дыхание), есть надежда.
+- Fra moglie e marito no ci metter ditto. Между женой и мужем не встревай и пальцем (Муж и жена – одна сатана).
 
 ## I
 
@@ -80,6 +82,7 @@ permalink: /proverbi/
 - La belezza è effimera. Красота недолговечна.
 - L'acqua scava la roccia. Вода камень точит.
 - La critica è facile, l'arte è difficile. Критика легка, искусство трудно.
+- L'albero si raddrizza quando è piccolo. Дерево выпрямляется (можно выпрямить) пока оно маленькое.
 - L'apparenza inganna. Внешность обманчива.
 - La speranza è la ricchezza dei poveri. Надежда – богатство бедных.
 - La speranza è l'ultima a morire. Надежда умирает последней.
@@ -114,6 +117,7 @@ permalink: /proverbi/
 
 ## O
 
+- Occhio non vede, cuore non duole. Глаз не видит, сердце не болит.
 - Ogni bel giocco dura poco. Всякая хорошая игра длится недолго (Хорошего понемножку).
 - Ogni cosa a suo tempo. Всякая вещь в своё время (Всему своё время).
 - Ogni cosa vuol misura (proverbio toscano). Всё хорошо в меру. Во всём нужна мера.
