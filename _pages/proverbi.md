@@ -52,6 +52,7 @@ permalink: /proverbi/
 - Chi va veloce va incontro alla croce. Кто едет быстро, едет навстречу кресту (Кто поспешит, в могилу угодит).
 - Chi vivrà, vedrà. Кто поживёт, увидит (Поживём – увидим).
 - Ciò che dobbiamo imparare a fare, lo impariamo facendolo ([Aristotele](https://it.wikipedia.org/wiki/Aristotele)). Тому, что мы должны научиться делать, мы учимся, делая ([Аристотель](https://ru.wikipedia.org/wiki/Аристотель)).
+- Cosa fatta con forza non vale una scorza. Что сделано с силой, не стоит даже кожуры (Насильно мил не будешь). 
 - Cosa rara, cosa cara. Редкая вещь – дорогая вещь (Что редко, то ценно).
 
 ## F
