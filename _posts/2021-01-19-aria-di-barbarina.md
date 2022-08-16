@@ -10,35 +10,9 @@ tags: Музыка
 
 {% include youtube.html id='F-XVqXmUunk' %}
 
-> (cercando[^1] qualche cosa per terra[^2])  
-L'ho perduta, me meschina[^3],  
-ah, chissà dove sarà[^4],  
-ah, chissà dove sarà?  
-Non la trovo, non la trovo,  
-l'ho perduta, meschinella,  
-ah, chissà dove sarà?  
-
-> Non la trovo, ah, non la trovo  
-meschinella,  
-L'ho perduta,  
-ah, chi sa dove sarà?  
-E mia cugina,  
-e il padron, cosa dirà, cosa dirà?
-
-> (ища что-то на полу)  
-Я её потеряла, горе мне,  
-ах, где она может быть,  
-ах, где она может быть?  
-Я не нахожу её (не могу найти), я не нахожу её,  
-Я её потеряла, горемыка,  
-ах, где она может быть
-
-> Я не нахожу её, ах, я не нахожу её  
-горемыка,  
-Я её потеряла,  
-ах, где она может быть?  
-И моя кузина,  
-и мой хозяин, что скажет, что скажет?
+| Italiano | Русский |
+|----------|---------|
+|(cercando[^1] qualche cosa per terra[^2])<br><br>L'ho perduta, me meschina[^3],<br>ah, chissà dove sarà[^4], <br>ah, chissà dove sarà?<br>Non la trovo, non la trovo,<br>l'ho perduta, meschinella,<br>ah, chissà dove sarà?<br><br>Non la trovo, ah, non la trovo<br>meschinella,<br>L'ho perduta,<br>ah, chi sa dove sarà?<br>E mia cugina,<br>e il padron, cosa dirà, cosa dirà?|(ища что-то на полу)<br><br>Я её потеряла, горе мне,<br>ах, где она может быть,<br>ах, где она может быть?<br>Я не нахожу её (не могу найти), я не нахожу её,<br>Я её потеряла, горемыка,<br>ах, где она может быть<br><br>Я не нахожу её, ах, я не нахожу её<br>горемыка,<br>Я её потеряла,<br>ах, где она может быть?<br>И моя кузина,<br>и мой хозяин, что скажет, что скажет?|
 
 [^1]: cercando (ища) – герундий (в русском тексте – ищет).
 
