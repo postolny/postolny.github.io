@@ -44,7 +44,7 @@ Per trasformare una frase dalla forma attiva a quella passiva devi ricordare che
 
 - il tempo[^6] e il modo del verbo[^7] attivo devono rimanere identici anche nella forma passiva (время и наклонение активного глагола должны оставаться равнозначными и в пассивной форме);
 - il verbo di forma passiva deve concordare in genere e numero con il nuovo soggetto (глагол в пассивной форме должен согласовываться в роде и числе с новым подлежащим);
-- per trasformare il soggetto della frase attiva in complemento d'agente bisogna farlo precedere dalla preposizione da (для трансформации подлежащего в активной форме в дополнение действующего лица нужно обеспечетиь ему предшествование предлога da).
+- per trasformare il soggetto della frase attiva in complemento d'agente bisogna farlo precedere dalla preposizione da (для трансформации подлежащего в активной форме в дополнение действующего лица нужно обеспечить ему предшествование предлога da).
 
 ### Dalla frase passiva alla frase attiva
 
