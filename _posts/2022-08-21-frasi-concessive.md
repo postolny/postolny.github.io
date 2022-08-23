@@ -12,9 +12,9 @@ Le frasi concessive sono sicuramente uno degli argomenti più difficili per chi 
 
 Уступительные предложения, безусловно, являются одной из самых сложных тем для изучающих итальянский язык... Как они используются? Что они означают? Давайте посмотрим, сможет ли наш урок прояснить твои сомнения раз и навсегда!
 
-### Anche se, sebbene, nonostante, malgrado, pur...
+## Anche se, sebbene, nonostante, malgrado, pur...
 
-## Cosa significano e quando si usano queste congiunzioni! (Что означают и когда используются эти союзы!)
+### Cosa significano e quando si usano queste congiunzioni! (Что означают и когда используются эти союзы!)
 
 Tutte queste congiunzioni introducono, in italiano, delle frasi concessive. Ma attento al loro uso!
 
