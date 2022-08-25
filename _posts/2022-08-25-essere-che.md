@@ -8,7 +8,7 @@ categories: e
 tags:
 ---
 
-La costruzione "essere... che..." viene usato per evidenziare soggetto o oggetto. Viene tradotta in russo come "это (именно) тот, который...; это (именно) то, что... etc.".
+La costruzione "essere... che..." viene usata per evidenziare soggetto o oggetto. Viene tradotta in russo come "это (именно) тот, который...; это (именно) то, что... etc.".
 
 Esempi:
 
