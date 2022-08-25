@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "essere... che..."
-description: "La costruzione \"essere... che...\" viene usato per evidenziare soggetto o oggetto. Viene tradotta in russo come \"это (именно) тот, который...; это (именно) то, что... etc.\". Esempi: Chi ha dato un libro a Maria? È Mario che ha dato un libro a Maria. È un libro che Mario ha dato a Maria."
+description: "La costruzione \"essere... che...\" viene usata per evidenziare soggetto o oggetto. Viene tradotta in russo come \"это (именно) тот, который...; это (именно) то, что... etc.\". Esempi: Chi ha dato un libro a Maria? È Mario che ha dato un libro a Maria. È un libro che Mario ha dato a Maria."
 author: "И. Постольный"
 comments: false
 categories: e
