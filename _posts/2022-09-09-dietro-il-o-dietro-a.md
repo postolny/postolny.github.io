@@ -34,7 +34,7 @@ In funzione avverbiale _dietro_ significa nella _parte posteriore_ e spesso è a
 
 Concludiamo queste _due parole_, riportando quanto dice in proposito[^7] l'illustre linguista, ormai scomparso, Aldo Gabrielli, un padre della lingua: «Con _dietro_ si costruiscono numerose locuzioni scorrette che è necessario evitare; non si dica _dietro sua domanda_ ma _a sua domanda_; _dietro consegna_ ma _alla consegna_; _dietro versamento_ ma _contro versamento, all'atto del versamento_; _dietro il vostro intervento_ ma _per il vostro intervento_; _dietro la vostra assicurazione_ ma _dopo la vostra assicurazione_ (…)».
 
-Подведём итог этих двух слов, приведя сказанные по этому поводу слова выдающегося лингвиста, ныне покойного, Альдо Габриэлли, отца языка: "С _dietro_ строятся многочисленные неправильные выражения, которых следует избегать; говорится не _dietro sua domanda_, а _a sua domanda_; не _dietro consegna_, _а alla consegna_; не _dietro versamento_, а _contro versamento, all'atto del versamento_; не _dietro il vostro intervento_, а _per il vostro intervento_; не _dietro la vostra assicurazione_, а _dopo la vostra assicurazione_ (…)".
+Подведём итог этих двух слов, приведя сказанное по этому поводу выдающегося лингвиста, ныне покойного, Альдо Габриэлли, отца языка: "С _dietro_ строятся многочисленные неправильные выражения, которых следует избегать; говорится не _dietro sua domanda_, а _a sua domanda_; не _dietro consegna_, _а alla consegna_; не _dietro versamento_, а _contro versamento, all'atto del versamento_; не _dietro il vostro intervento_, а _per il vostro intervento_; не _dietro la vostra assicurazione_, а _dopo la vostra assicurazione_ (…)".
 
 E tante altre ancora che omettiamo per non tediarvi oltre misura.
 
