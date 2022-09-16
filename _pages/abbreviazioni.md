@@ -166,3 +166,7 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [dizy.com](https://www.dizy.com/)
 * [Dizionario Etimologico](https://www.etimo.it/)
 * [Accademia della Crusca: Consulenza linguistica](https://accademiadellacrusca.it/it/contenuti/consulenza-linguistica/6945)
+* [Sinonimi – Contrari](https://www.sinonimi-contrari.it/)
+* [WordReference.com](https://www.wordreference.com/it/)
+* [Verbi Italiani](https://www.italian-verbs.com/verbi-italiani/coniugazione.php)
+* [Wikizionario](https://it.wiktionary.org/wiki/Pagina_principale)
