@@ -13,4 +13,4 @@ Questo è il mio fungo preferito, si chiama "Boleto baio" (Imleria badia in lati
 
 ![boleto baio]({{ site.baseurl }}/img/boleto-baio1.jpg)
 
-È silenzioso qui nel bosco. Sento solo cantare gli uccellini.
+È silenzioso qui nel bosco. Si sente solo cantare gli uccellini.
