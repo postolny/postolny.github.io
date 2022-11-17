@@ -52,6 +52,7 @@ Ecco, c'era la pigrizia di fare 50 metri per andare negli spogliatoi, tanto per[
 |"Un uomo non è pigro se è assorto nei propri pensieri; esiste un lavoro visibile ed uno invisibile." (Victor Hugo)|Человек не ленив, если он погружён в собственные мысли; существует работа видимая и невидимая ([Виктор Мари Гюго](https://ru.wikipedia.org/wiki/Гюго,_Виктор))|
 |"Il pigro è d'ostacolo a se stesso." ([Lucio Anneo Seneca](https://it.wikipedia.org/wiki/Lucio_Anneo_Seneca))|Ленивый – помеха самому себе. ([Луций Анней Сенека](https://ru.wikipedia.org/wiki/Луций_Анней_Сенека))|
 |Se ti accade, al mattino, di svegliarti pigro e indolente, tieni presente[^3] questo pensiero: "Mi alzo per riprendere la mia opera di uomo". ([Marco Aurelio](https://it.wikipedia.org/wiki/Marco_Aurelio))|Если тебе случается утром просыпаться ленивым и апатичным, припомни эту мысль: "я встаю, чтобы возобновить свою работу как человек". ([Марк Аврелий](https://ru.wikipedia.org/wiki/Марк_Аврелий))|
+|Non riesco a vincere la mia pigrizia.|Я не могу побороть свою лень.|
 
 Цитаты знаменитых людей, которые я включил в мою статью, взяты отсюда: [https://www.frasicelebri.it/argomento/pigrizia/](https://www.frasicelebri.it/argomento/pigrizia/).
 
