@@ -401,9 +401,11 @@ table {
   box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 #777, 15px 11px 0 0 #777, 11px 15px 0 0 #777;
 }
 
-#download_row > div > ul {
-  list-style-type: none;
-  padding-left: 10px;
+#download_row {
+	ul {
+		list-style-type: none;
+		padding-left: 10px;
+	}
 }
 
 a[href$=".pdf"]:before,
