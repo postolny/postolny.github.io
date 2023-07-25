@@ -23,6 +23,8 @@ libri:
         url: /skazochnik/
       - page: Миролюб • сказка
         url: /mirolyub/
+      - page: Крыса • сказка
+        url: /krysa/
       - page: Стихотворения
         url: /poesia/
       - page: Моя музыка
