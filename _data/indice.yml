@@ -1,49 +1,63 @@
 libri:
+  - titolo: Сказки
+    subfolderitems:
+      - page: Крестьянин и змея
+        url: /krestyanin-i-zmeya/
+      - page: Ангел времени
+        url: /angel-vremeni/
+      - page: Иголка в стоге сена
+        url: /igolka-v-stoge-sena/
+      - page: Медвежьи услуги
+        url: /medvezhi-uslugi/
+      - page: Самые длинные уши
+        url: /samye-dlinnye-ushi/
+      - page: Медведь и муравей
+        url: /medved-i-muravej/
+      - page: Кот и мышь
+        url: /kot-i-mysh/
+      - page: Комар
+        url: /komar/
+      - page: Сказочник
+        url: /skazochnik/
+      - page: Миролюб
+        url: /mirolyub/
+      - page: Крыса
+        url: /krysa/
+      - page: Злая женщина
+        url: /zlaya-zhenshina/
+      - page: Ивашка-гусляр
+        url: /ivashka-guslyar/
+      - page: Мужик и ветер
+        url: /muzhik-i-veter/
+  - titolo: Притчи
+    subfolderitems:
+      - page: Пиявка
+        url: /la-mignatta/
+      - page: Шуруп и Гвоздь
+        url: /shurup-i-gvozd/
   - titolo: Разные сочинения
     subfolderitems:
       - page: Безмозглый и безухий • повесть
         url: /bezmozglyj-i-bezuhij/
       - page: Il scervellato e Il senza orecchie • povest'
         url: /il-scervellato-e-il-senza-orecchie/
-      - page: Ангел времени • сборник рассказов для детей
-        url: /angelo-del-tempo/
+      - page: Рассказы для детей
+        url: /rasskazy-dlya-detej/
       - page: Миниатюры
         url: /miniature/
-      - page: Медвежьи услуги • сказка
-        url: /medvezhi-uslugi/
-      - page: Самые длинные уши • сказка
-        url: /samye-dlinnye-ushi/
-      - page: Медведь и муравей • сказка
-        url: /medved-i-muravej/
-      - page: Кот и мышь • сказка
-        url: /kot-i-mysh/
-      - page: Комар • сказка
-        url: /komar/
-      - page: Сказочник • сказка
-        url: /skazochnik/
-      - page: Миролюб • сказка
-        url: /mirolyub/
-      - page: Крыса • сказка
-        url: /krysa/
-      - page: Злая женщина • сказка
-        url: /zlaya-zhenshina/
-      - page: Ивашка-гусляр • сказка
-        url: /ivashka-guslyar/
-      - page: Мужик и ветер • сказка
-        url: /muzhik-i-veter/
       - page: Стихотворения
         url: /poesia/
       - page: Моя музыка
         url: /musica/
   - titolo: Переводы
     subfolderitems:
-      - page: Крестьянин-астролог • Сказка Итало Кальвино
+      - page: Крестьянин-астролог Итало Кальвино
         url: /il-contadino-astrologo/
       - page: Смоковница • Леонардо да Винчи
         url: /il-fico/
       - page: 'Про собаку, которая с мясом реку переплывала • Федр'
         url: /il-cane-che-porta-la-carne-al-fiume/
-      - page: Башня, лестница и луна • Сказка Алессандры Фелла
+      - page: Башня, лестница и луна Алессандры Фелла
         url: /la-torre-la-scala-e-la-luna/
   - titolo: Джанни Родари, Маленькие бродяги
     subfolderitems:
