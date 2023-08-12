@@ -29,8 +29,10 @@ libri:
         url: /ivashka-guslyar/
       - page: Мужик и ветер
         url: /muzhik-i-veter/
-      - page: Торговец и Диоген
-        url: /torgovec-i-diogen/
+      - page: Диоген и торговец
+        url: /diogen-i-torgovec/
+      - page: Три богатыря, солнце и царёва дочка
+        url: /tri-bogatyrya-solnce-i-caryova-dochka/
   - titolo: Притчи
     subfolderitems:
       - page: Пиявка
@@ -53,15 +55,15 @@ libri:
         url: /musica/
   - titolo: Переводы
     subfolderitems:
-      - page: Крестьянин-астролог Итало Кальвино
+      - page: Крестьянин-астролог • Итало Кальвино
         url: /il-contadino-astrologo/
       - page: Смоковница • Леонардо да Винчи
         url: /il-fico/
-      - page: 'Про собаку, которая с мясом реку переплывала • Федр'
+      - page: Про собаку, которая с мясом реку переплывала • Федр
         url: /il-cane-che-porta-la-carne-al-fiume/
-      - page: Башня, лестница и луна Алессандры Фелла
+      - page: Башня, лестница и луна • Алессандра Фелла
         url: /la-torre-la-scala-e-la-luna/
-  - titolo: Джанни Родари, Маленькие бродяги
+  - titolo: Маленькие бродяги • Джанни Родари
     subfolderitems:
       - page: Глава I. Серое одеяло.
         url: /la-coperta-grigia/
