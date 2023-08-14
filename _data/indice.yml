@@ -35,6 +35,8 @@ libri:
         url: /diogen-i-torgovec/
       - page: Три богатыря, солнце и царёва дочка
         url: /tri-bogatyrya-solnce-i-caryova-dochka/
+      - page: Пономарёва дочка и дьявол
+        url: /ponomaryova-dochka-i-dyavol/
   - titolo: Притчи
     subfolderitems:
       - page: Пиявка
