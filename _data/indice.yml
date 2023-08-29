@@ -37,6 +37,8 @@ libri:
         url: /tri-bogatyrya-solnce-i-caryova-dochka/
       - page: Пономарёва дочка и дьявол
         url: /ponomaryova-dochka-i-dyavol/
+      - page: Тот сам хорош, у кого друг хорош
+        url: /tot-sam-horosh-u-kogo-drug-horosh/
   - titolo: Притчи
     subfolderitems:
       - page: Пиявка
