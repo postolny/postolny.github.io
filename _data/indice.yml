@@ -46,9 +46,9 @@ libri:
       - page: Шуруп и Гвоздь
         url: /shurup-i-gvozd/
       - page: Сук
-        url: /suk/
+        url: /suk1/
       - page: Состязания
-        url: /sostyazaniya/
+        url: /sostyazaniya1/
   - titolo: Разные сочинения
     subfolderitems:
       - page: Безмозглый и безухий • повесть
