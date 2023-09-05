@@ -45,6 +45,10 @@ libri:
         url: /la-mignatta/
       - page: Шуруп и Гвоздь
         url: /shurup-i-gvozd/
+      - page: Сук
+        url: /suk/
+      - page: Состязания
+        url: /sostyazaniya/
   - titolo: Разные сочинения
     subfolderitems:
       - page: Безмозглый и безухий • повесть
