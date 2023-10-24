@@ -1,6 +1,7 @@
 /* Numerali */
 
-#wrap_num {
+#wrap_num,
+#wrap_mg {
   padding: 20px 0;
   box-sizing: border-box;
 }
@@ -234,7 +235,9 @@ label.correct {
   font-size: 14px;
   margin: 10px 0;
 }
-.mostrami {
+.mostrami,
+#btn-mese,
+#btn-giorno {
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -245,4 +248,44 @@ label.correct {
 .result {
   display: inline-block;
   padding: 5px;
+}
+
+/* Mese, giorno */
+
+#risultato-mese,
+#risultato-giorno {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.evid {
+  background-color: green;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+
+#search-mese,
+#search-giorno {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 0 8px;
+  width: auto;
+  height: 32px;
+  margin: 10px 0;
+  transition: all ease-out 0.2s;
+  &:focus {
+    outline: none;
+    border-color: #aaa;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #risultato-mese,
+  #risultato-giorno {
+    display: block;
+	padding-left: 0;
+	margin-top: 8px;
+  }
 }
