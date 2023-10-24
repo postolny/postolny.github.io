@@ -444,6 +444,46 @@ $(function() {
     }
   });
 
+  var now = new Date();
+  var mese = now.getMonth();
+  var giorno = now.getDay();
+  var ore = now.getHours();
+  var m = new Array('gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'Dicembre');
+  var g = new Array('domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato');
+  if (ore < 5) {
+    $("#benvenuto").text("Ciao! Cosa ci fai qui di notte?");
+  } else if (ore < 12) {
+    $("#benvenuto").text("Buon giorno!");
+  } else if (ore < 17) {
+    $("#benvenuto").text("Buon pomeriggio!");
+  } else {
+    $("#benvenuto").text("Buona sera!");
+  }
+  $('#btn-mese').click(function() {
+    var search = $("#search-mese").val().toLowerCase().trim();
+    if (!$.trim($("#search-mese").val())) {
+      $("#risultato-mese").html("<div class='sbagliato'></div>Scrivi qualcosa!");
+      $("#search-mese").focus();
+    } else if (search == m[mese]) {
+      $("#risultato-mese").html("<div class='esatto'></div>Esatto!");
+    } else {
+      $("#risultato-mese").html("<div class='sbagliato'></div>Sbagliato! La risposta giusta: " + "<span class='evid'>" + m[mese] + "</span>");
+      $("#search-mese").val("").focus();
+    }
+  });
+  $('#btn-giorno').click(function() {
+    var search = $("#search-giorno").val().toLowerCase().trim();
+    if (!$.trim($("#search-giorno").val())) {
+      $("#risultato-giorno").html("<div class='sbagliato'></div>Scrivi qualcosa!");
+      $("#search-giorno").focus();
+    } else if (search == g[giorno]) {
+      $("#risultato-giorno").html("<div class='esatto'></div>Esatto!");
+    } else {
+      $("#risultato-giorno").html("<div class='sbagliato'></div>Sbagliato! La risposta giusta: " + "<span class='evid'>" + g[giorno] + "</span>");
+      $("#search-giorno").val("").focus();
+    }
+  });
+
   var Mwidth = 960;
   if ($(window).width() > Mwidth) {
     var headerHeight = $(".navigation").height();
