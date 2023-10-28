@@ -210,9 +210,9 @@ label.correct {
 
 .questions input[type="text"] {
   display: inline-block;
-  height: 20px;
   font: inherit !important;
   width: 100px;
+  height: 20px;
   border: 1px solid #ccc;
   border-width: 0px 0px 1px 0px;
   padding: 0px 5px;
@@ -265,11 +265,12 @@ label.correct {
 
 #search-mese,
 #search-giorno {
-  border: 1px solid #ddd;
   box-sizing: border-box;
   padding: 0 5px;
+  font: inherit !important;
   width: 100px;
   height: 20px;
+  border: 1px solid #ddd;
   margin: 10px 0;
   transition: all ease-out 0.2s;
   &:focus {
@@ -282,8 +283,8 @@ label.correct {
   #risultato-mese,
   #risultato-giorno {
     display: block;
-	  padding-left: 0;
-	  margin-top: 8px;
+    padding-left: 0;
+    margin-top: 8px;
   }
   #wrap_mg label {
     display: block;
