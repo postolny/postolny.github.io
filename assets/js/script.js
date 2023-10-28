@@ -467,7 +467,7 @@ $(function() {
     } else if (search == m[mese]) {
       $("#risultato-mese").html("<div class='esatto'></div>Esatto!");
     } else {
-      $("#risultato-mese").html("<div class='sbagliato'></div>Sbagliato! La risposta giusta: " + "<span class='evid'>" + m[mese] + "</span>");
+      $("#risultato-mese").html("<div class='sbagliato'></div>Sbagliato! La risposta giusta è " + "<span class='evid'>" + m[mese] + "</span>");
       $("#search-mese").val("").focus();
     }
   });
@@ -479,7 +479,7 @@ $(function() {
     } else if (search == g[giorno]) {
       $("#risultato-giorno").html("<div class='esatto'></div>Esatto!");
     } else {
-      $("#risultato-giorno").html("<div class='sbagliato'></div>Sbagliato! La risposta giusta: " + "<span class='evid'>" + g[giorno] + "</span>");
+      $("#risultato-giorno").html("<div class='sbagliato'></div>Sbagliato! La risposta giusta è " + "<span class='evid'>" + g[giorno] + "</span>");
       $("#search-giorno").val("").focus();
     }
   });
