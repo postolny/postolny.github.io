@@ -343,7 +343,7 @@ $(function() {
           correctRadioLabel.addClass("correct");
         }
       });
-      $(".score").html("Правильных ответов <strong>" + correctAnswers + "</strong> из <strong>" + total + "</strong>");
+      $(".score").html("Правильных ответов <strong>" + correctAnswers + "</strong> из <strong>" + total + "</strong>").show();
     }
   });
 
