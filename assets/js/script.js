@@ -317,32 +317,34 @@ $(function() {
     $("body").css("display", "none");
   }
 
+  $('.score, .msg').hide();
   $(".quiz-submit").on("click", function() {
     var correctAnswers = 0;
     var total = 0;
-    $(".domanda").each(function() {
-      total++;
-      $(".quiz-msg", this).remove();
-      var correct = $(this).find(":checked[data-correct]").length;
-      if (correct == 1) {
-        var msgHTML = '<div class="quiz-msg correct">Правильно!</div>';
-        $(this).append(msgHTML);
-        correctAnswers++;
-      } else {
-        var _msgHTML = '<div class="quiz-msg incorrect">Неправильно!</div>';
-        $(this).append(_msgHTML);
-        var correctRadio = $(this).find("input[data-correct]");
-        var correctRadioLabel = correctRadio.parent();
-        correctRadioLabel.addClass("correct");
-      }
-    });
-    $(".score").html(
-      "Правильных ответов <strong>" +
-      correctAnswers +
-      "</strong> из <strong>" +
-      total +
-      "</strong>"
-    );
+    var dom = $('.domanda').size();
+    var inch = $("input:checked").size();
+    if (inch < dom) {
+      $(".msg").text("Нужно ответить на все вопросы!").show();
+    } else {
+      $(".msg").hide();
+      $(".domanda").each(function() {
+        total++;
+        $(".quiz-msg", this).remove();
+        var correct = $(this).find(":checked[data-correct]").length;
+        if (correct == 1) {
+          var msgHTML = '<div class="quiz-msg correct">Правильно!</div>';
+          $(this).append(msgHTML);
+          correctAnswers++;
+        } else {
+          var _msgHTML = '<div class="quiz-msg incorrect">Неправильно!</div>';
+          $(this).append(_msgHTML);
+          var correctRadio = $(this).find("input[data-correct]");
+          var correctRadioLabel = correctRadio.parent();
+          correctRadioLabel.addClass("correct");
+        }
+      });
+      $(".score").html("Правильных ответов <strong>" + correctAnswers + "</strong> из <strong>" + total + "</strong>");
+    }
   });
 
   $("#accento input").keyup(function() {
@@ -448,8 +450,8 @@ $(function() {
   var mese = now.getMonth();
   var giorno = now.getDay();
   var ore = now.getHours();
-  var m = new Array('gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'Dicembre');
-  var g = new Array('domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato');
+  var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
   if (ore < 5) {
     $("#benvenuto").text("Ciao! Cosa ci fai qui di notte?");
   } else if (ore < 12) {
