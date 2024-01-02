@@ -156,12 +156,16 @@ label.correct {
   cursor: pointer;
   color: #fff;
   padding: 5px 10px;
-  text-align: center;
   background-color: $default-shade;
 }
 .score {
   display: inline-block;
   padding: 5px;
+}
+.msg {
+  display:inline-block;
+  padding:5px;
+  color:red;
 }
 
 /* Accento */
@@ -201,7 +205,6 @@ label.correct {
   color: #fff;
   margin: 10px 0;
   padding: 5px 10px;
-  text-align: center;
   background-color: $default-shade;
 }
 
