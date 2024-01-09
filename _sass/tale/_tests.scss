@@ -162,11 +162,6 @@ label.correct {
   display: inline-block;
   padding: 5px;
 }
-.msg {
-  display:inline-block;
-  padding:5px;
-  color:red;
-}
 
 /* Accento */
 #accento {
@@ -287,9 +282,18 @@ label.correct {
   }
 }
 
+.quiz-submit,
+.mostrami,
+#btn-mese,
+#btn-giorno {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 @media only screen and (max-width: 479px) {
   #wrap_mg label {
-    display: block;
+    display: block;            -webkit-user-select: none;
+    -webkit-user-select: none;
   }
   #questione:last-child {
     margin-top: 15px;
