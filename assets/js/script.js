@@ -317,16 +317,14 @@ $(function() {
     $("body").css("display", "none");
   }
 
-  $('.score, .msg').hide();
   $(".quiz-submit").on("click", function() {
     var correctAnswers = 0;
     var total = 0;
     var dom = $('.domanda').size();
     var inch = $("input:checked").size();
     if (inch < dom) {
-      $(".msg").text("Нужно ответить на все вопросы!").show();
+      $(".score").text("Нужно ответить на все вопросы!");
     } else {
-      $(".msg").hide();
       $(".domanda").each(function() {
         total++;
         $(".quiz-msg", this).remove();
@@ -343,7 +341,7 @@ $(function() {
           correctRadioLabel.addClass("correct");
         }
       });
-      $(".score").html("Правильных ответов <strong>" + correctAnswers + "</strong> из <strong>" + total + "</strong>").show();
+      $(".score").html("Правильных ответов <strong>" + correctAnswers + "</strong> из <strong>" + total + "</strong>");
     }
   });
 
