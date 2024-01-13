@@ -507,10 +507,22 @@ footer {
   }
 }
 
-/* Белый стих */
+/* Стихи */
 .verse_row {
   display: flex;
   justify-content: center;
+}
+
+.verse_row {
+  p {
+    &:after {
+      content: "\2767";
+      color: #8dc692;
+      font-size: 1.5em;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .verse {
