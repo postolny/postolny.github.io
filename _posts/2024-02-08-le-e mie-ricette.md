@@ -12,7 +12,7 @@ Vorrei dedicare questo post alla mia mamma, che mi ha insegnato a cucinare.
 
 ### Zuppa di piselli con ossa
 
-Sciacquare i piselli secchi più volte sotto l'acqua corrente. Mettere a bagno in acqua. Di quando in quando è bene cambiare l'acqua. Tagliare le ossa a pezzettoni. Bollire per 5 minuti e poi sciacquare in acqua fredda. Mettere le ossa in una grande pentola di smalto e lasciare cucinare per circa un'ora. Aggiungere i piselli e far cuocere per altro un'ora. Nel frattempo sbucciare la cipolla dalla pelle e tagliarla finemente. Si può anche prendere un spicchio d'aglio. Strofinare le carote pelate su una grattugia. Soffriggere cipolle, aglio e carote in una padella fino a doratura. Aggiungere alla zuppa per 15 prima di essere pronta. Aggiungere anche sale, prezzemolo, aneto, sedano a piacere.
+Sciacquare i piselli secchi più volte sotto l'acqua corrente. Mettere a bagno in acqua. Di quando in quando è bene cambiare l'acqua. Tagliare le ossa a pezzettoni. Bollire per 5 minuti e poi sciacquare in acqua fredda. Mettere le ossa in una grande pentola di smalto e lasciare cucinare per circa un'ora. Aggiungere i piselli e far cuocere per altro un'ora. Nel frattempo sbucciare la cipolla dalla pelle e tagliarla finemente. Si può anche prendere un spicchio d'aglio. Strofinare le carote pelate su una grattugia. Soffriggere cipolla, aglio e carota in una padella fino a doratura. Aggiungere alla zuppa per 15 prima di essere pronta. Aggiungere anche sale, prezzemolo, aneto, sedano a piacere.
 
 #### Ingredienti
 
