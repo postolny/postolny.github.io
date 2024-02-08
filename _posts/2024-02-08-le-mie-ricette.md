@@ -40,7 +40,7 @@ Mettere in una scodella farina, tvorog, uova, sale, zucchero (a piacere) e mesco
 
 ### Oladi
 
-Mettere in una scodella farina, uovo, bicarbonato di sodio, sale, zucchero, olio di girasole. Mescolare aggiungendo il kefir fino a quando l'impasto non avrà raggiunto la densità desiderata. Cuocere in una padella così come i syrniki.
+Mettere in una scodella farina, uovo, bicarbonato di sodio, sale, zucchero, olio di girasole. Mescolare aggiungendo il kefir fino a quando l'impasto non avrà raggiunto la consistenza desiderata. Cuocere in una padella così come i syrniki.
 
 #### Ingredienti
 
@@ -51,3 +51,11 @@ Mettere in una scodella farina, uovo, bicarbonato di sodio, sale, zucchero, olio
 - 1/2 cucchiaini di bicarbonato di sodio
 - 1/4 cucchiaini di sale
 - kefir
+
+### Kaša di semolino
+
+Versare il latte e l'acqua nella pentola. Aggiungere il semolino e cuocere, mescolando di tanto in tanto per circa 10 minuti.
+
+- 4 tazze di latte
+- 1 tazza d'acqua
+- 3/4 di tazza di semolino
