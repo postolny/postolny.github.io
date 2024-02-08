@@ -26,14 +26,28 @@ Sciacquare i piselli secchi più volte sotto l'acqua corrente. Mettere a bagno i
 - sedano, prezzemolo e aneto tritati
 - sale grosso
 
-### Syrniki (frittelle di ricotta)
+### Syrniki
 
-Mettere in una scodella farina, ricotta, uova, sale, zucchero (a piacere) e mescolare bene. Scaldare una padella con un filo d'olio. Prelevare delle piccole porzioni di impasto con un cucchiaio e cuocere a fuoco basso. Girare le syrniki e continuare la cottura dall'altro lato.
+Mettere in una scodella farina, tvorog, uova, sale, zucchero (a piacere) e mescolare bene. Scaldare una padella con un filo d'olio. Prelevare delle piccole porzioni di impasto con un cucchiaio e cuocere a fuoco basso. Girare i syrniki e continuare la cottura dall'altro lato.
 
 #### Ingredienti
 
-- 360 g di ricotta (due confezioni da 180 g)
+- 360 g di tvorog (due confezioni da 180 g)
 - 2 uova grandi
 - 2 cucchiai di farina
 - 2 cucchiai di zucchero 
 - un pizzico di sale
+
+### Oladi
+
+Mettere in una scodella farina, uovo, bicarbonato di sodio, sale, zucchero, olio di girasole. Mescolare aggiungendo il kefir fino a quando l'impasto non avrà raggiunto la densità desiderata. Cuocere in una padella così come i syrniki.
+
+#### Ingredienti
+
+- 2 tazze di farina
+- 1 uovo
+- 2 cucchiaini di olio di girasole
+- 2 cucchiaini di zucchero
+- 1/2 cucchiaini di bicarbonato di sodio
+- 1/4 cucchiaini di sale
+- kefir
