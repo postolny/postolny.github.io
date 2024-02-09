@@ -54,7 +54,7 @@ Mettere in una scodella farina, uovo, bicarbonato di sodio, sale, zucchero, olio
 
 ### Kaša di semolino
 
-Versare il latte e l'acqua in una pentola. Aggiungere lo zucchero. Quando il latte bolle, versare il semolino a pioggia molto lentamente e cuocere, mescolando di tanto in tanto per circa 10 minuti.
+Versare il latte e l'acqua in una pentola. Aggiungere lo zucchero. Quando il latte bolle, versare il semolino a pioggia molto lentamente, mescolando per evitare che si formino grumi e cuocere per circa 10 minuti.
 
 #### Ingredienti
 
