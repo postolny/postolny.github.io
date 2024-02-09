@@ -12,13 +12,13 @@ Vorrei dedicare questo post alla mia mamma, che mi ha insegnato a cucinare.
 
 ### Zuppa di piselli con ossa
 
-Sciacquare i piselli secchi più volte sotto l'acqua corrente. Mettere a bagno in acqua. Di quando in quando è bene cambiare l'acqua. Tagliare le ossa a pezzettoni. Bollire per 5 minuti e poi sciacquare in acqua fredda. Mettere le ossa in una grande pentola di smalto e lasciare cucinare per circa un'ora. Aggiungere i piselli e far cuocere per altro un'ora. Nel frattempo sbucciare la cipolla dalla pelle e tagliarla finemente. Si può anche prendere un spicchio d'aglio. Strofinare la carota pelata su una grattugia. Soffriggere cipolla, aglio e carota in una padella fino a doratura. Aggiungere alla zuppa per 15 prima di essere pronta. Aggiungere anche sale, prezzemolo, aneto, sedano a piacere.
+Sciacquare i piselli secchi più volte sotto l'acqua corrente. Mettere a bagno in acqua. Di quando in quando è bene cambiare l'acqua. Tagliare le ossa a pezzettoni. Bollire per 5 minuti e poi sciacquare in acqua fredda. Mettere le ossa in una grande pentola di smalto e lasciare cucinare per circa un'ora. Aggiungere i piselli e far cuocere per altro un'ora. Nel frattempo sbucciare la cipolla dalla pelle e tagliarla finemente. Si può anche prendere un spicchio d'aglio. Strofinare la carota pelata su una grattugia. Soffriggere cipolla, aglio e carota in una padella fino a doratura. Aggiungere alla zuppa per 15 minuti prima di essere pronta. Aggiungere anche sale, prezzemolo, aneto, sedano a piacere.
 
 #### Ingredienti
 
 - acqua
 - ossa di manzo o di maiale
-- 2 tazze di piselli secchi
+- 2 bicchieri di piselli secchi
 - olio di semi di girasole per friggere
 - un spicchio d'aglio
 - 1 cipolla grande
@@ -44,21 +44,21 @@ Mettere in una scodella farina, uovo, bicarbonato di sodio, sale, zucchero, olio
 
 #### Ingredienti
 
-- 2 tazze di farina
+- 2 bicchieri di farina
 - 1 uovo
 - 2 cucchiaini di olio di girasole
 - 2 cucchiaini di zucchero
-- 1/2 cucchiaini di bicarbonato di sodio
-- 1/4 cucchiaini di sale
+- 1/2 cucchiaino di bicarbonato di sodio
+- 1/4 di cucchiaino di sale
 - kefir
 
 ### Kaša di semolino
 
-Versare il latte e l'acqua in una pentola. Aggiungere lo zucchero. Quando il latte bolle, versare il semolino a pioggia molto lentamente, mescolando per evitare che si formino grumi e cuocere per circa 10 minuti.
+Versare il latte e l'acqua in una pentola. Aggiungere lo zucchero. Quando il latte bolle, versare il semolino a pioggia molto lentamente, mescolando per evitare che si formino grumi. Cuocere per circa 10 minuti.
 
 #### Ingredienti
 
-- 4 tazze di latte
-- 1 tazza d'acqua
+- 4 bicchieri di latte
+- 1 bicchiere d'acqua
 - 1 cucchiaio di zucchero
-- 3/4 di tazza di semolino
+- 3/4 di bicchiere di semolino
