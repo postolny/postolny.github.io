@@ -320,11 +320,14 @@ $(function() {
   $(".quiz-submit").on("click", function() {
     var correctAnswers = 0;
     var total = 0;
-    var dom = $('.domanda').size();
-    var inch = $("input:checked").size();
-    if (inch < dom) {
-      $(".score").text("Нужно ответить на все вопросы!");
-    } else {
+    var answersSelected = true;
+    $('.domanda').each(function() {
+      if ($(this).find('input:checked').length === 0) {
+        answersSelected = false;
+        return false;
+      }
+    });
+    if (answersSelected) {
       $(".domanda").each(function() {
         total++;
         $(".quiz-msg", this).remove();
@@ -341,7 +344,9 @@ $(function() {
           correctRadioLabel.addClass("correct");
         }
       });
-      $(".score").html("Правильных ответов <strong>" + correctAnswers + "</strong> из <strong>" + total + "</strong>");
+      $('.score').html("Правильных ответов <strong>" + correctAnswers + "</strong> из <strong>" + total + "</strong>");
+    } else {
+      $('.score').text("Нужно ответить на все вопросы!");
     }
   });
 
