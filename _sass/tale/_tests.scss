@@ -141,10 +141,11 @@
 .quiz-msg.incorrect {
   background: #ffe5cc;
 }
-label.correct {
+.domanda label {
+  padding:0.2em;
+}
+.domanda label.correct {
   background: #8dc692;
-  margin-left: -0.2em;
-  padding: 0.2em;
   color: #fff;
 }
 .risultati {
