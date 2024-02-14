@@ -71,6 +71,13 @@
   p {
     margin-bottom: 10px;
   }
+  label {
+		padding: 0.2em;
+	}
+	label.correct {
+		background: #8dc692;
+		color: #fff;
+	}
 }
 .radio {
   display: block;
@@ -140,13 +147,6 @@
 }
 .quiz-msg.incorrect {
   background: #ffe5cc;
-}
-.domanda label {
-  padding:0.2em;
-}
-.domanda label.correct {
-  background: #8dc692;
-  color: #fff;
 }
 .risultati {
   font-size: 14px;
