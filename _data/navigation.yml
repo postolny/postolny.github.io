@@ -18,8 +18,8 @@ nav:
         url: /tests/
       - secondo-livello: Proverbi
         url: /proverbi/
-      - secondo-livello: Venice Classic Radio
-        url: /venice-classic-radio-2/
+      - secondo-livello: Словарь муз. тер.
+        url: /termini-musicali/
         target: target="_blank"
   - primo-livello: О сайте
     url: /about/
