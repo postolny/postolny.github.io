@@ -312,13 +312,9 @@ footer {
   margin-top: 72px;
   color: #fff;
   background-color: LimeGreen;
-  text-align: center;
   border-radius: 3px;
-  padding: 5px;
   box-sizing: border-box;
   display: none;
-  font: 14px Times, Times New Roman, serif;
-  line-height: 12px;
   transform: rotate(-5deg);
   &::after {
     content: "";
@@ -329,6 +325,17 @@ footer {
     border-top: 11px solid #010000;
     transform: rotate(-28deg);
   }
+}
+#biglietto-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 14px Times, Times New Roman, serif;
+  line-height: 12px;
+  text-align: center;
+  padding:5px;
+  width: 100%;
 }
 .fbtn {
   cursor: pointer;
@@ -350,6 +357,24 @@ footer {
   text-align: center;
   margin-top: 25px;
   background: transparent !important;
+}
+#btn-container {
+	display: inline-flex;
+	align-items: center;
+}
+#icon-container {
+	margin-left: 10px;
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+#btn-icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	cursor: pointer;
 }
 .smartphone {
   display: none;
