@@ -5,25 +5,18 @@
   box-sizing: border-box;
 }
 #risultato {
-  display: inline-block;
-}
-.esatto {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 2px;
-  margin-right: 5px;
-  width: 16px;
-  height: 16px;
-  background: url(../assets/esatto.png);
-}
-.sbagliato {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 2px;
-  margin-right: 5px;
-  width: 16px;
-  height: 16px;
-  background: url(../assets/sbagliato.png);
+	display: inline-block;
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 20px;
+	}
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 3px;
+	}
 }
 #block-result {
   font-size: 14px;
@@ -72,7 +65,7 @@
     margin-bottom: 10px;
   }
   label {
-    padding: 0.2em;
+    padding: 0.2em  0;
   }
   label.correct {
     background: #8dc692;
@@ -257,10 +250,19 @@
   font-size: 14px;
 }
 
-#risultato-mese,
-#risultato-giorno {
-  display: inline-block;
-  vertical-align: middle;
+#risultato-mese, #risultato-giorno {
+	display: inline-block;
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 20px;
+	}
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 3px;
+	}
 }
 
 .evid {
