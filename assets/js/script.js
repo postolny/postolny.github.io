@@ -1,4 +1,10 @@
 $(function() {
+  var esattoIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="#03C03C" d="m14 21.414l-5-5.001L10.413 15L14 18.586L21.585 11L23 12.415z"/><path fill="#03C03C" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m0 26a12 12 0 1 1 12-12a12 12 0 0 1-12 12"/></svg>';
+  var sbagliatoIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="#FE2A41" d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12"/><path fill="#FE2A41" d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z"/></svg>';
+  var scriviQc = '<span>Scrivi qualcosa!</span>';
+  var esattoMsg = '<span>Esatto!</span>';
+  var sbagliatoMsg = '<span>Sbagliato!';
+  var rispostaGiustaMsg = '<span>Sbagliato! La risposta giusta è</span>';
   $("nav ul li a:not(:only-child)").click(function(e) {
     $(this).siblings(".nav-dropdown").toggle();
     $(".nav-dropdown").not($(this).siblings()).hide();
@@ -277,17 +283,14 @@ $(function() {
   $("#q_ris").click(function() {
     i = i + 1;
     if (!$.trim($("#an_num").val())) {
-      $("#risultato").html(
-        "<div class='sbagliato'></div>Вы ещё ничего не написали!"
-      );
-      $("#risultato").show();
+      $("#risultato").html(sbagliatoIcon + scriviQc).show();
       i = 0;
     } else {
       var answer = $("#an_num").val().toLowerCase().trim();
       if (answer == myArray[rand].an) {
-        $("#risultato").html("<div class='esatto'></div>Правильно!");
+        $("#risultato").html(esattoIcon + esattoMsg);
       } else {
-        $("#risultato").html("<div class='sbagliato'></div>Неправильно!");
+        $("#risultato").html(sbagliatoIcon + sbagliatoMsg);
         if (i == 3) {
           $("#suggerimento")
             .html("<div id=''>" + myArray[rand].an + "</div>")
@@ -548,24 +551,24 @@ $(function() {
   $('#btn-mese').click(function() {
     var search = $("#search-mese").val().toLowerCase().trim();
     if (!$.trim($("#search-mese").val())) {
-      $("#risultato-mese").html("<div class='sbagliato'></div>Scrivi qualcosa!");
+      $("#risultato-mese").html(sbagliatoIcon + scriviQc);
       $("#search-mese").focus();
     } else if (search == m[mese]) {
-      $("#risultato-mese").html("<div class='esatto'></div>Esatto!");
+      $("#risultato-mese").html(esattoIcon + esattoMsg);
     } else {
-      $("#risultato-mese").html("<div class='sbagliato'></div>Sbagliato! La risposta giusta è " + "<span class='evid'>" + m[mese] + "</span>");
+      $("#risultato-mese").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + m[mese] + '</span>');
       $("#search-mese").val("").focus();
     }
   });
   $('#btn-giorno').click(function() {
     var search = $("#search-giorno").val().toLowerCase().trim();
     if (!$.trim($("#search-giorno").val())) {
-      $("#risultato-giorno").html("<div class='sbagliato'></div>Scrivi qualcosa!");
+      $("#risultato-giorno").html(sbagliatoIcon + scriviQc);
       $("#search-giorno").focus();
     } else if (search == g[giorno]) {
-      $("#risultato-giorno").html("<div class='esatto'></div>Esatto!");
+      $("#risultato-giorno").html(esattoIcon + esattoMsg);
     } else {
-      $("#risultato-giorno").html("<div class='sbagliato'></div>Sbagliato! La risposta giusta è " + "<span class='evid'>" + g[giorno] + "</span>");
+      $("#risultato-giorno").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + g[giorno] + '</span>');
       $("#search-giorno").val("").focus();
     }
   });
