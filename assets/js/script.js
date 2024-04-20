@@ -573,6 +573,9 @@ $(function() {
     }
   });
 
+  var currentYear = new Date().getFullYear();
+  $('#currentYear').html("&copy; " + currentYear + " ");
+
   var Mwidth = 960;
   if ($(window).width() > Mwidth) {
     var headerHeight = $(".navigation").height();
