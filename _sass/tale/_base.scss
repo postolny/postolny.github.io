@@ -55,6 +55,10 @@ main {
     }
   }
 
+  ul {
+    padding: 0 30px;
+  }
+
   ul li {
     a {
       font-weight: 600;
@@ -88,6 +92,32 @@ main {
     &:hover,
     &:focus {
       color: $hover-color;
+    }
+  }
+  table td a {
+    font-weight: 600;
+    transition: color 0.2s linear;
+
+    &:hover,
+    &:focus {
+      color: $hover-color;
+    }
+  }
+}
+.footer-column {
+  ul {
+    margin: 0;
+    padding: 0 30px;
+  }
+  ul li {
+    a {
+      font-weight: 600;
+      transition: color 0.2s linear;
+
+      &:hover,
+      &:focus {
+        color: $hover-color;
+      }
     }
   }
 }
@@ -308,37 +338,6 @@ table {
   opacity: 0.5;
 }
 
-@media (max-width: 1050px) {
-  .input-search {
-    width: 100%;
-    float: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  table {
-    thead {
-      display: none;
-    }
-    tr {
-      display: block;
-      border: 1px solid #e8e9eb;
-      margin-bottom: 1rem;
-    }
-    td {
-      display: block;
-      border: none;
-      padding: 7px;
-      border: 1px solid #ccc;
-      &:before {
-        content: attr(aria-label);
-        float: left;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
 .center {
   text-align: center;
 }
@@ -469,9 +468,40 @@ a[href$=".zip"]:before {
 }
 
 @media screen and (max-width: 768px) {
+  table {
+    thead {
+      display: none;
+    }
+    tr {
+      display: block;
+      border: 1px solid #e8e9eb;
+      margin-bottom: 1rem;
+    }
+    td {
+      display: block;
+      border: none;
+      padding: 7px;
+      border: 1px solid #ccc;
+      &:before {
+        content: attr(aria-label);
+        float: left;
+        font-weight: bold;
+      }
+    }
+  }
   .overlay {
     .parent {
       padding: 0;
+    }
+  }
+  .footer-column {
+    ul {
+      padding: 0 20px;
+    }
+  }
+    main {
+    ul {
+      padding: 0 20px;
     }
   }
 }
