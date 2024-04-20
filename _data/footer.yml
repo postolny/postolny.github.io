@@ -8,8 +8,8 @@ footerList1:
       url: /tags/
 footerList2:
   - subfolderitems:
-    - page: Abbreviazioni
-      url: /abbreviazioni/
+    - page: Мои сочинения
+      url: /indice/
     - page: Тесты
       url: /tests/
     - page: Proverbi
