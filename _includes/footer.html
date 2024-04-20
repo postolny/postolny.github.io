@@ -4,7 +4,9 @@
       {% for item in site.data.footer.footerList1 %}
       <ul>
         {% for entry in item.subfolderitems %}
+        {% if entry.url != page.url %}
         <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
       {% endfor %}
@@ -13,7 +15,9 @@
       {% for item in site.data.footer.footerList2 %}
       <ul>
         {% for entry in item.subfolderitems %}
+        {% if entry.url != page.url %}
         <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
       {% endfor %}
@@ -22,7 +26,9 @@
       {% for item in site.data.footer.footerList3 %}
       <ul>
         {% for entry in item.subfolderitems %}
+        {% if entry.url != page.url %}
         <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
       {% endfor %}
