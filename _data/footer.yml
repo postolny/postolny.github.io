@@ -1,0 +1,24 @@
+footerList1:
+  - subfolderitems:
+    - page: Статьи
+      url: /
+    - page: A–Z
+      url: /categories/
+    - page: Теги
+      url: /tags/
+footerList2:
+  - subfolderitems:
+    - page: Abbreviazioni
+      url: /abbreviazioni/
+    - page: Тесты
+      url: /tests/
+    - page: Proverbi
+      url: /proverbi/
+footerList3:
+  - subfolderitems:
+    - page: Словарь музыкальных терминов
+      url: /termini-musicali/
+    - page: A memoria
+      url: /a-memoria/
+    - page: Venice Classic Radio
+      url: /venice-classic-radio-2/
