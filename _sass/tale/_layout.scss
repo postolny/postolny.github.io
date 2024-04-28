@@ -268,7 +268,7 @@ nav {
   font-family: $serif-secondary;
   background-color: $default-shade;
   color: $lightGray;
-  box-shadow: 0 -2px 3px rgb(0 0 0 / 40%);
+  box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 768px) {
