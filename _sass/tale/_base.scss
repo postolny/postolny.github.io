@@ -112,12 +112,12 @@ main {
   ul li {
     list-style-type: none;
     a {
-      font-weight: 600;
+      color: $lightGray;
       transition: color 0.2s linear;
 
       &:hover,
       &:focus {
-        color: $hover-color;
+        color: $white;
       }
     }
   }
@@ -145,7 +145,7 @@ main {
       left: 0;
       counter-increment: myCounter;
       content: counter(myCounter);
-      color: white;
+      color: $white;
       background: $default-shade;
       height: 30px;
       width: 30px;
@@ -445,7 +445,7 @@ a[href$=".zip"]:before {
   height: 100%;
   top: 0;
   display: none;
-  background: $charcoalgrey;
+  background: $charcoalGrey;
   cursor: pointer;
   z-index: 10000;
   .parent {

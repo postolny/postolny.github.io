@@ -141,7 +141,7 @@ nav {
       li {
         float: none;
         /* Фон li для исключения просвета, образовавшегося из-за отступа */
-        background: $charcoalgrey;
+        background: $charcoalGrey;
 
         a {
           padding: 15px;
@@ -243,7 +243,7 @@ nav {
   margin-left: -20px;
   margin-top: 30px;
   padding: 20px 10px;
-  background-color: $charcoalgrey;
+  background-color: $charcoalGrey;
 }
 
 .footer-inner {
