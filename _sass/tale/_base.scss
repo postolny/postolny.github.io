@@ -110,6 +110,7 @@ main {
     padding: 0 30px;
   }
   ul li {
+    list-style-type: none;
     a {
       font-weight: 600;
       transition: color 0.2s linear;
@@ -444,7 +445,7 @@ a[href$=".zip"]:before {
   height: 100%;
   top: 0;
   display: none;
-  background: #262626;
+  background: $charcoalgrey;
   cursor: pointer;
   z-index: 10000;
   .parent {
@@ -496,7 +497,7 @@ a[href$=".zip"]:before {
   }
   .footer-column {
     ul {
-      padding: 0 20px;
+      padding: 0 10px;
     }
   }
     main {
