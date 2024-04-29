@@ -561,11 +561,11 @@ $(function() {
     }
   });
   $('#btn-giorno').click(function() {
-    var search = $("#search-giorno").val().toLowerCase().trim();
+    var search = $("#search-giorno").val().replace("ì", "i").toLowerCase().trim();
     if (!$.trim($("#search-giorno").val())) {
       $("#risultato-giorno").html(sbagliatoIcon + scriviQc);
       $("#search-giorno").focus();
-    } else if (search == g[giorno]) {
+    } else if (search == g[giorno].replace("ì", "i")) {
       $("#risultato-giorno").html(esattoIcon + esattoMsg);
     } else {
       $("#risultato-giorno").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + g[giorno] + '</span>');
