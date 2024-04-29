@@ -548,28 +548,61 @@ $(function() {
   } else {
     $("#benvenuto").text("Buona sera!");
   }
-  $('#btn-mese').click(function() {
-    var search = $("#search-mese").val().toLowerCase().trim();
-    if (!$.trim($("#search-mese").val())) {
-      $("#risultato-mese").html(sbagliatoIcon + scriviQc);
-      $("#search-mese").focus();
-    } else if (search == m[mese]) {
-      $("#risultato-mese").html(esattoIcon + esattoMsg);
-    } else {
-      $("#risultato-mese").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + m[mese] + '</span>');
-      $("#search-mese").val("").focus();
+
+  var isResult1Correct = false;
+  var isResult2Correct = false;
+  $('.btn-mg').click(function() {
+    var buttonId = $(this).attr('id');
+    if (buttonId === 'btn-mese') {
+      var search = $("#search-mese").val().toLowerCase().trim();
+      if (!$.trim($("#search-mese").val())) {
+        $("#risultato-mese").html(sbagliatoIcon + scriviQc);
+        $("#search-mese").focus();
+      } else if (search == m[mese]) {
+        isResult1Correct = true;
+        $("#risultato-mese").html(esattoIcon + esattoMsg);
+        $("#search-mese").blur();
+
+        if (!isResult2Correct) {
+          $("#search-giorno").focus(); // Передаем фокус на поле #search-giorno, только если результат для поля #search-mese неверен
+        }
+      } else {
+        $("#risultato-mese").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + m[mese] + '</span>');
+        $("#search-mese").val("").focus();
+      }
+      console.log("Нажата кнопка #btn-mese");
+    } else if (buttonId === 'btn-giorno') {
+      var search = $("#search-giorno").val().replace("ì", "i").toLowerCase().trim();
+
+      console.log('Значение поля #search-giorno', search);
+
+      if (!$.trim($("#search-giorno").val())) {
+        $("#risultato-giorno").html(sbagliatoIcon + scriviQc);
+        $("#search-giorno").focus();
+      } else if (search == g[giorno].replace("ì", "i")) {
+        isResult2Correct = true;
+        $("#risultato-giorno").html(esattoIcon + esattoMsg);
+
+        $("#search-giorno").blur();
+        if (!isResult1Correct) {
+          $("#search-mese").focus(); // Передаем фокус на поле #search-mese, только если результат для поля #search-giorno неверен
+        }
+      } else {
+        $("#risultato-giorno").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + g[giorno] + '</span>');
+        $("#search-giorno").val("").focus();
+      }
+      console.log("Нажата кнопка #btn-giorno");
     }
   });
-  $('#btn-giorno').click(function() {
-    var search = $("#search-giorno").val().replace("ì", "i").toLowerCase().trim();
-    if (!$.trim($("#search-giorno").val())) {
-      $("#risultato-giorno").html(sbagliatoIcon + scriviQc);
-      $("#search-giorno").focus();
-    } else if (search == g[giorno].replace("ì", "i")) {
-      $("#risultato-giorno").html(esattoIcon + esattoMsg);
-    } else {
-      $("#risultato-giorno").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + g[giorno] + '</span>');
-      $("#search-giorno").val("").focus();
+
+  $('#search-mese, #search-giorno').keydown(function(event) {
+    if (event.keyCode === 13) {
+      var inputId = $(this).attr('id');
+      if (inputId === 'search-mese') {
+        $('#btn-mese').click();
+      } else if (inputId === 'search-giorno') {
+        $('#btn-giorno').click();
+      }
     }
   });
 
