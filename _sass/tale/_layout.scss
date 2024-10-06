@@ -168,6 +168,34 @@ nav {
   }
 }
 
+.nav-sublink {
+  display: flex;
+  align-items: center;
+  .nav-icon {
+    margin-right: 8px;
+  }
+}
+.nav-icon {
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 0.25s ease-in-out;
+  }
+}
+.nav-subitem {
+  &:hover {
+    .nav-icon {
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $breakpoint) {
   .nav-list {
     display: block !important;
@@ -257,6 +285,34 @@ nav {
 .footer-column {
   flex: 1;
   margin-right: 20px;
+  a {
+    display: flex;
+    align-items: center;
+    width: max-content;
+  }
+  ul {
+    li {
+      a {
+        &:hover {
+          .footer-icon {
+            svg {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer-icon {
+  svg {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin-right: 5px;
+    fill: #ff0000;
+    transition: fill 0.2s linear;
+  }
 }
 
 .footer-copyright {
