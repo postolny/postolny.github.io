@@ -1,0 +1,42 @@
+.catalogue {
+  &-item {
+    color: $default-color;
+    display: block;
+    padding: 30px 0 40px 0;
+    background: url(../assets/divider.png) repeat-x center bottom;
+
+    &:last-child {
+      background: none;
+    }
+  }
+
+  &-pinned {
+    color: $default-tint;
+    font-family: $serif-secondary;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    background: url(../assets/pinned.png) no-repeat center left;
+    padding-left: 20px;
+  }
+
+  &-time {
+    color: $default-tint;
+    font-family: $serif-secondary;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+  }
+
+  &-title {
+    color: $default-shade;
+    display: block;
+    font-family: $sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    a {
+      color: $default-shade;
+      line-height: 1.2;
+    }
+  }
+}
