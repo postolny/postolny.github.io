@@ -7,15 +7,33 @@
       <div class="nav-mobile"><a id="nav-toggle" href="javascript: void(0);"><span></span></a></div>
       <ul class="nav-list">
         {% for item in site.data.navigation.nav %}
-        <li><a href="{{ item.url }}">{{ item.primo-livello }}</a>
-          {% if item.items %}
-          <ul class="nav-dropdown">
-            {% for subitem in item.items %}
-            <li><a href="{{ subitem.url }}" {% if subitem.target == 'target="_blank"' %}{{ subitem.target }}{% endif %}>{{ subitem.secondo-livello }}</a></li>
-            {% endfor %}
-          </ul>
+          {% if item.url != page.url %}
+            <li class="nav-item">
+              <a href="{{ item.url }}" class="nav-link">
+                {% if item.icon %}
+                  <span class="nav-icon">{{ item.icon | safe }}</span>
+                {% endif %}
+                {{ item['primo-livello'] }}
+              </a>
+      
+              {% if item.items %}
+                <ul class="nav-dropdown">
+                  {% for subitem in item.items %}
+                    {% if subitem.url != page.url %}
+                      <li class="nav-subitem">
+                        <a href="{{ subitem.url }}" class="nav-sublink">
+                          {% if subitem.icon %}
+                            <span class="nav-icon">{{ subitem.icon | safe }}</span>
+                          {% endif %}
+                          {{ subitem['secondo-livello'] }}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
           {% endif %}
-        </li>
         {% endfor %}
       </ul>
     </nav>
