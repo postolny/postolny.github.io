@@ -6,7 +6,7 @@ GEM
       jekyll-feed (~> 0.16.0)
       jekyll-paginate (~> 1.1)
       jekyll-seo-tag (~> 2.5)
-    jekyll-feed (0.10.1)
+    jekyll-feed (0.16.0)
     jekyll-paginate (1.1.0)
     jekyll-seo-tag (2.7.1)
     bundler (2.2.22)
