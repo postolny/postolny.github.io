@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Jekyll dependencies
         run: |
-          bundle install  # Теперь должен работать с установленной версией Bundler
+          bundle install
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
