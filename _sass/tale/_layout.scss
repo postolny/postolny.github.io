@@ -171,11 +171,9 @@ nav {
 .nav-sublink {
   display: flex;
   align-items: center;
-  .nav-icon {
-    margin-right: 8px;
-  }
 }
 .nav-icon {
+  margin-right: 5px;
   svg {
     width: 20px;
     height: 20px;
