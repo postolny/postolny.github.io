@@ -16,12 +16,14 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.2'
+          ruby-version: '3.1'
+
+      - name: Install Bundler
+        run: gem install bundler -v 2.3.27
 
       - name: Install Jekyll dependencies
         run: |
-          gem install bundler
-          bundle install
+          bundle install  # Теперь должен работать с установленной версией Bundler
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
