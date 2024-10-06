@@ -24,20 +24,22 @@
     </div>
     <div class="footer-column">
       {% for item in site.data.footer.footerList3 %}
-      <ul>
-        {% for entry in item.subfolderitems %}
-        {% if entry.url != page.url %}
-        <li>
-            <a href="{{ entry.url }}">
-              {% if entry.icon %}
-                <span class="footer-icon">{{ entry.icon | safe }}</span>
-              {% endif %}
-              {{ entry.page }}
-            </a>
-          </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
+        <ul>
+          {% for entry in item.subfolderitems %}
+            {% if entry.url != page.url %}
+              <li>
+                <a href="{{ entry.url }}" 
+                   {% if entry.target %}target="{{ entry.target }}"{% endif %}
+                   {% if entry.rel %}rel="{{ entry.rel }}"{% endif %}>
+                  {% if entry.icon %}
+                    <span class="footer-icon">{{ entry.icon | safe }}</span>
+                  {% endif %}
+                  {{ entry.page }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
       {% endfor %}
     </div>
   </div>

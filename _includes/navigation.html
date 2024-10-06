@@ -9,7 +9,9 @@
         {% for item in site.data.navigation.nav %}
           {% if item.url != page.url %}
             <li class="nav-item">
-              <a href="{{ item.url }}" class="nav-link">
+              <a href="{{ item.url }}" class="nav-link"
+                 {% if item.target %}target="{{ item.target }}"{% endif %}
+                 {% if item.rel %}rel="{{ item.rel }}"{% endif %}>
                 {% if item.icon %}
                   <span class="nav-icon">{{ item.icon | safe }}</span>
                 {% endif %}
@@ -21,7 +23,9 @@
                   {% for subitem in item.items %}
                     {% if subitem.url != page.url %}
                       <li class="nav-subitem">
-                        <a href="{{ subitem.url }}" class="nav-sublink">
+                        <a href="{{ subitem.url }}" class="nav-sublink"
+                           {% if subitem.target %}target="{{ subitem.target }}"{% endif %}
+                           {% if subitem.rel %}rel="{{ subitem.rel }}"{% endif %}>
                           {% if subitem.icon %}
                             <span class="nav-icon">{{ subitem.icon | safe }}</span>
                           {% endif %}
@@ -35,7 +39,7 @@
             </li>
           {% endif %}
         {% endfor %}
-      </ul>
+      </ul>      
     </nav>
   </div>
 </section>
