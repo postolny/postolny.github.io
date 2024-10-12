@@ -109,7 +109,7 @@ $(function() {
 
   $('.post a:not([href^="#"').on("click", function() {
     var href = $(this).attr("href");
-    window.open(href, "_blank").focus();
+    window.open(href, "_blank", "noopener,noreferrer").focus();
     return false;
   });
 
