@@ -78,7 +78,7 @@ tags: Музыка
 
 ![gimp-frontespizio1]({{ site.baseurl }}/img/frontespizio/gimp-frontespizio1.png){: .lightbox}
 
-Поочерёжно устанавливаем направляющие по горизонтали и вертикали с расположением 50%:
+Поочерёдно устанавливаем направляющие по горизонтали и вертикали с расположением 50%:
 
 ![gimp-frontespizio2]({{ site.baseurl }}/img/frontespizio/gimp-frontespizio2.png)
 
