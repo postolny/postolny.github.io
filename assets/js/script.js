@@ -107,10 +107,12 @@ $(function() {
     return false;
   });
 
-  $('.post a:not([href^="#"').on("click", function() {
+  $('.post a:not([href^="#"])').on("click", function(e) { 
+    e.preventDefault();
+    e.stopPropagation();
+
     var href = $(this).attr("href");
-    window.open(href, "_blank").focus();
-    return false;
+    window.open(href, "_blank", "noopener,noreferrer");
   });
 
   $("#search").keyup(function() {
