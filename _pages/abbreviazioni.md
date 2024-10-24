@@ -9,7 +9,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 
 <input class="input-search" id="search" type="text" placeholder="Найти...">
 
-## Abbreviazioni
+### Abbreviazioni
 
 {:.search}
 |Abbreviazione|Italiano|Русский|
@@ -120,7 +120,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 |v.tr.|verbo transitivo|переходный (транзитивный) глагол|
 |valore intens.|valore intensivo|интенсивное значение|
 
-## Аббревиатуры
+### Аббревиатуры
 
 {:.search}
 |Аббревиатура|Значение|
@@ -143,7 +143,7 @@ In questa pagina vi metterò una lista delle abbreviazioni che potete trovare ne
 
 Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 
-## Dizionari
+### Dizionari
 
 * [Vocabolario ed Enciclopedie Treccani](https://www.treccani.it/)
 * [Grande Dizionario della Lingua Italiana (Battaglia)](https://www.gdli.it/)
@@ -157,6 +157,7 @@ Qui sotto ho fatto anche un elenco dei dizionari e vocabolari italiani online.
 * [Corriere della Sera](https://dizionari.corriere.it/)
 * [Grande Dizionario Italiano di Gabrielli Aldo](https://www.grandidizionari.it/dizionario_italiano.aspx)
 * [DIPI Online – Dizionario di Pronuncia Italiana](https://www.dipionline.it/)
+* [DIZIONATORE.IT – Il tuo compagno di dizione. Un aiuto per leggere con una corretta pronuncia.](https://www.dizionatore.it/)
 * [Tommaseo-Bellini](https://www.tommaseobellini.it/#/)
 * [Glosbe](https://ru.glosbe.com/it/ru)
 * [Dialetti d'Italia](https://www.dialettando.com/)

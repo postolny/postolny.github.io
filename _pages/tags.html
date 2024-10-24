@@ -5,7 +5,7 @@ permalink: /tags/
 ---
 <div class="tags">
   <div class="tags-header">
-    <h2 class="tags-header-title">{{ page.title }}</h2>
+    <h1 class="tags-header-title">{{ page.title }}</h1>
     <div class="tags-header-line"></div>
   </div>
   <div class="tags-clouds">
@@ -22,7 +22,7 @@ permalink: /tags/
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
     {% assign sorted_posts = tag[1] | sort: 'title' %}
-    <h2 class="tags-list-title" id="{{tag[0] | downcase | slugify }}">{{tag[0] | replace:'-', ' ' | capitalize }} ({{ tag | last | size }})</h2>
+    <h3 class="tags-list-title" id="{{tag[0] | downcase | slugify }}">{{tag[0] | replace:'-', ' ' | capitalize }} ({{ tag | last | size }})</h3>
     <ul class="tags-list">
       {% for post in sorted_posts %}
       <li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{ post.title }}</a>

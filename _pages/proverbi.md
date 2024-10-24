@@ -7,7 +7,7 @@ author: "И. Постольный"
 permalink: /proverbi/
 ---
 
-## A
+### A
 
 - A bue vecchio, campanaccio d'oro. Старому быку – золотой колокольчик (Старому коню – новое седло (золотую уздечку)).
 - A buon intenditor, poche parole. Хорошему знатоку – мало слов (Умный смыслит с полуслова).
@@ -20,7 +20,7 @@ permalink: /proverbi/
 - Aiutati che il Dio ti aiuta. Помоги себе, чтобы Бог помог тебе (Под лежачий камень вода не течёт).
 - Al cuor non si comanda. Сердцу не прикажешь.
 
-## B
+### B
 
 - Batti il ferro finché/quando è caldo. Куй железо пока горячо.
 - Bisogna cuocere il pane sinché il forno è caldo. Хлеб нужно выпекать, пока печь горячая (Куй железо пока горячо).
@@ -31,7 +31,7 @@ permalink: /proverbi/
 - Buon grano fa buon pane. Хорошее зерно делат хороший хлеб (Хорошее дерево даёт хорошие плоды).
 - Buon tempo e mal tempo non dura tutto il tempo. Хорошие времена и плохие времена не длятся вечно (Удача и ветер переменчивы как дети).
 
-## C
+### C
 
 - Cessato il guadagno, cessata l'amicizia. Кончена выгода (прибыль), кончена дружба (Лопнула дружба, как выгода пропала).
 - Che sarà, sarà. Что будет, то будет (Чему быть, того не миновать).
@@ -64,11 +64,11 @@ permalink: /proverbi/
 - Cosa fatta con forza non vale una scorza. Что сделано с силой, не стоит даже кожуры (Насильно мил не будешь). 
 - Cosa rara, cosa cara. Редкая вещь – дорогая вещь (Что редко, то ценно).
 
-## D
+### D
 
 - Dove son carogne son corvi. Где есть падаль, есть вороньё (Было бы болото, а черти найдутся).
 
-## F
+### F
 
 - [fare di ogni erba un fascio](https://dizionario.internazionale.it/parola/fare-di-ogni-erba-un-fascio)) – делать всю траву одним пучком (валить всё в кучу).
 - Fare un nuovo passo, dire una nuova parola, è ciò che la gente teme di più ([Fëdor Dostoevskij](https://it.wikipedia.org/wiki/Fëdor_Dostoevskij)). Люди больше всего боятся сделать новый шаг, сказать новое слово ([Фёдор Достоевский](https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович)).
@@ -76,7 +76,7 @@ permalink: /proverbi/
 - Fino alla bara sempre si impara (Fin alla bara sempre se n'impara). Учаться до гроба (Век живи, век учись).
 - Fra moglie e marito no ci metter ditto. Между женой и мужем не встревай и пальцем (Муж и жена – одна сатана).
 
-## I
+### I
 
 - Il cuore non invecchia mai. Сердце не стареет.
 - il cuore non sbaglia. Сердце не ошибается (Сердце не обманешь).
@@ -95,8 +95,9 @@ permalink: /proverbi/
 - Il ventre pieno fa la testa vuota. Набитое брюхо делает голову пустой.
 - Insegnando s'impara. Обучая учатся.
 
-## L
+### L
 
+- L'abito non fa il monaco. Не ряса делает монаха.
 - L'abitudine è quasi una seconda natura ([Aristotele](https://it.wikipedia.org/wiki/Aristotele)). Привычка – почти вторая натура ([Аристотель](https://ru.wikipedia.org/wiki/Аристотель)).
 - La belezza è effimera. Красота недолговечна.
 - La botte dà del vino che ha (La botte dà il vino che ha; Ogni botte dà il vino che ha). Бочка даёт то вино, которое имеет (Выше головы не прыгнешь).
@@ -109,22 +110,24 @@ permalink: /proverbi/
 - La speranza è la ricchezza dei poveri. Надежда – богатство бедных.
 - La speranza è l'ultima a morire. Надежда умирает последней.
 - La struttura alare del calabrone, in relazione al suo peso, non è adatta al volo, ma lui non lo sa e vola lo stesso ([Albert Einstein](https://it.wikipedia.org/wiki/Albert_Einstein)). Строение крыла шмеля, относительно его веса, не пригодна для полета, но он этого не знает и всё равно летает ([Альберт Эйнштейн](https://ru.wikipedia.org/wiki/Эйнштейн,_Альберт)).
+- La verità è nel fondo di un pozzo (La verità è in fondo al pozzo; La verità è in un pozzo). Правда – на дне колодца (Бог правду видит, да не скоро скажет).
 - Le ore del mattino hanno l'oro in bocca. У утренних часов – золото во рту (Утро вечера мудренее).
 - L'onestà tra i ricchi è un'utopia. Честность среди богатых – это утопия.
 - Lontano dagli occhi, lontano dal cuore[^4]. Далеко от глаз, далеко от сердца (С глаз долой, из сердца вон).
 - L'unica vera saggezza è sapere di non sapere nulla ([Socrate](https://it.wikipedia.org/wiki/Socrate)). Единственная истинная мудрость – знать, что ты ничего не знаешь ([Сократ](https://ru.wikipedia.org/wiki/Сократ)).
 - L'unione fa la forza. В единенении сила.
 
-## M
+### M
 
 - Mal non fare, paura non avere. Зла не делать, страха не иметь (Как аукнется, так и откликнется).
 - Meglio tardi che mai. Лучше поздно, чем никогда.
+- Mente sana in corpo sano (Mens sana in corpore sano). В здоровом теле здоровый дух.
 - Misura sette volte e taglia una. Семь раз отмерь, один (раз) отрежь.
 - Molti studiano, ma pochi imparano. Многие учатся, да не многие научаются.
 - Morì il povero nessuno lo sentì, morì il ricco il corno sonava. Умер бедный – никто о том не слышал, умер богатый – рог играл (Богаты – так здравствуйте, а убоги – так прощайте).
 - Morto un papa se ne fa un altro. Умирает папа (Папа римский), другой становится папой (Незаменимых нет).
 
-## N
+### N
 
 - Nel paese dei ciechi un guercio è re. Среди слепых и кривой король.
 - Nessun uomo senza diffeti. Не бывает человека без недостатков (Нет Ивана без изъяна).
@@ -143,7 +146,7 @@ permalink: /proverbi/
 - Non tutto è vero quello che sembra. Не всё правда, что кажется.
 - Non tutto il male viene per nuocere. Не всякое зло приходит, чтобы навредить (Нет худа без добра).
 
-## O
+### O
 
 - Occhio non vede, cuore non duole. Глаз не видит, сердце не болит.
 - Oggi a me, domani a te. Сегодня мне, завтра тебе.
@@ -155,7 +158,7 @@ permalink: /proverbi/
 - Ognuno ha i suoi gusti. Каждый имеет свои вкусы (О вкусах не спорят).
 - Ognuno ha/porta la sua croce. Каждый имеет/несёт свой крест.
 
-## P
+### P
 
 - Pancia piena porta gioia. Полное брюхо приносит радость (Серёдочка сыта и кончики играют).
 - Pari con pari ben sta e dura. Равному с равным живёт хорошо и долго (Каждый ищет себе подобного).
@@ -164,7 +167,7 @@ permalink: /proverbi/
 - Passo a passo/Pian piano si va lontano. Шаг за шагом/Потихоньку уходят далеко (Тише едешь – дальше будешь).
 - [prendere due piccioni con una fava](https://dizionario.internazionale.it/parola/prendere-due-piccioni-con-una-fava) – поймать двух голубей одним бобом (убить двух зайцев одним выстрелом).
 
-## Q
+### Q
 
 - Quale madre, tale figlia. Какова мать, такова и дочь.
 - Quando ami qualcuno, lo ami così com’è e non come vorresti che fosse ([Lev Tolstoj](https://it.wikipedia.org/wiki/Lev_Tolstoj)). Когда вы любите кого-то, вы любите их такими, какие они есть, а не такими, какими вы хотели бы, чтобы они были ([Лев Николаевич Толстой](https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич)).
@@ -172,13 +175,13 @@ permalink: /proverbi/
 - Quel che si fa con piacere, non è fatica. То, что делается с удовольствием, не труд (Охота пуще неволи).
 - Quel che ha da essere, sarà. То, что должно быть, будет (Чему быть, того не миновать).
 
-## R
+### R
 
 - Ride bene chi ride l'ultimo. Хорошо смеётся тот, кто смеётся последним.
 - Risponde il frate come l'abate cante. Отвечает (вторит) монах как абат поёт (Каков поп, таков и приход).
 - Roma non fu fatta/Il mondo non fu fatto in un giorno. Рим/Мир не сделали (создавался, строился) за день (Не сразу Москва строилась).
 
-## S
+### S
 
 - Sbagliando s'impara. Ошибаясь учатся (Обжёгшись на молоке, будешь дуть на воду).
 - So una cosa sola, di non saper nulla (Io so una sola cosa, di nulla sapere; Una sola cosa so: di non sapere) ([Socrate](https://it.wikipedia.org/wiki/Socrate)). Я знаю только то, что ничего не знаю ([Сократ](https://ru.wikipedia.org/wiki/Сократ)).
@@ -186,11 +189,11 @@ permalink: /proverbi/
 - Studia da giovane per sapere da vecchio. Учись в молодости, чтобы знать в старости (Учись смолоду – пригодится в старости; Учись смолоду, под старость не будешь знать голоду).
 - Studiare rende dotti, ma non savi. Учёба делает человека образованным, но не мудрым.
 
-## T
+### T
 
 - [Tutto è bene quel che finisce bene](https://it.wikipedia.org/wiki/Tutto_è_bene_quel_che_finisce_bene) ([William Shakespeare](https://it.wikipedia.org/wiki/William_Shakespeare)). Всё хорошо, что хорошо кончается ([Уильям Шекспир](https://ru.wikipedia.org/wiki/Шекспир,_Уильям)).
 
-## U
+### U
 
 - Una mano lava l'altra (Una mano lava l'altra e tutt'e due lavano il viso; Una mano lava l'altra ed entrambe lavano il viso). Рука руку моет. 
 - Una mela al giorno toglie (leva) il medico di torno. Одно яблоко в день – и доктора не нужны (В день по яблоку съедать – век болезней не видать).
@@ -198,7 +201,7 @@ permalink: /proverbi/
 - Un re non letterato è un asino incoronato. Необразованный король – это коронованный осёл.
 - Uomo avvisato, mezzo salvato. Предупреждённый человек – наполовину спасённый (Одним глазом спит, другим видит; [предупреждён – значит вооружён](https://ru.wikipedia.org/wiki/Предупреждён_—_значит_вооружён)).
 
-## V
+### V
 
 - [vendere la pelle dell'orso prima di averlo ammazzato](https://dizionario.internazionale.it/parola/vendere-la-pelle-dellorso-prima-di-averlo-ammazzato) – продавать шкуру медведя, прежде чем убить его (делить шкуру неубитого медведя).
 
