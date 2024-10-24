@@ -1,5 +1,5 @@
 <div class="tags">
-    <h2 class="tags-list-title">Все статьи с тегом {{ include.tagName }}</h2>
+    <h1 class="tags-list-title">Все статьи с тегом {{ include.tagName }}</h1>
     <ul class="tags-list">
         {% for post in site.tags[include.tagName] %}
         <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
