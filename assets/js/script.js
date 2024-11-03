@@ -98,7 +98,7 @@ $(function() {
     return false;
   });
 
-  $(".tags a, .toc a").on("click", function() {
+  $(".toc a").on("click", function() {
     $("html, body").animate({
         scrollTop: $($.attr(this, "href")).offset().top,
       },
@@ -107,13 +107,28 @@ $(function() {
     return false;
   });
 
-  $('.post a:not([href^="#"])').on("click", function(e) { 
-    e.preventDefault();
-    e.stopPropagation();
+  function scrollToTag(tagId) {
+    const target = $(tagId);
+    if (target.length) {
+      $("html, body").animate(
+        {
+          scrollTop: target.offset().top,
+        },
+        "fast"
+      );
+    }
+  }
 
-    var href = $(this).attr("href");
-    window.open(href, "_blank", "noopener,noreferrer");
+  // Прокрутка при клике на ссылку на странице тегов
+  $(".tags a").on("click", function () {
+    scrollToTag($.attr(this, "href"));
+    return false;
   });
+
+  // Прокрутка при загрузке страницы, если в URL есть хэш
+  if (window.location.hash) {
+    scrollToTag(window.location.hash);
+  }
 
   $("#search").keyup(function() {
     var value = this.value.toLowerCase().trim();
