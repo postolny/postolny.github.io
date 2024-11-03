@@ -108,25 +108,35 @@ $(function() {
   });
 
   function scrollToTag(tagId) {
-    const target = $(tagId);
+    const decodedTagId = decodeURIComponent(tagId); // Декодируем хэш
+    console.log("Прокручиваем к тегу:", decodedTagId);
+
+    const target = $(decodedTagId);
+
     if (target.length) {
-      $("html, body").animate(
-        {
+      console.log("Элемент найден:", target);
+
+      $("html, body").animate({
           scrollTop: target.offset().top,
         },
         "fast"
       );
+    } else {
+      console.log("Элемент не найден для:", decodedTagId);
     }
   }
 
-  // Прокрутка при клике на ссылку на странице тегов
-  $(".tags a").on("click", function () {
-    scrollToTag($.attr(this, "href"));
+  // Прокрутка при клике на ссылку внутри страницы тегов
+  $(".tags a").on("click", function() {
+    const href = $.attr(this, "href");
+    console.log("Клик по ссылке:", href);
+    scrollToTag(href);
     return false;
   });
 
   // Прокрутка при загрузке страницы, если в URL есть хэш
   if (window.location.hash) {
+    console.log("Хэш при загрузке страницы:", window.location.hash);
     scrollToTag(window.location.hash);
   }
 
