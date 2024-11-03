@@ -121,6 +121,8 @@ $(function() {
         },
         "fast"
       );
+      history.replaceState(null, null, decodedTagId); // Меняем хэш
+      // history.pushState(null, null, decodedTagId);
     } else {
       console.log("Элемент не найден для:", decodedTagId);
     }
