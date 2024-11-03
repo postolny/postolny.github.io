@@ -22,12 +22,36 @@ layout: default
       <span>{{ day }}/{{ month }}/{{ year }}</span>
     </time>
     {% endif %}
+
+    {% if page.tags %}
+    <br>
+    <div class="tags-container" data-nosnippet>
+      <div>Теги:</div>
+      <div class="tags-clouds">
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+   {% endif %}
   </div>
 
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
 
   {{ content }}
+
+  {% if page.tags %}
+    <br>
+    <div class="tags-container" data-nosnippet>
+      <div class="tags-title">Теги:</div>
+      <div class="tags-clouds">
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+   {% endif %}
 </div>
 
 {% if page.comments %}
