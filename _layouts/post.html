@@ -5,10 +5,11 @@ layout: default
 <div class="post">
   <div class="post-info">
     <span>Автор</span>
+    
     {% if page.author %}
-        {{ page.author }}
+      {{ page.author }}
     {% else %}
-        {{ site.author.name }}
+      {{ site.author.name }}
     {% endif %}
 
     {% if page.date %}
@@ -23,7 +24,7 @@ layout: default
     </time>
     {% endif %}
 
-    {% if page.tags %}
+    {% if page.tags and page.tags.size > 0 %}
     <br>
     <div class="tags-container" data-nosnippet>
       <div>Теги:</div>
@@ -33,7 +34,7 @@ layout: default
         {% endfor %}
       </div>
     </div>
-   {% endif %}
+    {% endif %}
   </div>
 
   <h1 class="post-title">{{ page.title }}</h1>
@@ -41,7 +42,7 @@ layout: default
 
   {{ content }}
 
-  {% if page.tags %}
+  {% if page.tags and page.tags.size > 0 %}
     <div class="tags-container" data-nosnippet>
       <div class="tags-title">Теги:</div>
       <div class="tags-clouds">
@@ -50,7 +51,7 @@ layout: default
         {% endfor %}
       </div>
     </div>
-   {% endif %}
+  {% endif %}
 </div>
 
 {% if page.comments %}
