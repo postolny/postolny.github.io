@@ -25,9 +25,14 @@ layout: default
     {% endif %}
 
     {% if page.tags and page.tags.size > 0 %}
+    {% assign tag_count = page.tags | size %}
     <br>
-    <div class="tags-container" data-nosnippet>
-      <div>Теги:</div>
+    <div class="tags-container">
+      {% if tag_count == 1 %}
+        <div>Тег:</div>
+      {% else %}
+        <div>Теги:</div>
+      {% endif %}
       <div class="tags-clouds">
         {% for tag in page.tags %}
           <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
@@ -43,14 +48,21 @@ layout: default
   {{ content }}
 
   {% if page.tags and page.tags.size > 0 %}
-    <div class="tags-container" data-nosnippet>
-      <div class="tags-title">Теги:</div>
-      <div class="tags-clouds">
-        {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
-        {% endfor %}
-      </div>
+  {% assign tag_count = page.tags | size %}
+  <div class="tags-container" data-nosnippet>
+    <div class="tags-title">
+      {% if tag_count == 1 %}
+        Тег:
+      {% else %}
+        Теги:
+      {% endif %}
     </div>
+    <div class="tags-clouds">
+      {% for tag in page.tags %}
+        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
+    </div>
+  </div>
   {% endif %}
 </div>
 
