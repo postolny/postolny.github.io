@@ -84,19 +84,6 @@ $(function() {
     "#ю": "ю_",
     "#я": "я_",
   };
-  $(".categories a").click(function() {
-    var lettereIndex = $(this).attr("href");
-    var snd = new Audio("/audio/" + lettere[lettereIndex] + ".mp3");
-    snd.play();
-    $("html, body")
-      .delay(700)
-      .animate({
-          scrollTop: $($.attr(this, "href")).offset().top,
-        },
-        "fast"
-      );
-    return false;
-  });
 
   function scrollToTag(tagId) {
     const decodedTagId = decodeURIComponent(tagId); // Декодируем хэш
@@ -119,18 +106,21 @@ $(function() {
     }
   }
 
-  // Прокрутка при клике на ссылку внутри страницы тегов
-  $(".tags a").on("click", function() {
+  // Прокрутка при клике на ссылку на странице тегов и в TOC
+  $(".tags a, .toc a").on("click", function() {
     const href = $.attr(this, "href");
-    console.log("Клик по ссылке:", href);
-    scrollToTag(href);
+    console.log("Клик по ссылке в тегах и TOC:", href);
+    scrollToTag(href); // Прокрутка и добавление хэша
     return false;
   });
 
-  // Обработка кликов в TOC для прокрутки и добавления хэша
-  $(".toc a").on("click", function() {
+  // Прокрутка при клике на ссылку на странице категорий
+  $(".categories a").on("click", function() {
+    var lettereIndex = $(this).attr("href");
+    var snd = new Audio("/audio/" + lettere[lettereIndex] + ".mp3");
+    snd.play();
     const href = $.attr(this, "href");
-    console.log("Клик по TOC-ссылке:", href);
+    console.log("Клик по ссылке в категориях:", href);
     scrollToTag(href); // Прокрутка и добавление хэша
     return false;
   });
