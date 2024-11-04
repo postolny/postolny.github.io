@@ -98,15 +98,6 @@ $(function() {
     return false;
   });
 
-  $(".toc a").on("click", function() {
-    $("html, body").animate({
-        scrollTop: $($.attr(this, "href")).offset().top,
-      },
-      "fast"
-    );
-    return false;
-  });
-
   function scrollToTag(tagId) {
     const decodedTagId = decodeURIComponent(tagId); // Декодируем хэш
     console.log("Прокручиваем к тегу:", decodedTagId);
@@ -133,6 +124,14 @@ $(function() {
     const href = $.attr(this, "href");
     console.log("Клик по ссылке:", href);
     scrollToTag(href);
+    return false;
+  });
+
+  // Обработка кликов в TOC для прокрутки и добавления хэша
+  $(".toc a").on("click", function() {
+    const href = $.attr(this, "href");
+    console.log("Клик по TOC-ссылке:", href);
+    scrollToTag(href); // Прокрутка и добавление хэша
     return false;
   });
 
