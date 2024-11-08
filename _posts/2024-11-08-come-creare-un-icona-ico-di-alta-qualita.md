@@ -24,7 +24,7 @@ tags: [Software, Web]
 
 Идём дальше. Для эксперимента я возьму иконку с сайта онлайн-переводчика DeepL, которая имет следующий адрес:
 
-`https://static.deepl.com/img/favicon/favicon_96.png`
+[https://static.deepl.com/img/favicon/favicon_96.png](https://static.deepl.com/img/favicon/favicon_96.png){:target="_blank" rel="noopener noreferrer"}
 
 Эту иконку я буду конвертировать в многослойный ICO с помощью программы ImageMagick.
 
@@ -37,7 +37,7 @@ tags: [Software, Web]
 
 Скачайте иконку по вышеуказанному адресу на рабочий стол. В командной строке введите следующие команды (не забудьте предварительно заменить имя пользователя на своё):
 
-```
+```shell
 magick "C:\Users\Igor\Desktop\favicon_96.png" -resize 16x16 "C:\Users\Igor\Desktop\favicon_16.png"
 magick "C:\Users\Igor\Desktop\favicon_96.png" -resize 32x32 "C:\Users\Igor\Desktop\favicon_32.png"
 magick "C:\Users\Igor\Desktop\favicon_96.png" -resize 48x48 "C:\Users\Igor\Desktop\favicon_48.png"
@@ -50,7 +50,7 @@ magick "C:\Users\Igor\Desktop\favicon_16.png" "C:\Users\Igor\Desktop\favicon_32.
 
 Можно не скачивать иконку, а позволить программе загрузить её прямо с сайта. В этом случае команды будут такими (и снова не забудьте предварительно заменить имя пользователя на своё):
 
-```
+```shell
 magick "https://static.deepl.com/img/favicon/favicon_96.png" -resize 16x16 "C:\Users\Igor\Desktop\favicon_16.png"
 magick "https://static.deepl.com/img/favicon/favicon_96.png" -resize 32x32 "C:\Users\Igor\Desktop\favicon_32.png"
 magick "https://static.deepl.com/img/favicon/favicon_96.png" -resize 48x48 "C:\Users\Igor\Desktop\favicon_48.png"
