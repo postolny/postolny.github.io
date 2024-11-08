@@ -5,7 +5,7 @@ description: "Постараюсь описать как создать титу
 author: "И. Постольный"
 comments: false
 categories: 
-tags: [Музыка, GIMP]
+tags: [Музыка, GIMP, Software]
 ---
 
 Постараюсь описать как создать титульный лист непосредственно в нотном редакторе [MuseScore 4](https://musescore.org/ru){:target="_blank" rel="noopener noreferrer"}, в текстовом редакторе [ONLYOFFICE](https://www.onlyoffice.com/ru/download-desktop.aspx){:target="_blank" rel="noopener noreferrer"} и в графическом редакторе [GIMP](https://www.gimp.org/){:target="_blank" rel="noopener noreferrer"}. Титульный лист я создам для одной моей пьесы. Конечно, подобным образом титульный лист можно создать для любой книги.
