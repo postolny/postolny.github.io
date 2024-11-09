@@ -627,6 +627,25 @@ $(function() {
   var currentYear = new Date().getFullYear();
   $('#currentYear').html("&copy; " + currentYear + " ");
 
+  $('a.footnote').on('click', function(e) {
+    e.preventDefault();
+  
+    var target = $(this).attr('href'); // получаем ID сноски
+  
+    // Экранируем символ ':' в ID
+    var targetElement = $(target.replace(/:/g, '\\:'));
+  
+    // Проверяем, существует ли элемент с данным ID
+    if (targetElement.length) {
+      // Плавная прокрутка к элементу с сноской
+      $('html, body').animate({
+        scrollTop: targetElement.offset().top
+      }, 800);
+    } else {
+      console.log('Элемент с id ' + target + ' не найден!');
+    }
+  });
+
   var Mwidth = 960;
   if ($(window).width() > Mwidth) {
     var headerHeight = $(".navigation").height();
