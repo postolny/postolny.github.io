@@ -639,10 +639,32 @@ $(function() {
     if (targetElement.length) {
       // Плавная прокрутка к элементу с сноской
       $('html, body').animate({
-        scrollTop: targetElement.offset().top
-      }, 800);
+        scrollTop: targetElement.offset().top - 15
+      }, 800, function() {
+        // Обновляем хеш в URL
+        window.location.hash = target;
+      });
     } else {
       console.log('Элемент с id ' + target + ' не найден!');
+    }
+  });
+  
+  // Обработка клика по стрелке "назад" для возвращения к сноске
+  $('a.reversefootnote').on('click', function(e) {
+    e.preventDefault();
+  
+    const footnoteRefId = $(this).attr('href');  // ID сноски
+    const footnoteSelector = footnoteRefId.replace(/:/g, '\\:');
+    const targetElement = $(footnoteSelector);
+  
+    if (targetElement.length) {
+      // Прокручиваем страницу обратно к сноске
+      $('html, body').animate({
+        scrollTop: targetElement.offset().top - 85
+      }, 500, function() {
+        // Обновляем хеш в URL
+        window.location.hash = footnoteRefId;
+      });
     }
   });
 
