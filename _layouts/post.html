@@ -26,7 +26,6 @@ layout: default
 
     {% if page.tags and page.tags.size > 0 %}
     {% assign tag_count = page.tags | size %}
-    <br>
     <div class="tags-container">
       {% if tag_count == 1 %}
         <div>Тег:</div>
@@ -36,6 +35,22 @@ layout: default
       <div class="tags-clouds">
         {% for tag in page.tags %}
           <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if page.categories and page.categories.size > 0 %}
+    {% assign category_count = page.categories | size %}
+    <div class="categories-container">
+      {% if category_count == 1 %}
+        <div>Категория:</div>
+      {% else %}
+        <div>Категории:</div>
+      {% endif %}
+      <div class="categories-clouds">
+        {% for category in page.categories %}
+          <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
         {% endfor %}
       </div>
     </div>
@@ -60,6 +75,24 @@ layout: default
     <div class="tags-clouds">
       {% for tag in page.tags %}
         <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.categories and page.categories.size > 0 %}
+  {% assign category_count = page.categories | size %}
+  <div class="categories-container" data-nosnippet>
+    <div class="categories-title">
+      {% if category_count == 1 %}
+        Категория:
+      {% else %}
+        Категории:
+      {% endif %}
+    </div>
+    <div class="categories-clouds">
+      {% for category in page.categories %}
+        <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
       {% endfor %}
     </div>
   </div>
