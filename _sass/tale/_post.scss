@@ -1,7 +1,9 @@
 .post {
   padding: 3rem 0;
 
-  &-info {
+  &-info,
+  .tags-title,
+  .categories-title {
     color: $default-tint;
     font-family: $serif-secondary;
     letter-spacing: 0.5px;
