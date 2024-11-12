@@ -1,8 +1,7 @@
 .post {
   padding: 3rem 0;
 
-  &-info,
-  .tags-title {
+  &-info {
     color: $default-tint;
     font-family: $serif-secondary;
     letter-spacing: 0.5px;
@@ -14,11 +13,13 @@
     }
   }
 
-  .tags-clouds a { 
+  .tags-clouds a,
+  .categories-clouds a { 
     padding: 0 0.5rem;
   }
 
-  .tags-container > div:first-child {
+  .tags-container > div:first-child,
+  .categories-container > div:first-child {
     margin-bottom: 4px;
     font-style: italic;
   }
