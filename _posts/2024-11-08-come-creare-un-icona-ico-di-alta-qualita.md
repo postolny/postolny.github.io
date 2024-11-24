@@ -35,7 +35,7 @@ tags: [Software, Web]
 
 Скачайте иконку по вышеуказанному адресу на рабочий стол. В командной строке с помощью сочетания клавиш <kbd>Ctrl</kbd> + <kbd>V</kbd> вставьте следующие команды (не забудьте предварительно заменить имя пользователя на своё):
 
-```shell
+{% highlight bash linenos %}
 magick "C:\Users\Igor\Desktop\favicon_96.png" -resize 16x16 "C:\Users\Igor\Desktop\favicon_16.png"
 magick "C:\Users\Igor\Desktop\favicon_96.png" -resize 32x32 "C:\Users\Igor\Desktop\favicon_32.png"
 magick "C:\Users\Igor\Desktop\favicon_96.png" -resize 48x48 "C:\Users\Igor\Desktop\favicon_48.png"
@@ -43,12 +43,13 @@ magick "C:\Users\Igor\Desktop\favicon_96.png" -resize 64x64 "C:\Users\Igor\Deskt
 magick "C:\Users\Igor\Desktop\favicon_96.png" -resize 96x96 "C:\Users\Igor\Desktop\favicon_96.png"
 
 magick "C:\Users\Igor\Desktop\favicon_16.png" "C:\Users\Igor\Desktop\favicon_32.png" "C:\Users\Igor\Desktop\favicon_48.png" "C:\Users\Igor\Desktop\favicon_64.png" "C:\Users\Igor\Desktop\favicon_96.png" "C:\Users\Igor\Desktop\favicon.ico"
-```
+{% endhighlight %}
+
 Нажмите <kbd>Enter</kbd>, чтобы выполнилась команда создания favicon.ico. Что здесь происходит? Сначала иконка favicon_96.png, имеющая размер 96x96 px, конвертируется в несколько файлов PNG с разными размерами (16x16, 32x32, 48x48, 64x64 и 96x96); затем все эти файлы объединяются в один ICO-файл, содержащий несколько размеров.
 
 Можно не скачивать иконку, а позволить программе загрузить её прямо с сайта. В этом случае команды будут такими (и снова не забудьте предварительно заменить имя пользователя на своё):
 
-```shell
+{% highlight bash linenos %}
 magick "https://static.deepl.com/img/favicon/favicon_96.png" -resize 16x16 "C:\Users\Igor\Desktop\favicon_16.png"
 magick "https://static.deepl.com/img/favicon/favicon_96.png" -resize 32x32 "C:\Users\Igor\Desktop\favicon_32.png"
 magick "https://static.deepl.com/img/favicon/favicon_96.png" -resize 48x48 "C:\Users\Igor\Desktop\favicon_48.png"
@@ -56,7 +57,7 @@ magick "https://static.deepl.com/img/favicon/favicon_96.png" -resize 64x64 "C:\U
 magick "https://static.deepl.com/img/favicon/favicon_96.png" -resize 96x96 "https://static.deepl.com/img/favicon/favicon_96.png"
 
 magick "C:\Users\Igor\Desktop\favicon_16.png" "C:\Users\Igor\Desktop\favicon_32.png" "C:\Users\Igor\Desktop\favicon_48.png" "C:\Users\Igor\Desktop\favicon_64.png" "https://static.deepl.com/img/favicon/favicon_96.png" "C:\Users\Igor\Desktop\favicon.ico"
-```
+{% endhighlight %}
 
 Вот таким, не самым простым, но вместе с тем и не сложным способом, мы создали мультиформатную иконку ICO. Что ещё можно добавить? Если такая иконка используется в качестве иконки favicon для сайта, то она может заключать в себе версии следующих разрешений: 16x16 px, 32x32 px, 48x48 px, 64x64 px. Но также в неё могут быть добавлены версии с разрешением 128x128 px и 256x256 px. Для того, чтобы посмотреть какие разрешения включены в иконку, а также результат проделанной вами работы, вы можете воспользоваться специальной программой, например, [Greenfish Icon Editor Pro](http://greenfishsoftware.org/){:target="_blank" rel="noopener noreferrer"}. На этом сайте не используется иконка в формате `.ico` – вместо неё я использовал набор иконок в формате `.png` c атрибутами `rel="icon"` и `rel="apple-touch-icon"` для разных устройств и атрибутом `sizes`, указывающим различные размеры иконки.
 
