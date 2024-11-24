@@ -564,7 +564,7 @@ $(function() {
     }
 
   }).fail(function() {
-    console.log("Не удалось загрузить данные из ar1.json.");
+    console.log("Не удалось загрузить данные из frasario.json.");
   });
 
   var pappagallo = new Audio("/audio/pappagallo.mp3");
