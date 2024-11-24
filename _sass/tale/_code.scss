@@ -8,23 +8,23 @@ code {
   border-radius: 3px;
   color: $code-color;
   font-size: 85%;
-  padding: 0.25em 0.5em;
+  padding: .25em .5em;
 }
 
 pre {
   margin: 0 0 1rem;
-  background-color: #2d2d2d;
 }
 
 pre code {
   background-color: transparent;
-  color: #f8f8f2;
+  color: inherit;
   font-size: 100%;
   padding: 0;
 }
 
 .highlight {
-  border-radius: 8px;
+  background-color: $grey-3;
+  border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 1rem;
   padding: 1rem;
@@ -36,13 +36,11 @@ pre code {
 
   .lineno {
     color: $default-tint;
-    display: inline-block; // Ensures the null space also isn't selectable
-    padding: 0 0.75rem 0 0.25rem;
+    padding: 0 .75rem 0 .25rem;
     // Make sure numbers aren't selectable
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
 }
 
