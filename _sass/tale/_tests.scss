@@ -352,6 +352,25 @@
   line-height: 1.3;
 }
 
+#fraseWrap {
+	img {
+		float: right;
+		display: block;
+		max-width: 100%;
+		height: auto;
+		padding: 10px 0 10px 10px;
+	}
+}
+@media (max-width: 768px) {
+	#fraseWrap {
+		img {
+			float: none;
+			margin: 10px auto;
+			padding: 0;
+		}
+	}
+}
+
 .frasarioModalWrapper.active {
   display: flex;
   justify-content: center;
