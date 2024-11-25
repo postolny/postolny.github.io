@@ -442,6 +442,7 @@ $(function() {
         handleReloadButton();
         handleViewButton();
         handleCloseButton();
+        displayImages();
       }
 
       function handlePlayButton(item) {
