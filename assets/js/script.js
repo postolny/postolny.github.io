@@ -12,7 +12,7 @@ $(function() {
   var rand;
   var currentAudio = null;
   var currentPlayItem = null;
-  var playedIndices = [];
+  var playedItems = [];
   var frasario = [];
 
   $("nav ul li a:not(:only-child)").click(function(e) {
@@ -422,19 +422,23 @@ $(function() {
       loadRandomData();
 
       function loadRandomData() {
-        if (playedIndices.length === frasario.length) {
-          playedIndices = [];
+        var remainingItems = frasario.filter(function(item) {
+            return !playedItems.includes(item);
+        });
+
+        if (remainingItems.length === 0) {
+            playedItems = [];
+            remainingItems = frasario.slice();
         }
 
-        var availableIndices = frasario
-          .map((_, index) => index).filter((index) => !playedIndices.includes(index));
-        rand = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+        var randomIndex = Math.floor(Math.random() * remainingItems.length);
+        var randomItem = remainingItems[randomIndex];
 
-        playedIndices.push(rand);
+        playedItems.push(randomItem);
 
         $("#frasarioIcons").html('<span>' + viewTraduzione + '</span>' + '<span>' + reloadBtnRand + '</span>' + '<span>' + playBtnRand + '</span>' + '<span>' + close + '</span>');
-        $("#fraseWrap").html('<div id="frase">' + frasario[rand].label + '</div>' + '<div id="traduzione">' + frasario[rand].value + '</div>');
-        handlePlayButton(frasario[rand]);
+        $("#fraseWrap").html('<div id="frase">' + randomItem.label + '</div>' + '<div id="traduzione">' + randomItem.value + '</div>');
+        handlePlayButton(randomItem);
         handleReloadButton();
         handleViewButton();
         handleCloseButton();
@@ -516,6 +520,24 @@ $(function() {
             timeout = setTimeout(function() {
               icon.addClass("paused").removeClass("running");
             }, 1000);
+          }
+        });
+      }
+
+      function displayImages() {
+        var folderPath = "/assets/frasario/";
+
+        $('#fraseWrap').html(function(index, html) {
+          return html.replace(/#(\w+)/g, function(match, p1) {
+            return '<img src="' + folderPath + p1 + '.png">';
+          });
+        });
+
+        $('#fraseWrap img').each(function() {
+          var src = $(this).attr('src');
+          if (!src.startsWith(folderPath)) {
+            src = folderPath + src;
+            $(this).attr('src', src);
           }
         });
       }
