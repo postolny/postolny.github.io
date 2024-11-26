@@ -252,6 +252,10 @@
   }
 }
 
+#traduzione {
+  display: none;
+}
+
 #frasario-icon,
 #playButtonRandom,
 .random-icon,
@@ -351,15 +355,6 @@
     line-height: 1.2;
     margin: 1rem 0;
   }
-}
-
-#frase {
-  line-height: 1.3;
-}
-
-#traduzione {
-  display: none;
-  line-height: 1.3;
 }
 
 #fraseWrap {
