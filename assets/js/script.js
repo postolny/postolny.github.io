@@ -419,8 +419,6 @@ $(function() {
       frasario = data;
       console.log(frasario);
 
-      loadRandomData();
-
       function loadRandomData() {
         var remainingItems = frasario.filter(function(item) {
             return !playedItems.includes(item);
