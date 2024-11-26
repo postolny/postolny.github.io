@@ -243,13 +243,15 @@
 
 /* Frasario */
 
+#fraseWrap {
+  * {
+    line-height: 1.3 !important;
+  }
+}
+
 #frase,
 #traduzione {
   font-size: 18px;
-  line-height: 1.3;
-  * {
-    line-height: 1.3;
-  }
 }
 
 #traduzione {
