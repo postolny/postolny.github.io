@@ -14,6 +14,18 @@ $(function() {
   var currentPlayItem = null;
   var playedItems = [];
   var frasario = [];
+  var now = new Date();
+  var ore = now.getHours();
+  var giornoSettimana = now.getDay();
+  var giornoMese = now.getDate();
+  var mese = now.getMonth();
+
+  var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
+
+  function day() {
+    $("#day").html('Oggi è ' + g[giornoSettimana] + ', ' + giornoMese + ' ' + m[mese]);
+  }
 
   $("nav ul li a:not(:only-child)").click(function(e) {
     $(this).siblings(".nav-dropdown").toggle();
@@ -445,12 +457,13 @@ $(function() {
             fraseWrapContent += '<div id="traduzione">' + randomItem.value + '</div>';
         }
         $("#fraseWrap").html(fraseWrapContent);
-        
+
         handlePlayButton(randomItem);
         handleReloadButton();
         handleViewButton();
         handleCloseButton();
         displayImages();
+        day();
       }
 
       function handlePlayButton(item) {
@@ -763,12 +776,6 @@ $(function() {
     }
   });
 
-  var now = new Date();
-  var mese = now.getMonth();
-  var giorno = now.getDay();
-  var ore = now.getHours();
-  var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
-  var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
   if (ore < 5) {
     $("#benvenuto").text("Ciao! Cosa ci fai qui di notte?");
   } else if (ore < 12) {
@@ -809,7 +816,7 @@ $(function() {
       if (!$.trim($("#search-giorno").val())) {
         $("#risultato-giorno").html(sbagliatoIcon + scriviQc);
         $("#search-giorno").focus();
-      } else if (search == g[giorno].replace("ì", "i")) {
+      } else if (search == g[giornoSettimana].replace("ì", "i")) {
         isResult2Correct = true;
         $("#risultato-giorno").html(esattoIcon + esattoMsg);
 
@@ -818,7 +825,7 @@ $(function() {
           $("#search-mese").focus(); // Передаем фокус на поле #search-mese, только если результат для поля #search-giorno неверен
         }
       } else {
-        $("#risultato-giorno").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + g[giorno] + '</span>');
+        $("#risultato-giorno").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + g[giornoSettimana] + '</span>');
         $("#search-giorno").val("").focus();
       }
       console.log("Нажата кнопка #btn-giorno");
