@@ -23,8 +23,11 @@ $(function() {
   var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
 
+  var mes = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+  var dn = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+
   function day() {
-    $("#day").html('Oggi è ' + g[giornoSettimana] + ', ' + giornoMese + ' ' + m[mese]);
+    $("#day").html('Oggi è ' + g[giornoSettimana] + ', ' + giornoMese + ' ' + m[mese] + '<br>' + 'Сегодня ' + dn[giornoSettimana] + ', ' + giornoMese + ' ' + mes[mese]);
   }
 
   $("nav ul li a:not(:only-child)").click(function(e) {
