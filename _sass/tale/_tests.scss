@@ -5,18 +5,18 @@
   box-sizing: border-box;
 }
 #risultato {
-	display: inline-block;
-	svg {
-		display: inline-block;
-		vertical-align: middle;
-		width: 20px;
-		height: 20px;
-	}
-	span {
-		display: inline-block;
-		vertical-align: middle;
-		padding-left: 3px;
-	}
+  display: inline-block;
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3px;
+  }
 }
 #block-result {
   font-size: 14px;
@@ -65,7 +65,7 @@
     margin-bottom: 10px;
   }
   label {
-    padding: 0.2em  0;
+    padding: 0.2em 0;
   }
   label.correct {
     background: #8dc692;
@@ -158,6 +158,7 @@
 }
 
 /* Accento */
+
 #accento {
   margin-left: 0;
   margin-bottom: 0;
@@ -242,11 +243,20 @@
 
 /* Frasario */
 
-#frase, #traduzione {
+#frase,
+#traduzione {
   font-size: 18px;
+  line-height: 1.3;
+  * {
+    line-height: 1.3;
+  }
 }
 
-#frasario-icon, #playButtonRandom, .random-icon, .view-icon, .close-icon {
+#frasario-icon,
+#playButtonRandom,
+.random-icon,
+.view-icon,
+.close-icon {
   cursor: pointer;
 }
 
@@ -353,22 +363,22 @@
 }
 
 #fraseWrap {
-	img {
-		float: right;
-		display: block;
-		max-width: 100%;
-		height: auto;
-		padding: 10px 0 10px 10px;
-	}
+  img {
+    float: right;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 10px 0 10px 10px;
+  }
 }
 @media (max-width: 768px) {
-	#fraseWrap {
-		img {
-			float: none;
-			margin: 10px auto;
-			padding: 0;
-		}
-	}
+  #fraseWrap {
+    img {
+      float: none;
+      margin: 10px auto;
+      padding: 0;
+    }
+  }
   #frasario-icon-container {
     bottom: 10px;
     right: 10px;
@@ -429,19 +439,20 @@
   font-size: 14px;
 }
 
-#risultato-mese, #risultato-giorno {
-	display: inline-block;
-	svg {
-		display: inline-block;
-		vertical-align: middle;
-		width: 20px;
-		height: 20px;
-	}
-	span {
-		display: inline-block;
-		vertical-align: middle;
-		padding-left: 3px;
-	}
+#risultato-mese,
+#risultato-giorno {
+  display: inline-block;
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3px;
+  }
 }
 
 .evid {
