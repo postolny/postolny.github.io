@@ -434,8 +434,18 @@ $(function() {
 
         playedItems.push(randomItem);
 
-        $("#frasarioIcons").html('<span>' + viewTraduzione + '</span>' + '<span>' + reloadBtnRand + '</span>' + '<span>' + playBtnRand + '</span>' + '<span>' + close + '</span>');
-        $("#fraseWrap").html('<div id="frase">' + randomItem.label + '</div>' + '<div id="traduzione">' + randomItem.value + '</div>');
+        // Проверяем, есть ли value
+        var viewTraduzioneMarkup = randomItem.value ? '<span>' + viewTraduzione + '</span>' : '';
+
+        $("#frasarioIcons").html(viewTraduzioneMarkup + '<span>' + reloadBtnRand + '</span>' + '<span>' + playBtnRand + '</span>' + '<span>' + close + '</span>');
+      
+        // Содержимое #fraseWrap
+        var fraseWrapContent = '<div id="frase">' + randomItem.label + '</div>';
+        if (randomItem.value) {
+            fraseWrapContent += '<div id="traduzione">' + randomItem.value + '</div>';
+        }
+        $("#fraseWrap").html(fraseWrapContent);
+        
         handlePlayButton(randomItem);
         handleReloadButton();
         handleViewButton();
