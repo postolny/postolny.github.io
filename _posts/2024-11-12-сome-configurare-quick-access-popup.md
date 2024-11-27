@@ -272,13 +272,11 @@ tags: [Software]
 Это универсальный способ, но требует создания PowerShell-скрипта. Создайте файл с именем ToggleInternet.ps1 и следующим содержимым:
 
 {% highlight bash linenos %}
-# Если есть активные подключения, отключить их
-if (Get-NetAdapter | Where-Object { $_.Status -eq "Up" }) {
+if (Get-NetAdapter | Where-Object { $_.Status -eq "Up" }) {  # Если есть активные подключения, отключить их
     Get-NetAdapter | Where-Object { $_.Status -eq "Up" } | Disable-NetAdapter -Confirm:$false
     Write-Host "Все подключения отключены."
 } else {
-    # Если нет активных подключений, включить все
-    Get-NetAdapter | Where-Object { $_.Status -ne "Up" } | Enable-NetAdapter -Confirm:$false
+    Get-NetAdapter | Where-Object { $_.Status -ne "Up" } | Enable-NetAdapter -Confirm:$false  # Если нет активных подключений, включить все
     Write-Host "Все подключения включены."
 }
 {% endhighlight %}
