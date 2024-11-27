@@ -22,7 +22,6 @@ author:
 # Build settings
 markdown: kramdown
 kramdown:
-  syntax_highlighter: null
   smart_quotes: ["apos", "apos", "quot", "quot"]
 
 include:
