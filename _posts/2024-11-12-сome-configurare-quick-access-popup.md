@@ -289,15 +289,15 @@ if (Get-NetAdapter | Where-Object { $_.Status -eq "Up" }) {
   - Будет установлен значок PowerShell, но вы можете назначить любой другой значок;
   - На вкладке "Расширенные настройки" установите галочку в чекбоксе "Запустить приложение с правами администрирования", в поле "Настройки" введите:
 
-{% highlight bash linenos %}
+```powershell
 -NoProfile -ExecutionPolicy Bypass -File "C:\Users\Igor\Documents\Quick Access Popup\ToggleInternet.ps1"
-{% endhighlight %}
+```
 
 Не забудьте изменить путь до файла на свой. Вы можете использовать переменную среды в пути до файла:
 
-{% highlight bash linenos %}
+```powershell
 -NoProfile -ExecutionPolicy Bypass -File "%USERPROFILE%\Documents\Quick Access Popup\ToggleInternet.ps1"
-{% endhighlight %}
+```
 
 Нажмите на кнопку "OK".
 
