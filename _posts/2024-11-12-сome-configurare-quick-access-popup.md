@@ -250,7 +250,7 @@ tags: [Software]
   - Найдите значок в dll-библиотеке `miguiresource.dll` (`C:\Windows\System32\miguiresource.dll`);
   - Нажмите на кнопку "OK".
 
-Путь `C:\Windows` можно было бы заменить системной переменной `%SystemRoot%`, однако длину текста это не сокращает.
+Путь `C:\Windows` можно было бы заменить системной переменной `%SystemRoot%` или `%windir%`, однако длину текста это не сокращает.
 {: .cornice}
 
 ### Использование shutdown.exe с помощью QAP
