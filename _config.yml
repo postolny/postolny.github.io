@@ -1,6 +1,6 @@
 # Site settings
 title:          Игорь Постольный
-description:    "И. А. Постольный – литературные и музыкальные сочинения • Итальянский язык"
+description:    "И.А. Постольный – литературные и музыкальные сочинения • Итальянский язык"
 baseurl:        ""
 url:            "https://postolny.github.io"
 
@@ -20,14 +20,9 @@ author:
   email:        
 
 # Build settings
-markdown: kramdown  # Используется движок Kramdown для обработки Markdown
+markdown: kramdown
 kramdown:
-  input: GFM  # Используется синтаксис GitHub Flavored Markdown
-  syntax_highlighter: rouge  # Подсветка синтаксиса с помощью Rouge
-  syntax_highlighter_opts:
-    line_numbers: true  # Включить нумерацию строк
-    start_line: 1  # Начало нумерации с первой строки
-  smart_quotes: ["apos", "apos", "quot", "quot"]  # Настройки "умных кавычек"
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
 include:
   - _pages
@@ -54,5 +49,5 @@ exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
 # Disqus (Set to your disqus id)
 disqus:
- 
+
 locale: ""
