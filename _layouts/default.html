@@ -21,7 +21,9 @@ layout: compress
 
   {% include footer.html %}
 
-  {% include frasario.html %}
+  {% unless page.exclude_frasario %}
+    {% include frasario.html %}
+  {% endunless %}
 
   <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | relative_url }}"></script>
   <script type="text/javascript" src="{{ "/assets/js/script.js" | relative_url }}"></script>
