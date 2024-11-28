@@ -478,12 +478,15 @@ $(function() {
       day();
     }
 
+    var tocIconClicked = false;
+
     function tableOfContents() {
       var tocElement = $("#tocIcon");
 
       tocElement.off("click").on("click", function() {
+        tocIconClicked = true;
         stopCurrentAudio();
-        blockAudioButton(true);
+        disableButtons(true);
         $("#fraseWrap").hide();
         renderTOC();
         $("#tocWrap").show();
@@ -520,21 +523,19 @@ $(function() {
 
           $("#tocWrap").hide(); // Скрываем оглавление
           $("#fraseWrap").show(); // Показываем основной контент
-          blockAudioButton(false); // Снимаем блокировку с кнопки аудио
+          disableButtons(false); // Снимаем блокировку с кнопок
         });
       }
     }
 
-    // Функция блокировки кнопки аудио
-    function blockAudioButton(isBlocked) {
-      var playButton = $("#playButtonRandom");
-
+    // Функция блокировки кнопок
+    function disableButtons(isBlocked) {
+      var buttonsToDisable = $("#playButtonRandom, .random-icon, .view-icon, #tocIcon");
+  
       if (isBlocked) {
-        playButton.addClass("disabled");
-        playButton.off("click");
+          buttonsToDisable.addClass("disabled");
       } else {
-        playButton.removeClass("disabled");
-        handlePlayButton(currentPlayItem);
+          buttonsToDisable.removeClass("disabled");
       }
     }
 
@@ -668,6 +669,13 @@ $(function() {
     $('#frasario-icon').click(function() {
       showAlert();
       loadRandomData();
+      // $("#tocWrap").hide(); // Скрываем оглавление
+      // $("#fraseWrap").show(); // Показываем основной контент
+      // Если кнопка показа оглавления была нажата
+      if (tocIconClicked) {
+        $("#tocWrap").hide(); // Скрываем оглавление
+        $("#fraseWrap").show(); // Показываем основной контент
+      }
     });
 
     function showAlert() {
