@@ -479,6 +479,7 @@ $(function() {
     }
 
     var tocIconClicked = false;
+    disableButtons(true);
 
     function tableOfContents() {
       var tocElement = $("#tocIcon");
