@@ -479,7 +479,6 @@ $(function() {
     }
 
     var tocIconClicked = false;
-    disableButtons(true);
 
     function tableOfContents() {
       var tocElement = $("#tocIcon");
@@ -531,10 +530,11 @@ $(function() {
 
     // Функция блокировки кнопок
     function disableButtons(isBlocked) {
-      var buttonsToDisable = $("#playButtonRandom, .random-icon, .view-icon, #tocIcon");
+      var buttonsToDisable = $("#playButtonRandom, .random-icon, .view-icon:visible, #tocIcon");
   
       if (isBlocked) {
           buttonsToDisable.addClass("disabled");
+          buttonsToDisable.off("click");
       } else {
           buttonsToDisable.removeClass("disabled");
       }
