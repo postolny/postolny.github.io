@@ -452,9 +452,9 @@
 	cursor: pointer;
 }
 
-#playButtonRandom.disabled, .random-icon.disabled, .view-icon.disabled, #tocIcon.disabled {
-	pointer-events: none;
-	opacity: 0.5;
+#frasarioIcons span.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 /* Mese, giorno */
