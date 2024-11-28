@@ -446,11 +446,13 @@
 		}
 	}
 }
+
 .toc-icon {
 	fill: $default-color;
 	cursor: pointer;
 }
-#playButtonRandom.disabled {
+
+#playButtonRandom.disabled, .random-icon.disabled, .view-icon.disabled, #tocIcon.disabled {
 	pointer-events: none;
 	opacity: 0.5;
 }
