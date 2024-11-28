@@ -278,10 +278,28 @@ $(function() {
     { q1: "19°", an: "diciannovesimo" },
     { q1: "20", an: "venti" },
     { q1: "20°", an: "ventesimo" },
-    { q1: "38", an: "trentotto" },
-    { q1: "25", an: "venticinque" },
-    { q1: "74", an: "settantaquattro" },
+    { q1: "21", an: "ventuno" },
+    { q1: "21°", an: "ventunesimo" },
+    { q1: "22", an: "ventidue" },
+    { q1: "22°", an: "ventiduesimo" },
+    { q1: "23", an: "ventitré" },
+    { q1: "23°", an: "ventitreesimo" },
     { q1: "24", an: "ventiquattro" },
+    { q1: "24°", an: "ventiquattresimo" },
+    { q1: "25", an: "venticinque" },
+    { q1: "25°", an: "venticinquesimo" },
+    { q1: "26", an: "ventisei" },
+    { q1: "26°", an: "ventiseiesimo" },
+    { q1: "27", an: "ventisette" },
+    { q1: "27°", an: "ventisettesimo" },
+    { q1: "28", an: "ventotto" },
+    { q1: "28°", an: "ventottesimo" },
+    { q1: "29", an: "ventinove" },
+    { q1: "29°", an: "ventinovesimo" },
+    { q1: "30", an: "trenta" },
+    { q1: "30°", an: "trentesimo" },
+    { q1: "38", an: "trentotto" },
+    { q1: "74", an: "settantaquattro" },
     { q1: "47", an: "quarantasette" },
     { q1: "65", an: "sessantacinque" },
     { q1: "453", an: "quattrocentocinquantatré" },
@@ -517,13 +535,13 @@ $(function() {
         // Обработка кликов на элементы списка в оглавлении
         $("#tocWrap li").off("click").on("click", function() {
           var index = $(this).data("index");
-          var selectedItem = titles[index];
+          var selectedItem = titles[index]; // Находим нужный элемент по его индексу
 
           loadSelectedItem(selectedItem);
 
-          $("#tocWrap").hide();
-          $("#fraseWrap").show();
-          disableButtons(false);
+          $("#tocWrap").hide(); // Скрываем оглавление
+          $("#fraseWrap").show(); // Показываем основной контент
+          disableButtons(false); // Снимаем блокировку с кнопок
         });
       }
     }
