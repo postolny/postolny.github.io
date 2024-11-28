@@ -40,13 +40,13 @@
   width: 100%;
   font-weight: bold;
   font-size: 2em;
-  color: #555;
+  color: $default-color;
   margin: 30px 0 10px;
   padding: 5px 0;
   transition: all ease-out 0.2s;
   &:focus {
     outline: none;
-    border-color: #aaa;
+    border-color: $default-tint;
   }
 }
 #suggerimento {
@@ -69,7 +69,7 @@
   }
   label.correct {
     background: #8dc692;
-    color: #fff;
+    color: $white;
   }
 }
 .radio {
@@ -105,7 +105,7 @@
         width: 20px;
         height: 20px;
         border: 1px solid #ccc;
-        background: #fff;
+        background: $white;
         line-height: normal;
       }
 
@@ -148,7 +148,7 @@
 .quiz-submit {
   display: inline-block;
   cursor: pointer;
-  color: #fff;
+  color: $white;
   padding: 5px 10px;
   background-color: $default-shade;
 }
@@ -177,11 +177,11 @@
     text-align: center;
     font-weight: bold;
     transition: all ease-out 0.2s;
-    background: #fff;
+    background: $white;
     &:invalid {
       border-color: coral;
       background: coral;
-      color: #fff;
+      color: $white;
     }
     &:valid {
       color: #8dc692;
@@ -192,7 +192,7 @@
   display: inline-block;
   font-size: 14px;
   cursor: pointer;
-  color: #fff;
+  color: $white;
   margin: 10px 0;
   padding: 5px 10px;
   background-color: $default-shade;
@@ -210,18 +210,18 @@
   padding: 0px 5px;
   margin-top: 10px;
   outline: none;
-  background-color: #fff;
+  background-color: $white;
 }
 .question {
   margin-bottom: 10px;
 }
 .corretto {
   background: #8dc692 !important;
-  color: #fff !important;
+  color: $white !important;
 }
 .errato {
   background: coral !important;
-  color: #fff !important;
+  color: $white !important;
 }
 .block-result {
   font-size: 14px;
@@ -232,7 +232,7 @@
 #btn-giorno {
   display: inline-block;
   cursor: pointer;
-  color: #fff;
+  color: $white;
   padding: 5px 10px;
   background-color: $default-shade;
 }
@@ -309,7 +309,7 @@
 .frasarioModal {
   position: relative;
   margin: 10px;
-  background-color: #fff;
+  background-color: $white;
   border-radius: 5px;
   max-width: 700px;
   max-height: 95%;
@@ -324,7 +324,7 @@
   z-index: 1001;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: $white;
   background-color: rgb(0, 123, 255);
 
   span {
@@ -426,6 +426,35 @@
   animation-play-state: paused !important;
 }
 
+#tocWrap {
+	display: none;
+	padding: 10px;
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		cursor: pointer;
+		padding: 5px 10px;
+		border-bottom: 1px solid #ddd;
+		line-height: normal;
+		&:hover {
+			background: $grey-3;
+		}
+	}
+}
+.toc-icon {
+	fill: $default-color;
+	cursor: pointer;
+}
+#playButtonRandom.disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
 /* Mese, giorno */
 
 #wrap_mg {
@@ -468,7 +497,7 @@
   transition: all ease-out 0.2s;
   &:focus {
     outline: none;
-    border-color: #aaa;
+    border-color: $default-tint;
   }
 }
 
