@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) Postolny I. A.
+ * (https://postolny.github.io/)
+ */
 $(function() {
   var esattoIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="#03C03C" d="m14 21.414l-5-5.001L10.413 15L14 18.586L21.585 11L23 12.415z"/><path fill="#03C03C" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m0 26a12 12 0 1 1 12-12a12 12 0 0 1-12 12"/></svg>';
   var sbagliatoIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="#FE2A41" d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12"/><path fill="#FE2A41" d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z"/></svg>';
@@ -6,9 +10,10 @@ $(function() {
   var sbagliatoMsg = '<span>Sbagliato!';
   var rispostaGiustaMsg = '<span>Sbagliato! La risposta giusta è</span>';
   var playBtnRand = '<span id="playButtonRandom"></span>';
-  var reloadBtnRand = '<span class="random-icon"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10 11H7.101l.001-.009a4.956 4.956 0 0 1 .752-1.787a5.054 5.054 0 0 1 2.2-1.811c.302-.128.617-.226.938-.291a5.078 5.078 0 0 1 2.018 0a4.978 4.978 0 0 1 2.525 1.361l1.416-1.412a7.036 7.036 0 0 0-2.224-1.501a6.921 6.921 0 0 0-1.315-.408a7.079 7.079 0 0 0-2.819 0a6.94 6.94 0 0 0-1.316.409a7.04 7.04 0 0 0-3.08 2.534a6.978 6.978 0 0 0-1.054 2.505c-.028.135-.043.273-.063.41H2l4 4zm4 2h2.899l-.001.008a4.976 4.976 0 0 1-2.103 3.138a4.943 4.943 0 0 1-1.787.752a5.073 5.073 0 0 1-2.017 0a4.956 4.956 0 0 1-1.787-.752a5.072 5.072 0 0 1-.74-.61L7.05 16.95a7.032 7.032 0 0 0 2.225 1.5c.424.18.867.317 1.315.408a7.07 7.07 0 0 0 2.818 0a7.031 7.031 0 0 0 4.395-2.945a6.974 6.974 0 0 0 1.053-2.503c.027-.135.043-.273.063-.41H22l-4-4z" /></svg></span>';
-  var viewTraduzione = '<svg class="view-icon down" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m-5.28 7.78l-1.44 1.44l6 6l.72.686l.72-.687l6-6l-1.44-1.44L16 18.064l-5.28-5.282z" /></svg><svg class="view-icon up" style="display: none;" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m0 6.094l-.72.687l-6 6l1.44 1.44L16 13.937l5.28 5.28l1.44-1.437l-6-6z" /></svg>';
-  var close = '<svg class="close-icon" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.4889971 2 2 6.4889971 2 12C2 17.511003 6.4889971 22 12 22C17.511003 22 22 17.511003 22 12C22 6.4889971 17.511003 2 12 2 z M 12 4C16.430123 4 20 7.5698774 20 12C20 16.430123 16.430123 20 12 20C7.5698774 20 4 16.430123 4 12C4 7.5698774 7.5698774 4 12 4 z M 8.7070312 7.2929688L7.2929688 8.7070312L10.585938 12L7.2929688 15.292969L8.7070312 16.707031L12 13.414062L15.292969 16.707031L16.707031 15.292969L13.414062 12L16.707031 8.7070312L15.292969 7.2929688L12 10.585938L8.7070312 7.2929688 z" /></svg>';
+  var reloadBtnRand = '<span class="random-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10 11H7.101l.001-.009a4.956 4.956 0 0 1 .752-1.787a5.054 5.054 0 0 1 2.2-1.811c.302-.128.617-.226.938-.291a5.078 5.078 0 0 1 2.018 0a4.978 4.978 0 0 1 2.525 1.361l1.416-1.412a7.036 7.036 0 0 0-2.224-1.501a6.921 6.921 0 0 0-1.315-.408a7.079 7.079 0 0 0-2.819 0a6.94 6.94 0 0 0-1.316.409a7.04 7.04 0 0 0-3.08 2.534a6.978 6.978 0 0 0-1.054 2.505c-.028.135-.043.273-.063.41H2l4 4zm4 2h2.899l-.001.008a4.976 4.976 0 0 1-2.103 3.138a4.943 4.943 0 0 1-1.787.752a5.073 5.073 0 0 1-2.017 0a4.956 4.956 0 0 1-1.787-.752a5.072 5.072 0 0 1-.74-.61L7.05 16.95a7.032 7.032 0 0 0 2.225 1.5c.424.18.867.317 1.315.408a7.07 7.07 0 0 0 2.818 0a7.031 7.031 0 0 0 4.395-2.945a6.974 6.974 0 0 0 1.053-2.503c.027-.135.043-.273.063-.41H22l-4-4z" /></svg></span>';
+  var viewTraduzione = '<svg class="view-icon down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m-5.28 7.78l-1.44 1.44l6 6l.72.686l.72-.687l6-6l-1.44-1.44L16 18.064l-5.28-5.282z" /></svg><svg class="view-icon up" xmlns="http://www.w3.org/2000/svg" style="display: none;" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m0 6.094l-.72.687l-6 6l1.44 1.44L16 13.937l5.28 5.28l1.44-1.437l-6-6z" /></svg>';
+  var close = '<svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.4889971 2 2 6.4889971 2 12C2 17.511003 6.4889971 22 12 22C17.511003 22 22 17.511003 22 12C22 6.4889971 17.511003 2 12 2 z M 12 4C16.430123 4 20 7.5698774 20 12C20 16.430123 16.430123 20 12 20C7.5698774 20 4 16.430123 4 12C4 7.5698774 7.5698774 4 12 4 z M 8.7070312 7.2929688L7.2929688 8.7070312L10.585938 12L7.2929688 15.292969L8.7070312 16.707031L12 13.414062L15.292969 16.707031L16.707031 15.292969L13.414062 12L16.707031 8.7070312L15.292969 7.2929688L12 10.585938L8.7070312 7.2929688 z" /></svg>';
+  var toc = '<span id="tocIcon"><svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M8 17q.425 0 .713-.288T9 16t-.288-.712T8 15t-.712.288T7 16t.288.713T8 17m0-4q.425 0 .713-.288T9 12t-.288-.712T8 11t-.712.288T7 12t.288.713T8 13m0-4q.425 0 .713-.288T9 8t-.288-.712T8 7t-.712.288T7 8t.288.713T8 9m3 8h6v-2h-6zm0-4h6v-2h-6zm0-4h6V7h-6zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/></svg></span>';
   var rand;
   var currentAudio = null;
   var currentPlayItem = null;
@@ -431,207 +436,299 @@ $(function() {
   });
 
   $.getJSON('/assets/frasario.json').done(function(data) {
-      frasario = data;
-      console.log(frasario);
+    frasario = data;
+    console.log(frasario);
 
-      function loadRandomData() {
-        var remainingItems = frasario.filter(function(item) {
-            return !playedItems.includes(item);
-        });
-
-        if (remainingItems.length === 0) {
-            playedItems = [];
-            remainingItems = frasario.slice();
-        }
-
-        var randomIndex = Math.floor(Math.random() * remainingItems.length);
-        var randomItem = remainingItems[randomIndex];
-
-        playedItems.push(randomItem);
-
-        // Проверяем, есть ли value
-        var viewTraduzioneMarkup = randomItem.value ? '<span>' + viewTraduzione + '</span>' : '';
-
-        $("#frasarioIcons").html(viewTraduzioneMarkup + '<span>' + reloadBtnRand + '</span>' + '<span>' + playBtnRand + '</span>' + '<span>' + close + '</span>');
-      
-        // Содержимое #fraseWrap
-        var fraseWrapContent = '<div id="frase">' + randomItem.label + '</div>';
-        if (randomItem.value) {
-            fraseWrapContent += '<div id="traduzione">' + randomItem.value + '</div>';
-        }
-        $("#fraseWrap").html(fraseWrapContent);
-
-        handlePlayButton(randomItem);
-        handleReloadButton();
-        handleViewButton();
-        handleCloseButton();
-        displayImages();
-        day();
-      }
-
-      function handlePlayButton(item) {
-        var playButton = $("#playButtonRandom");
-        var playIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>';
-        var stopIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12"/><path fill="currentColor" d="M8 8h8v8H8z"/></svg>';
-
-        if (item.audio) {
-          var audio = new Audio(item.audio);
-
-          setPlayButtonIcon(false);
-
-          function setPlayButtonIcon(isPlaying) {
-            var iconPath = isPlaying ? stopIcon : playIcon;
-            playButton.html(iconPath);
-            item.isPlaying = isPlaying;
-          }
-
-          playButton.on("click", function() {
-            if (currentAudio && currentAudio !== audio) {
-              currentAudio.pause();
-              if (currentPlayItem) currentPlayItem.isPlaying = false;
-            }
-
-            if (!item.isPlaying || audio.paused) {
-              audio.currentTime = 0;
-              audio.play();
-              setPlayButtonIcon(true);
-              currentAudio = audio;
-              currentPlayItem = item;
-            } else {
-              audio.pause();
-              setPlayButtonIcon(false);
-            }
-          });
-
-          $(audio).on("ended", function() {
-            setPlayButtonIcon(false);
-            currentAudio = null;
-            currentPlayItem = null;
-          });
-
-          playButton.show();
-        } else {
-          playButton.hide();
-        }
-      }
-
-      function stopCurrentAudio() {
-        if (currentAudio) {
-          currentAudio.pause();
-          currentAudio.currentTime = 0;
-          if (currentPlayItem) currentPlayItem.isPlaying = false;
-          currentAudio = null;
-          currentPlayItem = null;
-
-          $("#playButtonRandom").html('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>');
-        }
-      }
-
-      function handleReloadButton() {
-        $(".random-icon").click(function() {
-          stopCurrentAudio();
-          loadRandomData();
-
-          var timeout;
-          var icon = $(this);
-
-          if (!icon.hasClass("running")) {
-            icon.removeClass("running paused")
-              .hide(0)
-              .show(0)
-              .addClass("running");
-
-            clearTimeout(timeout);
-            timeout = setTimeout(function() {
-              icon.addClass("paused").removeClass("running");
-            }, 1000);
-          }
-        });
-      }
-
-      function displayImages() {
-        var folderPath = "/assets/frasario/";
-
-        $('#fraseWrap').html(function(index, html) {
-          return html.replace(/#(\w+)/g, function(match, p1) {
-            return '<img src="' + folderPath + p1 + '.png">';
-          });
-        });
-
-        $('#fraseWrap img').each(function() {
-          var src = $(this).attr('src');
-          if (!src.startsWith(folderPath)) {
-            src = folderPath + src;
-            $(this).attr('src', src);
-          }
-        });
-      }
-
-      $('#frasario-icon').click(function() {
-        showAlert();
-        loadRandomData();
+    function loadRandomData() {
+      var remainingItems = frasario.filter(function(item) {
+        return !playedItems.includes(item);
       });
 
-      function showAlert() {
-        $(".frasarioModalWrapper").addClass('active');
+      if (remainingItems.length === 0) {
+        playedItems = [];
+        remainingItems = frasario.slice();
       }
 
-      function handleCloseButton() {
-        $(".close-icon").click(function() {
-          $(".frasarioModalWrapper").removeClass('active');
-          stopCurrentAudio();
+      var randomIndex = Math.floor(Math.random() * remainingItems.length);
+      var randomItem = remainingItems[randomIndex];
+
+      playedItems.push(randomItem);
+
+      var viewTraduzioneMarkup = randomItem.value ? '<span>' + viewTraduzione + '</span>' : '';
+
+      $("#frasarioIcons").html(viewTraduzioneMarkup +
+        '<span>' + reloadBtnRand + '</span>' +
+        '<span>' + playBtnRand + '</span>' +
+        '<span>' + toc + '</span>' +
+        '<span>' + close + '</span>');
+
+      tableOfContents();
+
+      var fraseWrapContent = '<div id="frase">' + randomItem.label + '</div>';
+      if (randomItem.value) {
+        fraseWrapContent += '<div id="traduzione">' + randomItem.value + '</div>';
+      }
+      $("#fraseWrap").html(fraseWrapContent);
+
+      handlePlayButton(randomItem);
+      handleReloadButton();
+      handleViewButton();
+      handleCloseButton();
+      displayImages();
+      day();
+    }
+
+    function tableOfContents() {
+      var tocElement = $("#tocIcon");
+
+      tocElement.off("click").on("click", function() {
+        stopCurrentAudio();
+        blockAudioButton(true);
+        $("#fraseWrap").hide();
+        renderTOC();
+        $("#tocWrap").show();
+      });
+
+      function renderTOC() {
+        if (!$("#tocWrap").length) {
+          $("#fraseWrap").after('<div id="tocWrap"></div>');
+        }
+
+        var titles = frasario.filter(function(item) {
+          return item.title;
+        });
+
+        if (titles.length === 0) {
+          $("#tocWrap").html('<p>Нет доступных заголовков.</p>');
+          return;
+        }
+
+        var tocContent = '<ul>';
+        titles.forEach(function(item, index) {
+          tocContent += '<li data-index="' + index + '">' + item.title + '</li>';
+        });
+        tocContent += '</ul>';
+
+        $("#tocWrap").html(tocContent);
+
+        // Обработка кликов на элементы списка в оглавлении
+        $("#tocWrap li").off("click").on("click", function() {
+          var index = $(this).data("index");
+          var selectedItem = titles[index]; // Находим нужный элемент по его индексу
+
+          loadSelectedItem(selectedItem);
+
+          $("#tocWrap").hide(); // Скрываем оглавление
+          $("#fraseWrap").show(); // Показываем основной контент
+          blockAudioButton(false); // Снимаем блокировку с кнопки аудио
         });
       }
+    }
 
-      function handleViewButton() {
-        var toggleViewTraduzione =
-          getLocalStorage("toggleViewTraduzione") === "true";
+    // Функция блокировки кнопки аудио
+    function blockAudioButton(isBlocked) {
+      var playButton = $("#playButtonRandom");
 
-        toggleViewTraduzione
-          ?
-          enableViewTraduzione() :
-          disableViewTraduzione();
-
-        $(".view-icon")
-          .off("click")
-          .on("click", function() {
-            toggleViewTraduzione = !toggleViewTraduzione;
-            toggleViewTraduzione
-              ?
-              enableViewTraduzione() :
-              disableViewTraduzione();
-
-            setLocalStorage(
-              "toggleViewTraduzione",
-              toggleViewTraduzione
-            );
-          });
+      if (isBlocked) {
+        playButton.addClass("disabled");
+        playButton.off("click");
+      } else {
+        playButton.removeClass("disabled");
+        handlePlayButton(currentPlayItem);
       }
+    }
 
-      function enableViewTraduzione() {
-        $("#traduzione").css("display", "block");
-        $(".down").hide();
-        $(".up").show();
+    function loadSelectedItem(item) {
+      if (!item) return;
+
+      playedItems.push(item);
+
+      var viewTraduzioneMarkup = item.value ? '<span>' + viewTraduzione + '</span>' : '';
+
+      $("#frasarioIcons").html(viewTraduzioneMarkup +
+        '<span>' + reloadBtnRand + '</span>' +
+        '<span>' + playBtnRand + '</span>' +
+        '<span>' + toc + '</span>' +
+        '<span>' + close + '</span>'
+      );
+
+      var fraseWrapContent = '<div id="frase">' + item.label + '</div>';
+      if (item.value) {
+        fraseWrapContent += '<div id="traduzione">' + item.value + '</div>';
       }
+      $("#fraseWrap").html(fraseWrapContent);
 
-      function disableViewTraduzione() {
-        $("#traduzione").css("display", "none");
-        $(".up").hide();
-        $(".down").show();
+      handlePlayButton(item);
+      handleReloadButton();
+      handleViewButton();
+      handleCloseButton();
+      displayImages();
+      tableOfContents();
+      day();
+    }
+
+    function handlePlayButton(item) {
+      var playButton = $("#playButtonRandom");
+      var playIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>';
+      var stopIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12"/><path fill="currentColor" d="M8 8h8v8H8z"/></svg>';
+
+      if (item.audio) {
+        var audio = new Audio(item.audio);
+
+        setPlayButtonIcon(false);
+
+        function setPlayButtonIcon(isPlaying) {
+          var iconPath = isPlaying ? stopIcon : playIcon;
+          playButton.html(iconPath);
+          item.isPlaying = isPlaying;
+        }
+
+        playButton.on("click", function() {
+          if (currentAudio && currentAudio !== audio) {
+            currentAudio.pause();
+            if (currentPlayItem) currentPlayItem.isPlaying = false;
+          }
+
+          if (!item.isPlaying || audio.paused) {
+            audio.currentTime = 0;
+            audio.play();
+            setPlayButtonIcon(true);
+            currentAudio = audio;
+            currentPlayItem = item;
+          } else {
+            audio.pause();
+            setPlayButtonIcon(false);
+          }
+        });
+
+        $(audio).on("ended", function() {
+          setPlayButtonIcon(false);
+          currentAudio = null;
+          currentPlayItem = null;
+        });
+
+        playButton.show();
+      } else {
+        playButton.hide();
       }
+    }
 
-      function getLocalStorage(key) {
-        return localStorage.getItem(key);
+    function stopCurrentAudio() {
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        if (currentPlayItem) currentPlayItem.isPlaying = false;
+        currentAudio = null;
+        currentPlayItem = null;
+
+        $("#playButtonRandom").html('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>');
       }
+    }
 
-      function setLocalStorage(key, value) {
-        localStorage.setItem(key, value);
-      }
+    function handleReloadButton() {
+      $(".random-icon").click(function() {
+        stopCurrentAudio();
+        loadRandomData();
 
-    })
-    .fail(function() {
-      console.log("Не удалось загрузить данные из frasario.json.");
+        var timeout;
+        var icon = $(this);
+
+        if (!icon.hasClass("running")) {
+          icon.removeClass("running paused")
+            .hide(0)
+            .show(0)
+            .addClass("running");
+
+          clearTimeout(timeout);
+          timeout = setTimeout(function() {
+            icon.addClass("paused").removeClass("running");
+          }, 1000);
+        }
+      });
+    }
+
+    function displayImages() {
+      var folderPath = "/assets/frasario/";
+
+      $('#fraseWrap').html(function(index, html) {
+        return html.replace(/#(\w+)/g, function(match, p1) {
+          return '<img src="' + folderPath + p1 + '.png">';
+        });
+      });
+
+      $('#fraseWrap img').each(function() {
+        var src = $(this).attr('src');
+        if (!src.startsWith(folderPath)) {
+          src = folderPath + src;
+          $(this).attr('src', src);
+        }
+      });
+    }
+
+    $('#frasario-icon').click(function() {
+      showAlert();
+      loadRandomData();
     });
+
+    function showAlert() {
+      $(".frasarioModalWrapper").addClass('active');
+    }
+
+    function handleCloseButton() {
+      $(".close-icon").click(function() {
+        $(".frasarioModalWrapper").removeClass('active');
+        stopCurrentAudio();
+      });
+    }
+
+    function handleViewButton() {
+      var toggleViewTraduzione =
+        getLocalStorage("toggleViewTraduzione") === "true";
+
+      toggleViewTraduzione
+        ?
+        enableViewTraduzione() :
+        disableViewTraduzione();
+
+      $(".view-icon")
+        .off("click")
+        .on("click", function() {
+          toggleViewTraduzione = !toggleViewTraduzione;
+          toggleViewTraduzione
+            ?
+            enableViewTraduzione() :
+            disableViewTraduzione();
+
+          setLocalStorage(
+            "toggleViewTraduzione",
+            toggleViewTraduzione
+          );
+        });
+    }
+
+    function enableViewTraduzione() {
+      $("#traduzione").css("display", "block");
+      $(".down").hide();
+      $(".up").show();
+    }
+
+    function disableViewTraduzione() {
+      $("#traduzione").css("display", "none");
+      $(".up").hide();
+      $(".down").show();
+    }
+
+    function getLocalStorage(key) {
+      return localStorage.getItem(key);
+    }
+
+    function setLocalStorage(key, value) {
+      localStorage.setItem(key, value);
+    }
+
+  }).fail(function() {
+    console.log("Не удалось загрузить данные из frasario.json.");
+  });
 
   var pappagallo = new Audio("/audio/pappagallo.mp3");
   var randomArray;
