@@ -530,7 +530,7 @@ $(function() {
 
     // Функция блокировки кнопок
     function disableButtons(isBlocked) {
-      var buttonsToDisable = $("#playButtonRandom, .random-icon, .view-icon, #tocIcon");
+      var buttonsToDisable = $("#playButtonRandom, .random-icon, .view-icon, .tocIcon");
   
       if (isBlocked) {
           buttonsToDisable.addClass("disabled");
