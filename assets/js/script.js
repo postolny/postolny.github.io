@@ -530,13 +530,14 @@ $(function() {
 
     // Функция блокировки кнопок
     function disableButtons(isBlocked) {
-      var buttonsToDisable = $("#playButtonRandom, .random-icon, .view-icon:visible, #tocIcon");
-  
       if (isBlocked) {
-          buttonsToDisable.addClass("disabled");
-          buttonsToDisable.off("click");
+        $("#frasarioIcons .view-icon").parent().addClass("disabled");
+        $("#frasarioIcons .random-icon").parent().addClass("disabled");
+        $("#frasarioIcons #playButtonRandom").parent().addClass("disabled");
+        $("#frasarioIcons #tocIcon").parent().addClass("disabled");
+        // Другие элементы
       } else {
-          buttonsToDisable.removeClass("disabled");
+        $("#frasarioIcons span").removeClass("disabled");
       }
     }
 
