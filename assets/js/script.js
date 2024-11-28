@@ -517,13 +517,13 @@ $(function() {
         // Обработка кликов на элементы списка в оглавлении
         $("#tocWrap li").off("click").on("click", function() {
           var index = $(this).data("index");
-          var selectedItem = titles[index]; // Находим нужный элемент по его индексу
+          var selectedItem = titles[index];
 
           loadSelectedItem(selectedItem);
 
-          $("#tocWrap").hide(); // Скрываем оглавление
-          $("#fraseWrap").show(); // Показываем основной контент
-          disableButtons(false); // Снимаем блокировку с кнопок
+          $("#tocWrap").hide();
+          $("#fraseWrap").show();
+          disableButtons(false);
         });
       }
     }
@@ -535,7 +535,6 @@ $(function() {
         $("#frasarioIcons .random-icon").parent().addClass("disabled");
         $("#frasarioIcons #playButtonRandom").parent().addClass("disabled");
         $("#frasarioIcons #tocIcon").parent().addClass("disabled");
-        // Другие элементы
       } else {
         $("#frasarioIcons span").removeClass("disabled");
       }
