@@ -212,9 +212,9 @@ $(function() {
     numerali = data;
     console.log(numerali);
 
-    var rand = Math.floor(Math.random() * myArray.length);
+    var rand = Math.floor(Math.random() * numerali.length);
     var i = 0;
-    $("#q_num").html("<div id='text_num'>" + myArray[rand].q1 + "</div>");
+    $("#q_num").html("<div id='text_num'>" + numerali[rand].q1 + "</div>");
     $("#q_ris").click(function() {
       i = i + 1;
       if (!$.trim($("#an_num").val())) {
@@ -222,13 +222,13 @@ $(function() {
         i = 0;
       } else {
         var answer = $("#an_num").val().toLowerCase().trim();
-        if (answer == myArray[rand].an) {
+        if (answer == numerali[rand].an) {
           $("#risultato").html(esattoIcon + esattoMsg);
         } else {
           $("#risultato").html(sbagliatoIcon + sbagliatoMsg);
           if (i == 3) {
             $("#suggerimento")
-              .html("<div id=''>" + myArray[rand].an + "</div>")
+              .html("<div id=''>" + numerali[rand].an + "</div>")
               .slideDown();
           }
         }
@@ -239,14 +239,14 @@ $(function() {
     $("#next_num").click(function() {
       var newRand = rand;
       while (rand == newRand) {
-        newRand = Math.floor(Math.random() * myArray.length);
+        newRand = Math.floor(Math.random() * numerali.length);
       }
       rand = newRand;
-      $("#q_num").html("<div id='text_num'>" + myArray[newRand].q1 + "</div>");
+      $("#q_num").html("<div id='text_num'>" + numerali[newRand].q1 + "</div>");
       $("#risultato").hide();
       $("#an_num").val("").focus();
       $("#suggerimento")
-        .html("<div id=''>" + myArray[rand].an + "</div>")
+        .html("<div id=''>" + numerali[rand].an + "</div>")
         .hide();
       i = 0;
     });
