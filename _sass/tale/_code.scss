@@ -37,7 +37,8 @@ pre code {
 
   .lineno {
     color: $default-tint;
-    padding: 0 0.75rem 0 0.25rem;
+    margin: 0 0 1rem;
+    padding: 1rem .75rem 0 .25rem;
     // Make sure numbers aren't selectable
     -webkit-user-select: none;
     -moz-user-select: none;
