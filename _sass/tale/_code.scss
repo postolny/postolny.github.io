@@ -27,7 +27,7 @@ pre code {
   border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 1rem;
-  padding: 1.2rem 1rem 1rem;
+  padding: .8rem 1rem .8rem;
   position: relative;
 
   pre {
@@ -50,19 +50,8 @@ pre code {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: $default-shade;
-  color: $white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 12px;
   z-index: 2;
-  transition: background-color 0.3s;
-}
-.copy-btn.copied {
-  background-color: $green;
-  box-shadow: 0px 0px 5px 0px rgba(34,60,80,.8) inset;
 }
 
 kbd {
