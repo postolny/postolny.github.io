@@ -887,6 +887,45 @@ $(function() {
     }
   });
 
+  $('.copy-btn').click(function() {
+    let codeHtml;
+
+    const figureBlock = $(this).closest('figure.highlight'); // Для figure
+    const preBlock = $(this).siblings('.highlight').find('code'); // Для .highlight
+
+    if (figureBlock.length) {
+      const codeElement = figureBlock.find('code');
+      if (codeElement.length) {
+        codeHtml = codeElement.clone(); // Клонируем code
+        codeHtml.find('.lineno').remove(); // Убираем номера строк
+      }
+    } else if (preBlock.length) {
+      // Для CSS-блоков и других
+      codeHtml = preBlock.clone();
+    }
+
+    // если код найден
+    if (codeHtml && codeHtml.length) {
+      // Убираем все теги и получаем только текст
+      const codeTextWithoutHTML = codeHtml.html().replace(/<[^>]*>/g, '');
+
+      // Копируем в буфер обмена
+      const tempInput = $('<textarea>');
+      $('body').append(tempInput);
+      tempInput.val(codeTextWithoutHTML).select();
+      document.execCommand('copy');
+      tempInput.remove();
+
+      // Изменяем текст кнопки
+      $(this).text('Скопировано').addClass('copied');
+      setTimeout(() => {
+        $(this).text('Копировать').removeClass('copied');
+      }, 2000);
+    } else {
+      console.error('Не удалось найти код для копирования.');
+    }
+  });
+
   var Mwidth = 960;
   if ($(window).width() > Mwidth) {
     var headerHeight = $(".navigation").height();
