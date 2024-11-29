@@ -923,9 +923,9 @@ $(function() {
       tempInput.remove();
 
       // Изменяем значок
-      $(this).text(copied);
+      $(this).html(copied);
       setTimeout(() => {
-        $(this).text(copy);
+        $(this).html(copy);
       }, 2000);
     } else {
       console.error('Не удалось найти код для копирования.');
