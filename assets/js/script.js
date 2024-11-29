@@ -889,7 +889,7 @@ $(function() {
 
   $('figure.highlight, .language-batch.highlighter-rouge, .language-shell.highlighter-rouge, .language-js.highlighter-rouge, .language-css.highlighter-rouge').each(function() {
     if (!$(this).find('.copy-btn').length) {
-      $(this).css('position', 'relative').prepend('<button class="copy-btn">Копировать</button>');
+      $(this).css('position', 'relative').prepend(copy);
     }
   });
 
@@ -922,10 +922,10 @@ $(function() {
       document.execCommand('copy');
       tempInput.remove();
 
-      // Изменяем текст кнопки
-      $(this).text('Скопировано').addClass('copied');
+      // Изменяем значок
+      $(this).text(copied);
       setTimeout(() => {
-        $(this).text('Копировать').removeClass('copied');
+        $(this).text(copy);
       }, 2000);
     } else {
       console.error('Не удалось найти код для копирования.');
