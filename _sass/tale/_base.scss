@@ -107,6 +107,11 @@ a {
   text-decoration: none;
 }
 
+a.longLinks {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
 sup {
   font-size: 14px;
 }
