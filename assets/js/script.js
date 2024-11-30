@@ -889,7 +889,7 @@ $(function() {
     }
   });
 
-  $('figure.highlight, .language-batch.highlighter-rouge, .language-shell.highlighter-rouge, .language-js.highlighter-rouge, .language-css.highlighter-rouge').each(function() {
+  $('figure.highlight, .highlighter-rouge[class^="language-"]:not(code)').each(function() {
     if (!$(this).find('.copy-btn').length) {
       $(this).css('position', 'relative').prepend(copy);
     }
