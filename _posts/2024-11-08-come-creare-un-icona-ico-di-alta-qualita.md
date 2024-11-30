@@ -23,7 +23,7 @@ tags: [Software, Web]
 
 Идём дальше. Для эксперимента я возьму иконку с сайта онлайн-переводчика DeepL, которая имет следующий адрес:
 
-[https://static.deepl.com/img/favicon/favicon_96.png](https://static.deepl.com/img/favicon/favicon_96.png){:target="_blank" rel="noopener noreferrer"}
+[https://static.deepl.com/img/favicon/favicon_96.png](https://static.deepl.com/img/favicon/favicon_96.png){:target="_blank" rel="noopener noreferrer"}{:.longLinks}
 
 Эту иконку я буду конвертировать в мультиформатный ICO с помощью программы ImageMagick.
 
