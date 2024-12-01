@@ -180,16 +180,113 @@ $(function() {
     });
   });
 
-  $("audio").on("play", function() {
-    var id = $(this).attr("id");
+  const audioPlayer = $('#audio')[0];
 
-    $("audio")
-      .not(this)
-      .each(function(index, audio) {
-        audio.pause();
-        audio.currentTime = 0;
+  if (audioPlayer) {
+    let currentIndex = 0;
+    let isInitialized = false;
+
+    $('#playlist li').click(function() {
+      setActiveTrack($(this).index());
+      const src = $(this).data('src');
+      initializeAudioPlayer(src);
+    });
+
+    $('#play-pause').click(function() {
+      if (!isInitialized) {
+        const initialSrc = $('#playlist li').eq(currentIndex).data('src');
+        initializeAudioPlayer(initialSrc);
+      } else {
+        togglePlayPause();
+      }
+    });
+
+    $('#next').click(nextTrack);
+    $('#prev').click(prevTrack);
+
+    $('#volume-control').on('input', function() {
+      audioPlayer.volume = $(this).val();
+    });
+
+    setActiveTrack(0, false);
+
+    function setActiveTrack(index, scroll = true) {
+      $('#playlist li').removeClass('active');
+      currentIndex = index;
+      $('#playlist li').eq(currentIndex).addClass('active');
+
+      if (scroll) {
+        scrollToCurrentTrack();
+      }
+    }
+
+    function initializeAudioPlayer(src) {
+      isInitialized = true;
+      audioPlayer.src = src;
+
+      audioPlayer.play().then(function() {
+        $('#play-icon').hide();
+        $('#pause-icon').show();
+      }).catch(function(error) {
+        console.error("Ошибка воспроизведения:", error);
       });
-  });
+    }
+
+    function playAudio(src) {
+      if (audioPlayer.src !== location.origin + src) {
+        audioPlayer.src = src;
+      }
+
+      audioPlayer.play().then(function() {
+        $('#play-icon').hide();
+        $('#pause-icon').show();
+      }).catch(function(error) {
+        console.error("Ошибка воспроизведения:", error);
+      });
+    }
+
+    function togglePlayPause() {
+      if (audioPlayer.paused) {
+        audioPlayer.play().then(function() {
+          $('#play-icon').hide();
+          $('#pause-icon').show();
+        }).catch(function(error) {
+          console.error("Ошибка воспроизведения:", error);
+        });
+      } else {
+        audioPlayer.pause();
+        $('#play-icon').show();
+        $('#pause-icon').hide();
+      }
+    }
+
+    function nextTrack() {
+      currentIndex = (currentIndex + 1) % $('#playlist li').length;
+      $('#playlist li').eq(currentIndex).click();
+    }
+
+    function prevTrack() {
+      currentIndex = (currentIndex - 1 + $('#playlist li').length) % $('#playlist li').length;
+      $('#playlist li').eq(currentIndex).click();
+    }
+
+    audioPlayer.addEventListener('ended', function() {
+      if (currentIndex + 1 < $('#playlist li').length) {
+        nextTrack();
+      } else {
+        $('#play-icon').show();
+        $('#pause-icon').hide();
+      }
+    });
+
+    function scrollToCurrentTrack() {
+      const currentTrack = $('#playlist li').eq(currentIndex)[0];
+      currentTrack.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+      });
+    }
+  }
 
   $("video").on("play", function() {
     var id = $(this).attr("id");
