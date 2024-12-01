@@ -10,7 +10,7 @@
     margin: auto 5px;
     font-weight: bold;
     border: 3px solid $default-shade;
-    color: #fff;
+    color: $white;
     background-color: $default-shade;
   }
   span.previous {
@@ -20,7 +20,7 @@
     font-weight: bold;
     border: 3px solid $default-shade;
     color: $default-shade;
-    background-color: #fff;
+    background-color: $white;
   }
   span.next {
     display: inline-block;
@@ -29,7 +29,7 @@
     font-weight: bold;
     border: 3px solid $default-shade;
     color: $default-shade;
-    background-color: #fff;
+    background-color: $white;
   }
 }
 

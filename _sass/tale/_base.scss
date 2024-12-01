@@ -261,7 +261,7 @@ main {
 }
 
 blockquote {
-  border-left: 0.25rem solid $grey-2;
+  border-left: 0.25rem solid $grey-3;
   color: $grey-1;
   margin: 0.8rem 0;
   padding: 0.5rem 1rem;
@@ -309,13 +309,13 @@ video {
 }
 
 ::-moz-selection {
-  color: #fff;
+  color: $white;
   background: #8dc692;
   text-shadow: none;
 }
 
 ::selection {
-  color: #fff;
+  color: $white;
   background: #8dc692;
   text-shadow: none;
 }
@@ -327,13 +327,13 @@ table:not(.highlight table) {
   margin: 0 0 1rem;
   td {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $grey-2;
     vertical-align: top;
     width: 100%;
   }
   th {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $grey-2;
     background-color: #c9e3fe;
     text-align: left;
   }
@@ -465,7 +465,7 @@ table:not(.highlight table) {
   font-weight: bold;
   box-shadow: 5px 5px 0 $green;
   background: $default-shade;
-  color: #fff;
+  color: $white;
   margin: 0 auto;
   width: 1.4em;
   height: 1.4em;
@@ -563,7 +563,7 @@ a[href$=".zip"]:before {
       display: block;
       border: none;
       padding: 7px;
-      border: 1px solid #ccc;
+      border: 1px solid $grey-2;
       &:before {
         content: attr(aria-label);
         float: left;

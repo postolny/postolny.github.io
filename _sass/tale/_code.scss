@@ -4,7 +4,7 @@ code {
 }
 
 code {
-  background-color: $grey-3;
+  background-color: $grey-4;
   border-radius: 3px;
   color: $code-color;
   font-size: 85%;
@@ -29,7 +29,7 @@ pre code {
 }
 
 .highlight {
-  background-color: $grey-3;
+  background-color: $grey-4;
   border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 1rem;
@@ -76,8 +76,8 @@ kbd {
   font-style: normal;
   padding: 1px 4px;
   color: #777;
-  background-color: #fff;
+  background-color: $white;
   border: solid 1px #d9d9d9;
   border-radius: 3px;
-  box-shadow: 0 1px 0 0 #ccc;
+  box-shadow: 0 1px 0 0 $grey-2;
 }

@@ -188,7 +188,7 @@ nav {
   &:hover {
     .nav-icon {
       svg {
-        fill: #fff;
+        fill: $white;
       }
     }
   }
@@ -294,7 +294,7 @@ nav {
         &:hover {
           .footer-icon {
             svg {
-              fill: #fff;
+              fill: $white;
             }
           }
         }
@@ -391,7 +391,7 @@ nav {
   position: relative;
   margin-left: -70px;
   margin-top: 72px;
-  color: #fff;
+  color: $white;
   background-color: LimeGreen;
   border-radius: 3px;
   box-sizing: border-box;
@@ -430,7 +430,7 @@ nav {
   color: #3cb371;
   border: 2px #3cb371 solid;
   &:hover {
-    color: #fff;
+    color: $white;
     background-color: #3cb371;
   }
 }
@@ -490,7 +490,7 @@ nav {
   max-height: 100vh;
   margin-bottom: 30px;
   h2 {
-    color: #fff;
+    color: $white;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
   }
 }
@@ -505,7 +505,7 @@ nav {
   display: inline-block;
   position: relative;
   padding: 10px 20px;
-  color: white;
+  color: $white;
   font-family: $serif-secondary;
   font-size: 14px;
   background: $default-shade;
@@ -518,7 +518,7 @@ nav {
     width: 0;
     top: 0;
     right: 0;
-    background: linear-gradient(225deg, #ffffff 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+    background: linear-gradient(225deg, $white 45%, $default-tint 50%, $grey-2 56%, $white 80%);
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
   }
@@ -633,14 +633,122 @@ nav {
   white-space: pre-wrap;
 }
 
-/* Выравнивание audio HTML5 */
-#musica {
+#player-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin-top: 40px;
-  div {
-    margin-bottom: 10px;
+}
+#audio-player {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid $grey-2;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: $white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#player-controls {
+  position: sticky;
+  top: 0;
+  background: $default-shade;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    svg {
+      color: $white;
+      vertical-align: middle;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+#playlist-container {
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid $grey-2;
+}
+ul#playlist {
+  font-size: 16px;
+  padding: 0 0 0 30px;
+}
+#playlist {
+  li {
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background: $grey-4;
+    }
+  }
+  li.active {
+    background: $grey-4;
+  }
+}
+#volume-control[type=range] {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  width: 100px;
+  height: 10px;
+  margin: 0;
+  border: none;
+  padding: 1px 2px;
+  border-radius: 14px;
+  background: #3b3b3b;
+  box-shadow: inset 0 1px 0 0 #0d0e0f, inset 0 -1px 0 0 #3a3d42;
+  -webkit-box-shadow: inset 0 1px 0 0 #0d0e0f, inset 0 -1px 0 0 #3a3d42;
+  outline: 0;
+  &::-moz-range-track {
+    border: inherit;
+    background: 0 0;
+  }
+  &::-ms-track {
+    border: inherit;
+    color: transparent;
+    background: 0 0;
+  }
+  &::-ms-fill-lower {
+    background: 0 0;
+  }
+  &::-ms-fill-upper {
+    background: 0 0;
+  }
+  &::-ms-tooltip {
+    display: none;
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 8px;
+    border: none;
+    border-radius: 12px;
+    background: #1f4037;
+    background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);
+    background: linear-gradient(to bottom, #99f2c8, #1f4037);
+  }
+  &::-moz-range-thumb {
+    width: 30px;
+    height: 8px;
+    border: none;
+    border-radius: 12px;
+    background: #1f4037;
+    background: linear-gradient(to bottom, #99f2c8, #1f4037);
+  }
+  &::-ms-thumb {
+    width: 30px;
+    height: 8px;
+    border-radius: 12px;
+    border: 0;
+    background: #1f4037;
+    background: linear-gradient(to bottom, #99f2c8, #1f4037);
   }
 }
 
