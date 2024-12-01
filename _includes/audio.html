@@ -1,3 +1,23 @@
-<div class="audio-wrapper">
-    <audio src="{{ site.baseurl }}/audio/{{ include.id }}" controls preload></audio>
+<div id="player-container">
+  <div id="audio-player">
+    <div id="player-controls">
+      <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M17.25 4.336v15.328L9.586 12zM8.5 5v14h-2V5z" /></svg></button>
+      <button id="play-pause"><svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14" /></svg><svg id="pause-icon" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12" />
+          <path fill="currentColor" d="M8 8h8v8H8z" /></svg></button>
+      <button id="next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M6.75 4.336L14.414 12L6.75 19.664zM17.5 5v14h-2V5z" /></svg></button>
+      <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+    </div>
+    <div id="playlist-container">
+      <ul id="playlist">
+        {% for item in site.data.audio %}
+        <li data-src="/mp3/{{ item.mp3 }}">{{ item.name }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <audio id="audio"></audio>
+  </div>
 </div>
