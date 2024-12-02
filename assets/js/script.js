@@ -204,9 +204,28 @@ $(function() {
     $('#next').click(nextTrack);
     $('#prev').click(prevTrack);
 
-    $('#volume-control').on('input', function() {
-      audioPlayer.volume = $(this).val();
-    });
+    // $('#volume-control').on('input', function() {
+    //   audioPlayer.volume = $(this).val();
+    // });
+
+    function updateVolume() {
+      const volume = $("#volume-control").val();
+      audioPlayer.volume = volume;
+      $(".value").text(volume);
+
+      localStorage.setItem('playerVolume', volume);
+    }
+
+    const savedVolume = localStorage.getItem('playerVolume');
+    if (savedVolume !== null) {
+      $("#volume-control").val(savedVolume);
+      audioPlayer.volume = savedVolume;
+      $(".value").text(savedVolume);
+    } else {
+      updateVolume();
+    }
+
+    $('#volume-control').on('input', updateVolume);
 
     setActiveTrack(0, false);
 
