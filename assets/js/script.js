@@ -265,8 +265,11 @@ $(function() {
       });
     }
 
+    let triggeredByTogglePlayPause = false;
+
     function togglePlayPause() {
       if (audioPlayer.paused) {
+        triggeredByTogglePlayPause = true;
         audioPlayer.play().then(function() {
           $('#play-icon').hide();
           $('#pause-icon').show();
@@ -291,6 +294,11 @@ $(function() {
     }
 
     audioPlayer.addEventListener('play', function() {
+
+      if (triggeredByTogglePlayPause) {
+        triggeredByTogglePlayPause = false;
+        return;
+      }
 
       progressImage.hide();
       progressImage.css('left', '-150px');
