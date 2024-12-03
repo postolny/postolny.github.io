@@ -290,28 +290,36 @@ $(function() {
       $('#playlist li').eq(currentIndex).click();
     }
 
-    audioPlayer.addEventListener('play', function () {
+    audioPlayer.addEventListener('play', function() {
 
       progressImage.hide();
       progressImage.css('left', '-150px');
-     
+
       setTimeout(() => {
         progressImage.addClass('visible');
         progressImage.show();
       }, 50);
     });
 
-    audioPlayer.addEventListener('timeupdate', function () {
+    audioPlayer.addEventListener('timeupdate', function() {
       const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
       progressImage.css('left', progress + '%');
     });
 
-    progressImage.click(function() {
+    progressImage.on('contextmenu', function(event) {
+      event.preventDefault();
+    });
+
+    progressImage.on('touchstart', function(event) {
+      event.preventDefault();
+    });
+
+    progressImage.on('touchend', function() {
       $(this).fadeOut();
     });
 
-    progressImage.on('contextmenu touchstart', (event) => {
-      event.preventDefault();
+    progressImage.on('click', function() {
+      $(this).fadeOut();
     });
 
     audioPlayer.addEventListener('ended', function() {
