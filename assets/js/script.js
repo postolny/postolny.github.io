@@ -306,6 +306,10 @@ $(function() {
       progressImage.css('left', progress + '%');
     });
 
+    progressImage.click(function() {
+      $(this).fadeOut();
+    });
+
     progressImage.on('contextmenu touchstart', (event) => {
       event.preventDefault();
     });
