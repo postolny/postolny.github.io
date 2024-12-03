@@ -181,6 +181,7 @@ $(function() {
   });
 
   const audioPlayer = $('#audio')[0];
+  const progressImage = $('#gondoliere');
 
   if (audioPlayer) {
     let currentIndex = 0;
@@ -288,6 +289,26 @@ $(function() {
       currentIndex = (currentIndex - 1 + $('#playlist li').length) % $('#playlist li').length;
       $('#playlist li').eq(currentIndex).click();
     }
+
+    audioPlayer.addEventListener('play', function () {
+
+      progressImage.hide();
+      progressImage.css('left', '-150px');
+     
+      setTimeout(() => {
+        progressImage.addClass('visible');
+        progressImage.show();
+      }, 50);
+    });
+
+    audioPlayer.addEventListener('timeupdate', function () {
+      const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+      progressImage.css('left', progress + '%');
+    });
+
+    progressImage.on('contextmenu touchstart', (event) => {
+      event.preventDefault();
+    });
 
     audioPlayer.addEventListener('ended', function() {
       if (currentIndex + 1 < $('#playlist li').length) {
