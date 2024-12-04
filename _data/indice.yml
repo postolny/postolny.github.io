@@ -63,7 +63,7 @@ libri:
         url: /miniature/
       - page: Стихотворения
         url: /poesia/
-      - page: Моя музыка
+      - page: Моя музыка 𝄞
         url: /musica/
   - titolo: Переводы
     subfolderitems:
