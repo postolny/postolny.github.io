@@ -783,6 +783,59 @@ nav {
   }
 }
 
+body {
+  transition: background-color 0.5s ease;
+}
+#download_row > div {
+  transition: box-shadow 0.5s ease;
+}
+main {
+  h1,
+  h2 {
+    transition: color 0.5s ease;
+  }
+}
+a[href$=".pdf"]:before {
+  transition:
+    border 0.5s ease,
+    background-color 0.5s ease;
+}
+
+.playing {
+  background-color: #262626;
+}
+
+body.playing {
+  .banner {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  a[href$=".pdf"]:before {
+    background-color: #eee;
+    border: 1px solid #555;
+    box-shadow: none;
+  }
+
+  main {
+    h1,
+    h2 {
+      color: #fff;
+    }
+  }
+
+  #download_row > div {
+    box-shadow:
+      13px 13px 0 0 #222,
+      15px 15px 0 0 #777,
+      15px 11px 0 0 #777,
+      11px 15px 0 0;
+  }
+
+  .footer-container {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
 /* Ссылка для скачивания */
 #download_row {
   display: flex;
