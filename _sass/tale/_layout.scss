@@ -802,7 +802,7 @@ a[href$=".pdf"]:before {
 }
 
 .playing {
-  background-color: #262626;
+  background-color: $charcoalGrey;
 }
 
 body.playing {
@@ -811,15 +811,15 @@ body.playing {
   }
 
   a[href$=".pdf"]:before {
-    background-color: #eee;
-    border: 1px solid #555;
+    background-color: $grey-4;
+    border: 1px solid $default-color;
     box-shadow: none;
   }
 
   main {
     h1,
     h2 {
-      color: #fff;
+      color: $white;
     }
   }
 
