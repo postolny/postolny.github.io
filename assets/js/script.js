@@ -268,6 +268,8 @@ $(function() {
     let triggeredByTogglePlayPause = false;
 
     function togglePlayPause() {
+      $('body').removeClass('playing');
+
       if (audioPlayer.paused) {
         triggeredByTogglePlayPause = true;
         audioPlayer.play().then(function() {
@@ -294,6 +296,7 @@ $(function() {
     }
 
     audioPlayer.addEventListener('play', function() {
+      $('body').addClass('playing');
 
       if (triggeredByTogglePlayPause) {
         triggeredByTogglePlayPause = false;
@@ -331,6 +334,8 @@ $(function() {
     });
 
     audioPlayer.addEventListener('ended', function() {
+      $('body').removeClass('playing');
+
       if (currentIndex + 1 < $('#playlist li').length) {
         nextTrack();
       } else {
