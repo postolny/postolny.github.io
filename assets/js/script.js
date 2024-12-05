@@ -182,6 +182,31 @@ $(function() {
 
   const audioPlayer = $('#audio')[0];
   const progressImage = $('#gondoliere');
+  let wakeLock = null;
+
+  // Запрос Wake Lock
+  async function requestWakeLock() {
+    try {
+      if (!wakeLock) { // Используем, только если Wake Lock не активен
+        wakeLock = await navigator.wakeLock.request('screen');
+        console.log('Wake Lock активирован');
+        wakeLock.addEventListener('release', () => {
+          console.log('Wake Lock деактивирован');
+        });
+      }
+    } catch (err) {
+      console.error('Не удалось активировать Wake Lock');
+    }
+  }
+
+  // Отключение Wake Lock
+  function releaseWakeLock() {
+    if (wakeLock !== null) {
+      wakeLock.release();
+      wakeLock = null;
+      console.log('Wake Lock отключён');
+    }
+  }
 
   if (audioPlayer) {
     let currentIndex = 0;
@@ -296,6 +321,7 @@ $(function() {
     }
 
     audioPlayer.addEventListener('play', function() {
+      requestWakeLock();
       $('body').addClass('playing');
 
       if (triggeredByTogglePlayPause) {
@@ -310,6 +336,10 @@ $(function() {
         progressImage.addClass('visible');
         progressImage.show();
       }, 50);
+    });
+
+    audioPlayer.addEventListener('pause', function() {
+      releaseWakeLock();
     });
 
     audioPlayer.addEventListener('timeupdate', function() {
