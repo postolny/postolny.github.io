@@ -354,7 +354,8 @@ $(function() {
 
     function scrollToCurrentTrack() {
       const playlistContainer = $('#playlist-container');
-      const currentTrack = $('#playlist li').eq(currentIndex); // текущий трек
+      const playlistItem = $('#playlist li');
+      const currentTrack = playlistItem.eq(currentIndex); // текущий трек
 
       if (!currentTrack.length || !playlistContainer.length) return;
 
