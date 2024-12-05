@@ -342,29 +342,36 @@ $(function() {
         $('#play-icon').show();
         $('#pause-icon').hide();
       }
+
+      progressImage.hide();
+      progressImage.css('left', '-150px');
+
+      setTimeout(() => {
+        progressImage.addClass('visible');
+        progressImage.show();
+      }, 50);
     });
 
     function scrollToCurrentTrack() {
-      const $playlistContainer = $('#playlist-container');
-      const $playlist = $('#playlist');
-      const $currentTrack = $('#playlist li').eq(currentIndex); // текущий трек
+      const playlistContainer = $('#playlist-container');
+      const currentTrack = $('#playlist li').eq(currentIndex); // текущий трек
 
-      if (!$currentTrack.length || !$playlistContainer.length) return;
+      if (!currentTrack.length || !playlistContainer.length) return;
 
       // Позиция #playlist-container относительно документа
-      const containerOffsetTop = $playlistContainer.offset().top;
+      const containerOffsetTop = playlistContainer.offset().top;
 
       // Прокрутка контейнера
-      const containerTop = $playlistContainer.scrollTop();
-      const containerBottom = containerTop + $playlistContainer.innerHeight();
+      const containerTop = playlistContainer.scrollTop();
+      const containerBottom = containerTop + playlistContainer.innerHeight();
 
       // Позиция трека относительно контейнера
-      const trackTop = $currentTrack.offset().top - containerOffsetTop + containerTop;
-      const trackBottom = trackTop + $currentTrack.outerHeight();
+      const trackTop = currentTrack.offset().top - containerOffsetTop + containerTop;
+      const trackBottom = trackTop + currentTrack.outerHeight();
 
       // Если трек выше видимой области
       if (trackTop < containerTop) {
-        $playlistContainer.animate({
+        playlistContainer.animate({
             scrollTop: trackTop,
           },
           300
@@ -372,8 +379,8 @@ $(function() {
       }
       // Если трек ниже видимой области
       else if (trackBottom > containerBottom) {
-        $playlistContainer.animate({
-            scrollTop: trackBottom - $playlistContainer.innerHeight(),
+        playlistContainer.animate({
+            scrollTop: trackBottom - playlistContainer.innerHeight(),
           },
           300
         );
