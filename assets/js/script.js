@@ -208,6 +208,17 @@ $(function() {
     }
   }
 
+  // Отслеживаем переход на другую кладку или сворачивание окна, что снова активировать Wake Lock по возвращению
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      console.log('Вкладка активна');
+      requestWakeLock(); // Повторный запрос Wake Lock
+    } else {
+      console.log('Вкладка свернута');
+      releaseWakeLock(); // Отключение Wake Lock
+    }
+  });
+
   if (audioPlayer) {
     let currentIndex = 0;
     let isInitialized = false;
