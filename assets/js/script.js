@@ -345,11 +345,39 @@ $(function() {
     });
 
     function scrollToCurrentTrack() {
-      const currentTrack = $('#playlist li').eq(currentIndex)[0];
-      currentTrack.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-      });
+      const $playlistContainer = $('#playlist-container');
+      const $playlist = $('#playlist');
+      const $currentTrack = $('#playlist li').eq(currentIndex); // текущий трек
+
+      if (!$currentTrack.length || !$playlistContainer.length) return;
+
+      // Позиция #playlist-container относительно документа
+      const containerOffsetTop = $playlistContainer.offset().top;
+
+      // Прокрутка контейнера
+      const containerTop = $playlistContainer.scrollTop();
+      const containerBottom = containerTop + $playlistContainer.innerHeight();
+
+      // Позиция трека относительно контейнера
+      const trackTop = $currentTrack.offset().top - containerOffsetTop + containerTop;
+      const trackBottom = trackTop + $currentTrack.outerHeight();
+
+      // Если трек выше видимой области
+      if (trackTop < containerTop) {
+        $playlistContainer.animate({
+            scrollTop: trackTop,
+          },
+          300
+        );
+      }
+      // Если трек ниже видимой области
+      else if (trackBottom > containerBottom) {
+        $playlistContainer.animate({
+            scrollTop: trackBottom - $playlistContainer.innerHeight(),
+          },
+          300
+        );
+      }
     }
   }
 
