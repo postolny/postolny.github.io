@@ -473,7 +473,7 @@ table:not(.highlight table) {
 }
 
 #wrapper-toc,
-#download_row > div {
+#spartiti_row > div {
   margin-left: 10px;
   margin-right: 10px;
   padding: 1em;
@@ -482,7 +482,7 @@ table:not(.highlight table) {
   transform: translate(-7.5px, 0); // Компенсация смещения, образуемого за счёт box-shadow
 }
 
-#download_row {
+#spartiti_row {
 	ul {
 		list-style-type: none;
 		padding-left: 10px;
