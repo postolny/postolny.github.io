@@ -183,6 +183,7 @@ $(function() {
   const audioPlayer = $('#audio')[0];
   const progressImage = $('#gondoliere');
   let wakeLock = null;
+  const frasarioIconContainer = $("#frasario-icon-container");
 
   // Запрос Wake Lock
   async function requestWakeLock() {
@@ -334,6 +335,7 @@ $(function() {
     audioPlayer.addEventListener('play', function() {
       requestWakeLock();
       $('body').addClass('playing');
+      frasarioIconContainer.fadeOut(300);
 
       if (triggeredByTogglePlayPause) {
         triggeredByTogglePlayPause = false;
@@ -351,6 +353,7 @@ $(function() {
 
     audioPlayer.addEventListener('pause', function() {
       releaseWakeLock();
+      frasarioIconContainer.fadeIn(300);
     });
 
     audioPlayer.addEventListener('timeupdate', function() {
