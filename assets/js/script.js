@@ -353,9 +353,11 @@ $(function() {
 
     audioPlayer.addEventListener('pause', function() {
       releaseWakeLock();
-      frasarioIconContainer.fadeIn(300);
+      if (!audioPlayer.ended) {
+        frasarioIconContainer.fadeIn(300);
+      }
     });
-
+    
     audioPlayer.addEventListener('timeupdate', function() {
       const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
       progressImage.css('left', progress + '%');
@@ -385,6 +387,7 @@ $(function() {
       } else {
         $('#play-icon').show();
         $('#pause-icon').hide();
+        frasarioIconContainer.fadeIn(300);
       }
 
       progressImage.hide();
