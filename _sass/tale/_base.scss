@@ -195,44 +195,6 @@ main {
   }
 }
 
-#wrapper-toc {
-  margin-bottom: 2em;
-  h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: $font-size-h3-toc;
-    line-height: $line-height-h3-toc;
-    @media (max-width: 768px) {
-      font-size: 1.25rem;
-      line-height: 1.3;
-    }
-  }
-  ol {
-    counter-reset: myCounter;
-    padding-left: 10px;
-    list-style: none;
-  }
-  li {
-    margin: 0 0 5px 0;
-    position: relative;
-    padding-left: 45px;
-    line-height: 30px;
-    &:before {
-      position: absolute;
-      left: 0;
-      counter-increment: myCounter;
-      content: counter(myCounter);
-      color: $white;
-      background: $default-shade;
-      height: 30px;
-      width: 30px;
-      text-align: center;
-      line-height: 30px;
-    }
-  }
-}
-
 .footnote {
   transition: color 0.25s ease-in-out;
   &:before {
@@ -470,57 +432,6 @@ table:not(.highlight table) {
   width: 1.4em;
   height: 1.4em;
   text-align: center;
-}
-
-#wrapper-toc,
-#spartiti_row > div {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 1em;
-  border: solid 2px #777;
-  box-shadow:
-    13px 13px 0 0 $white,
-    15px 15px 0 0 #777,
-    15px 11px 0 0 #777,
-    11px 15px 0 0 #777;
-  transform: translate(-7.5px, 0); // Компенсация смещения, образуемого за счёт box-shadow
-}
-
-#spartiti_row {
-  ul {
-    list-style-type: none;
-    padding-left: 10px;
-  }
-}
-
-a[href$=".pdf"]:before,
-a[href$=".docx"]:before,
-a[href$=".zip"]:before {
-  display: inline-block;
-  vertical-align: middle;
-  height: 24px;
-  line-height: 24px;
-  padding: 0 3px;
-  margin-right: 5px;
-  border: 1px solid $default-shade;
-  border-radius: 0 10px 0 0;
-  font-size: 12px;
-  color: $default-shade;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-a[href$=".pdf"]:before {
-  content: "PDF";
-}
-
-a[href$=".docx"]:before {
-  content: "DOCX";
-}
-
-a[href$=".zip"]:before {
-  content: "ZIP";
 }
 
 .lightbox {
