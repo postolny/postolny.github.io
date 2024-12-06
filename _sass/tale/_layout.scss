@@ -891,7 +891,7 @@ body.playing {
     padding-left: 10px;
   }
 
-  li {
+  li:not(:last-child) {
     padding-bottom: 0.3rem;
   }
 
