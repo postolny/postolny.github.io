@@ -234,6 +234,7 @@ $(function() {
       if (!isInitialized) {
         const initialSrc = $('#playlist li').eq(currentIndex).data('src');
         initializeAudioPlayer(initialSrc);
+        isInitialized = true;
       } else {
         togglePlayPause();
       }
@@ -357,7 +358,7 @@ $(function() {
         frasarioIconContainer.fadeIn(300);
       }
     });
-    
+
     audioPlayer.addEventListener('timeupdate', function() {
       const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
       progressImage.css('left', progress + '%');
@@ -1176,6 +1177,29 @@ $(function() {
       }, 2000);
     } else {
       console.error('Не удалось найти код для копирования.');
+    }
+  });
+
+  const visibleCount = 3;
+  const listItems = $('#showMoreList li');
+  const showMoreLink = $('#showMoreLink');
+
+  listItems.slice(visibleCount).hide();
+
+  function updateShowMoreText() {
+    const hiddenCount = listItems.filter(':hidden').length;
+    showMoreLink.text('Показать ещё (' + hiddenCount + ')');
+  }
+
+  updateShowMoreText();
+
+  showMoreLink.click(function(e) {
+    e.preventDefault();
+    listItems.slice(visibleCount).slideDown();
+    updateShowMoreText();
+
+    if (listItems.filter(':hidden').length === 0) {
+      showMoreLink.hide();
     }
   });
 
