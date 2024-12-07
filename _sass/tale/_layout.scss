@@ -786,9 +786,7 @@ nav {
 body {
   transition: background-color 0.5s ease;
 }
-#spartiti_row > div {
-  transition: box-shadow 0.5s ease;
-}
+
 main {
   h1,
   h2 {
@@ -887,6 +885,14 @@ body.playing {
 }
 
 #spartiti_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  > div {
+    transition: box-shadow 0.5s ease;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
