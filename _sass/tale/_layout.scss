@@ -824,7 +824,8 @@ body.playing {
     color: $lightGray;
   }
 
-  #spartiti_row a:hover {
+  #spartiti_row a:hover,
+  #showMoreLink:hover {
     color: $white;
   }
 
@@ -888,6 +889,7 @@ body.playing {
 #spartiti_row {
   ul {
     list-style-type: none;
+    margin: 0;
     padding-left: 10px;
   }
 
@@ -900,6 +902,18 @@ body.playing {
     height: 32px;
     vertical-align: middle;
     margin-right: 8px;
+  }
+}
+
+#showMoreLink {
+  margin-left: 10px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: #00ff4d;
   }
 }
 
@@ -923,9 +937,8 @@ body.playing {
   #spartiti_row {
     > div {
       font-size: 0.89rem;
-      padding: 0.3rem;
     }
-    li {
+    li:not(:last-child) {
       padding-bottom: 0.3rem;
     }
   }
