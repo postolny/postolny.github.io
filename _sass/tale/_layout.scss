@@ -1,3 +1,4 @@
+
 .container {
   margin: 0 auto;
   max-width: 800px;
@@ -834,8 +835,8 @@ body.playing {
 
 #wrapper-toc,
 #spartiti_row > div {
-  margin-left: 10px;
-  margin-right: 10px;
+  width: calc(100% - 20px); /* Учет отступов */
+  margin: 0 auto;
   padding: 1em;
   border: solid 2px #777;
   box-shadow:
@@ -886,6 +887,7 @@ body.playing {
 
 #spartiti_row {
   > div {
+    max-width: 620px;
     transition: box-shadow 0.5s ease;
   }
 
