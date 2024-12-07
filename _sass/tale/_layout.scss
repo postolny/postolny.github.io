@@ -938,8 +938,11 @@ body.playing {
     > div {
       font-size: 0.89rem;
     }
-    li:not(:last-child) {
-      padding-bottom: 0.3rem;
+    ul {
+      padding: 0;
+    }
+    #showMoreLink {
+      margin: 0;
     }
   }
   #playlist {
