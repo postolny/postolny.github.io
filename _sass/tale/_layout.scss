@@ -638,7 +638,6 @@ nav {
   max-width: 400px;
   border: 1px solid $grey-2;
   border-radius: 5px;
-  overflow: hidden;
   background-color: $white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -649,6 +648,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 10px;
+  border-radius: 5px 5px 0 0;
   justify-content: space-between;
   button {
     background: none;
@@ -706,7 +706,8 @@ nav {
   -webkit-appearance: none;
   appearance: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
   height: 10px;
   margin: 0;
   border: none;
@@ -782,6 +783,33 @@ nav {
   &.visible {
     left: 0%;
   }
+}
+
+.image {
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  max-width: 150px;
+  transition: transform 0.5s ease;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &.left {
+    top: 0;
+    left: 0;
+  }
+
+  &.right {
+    top: 0;
+    right: 0;
+  }
+}
+
+.img-container {
+  position: relative;
 }
 
 body {
