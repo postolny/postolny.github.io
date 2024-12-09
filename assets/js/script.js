@@ -183,7 +183,7 @@ $(function() {
   const audioPlayer = $('#audio')[0];
   const progressImage = $('#gondoliere');
   let wakeLock = null;
-  const frasarioIconContainer = $("#frasario-icon-container");
+  let frasarioIconContainer = $("#frasario-icon-container");
 
   // Запрос Wake Lock
   async function requestWakeLock() {
@@ -485,12 +485,18 @@ $(function() {
         var src = $(this).attr("src");
         $(this).attr("src", src);
       });
+    frasarioIconContainer.fadeOut(300);
+  });
+
+  $("video").on("pause", function() {
+    frasarioIconContainer.fadeIn(300);
   });
 
   $("video").on("ended", function() {
     $("video").currentTime = 0;
     var src = $(this).attr("src");
     $(this).attr("src", src);
+    frasarioIconContainer.fadeIn(300);
   });
 
   $.getJSON('/assets/numerali.json').done(function(data) {
