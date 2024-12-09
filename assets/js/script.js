@@ -306,8 +306,6 @@ $(function() {
     let triggeredByTogglePlayPause = false;
 
     function togglePlayPause() {
-      $('body').removeClass('playing');
-
       if (audioPlayer.paused) {
         triggeredByTogglePlayPause = true;
         audioPlayer.play().then(function() {
@@ -373,7 +371,7 @@ $(function() {
       frasarioIconContainer.fadeOut(300);
       setTimeout(() => {
         showImages();
-      }, 500);
+      }, 400);
 
       if (triggeredByTogglePlayPause) {
         triggeredByTogglePlayPause = false;
@@ -393,8 +391,10 @@ $(function() {
       releaseWakeLock();
       if (!audioPlayer.ended) {
         frasarioIconContainer.fadeIn(300);
+        hideImages();
         setTimeout(() => {
-          hideImages();
+          $('body').removeClass('playing');
+          frasarioIconContainer.fadeIn(300);
         }, 500);
       }
     });
@@ -421,16 +421,15 @@ $(function() {
     });
 
     audioPlayer.addEventListener('ended', function() {
-      $('body').removeClass('playing');
-
       if (currentIndex + 1 < $('#playlist li').length) {
         nextTrack();
       } else {
         $('#play-icon').show();
         $('#pause-icon').hide();
-        frasarioIconContainer.fadeIn(300);
+        hideImages();
         setTimeout(() => {
-          hideImages();
+          $('body').removeClass('playing');
+          frasarioIconContainer.fadeIn(300);
         }, 500);
       }
 
