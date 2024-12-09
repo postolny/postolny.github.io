@@ -390,7 +390,6 @@ $(function() {
     audioPlayer.addEventListener('pause', function() {
       releaseWakeLock();
       if (!audioPlayer.ended) {
-        frasarioIconContainer.fadeIn(300);
         hideImages();
         setTimeout(() => {
           $('body').removeClass('playing');
