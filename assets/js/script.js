@@ -371,7 +371,7 @@ $(function() {
       frasarioIconContainer.fadeOut(300);
       setTimeout(() => {
         showImages();
-      }, 400);
+      }, 500);
 
       if (triggeredByTogglePlayPause) {
         triggeredByTogglePlayPause = false;
