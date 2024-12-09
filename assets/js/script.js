@@ -371,7 +371,9 @@ $(function() {
       requestWakeLock();
       $('body').addClass('playing');
       frasarioIconContainer.fadeOut(300);
-      showImages();
+      setTimeout(() => {
+        showImages();
+      }, 400);
 
       if (triggeredByTogglePlayPause) {
         triggeredByTogglePlayPause = false;
@@ -391,7 +393,9 @@ $(function() {
       releaseWakeLock();
       if (!audioPlayer.ended) {
         frasarioIconContainer.fadeIn(300);
-        hideImages();
+        setTimeout(() => {
+          hideImages();
+        }, 400);
       }
     });
 
@@ -425,7 +429,9 @@ $(function() {
         $('#play-icon').show();
         $('#pause-icon').hide();
         frasarioIconContainer.fadeIn(300);
-        hideImages();
+        setTimeout(() => {
+          hideImages();
+        }, 400);
       }
 
       progressImage.hide();
