@@ -373,7 +373,7 @@ $(function() {
       frasarioIconContainer.fadeOut(300);
       setTimeout(() => {
         showImages();
-      }, 400);
+      }, 500);
 
       if (triggeredByTogglePlayPause) {
         triggeredByTogglePlayPause = false;
@@ -395,7 +395,7 @@ $(function() {
         frasarioIconContainer.fadeIn(300);
         setTimeout(() => {
           hideImages();
-        }, 400);
+        }, 500);
       }
     });
 
@@ -431,7 +431,7 @@ $(function() {
         frasarioIconContainer.fadeIn(300);
         setTimeout(() => {
           hideImages();
-        }, 400);
+        }, 500);
       }
 
       progressImage.hide();
