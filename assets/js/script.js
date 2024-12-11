@@ -186,6 +186,7 @@ $(function() {
   let wakeLock = null;
   const playlistItems = $("#playlist li");
   let currentIndex = 0;
+  let togglePlayPause = false;
 
   function initializePlayer() {
     if (playlistItems.length) {
@@ -274,6 +275,7 @@ $(function() {
 
   function playPause() {
     if (audioPlayer[0].paused || audioPlayer[0].ended) {
+      togglePlayPause = true;
       $('#play-pause').removeClass('playing').addClass('paused');
       $('#play-pause').find('.icon-play').addClass('hidden');
       $('#play-pause').find('.icon-pause').removeClass('hidden');
@@ -360,9 +362,18 @@ $(function() {
     $('body').addClass('is-playing');
     frasarioIconContainer.fadeOut(300);
     setTimeout(() => showImages(), 500);
+    if (togglePlayPause) {
+      togglePlayPause = false;
+      return;
+    }
+
     progressImage.hide();
     progressImage.css('left', '-150px');
-    setTimeout(() => progressImage.addClass('visible').show(), 50);
+
+    setTimeout(() => {
+      progressImage.addClass('visible');
+      progressImage.show();
+    }, 50);
   });
 
   audioPlayer.on('pause', function() {
