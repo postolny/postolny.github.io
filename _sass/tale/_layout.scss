@@ -678,7 +678,7 @@ nav {
 .value {
   font-size: 10px;
   width: 22px;
-  color: #fff;
+  color: $white;
 }
 #playlist-container {
   max-height: 200px;
@@ -690,18 +690,28 @@ nav {
   padding: 0 10px;
   list-style: none;
 }
-#playlist {
-  li {
+
+#playlist li {
+  transition: background-color 0.3s ease;
+
+  a {
+    display: block;
     padding: 10px;
-    cursor: pointer;
-    &:hover {
-      background: $grey-4;
-    }
-  }
-  li.active {
-    background: $grey-4;
+    color: $default-color;
+    text-decoration: none;
+    font-weight: normal;
   }
 }
+
+.playing {
+  background-color: $grey-4;
+  transition: none;
+}
+
+.hidden {
+  display: none;
+}
+
 #volume-control[type="range"] {
   -webkit-appearance: none;
   appearance: none;
@@ -823,11 +833,11 @@ main {
   }
 }
 
-.playing {
+.is-playing {
   background-color: $charcoalGrey;
 }
 
-body.playing {
+body.is-playing {
   .banner {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
   }
