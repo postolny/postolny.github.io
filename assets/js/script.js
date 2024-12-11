@@ -192,7 +192,7 @@ $(function() {
     if (playlistItems.length) {
       const firstTrack = playlistItems.eq(0);
       firstTrack.addClass("playing");
-      $(audioPlayer).attr("src", firstTrack.find("a.audio-link").attr("href"));
+      $(audioPlayer).attr("src", firstTrack.data("src"));
     }
   }
 
@@ -203,7 +203,7 @@ $(function() {
     playlistItems.removeClass("playing");
     currentTrack.addClass("playing");
 
-    $(audioPlayer).attr("src", currentTrack.find("a.audio-link").attr("href"));
+    $(audioPlayer).attr("src", currentTrack.data("src"));
     currentIndex = index;
 
     scrollToCurrentTrack();
@@ -263,9 +263,9 @@ $(function() {
     }
   });
 
-  $("#playlist a.audio-link").on("click", function(event) {
+  $("#playlist li").on("click", function(event) {
     event.preventDefault();
-    const newIndex = $(this).parent().index();
+    const newIndex = $(this).index();
     updateTrack(newIndex);
   });
 
