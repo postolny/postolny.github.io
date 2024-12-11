@@ -342,6 +342,22 @@ $(function() {
     progressImage.css('left', progress + '%');
   });
 
+  progressImage.on('contextmenu', function(event) {
+    event.preventDefault();
+  });
+
+  progressImage.on('touchstart', function(event) {
+    event.preventDefault();
+  });
+
+  progressImage.on('touchend', function() {
+    $(this).fadeOut();
+  });
+
+  progressImage.on('click', function() {
+    $(this).fadeOut();
+  });
+
   audioPlayer.on('play', function() {
     $('body').addClass('is-playing');
     frasarioIconContainer.fadeOut(300);
