@@ -321,15 +321,15 @@ $(function() {
 
   function updateVolume() {
     const volume = $("#volume-control").val();
-    audioPlayer[0].volume = volume;
+    audioPlayer[0].volume = volume; // Доступ к DOM-элементу
     $(".value").text(volume);
-    localStorage.setItem('playerVolume', volume);
+    localStorage.setItem('playerVolume', volume); // Сохранение значения в localStorage
   }
 
   const savedVolume = localStorage.getItem('playerVolume');
   if (savedVolume !== null) {
     $("#volume-control").val(savedVolume);
-    audioPlayer.volume = savedVolume;
+    audioPlayer.volume = savedVolume; // Установка сохраненной громкости
     $(".value").text(savedVolume);
   } else {
     updateVolume();
@@ -337,7 +337,9 @@ $(function() {
 
   $('#volume-control').on('input', updateVolume);
 
-  audioPlayer[0].addEventListener('timeupdate', function() {
+
+  // Отслеживаем прогресс
+  audioPlayer.on('timeupdate', function() {
     const progress = (audioPlayer[0].currentTime / audioPlayer[0].duration) * 100;
     progressImage.css('left', progress + '%');
   });
