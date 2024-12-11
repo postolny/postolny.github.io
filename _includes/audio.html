@@ -35,7 +35,7 @@
     <div id="playlist-container">
       <ul id="playlist">
         {% for item in site.data.audio %}
-        <li><a class="audio-link" href="/mp3/{{ item.mp3 }}">{{ item.nome }}</a></li>
+        <li data-src="/mp3/{{ item.mp3 }}">{{ item.nome }}</li>
         {% endfor %}
       </ul>
     </div>
