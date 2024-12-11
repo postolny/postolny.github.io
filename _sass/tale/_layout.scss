@@ -685,21 +685,21 @@ nav {
   overflow-y: auto;
   border-top: 1px solid $grey-2;
 }
+
 #playlist {
   font-size: 1.11rem;
   padding: 0 10px;
   list-style: none;
-}
-
-#playlist li {
-  transition: background-color 0.3s ease;
-
-  a {
-    display: block;
+  li {
     padding: 10px;
-    color: $default-color;
-    text-decoration: none;
-    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background: $grey-4;
+    }
+  }
+  li.active {
+    background: $grey-4;
   }
 }
 
