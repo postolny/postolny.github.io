@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 style: proverbi
 title: "Proverbi"
 description: "Raccolta dei proverbi italiani"
