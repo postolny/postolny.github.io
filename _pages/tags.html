@@ -32,8 +32,8 @@ permalink: /tags/
       {% for post in sorted_posts %}
       <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <span class="tags-post-meta">
-          <time datetime="{{ post.date }}">
-            ({{ post.date | date:"%Y-%m-%d" }})
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+            ({{ post.date | date: '%d-%m-%Y' }})
           </time>
         </span>
       </li>
