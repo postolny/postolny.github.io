@@ -1,0 +1,25 @@
+.page {
+  padding: 3rem 0;
+
+  &-info {
+    color: $default-tint;
+    font-family: $serif-secondary;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 16px;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  &-title {
+    color: $default-shade;
+    font-family: $sans-serif;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+}
