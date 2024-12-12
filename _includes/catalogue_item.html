@@ -1,8 +1,8 @@
 <div class="catalogue-item">
   <time class="catalogue-time">
-    {% assign months = "января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря" | split: "|" %} 
+    {% assign months = "января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря" | split: "|" %}
     {% assign m = post.date | date: "%-m" | minus: 1 %}
-    {% assign day = post.date | date: "%d" %}
+    {% assign day = post.date | date: "%d" | plus: 0 %}
     {% assign month = months[m] %}
     {% assign year = post.date | date: "%Y" %}
     <span>{{ day }} {{ month }} {{ year }} года</span>
