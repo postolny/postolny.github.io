@@ -46,6 +46,6 @@
 </div>
 <div class="footer">
   <div class="footer-copyright">
-    <span id="currentYear"></span> {{ site.author.name }}
+    <time id="currentYear" datetime="{{ site.time | date: '%Y' }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}
   </div>
 </div>
