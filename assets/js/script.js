@@ -181,59 +181,15 @@ $(function() {
     });
   });
 
-  const audioPlayer = $('#audioPlayer');
+  var audioPlayer = $('#audioPlayer');
   const progressImage = $('#gondoliere');
   let wakeLock = null;
-  const playlistItems = $("#playlist li");
-  let currentIndex = 0;
   let togglePlayPause = false;
 
-  function initializePlayer() {
-    if (playlistItems.length) {
-      const firstTrack = playlistItems.eq(0);
-      firstTrack.addClass("playing");
-      $(audioPlayer).attr("src", firstTrack.data("src"));
-    }
-  }
-
-  function updateTrack(index) {
-    const currentTrack = playlistItems.eq(index);
-    if (!currentTrack.length) return;
-
-    playlistItems.removeClass("playing");
-    currentTrack.addClass("playing");
-
-    $(audioPlayer).attr("src", currentTrack.data("src"));
-    currentIndex = index;
-
-    scrollToCurrentTrack();
-
-    audioPlayer[0].play();
-    updatePlayPauseButton(true);
-  }
-
-  function scrollToCurrentTrack() {
-    const playlistContainer = $('#playlist-container');
-    const currentTrack = playlistItems.eq(currentIndex);
-
-    if (!currentTrack.length || !playlistContainer.length) return;
-
-    const containerOffsetTop = playlistContainer.offset().top;
-    const containerTop = playlistContainer.scrollTop();
-    const containerBottom = containerTop + playlistContainer.innerHeight();
-    const trackTop = currentTrack.offset().top - containerOffsetTop + containerTop;
-    const trackBottom = trackTop + currentTrack.outerHeight();
-
-    if (trackTop < containerTop) {
-      playlistContainer.animate({ scrollTop: trackTop }, 300);
-    } else if (trackBottom > containerBottom) {
-      playlistContainer.animate({ scrollTop: trackBottom - playlistContainer.innerHeight() }, 300);
-    }
-  }
-
+  // Запрос Wake Lock
   async function requestWakeLock() {
     try {
-      if (!wakeLock) {
+      if (!wakeLock) { // Используем, только если Wake Lock не активен
         wakeLock = await navigator.wakeLock.request('screen');
         console.log('Wake Lock активирован');
         wakeLock.addEventListener('release', () => {
@@ -241,10 +197,11 @@ $(function() {
         });
       }
     } catch (err) {
-      console.error('Не удалось активировать Wake Lock', err);
+      console.error('Не удалось активировать Wake Lock');
     }
   }
 
+  // Отключение Wake Lock
   function releaseWakeLock() {
     if (wakeLock !== null) {
       wakeLock.release();
@@ -253,186 +210,269 @@ $(function() {
     }
   }
 
+  // Отслеживаем переход на другую вкладку или сворачивание окна, что снова активировать Wake Lock по возвращению
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
       console.log('Вкладка активна');
-      requestWakeLock();
+      requestWakeLock(); // Повторный запрос Wake Lock
     } else {
       console.log('Вкладка свернута');
-      releaseWakeLock();
+      releaseWakeLock(); // Отключение Wake Lock
     }
   });
-
-  $("#playlist li").on("click", function(event) {
-    event.preventDefault();
-    const newIndex = $(this).index();
-    updateTrack(newIndex);
-  });
-
-  $('#play-pause').on('click', function() {
-    playPause();
-  });
-
-  function playPause() {
-    if (audioPlayer[0].paused || audioPlayer[0].ended) {
-      togglePlayPause = true;
-      $('#play-pause').removeClass('playing').addClass('paused');
-      $('#play-pause').find('.icon-play').addClass('hidden');
-      $('#play-pause').find('.icon-pause').removeClass('hidden');
-      audioPlayer[0].play();
-    } else {
-      $('#play-pause').removeClass('paused').addClass('playing');
-      $('#play-pause').find('.icon-play').removeClass('hidden');
-      $('#play-pause').find('.icon-pause').addClass('hidden');
-      audioPlayer[0].pause();
-    }
-  }
-
-  function updatePlayPauseButton(isPlaying) {
-    if (isPlaying) {
-      $('#play-pause').removeClass('playing').addClass('paused');
-      $('#play-pause').find('.icon-play').addClass('hidden');
-      $('#play-pause').find('.icon-pause').removeClass('hidden');
-    } else {
-      $('#play-pause').removeClass('paused').addClass('playing');
-      $('#play-pause').find('.icon-play').removeClass('hidden');
-      $('#play-pause').find('.icon-pause').addClass('hidden');
-    }
-  }
-
-  $('#next').click(nextTrack);
-  $('#prev').click(prevTrack);
-
-  function prevTrack() {
-    if (currentIndex > 0) {
-      updateTrack(currentIndex - 1);
-    } else {
-      updateTrack(playlistItems.length - 1);
-    }
-  }
-
-  function nextTrack() {
-    if (currentIndex + 1 < playlistItems.length) {
-      updateTrack(currentIndex + 1);
-    } else {
-      updateTrack(0);
-    }
-  }
-
-  function updateVolume() {
-    const volume = $("#volume-control").val();
-    audioPlayer[0].volume = volume;
-    $(".value").text(volume);
-    localStorage.setItem('playerVolume', volume);
-  }
-
-  const savedVolume = localStorage.getItem('playerVolume');
-  if (savedVolume !== null) {
-    $("#volume-control").val(savedVolume);
-    audioPlayer[0].volume = savedVolume;
-    $(".value").text(savedVolume);
-  } else {
-    updateVolume();
-  }
-
-  $('#volume-control').on('input', updateVolume);
-
-  audioPlayer.on('timeupdate', function() {
-    const currentTime = audioPlayer[0].currentTime;
-    const duration = audioPlayer[0].duration;
-    if (duration > 0) {
-      const progress = (currentTime / duration) * 100;
-      progressImage.css('left', progress + '%');
-    }
-  });
-
-  progressImage.on('contextmenu', function(event) {
-    event.preventDefault();
-  });
-
-  progressImage.on('touchstart', function(event) {
-    event.preventDefault();
-  });
-
-  progressImage.on('touchend', function() {
-    $(this).fadeOut();
-  });
-
-  progressImage.on('click', function() {
-    $(this).fadeOut();
-  });
-
-  audioPlayer.on('play', function() {
-    $('body').addClass('is-playing');
-    frasarioIconContainer.fadeOut(300);
-    setTimeout(() => showImages(), 500);
-    // Если это пауза, дальше ничего делаем
-    if (togglePlayPause) {
-      togglePlayPause = false;
-      return;
-    }
-
-    progressImage.hide();
-    progressImage.css('left', '-150px');
-
-    setTimeout(() => {
-      progressImage.addClass('visible');
-      progressImage.show();
-    }, 50);
-  });
-
-  audioPlayer.on('pause', function() {
-    releaseWakeLock();
-    if (!audioPlayer[0].ended) {
-      hideImages();
-      setTimeout(() => {
-        $('body').removeClass('is-playing');
-        frasarioIconContainer.fadeIn(300);
-      }, 500);
-    }
-  });
-
-  audioPlayer.on('ended', function() {
-    if (currentIndex + 1 < playlistItems.length) {
-      updateTrack(currentIndex + 1);
-    } else {
-      updatePlayPauseButton(false);
-      hideImages();
-      setTimeout(() => {
-        $('body').removeClass('is-playing');
-        frasarioIconContainer.fadeIn(300);
-      }, 500);
-    }
-    progressImage.hide();
-    progressImage.css('left', '-150px');
-    setTimeout(() => {
-      progressImage.addClass('visible');
-      progressImage.show();
-    }, 50);
-  });
-
-  function showImages() {
-    console.log('Показать изображения');
-    const transformSettings = window.innerWidth <= 768 ? {
-      left: 'translate(20%, -25%) rotate(20deg) scale(1.5)',
-      right: 'translate(-20%, -25%) rotate(-20deg) scale(1.5)',
-    } : {
-      left: 'translate(-20%, -40%) rotate(-30deg) scale(1.5)',
-      right: 'translate(20%, -40%) rotate(30deg) scale(1.5)',
-    };
-
-    $('.image.left').css({ transform: transformSettings.left, 'transform-origin': 'bottom center' });
-    $('.image.right').css({ transform: transformSettings.right, 'transform-origin': 'bottom center' });
-  }
-
-  function hideImages() {
-    console.log('Скрыть изображения');
-    $('.image.left').css({ transform: 'translate(0, 0) scale(1)' });
-    $('.image.right').css({ transform: 'translate(0, 0) scale(1)' });
-  }
 
   if (audioPlayer.length > 0) {
-    initializePlayer();
+    $(audioPlayer).attr("src", $("#playlist li:first").data("src"));
+    $("#playlist li:first").addClass("playing");
+    let currentIndex = 0;
+    $("#playlist li").on("click", function(event) {
+      event.preventDefault();
+      $(audioPlayer).attr("src", $(this).data("src"));
+      $("#playlist li").removeClass("playing");
+      $(this).addClass("playing");
+      currentIndex = $(this).index();
+      scrollToCurrentTrack();
+      audioPlayer[0].play();
+      updatePlayPauseButton(true);
+    });
+
+    $('#play-pause').on('click', function() {
+      playpause();
+    });
+
+    function playpause() {
+      if (audioPlayer[0].paused || audioPlayer[0].ended) {
+        togglePlayPause = true;
+        $('#play-pause').removeClass('playing').addClass('paused');
+        $('#play-pause').find('.icon-play').addClass('hidden');
+        $('#play-pause').find('.icon-pause').removeClass('hidden');
+        audioPlayer[0].play();
+      } else {
+        $('#play-pause').removeClass('paused').addClass('playing');
+        $('#play-pause').find('.icon-play').removeClass('hidden');
+        $('#play-pause').find('.icon-pause').addClass('hidden');
+        audioPlayer[0].pause();
+      }
+    }
+
+    function updatePlayPauseButton(isPlaying) {
+      if (isPlaying) {
+        $('#play-pause').removeClass('playing').addClass('paused');
+        $('#play-pause').find('.icon-play').addClass('hidden');
+        $('#play-pause').find('.icon-pause').removeClass('hidden');
+      } else {
+        $('#play-pause').removeClass('paused').addClass('playing');
+        $('#play-pause').find('.icon-play').removeClass('hidden');
+        $('#play-pause').find('.icon-pause').addClass('hidden');
+      }
+    }
+
+    $('#next').click(nextTrack);
+    $('#prev').click(prevTrack);
+
+    function prevTrack() {
+      var current = $("#playlist li.playing");
+      var prev = current.prev("li");
+
+      if (prev.length) {
+        $("#playlist li").removeClass("playing");
+        prev.addClass("playing");
+        $(audioPlayer).attr("src", prev.data("src"));
+        currentIndex = prev.index();
+        scrollToCurrentTrack();
+        audioPlayer[0].play();
+        updatePlayPauseButton(true);
+      } else {
+        var last = $("#playlist li:last");
+        $("#playlist li").removeClass("playing");
+        last.addClass("playing");
+        $(audioPlayer).attr("src", last.data("src"));
+        currentIndex = last.index();
+        scrollToCurrentTrack();
+        audioPlayer[0].play();
+        updatePlayPauseButton(true);
+      }
+    }
+
+    function nextTrack() {
+      var current = $("#playlist li.playing");
+      var next = current.next("li");
+      if (next.length) {
+        $("#playlist li").removeClass("playing");
+        next.addClass("playing");
+        $(audioPlayer).attr("src", next.data("src"));
+        currentIndex = next.index();
+        scrollToCurrentTrack();
+        audioPlayer[0].play();
+        updatePlayPauseButton(true);
+      } else {
+        var first = $("#playlist li:first");
+        $("#playlist li").removeClass("playing");
+        first.addClass("playing");
+        $(audioPlayer).attr("src", first.data("src"));
+        currentIndex = first.index();
+        scrollToCurrentTrack();
+        audioPlayer[0].play();
+        updatePlayPauseButton(true);
+      }
+    }
+
+
+    function updateVolume() {
+      const volume = $("#volume-control").val();
+      audioPlayer[0].volume = volume;
+      $(".value").text(volume);
+
+      localStorage.setItem('playerVolume', volume);
+    }
+
+    const savedVolume = localStorage.getItem('playerVolume');
+    if (savedVolume !== null) {
+      $("#volume-control").val(savedVolume);
+      audioPlayer[0].volume = savedVolume;
+      $(".value").text(savedVolume);
+    } else {
+      updateVolume();
+    }
+
+    $('#volume-control').on('input', updateVolume);
+
+    function showImages() {
+      if (window.innerWidth <= 768) {
+        $('.image.left').css({
+          transform: 'translate(20%, -25%) rotate(20deg) scale(1.5)',
+          'transform-origin': 'bottom center',
+        });
+
+        $('.image.right').css({
+          transform: 'translate(-20%, -25%) rotate(-20deg) scale(1.5)',
+          'transform-origin': 'bottom center',
+        });
+      } else {
+        $('.image.left').css({
+          transform: 'translate(-20%, -40%) rotate(-30deg) scale(1.5)',
+          'transform-origin': 'bottom center',
+        });
+
+        $('.image.right').css({
+          transform: 'translate(20%, -40%) rotate(30deg) scale(1.5)',
+          'transform-origin': 'bottom center',
+        });
+      }
+    }
+
+    function hideImages() {
+      $('.image.left').css({
+        transform: 'translate(0, 0) scale(1)',
+      });
+
+      $('.image.right').css({
+        transform: 'translate(0, 0) scale(1)',
+      });
+    }
+
+    audioPlayer.on('timeupdate', function() {
+      const currentTime = audioPlayer[0].currentTime;
+      const duration = audioPlayer[0].duration;
+
+      if (duration > 0) {
+        const progress = (currentTime / duration) * 100;
+        progressImage.css('left', progress + '%');
+      }
+    });
+
+    progressImage.on('contextmenu', function(event) {
+      event.preventDefault();
+    });
+
+    progressImage.on('touchstart', function(event) {
+      event.preventDefault();
+    });
+
+    progressImage.on('touchend', function() {
+      $(this).fadeOut();
+    });
+
+    progressImage.on('click', function() {
+      $(this).fadeOut();
+    });
+
+    audioPlayer.on('play', function() {
+      $('body').addClass('is-playing');
+      frasarioIconContainer.fadeOut(300);
+      setTimeout(() => {
+        showImages();
+      }, 500);
+      // Если это пауза, дальше ничего делаем
+      if (togglePlayPause) {
+        togglePlayPause = false;
+        return;
+      }
+
+      progressImage.hide();
+      progressImage.css('left', '-150px');
+
+      setTimeout(() => {
+        progressImage.addClass('visible');
+        progressImage.show();
+      }, 50);
+    });
+
+    audioPlayer.on('pause', function() {
+      releaseWakeLock();
+      if (!audioPlayer[0].ended) {
+        hideImages();
+        setTimeout(() => {
+          $('body').removeClass('is-playing');
+          frasarioIconContainer.fadeIn(300);
+        }, 500);
+      }
+    });
+
+    audioPlayer.on('ended', function() {
+      if (currentIndex + 1 < $('#playlist li').length) {
+        updatePlayPauseButton(true);
+        nextTrack();
+      } else {
+        hideImages();
+        setTimeout(() => {
+          $('body').removeClass('is-playing');
+          frasarioIconContainer.fadeIn(300);
+        }, 500);
+      }
+      progressImage.hide();
+      progressImage.css('left', '-150px');
+
+      setTimeout(() => {
+        progressImage.addClass('visible');
+        progressImage.show();
+      }, 50);
+    });
+
+    function scrollToCurrentTrack() {
+      const playlistContainer = $('#playlist-container');
+      const playlistItem = $('#playlist li');
+      const currentTrack = playlistItem.eq(currentIndex);
+
+      if (!currentTrack.length || !playlistContainer.length) return;
+
+      const containerOffsetTop = playlistContainer.offset().top;
+      const containerTop = playlistContainer.scrollTop();
+      const containerBottom = containerTop + playlistContainer.innerHeight();
+
+      const trackTop = currentTrack.offset().top - containerOffsetTop + containerTop;
+      const trackBottom = trackTop + currentTrack.outerHeight();
+
+      if (trackTop < containerTop) {
+        playlistContainer.animate({
+          scrollTop: trackTop,
+        }, 300);
+      } else if (trackBottom > containerBottom) {
+        playlistContainer.animate({
+          scrollTop: trackBottom - playlistContainer.innerHeight(),
+        }, 300);
+      }
+    }
   }
 
   $("video").on("play", function() {
