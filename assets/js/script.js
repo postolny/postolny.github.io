@@ -329,7 +329,7 @@ $(function() {
   const savedVolume = localStorage.getItem('playerVolume');
   if (savedVolume !== null) {
     $("#volume-control").val(savedVolume);
-    audioPlayer.volume = savedVolume;
+    audioPlayer[0].volume = savedVolume;
     $(".value").text(savedVolume);
   } else {
     updateVolume();
@@ -338,8 +338,12 @@ $(function() {
   $('#volume-control').on('input', updateVolume);
 
   audioPlayer.on('timeupdate', function() {
-    const progress = (audioPlayer[0].currentTime / audioPlayer[0].duration) * 100;
-    progressImage.css('left', progress + '%');
+    const currentTime = audioPlayer[0].currentTime;
+    const duration = audioPlayer[0].duration;
+    if (duration > 0) {
+      const progress = (currentTime / duration) * 100;
+      progressImage.css('left', progress + '%');
+    }
   });
 
   progressImage.on('contextmenu', function(event) {
@@ -362,6 +366,7 @@ $(function() {
     $('body').addClass('is-playing');
     frasarioIconContainer.fadeOut(300);
     setTimeout(() => showImages(), 500);
+    // Если это пауза, дальше ничего делаем
     if (togglePlayPause) {
       togglePlayPause = false;
       return;
@@ -426,7 +431,9 @@ $(function() {
     $('.image.right').css({ transform: 'translate(0, 0) scale(1)' });
   }
 
-  initializePlayer();
+  if (audioPlayer.length > 0) {
+    initializePlayer();
+  }
 
   $("video").on("play", function() {
     var id = $(this).attr("id");
