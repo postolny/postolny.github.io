@@ -946,14 +946,10 @@ body.is-playing {
 }
 
 #spartiti_row {
-  position: relative;
+  padding-bottom: 15px;
 
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 15px; /* для тени */
+  & ~ h2 {
+    margin-top: 15px;
   }
 
   > div {
