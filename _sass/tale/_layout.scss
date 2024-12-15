@@ -950,6 +950,8 @@ body.is-playing {
 }
 
 #spartiti_row {
+  margin: 20px 0;
+
   > div {
     max-width: 580px;
     font-size: 1.11rem;
@@ -1004,9 +1006,6 @@ body.is-playing {
 
 @media screen and (max-width: 768px) {
   #spartiti_row {
-    & ~ h2 {
-      margin-top: 35px;
-    }
     > div {
       font-size: 0.89rem;
     }
