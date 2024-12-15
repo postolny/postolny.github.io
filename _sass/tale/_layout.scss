@@ -950,9 +950,8 @@ body.is-playing {
 }
 
 #spartiti_row {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid transparent;
   > div {
     max-width: 580px;
     font-size: 1.11rem;
