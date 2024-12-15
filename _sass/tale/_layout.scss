@@ -946,12 +946,6 @@ body.is-playing {
 }
 
 #spartiti_row {
-  padding-bottom: 15px;
-
-  & ~ h2 {
-    margin-top: 15px;
-  }
-
   > div {
     max-width: 580px;
     font-size: 1.11rem;
@@ -1006,6 +1000,9 @@ body.is-playing {
 
 @media screen and (max-width: 768px) {
   #spartiti_row {
+    & ~ h2 {
+      margin-top: 15px;
+    }
     > div {
       font-size: 0.89rem;
     }
