@@ -946,7 +946,16 @@ body.is-playing {
 }
 
 #spartiti_row {
-  overflow: hidden; /* исключить схлопывание на мобильных */
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15px; /* для тени */
+  }
+
   > div {
     max-width: 580px;
     font-size: 1.11rem;
