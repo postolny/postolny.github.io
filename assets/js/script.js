@@ -398,6 +398,7 @@ $(function() {
     });
 
     audioPlayer.on('play', function() {
+      requestWakeLock();
       $('body').addClass('is-playing');
       frasarioIconContainer.fadeOut(300);
       setTimeout(() => {
@@ -419,7 +420,6 @@ $(function() {
     });
 
     audioPlayer.on('pause', function() {
-      releaseWakeLock();
       if (!audioPlayer[0].ended) {
         hideImages();
         setTimeout(() => {
@@ -427,6 +427,7 @@ $(function() {
           frasarioIconContainer.fadeIn(300);
         }, 500);
       }
+      releaseWakeLock();
     });
 
     audioPlayer.on('ended', function() {
