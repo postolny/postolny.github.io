@@ -317,7 +317,6 @@ $(function() {
       }
     }
 
-
     function updateVolume() {
       const volume = $("#volume-control").val();
       audioPlayer[0].volume = volume;
@@ -398,7 +397,6 @@ $(function() {
     });
 
     audioPlayer.on('play', function() {
-      requestWakeLock();
       $('body').addClass('is-playing');
       frasarioIconContainer.fadeOut(300);
       setTimeout(() => {
@@ -427,7 +425,6 @@ $(function() {
           frasarioIconContainer.fadeIn(300);
         }, 500);
       }
-      releaseWakeLock();
     });
 
     audioPlayer.on('ended', function() {
