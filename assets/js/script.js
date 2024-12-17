@@ -118,32 +118,39 @@ $(function() {
     "#я": "я_",
   };
 
-  function scrollToTag(tagId) {
-    const decodedTagId = decodeURIComponent(tagId); // Декодируем хэш
-    console.log("Прокручиваем к тегу:", decodedTagId);
+  function scrollToAnchor(anchor) {
+    // Декодируем якоря (для работы с кириллицей)
+    const decodedAnchor = decodeURIComponent(anchor);
 
-    const target = $(decodedTagId);
+    // отменяем автоматическую прокрутку браузера
+    window.scrollTo(0, 0);
 
-    if (target.length) {
-      console.log("Элемент найден:", target);
+    const target = $(decodedAnchor);
 
-      $("html, body").animate({
-          scrollTop: target.offset().top,
-        },
-        "fast"
-      );
-      history.replaceState(null, null, decodedTagId); // Меняем хэш
-      // history.pushState(null, null, decodedTagId);
-    } else {
-      console.log("Элемент не найден для:", decodedTagId);
-    }
+    $("html, body").animate({
+      scrollTop: target.offset().top,
+    }, "fast");
+
+    // history.pushState(null, null, decodedAnchor);
+    history.replaceState(null, null, decodedAnchor);
   }
 
-  // Прокрутка при клике на ссылку на странице тегов и в TOC
+  // Проверка хэша при загрузке страницы и прокрутка
+  const hash = window.location.hash;
+  if (hash) {
+    // отменяем автоматическую прокрутку браузера
+    window.scrollTo(0, 0);
+
+    // устанавливаем задержку для полной загрузки DOM
+    setTimeout(function() {
+      scrollToAnchor(hash);
+    }, 100);
+  }
+
+  // Прокрутка при клике на ссылку на странице тегов и TOC
   $(".tags a, .toc a").on("click", function() {
     const href = $.attr(this, "href");
-    console.log("Клик по ссылке в тегах и TOC:", href);
-    scrollToTag(href); // Прокрутка и добавление хэша
+    scrollToAnchor(href);
     return false;
   });
 
@@ -153,16 +160,9 @@ $(function() {
     var snd = new Audio("/audio/" + lettere[lettereIndex] + ".mp3");
     snd.play();
     const href = $.attr(this, "href");
-    console.log("Клик по ссылке в категориях:", href);
-    scrollToTag(href); // Прокрутка и добавление хэша
+    scrollToAnchor(href);
     return false;
   });
-
-  // Прокрутка при загрузке страницы, если в URL есть хэш
-  if (window.location.hash) {
-    console.log("Хэш при загрузке страницы:", window.location.hash);
-    scrollToTag(window.location.hash);
-  }
 
   $("#search").keyup(function() {
     var value = this.value.toLowerCase().trim();
