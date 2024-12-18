@@ -370,13 +370,67 @@ $(function() {
       });
     }
 
-    audioPlayer.on('timeupdate', function() {
-      const currentTime = audioPlayer[0].currentTime;
-      const duration = audioPlayer[0].duration;
+    const toggleBodyClass = $('#toggleBodyClass');
+    const toggleImages = $('#toggleImages');
+    const toggleProgress = $('#toggleProgress');
 
-      if (duration > 0) {
-        const progress = (currentTime / duration) * 100;
-        progressImage.css('left', progress + '%');
+    function setupToggle(toggleElement, toggleName) {
+      const isChecked = localStorage.getItem(toggleName) !== 'false';
+      toggleElement.prop('checked', isChecked);
+
+      toggleElement.change(function() {
+        const checked = toggleElement.is(':checked');
+        localStorage.setItem(toggleName, checked);
+      });
+    }
+
+    setupToggle(toggleBodyClass, 'toggleBodyClass');
+    setupToggle(toggleImages, 'toggleImages');
+    setupToggle(toggleProgress, 'toggleProgress');
+
+    toggleBodyClass.on('change', function() {
+      if (!audioPlayer[0].paused) {
+        if (toggleBodyClass.is(':checked')) {
+          $('body').addClass('is-playing');
+        } else {
+          $('body').removeClass('is-playing');
+        }
+      }
+    });
+    toggleImages.on('change', function() {
+      if (!audioPlayer[0].paused) {
+        if (toggleImages.is(':checked')) {
+          showImages();
+        } else {
+          hideImages();
+        }
+      }
+    });
+    toggleProgress.on('change', function() {
+      if (!audioPlayer[0].paused) {
+        if (toggleProgress.is(':checked')) {
+          progressImage.show();
+        } else {
+          progressImage.hide();
+        }
+      }
+    });
+
+    $('#panel-toggle').click(function() {
+      $('.sliding-panel').toggleClass('open');
+    });
+
+    audioPlayer.on('timeupdate', function() {
+      if (toggleProgress.is(':checked')) {
+        const currentTime = audioPlayer[0].currentTime;
+        const duration = audioPlayer[0].duration;
+
+        if (duration > 0) {
+          const progress = (currentTime / duration) * 100;
+          progressImage.css('left', progress + '%');
+        }
+      } else {
+        progressImage.hide();
       }
     });
 
@@ -398,11 +452,17 @@ $(function() {
 
     audioPlayer.on('play', function() {
       requestWakeLock();
-      $('body').addClass('is-playing');
+      if (toggleBodyClass.is(':checked')) {
+        $('body').addClass('is-playing');
+      }
       frasarioIconContainer.fadeOut(300);
-      setTimeout(() => {
-        showImages();
-      }, 500);
+      if (toggleImages.is(':checked')) {
+        setTimeout(() => {
+          showImages();
+        }, 500);
+      } else {
+        hideImages();
+      }
       // Если это пауза, дальше ничего делаем
       if (togglePlayPause) {
         togglePlayPause = false;
