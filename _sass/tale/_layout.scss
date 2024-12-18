@@ -949,10 +949,6 @@ input:checked + .slider {
   }
 }
 
-.switch-container:not(:last-child) {
-  margin-bottom: 5px;
-}
-
 .sliding-panel {
   width: 100%;
   background-color: $green;
