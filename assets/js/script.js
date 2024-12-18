@@ -434,6 +434,7 @@ $(function() {
         updatePlayPauseButton(true);
         nextTrack();
       } else {
+        updatePlayPauseButton(false);
         hideImages();
         setTimeout(() => {
           $('body').removeClass('is-playing');
