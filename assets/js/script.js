@@ -434,22 +434,6 @@ $(function() {
       }
     });
 
-    progressImage.on('contextmenu', function(event) {
-      event.preventDefault();
-    });
-
-    progressImage.on('touchstart', function(event) {
-      event.preventDefault();
-    });
-
-    progressImage.on('touchend', function() {
-      $(this).fadeOut();
-    });
-
-    progressImage.on('click', function() {
-      $(this).fadeOut();
-    });
-
     audioPlayer.on('play', function() {
       requestWakeLock();
       if (toggleBodyClass.is(':checked')) {
