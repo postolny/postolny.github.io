@@ -407,12 +407,10 @@ $(function() {
       }
     });
     toggleProgress.on('change', function() {
-      if (!audioPlayer[0].paused) {
-        if (toggleProgress.is(':checked')) {
-          progressImage.show();
-        } else {
-          progressImage.hide();
-        }
+      if (toggleProgress.is(':checked')) {
+        progressImage.show();
+      } else {
+        progressImage.hide();
       }
     });
 
