@@ -569,7 +569,7 @@ nav {
   text-indent: 0;
 }
 
-p.drop-cap {
+.drop-cap p:first-of-type {
   text-indent: 0;
 
   &::first-letter {
