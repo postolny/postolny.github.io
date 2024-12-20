@@ -1,6 +1,6 @@
 ---
 layout: page
-style: proverbi
+bodyClass: proverbi
 title: "Proverbi"
 description: "Raccolta dei proverbi italiani"
 author: "И. Постольный"
