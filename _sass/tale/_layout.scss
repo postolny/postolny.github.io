@@ -570,23 +570,11 @@ nav {
 }
 
 .drop-cap {
-  p {
+  p:first-of-type, h2 + p {
     text-indent: 0;
-
-    &:first-of-type::first-letter {
-      font-size: 5em;
-      font-weight: bold;
-      float: left;
-      margin-right: 10px;
-      margin-top: 7px;
-      line-height: 0.8;
-      vertical-align: top;
-      color: #c30;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 rgba(255, 255, 255, 1);
-    }
   }
 
-  h2 + p::first-letter {
+  p:first-of-type::first-letter, h2 + p::first-letter {
     font-size: 5em;
     font-weight: bold;
     float: left;
