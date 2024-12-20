@@ -569,6 +569,22 @@ nav {
   text-indent: 0;
 }
 
+p.drop-cap {
+  text-indent: 0;
+
+  &::first-letter {
+    font-size: 5em;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    margin-top: 7px;
+    line-height: 0.8;
+    vertical-align: top;
+    color: #c30;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 rgba(255, 255, 255, 1);
+  }
+}
+
 .float_left {
   margin: 10px 40px 30px 0;
   float: left;
