@@ -8,7 +8,7 @@ footerList1:
       url: /tags/
 footerList2:
   - subfolderitems:
-    - page: Мои сочинения
+    - page: Другие мои сочинения
       url: /indice/
     - page: Тесты
       url: /tests/
