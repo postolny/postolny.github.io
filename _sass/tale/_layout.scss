@@ -169,6 +169,7 @@ nav {
   }
 }
 
+.nav-sublink,
 .nav-sublink {
   display: flex;
   align-items: center;
@@ -284,34 +285,36 @@ nav {
 .footer-column {
   flex: 1;
   margin-right: 20px;
+
   a {
     display: flex;
     align-items: center;
     width: max-content;
   }
-  ul {
-    li {
-      a {
-        &:hover {
-          .footer-icon {
-            svg {
-              fill: $white;
-            }
-          }
-        }
-      }
-    }
-  }
 }
-.footer-icon {
-  svg {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    margin-right: 5px;
-    fill: #ff0000;
-    transition: fill 0.2s linear;
-  }
+
+.footer-icon svg {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin-right: 5px;
+  transition: fill 0.2s linear;
+}
+
+.footer-icon--white svg {
+  fill: $lightGray;
+}
+
+a:hover .footer-icon--white svg {
+  fill: $white;
+}
+
+.footer-icon--red svg {
+  fill: red;
+}
+
+a:hover .footer-icon--red svg {
+  fill: $white;
 }
 
 .footer-copyright {
