@@ -11,7 +11,9 @@ layout: compress
 
   {% include navigation.html %}
 
+  {% unless page.exclude_banner %}
   {% include banner.html %}
+  {% endunless %}
 
   <main class="{% if page.mainClass %}{{ page.mainClass }}{% endif %}">
     {{ content }}
@@ -22,11 +24,11 @@ layout: compress
   {% include footer.html %}
 
   {% unless page.exclude_frasario %}
-    {% include frasario.html %}
+  {% include frasario.html %}
   {% endunless %}
 
-  <script type="text/javascript" src="{{ "/assets/js/jquery-3.7.1.min.js" | relative_url }}"></script>
-  <script type="text/javascript" src="{{ "/assets/js/script.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ " /assets/js/jquery-3.7.1.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ " /assets/js/script.js" | relative_url }}"></script>
 </body>
 
 </html>

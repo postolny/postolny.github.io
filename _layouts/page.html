@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="page">
+  {% unless page.exclude_page_info %}
   <div class="page-info">
     <span>Автор</span>
     {% if page.author %}
@@ -11,6 +12,7 @@ layout: default
     {{ site.author.name }}
     {% endif %}
   </div>
+  {% endunless %}
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
 </div>
