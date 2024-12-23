@@ -7,12 +7,20 @@ layout: compress
 
 {% include head.html %}
 
-<body class="{% if page.bodyClass %}{{ page.bodyClass }}{% endif %}">
+<body class="{% if page.style %}{{ page.style }}{% endif %}">
 
   {% include navigation.html %}
 
+  <!-- {% include banner.html %} -->
+
   {% unless page.exclude_banner %}
   {% include banner.html %}
+  {% else %}
+  <style>
+    .page-title {
+      padding-top: {{ page.header_padding_top }};
+    }
+  </style>
   {% endunless %}
 
   <main class="{% if page.mainClass %}{{ page.mainClass }}{% endif %}">
@@ -22,14 +30,22 @@ layout: compress
   {% include lightbox.html %}
 
   {% include footer.html %}
+  <!-- Модальное окно -->
+<div id="modal" style="display: none;">
+  <div id="modal-content">
+    <p id="footnote-text"></p>
+    <button id="scroll-to-footnote">Прокрутить к сноске</button>
+    <button id="close-modal">Закрыть</button>
+  </div>
+</div>
 
   {% unless page.exclude_frasario %}
   {% include frasario.html %}
-  {% endunless %}
+{% endunless %}
 
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/script.js"></script>
-
+  <script type="text/javascript" src="{{ "/assets/js/jquery-3.7.1.min.js" | relative_url }}"></script>
+  <!-- <script src="https://code.jquery.com/jquery.min.js"></script> -->
+  <script type="text/javascript" src="{{ "/assets/js/script.js" | relative_url }}"></script>
 </body>
 
 </html>
