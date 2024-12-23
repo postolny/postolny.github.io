@@ -183,7 +183,7 @@ nav {
   svg {
     width: 20px;
     height: 20px;
-    fill: #ff0000;
+    fill: $red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +314,7 @@ a:hover .footer-icon--white svg {
 }
 
 .footer-icon--red svg {
-  fill: red;
+  fill: $red;
 }
 
 a:hover .footer-icon--red svg {
