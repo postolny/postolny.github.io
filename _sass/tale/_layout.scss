@@ -1242,4 +1242,31 @@ input:checked + .slider {
     flex-direction: column;
     align-items: flex-start;
   }
+  /* для фронт-маттера */
+  .brand {
+    a,
+    a:visited {
+      color: var(--header-color);
+    }
+
+    span {
+      color: var(--header-color);
+    }
+  }
+  .nav-mobile {
+    #nav-toggle {
+      span,
+      span:before,
+      span:after {
+        background: var(--hamburger-color);
+      }
+
+      &.active {
+        span:before,
+        span:after {
+          background: white;
+        }
+      }
+    }
+  }
 }
