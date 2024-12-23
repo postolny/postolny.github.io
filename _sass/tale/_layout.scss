@@ -1267,6 +1267,10 @@ input:checked + .slider {
           background: white;
         }
       }
+      
+      &.active span {
+        background-color: transparent;
+      }
     }
   }
 }
