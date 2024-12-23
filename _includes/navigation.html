@@ -1,7 +1,11 @@
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
-      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      {% if page.url == "/" %}
+        <span>{{ site.title }}</span>
+      {% else %}
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      {% endif %}
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="javascript: void(0);"><span></span></a></div>
