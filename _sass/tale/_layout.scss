@@ -135,24 +135,22 @@ nav {
   .nav-mobile {
     display: block;
 
-    .nav-mobile {
-      #nav-toggle {
-        span,
+    #nav-toggle {
+      span,
+      span:before,
+      span:after {
+        background: var(--hamburger-color);
+      }
+
+      &.active {
         span:before,
         span:after {
-          background: var(--hamburger-color);
+          background: $white;
         }
-  
-        &.active {
-          span:before,
-          span:after {
-            background: white;
-          }
-        }
-        
-        &.active span {
-          background-color: transparent;
-        }
+      }
+      
+      &.active span {
+        background-color: transparent;
       }
     }
   }
@@ -192,7 +190,7 @@ nav {
     background: transparent;
     box-shadow: none;
   }
-  
+
   .brand {
     a,
     a:visited {
