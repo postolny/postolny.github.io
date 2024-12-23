@@ -15,8 +15,10 @@ layout: compress
   {% include banner.html %}
   {% else %}
   <style>
-    .page-title {
-      padding-top: {{ page.header_padding_top }};
+    @media (min-width: 798px) {
+      .page-title {
+        margin-top: {{ page.header_margin_top }};
+      }
     }
   </style>
   {% endunless %}
