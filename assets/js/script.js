@@ -1291,30 +1291,44 @@ $(function() {
   });
 
   var Mwidth = 960;
-  if ($(window).width() > Mwidth) {
-    var headerHeight = $(".navigation").height();
-    $(window).on(
-      "scroll", {
-        TopPrev: 0,
-      },
-      function() {
-        var TopCurrent = $(window).scrollTop();
-        if (TopCurrent < this.TopPrev) {
-          if (TopCurrent > 0 && $(".navigation").hasClass("fixed-menu")) {
-            $(".navigation").addClass("visible-scroll-up");
-          } else {
-            $(".navigation").removeClass("visible-scroll-up fixed-menu");
-          }
+  var headerHeight = $(".navigation").height(); // высота
+  var TopPrev = $(window).scrollTop();
+
+  $(window).on("scroll", function () {
+    if ($(window).width() > Mwidth) {
+      var TopCurrent = $(window).scrollTop();
+
+      if (TopCurrent < TopPrev) {
+        // вверх
+        if (TopCurrent > 0 && $(".navigation").hasClass("fixed-menu")) {
+          $(".navigation").addClass("visible-scroll-up");
         } else {
-          $(".navigation").removeClass("visible-scroll-up");
-          if (
-            TopCurrent > headerHeight &&
-            !$(".navigation").hasClass("fixed-menu")
-          )
-            $(".navigation").addClass("fixed-menu");
+          $(".navigation").removeClass("visible-scroll-up fixed-menu");
         }
-        this.TopPrev = TopCurrent;
+      } else {
+        // вниз
+        $(".navigation").removeClass("visible-scroll-up");
+        if (
+          TopCurrent > headerHeight &&
+          !$(".navigation").hasClass("fixed-menu")
+        ) {
+          $(".navigation").addClass("fixed-menu");
+        }
       }
-    );
-  }
+
+      TopPrev = TopCurrent;
+    }
+  });
+
+  $(window).on("resize", function () {
+    // если ширина окна <= 960
+    if ($(window).width() <= Mwidth) {
+      // Удаляем все классы на мобильных устройствах
+      $(".navigation").removeClass("visible-scroll-up fixed-menu");
+    } else {
+      // иначе пересчитываем высоту и текущую позицию скролла для ПК
+      headerHeight = $(".navigation").height();
+      TopPrev = $(window).scrollTop();
+    }
+  });
 });
