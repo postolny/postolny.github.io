@@ -46,4 +46,6 @@ seo_paginator_message: "Страница %<current>s | "
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
+exclude_frasario: true
+
 locale: ""
