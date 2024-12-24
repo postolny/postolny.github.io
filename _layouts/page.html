@@ -3,16 +3,12 @@ layout: default
 ---
 
 <div class="page">
-  {% unless page.exclude_page_info %}
+  {% if page.author %}
   <div class="page-info">
     <span>Автор</span>
-    {% if page.author %}
     {{ page.author }}
-    {% else %}
-    {{ site.author.name }}
-    {% endif %}
   </div>
-  {% endunless %}
+  {% endif %}
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
 </div>
