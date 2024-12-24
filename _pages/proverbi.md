@@ -3,7 +3,6 @@ layout: page
 bodyClass: proverbi
 title: "Proverbi"
 description: "Raccolta dei proverbi italiani"
-author: "И. Постольный"
 permalink: /proverbi/
 ---
 
