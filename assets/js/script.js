@@ -418,19 +418,101 @@ $(function() {
       $('.sliding-panel').toggleClass('open');
     });
 
-    audioPlayer.on('timeupdate', function() {
-      if (toggleProgress.is(':checked')) {
-        const currentTime = audioPlayer[0].currentTime;
-        const duration = audioPlayer[0].duration;
+    // audioPlayer.on('timeupdate', function() {
+    //   if (toggleProgress.is(':checked')) {
+    //     const currentTime = audioPlayer[0].currentTime;
+    //     const duration = audioPlayer[0].duration;
 
-        if (duration > 0) {
-          const progress = (currentTime / duration) * 100;
+    //     if (duration > 0) {
+    //       const progress = (currentTime / duration) * 100;
+    //       progressImage.css('left', progress + '%');
+    //     }
+    //   } else {
+    //     progressImage.hide();
+    //   }
+    // });
+
+    const progressBar = $('#progressBar');
+    const currentTimeElement = $('#currentTime');
+    const totalTimeElement = $('#totalTime');
+
+    audioPlayer.on('loadedmetadata', function() {
+      const duration = audioPlayer[0].duration;
+      totalTimeElement.text(formatTime(duration));
+    });
+
+    let isDragging = false;
+    audioPlayer.on('timeupdate', function() {
+      const currentTime = audioPlayer[0].currentTime;
+      const duration = audioPlayer[0].duration;
+      currentTimeElement.text(formatTime(currentTime));
+      if (duration > 0) {
+        const progress = (currentTime / duration) * 100;
+        progressBar.val(progress);
+        if (toggleProgress.is(':checked')) {
           progressImage.css('left', progress + '%');
+        } else {
+          progressImage.hide();
         }
-      } else {
-        progressImage.hide();
       }
     });
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = Math.floor(seconds % 60).toString().padStart(2, '0');
+      return minutes + ':' + remainingSeconds;
+    }
+
+    progressBar.on('mousedown', function(e) {
+      isDragging = true;
+      updateProgressBar(e.pageX);
+    });
+
+    $(document).on('mousemove', function(e) {
+      if (isDragging) {
+        updateProgressBar(e.pageX);
+      }
+    });
+
+    $(document).on('mouseup', function() {
+      if (isDragging) {
+        isDragging = false;
+      }
+    });
+
+    progressBar.on('touchstart', function(e) {
+      isDragging = true;
+      const touch = e.originalEvent.touches[0];
+      updateProgressBar(touch.pageX);
+    });
+
+    $(document).on('touchmove', function(e) {
+      if (isDragging) {
+        const touch = e.originalEvent.touches[0];
+        updateProgressBar(touch.pageX);
+      }
+    });
+
+    $(document).on('touchend', function() {
+      if (isDragging) {
+        isDragging = false;
+      }
+    });
+
+    function updateProgressBar(positionX) {
+      const progressBarOffset = progressBar.offset();
+      const progressBarWidth = progressBar.width();
+      const duration = audioPlayer[0].duration;
+
+      if (duration > 0) {
+        const clickPosition = positionX - progressBarOffset.left;
+        const newTime = Math.min(Math.max(0, (clickPosition / progressBarWidth) * duration), duration);
+        audioPlayer[0].currentTime = newTime;
+
+        const progress = (newTime / duration) * 100;
+        progressBar.val(progress);
+      }
+    }
 
     audioPlayer.on('play', function() {
       requestWakeLock();
@@ -477,6 +559,7 @@ $(function() {
         nextTrack();
       } else {
         updatePlayPauseButton(false);
+        progressBar[0].value = 0;
         hideImages();
         setTimeout(() => {
           $('body').removeClass('is-playing');
@@ -1294,7 +1377,7 @@ $(function() {
   var headerHeight = $(".navigation").height(); // высота
   var TopPrev = $(window).scrollTop();
 
-  $(window).on("scroll", function () {
+  $(window).on("scroll", function() {
     if ($(window).width() > Mwidth) {
       var TopCurrent = $(window).scrollTop();
 
@@ -1320,7 +1403,7 @@ $(function() {
     }
   });
 
-  $(window).on("resize", function () {
+  $(window).on("resize", function() {
     // если ширина окна <= 960
     if ($(window).width() <= Mwidth) {
       // Удаляем все классы на мобильных устройствах
