@@ -560,6 +560,7 @@ $(function() {
       } else {
         updatePlayPauseButton(false);
         progressBar[0].value = 0;
+        currentTimeElement.text('0:00');
         hideImages();
         setTimeout(() => {
           $('body').removeClass('is-playing');
