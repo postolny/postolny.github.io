@@ -828,6 +828,29 @@ a:hover .footer-icon--red svg {
   width: 22px;
   color: $white;
 }
+
+#progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 0 10px;
+  user-select: none;
+}
+
+#progressBar {
+  flex: 1;
+}
+
+#timeContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: $default-shade;
+  white-space: nowrap;
+}
+
 #playlist-container {
   max-height: 200px;
   overflow-y: auto;
