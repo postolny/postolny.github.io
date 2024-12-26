@@ -433,22 +433,30 @@ $(function() {
     // });
 
     const progressBar = $('#progressBar');
+    const progressValue = $('#progressValue');
     const currentTimeElement = $('#currentTime');
     const totalTimeElement = $('#totalTime');
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = Math.floor(seconds % 60).toString().padStart(2, '0');
+      return minutes + ':' + remainingSeconds;
+    }
 
     audioPlayer.on('loadedmetadata', function() {
       const duration = audioPlayer[0].duration;
       totalTimeElement.text(formatTime(duration));
     });
 
-    let isDragging = false;
     audioPlayer.on('timeupdate', function() {
       const currentTime = audioPlayer[0].currentTime;
       const duration = audioPlayer[0].duration;
+
       currentTimeElement.text(formatTime(currentTime));
+
       if (duration > 0) {
         const progress = (currentTime / duration) * 100;
-        progressBar.val(progress);
+        progressValue.css('width', progress + '%');
         if (toggleProgress.is(':checked')) {
           progressImage.css('left', progress + '%');
         } else {
@@ -457,62 +465,26 @@ $(function() {
       }
     });
 
-    function formatTime(seconds) {
-      const minutes = Math.floor(seconds / 60);
-      const remainingSeconds = Math.floor(seconds % 60).toString().padStart(2, '0');
-      return minutes + ':' + remainingSeconds;
-    }
+    progressBar.on('click touchstart', function(e) {
+      let clickPositionX;
 
-    progressBar.on('mousedown', function(e) {
-      isDragging = true;
-      updateProgressBar(e.pageX);
-    });
-
-    $(document).on('mousemove', function(e) {
-      if (isDragging) {
-        updateProgressBar(e.pageX);
-      }
-    });
-
-    $(document).on('mouseup', function() {
-      if (isDragging) {
-        isDragging = false;
-      }
-    });
-
-    progressBar.on('touchstart', function(e) {
-      isDragging = true;
-      const touch = e.originalEvent.touches[0];
-      updateProgressBar(touch.pageX);
-    });
-
-    $(document).on('touchmove', function(e) {
-      if (isDragging) {
+      if (e.type === 'touchstart') {
+        // Сенсорные уст-ва
         const touch = e.originalEvent.touches[0];
-        updateProgressBar(touch.pageX);
+        clickPositionX = touch.pageX - $(this).offset().left;
+      } else {
+        // Мышь
+        clickPositionX = e.offsetX;
       }
-    });
 
-    $(document).on('touchend', function() {
-      if (isDragging) {
-        isDragging = false;
-      }
-    });
-
-    function updateProgressBar(positionX) {
-      const progressBarOffset = progressBar.offset();
-      const progressBarWidth = progressBar.width();
+      const progressBarWidth = $(this).width();
       const duration = audioPlayer[0].duration;
 
-      if (duration > 0) {
-        const clickPosition = positionX - progressBarOffset.left;
-        const newTime = Math.min(Math.max(0, (clickPosition / progressBarWidth) * duration), duration);
-        audioPlayer[0].currentTime = newTime;
+      const newTime = (clickPositionX / progressBarWidth) * duration;
+      audioPlayer[0].currentTime = newTime;
 
-        const progress = (newTime / duration) * 100;
-        progressBar.val(progress);
-      }
-    }
+      console.log('Новое время:', newTime);
+    });
 
     audioPlayer.on('play', function() {
       requestWakeLock();
@@ -559,7 +531,7 @@ $(function() {
         nextTrack();
       } else {
         updatePlayPauseButton(false);
-        progressBar[0].value = 0;
+        progressValue.css('width', 0);
         currentTimeElement.text('0:00');
         hideImages();
         setTimeout(() => {
@@ -1415,4 +1387,31 @@ $(function() {
       TopPrev = $(window).scrollTop();
     }
   });
+
+  let hasAnimated = false;
+  const animatedImage = $('.animated-image');
+
+  if (animatedImage.length) {
+    function isElementFullyInView() {
+      const imageTop = animatedImage.offset().top;
+      const imageBottom = imageTop + animatedImage.outerHeight();
+
+      const viewportTop = $(window).scrollTop();
+      const viewportBottom = viewportTop + $(window).height();
+
+      return imageTop >= viewportTop && imageBottom <= viewportBottom;
+    }
+
+    $(window).on('scroll', function() {
+      if (isElementFullyInView() && !hasAnimated) {
+        hasAnimated = true;
+        animatedImage.css('animation', 'scaleAnimation 1s ease-out');
+        animatedImage.on('animationend', function() {
+          $(this).css('animation', 'none');
+        });
+      } else if (!isElementFullyInView()) {
+        hasAnimated = false;
+      }
+    });
+  }
 });
