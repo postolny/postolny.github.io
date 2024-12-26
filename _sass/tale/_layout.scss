@@ -844,19 +844,39 @@ a:hover .footer-icon--red svg {
   width: 100%;
   padding: 5px 10px 6px;
   background-color: $default-shade;
+  -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
 
 #progressBar {
   flex: 1;
+  height: 10px;
+  background: #3b3b3b;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 0 #0d0e0f, inset 0 -1px 0 0 #3a3d42;
+  cursor: pointer;
 }
 
-#timeContainer {
+#progressValue {
+  height: 80%;
+  width: 0%;
+  background: linear-gradient(to right, #99f2c8, #1f4037);
+  border-radius: 10px;
+  transition: width 0.1s linear;
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.time-info {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
   font-size: 12px;
   color: $white;
-  white-space: nowrap;
 }
 
 #playlist-container {
@@ -1271,6 +1291,44 @@ input:checked + .slider {
 @media print {
   .usn {
     display: none;
+  }
+}
+
+#albero-di-natale {
+  margin-top: 50px;
+
+  img {
+    display: block;
+    width: 102px;
+    height: 110px;
+    margin: 0 auto;
+    animation: none;
+    transform-origin: bottom;
+    pointer-events: none;
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
 
