@@ -1020,6 +1020,7 @@ a:hover .footer-icon--red svg {
   z-index: -1;
   width: 30%;
   max-width: 150px;
+  pointer-events: none;
   transition: transform 0.5s ease;
 
   img {
