@@ -1414,4 +1414,15 @@ $(function() {
       }
     });
   }
+  if (document.fonts) {
+    document.fonts.load('1em VertogradUnicode').then(function (fonts) {
+      if (!fonts.length) {
+        $('main').addClass('fallback-font');
+      }
+    }).catch(function () {
+      $('main').addClass('fallback-font');
+    });
+  } else {
+    $('main').addClass('fallback-font');
+  }
 });
