@@ -1415,7 +1415,7 @@ $(function() {
     });
   }
   if (document.fonts) {
-    document.fonts.load('1em IndictionUnicode').then(function (fonts) {
+    document.fonts.load('1em PeterIvanowitsch').then(function (fonts) {
       if (!fonts.length) {
         $('main').addClass('fallback-font');
       }
