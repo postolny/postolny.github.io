@@ -1089,6 +1089,13 @@ body.is-playing {
     }
   }
 
+  .drop-cap p:first-of-type::first-letter,
+  .drop-cap h2 + p::first-letter,
+  .drop-cap.fallback-font p:first-of-type::first-letter,
+  .drop-cap.fallback-font h2 + p::first-letter {
+    color: $white;
+  }
+
   #spartiti_row > div {
     box-shadow:
       13px 13px 0 0 #222,
