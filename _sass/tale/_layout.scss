@@ -704,13 +704,13 @@ a:hover .footer-icon--red svg {
   }
 
   p:first-of-type::first-letter, h2 + p::first-letter {
-    font-family: 'VertogradUnicode', 'Georgia', serif;
-    font-size: 3.7em;
+    font-family: 'IndictionUnicode', 'Georgia', serif;
+    font-size: 4.4em;
     font-weight: normal;
     float: left;
     margin: 0.15em 0.1em -0.1em 0;
     line-height: 0.88;
-    color: #c30;
+    color: #ff2400;
     text-shadow: none;
   }
 
@@ -1089,11 +1089,9 @@ body.is-playing {
     }
   }
 
-  .drop-cap p:first-of-type::first-letter,
-  .drop-cap h2 + p::first-letter,
-  .drop-cap.fallback-font p:first-of-type::first-letter,
-  .drop-cap.fallback-font h2 + p::first-letter {
-    color: $white;
+  .drop-cap p:first-of-type::first-letter, 
+  .drop-cap.fallback-font p:first-of-type::first-letter {
+    color: #4caf50;
   }
 
   #spartiti_row > div {
