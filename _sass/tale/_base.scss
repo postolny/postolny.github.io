@@ -313,7 +313,8 @@ table:not(.highlight table) {
   background-image: url("../assets/06-magnify-icon.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  width: 50%;
+  width: 100%;
+  max-width: 400px;
   font-size: 1em;
   padding: 10px 20px 10px 50px;
   border: 1px solid #ddd;
