@@ -1361,7 +1361,7 @@ $(function() {
   }
 
   updateShowMoreText();
-  //anlocude();
+  anlocude();
 
   showMoreLink.click(function(e) {
     e.preventDefault();
