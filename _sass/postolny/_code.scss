@@ -1,0 +1,162 @@
+@use 'postolny/variables';
+
+pre,
+code {
+  font-family: variables.$monospaced;
+}
+
+code {
+  background-color: variables.$grey-4;
+  border-radius: 3px;
+  color: variables.$code-color;
+  font-size: 85%;
+  padding: 0.25em 0.5em;
+}
+
+code.language-plaintext {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+pre {
+  margin: 0 0 1rem;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0;
+}
+
+.highlight {
+  background-color: variables.$grey-4;
+  border-radius: 3px;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+  padding: 0.8rem 1rem 0.8rem;
+  position: relative;
+
+  pre {
+    margin-bottom: 0;
+    overflow-x: auto;
+  }
+  /* Исключение для многострочных блоков кода */
+  code.language-plaintext {
+    white-space: pre;
+    word-wrap: normal;
+    overflow-wrap: normal;
+  }
+
+  .lineno {
+    color: variables.$default-tint;
+    margin: 0 0 1rem;
+    padding: 1rem 0.75rem 0 0.25rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+}
+
+.language-html::before {
+  content: "html";
+  position: absolute;
+  top: -0.7rem;
+  left: 0.3rem;
+  background-color: variables.$grey-4;
+  color: variables.$default-tint;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  padding: 0 0.5rem;
+  border-radius: 3px 3px 0 0;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.language-css::before {
+  content: "css";
+  position: absolute;
+  top: -0.7rem;
+  left: 0.3rem;
+  background-color: variables.$grey-4;
+  color: variables.$default-tint;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  padding: 0 0.5rem;
+  border-radius: 3px 3px 0 0;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.language-js::before {
+  content: "js";
+  position: absolute;
+  top: -0.7rem;
+  left: 0.3rem;
+  background-color: variables.$grey-4;
+  color: variables.$default-tint;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  padding: 0 0.5rem;
+  border-radius: 3px 3px 0 0;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.language-batch::before {
+  content: "batch";
+  position: absolute;
+  top: -0.7rem;
+  left: 0.3rem;
+  background-color: variables.$grey-4;
+  color: variables.$default-tint;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  padding: 0 0.5rem;
+  border-radius: 3px 3px 0 0;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.language-bash::before {
+  content: "bash";
+  position: absolute;
+  top: -0.7rem;
+  left: 0.3rem;
+  background-color: variables.$grey-4;
+  color: variables.$default-tint;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  padding: 0 0.5rem;
+  border-radius: 3px 3px 0 0;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.highlight code.language-plaintext {
+  white-space: pre;
+  word-wrap: normal;
+  overflow-wrap: normal;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+kbd {
+  white-space: nowrap;
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1px 4px;
+  color: #777;
+  background-color: variables.$white;
+  border: solid 1px #d9d9d9;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 0 variables.$grey-2;
+}

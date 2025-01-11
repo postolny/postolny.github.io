@@ -1,0 +1,35 @@
+---
+layout: default
+title: "A–Z"
+sitemap: false
+permalink: /categories/
+---
+
+<div class="categories">
+  <div class="categories-header">
+    <h1 class="categories-header-title">{{ page.title }}</h1>
+    <div class="categories-header-line"></div>
+  </div>
+  <div class="categories-clouds">
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+    <span class="site-category">
+      <a href="#{{ category | first | slugify }}">
+        {{ category[0] | replace:'-', ' ' | capitalize }}
+      </a>
+    </span>
+    {% endfor %}
+  </div>
+  <div class="categories-list-wrap">
+    {% assign sorted_cats = site.categories | sort %}
+    {% for category in sorted_cats %}
+    {% assign sorted_posts = category[1] | sort: 'title' %}
+    <h3 class="categories-list-title" id="{{category[0] | downcase }}">{{category[0] | replace:'-', ' ' | capitalize }} ({{ category | last | size }})</h3>
+    <ul class="categories-list">
+      {% for post in sorted_posts %}
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>

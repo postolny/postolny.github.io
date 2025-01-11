@@ -1,0 +1,67 @@
+<div class="footer-container">
+  <div class="footer-inner">
+    <div class="footer-column">
+      {% for item in site.data.footer.footerList1 %}
+      <ul>
+        {% for entry in item.subfolderitems %}
+        {% if entry.url != page.url %}
+        <li>
+          <a href="{{ entry.url }}" {% if entry.target %}target="{{ entry.target }}" {% endif %} {% if entry.rel
+            %}rel="{{ entry.rel }}" {% endif %}>
+            {% if entry.icon %}
+            <span class="footer-icon footer-icon--{{ entry.color }}">{{ entry.icon | safe }}</span>
+            {% endif %}
+            {{ entry.page }}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+    <div class="footer-column">
+      {% for item in site.data.footer.footerList2 %}
+      <ul>
+        {% for entry in item.subfolderitems %}
+        {% if entry.url != page.url %}
+        <li>
+          <a href="{{ entry.url }}" {% if entry.target %}target="{{ entry.target }}" {% endif %} {% if entry.rel
+            %}rel="{{ entry.rel }}" {% endif %}>
+            {% if entry.icon %}
+            <span class="footer-icon footer-icon--{{ entry.color }}">{{ entry.icon | safe }}</span>
+            {% endif %}
+            {{ entry.page }}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+    <div class="footer-column">
+      {% for item in site.data.footer.footerList3 %}
+      <ul>
+        {% for entry in item.subfolderitems %}
+        {% if entry.url != page.url %}
+        <li>
+          <a href="{{ entry.url }}" {% if entry.target %}target="{{ entry.target }}" {% endif %} {% if entry.rel
+            %}rel="{{ entry.rel }}" {% endif %}>
+            {% if entry.icon %}
+            <span class="footer-icon footer-icon--{{ entry.color }}">{{ entry.icon | safe }}</span>
+            {% endif %}
+            {{ entry.page }}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-copyright">
+    <time id="currentYear" datetime="{{ site.time | date: '%Y' }}">{{ site.time | date: '%Y' }}</time> {{
+    site.author.name }}
+  </div>
+</div>

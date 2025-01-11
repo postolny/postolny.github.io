@@ -1,0 +1,67 @@
+@use 'postolny/variables';
+
+.categories,
+.tags {
+  &-header {
+    &-title {
+      color: variables.$default-shade;
+      font-family: variables.$sans-serif;
+      text-align: center;
+    }
+  }
+
+  &-clouds {
+    font-family: variables.$sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+    a {
+      margin: 0 0.1rem 0.2rem;
+      background: variables.$default-shade;
+      border-radius: 5px;
+      color: variables.$white;
+      text-decoration: none;
+      transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+      height: 2rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover,
+      &:active {
+        background: variables.$green;
+        box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.8) inset;
+      }
+    }
+  }
+  .tags-clouds a {
+    padding: 0 0.5rem;
+  }
+  .categories-clouds a {
+    width: 2rem;
+  }
+  &-list-wrap {
+    margin-top: 50px;
+  }
+  &-list-title {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      flex: 1 0 auto;
+      margin-left: 0.5em;
+      height: 2px;
+      background: currentColor;
+    }
+  }
+  &-list {
+    margin: 0;
+  }
+  &-post-meta {
+    color: #b7b7b7;
+  }
+}

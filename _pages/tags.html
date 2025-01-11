@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Теги"
+permalink: /tags/
+---
+
+<div class="tags">
+  <div class="tags-header">
+    <h1 class="tags-header-title">{{ page.title }}</h1>
+    <div class="tags-header-line"></div>
+  </div>
+
+  <div class="tags-clouds">
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+    <span class="site-tag">
+      <a href="#{{ tag | first | slugify }}">
+        {{ tag[0] | replace:'-', ' ' }}
+      </a>
+    </span>
+    {% endfor %}
+  </div>
+
+  <div class="tags-list-wrap">
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags %}
+    {% assign sorted_posts = tag[1] | sort: 'date' | reverse %}
+    <h3 class="tags-list-title" id="{{ tag[0] | downcase | slugify }}">
+      {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </h3>
+    <ul class="tags-list">
+      {% for post in sorted_posts %}
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <span class="tags-post-meta">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+            ({{ post.date | date: '%d-%m-%Y' }})
+          </time>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>

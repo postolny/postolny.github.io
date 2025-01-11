@@ -1,0 +1,109 @@
+---
+layout: default
+---
+
+<div class="post">
+  <div class="post-info">
+    <span>Автор</span>
+
+    {% if page.author %}
+    {{ page.author }}
+    {% else %}
+    {{ site.author.name }}
+    {% endif %}
+
+    {% if page.date %}
+    <br>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
+      {% assign months = site.months | default:
+      "января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря" | split: "|" %}
+      {% assign m = page.date | date: "%-m" | minus: 1 %}
+      {% assign day = page.date | date: "%d" | plus: 0 %}
+      {{ day }} {{ months[m] }} {{ page.date | date: '%Y' }} года
+    </time>
+
+    {% endif %}
+
+    {% if page.tags and page.tags.size > 0 %}
+    {% assign tag_count = page.tags | size %}
+    <div class="tags-container">
+      {% if tag_count == 1 %}
+      <div>Тег:</div>
+      {% else %}
+      <div>Теги:</div>
+      {% endif %}
+      <div class="tags-clouds">
+        {% for tag in page.tags %}
+        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if page.categories and page.categories.size > 0 %}
+    {% assign category_count = page.categories | size %}
+    <div class="categories-container">
+      {% if category_count == 1 %}
+      <div>Категория:</div>
+      {% else %}
+      <div>Категории:</div>
+      {% endif %}
+      <div class="categories-clouds">
+        {% for category in page.categories %}
+        <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-line"></div>
+
+  {{ content }}
+
+  {% if page.tags and page.tags.size > 0 %}
+  {% assign tag_count = page.tags | size %}
+  <div class="tags-container" data-nosnippet>
+    <div class="tags-title">
+      {% if tag_count == 1 %}
+      Тег:
+      {% else %}
+      Теги:
+      {% endif %}
+    </div>
+    <div class="tags-clouds">
+      {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.categories and page.categories.size > 0 %}
+  {% assign category_count = page.categories | size %}
+  <div class="categories-container" data-nosnippet>
+    <div class="categories-title">
+      {% if category_count == 1 %}
+      Категория:
+      {% else %}
+      Категории:
+      {% endif %}
+    </div>
+    <div class="categories-clouds">
+      {% for category in page.categories %}
+      <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<div class="pagination">
+  {% if page.next.url %}
+  <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+  <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+</div>

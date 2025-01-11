@@ -1,0 +1,131 @@
+libri:
+  - titolo: Сказки
+    subfolderitems:
+      - page: Крестьянин и змея
+        url: /krestyanin-i-zmeya/
+      - page: Ангел времени
+        url: /angel-vremeni/
+      - page: Иголка в стоге сена
+        url: /igolka-v-stoge-sena/
+      - page: Смысл жизни
+        url: /smysl-zhizni/
+      - page: Медвежьи услуги
+        url: /medvezhi-uslugi/
+      - page: Самые длинные уши
+        url: /samye-dlinnye-ushi/
+      - page: Медведь и муравей
+        url: /medved-i-muravej/
+      - page: Кот и мышь
+        url: /kot-i-mysh/
+      - page: Комар
+        url: /komar/
+      - page: Сказочник
+        url: /skazochnik/
+      - page: Миролюб
+        url: /mirolyub/
+      - page: Крыса
+        url: /krysa/
+      - page: Злая женщина
+        url: /zlaya-zhenshina/
+      - page: Ивашка-гусляр
+        url: /ivashka-guslyar/
+      - page: Мужик и ветер
+        url: /muzhik-i-veter/
+      - page: Торговец и Диоген
+        url: /torgovec-i-diogen/
+      - page: Три богатыря, солнце и царёва дочка
+        url: /tri-bogatyrya-solnce-i-caryova-dochka/
+      - page: Пономарёва дочка и дьявол
+        url: /ponomaryova-dochka-i-dyavol/
+      - page: Тот сам хорош, у кого друг хорош
+        url: /tot-sam-horosh-u-kogo-drug-horosh/
+      - page: Медный зуб
+        url: /mednyj-zub/
+  - titolo: Притчи
+    subfolderitems:
+      - page: Пиявка
+        url: /la-mignatta/
+      - page: Шуруп и Гвоздь
+        url: /shurup-i-gvozd/
+      - page: Сук
+        url: /suk/
+      - page: Состязания
+        url: /sostyazaniya/
+  - titolo: Разные сочинения
+    subfolderitems:
+      - page: Безмозглый и безухий • повесть
+        url: /bezmozglyj-i-bezuhij/
+      - page: Il scervellato e Il senza orecchie • povest'
+        url: /il-scervellato-e-il-senza-orecchie/
+      - page: Рассказы для детей
+        url: /rasskazy-dlya-detej/
+      - page: Миниатюры
+        url: /miniature/
+      - page: Стихотворения
+        url: /poesia/
+      - page: Моя музыка 𝄞
+        url: /musica/
+  - titolo: Переводы
+    subfolderitems:
+      - page: Крестьянин-астролог • Итало Кальвино
+        url: /il-contadino-astrologo/
+      - page: Смоковница • Леонардо да Винчи
+        url: /il-fico/
+      - page: Про собаку, которая с мясом реку переплывала • Федр
+        url: /il-cane-che-porta-la-carne-al-fiume/
+      - page: Башня, лестница и луна • Алессандра Фелла
+        url: /la-torre-la-scala-e-la-luna/
+  - titolo: Маленькие бродяги • Джанни Родари
+    subfolderitems:
+      - page: Глава I. Серое одеяло.
+        url: /la-coperta-grigia/
+      - page: Глава II. Человек с бумагой.
+        url: /l-uomo-con-la-carta/
+      - page: Глава III. В путь!
+        url: /in-cammino/
+      - page: Глава IV. Клетка с попугаем.
+        url: /la-gabbia-col-pappagallo/
+      - page: Глава V. Белый флаг.
+        url: /bandiera-bianca/
+      - page: Глава VI. Фонтан сокровищ.
+        url: /la-fontana-del-tesoro/
+      - page: Глава VII. Вор!
+        url: /il-ladro/
+      - page: Глава VIII. Потерявшиеся.
+        url: /sperduti/
+      - page: Глава IX. Колизей.
+        url: /il-colosseo/
+      - page: Глава X. Белая дорога.
+        url: /strada-bianca/
+      - page: Глава XI. Навстречу морю.
+        url: /verso-il-mare/
+      - page: Глава XII. Вдоль моря.
+        url: /lungo-il-mare/
+      - page: Глава XIII. Азбука Франческо.
+        url: /l-abc-di-francesco/
+      - page: Глава XIV. Синьора из Феррары.
+        url: /la-signora-di-ferrara/
+      - page: Глава XV. Большая стоянка.
+        url: /il-grande-accampamento/
+      - page: Глава XVI. Альбинос показывает себя.
+        url: /l-albino-si-rivela/
+      - page: Глава XVII. Башмаки Анны.
+        url: /le-scarpe-di-anna/
+      - page: Глава XVIII. Приготовления.
+        url: /preparativi/
+      - page: Глава XIX. А теперь вперёд!
+        url: /e-adesso-avanti/
+      - page: Глава XX. В Феррару.
+        url: /verso-ferrara/
+      - page: Глава XXI. Невесёлое пробуждение.
+        url: /triste-risveglio/
+      - page: Глава XXII. К спасению.
+        url: /verso-la-salvezza/
+      - page: Глава XXIII. Дамба.
+        url: /largine/
+      - page: Глава XXIV. Дорога страха.
+        url: /la-strada-della-paura/
+      - page: Глава XXV. Знак на стене.
+        url: /il-segno-sul-muro/
+      - page: О переводе
+        url: /sulla-traduzione/

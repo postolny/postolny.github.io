@@ -1,0 +1,24 @@
+---
+layout: page
+bodyClass: indice
+title: "Сочинения"
+image: /img/indice.png
+permalink: /indice/
+exclude_banner: true
+header_margin_top: 4rem
+---
+
+<div class="indice-section">
+  {% for item in site.data.indice.libri %}
+  <div class="section">
+    <h2>{{ item.titolo }}</h2>
+    <ul class="indice-list">
+      {% for entry in item.subfolderitems %}
+      <li>
+        <a href="{{ entry.url }}">{{ entry.page }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

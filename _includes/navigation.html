@@ -1,0 +1,49 @@
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      {% if page.url == "/" %}
+        <span>{{ site.title }}</span>
+      {% else %}
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      {% endif %}
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="javascript: void(0);"><span></span></a></div>
+      <ul class="nav-list">
+        {% for item in site.data.navigation.nav %}
+          {% if item.url != page.url %}
+            <li class="nav-item">
+              <a href="{{ item.url }}" class="nav-link"
+                 {% if item.target %}target="{{ item.target }}"{% endif %}
+                 {% if item.rel %}rel="{{ item.rel }}"{% endif %}>
+                {% if item.icon %}
+                  <span class="nav-icon">{{ item.icon | safe }}</span>
+                {% endif %}
+                {{ item['primo-livello'] }}
+              </a>
+      
+              {% if item.items %}
+                <ul class="nav-dropdown">
+                  {% for subitem in item.items %}
+                    {% if subitem.url != page.url %}
+                      <li class="nav-subitem">
+                        <a href="{{ subitem.url }}" class="nav-sublink"
+                           {% if subitem.target %}target="{{ subitem.target }}"{% endif %}
+                           {% if subitem.rel %}rel="{{ subitem.rel }}"{% endif %}>
+                          {% if subitem.icon %}
+                            <span class="nav-icon">{{ subitem.icon | safe }}</span>
+                          {% endif %}
+                          {{ subitem['secondo-livello'] }}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>      
+    </nav>
+  </div>
+</section>

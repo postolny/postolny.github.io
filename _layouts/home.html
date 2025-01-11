@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="catalogue">
+  {% for post in site.posts %}
+    {% if post.sticky %}
+      {% include catalogue_item.html sticky='true' %}
+    {% endif %}
+  {% endfor %}
+
+  {% for post in paginator.posts %}
+    {% include catalogue_item.html %}
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">
+    Назад
+  </a>
+  {% else %}
+  <span class="previous">Первая</span>
+  {% endif %}
+  <span class="page_number ">
+    {{ paginator.page }} из {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Вперёд</a>
+  {% else %}
+  <span class="next ">Последняя</span>
+  {% endif %}
+</div>

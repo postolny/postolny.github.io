@@ -1,0 +1,24 @@
+<div class="catalogue-item">
+  <time class="catalogue-time">
+    {% assign months = "января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря" | split: "|" %}
+    {% assign m = post.date | date: "%-m" | minus: 1 %}
+    {% assign day = post.date | date: "%d" | plus: 0 %}
+    {% assign month = months[m] %}
+    {% assign year = post.date | date: "%Y" %}
+    <span>{{ day }} {{ month }} {{ year }} года</span>
+</time>
+  {% if include.sticky == 'true' %}
+  <span class="catalogue-pinned">запись закреплена</span>
+  {% endif %}
+  <h1 class="catalogue-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+  <p>
+    {% if post.excerpt_separator %}
+    {{ post.excerpt | strip_html }}
+    {% else %}
+    {{ post.content | strip_html | truncatewords: 30 }}
+    {% endif %}
+  </p>
+  <div class="btn_container">
+    <a href="{{ post.url | prepend: site.baseurl }}" class="btn">Читать статью</a>
+  </div>
+</div>

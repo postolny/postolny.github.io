@@ -1,0 +1,38 @@
+- title: Rondo (для фортепиано)
+  pdf: rondo.pdf
+
+- title: Rondo (для фортепиано, с аппликатурой)
+  pdf: rondo(con_diteggiatura).pdf
+
+- title: Elegia (для фортепиано)
+  pdf: elegia.pdf
+
+- title: Elegia (для фортепиано, с аппликатурой)
+  pdf: elegia(con_diteggiatura).pdf
+
+- title: Adagio соль-мажор (для фортепиано)
+  pdf: adagio.pdf
+
+- title: Adagio соль-мажор (для фортепиано, с аппликатурой)
+  pdf: adagio(con_diteggiatura).pdf
+
+- title: Adagio фа-мажор (для фортепиано)
+  pdf: adagio-f.pdf
+
+- title: Vezzoso (для фортепиано)
+  pdf: vezzoso.pdf
+
+- title: Presto (для фортепиано)
+  pdf: presto.pdf
+
+- title: Четыре скрипичных дуэта
+  pdf: duetti.pdf
+
+- title: Вальс (для скрипки и фортепиано)
+  pdf: valzer.pdf
+
+- title: Вальс (для струнного ансамбля)
+  pdf: valzer-strumentale.pdf
+
+- title: Ариетта Мефистофеля
+  pdf: arietta.pdf

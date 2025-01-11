@@ -1,0 +1,15 @@
+<div class="tags">
+  <h1 class="tags-list-title">Все статьи с тегом {{ include.tagName }}</h1>
+  <ul class="tags-list">
+    {% for post in site.tags[include.tagName] %}
+    <li>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="tags-post-meta">
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+          ({{ post.date | date: '%d-%m-%Y' }})
+        </time>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

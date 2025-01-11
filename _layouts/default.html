@@ -1,0 +1,43 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="{% if page.bodyClass %}{{ page.bodyClass }}{% endif %}">
+
+  {% include navigation.html %}
+
+  {% unless page.exclude_banner %}
+  {% include banner.html %}
+  {% else %}
+  <style>
+    @media (min-width: 798px) {
+      .page-title {
+        margin-top: {{ page.header_margin_top }};
+      }
+    }
+  </style>
+  {% endunless %}
+
+  <main class="{% if page.mainClass %}{{ page.mainClass }}{% endif %}">
+    {{ content }}
+  </main>
+
+  {% include lightbox.html %}
+
+  {% include footer.html %}
+
+  {% unless page.exclude_frasario or site.exclude_frasario %}
+  {% include frasario.html %}
+  {% endunless %}
+
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+# Site settings
+title:          Игорь Постольный
+description:    "И.А. Постольный – литературные и музыкальные сочинения • Итальянский язык"
+baseurl:        ""
+url:            "https://postolny.github.io"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:     /assets/Rome-Parco-degli-Acquedotti1200x627.jpg
+
+# Google Analytics
+google_analytics:
+
+  # Author
+author:
+  name:         Игорь Постольный
+  url:          
+  email:        
+
+# Build settings
+markdown: kramdown
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       10
+seo_paginator_message: "Страница %<current>s | "
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock ]
+
+exclude_frasario: true
+
+locale: ""

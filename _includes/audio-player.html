@@ -1,0 +1,86 @@
+<h2>𝄞</h2>
+<div id="player-container">
+  <div id="audio-player">
+    <div class="img-container">
+      <div class="image left"><img src="/assets/image-left.png" alt="Left"></div>
+      <div class="image right"><img src="/assets/image-right.png" alt="Right"></div>
+    </div>
+    <div id="player-controls">
+      <div class="buttons">
+        <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M17.25 4.336v15.328L9.586 12zM8.5 5v14h-2V5z" />
+          </svg>
+        </button>
+        <button id="play-pause">
+          <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14" />
+          </svg>
+          <svg class="icon-pause hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12" />
+            <path fill="currentColor" d="M8 8h8v8H8z" />
+          </svg>
+        </button>
+        <button id="next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M6.75 4.336L14.414 12L6.75 19.664zM17.5 5v14h-2V5z" />
+          </svg>
+        </button>
+      </div>
+      <div class="slider-wrapper">
+        <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.5">
+        <div class="value"></div>
+      </div>
+    </div>
+    <hr>
+    <div id="progress-container">
+      <div id="progressBar">
+        <div id="progressValue"></div>
+      </div>
+      <div class="time-info">
+        <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span>
+      </div>
+    </div>
+    <div id="playlist-container">
+      <ul id="playlist">
+        {% for item in site.data.audio %}
+        <li data-src="/mp3/{{ item.mp3 }}">{{ item.nome }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="sliding-panel">
+      <div class="panel-content">
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="toggleBodyClass">
+            <span class="slider"></span>
+          </label>
+          <span>тёмная тема</span>
+        </div>
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="toggleProgress">
+            <span class="slider"></span>
+          </label>
+          <span>индикатор прогресса (гондольер)</span>
+        </div>
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="toggleImages">
+            <span class="slider"></span>
+          </label>
+          <span>ромашки</span>
+        </div>
+      </div>
+    </div>
+    <div id="panel-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <rect width="24" height="24" fill="none" />
+        <path fill-rule="evenodd"
+          d="M14.208 4.83q.68.21 1.3.54l1.833-1.1a1 1 0 0 1 1.221.15l1.018 1.018a1 1 0 0 1 .15 1.221l-1.1 1.833q.33.62.54 1.3l2.073.519a1 1 0 0 1 .757.97v1.438a1 1 0 0 1-.757.97l-2.073.519q-.21.68-.54 1.3l1.1 1.833a1 1 0 0 1-.15 1.221l-1.018 1.018a1 1 0 0 1-1.221.15l-1.833-1.1q-.62.33-1.3.54l-.519 2.073a1 1 0 0 1-.97.757h-1.438a1 1 0 0 1-.97-.757l-.519-2.073a7.5 7.5 0 0 1-1.3-.54l-1.833 1.1a1 1 0 0 1-1.221-.15L4.42 18.562a1 1 0 0 1-.15-1.221l1.1-1.833a7.5 7.5 0 0 1-.54-1.3l-2.073-.519A1 1 0 0 1 2 12.72v-1.438a1 1 0 0 1 .757-.97l2.073-.519q.21-.68.54-1.3L4.27 6.66a1 1 0 0 1 .15-1.221L5.438 4.42a1 1 0 0 1 1.221-.15l1.833 1.1q.62-.33 1.3-.54l.519-2.073A1 1 0 0 1 11.28 2h1.438a1 1 0 0 1 .97.757zM12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8" />
+      </svg>
+    </div>
+  </div>
+</div>
+<img id="gondoliere" src="/assets/gondoliere.png" alt="" />
+<audio id="audioPlayer">Ваш браузер не поддерживает тег audio.</audio>

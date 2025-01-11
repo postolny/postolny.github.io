@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-11T14:33:07+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Игорь Постольный</title><subtitle>И.А. Постольный – литературные и музыкальные сочинения • Итальянский язык</subtitle><author><name>Игорь Постольный</name></author><entry><title type="html">Центрирование блока с учётом тени</title><link href="http://localhost:4000/2025-01-05/centrare-un-box-con-box-shadow" rel="alternate" type="text/html" title="Центрирование блока с учётом тени" /><published>2025-01-05T00:00:00+03:00</published><updated>2025-01-05T00:00:00+03:00</updated><id>http://localhost:4000/2025-01-05/centrare-un-box-con-box-shadow</id><content type="html" xml:base="http://localhost:4000/2025-01-05/centrare-un-box-con-box-shadow"><![CDATA[<p>С помощью CSS можно легко "нарисовать" контейнер в виде стопки бумаги, задав для него тень. Но при выравнивании каким-либо способом тень не учитывается – это не так заметно на широком экране ПК, но очень заметно на мобильных устройствах. На этом сайте я применил подобный эффект на странице <a href="/musica/">Мои музыкальные сочинения</a> и в статье <a href="/2021-12-24/musescore">Нотный редактор MuseScore</a>. Для примера я создам такой блок в виде стопки бумаги с тремя листами и при центрировании тень пока учитывать не буду:</p>
+
+<style>
+  #shad-container {
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-bottom: 1rem;
+  }
+
+  .shad-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    box-shadow: red 0px 0px 0px 2px inset,
+      white 14px 14px 0px -2px,
+      green 14px 14px,
+      white 28px 28px 0px -2px,
+      blue 28px 28px;
+  }
+</style>
+
+<div id="shad-container">
+    <div class="shad-block">Я – блок с тенью</div>
+</div>
+
+<p>Если приглядеться, центрирован только первый лист. Тени, образующие два других листа, смещены вправо и вниз. Если это не очень заметно, посмотрите на телефоне или в инспекторе браузера или просто сузив окно браузера. Вот Html и CSS:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"shadow-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>Я – блок с тенью<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre><span class="nf">#shadow-container</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#262626</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.block</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="no">red</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">2px</span> <span class="nb">inset</span><span class="p">,</span>
+        <span class="no">white</span> <span class="m">14px</span> <span class="m">14px</span> <span class="m">0px</span> <span class="m">-2px</span><span class="p">,</span>
+        <span class="no">green</span> <span class="m">14px</span> <span class="m">14px</span><span class="p">,</span>
+        <span class="no">white</span> <span class="m">28px</span> <span class="m">28px</span> <span class="m">0px</span> <span class="m">-2px</span><span class="p">,</span>
+        <span class="no">blue</span> <span class="m">28px</span> <span class="m">28px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Поясню что я здесь написал. Сначала я создал внешний flex-контейнер <code class="language-plaintext highlighter-rouge">#shadow-container</code> и задал для него <code class="language-plaintext highlighter-rouge">justify-content: center;</code> и <code class="language-plaintext highlighter-rouge">align-items: center;</code> для выравнивания вложенного в него блока с тенью <code class="language-plaintext highlighter-rouge">.block</code> соответствено по горизонтали и вертикали. Для блока <code class="language-plaintext highlighter-rouge">.block</code> я также задал <code class="language-plaintext highlighter-rouge">display: flex;</code>, <code class="language-plaintext highlighter-rouge">justify-content: center;</code> и <code class="language-plaintext highlighter-rouge">align-items: center;</code>, но лишь для того, чтобы выровнять текст "Я – блок с тенью" по центру и к делу это не относится как и другие стили, которые я не упомянул. Самое главное здесь – это составная тень <code class="language-plaintext highlighter-rouge">box-shadow</code>. Для первой тени (строка 16) указан параметр <code class="language-plaintext highlighter-rouge">inset</code>, указывающий на то, что тень является внутренней. В данном случае будет создана тонкая граница красного цвета. Для всех остальных теней параметр не указан – это говорит о том, что они являются внешними. В строках 17 и 19 создаётся белая тень с тонкой цветной границей. Первым параметром здесь указывается цвет тени, два следующих параметра – смещение по горизонтали и вертикали соответственно. Следующий параметр – радиус размытия. Если значение этого параметра равно нулю, край тени будет жёстким, то есть без размытия. Последний параметр -2px – это размер растушёвки (spread-radius), – это сужает белую тень на 2px и тем самым создаёт тонкую цветную границу за счёт отступа от краёв низлежащей тени.</p>
+
+<p>Вообще параметры тени рекомендуют указывать в таком порядке: <code class="language-plaintext highlighter-rouge">box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;</code> и согласно этой рекомендации можно было бы записать так:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="nc">.block</span> <span class="p">{</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">2px</span> <span class="no">red</span> <span class="nb">inset</span><span class="p">,</span>
+        <span class="m">14px</span> <span class="m">14px</span> <span class="m">0px</span> <span class="m">-2px</span> <span class="no">white</span><span class="p">,</span>
+        <span class="m">14px</span> <span class="m">14px</span> <span class="no">green</span><span class="p">,</span>
+        <span class="m">28px</span> <span class="m">28px</span> <span class="m">0px</span> <span class="m">-2px</span> <span class="no">white</span><span class="p">,</span>
+        <span class="m">28px</span> <span class="m">28px</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Но для таких параметров как <code class="language-plaintext highlighter-rouge">color</code> и <code class="language-plaintext highlighter-rouge">inset</code> порядок может быть произвольным. Главное, чтобы все числовые параметры имели строгий порядок: h-offset (смещение по горизонтали), v-offset (смещение по вертикали), blur-radius (радиус размытия), spread-radius (размер растушёвки). Параметры смещения являются обязательными, остальные параметры могут не указываться. Ключевое слово <code class="language-plaintext highlighter-rouge">none</code> (<code class="language-plaintext highlighter-rouge">box-shadow: none;</code>) отключает тень.</p>
+
+<p>Итак, чтобы выровнять блок с учётом тени, можно просто задать внутренние отступы для <code class="language-plaintext highlighter-rouge">#shadow-container</code> справа и снизу, поскольку тень распространяется в этих направлениях. Величина отступа – это величина смещения по осям X и Y последней тени, то есть 28px:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="nf">#shadow-container</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#262626</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+    <span class="nl">padding-right</span><span class="p">:</span> <span class="m">28px</span><span class="p">;</span>
+    <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">28px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>И вот что у меня получилось:</p>
+
+<style>
+  #shad-container1 {
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    margin-bottom: 1rem;
+  }
+
+  .shad-block1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    box-shadow: red 0px 0px 0px 2px inset,
+      white 14px 14px 0px -2px,
+      green 14px 14px,
+      white 28px 28px 0px -2px,
+      blue 28px 28px;
+  }
+</style>
+
+<div id="shad-container1">
+    <div class="shad-block1">Я – блок с тенью</div>
+</div>
+
+<p>На сайте я сделал именно так, но можно также вместо отступов воспользоваться свойством <code class="language-plaintext highlighter-rouge">transform: translate()</code>, задав его для самого блока <code class="language-plaintext highlighter-rouge">.block</code>, которое сдвинет его по оси X и Y (то есть влево и вниз), поскольку значения отрицательные, на половину величины смещения последней тени, то есть 14px:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre><span class="nf">#shadow-container</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#262626</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.block</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="no">red</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">2px</span> <span class="nb">inset</span><span class="p">,</span>
+        <span class="no">white</span> <span class="m">14px</span> <span class="m">14px</span> <span class="m">0px</span> <span class="m">-2px</span><span class="p">,</span>
+        <span class="no">green</span> <span class="m">14px</span> <span class="m">14px</span><span class="p">,</span>
+        <span class="no">white</span> <span class="m">28px</span> <span class="m">28px</span> <span class="m">0px</span> <span class="m">-2px</span><span class="p">,</span>
+        <span class="no">blue</span> <span class="m">28px</span> <span class="m">28px</span><span class="p">;</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">translate</span><span class="p">(</span><span class="m">-14px</span><span class="p">,</span> <span class="m">-14px</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>И напоследок пример, иллюстрирующий всё вышесказанное:</p>
+
+<style>
+  #shad-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #262626;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    transition: padding 0.3s ease;
+  }
+  .block2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 2px red inset,
+        14px 14px 0px -2px white,
+        14px 14px green;
+    transition: box-shadow 0.3s ease;
+  }
+  .shadow-slider {
+    margin: 30px auto;
+    text-align: center;
+  }
+  .shadow-slider input[type="range"] {
+    width: 150px;
+    margin: 5px 0;
+    vertical-align: middle;
+  }
+  .shadow-slider span {
+    display: inline-block;
+    width: 50px;
+  }
+</style>
+
+<div id="shad-container2">
+    <div class="block2" id="shadow-box">Я – блок с тенью</div>
+</div>
+<div class="shadow-slider">
+    <label for="offset">Смещение тени:</label>
+    <input type="range" id="offset" min="0" max="50" value="14" step="1" />
+    <span id="offset-value">14px</span>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (typeof jQuery !== "undefined") {
+      $(document).ready(function() {
+        $('#offset').on('input', function() {
+          var offset = Number($(this).val());
+
+          $('#offset-value').text(offset + 'px');
+          $('#shadow-box').css('box-shadow', '0px 0px 0px 2px red inset, ' + offset + 'px ' + offset + 'px 0px -2px white, ' + offset + 'px ' + offset + 'px green');
+
+          $('#shad-container2').css('padding-right', offset + 'px');
+          $('#shad-container2').css('padding-bottom', offset + 'px');
+        });
+      });
+    } else {
+      console.error("jQuery не загружен.");
+    }
+  });
+</script>]]></content><author><name>И. Постольный</name></author><category term="CSS" /><summary type="html"><![CDATA[С помощью CSS можно легко "нарисовать" контейнер в виде стопки бумаги, задав для него тень. Но при выравнивании каким-либо способом тень не учитывается – это не так заметно на широком экране ПК, но очень заметно на мобильных устройствах.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Как настроить Quick Access Popup</title><link href="http://localhost:4000/2024-11-12/%D1%81ome-configurare-quick-access-popup" rel="alternate" type="text/html" title="Как настроить Quick Access Popup" /><published>2024-11-12T00:00:00+03:00</published><updated>2024-11-12T00:00:00+03:00</updated><id>http://localhost:4000/2024-11-12/%D1%81ome-configurare-quick-access-popup</id><content type="html" xml:base="http://localhost:4000/2024-11-12/%D1%81ome-configurare-quick-access-popup"><![CDATA[<h3 id="о-самом-главном">О самом главном</h3>
+
+<p>Возможно по прочтении моей статьи в вас появится азарт и вы скажете себе: "Ну, теперь я могу всё, всё мне доступно и позволено!". Такое суждение будет ошибочным, ибо не средства делают вас настоящим умельцем, а ваши навыки и способности. Например, вы можете в файле hosts запретить связь с интернетом какой-нибудь пиратской программе, чтобы она не могла проверить лицензию – это вам чести не сделает. Но вы можете научиться писать код в любом бесплатном текстовом редакторе и создавать свои программы или, по-крайней мере, научиться творчески, гибко и со вкусом выполнять любые задачи в бесплатных программах. А по большому счёту и это даже не самое главное в жизни. Берегите родных и здоровье, заниматесь живым творчеством, помогайте людям – это куда важнее "ковыряния" в компьютере!</p>
+
+<p>Программа <a href="https://www.quickaccesspopup.com/" target="_blank" rel="noopener noreferrer">Quick Access Popup (QAP)</a> – это популярная утилита, которая поможет сделать вашу работу на компьютере значительно удобней. Она позволяет организовать быстрый доступ к любым часто используемым файлам, папкам, приложениям, веб-сайтам, документам и системным командам. Я постараюсь её описать насколько возможно подробно, но затронуть все аспекты её работы и настройки в этой статье у меня не получится. Программа  подробно описана её автором и всю информацию вы можете найти на официальном сайте. Также на этом сайте вы найдёте ссылку на форум.</p>
+
+<p>Итак, после установки программы, найдите её значок в трее, кликните по нему правой клавишей мышки и выберите пункт "Окно настроек". Здесь вы можете создать собственное меню быстрого доступа (или, точнее, реорганизовать, поскольку автор уже позаботился о том, чтобы сделать пример).</p>
+
+<h3 id="сайты">Сайты</h3>
+
+<p><img src="/img/qap/sites.png" alt="Quick Access Popup" /></p>
+
+<p>Для того, чтобы создать в меню раздел "Сайты" нажмите на кнопку "Добавить" и в открышемся окне выберите "Подменю" ("Общее меню" уже создано автором как пример и новое мы создавать не будем). Нажмите на кнопку "Продолжить". В открышемся окне в поле "Короткое название меню" введите "Сайты". На вкладке "Настройка меню" вы можете изменить значок. Для этого нажмите на ссылку "Изменить значок". В открышемся окне вы увидите ссылки на dll-библиотеки значков: <code class="language-plaintext highlighter-rouge">JLicons.dll</code>, <code class="language-plaintext highlighter-rouge">Shell32.dll</code> и <code class="language-plaintext highlighter-rouge">ImageRes.dll</code>, а также ссылку "Custom folder" на тот случай, если у вас имеется папка с собственными значками или файлами их содержащими. Выберите понравившийся значок. Нажмите на кнопку "Добавить". В "Окне настроек" вы увидите созданный пункт "Сайты" (его можно перетащить в нужное вам место, удерживая левую клавишу мышки). Дважды кликните на пункт "Сайты", чтобы перейти в директорию, где вы будете создавать ваши пункты для этого раздела. Для добавления ссылок на сайты снова нажмите на кнопку "Добавить" в "Окне настроек" и в открывшемся окне "Добавить тип избранного" выберите выберите "Ссылка (URL)". Нажмите на кнопку "Продолжить". В поле "Короткое название меню" введите имя ссылки (название сайта). В поле "Ссылка (URL)" введите адрес ссылки. Нажмите на кнопку "Добавить". На вкладке "Настройка меню" вы можете изменить значок. Вы можете нажать на кнопку "Получить значок веб-сайта". Если значок будет успешно получен, он займёт место значка по умолчанию. Стоит отметить, что далеко не всегда эта операция будет выполнена успешно. QAP загружает значки с сайта и конвертирует их в формат <code class="language-plaintext highlighter-rouge">.ico</code>, если они имеют другой формат, но иногда значок может быть скачан и преобразован некорректно и не будет отображаться программой. Что можно сделать? Вы можете найти в интернете любой другой подходящий значок в формате <code class="language-plaintext highlighter-rouge">.ico</code> и выбрать его из своей пользовательской папки в качестве значка для ссылок (желательно, чтобы значок был мультиформатным – какие значки считаются мультиформатными, читайте в статье <a href="/2024-11-08/come-creare-un-icona-ico-di-alta-qualita">Как создать качественную иконку ICO</a>). Я пробовал скачивать значки сайтов (favicon) и пересохранять их в графическом редакторе. На этой же вкладке вы можете настроить положение создаваемого вами пункта относительно других (если, конечно, пунктов больше одного), выбрав из выпадающего списка "Вставить избранное перед этим пунктом" пункт, перед которым будет располагаться создаваемый пункт. На вкладке "Расширенные настройки" в поле "Настройки" вы можете ввести параметры для запуска браузера. Например, если вы хотите, чтобы браузер запускался в приватном режиме (инкогнито), введите в это поле <code class="language-plaintext highlighter-rouge">--incognito</code> (Google Chrome, Cent Browser), <code class="language-plaintext highlighter-rouge">-private</code> (Mozilla Firefox, Opera), <code class="language-plaintext highlighter-rouge">--inprivate</code> (Microsoft Edge),  "Проделав все необходимые действия, нажмите на кнопку "Добавить". Надеюсь, вы поняли принцип добавления пунктов и дальше я буду писать менее подробно.</p>
+
+<h3 id="утилиты">Утилиты</h3>
+
+<p><img src="/img/qap/tools.png" alt="Quick Access Popup - Утилиты" /></p>
+
+<p>Что касается блокнота, автор уже создал в качестве примера ссылку для его запуска. Я оставил этот пункт. Об остальных пунктах – по порядку (не забывайте предварительно создать соответствующий раздел):</p>
+
+<ul>
+  <li><strong>Редактор реестра</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Редактор реестра";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">C:\Windows\regedit.exe</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Диспетчер задач</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Диспетчер задач";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">C:\Windows\System32\Taskmgr.exe</code>;</li>
+      <li>Значок я добавил на сей раз не из dll-библиотеки, а из exe-файла <code class="language-plaintext highlighter-rouge">Taskmgr.exe</code>. Для этого в окне выбора значка нажмите на кнопку "Обзор" и выберите этот файл по адресу <code class="language-plaintext highlighter-rouge">C:\Windows\System32\Taskmgr.exe</code>, среди открывшихся значков выберите первый. Нажмите на кнопку "OK";</li>
+      <li>Нажмите на кнопку "OK" в окне "Редактировать Избранное".</li>
+    </ul>
+  </li>
+  <li><strong>Службы</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Службы";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">C:\Windows\System32\services.msc</code>;</li>
+      <li>Как и в предыдущем пункте значок взят из exe-файла: <code class="language-plaintext highlighter-rouge">C:\Windows\System32\Taskmgr.exe</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Командная строка</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "CMD" или "Командная строка";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">cmd.exe</code>;</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Командная строка (Администратор)</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "CMD admin";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">cmd.exe</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">ImageRes.dll</code>;</li>
+      <li>На вкладке "Расширенные настройки" установите галочку в чекбоксе "Запустить приложение с правами администрирования";</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>PowerShell</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "PowerShell";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">powershell.exe</code>;</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>PowerShell (Администратор)</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "PowerShell admin";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">powershell.exe</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">ImageRes.dll</code>;</li>
+      <li>На вкладке "Расширенные настройки" установите галочку в чекбоксе "Запустить приложение с правами администрирования";</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Перезагрузить Проводник</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Перезагрузить Проводник";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">cmd.exe</code> (команда будет выполнена с помощью командной строки);</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">ImageRes.dll</code>;</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите команду: <code class="language-plaintext highlighter-rouge">/c taskkill /F /IM explorer.exe &amp; start explorer.exe</code> (параметр <code class="language-plaintext highlighter-rouge">/c</code> указывает командной строке, что нужно выполнить команду внутри кавычек и затем завершить выполнение команды; taskkill - команда Windows, завершающая процесс; <code class="language-plaintext highlighter-rouge">/F</code> - параметр команды <code class="language-plaintext highlighter-rouge">taskkill</code>, заставляющий завершить процесс принудительно; параметр <code class="language-plaintext highlighter-rouge">/IM explorer.exe</code>, где <code class="language-plaintext highlighter-rouge">explorer.exe</code> - это Проводник, указывает имя процесса, который нужно завершить; <code class="language-plaintext highlighter-rouge">&amp;</code> - оператор, позволяющий выполнить вторую команду после завершения первой; <code class="language-plaintext highlighter-rouge">start explorer.exe</code> - команда, которая запускает Проводник снова);</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="специальные-папки">Специальные папки</h3>
+
+<p><img src="/img/qap/special_folders.png" alt="Quick Access Popup - Специальные папки" /></p>
+
+<p>Здесь всё просто. Раскройте раздел "Мои специальные папки". Нажмите на кнопку "Добавить" в "Окне настроек" и в открывшемся окне "Добавить тип избранного" выберите "Папка оболочки". В открывшемся окне в разделе "Основной" дерева "Папка оболочки" просто выберите нужные вам папки. Или ещё проще: автор уже предусмотрел специальный пункт "Добавить избранное" – воспользуйтесь им для быстрого добавления ваших специальных папок.</p>
+
+<h3 id="системные-папки">Системные папки</h3>
+
+<p><img src="/img/qap/system_folders.png" alt="Quick Access Popup - Системные папки" /></p>
+
+<ul>
+  <li><strong>Диск C:\</strong> (для добавления этого пункта добавьте "Папка" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "C:\";</li>
+      <li>В поле "Папка (путь)" введите <code class="language-plaintext highlighter-rouge">C:\</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Диск D:\</strong> (для добавления этого пункта добавьте "Папка" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "D:\";</li>
+      <li>В поле "Папка (путь)" введите <code class="language-plaintext highlighter-rouge">D:\</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>AppData</strong> (для добавления этого пункта добавьте "Папка" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "AppData";</li>
+      <li>В поле "Папка (путь)" введите <code class="language-plaintext highlighter-rouge">%USERPROFILE%\AppData</code>; (системная переменная среды <code class="language-plaintext highlighter-rouge">%USERPROFILE%</code> заменяет путь <code class="language-plaintext highlighter-rouge">C:\Users\имя_пользователя</code>)</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Temp</strong> (для добавления этого пункта добавьте "Папка" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Temp";</li>
+      <li>В поле "Папка (путь)" введите <code class="language-plaintext highlighter-rouge">%TEMP%</code>; (системная переменная среды <code class="language-plaintext highlighter-rouge">%TEMP%</code> заменяет путь <code class="language-plaintext highlighter-rouge">C:\Users\имя_пользователя\AppData\Local\Temp</code>)</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Автозагрузка</strong> (для добавления этого пункта добавьте "Папка оболочки" в "Окне настроек")
+    <ul>
+      <li>В разделе "Опытный пользователь" дерева "Папка оболочки" выберите "Автозагрузка";</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Этот компьютер</strong> (для добавления этого пункта добавьте "Папка оболочки" в "Окне настроек")
+    <ul>
+      <li>В разделе "Основной" дерева "Папка оболочки" выберите "Этот компьютер";</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Принтеры</strong> (для добавления этого пункта добавьте "Папка оболочки" в "Окне настроек")
+    <ul>
+      <li>В разделе "Основной" дерева "Папка оболочки" выберите "Принтеры";</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Сетевые подключения</strong> (для добавления этого пункта добавьте "Папка оболочки" в "Окне настроек")
+    <ul>
+      <li>В разделе "Сисадмин" дерева "Папка оболочки" выберите "Сетевые подключения";</li>
+      <li>Значок отобразится сам (из dll-библиотеки <code class="language-plaintext highlighter-rouge">netshell.dll</code>);</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Все элементы панели управления</strong> (для добавления этого пункта добавьте "Папка оболочки" в "Окне настроек")
+    <ul>
+      <li>В разделе "Основной" дерева "Папка оболочки" выберите "Все элементы панели управления";</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Программы и компоненты</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Программы и компоненты";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">C:\Windows\System32\control.exe</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">Shell32.dll</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="системные-настройки">Системные настройки</h3>
+
+<p><img src="/img/qap/system_settings.png" alt="Quick Access Popup - Системные настройки" /></p>
+
+<ul>
+  <li><strong>Параметры</strong> – этот пункт уже был предустановлен автором в качестве примера и назывался Immersive Control Panel – я лишь переименовал его в "Параметры" но я расскажу как это сделать самостоятельно:
+    <ul>
+      <li>В "Окне настроек" добавьте "Windows App";</li>
+      <li>Выпадающем списке "Windows App" выберите <code class="language-plaintext highlighter-rouge">windows.immersivecontrolpanel - microsoft.windows.immersivecontrolpanel</code>;</li>
+      <li>В поле "Короткое название меню" измените название на "Параметры";</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Звук</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Звук";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">C:\Windows\System32\control.exe</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">Shell32.dll</code>;</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">mmsys.cpl</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Восстановление системы</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Восстановление системы";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">rstrui.exe</code>;</li>
+      <li>Чтобы назначить значок, выберите exe-файл: <code class="language-plaintext highlighter-rouge">C:\Windows\system32\rstrui.exe</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Электропитание</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Электропитание";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">control</code> (это сокращённый вариант вместо <code class="language-plaintext highlighter-rouge">C:\Windows\System32\control.exe</code>);</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">powercpl.dll</code> (<code class="language-plaintext highlighter-rouge">C:\Windows\System32\powercpl.dll</code>);</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">powercfg.cpl</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Регион</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Регион";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">control</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">ImageRes.dll</code>;</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">intl.cpl</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Дата и время</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Дата и время";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">control</code>;</li>
+      <li>Чтобы назначить значок, выберите файл панели управления <code class="language-plaintext highlighter-rouge">timedate.cpl</code> (<code class="language-plaintext highlighter-rouge">C:\Windows\System32\timedate.cpl</code>);</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">timedate.cpl</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Компоненты Windows</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Компоненты Windows";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">control</code>;</li>
+      <li>Чтобы назначить значок, выберите exe-файл <code class="language-plaintext highlighter-rouge">OptionalFeatures.exe</code> (<code class="language-plaintext highlighter-rouge">C:\Windows\System32\timedate.cpl</code>);</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">appwiz.cpl,,2</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Переменные среды</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Переменные среды";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">rundll32.exe</code>;</li>
+      <li>Вы можете найти значок, например, в dll-библиотеке <code class="language-plaintext highlighter-rouge">ImageRes.dll</code>;</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">sysdm.cpl,EditEnvironmentVariables</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="дополнительно">Дополнительно</h3>
+
+<p>По желанию вы можете включить также следующие пункты в соответствующие разделы:</p>
+
+<ul>
+  <li><strong>Диспетчер устройств</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Диспетчер устройств";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">C:\Windows\System32\devmgmt.msc</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">devmgr.dll</code>. (<code class="language-plaintext highlighter-rouge">C:\Windows\System32\devmgr.dll</code>).</li>
+      <li>Нажмите на кнопку "OK";</li>
+    </ul>
+  </li>
+  <li><strong>Проверка системных файлов</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Проверка системных файлов";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">cmd.exe</code>;</li>
+      <li>Будет установлен значок Командной строки, но вы можете назначить любой другой значок;</li>
+      <li>На вкладке "Расширенные настройки" установите галочку в чекбокс "Запустить приложение с правами администратора", в поле "Настройки" введите <code class="language-plaintext highlighter-rouge">/k sfc /scannow</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Информация о сети</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Информация о сети";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">cmd.exe</code>;</li>
+      <li>Будет установлен значок Командной строки, но вы можете назначить любой другой значок;</li>
+      <li>На вкладке "Расширенные настройки" установите галочку в чекбокс "Запустить приложение с правами администратора", в поле "Настройки" введите <code class="language-plaintext highlighter-rouge">/k ipconfig /all</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Сведения о системе</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Сведения о системе";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">msinfo32.exe</code>;</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Очистка дисков</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Очистка дисков";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">cleanmgr.exe</code>;</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Дополнительные параметры (Внимание: компьютер будет перезагружен!)</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Дополнительные параметры";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">shutdown.exe</code>;</li>
+      <li>Для этого пункта назначил значок в виде шестерёнки из dll-библиотеки <code class="language-plaintext highlighter-rouge">Shell32.dll</code>;</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">/r /o /f /t 00</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Редактировать hosts</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Редактировать hosts";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">notepad.exe</code> или вы можете указать путь до исполняемого файла любого другого установленного на вашем компьютере текстового редактора, например: <code class="language-plaintext highlighter-rouge">C:\Program Files\Notepad++\notepad++.exe</code>;</li>
+      <li>Будет установлен значок Блокнота, но вы можете назначить любой другой значок;</li>
+      <li>На вкладке "Расширенные настройки" установите галочку в чекбокс "Запустить приложение с правами администратора", в поле "Настройки" введите <code class="language-plaintext highlighter-rouge">C:\Windows\System32\drivers\etc\hosts</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Брандмауэр Защитника Windows</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Брандмауэр Защитника Windows";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">control</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">FirewallControlPanel.dll</code> (<code class="language-plaintext highlighter-rouge">C:\Windows\System32\FirewallControlPanel.dll</code>);</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">/name Microsoft.WindowsFirewall</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Монитор брандмауэра</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Монитор брандмауэра";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">wf.msc</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">FirewallControlPanel.dll</code> (<code class="language-plaintext highlighter-rouge">C:\Windows\System32\FirewallControlPanel.dll</code>);</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Шрифты (вариант первый)</strong> (для добавления этого пункта добавьте "Папка оболочки" в "Окне настроек")
+    <ul>
+      <li>В разделе "Сисадмин" дерева "Папка оболочки" выберите "Шрифты";</li>
+      <li>Значок отобразится сам (из dll-библиотеки <code class="language-plaintext highlighter-rouge">JLicons.dll</code>);</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Шрифты (вариант второй)</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Шрифты";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">control</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">FirewallControlPanel.dll</code> (<code class="language-plaintext highlighter-rouge">C:\Windows\System32\FirewallControlPanel.dll</code>);</li>
+      <li>В поле "Настройки" на вкладке "Расширенные настройки" введите <code class="language-plaintext highlighter-rouge">/name Microsoft.WindowsFirewall</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Конфигурация системы</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Конфигурация системы";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">msconfig.exe</code>;</li>
+      <li>Значок отобразится сам;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Планировщик заданий</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Планировщик заданий";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">taskschd.msc</code>;</li>
+      <li>Найдите значок в dll-библиотеке <code class="language-plaintext highlighter-rouge">miguiresource.dll</code> (<code class="language-plaintext highlighter-rouge">C:\Windows\System32\miguiresource.dll</code>);</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="cornice">Путь <code class="language-plaintext highlighter-rouge">C:\Windows</code> можно было бы заменить системной переменной <code class="language-plaintext highlighter-rouge">%SystemRoot%</code> или <code class="language-plaintext highlighter-rouge">%windir%</code>, однако длину текста это не сокращает.</p>
+
+<h3 id="использование-shutdownexe-с-помощью-qap">Использование shutdown.exe с помощью QAP</h3>
+
+<p>Этот файл находится по адресу <code class="language-plaintext highlighter-rouge">C:\Windows\System32\shutdown.exe</code> и служит для выключения компьютера, перезагрузки и т.д. Разберём разные команды для Командной строки или PowerShell (а это значит, в поле "Приложение (путь и имя файла)" вы должны будет ввести соответственно <code class="language-plaintext highlighter-rouge">cmd.exe</code> или <code class="language-plaintext highlighter-rouge">powershell.exe</code>). Команды могут иметь различные параметры и чтобы ознакомиться с ними, вы можете в Командной строке ввести команду <code class="language-plaintext highlighter-rouge">shutdown /?</code>. Впрочем, вы можете добавить пункты, которые я опишу ниже, в ваше меню, используя только возможности QAP. Для этого, как было описано ранее, нажмите на кнопку "Добавить" и в открышемся окне выберите "Функция QAP" раскройте разделы "Возможности системы Windows" → "Компьютерные команды" и выберите нужный вам пункт. Но, если вы хотите использовать свои параметры, читайте мою статью дальше.</p>
+
+<ul>
+  <li><strong>Выключение компьютера (CMD)</strong>
+    <ul>
+      <li><strong>Обычное выключение</strong> (сессия ядра не сохраняется) <code class="language-plaintext highlighter-rouge">/c shutdown /s</code> – команда выключит компьютер через 30 секунд по умолчанию (если вам нужно изменить время, используйте параметр <code class="language-plaintext highlighter-rouge">/t</code> (таймер), например: <code class="language-plaintext highlighter-rouge">/c shutdown /s /t 60</code>).</li>
+      <li><strong>Завершение работы с сохранением сессии ядра для быстрого запуска</strong> (команда эквивалентна "Завершению работы" с включённым быстрым запуском) <code class="language-plaintext highlighter-rouge">/c shutdown /s /hybrid /t 0</code> (при некоторых обстоятельствах лучше указать хотя-бы небольшую задержку, например: <code class="language-plaintext highlighter-rouge">/t 5</code>)</li>
+      <li><strong>Принудительное выключение</strong> (с завершением всех процессов) – эта команда может пригодиться в том случае, если какие-либо процессы нужно завершить принудительно (например, если какое-либо приложение не закрывается) <code class="language-plaintext highlighter-rouge">/c shutdown /s /f /t 0</code> (и здесь тоже можно изменить время таймера, например: <code class="language-plaintext highlighter-rouge">/t 10</code>).</li>
+    </ul>
+  </li>
+  <li><strong>Перезагрузка компьютера (CMD)</strong>
+    <ul>
+      <li><strong>Обычная перезагрузка</strong> – команда перезагружает компьютер через 30 секунд по умолчанию (также, как и в случае с выключением, вы можете использовать параметр <code class="language-plaintext highlighter-rouge">/t</code>, например: <code class="language-plaintext highlighter-rouge">/c shutdown /r /t 60</code>).</li>
+      <li><strong>Принудительная перезагрузка</strong> – команда завершает все процессы и сразу перезагружает компьютер <code class="language-plaintext highlighter-rouge">/c shutdown /r /f</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Завершение сеанса пользователя (CMD)</strong> <code class="language-plaintext highlighter-rouge">/c shutdown /l</code>.</li>
+  <li><strong>Спящий режим (PowerShell)</strong> (если включен) <code class="language-plaintext highlighter-rouge">-Command "rundll32.exe powrprof.dll,SetSuspendState Sleep"</code>.</li>
+  <li><strong>Гибернация (CMD)</strong> (если включена) <code class="language-plaintext highlighter-rouge">/c shutdown /h</code> (если Гибернация выключена, вы можете включить её командой PowerShell <code class="language-plaintext highlighter-rouge">powercfg /hibernate on</code> (или короче <code class="language-plaintext highlighter-rouge">powercfg -h on</code>), после чего команду <code class="language-plaintext highlighter-rouge">shutdown /h</code> можно будет запустить как в Командной строке, так и в PowerShell).</li>
+  <li><strong>Гибернация (PowerShell)</strong> <code class="language-plaintext highlighter-rouge">-Command "rundll32.exe powrprof.dll,SetSuspendState Hibernate"</code>.</li>
+</ul>
+
+<p class="cornice">Для выключения компьютера я не использую QAP. Для этого я просто создал ярлык, где при его создании в поле "Укажите расположение объекта" указал <code class="language-plaintext highlighter-rouge">shutdown.exe -s -hybrid -t 0</code> и на следующем шаге в поле "Введите имя ярлыка" ввёл "Выключить Windows" (имя, конечно же, может быть любое). Затем вы можете в Свойствах ярлыка назначить значок и "Горячие клавиши" (у меня это * на Нумпаде).</p>
+
+<h3 id="как-включить-и-отключить-интернет-соединение-с-помощью-qap">Как включить и отключить интернет-соединение с помощью QAP</h3>
+
+<h4 id="с-помощью-командной-строки">С помощью Командной строки</h4>
+
+<p>Этот способ подходит, если у вас всегда одно соединение. Сначала нужно узнать имя интерфейса. Откройте командную строку и введите команду <code class="language-plaintext highlighter-rouge">netsh interface show interface</code>. Запомните имя интерфейса или скопируйте его. Теперь можно приступить к настройкам QAP:</p>
+
+<ul>
+  <li><strong>Отключить интернет</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Отключить интернет";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">cmd.exe</code>;</li>
+      <li>Будет установлен значок Командной строки, но вы можете назначить любой другой значок;</li>
+      <li>На вкладке "Расширенные настройки" установите галочку в чекбокс "Запустить приложение с правами администратора", в поле "Настройки" введите <code class="language-plaintext highlighter-rouge">netsh interface set interface "Имя_интерфейса" admin=disabled</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+  <li><strong>Включить интернет</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Включить интернет";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">cmd.exe</code>;</li>
+      <li>Будет установлен значок Командной строки, но вы можете назначить любой другой значок;</li>
+      <li>На вкладке "Расширенные настройки" установите галочку в чекбокс "Запустить приложение с правами администратора", в поле "Настройки" введите <code class="language-plaintext highlighter-rouge">netsh interface set interface "Имя_интерфейса" admin=enabled</code>;</li>
+      <li>Нажмите на кнопку "OK".</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="с-помощью-powershell">С помощью PowerShell</h4>
+
+<p>Это универсальный способ, но требует создания PowerShell-скрипта. Создайте файл с именем ToggleInternet.ps1 и следующим содержимым:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="k">if</span> <span class="o">(</span>Get-NetAdapter | Where-Object <span class="o">{</span> <span class="nv">$_</span>.Status <span class="nt">-eq</span> <span class="s2">"Up"</span> <span class="o">})</span> <span class="o">{</span>
+    Get-NetAdapter | Where-Object <span class="o">{</span> <span class="nv">$_</span>.Status <span class="nt">-eq</span> <span class="s2">"Up"</span> <span class="o">}</span> | Disable-NetAdapter <span class="nt">-Confirm</span>:<span class="nv">$false</span>
+    Write-Host <span class="s2">"Все подключения отключены."</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    Get-NetAdapter | Where-Object <span class="o">{</span> <span class="nv">$_</span>.Status <span class="nt">-ne</span> <span class="s2">"Up"</span> <span class="o">}</span> | Enable-NetAdapter <span class="nt">-Confirm</span>:<span class="nv">$false</span>
+    Write-Host <span class="s2">"Все подключения включены."</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Теперь настройки QAP:</p>
+
+<ul>
+  <li><strong>Выкл/вкл интернет</strong> (для добавления этого пункта добавьте "Приложение" в "Окне настроек")
+    <ul>
+      <li>В поле "Короткое название меню" введите "Выкл/вкл интернет";</li>
+      <li>В поле "Приложение (путь и имя файла)" введите <code class="language-plaintext highlighter-rouge">powershell.exe</code>;</li>
+      <li>Будет установлен значок PowerShell, но вы можете назначить любой другой значок;</li>
+      <li>На вкладке "Расширенные настройки" установите галочку в чекбоксе "Запустить приложение с правами администрирования", в поле "Настройки" введите:</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-batch highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">-NoProfile -ExecutionPolicy </span><span class="kd">Bypass</span> <span class="na">-File </span><span class="s2">"C:\Users\Igor\Documents\Quick Access Popup\ToggleInternet.ps1"</span>
+</code></pre></div></div>
+
+<p>Не забудьте изменить путь до файла на свой. Вы можете использовать переменную среды в пути до файла:</p>
+
+<div class="language-batch highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">-NoProfile -ExecutionPolicy </span><span class="kd">Bypass</span> <span class="na">-File </span><span class="s2">"</span><span class="nv">%USERPROFILE%</span><span class="s2">\Documents\Quick Access Popup\ToggleInternet.ps1"</span>
+</code></pre></div></div>
+
+<p>Нажмите на кнопку "OK".</p>
+
+<p>Стоит добавить, что с помощью Командной строки процесс отключения и включения интернета может оказаться несколько быстрее, поскольку Командная строка более лёгкая и быстрая, чем PowerShell.</p>
+
+<p>Для отключения и включения интернета также можно использовать замечательную программу турецких разработчиков <a href="https://www.sordum.org/9660/">Net Disabler</a> – она имеет четыре метода отключения интернета, возможность назначить пароль и предлагает различные команды для дополнительного использования. Например, с помощью команды <code class="language-plaintext highlighter-rouge">NetDisabler.exe /D</code> вы можете программно отключить интернет, а с помощью команды <code class="language-plaintext highlighter-rouge">NetDisabler.exe /E</code> – включить. Приведу пример. Например, вам нужно отключить интернет в определённое время и затем в определённое время снова включить его. Для этого создайте два bat-файла (например, <code class="language-plaintext highlighter-rouge">DisableInternet.bat</code> и <code class="language-plaintext highlighter-rouge">EnableInternet.bat</code>), каждый из которых будет содержать соответствующую команду:</p>
+
+<p>Команда для отключения интернета:</p>
+
+<figure class="highlight"><pre><code class="language-batch" data-lang="batch"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>@echo <span class="na">off</span>
+<span class="kd">NetDisabler</span><span class="err">.exe</span> <span class="na">/D</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Команда для включения интернета:</p>
+
+<figure class="highlight"><pre><code class="language-batch" data-lang="batch"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>@echo <span class="na">off</span>
+<span class="kd">NetDisabler</span><span class="err">.exe</span> <span class="na">/E</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Файлы поместите в папку программы рядом с исполняемым файлом. Затем в Планировщике заданий Windows создайте задания, указав время выполнения задач и пути до bat-файлов. Не забудьте поставить галочку "Выполнять с наивысшими правами".</p>
+
+<h3 id="немного-о-настройках-программы-quick-access-popup">Немного о настройках программы Quick Access Popup</h3>
+
+<p>Перейти к настройкам программы можно из "Окна настроек", выбрав в верхнем меню пункт "Настройки". Также вы можете кликнуть по значку программы в трее правой клавишей мышки и дальше, перейдя к пункту "Настройки", в открывшемся подменю выбрать нужный вам раздел, например, "Общие" (чтобы перейти в этот раздел также можно нажать сочетание клавиш <kbd>Ctrl</kbd> + <kbd>O</kbd>, предварительно открыв окно "Окно настроек"). Дальше я перечислю важные, на мой взгляд, настройки по разделам:</p>
+
+<ul>
+  <li><strong>Общие</strong>
+    <ul>
+      <li>Запускать при старте системы;</li>
+      <li>Обратите внимание на путь до бекапа – по умолчанию папка бекапа находится в папке "Документы" (сохраняйте содержимое этой папки на внешнем накопителе, чтобы в экстренном случае можно было восстановить все настройки программы из бекапа).</li>
+    </ul>
+  </li>
+  <li><strong>Горячие клавиши</strong>
+    <ul>
+      <li>В разделе "Кнопка мыши Quick Access Popup" я отключил какое-либо действие (по умолчанию – средняя кнопка мыши);</li>
+      <li>В разделе "Открыть главное меню при нажатии Ctrl + Ctrl (Клавишу CTRL, нажать дважды)" я поставил галочки в оба чекбокса: "Левая клавиша CTRL" и "Правая клавиша CTRL". Таким образом меню QAP у меня открывается при двоййном нажатии левой или правой клавиши <kbd>Ctrl</kbd>.</li>
+    </ul>
+  </li>
+  <li><strong>Всплывающее меню</strong>
+    <ul>
+      <li>В разделе "Всплывающее меню" я установил фиксированную позицию всплывающего меню, но возможно вам будет удобнее, чтобы меню открывалось у курсора мыши (настройка по умолчанию).</li>
+    </ul>
+  </li>
+  <li><strong>Значки меню</strong>
+    <ul>
+      <li>Здесь я установил размер значков меню по умолчанию – 16 px, уменьшешив таким образом и значки и высоту пунктов меню.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Как видите, я очень скупо написал о настройках программы. За более подробной информацией вы можете обратиться к официальному сайту.</p>]]></content><author><name>И. Постольный</name></author><category term="Software" /><summary type="html"><![CDATA[В статье я расскажу как настроить утилиту для быстрого доступа к любым часто используемым файлам, папкам, приложениям, веб-сайтам, документам и системным командам Quick Access Popup.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Как создать качественную иконку ICO</title><link href="http://localhost:4000/2024-11-08/come-creare-un-icona-ico-di-alta-qualita" rel="alternate" type="text/html" title="Как создать качественную иконку ICO" /><published>2024-11-08T00:00:00+03:00</published><updated>2024-11-08T00:00:00+03:00</updated><id>http://localhost:4000/2024-11-08/come-creare-un-icona-ico-di-alta-qualita</id><content type="html" xml:base="http://localhost:4000/2024-11-08/come-creare-un-icona-ico-di-alta-qualita"><![CDATA[<p>Чтобы иконка везде хорошо отображалась и при изменении её размера (например, в программе <a href="/2024-11-12/сome-configurare-quick-access-popup">Quick Access Popup</a> при задании размера значков по умолчанию 16x16 px), иконка должна быть мультиформатной, то есть она должна включать в себя несколько версий с разными разрешениями. Я намереваюсь создать иконку, содержащую в себе версии с разрешениями 16x16 px, 32x32 px, 48x48 px, 64x64 px, 96x96 px, но иконка может содержать в себе больше версий, если нужен универсальный вариант. Приведу варианты возможного использования каждого разрешения:</p>
+
+<ul>
+  <li>16x16 px – маленькие иконки (во вкладках браузера, в панели задач)</li>
+  <li>32x32 px – стандартные иконки (в различных меню, в кнопках, в панели задач)</li>
+  <li>48x48 px – крупные иконки (в иконках рабочего стол)</li>
+  <li>64x64 px – не всегда используется, но включить желательно</li>
+  <li>128x128 px – иконки для высокого разрешения (в меню, диалоговых окнах)</li>
+  <li>256x256 px – для экранов HD, Retina<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>, и магазинов приложений</li>
+  <li>512x512 px – для экрана с высокой плотностью пикселей (например, в магазинах приложений (к примеру, в Google Play или App Store))</li>
+</ul>
+
+<p>Таким образом разные программы, операционные системы и браузеры могут автоматически выбирать нужный вариант иконки в зависимости от размера и разрешения экрана или от представления иконки. Например, если иконка должна находиться на панели задач, ОС сама выберет нужное разрешение.</p>
+
+<p>Идём дальше. Для эксперимента я возьму иконку с сайта онлайн-переводчика DeepL, которая имет следующий адрес:</p>
+
+<p><a href="https://static.deepl.com/img/favicon/favicon_96.png" target="_blank" rel="noopener noreferrer" class="longLinks">https://static.deepl.com/img/favicon/favicon_96.png</a></p>
+
+<p>Эту иконку я буду конвертировать в мультиформатный ICO с помощью программы ImageMagick.</p>
+
+<p class="cornice">Кое-кто станет ругаться, мол: "эта программа не имеет даже интерфейса и работает через командную строку!". Но ведь так интересней. А если вам не интересно, то существует множество программ, имеющих графический интерфейс, с помощью которых вы можете сделать то же самое (например, <a href="https://www.door2windows.com/ultimate-icon-converter/" target="_blank" rel="noopener noreferrer">Ultimate Icon Converter</a>). Цель же моей статьи – объяснить почему иконка ICO должна быть мультиформатной, а уж средства вы вольны выбирать сами.</p>
+
+<p>Итак, для начала скачайте программу ImageMagick с <a href="https://imagemagick.org/script/download.php#windows" target="_blank" rel="noopener noreferrer">сайта программы</a>. У меня Windows на 64 бита и я скачивал по первой ссылке (где в описании указано "Win64 dynamic at 16 bits-per-pixel component with High-dynamic-range imaging enabled"). После установки нужно обязательно перезагрузить компьютер для того, чтобы путь в переменной среды, куда его прописывает установщик программы, начал работать.</p>
+
+<p>Дальше, по традиции, проверим работает ли программа. Открываем командную строку. Способов её открыть существует много, но проще всего это сделать так: откройте проводник с помощью сочетания клавиш <kbd><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16"><path fill="currentColor" d="M6.555 1.375L0 2.237v5.45h6.555zM0 13.795l6.555.933V8.313H0zm7.278-5.4l.026 6.378L16 16V8.395zM16 0L7.33 1.244v6.414H16z"></path></svg></kbd> + <kbd>E</kbd> и в его окне в адресной строке введите <code class="language-plaintext highlighter-rouge">cmd</code>. В открывшейся командной строке введите команду <code class="language-plaintext highlighter-rouge">magick -version</code>. После чего нажмите клавишу <kbd>Enter</kbd> или кликните на стрелку справа от адресной строки. Если вы увидите сведения о программе, то программа работает и вы можете приступить к конвертированию.</p>
+
+<p>Скачайте иконку по вышеуказанному адресу на рабочий стол. В командной строке с помощью сочетания клавиш <kbd>Ctrl</kbd> + <kbd>V</kbd> вставьте следующие команды (не забудьте предварительно заменить имя пользователя на своё):</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>magick <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_96.png"</span> <span class="nt">-resize</span> 16x16 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_16.png"</span>
+magick <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_96.png"</span> <span class="nt">-resize</span> 32x32 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_32.png"</span>
+magick <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_96.png"</span> <span class="nt">-resize</span> 48x48 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_48.png"</span>
+magick <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_96.png"</span> <span class="nt">-resize</span> 64x64 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_64.png"</span>
+magick <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_96.png"</span> <span class="nt">-resize</span> 96x96 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_96.png"</span>
+
+magick <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_16.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_32.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_48.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_64.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_96.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon.ico"</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Нажмите <kbd>Enter</kbd>, чтобы выполнилась команда создания favicon.ico. Что здесь происходит? Сначала иконка favicon_96.png, имеющая размер 96x96 px, конвертируется в несколько файлов PNG с разными размерами (16x16, 32x32, 48x48, 64x64 и 96x96); затем все эти файлы объединяются в один ICO-файл, содержащий несколько размеров.</p>
+
+<p>Можно не скачивать иконку, а позволить программе загрузить её прямо с сайта. В этом случае команды будут такими (и снова не забудьте предварительно заменить имя пользователя на своё):</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>magick <span class="s2">"https://static.deepl.com/img/favicon/favicon_96.png"</span> <span class="nt">-resize</span> 16x16 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_16.png"</span>
+magick <span class="s2">"https://static.deepl.com/img/favicon/favicon_96.png"</span> <span class="nt">-resize</span> 32x32 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_32.png"</span>
+magick <span class="s2">"https://static.deepl.com/img/favicon/favicon_96.png"</span> <span class="nt">-resize</span> 48x48 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_48.png"</span>
+magick <span class="s2">"https://static.deepl.com/img/favicon/favicon_96.png"</span> <span class="nt">-resize</span> 64x64 <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_64.png"</span>
+magick <span class="s2">"https://static.deepl.com/img/favicon/favicon_96.png"</span> <span class="nt">-resize</span> 96x96 <span class="s2">"https://static.deepl.com/img/favicon/favicon_96.png"</span>
+
+magick <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_16.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_32.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_48.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon_64.png"</span> <span class="s2">"https://static.deepl.com/img/favicon/favicon_96.png"</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\I</span><span class="s2">gor</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\f</span><span class="s2">avicon.ico"</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Вот таким, не самым простым, но вместе с тем и не сложным способом, мы создали мультиформатную иконку ICO. Что ещё можно добавить? Если такая иконка используется в качестве иконки favicon для сайта, то она может заключать в себе версии следующих разрешений: 16x16 px, 32x32 px, 48x48 px, 64x64 px. Но также в неё могут быть добавлены версии с разрешением 128x128 px и 256x256 px. Для того, чтобы посмотреть какие разрешения включены в иконку, а также результат проделанной вами работы, вы можете воспользоваться специальной программой, например, <a href="http://greenfishsoftware.org/" target="_blank" rel="noopener noreferrer">Greenfish Icon Editor Pro</a>. На этом сайте не используется иконка в формате <code class="language-plaintext highlighter-rouge">.ico</code> – вместо неё я использовал набор иконок в формате <code class="language-plaintext highlighter-rouge">.png</code> c атрибутами <code class="language-plaintext highlighter-rouge">rel="icon"</code> и <code class="language-plaintext highlighter-rouge">rel="apple-touch-icon"</code> для разных устройств и атрибутом <code class="language-plaintext highlighter-rouge">sizes</code>, указывающим различные размеры иконки.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Retina-дисплеи – термин, введённый Apple для обозначения экранов с высоким разрешением и плотностью пикселей. Такие дисплеи имеют не только устройства Apple, но и устройства других производителей, например, Google, Samsung. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>И. Постольный</name></author><category term="Software" /><category term="Web" /><summary type="html"><![CDATA[Чтобы иконка везде хорошо отображалась и при уменьшении её размера (например, в программе Quick Access Popup при задании размера значков по умолчанию 16x16 px), иконка должна быть мультиформатной, то есть она должна включать в себя несколько версий с разными разрешениями.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Видеоредактор LosslessCut</title><link href="http://localhost:4000/2024-11-03/losslesscut" rel="alternate" type="text/html" title="Видеоредактор LosslessCut" /><published>2024-11-03T00:00:00+03:00</published><updated>2024-11-03T00:00:00+03:00</updated><id>http://localhost:4000/2024-11-03/losslesscut</id><content type="html" xml:base="http://localhost:4000/2024-11-03/losslesscut"><![CDATA[<p>Программа LosslessCut, являющаяся графическим интерфейсом для FFmpeg – это не универсальный видеоредактор, однако с её помощью можно разделить видеофайл на несколько частей, объединить нескольких видеофайлов в один, если они имеют одинаковые параметры (разрешение, кодек и частота кадров), также программа позволяет выбрать конкретные аудио- и видеодорожки для их последующего сохранения или удаления, делать скриншоты с определённых кадров, имеет возможность добавлять и удалять метаданные (например, субтитры или геолокационные данные).</p>
+
+<h3 id="как-разрезать-видео">Как разрезать видео</h3>
+
+<p>Чтобы видео не потеряло качество, его следует разрезать по ключевым кадрам. Ключевой кадр (или I-кадр) – это кадр, содержащий всю информацию о пикселях сцены, подобно фотографии. Существуют также промежуточные кадры (неполные кадры). Промежуточные кадры, такие как P-кадры и B-кадры, хранят не все данные сцены, а только изменения по отношению к предыдущему или следующему кадру, а следовательно, они нуждаются в информации из других кадров для полного восстановления изображения. Поскольку ключевые кадры являются полноценными изображениями, они не имеют артефактов за исключением тех случаев, когда запись была произведена с помехами или, например, произошла ошибка в кодеке. Разрезание видео по промежуточным кадрам может привести к образованию артефактов, поскольку они зависят от данных соседних кадров и могут искажаться при отсутствии точных данных или при ошибках в декодировании.</p>
+
+<p>Для чего вообще нужно разрезать видео? Я, например, записываю свою игру на фортепиано и мне бы не хотелось, чтобы на видео присутствовали моменты, когда я сажусь за инструмент, встаю из-за него, выключаю камеру, а поэтому начало и конец видео я обычно обрезаю.</p>
+
+<p class="cornice">Для записи я использую камеру смартфона, качество записи которой оставляет желать лучшего и обрезка по ключевым кадрам, к сожалению, заметно не улучшит его. Однако я всё равно делаю обрезку именно таким способом.</p>
+
+<p>Для того, чтобы нужный момент совпал с ключевым кадром, необходимо выждать для этого определённое время. Поэтому я не тороплюсь начинать играть и не тороплюсь вставать из-за инструмента.</p>
+
+<p><img src="/img/losslesscut/losslesscut-cut.png" alt="Как разрезать видео в видеоредакторе LosslessCut" class="lightbox" /></p>
+
+<p>Итак, запустите программу. Для того, чтобы открыть в ней видеофайл, вы можете просто перетащить его в окно программы или вы можете это сделать через главное меню: "Файл" → "Открыть". Также вы можете воспользоваться сочетанием клавиш <kbd>Ctrl</kbd> + <kbd>O</kbd>. По умолчанию в программе будет активен упрощённый режим работы. Для того, чтобы перейти в Расширенный режим, нажмите на значок в виде человечка слева (1). Чтобы проиграть видео, нажмите на кнопку 2. Нажимайте на кнопки 3 и 4 в виде ключа, чтобы перемещаться по ключевым кадрам. Отметьте начало и конец обрезки, нажав соответственно на кнопки 5 и 6 в виде руки. Вы можете проиграть видео, начиная с момента обрезки. Для этого нажмите на кнопку 7, чтобы перейти к началу сегмента, и затем – на кнопку 2, чтобы проиграть видео. Также вы можете перейти к концу сегмента, нажав на кнопку 8. Кнопки 9 и 10 служат для перехода соответственно к началу и концу видео. Если обрезка точно по ключевому кадру вас не устраивает, вы можете обрезать видео в произвольной точке. Для этого вы можете кликнуть в нужном месте на шкале времени или, если вам известное точное время мест обрезки, вы можете ввести его в соответствующие поля. Также для перемещения по шкале времени вы можете использовать клавиши со стрелками <kbd>◄</kbd> и <kbd>►</kbd>. Также вы можете перемещаться по всем кадрам, нажимая на кнопки 11 и 12. Выбрав места обрезки, не забудьте нажать на кнопки 5 и 6. Осталось нажать на кнопку "Экспорт" (13). Откроется окно параметров экспорта, в котором я оставляю всё как есть. После чего нужно снова нажать на кнопку "Экспорт". После выполнения экспорта не закрывайте программу, а сначала проиграйте полученное видео, чтобы проверить корректность обрезки.</p>
+
+<h3 id="как-объединить-видео">Как объединить видео</h3>
+
+<p>Откройте в программе ваши видеофайлы описанным выше способом. Список открытых файлов вы увидите на левой панели. При желании вы можете просмотреть видео, дважды кликнув на имя нужного вам файла в этом списке. Если вам необходимо изменить порядок видео, перетащите файлы в этом списке в нужную позицию или воспользуйтесь кнопкой 1. Чтобы осуществить объединение файлов, выберите в главном меню "Инструменты" → "Слияние/соединение файлов" или нажмите на кнопку 2. В открывшемся окне вы можете изменить имя выходного файла, а также включить функцию проверки совместимости. После чего нажмите на кнопку "Слияние".</p>
+
+<p><img src="/img/losslesscut/losslesscut-merge.png" alt="Как объединить видео в видеоредакторе LosslessCut" class="lightbox" /></p>
+
+<p>LosslessCut в Microsoft Store является платной, поскольку автор программы таким образом желает покрыть затраты на публикацию, поддержку, а также обновления через платформу Microsoft, но вы всегда можете загрузить программу бесплатно на <a href="https://github.com/mifi/lossless-cut?tab=readme-ov-file#download" target="_blank" rel="noopener noreferrer">странице разработчика</a> в GitHub.</p>]]></content><author><name>И. Постольный</name></author><category term="YouTube" /><category term="Музыка" /><category term="Software" /><summary type="html"><![CDATA[В статье я расскажу как обрезать видео без потери качества по ключевым кадрам или по произвольным точкам, а также как объединить видео в видеоредакторе LosslessCut.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Как создать обложку для видео YouTube</title><link href="http://localhost:4000/2024-10-12/come-creare-una-miniatura-per-youtube" rel="alternate" type="text/html" title="Как создать обложку для видео YouTube" /><published>2024-10-12T00:00:00+03:00</published><updated>2024-10-12T00:00:00+03:00</updated><id>http://localhost:4000/2024-10-12/come-creare-una-miniatura-per-youtube</id><content type="html" xml:base="http://localhost:4000/2024-10-12/come-creare-una-miniatura-per-youtube"><![CDATA[<p>В Творческой студии обложка для видео YouTube называется "Значок", итальянцы называют её "Miniatura", а в английском языке это "Thumbnail". Существует множество онлайн-сервисов, в которых можно создать обложку для видео YouTube. Я расскажу как я создал такую обложку в графическом редакторе <a href="https://www.gimp.org/">GIMP</a>.</p>
+
+<p><img src="/img/miniatura-youtube/miniatura-youtube.png" alt="miniatura youtube" class="lightbox" /></p>
+
+<h3 id="фоновое-изображение">Фоновое изображение</h3>
+
+<ul>
+  <li>Откройте фоновое изображение: "Файл" → "Открыть".</li>
+  <li>Размер размер обложки YouTube должен быть 1280 x 720 px. Если размер заготовленного изображения больше, то обрезаем его: "Изображение" → "Размер холста".</li>
+  <li>В открывшемся окне в поле "Размер холста" впишите размеры (цепочка справа должна быть разомкнута) и нажмите <kbd>Enter</kbd>.</li>
+  <li>Перемещая миниатюру в окне предпросмотра установите нужное смещение по обеим осям. Нажмите на кнопку "Изменить".</li>
+</ul>
+
+<h3 id="однотонный-фон">Однотонный фон</h3>
+
+<ul>
+  <li>В панели инструментов GIMP есть два цветовых квадрата — цвет переднего плана (верхний) и цвет фона (нижний). Нажмите на нижний квадрат (цвет фона), чтобы открыть диалог выбора цвета.</li>
+  <li>Теперь можно создать новый проект: "Файл" → "Создать проект" или <kbd>Ctrl</kbd> + <kbd>N</kbd>.</li>
+  <li>В открывшемся окне установите размер изображения 1280 x 720 px.</li>
+  <li>Раскройте настройки "Расширенные параметры".</li>
+  <li>В выпадающем списке "Заполнение" выберите "Цвет фона" (то есть тот цвет, который вы уже назначили, однако, если вам нужен белый цвет или прозрачность, выберите соответствующий пункт в выпадающем списке).</li>
+</ul>
+
+<h3 id="установка-горизонтальной-направляющей">Установка горизонтальной направляющей</h3>
+
+<ul>
+  <li>Выберите: "Изображение" → "Направляющие" → "Создать направляющую по %…".</li>
+  <li>Установите направляющую по горизонтали с расположением 50%.</li>
+  <li>Для удобства в меню "Вид" отметьте пункт "Прилипать к направляющим".</li>
+</ul>
+
+<h3 id="портрет">Портрет</h3>
+
+<ul>
+  <li>Откройте изображение с композитором: "Файл" → "Открыть" или <kbd>Ctrl</kbd> + <kbd>O</kbd>.</li>
+  <li>Далее можно уменьшить размер: "Изображение" → "Размер изображения". Впишите новый размер изображения (цепочка справа должна быть замкнута), в моём случае изображение имеет размеры 450 x 600 px. Нажмите на кнопку "Изменить".</li>
+  <li>Нажмите сочетание клавиш <kbd>Ctrl</kbd> + <kbd>C</kbd>, чтобы скопировать изображение.</li>
+  <li>Перейдите на вкладку с фоном и нажмите сочетание клавиш <kbd>Ctrl</kbd> + <kbd>S</kbd>, чтобы вставить изображение.</li>
+  <li>Выберите инструмент "Перемещение" в панели инструментов или в меню: "Инструменты" → "Преобразование" → "Перемещение" или нажмите <kbd>M</kbd>. Мышкой переместите изображение в нужное место. При этом плюсик, указывающий на центр изображение, должен быть на горизонтальной направляющей. В GIMP при вставке изображения на другой слой или фон всегда создается так называемое плавающее выделение - его нужно сделать отдельным слоем. Для этого в меню "Слой" выберите "В новый слой" или нажмите <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>N</kbd>.</li>
+</ul>
+
+<h3 id="овальное-изображение">Овальное изображение</h3>
+
+<p>Если вы хотите, чтобы изображение было овальным, выполните следующие шаги:</p>
+
+<ul>
+  <li>Выберите в панели инструментов инструмент "Эллиптическое выделение" или в меню "Инструменты" → "Выделение" → "Эллиптическое выделение". В настройках выделения пункт "Фиксированный" не должен быть отмечен. Растяните эллипс.</li>
+  <li>Чтобы выделилась область за пределами овала, нужно инвертировать выделение. Для этого перейдите в меню "Выделение" → "Инвертировать", либо нажмите сочетание клавиш <kbd>Ctrl</kbd> + <kbd>I</kbd>.</li>
+  <li>Убедитесь, что у изображения есть альфа-канал (это необходимо для создания прозрачного фона). Если его нет, добавьте его: перейдите в меню "Слой" → "Прозрачность" → "Добавить альфа-канал". Если альфа-канал имеется, то этот пункт в меню будет бледным.</li>
+  <li>Нажмите <kbd>Delete</kbd>, чтобы удалить фон за пределами овала.</li>
+  <li>Снимите выделение: "Выделение" → "Снять выделение" (или нажмите <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>).</li>
+</ul>
+
+<h3 id="рамка-вокруг-овала">Рамка вокруг овала</h3>
+
+<ul>
+  <li>Чтобы выделить овал нажмите правой кнопкой мыши на слое с овалом и выберите "Альфа-канал в выделение".</li>
+  <li>Выберите в меню "Выделение" → "Увеличить…" и увеличьте выделение на нужное количество пикселей (в моём случае 10px).</li>
+  <li>Создайте новый слой, выбрав "Слой" → "Новый слой" с прозрачным фоном ("Заполнение" → "Прозрачность").</li>
+  <li>Для того, чтобы сделать обводку, выберите в меню: "Правка" → "Обвести выделенное" (в моём случае 5px), предварительно установив цвет обводки (верхний квадрат).</li>
+  <li>Снимите выделение: "Выделение" → "Снять выделение" (или нажмите <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>).</li>
+</ul>
+
+<p class="cornice">Если вы захотите переместить портрет вместе с рамкой, то объедините эти слои. В GIMP можно объединить слой с предыдущим (низлежащим на палитре слоёв). Сделать это можно либо в палитре слоёв, кликнув на соответствующий значок (в этом случае доступны различные варианты объединения слоёв с использованием горячих клавиш), либо вызвать операцию через контекстное меню, либо вызвать операцию через главное меню: "Слой" → "Объединить с предыдущим".</p>
+
+<h3 id="текст">Текст</h3>
+
+<ul>
+  <li>Выберите инструмент "Текст" в панели инструментов или в меню: "Инструменты" → "Текст". Наберите текст и нажмите Enter для переноса на новую строку. Вы можете изменить параметры текста в каждой строке, предварительно выделив его мышкой.</li>
+  <li>Выберите инструмент "Перемещение" и мышкой переместите текстовую область на горизонтальную направляющую.</li>
+  <li>Скопируйте текстовой слой: "Слой" → "Создать копию слоя" или нажмите <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>D</kbd>.</li>
+  <li>Выберите инструмент "Перемещение" и перетащите текстовую область под горизонтальную направляющую.</li>
+</ul>
+
+<h3 id="как-выровнять-один-текстовой-слой-или-любой-другой-относительно-другого">Как выровнять один текстовой слой (или любой другой) относительно другого?</h3>
+
+<ul>
+  <li>Перейдите на палитре слоёв справа на слой, относительно которого вы хотите выровнять другой слой.</li>
+  <li>Выберите инструмент "Выравнивание" в панели инструментов или в меню: "Инструменты" → "Преобразование" → "Выравнивание" или нажмите <kbd>Q</kbd>.</li>
+  <li>В параметров инструмента "Выравнивание" в выпадающем списке "Ориентир" должен быть выбран пункт "Активный слой".</li>
+  <li>Кликните на текстовую область на холсте, которую хотите выровнять.</li>
+  <li>Нажмите в параметрах инструмента "Выравнивание" на нужный значок.</li>
+</ul>
+
+<p class="cornice">Если созданная вами обложка имеет размер более 500 кб, то имеет смысл сжать созданное вами изображение (хотя YouTube позволяет загружать изображения размером до 2 мб). Для этого настройте параметры сжатия в процессе экспорта вашей работы или же воспользуйтесь специальной программой, например, <a href="https://saerasoft.com/caesium" target="_blank" rel="noopener noreferrer">Caesium</a>.</p>
+
+<p>Вот что получилось в итоге:</p>
+
+<div class="youtube-wrapper">
+  <iframe src="https://www.youtube.com/embed/3qLWST1n_mk?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="другой-способ-создания-рамки-и-встраивание-созданной-обложки-в-видео">Другой способ создания рамки и встраивание созданной обложки в видео</h3>
+
+<p>Ниже я постараюсь описать насколько возможно кратко способ создания рамки с помощью установки величины границы выделения. Вот что должно получиться в итоге:</p>
+
+<p><img src="/img/miniatura-youtube/duetti.png" alt="miniatura youtube" class="lightbox" /></p>
+
+<ul>
+  <li>Создайте новый проект с размерами, соответствующими разрешению вашего видео (в моём случае 1280 x 720 px). При создании проекта вы можете сразу установить цвет изображения в "Расширенных параметрах".</li>
+  <li>Добавьте горизонтальную и, если нужно, вертикальную направляющие по центру спобом описанным выше. Не забудьте отметить пункт "Прилипать к направляющим".</li>
+  <li>Добавьте ещё по две горизонтальных и вертикальных направляющих с отступом от краёв. Для этого выберите: "Изображение" → "Направляющие" → "Создать направляющую…". Рассчитать величину отступа просто. Например, если у вас размер 1280 x 720 px и вы хотите сделать отступ везде по 50 px, то отступ слева и сверху установите по 50 px, справа — 1230 px (1280 - 50 = 1230 px), снизу — 670 px (720 - 50 = 670 px).</li>
+  <li>Выберите инструмент "Прямоугольное выделение" и растяните рамку по созданным напрявляющим. Я не создавал эти направляющие, а растянул рамку на глаз и затем, выбрав инструмент "Перемещение" (в его параметрах нужно выбрать "Выделение" → "Перемещение") выровнял рамку по центру (точке, образуемой центральными направляющими).</li>
+  <li>Перейдите в "Выделение" → "Граница" и установите размер границы (я установил 3 px).</li>
+  <li>Выберите инструмент "Плоская заливка", наведите курсор на созданную рамку до появления значков индикаторов цвета переднего плана и фона и залейте границу заранее выбранным цветом переднего плана.</li>
+  <li>Откройте изображение с прозрачным фоном (его размеры я изменил заранее): "Файл" → "Открыть как слои…" (или нажмите <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd>), выберите инструмент "Перемещение" (в его параметрах нужно выбрать "Выделение" → "Слой" и "Режим" → "Переместить активный") и переместите изображение в нужное место. При необходимости вы можете выровнять его по горизонтали.</li>
+  <li>Осталось выбрать инструмент "Текст" и с его помощью сделать надписи.</li>
+</ul>
+
+<p><img src="/img/miniatura-youtube/walzer.png" alt="miniatura youtube" class="lightbox" /></p>
+
+<p>Для встраивания созданной иниатюры в видео я воспользовался видеоредактором <a href="https://www.openshot.org/" target="_blank" rel="noopener noreferrer">OpenShot</a>.</p>
+
+<ul>
+  <li>Откройте OpenShot и по очереди импортируте созданную обложку, а также аудиофайл. Для этого нажмите на "+" или воспользуйтесь сочетанием клавиш <kbd>Ctrl</kbd> + <kbd>F</kbd>.</li>
+  <li>Перетащите импортированные файлы на отдельные дорожки. Располагайте их в начале дорожек.</li>
+  <li>Если аудио длинное, уменьшите отображаемый размер файлов на дорожке. Для этого зажмите клавишу <kbd>Ctrl</kbd> и вращайте колёсико мыши на себя.</li>
+  <li>Растяните отображаемый файл обложки вправо до конца аудиофайла до появления вертикальной линии. Для удобства вы можете увеличить область с дорожками, потянув за горизонтальные точки, расположенные над этой областью, вверх.</li>
+  <li>Экспортируйте готовое видео. Для этого на панели иснтрументов нажмите на значок в виде красного кружка или в меню "Файл" → "Экспортировать проект" → "Экспортировать видео". В открывшемся окне задайте необходимые параметры экспорта и затем — на кнопку "Экспортировать видео".</li>
+</ul>]]></content><author><name>И. Постольный</name></author><category term="YouTube" /><category term="Музыка" /><category term="GIMP" /><category term="OpenShot" /><category term="Software" /><summary type="html"><![CDATA[В статье я описываю свой способ создания обложки для видео YouTube в графическом редакторе GIMP.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Le mie ricette</title><link href="http://localhost:4000/2024-02-08/le-mie-ricette" rel="alternate" type="text/html" title="Le mie ricette" /><published>2024-02-08T00:00:00+03:00</published><updated>2024-02-08T00:00:00+03:00</updated><id>http://localhost:4000/2024-02-08/le-mie-ricette</id><content type="html" xml:base="http://localhost:4000/2024-02-08/le-mie-ricette"><![CDATA[<p>Vorrei dedicare questo post alla mia mamma, che mi ha insegnato a cucinare.</p>
+
+<h3 id="zuppa-di-piselli-con-ossa">Zuppa di piselli con ossa</h3>
+
+<p>Sciacquare i piselli secchi più volte sotto l'acqua corrente. Mettere a bagno in acqua. Di quando in quando è bene cambiare l'acqua. Tagliare le ossa a pezzettoni. Bollire per 5 minuti e poi sciacquare in acqua fredda. Mettere le ossa in una grande pentola di smalto e lasciare cucinare per circa un'ora. Aggiungere i piselli e far cuocere per altro un'ora. Nel frattempo sbucciare la cipolla dalla pelle e tagliarla finemente. Si può anche prendere un spicchio d'aglio. Strofinare la carota pelata su una grattugia. Soffriggere cipolla, aglio e carota in una padella fino a doratura. Aggiungere alla zuppa per 15 minuti prima di essere pronta. Aggiungere anche sale, prezzemolo, aneto, sedano a piacere.</p>
+
+<h4 id="ingredienti">Ingredienti</h4>
+
+<ul>
+  <li>acqua</li>
+  <li>ossa di manzo o di maiale</li>
+  <li>2 bicchieri di piselli secchi</li>
+  <li>olio di semi di girasole per friggere</li>
+  <li>un spicchio d'aglio</li>
+  <li>1 cipolla grande</li>
+  <li>1 carota grande o media</li>
+  <li>sedano, prezzemolo e aneto tritati</li>
+  <li>sale grosso</li>
+</ul>
+
+<h3 id="syrniki">Syrniki</h3>
+
+<p>Mettere in una scodella farina, tvorog, uova, sale, zucchero (a piacere) e mescolare bene. Scaldare una padella con un filo d'olio. Prelevare delle piccole porzioni di impasto con un cucchiaio e cuocere a fuoco basso. Girare i syrniki e continuare la cottura dall'altro lato.</p>
+
+<h4 id="ingredienti-1">Ingredienti</h4>
+
+<ul>
+  <li>360 g di tvorog (due confezioni da 180 g)</li>
+  <li>2 uova grandi</li>
+  <li>2 cucchiai di farina</li>
+  <li>2 cucchiai di zucchero</li>
+  <li>un pizzico di sale</li>
+</ul>
+
+<h3 id="oladi">Oladi</h3>
+
+<p>Mettere in una scodella farina, uovo, bicarbonato di sodio, sale, zucchero, olio di girasole. Mescolare aggiungendo il kefir fino a quando l'impasto non avrà raggiunto la consistenza desiderata. Cuocere in una padella così come i syrniki.</p>
+
+<h4 id="ingredienti-2">Ingredienti</h4>
+
+<ul>
+  <li>2 bicchieri di farina</li>
+  <li>1 uovo</li>
+  <li>2 cucchiaini di olio di girasole</li>
+  <li>2 cucchiaini di zucchero</li>
+  <li>1/2 cucchiaino di bicarbonato di sodio</li>
+  <li>1/4 di cucchiaino di sale</li>
+  <li>kefir</li>
+</ul>
+
+<h3 id="kaša-di-semolino">Kaša di semolino</h3>
+
+<p>Versare il latte e l'acqua in una pentola. Aggiungere lo zucchero. Quando il latte bolle, versare il semolino a pioggia molto lentamente, mescolando per evitare che si formino grumi. Cuocere per circa 10 minuti.</p>
+
+<h4 id="ingredienti-3">Ingredienti</h4>
+
+<ul>
+  <li>4 bicchieri di latte</li>
+  <li>1 bicchiere d'acqua</li>
+  <li>1 cucchiaio di zucchero</li>
+  <li>3/4 di bicchiere di semolino</li>
+</ul>]]></content><author><name>И. Постольный</name></author><category term="Un-po&apos;-di-tutto" /><summary type="html"><![CDATA[Vorrei dedicare questo post alla mia mamma, che mi ha insegnato a cucinare.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Мама умерла</title><link href="http://localhost:4000/2023-11-28/mama" rel="alternate" type="text/html" title="Мама умерла" /><published>2023-11-28T00:00:00+03:00</published><updated>2023-11-28T00:00:00+03:00</updated><id>http://localhost:4000/2023-11-28/mama</id><content type="html" xml:base="http://localhost:4000/2023-11-28/mama"><![CDATA[<p>Двадцатого ноября 2023 года умерла моя мама, единственный лучик света. Месяц назад ей исполнилось семьдесят семь лет. Она очень любила жизнь, невзирая на то, что болезни и люди причиняли ей столько страданий! Она была на редкость искренним и правдолюбивым человеком и нередко сетовала на несправедливость нас окружающую. Стоит ли говорить о той заботе, которой она одаривала меня! Я не могу поверить, что её больше нет со мной! Да, есть люди, которые как отлепятся от своих родителей, так больше и не вспоминают про них или же вспоминают от случая к случаю. Возможно смерть близкого человека не окажется для них столь скорбной и жизнь не станет вдруг пустой и бессмысленной. Не знаю где находит пристанище душа человека после смерти. Мама, дай мне знать, что твоя душа теперь в лучшем мире, что она безмятежна!</p>
+
+<h3 class="center" id="маме">Маме</h3>
+
+<div class="verse_row"><p>О мама, ангел мой хранитель,<br />Вот и один остался я —<br />Себе слуга сам и властитель<br />И самому себе семья.<br /><br />Но ты мой ангел, мой ревнитель,<br />Тобою жизнь полна моя,<br />Пусть удалилась ты в обитель<br />Иную — горние края.<br /><br />Меня всему ты научила:<br />Любить, терпеть, да и страдать.<br />И вот сама теперь почила...<br /><br />Ты не хотела умирать!<br />Как человек ты дни влачила,<br />Была ты ангелом как мать.<br />(9 января 2024 года)</p></div>
+
+<p><img src="/img/IMG_20231128_124048_512.jpg" alt="мама" /></p>]]></content><author><name>Игорь Постольный</name></author><summary type="html"><![CDATA[Двадцатого ноября 2023 года умерла моя мама, единственный лучик света. Месяц назад ей исполнилось семьдесят семь лет. Она очень любила жизнь, невзирая на то, что болезни и люди причиняли ей столько страданий! Она была на редкость искренним и правдолюбивым человеком и нередко сетовала на несправедливость нас окружающую. Стоит ли говорить о той заботе, которой она одаривала меня! Я не могу поверить, что её больше нет со мной! Да, есть люди, которые как отлепятся от своих родителей, так больше и не вспоминают про них или же вспоминают от случая к случаю. Возможно смерть близкого человека не окажется для них столь скорбной и жизнь не станет вдруг пустой и бессмысленной. Не знаю где находит пристанище душа человека после смерти. Мама, дай мне знать, что твоя душа теперь в лучшем мире, что она безмятежна!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/img/IMG_20231128_124048_512.jpg" /><media:content medium="image" url="http://localhost:4000/img/IMG_20231128_124048_512.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">In che mese siamo? Che giorno è oggi?</title><link href="http://localhost:4000/2023-10-24/in-che-mese-siamo-che-giorno-e-oggi" rel="alternate" type="text/html" title="In che mese siamo? Che giorno è oggi?" /><published>2023-10-24T00:00:00+03:00</published><updated>2023-10-24T00:00:00+03:00</updated><id>http://localhost:4000/2023-10-24/in-che-mese-siamo-che-giorno-e-oggi</id><content type="html" xml:base="http://localhost:4000/2023-10-24/in-che-mese-siamo-che-giorno-e-oggi"><![CDATA[<p><span id="benvenuto"></span>
+<span>Ho creato un piccolo test. Rispondi alle domande digitando il mese e il giorno correnti in italiano nelle caselle in basso:</span></p>
+<div id="wrap_mg">
+  <div id="questione">
+    <label>In che mese siamo? Oggi siamo in</label> <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="search-mese" />
+    <div id="wrap-result">
+      <div id="btn-mese" class="btn-mg">Prova</div>
+      <div id="risultato-mese"></div>
+    </div>
+  </div>
+  <div id="questione">
+    <label>Che giorno è oggi? È</label> <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="search-giorno" />
+    <div id="wrap-result">
+      <div id="btn-giorno" class="btn-mg">Prova</div>
+      <div id="risultato-giorno"></div>
+    </div>
+  </div>
+</div>
+
+<h3 id="come-digitare-le-lettere-accentate-sulla-tastiera-italiana-di-un-telefono-android">Come digitare le lettere accentate sulla tastiera italiana di un telefono Android?</h3>
+
+<ol>
+  <li>Tieni premuto la lettera che bisogna accentare.</li>
+  <li>Dopo un secondo apparirà un menu in qui puoi scegliere la lettera coll'accento.</li>
+</ol>
+
+<p>Allo stesso modo si può anche digitare le lettere ё e ъ sulla tastiera russa. <a href="/tastiera-italiana/" target="_blank" rel="noopener noreferrer">Qui</a> avevo già scritto come digitare le lettere accentate su un computer.</p>]]></content><author><name>И. Постольный</name></author><category term="Тесты" /><category term="Грамматика" /><summary type="html"><![CDATA[Ho creato un piccolo test. Rispondi alle domande digitando il mese e il giorno correnti in italiano nelle caselle in basso]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Как создать титульный лист</title><link href="http://localhost:4000/2023-04-02/come-creare-un-frontespizio" rel="alternate" type="text/html" title="Как создать титульный лист" /><published>2023-04-02T00:00:00+03:00</published><updated>2023-04-02T00:00:00+03:00</updated><id>http://localhost:4000/2023-04-02/come-creare-un-frontespizio</id><content type="html" xml:base="http://localhost:4000/2023-04-02/come-creare-un-frontespizio"><![CDATA[<p>Постараюсь описать как создать титульный лист непосредственно в нотном редакторе <a href="https://musescore.org/ru" target="_blank" rel="noopener noreferrer">MuseScore 4</a>, в текстовом редакторе <a href="https://www.onlyoffice.com/ru/download-desktop.aspx" target="_blank" rel="noopener noreferrer">ONLYOFFICE</a> и в графическом редакторе <a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">GIMP</a>. Титульный лист я создам для одной моей пьесы. Конечно, подобным образом титульный лист можно создать для любой книги.</p>
+
+<h3 id="создание-титульного-листа-в-musescore-4">Создание титульного листа в MuseScore 4</h3>
+
+<p>Итак, у меня есть набранный нотный текст с вертикальной рамкой вначале с названием сочинения и указанием автора. Эта рамка и понадобится для создания титульного листа. Сначала нужно выделить рамку, кликнув на неё левой клавишей мышки. Затем нужно либо нажать на кнопку "Разрыв страницы" в разделе "Макет", либо нажать сочетание клавиш <kbd>Ctrl</kbd> + <kbd>↵</kbd>:</p>
+
+<p><img src="/img/frontespizio/ms-frontespizio1.png" alt="ms-frontespizio1" class="lightbox" /></p>
+
+<p>В результате будет создана новая страница и рамка будет перенесена на неё. Поскольку я собираюсь выше этой рамки с названием пьесы поместить изображение, то мне потребуется добавить ещё одну вертикальную рамку выше имеющейся. Для этого нужно в разделе "Макет" нажать на кнопку "Вставить вертикальную рамку" (рамка с названием пьесы остаётся выделенной) или это можно сделать через главное меню "Добавить" → "Рамки" → "Вставить вертикальную рамку":</p>
+
+<p><img src="/img/frontespizio/ms-frontespizio2.png" alt="ms-frontespizio2" class="lightbox" /></p>
+
+<p>Затем, чтобы вставить в новую рамку изображение, нужно кликнуть по ней правой клавишей мышки и в появившемся контекстном меню выбрать "Добавить" → "Изображение":</p>
+
+<p><img src="/img/frontespizio/ms-frontespizio3.png" alt="ms-frontespizio3" class="lightbox" /></p>
+
+<p>Вставленное в рамку изображение можно перетащить мышкой в центр рамки. Более точное её положение можно настроить в разделе "Оформление", перейдя на вкладку "Свойства". В "Свойствах" рамок можно настроить их положение на странице, в "Свойствах" текста, можно настроить размер шрифта, его название, выровнять текст по середине (название и размер шрифта я оставил по умолчанию):</p>
+
+<p><img src="/img/frontespizio/ms-frontespizio4.png" alt="ms-frontespizio4" class="lightbox" /></p>
+
+<p>Пунктирный ободок рамок при экспорте в формат pdf (или при печати) отображаться не будет.</p>
+
+<p>Конечно же рамки с текстом и изображениями можно накладывать друг на друга и таким образом сделать оформление титульного листа довольно сложным.</p>
+
+<p>Результат проделанной работы я решил не сохранять, так как титульный лист для моей пьесы я хочу создать потом в графическом редакторе GIMP. А пока я расскажу как можно создать титульный лист в текстовом редакторе.</p>
+
+<h3 id="создание-титульного-листа-в-текстовом-редакторе-onlyoffice">Создание титульного листа в текстовом редакторе ONLYOFFICE</h3>
+
+<p>Этот бесплатный текстовой редактор установлен на моём ноутбуке – он вполне подходит для создания титульного листа, поскольку поддерживает слои, ведь мне потребуется наложить слой с текстом на слой с изображением. Если вы используете Microsoft Word или какой-нибудь другой современный текстовой редактор, то сделать то же самое вы, конечно же, сможете. Для начала я нашёл в интернете изображение рамки, которую можно вписать в лист формата A4 (в текстовом редакторе, как и в нотном редакторе, размер создаваемого документа по умолчанию 2480 x 3508 px, что соответствует формату A4). Таких рамок в интернете можно найти очень много. Обычно это изображение на прозрачном фоне в формате png. Размеры найденной мною рамки 1540 x 2048 px, но это примерные размеры. Также рамка может быть меньшего размера – тогда она может находиться в центре странице и содержать только текст.</p>
+
+<p>Итак, я создаю новый документ. Перед тем как вставить изображение нужно настроить левое и правое поля документа. Дело в том, что левое и правое поле по умолчанию имеет разный размер (левое шире) – это требуется для подшивки распечатанных листов. Чтобы сделать поля одинаковыми, я перехожу на вкладку "Макет" и нажимаю на кнопку "Поля". В открывшемся меню выбираю "Средние" (левое и правое поле будут иметь одинаковую ширину 1,91 см.). Ширина изображения при этом должна быть достаточной, чтобы занимать всё пространство документа от левого поля до правого. Теперь я перехожу на вкладку "Вставка" и нажимаю на кнопку "Изображение". В открывшемся меню выбираю "Изображение из файла". В открывшемся диалоговом окне выбора файла выбираю изображение рамки и нажимаю на кнопку "Открыть". Рамка будет вставлена в документ:</p>
+
+<p><img src="/img/frontespizio/oo-frontespizio1.png" alt="oo-frontespizio1" class="lightbox" /></p>
+
+<p>Я вижу, что левое и правое поле одинаковы, но нижнее поле больше верхнего (для того, чтобы это было видно на скриншоте, я уменьшил масштаб отображения документа до 45%, перейдя на вкладку "Вид"):</p>
+
+<p><img src="/img/frontespizio/oo-frontespizio2.png" alt="oo-frontespizio2" class="lightbox" /></p>
+
+<p>Конечно, можно растянуть изображение, потянув за средний квадратик внизу на рамке выделения, но тогда есть опасность, что изображение деформируется. Поэтому лучше увеличить отступ сверху. Для этого я кликаю на любое поле (край документа), нажимаю справа на ссылку "Дополнительные параметры" и в отрывшемся окне в разделе "Внутренние поля" выставляю отступ сверху. После чего нажимаю на кнопку "OK":</p>
+
+<p><img src="/img/frontespizio/oo-frontespizio3.png" alt="oo-frontespizio3" class="lightbox" /></p>
+
+<p>Теперь рамка располагается по центру документа:</p>
+
+<p><img src="/img/frontespizio/oo-frontespizio4.png" alt="oo-frontespizio4" class="lightbox" /></p>
+
+<p>Теперь можно поместить в неё текст и изображение. Для этого я перехожу на вкладку "Вставка", кликаю на кнопку "Надпись" (курсор теперь имеет вид креста) и в центре документа растягиваю рамку для вставки в неё теста и изображения. Поскольку изображение будет находиться выше текста, сначала вставляю его. Затем прехожу на вкладку "Главная" и вставляю заголовок и подзаголовок. Размеры рамки с текстом и изображением можно изменить, потянув за квадратики на рамке. Также можно переместить рамку выше или ниже, а также выровнять по горизонтали, потянув её за верхний край, до появления перекрестия (рамка-изображение, которую я вставил раньше, оказалась несимметричной, но рамка с текстом выровнена по горизонтали):</p>
+
+<p><img src="/img/frontespizio/oo-frontespizio5.png" alt="oo-frontespizio5" class="lightbox" /></p>
+
+<p>Затем я несколько уменьшил изображение рояля, потянув за нижний левый квадратик на рамке вокруг изображения, изменил размер шрифта заголовка и подзаголовка и сделал их, а также изображения рояля, по центру:</p>
+
+<p><img src="/img/frontespizio/oo-frontespizio6.png" alt="oo-frontespizio6" /></p>
+
+<p>Рамка вокруг блока с текстом и изображением останется видимой. Для того чтобы отключить её видимость, нужно кликнуть на край рамки и на панели справа в разделе "Контур" выбрать "Без контура":</p>
+
+<p><img src="/img/frontespizio/oo-frontespizio7.png" alt="oo-frontespizio7" class="lightbox" /></p>
+
+<p>И вот результат:</p>
+
+<p><img src="/img/frontespizio/oo-frontespizio8.png" alt="oo-frontespizio8" /></p>
+
+<p>Осталось сохранить документ в формате pdf. Для этого можно просто нажать сочетание клавиш <kbd>Ctrl</kbd> + <kbd>S</kbd> и в отрывшемся окне в выпадающем списке "Тип файла" выбрать  соответствующий тип файла, затем выбрать место для сохранения на компьютрере и нажать на кнопку "Сохранить". Я же этого делать не буду и перейду к третьему способу создания титульного листа.</p>
+
+<h3 id="создание-титульного-листа-в-графическом-редакторе-gimp">Создание титульного листа в графическом редакторе GIMP</h3>
+
+<p>Создать титульный лист в графическом редакторе GIMP очень просто. Как обычно, сначала нужно создать проект. Для этого я нажимаю <kbd>Ctrl</kbd> + <kbd>N</kbd> и в отрывшемся окне в списке "Шаблон" выбираю пресет A4. Нажимаю на кнопку "OK". Проект создан. Теперь нужно немного поготовиться. Для того, чтобы разместить рамку по центру холста, нужно установить центральные направляющие. Для этого в меню нужно выбрать: "Изображение" → "Направляющие" → "Создать направляющие по %…":</p>
+
+<p><img src="/img/frontespizio/gimp-frontespizio1.png" alt="gimp-frontespizio1" class="lightbox" /></p>
+
+<p>Поочерёдно устанавливаем направляющие по горизонтали и вертикали с расположением 50%:</p>
+
+<p><img src="/img/frontespizio/gimp-frontespizio2.png" alt="gimp-frontespizio2" /></p>
+
+<p>Для рисования рамки я использую кисть в форме рамки (в стандартном наборе кистей GIMP такая кисть отсутствует, вы можете использовать готовую кисть или создать её самостоятельно). Выберите инструмент кисть (если не выбран), выберите нужную кисть в виде рамки, выберите нужный цвет (я выбрал чёрный), в настройках инструмента устанавите размер кисти (в моём случае 3100), для силы выставите значение 100. Также можно отрегулировать соотношение сторон, однако делать это можно умеренно во избежание деформации. Я не стану менять соотношение сторон. Затем просто подведите курсор, который теперь имеет вид креста, к месту пересечения направляющих и сделайте клик.</p>
+
+<p class="cornice">Для удобства и большей точности в меню "Вид" можно отметить пункт "Прилипать к направляющим".</p>
+
+<p>Рамка нарисована:</p>
+
+<p><img src="/img/frontespizio/gimp-frontespizio3.png" alt="gimp-frontespizio3" class="lightbox" /></p>
+
+<p>Теперь я нажимаю <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd> (или в меню "Файл" → "Открыть как слои…") и открываю изображение с роялем, которое будет помещено на новый слой. Кликаю по изображению правой клавишей мышки и в появившемся контекстном меню выбираю "Слой" → "Размер слоя". Уменьшаю размер до 500 px (также можно воспользоваться инструментом "Масштабирование" <kbd>Shift</kbd> + <kbd>S</kbd>). Затем я выбираю инструмент "Перемещение" и перемещаю изображение выше, следя за тем, чтобы оно оставалось посередине. Далее я последовательно добавляю все текстовые слои, задаю размер шрифта, его название, начертание текста, выравниваю текстовые слои с помощью мышки и клавиш со стрелками:</p>
+
+<p><img src="/img/frontespizio/gimp-frontespizio4.png" alt="gimp-frontespizio4" class="lightbox" /></p>
+
+<p>Готовый проект можно сохранить для дальнейшего его использования. Для этого можно нажать <kbd>Ctrl</kbd> + <kbd>S</kbd> и сохранить в формате xcf. Теперь можно экспортировать результат в формат pdf. Для этого нажмите <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd>, в открышемся окне нажмите на ссылку "Выберите тип файла (по расширению)", в открывшемся списке найдите и выберите pdf, впишите название файла (можно сразу добавить расширение к названию файла), нажмите на кнопку "Экпортировать" (или клавишу <kbd>↵</kbd>) и в следующем окне нажмите на кнопку "Экспорт" (или клавишу <kbd>↵</kbd>).</p>
+
+<p>Теперь созданный титульный лист осталось приклеить к документу с нотным текстом. Для этого я буду использовать программу <a href="https://code.google.com/archive/p/pdfbinder/downloads" target="_blank" rel="noopener noreferrer">PDFbinder</a>.</p>
+
+<p>Вот что у меня получилось:</p>
+
+<p><a href="/pdf/rondo(con_diteggiatura).pdf"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" style="margin-right: 4px; vertical-align: middle;"><path fill="currentColor" d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5zm4-3H19v1h1.5V11H19v2h-1.5V7h3zM9 9.5h1v-1H9zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm10 5.5h1v-3h-1z"></path></svg>И. Постольный, Рондо для фортепиано</a></p>
+
+<p>Я не стал удалять рамку с названием пьесы и автором из самого документа с нотным текстом. Но при желании это легко можно сделать в нотном редакторе MuseScore. Для этого достаточно выделить рамку, кликнув на неё, и нажать клавишу <kbd>delete</kbd>.</p>
+
+<p>Я рассказал как можно создать чёрно-белый титульный лист, что подходит для чёрно-белой печати. Конечно же можно создать и цветной титульный лист.</p>
+
+<p>В статье <a href="/2021-12-24/musescore">Нотный редактор MuseScore</a> я коснулся некоторых трудностей, которые могут возникнуть при работе в нотном редакторе MuseScore.</p>]]></content><author><name>И. Постольный</name></author><category term="Музыка" /><category term="GIMP" /><category term="Software" /><summary type="html"><![CDATA[Постараюсь описать как создать титульный лист непосредственно в нотном редакторе MuseScore 4, в текстовом редакторе ONLYOFFICE и в графическом редакторе GIMP. Титульный лист я создам для одной моей пьесы. Конечно, подобным образом титульный лист можно создать для любой книги.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Aудиоредактор Ocenaudio</title><link href="http://localhost:4000/2023-03-07/ocenaudio" rel="alternate" type="text/html" title="Aудиоредактор Ocenaudio" /><published>2023-03-07T00:00:00+03:00</published><updated>2023-03-07T00:00:00+03:00</updated><id>http://localhost:4000/2023-03-07/ocenaudio</id><content type="html" xml:base="http://localhost:4000/2023-03-07/ocenaudio"><![CDATA[<p>Почему я решил написать эту статью? Просто потому, что мне захотелось разместить здесь на сайте одно из моих любимых произведений – сонату соль минор Франца Йозефа Гайдна в исполнении Святослава Рихтера. Эту сонату я скопировал с компакт-диска и, поскольку она состоит из двух частей, я получил два файла, которые нужно было объединить в один. Тут мне и пригодился аудиоредактор. Теперь я могу описать процесс склейки и разместить на сайте эту прекрасную музыку. И теперь дорогой читатель сможет и сонату Гайдна послушать и почитать о том, как выполнять различные операции в аудиоредакторе <a href="https://www.ocenaudio.com/" target="_blank" rel="noopener noreferrer">Ocenaudio</a>. Я же постараюсь не ограничиваться описанием процесса склейки аудиофайлов, а коснуться также и других возможностей программы. Не за один раз, конечно.</p>
+
+<h3 class="center" id="как-склеить-аудиофайлы">Как склеить аудиофайлы</h3>
+
+<p>На самом деле сделать это очень просто. Необязательно даже для этого использовать программу для компьютера: можно воспользоваться одним из многочисленных онлайн-сервисов для обработки аудиофайлов. Но мне бы хотелось всё-таки написать о том, как это осуществить в аудиоредакторе Ocenaudio. Программа позволит нам не только склеить аудиофайлы, но и отредактировать метаданные, что очень важно. Также между частями можно создать определённый участок тишины, если это необходимо.</p>
+
+<p class="cornice">Что такое метаданные и зачем вообще они нужны? Метаданные – это различные сведения о содержимом аудиофайла, как то: названии трека, альбома, имени исполнителя и т. д. Аудиофайл может содержать такие данные, а может и не содержать. Если аудиофайл содержит такие данные, то аудиоплеер, в котором открыт этот аудиофайл, сможет отобразить их (если, конечно, аудиоплеер имеет подобную функциональность).</p>
+
+<p>Итак, запустим программу и перетащим в её окно оба файла (также можно использовать сочетание клавиш <kbd>Ctrl</kbd> + <kbd>O</kbd>). Слева мы увидим список импортированных в программу файлов (дорожек). Двойной клик мышки по пунктам этого списка позволяет выбрать нужный файл для работы с ним:</p>
+
+<p><img src="/img/ocenaudio/ocenaudio.png" alt="ocenaudio" class="lightbox" /></p>
+
+<p>Нам предстоит в конец файла 06 (первая часть сонаты) приклеить файл 07 (вторая часть сонаты). Отсюда следует, что именно файл 06 впоследствии и будет экспортирован и именно его метаданные нам предстоит отредактировать. Убедимся, что в списке файлов слева выбран нужным нам для работы файл (в противном случае переключимся на него двойным кликом на соответствующий пункт в списке файлов) и затем выберем в главном меню программы "Правка" → "Metadata" → "Метаданные":</p>
+
+<p><img src="/img/ocenaudio/ocenaudio1.png" alt="ocenaudio1" /></p>
+
+<p>Откроется окно "Свойства аудио" – в нём можно отредактировать все метаданные (кнопки со стрелками внизу слева позволяют переключаться между всеми импортированными в программу файлами и соответственно переключать вывод свойств для их просмотра и редактирования не закрывая окна):</p>
+
+<p><img src="/img/ocenaudio/ocenaudio2.png" alt="ocenaudio2" /></p>
+
+<p>Отредактируем метаданные файла 06. В поле "Название песни" я изменил "Sonata Gm H16 44 1 Moderato" на "Sonata Gm H16 44 1 Moderato 2 Allegretto" т.е. добавил название второй части сонаты, которое одновременно является указанием темпа и характера исполнения произведения; в поле "Альбома" удалил ссылку на компакт-диск "(Disc 1)"; удалил все данные в полях "Трек" – эти данные указывали на то, что первая часть сонаты являлась шестым треком из десяти имеющихся на компакт-диске:</p>
+
+<p><img src="/img/ocenaudio/ocenaudio3.png" alt="ocenaudio3" /></p>
+
+<p class="cornice">Для удобства можно назначить "горячие главиши" для показа окна "Свойства аудио" – специальное сочетание клавиш, по нажатию которых будет показано окно "Свойства аудио". Для этого в меню нужно вабрать "Правка" → "Настройки", в открывшемся окне настроек перейти на вкладку "Привязка клавиш", начать вводить слово "метаданные" (без кавычек), напротив найденного пункта "Метаданные…" дважды кликнуть в поле "Ключ" и нажать желаемую комбинацию клвиш (я, к примеру, установил <kbd>Ctrl</kbd> + <kbd>M</kbd>).</p>
+
+<p>По завершению редактирования метаданных закроем окно "Свойства аудио" и переключимся на файл 07. Нам предстоит его выделить и скопировать. Для того, чтобы его выделить, в главном меню выбираем "Правка" → "Выбрать всё" или нажимаем сочетание клавиш <kbd>Ctrl</kbd> + <kbd>A</kbd> или делаем двойной клик левой клавишей мышки по осциллограмме.</p>
+
+<p>Для копирования достаточно нажать сочетание клавиш <kbd>Ctrl</kbd> + <kbd>C</kbd> или же кликнуть по выделенной области и в появившемся контекстном меню выбрать пункт "Копировать". Аудиодорожка будет скопирована в буфер обмена. Можно теперь даже удалить файл 07 из программы, кликнув на крестик у соответствующего пункта в списке файлов слева. Если мы так и сделали, то автоматически переключимся на оствшийся файл 06, если мы этого не сделали, то нужно будет переключиться на него.</p>
+
+<p>Теперь скопированную в буфер обмена дорожку 07 нужно вставить в конец дорожки 06. Для этого сначала нам нужно передвинуть курсор в конец дорожки 06 (курсор – это вертикальная линия, обозначающая положение на таймлайне) – внизу курсора вы увидите утолщение – кликните на него левой клавишей мышки и удерживая её, перетащите курсор в конец дорожки. Можно сделать это гораздо проще: достаточно нажать клавишу <kbd>end</kbd> (а вот нажатие клавиши <kbd>home</kbd> наоборот переместит курсор в начало дорожки).</p>
+
+<p>Теперь нужно вставить дорожку. Для этого нажмите сочетание <kbd>Ctrl</kbd> + <kbd>V</kbd> или же кликните по выделенной области и в появившемся контекстном меню выберите пункт "Вставить".</p>
+
+<p>Дорожка 07 будет вставлена непосредственно в конец дорожки 06 (я так и поступил). Если нужно между дорожками создать участок тишины, то поступим следующим образом: перед вставкой (отменить последнее действие можно нажав сочетание <kbd>Ctrl</kbd> + <kbd>Z</kbd>) выберите в главном меню "Операция" → "Тишина", в открышемся окошке установите желаемую длительность тишины (по умолчанию – 10 секунд – это слишком много для промежутка между произведениями) и нажмите на кнопку "OK" (при вставке тишины курсор должен быть в нужном месте – в нашем случае он должен быть в конце дорожки – убедитесь в этом); затем кликните на осциллограмму и снова нажмите клавишу <kbd>end</kbd> или перетащите курсор мышкой уже в конец участка тишины; затем нажмите <kbd>Ctrl</kbd> + <kbd>V</kbd>, чтобы вставить дорожку 06 после участка тишины.</p>
+
+<p>Останется экспортировать полученный результат в файл MP3. В главном меню выберите "Файл" → "Экспорт…". В открывшемся окне "Export Audio" перейдите на вкладку MPEG и если не хотите менять никаких параметров (я не стал этого делать), нажмите на кнопку "Export":</p>
+
+<p><img src="/img/ocenaudio/ocenaudio4.png" alt="ocenaudio4" /></p>
+
+<p>Откроется диалоговое окно сохранения файла – выберите директорию, куда бы вы хотели сохранить файл, а также, если нужно, измените название экспортируемого файла.</p>
+
+<div class="audio-wrapper">
+    <audio src="/audio/Haydn_Sonata_Gm_H16_44_Richter.mp3" controls="" preload=""></audio>
+</div>
+
+<p class="center">Франц Йозеф Гайдн, соната для фортепиано соль минор, Hob XVI:44, исполняет Святослав Рихтер.</p>
+
+<p><img src="/img/Franz-Joseph-Haydn.png" alt="Franz Joseph Haydn" title="Franz Joseph Haydn" />
+<em>Franz Joseph Haydn</em></p>
+
+<p>Опишу также самый простой способ склейки аудиофайлов. Этим способом можно присоединить один файл непосредственно в конец другого. В списке слева файлы должны располагаться один за другим по порядку сверху вниз т.е. в нашем случае сначала идёт аудиодорожка 06, а за ней – 07. Если порядок иной, то файлы можно переупорядочить, перетащив их мышкой (нажать и удерживать левую клавишу мышки). Затем все дорожки нужно выделить. Для этого можно кликнуть левой клавишей по списку или по свободному пространству слева и затем нажать <kbd>Ctrl</kbd> + <kbd>A</kbd> или удерживая левую клавишу мышки просто провести мышкой снизу вверх по списку файлов, начиная со свободного пространства. После того, как файлы будут выделены, кликнуть по ним правой клавишей мышки и в появившемся контекстном меню выбрать "Присоединить":</p>
+
+<p><img src="/img/ocenaudio/ocenaudio5.png" alt="ocenaudio5" /></p>
+
+<p>Результат появится ниже исходных файлов и вы сможете отредактировать метаданные и экпортировать (также вы можете выбрать вариант "Сохранить как…" (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>)) готовый файл (не забудьте дважды кликнуть на него перед редактированием метаданных и сохранением).</p>
+
+<h3 class="center" id="коротко">Коротко</h3>
+
+<p>Некоторые пункты меню, которые я буду упоминать ниже, ещё не переведены на русский в этой версии программы (3.11.22).</p>
+
+<ul>
+  <li>Скопированный в буфер обмена звук можно вставить в положение курсора с помощью сочетания клавиш <kbd>Ctrl</kbd> + <kbd>V</kbd> или "Правка" → "Вставить".</li>
+  <li>Для выделения участка нажать левую клавишу мышки и выбрать участок.</li>
+  <li>Удерживая клавишу <kbd>Ctrl</kbd> можно выделить несколько участков.</li>
+  <li>Для удаления выделенного участка нажать клавишу <kbd>delete</kbd>, для вырезания выделенного участка нажать <kbd>Ctrl</kbd> + <kbd>X</kbd> или нажать на значок <img src="/img/ocenaudio/cut.png" alt="cut" class="inln" /> на панели инструментов, для копирования выделенного участка нажать <kbd>Ctrl</kbd> + <kbd>C</kbd> или нажать на значок <img src="/img/ocenaudio/copy.png" alt="copy" class="inln" /> на панели инструментов, для вставки нажать <kbd>Ctrl</kbd> + <kbd>V</kbd> или нажать на значок <img src="/img/ocenaudio/paste.png" alt="paste" class="inln" /> на панели инструментов, для обрезки выделенного участка (оставить только выделенный участок) нажать <kbd>Ctrl</kbd> + <kbd>T</kbd> или нажать на значок <img src="/img/ocenaudio/trim.png" alt="trim" class="inln" /> на панели инструментов, также все эти действия можно выполнить нажимая на соответствующие значки на панели инструментов).</li>
+  <li>"Правка" → "Paste to" → "Fit in Selection" – предварительно скопированный фрагмент можно будет вставить в выделенный участок аудио. Если вставляемый фрагмент меньше участка, в который он вставляется, то к этому фрагменту будет добавлена тишина; если вставляемый фрагмент больше участка, в который он вставляется, то фрагмент будет обрезан – в любом случае общая длина аудио не изменится.</li>
+  <li>"Правка" → "Специальная вставка…" – предварительно скопированный фрагмент можно будет вставить в выделенный участок аудио, при этом звуки будут наложены друг на друга.</li>
+  <li>По наведению на выделенный участок появятся указания продолжительности, времени начала и конца участка, которые можно корректировать (нажать клавишу <kbd>Enter</kbd> чтобы изменения вступили в силу); значок "Тащи меня!" <img src="/img/ocenaudio/drag-me.png" alt="drag me" class="inln" /> – захватив его мышкой и удерживая левую клавишу можно перетаскивать участок по тамлайну, захватив мышкой значок и удерживая клавишу <kbd>Ctrl</kbd> можно скопировать участок в определённое место или же можно перетащить участок в список файлов слева; значок лупы <img src="/img/ocenaudio/zoom-selection.png" alt="zoom selection" class="inln" /> – выделенный участок можно увеличить.</li>
+  <li>Установить маркер – нажать сочетание <kbd>Ctrl</kbd> + <kbd>K</kbd>.</li>
+  <li>Выделенный участок можно преобразовать в область – для этого можно кликуть по нему правой клавишей мышки и в появившемся контекстном меню выбрать "Создать область" или нажать <kbd>Ctrl</kbd> + <kbd>K</kbd> как при создании маркера или выбрать в главном меню "Правка" → "Regions" → "Создать область".</li>
+  <li>Можно менять размер области, потащив за утолщения по краям в её верхней части.</li>
+  <li>Можно перетаскивать маркер за его верхнюю часть.</li>
+  <li>Курсор можно перетаскивать за утолщение в его нижней части, с помощью клави, нажатие клавиши <kbd>end</kbd> переместит курсор в конец дорожки, нажатие клавиши <kbd>home</kbd> переместит курсор в начало дорожки.</li>
+  <li>В верхней части маркера, области, цикла можно задать название.</li>
+  <li>Область можно перетащить за нижнюю часть в список файлов слева.</li>
+  <li>В нижней части области можно написать комментарий.</li>
+  <li>"Правка" → "Regions" → "Разделить звук по маркерам" – в списке файлов слева появятся фрагменты, на которые был разделён звук по маркерам.</li>
+  <li>Сохранить / экспортировать области в файлы можно в "Файл" → "Save Regions Audio…" / "Export Regions Audio…" (при сохранении / экспорте можно выбрать будут ли области сохранены по отдельности или объединены в один файл).</li>
+  <li>Если нажать на значок в виде регулятора громкости <img src="/img/ocenaudio/gain-tool.png" alt="gain tool" class="inln" /> на панели инструментов, на выделенном участке будет появляться ползунок, с помощью которого можно корректировать уровень на этом участке.</li>
+  <li>Нажимая на  значки <img src="/img/ocenaudio/fade-in.png" alt="fade in" class="inln" /> и <img src="/img/ocenaudio/fade-out.png" alt="fade out" class="inln" /> на выделенном участке можно создать соответственно эффект постепенного нарастания и постепенного уменьшения силы звука (то же самое можно сделать через меню: "Эффекты" → "Амплитуда" → "Нарастание силы звука" / "Уменьшение силы звука" / "Затухание").</li>
+  <li>Вид сигнала можно изменить в разделе меню "Вид". Также можно нажать сочетание клавиш <kbd>Ctrl</kbd> + <kbd>1</kbd> или нажать на значок <img src="/img/ocenaudio/waveform-view.png" alt="waveform view" class="inln" /> на панели инструментов – сигнал будет представлен в виде осциллограммы; <kbd>Ctrl</kbd> + <kbd>2</kbd> или нажать на значок <img src="/img/ocenaudio/spectrogram-view.png" alt="spectrogram view" class="inln" /> на панели инструментов – сигнал будет представлен в виде спектрограммы; <kbd>Ctrl</kbd> + <kbd>3</kbd> или нажать на значок <img src="/img/ocenaudio/waveform-and-spectrogram-view.png" alt="waveform and spectrogram view" class="inln" /> на панели инструментов – сигнал будет представлен в виде спектрограммы и осциллограммы.</li>
+  <li>Прокручивая колёсико мышки можно увеличивать / уменьшать отображение сигнала по горизонтали, прокручивая колёсико мышки с зажатой клавишей <kbd>Shift</kbd> можно увеличивать / уменьшать отображение сигнала по вертикали или же для этих действий можно воспользоваться кнопками в виде луп справа на панели инструментов. Для быстрого увеличения можно нажать клавишу <kbd>Q</kbd>. Поскольку при прокрутке колёсика (или нажатии на значок в виде лупы) область увеличивается, возникает необходимость перемещаться по звуковой волне, наверху сразу под панелью инструментов появляется ползунок – незатемнённый участок с миниатюрой звуковой волны, ухватившись мышкой за который можно перемещаться по звуковой волне. По наведению на этот ползунок появляется курсор "рука". Изменение отображение сигнала (масштабирование) также можно производить через главное меню "Вид" → "Маштабирование". Там же указаны горячие клавиши для этих действий. Клавиши "+" и "-" используются на боковой цифровой клавиатуре.</li>
+  <li>По нажатию на значок <img src="/img/ocenaudio/normalize.png" alt="normalize" class="inln" /> будет применён эффект "Нормализация" (или "Эффекты" → "Нормализовать").</li>
+  <li>По нажатию на значок <img src="/img/ocenaudio/reverse.png" alt="reverse" class="inln" /> будет применён эффект "Реверсирование" (или "Эффекты" → "Реверс").</li>
+  <li>Чтобы отменить действие можно нажать сочетание клавиш <kbd>Ctrl</kbd> + <kbd>Z</kbd> или на значок <img src="/img/ocenaudio/undo.png" alt="undo" class="inln" /> или в меню "Правка" → "Отменить действие…".</li>
+  <li>Чтобы повторить действие можно нажать сочетание клавиш <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> или на значок <img src="/img/ocenaudio/redo.png" alt="redo" class="inln" /> или в меню "Правка" → "Повторить…".</li>
+  <li>С помощью значков в виде трёх вертикальных линий <img src="/img/ocenaudio/resize.png" alt="resize" class="inln" /> можно менять размеры области просмотра. С помощью такого значка справа можно показать / скрыть индикатор уровней. Для этого нужно этот значок переместить, ухватив его мышкой.</li>
+  <li>Под индикатором уровней имеются два значка в виде микрофона и динамика. До начала записи вы можете кликнуть на значок в виде микрофона, чтобы посмотреть уровень сигнала микрофона. Значок в виде динамика активируется при прослушивании аудио.</li>
+  <li>Над индикатором уровней имеются маленькие окошки, которые загораются красным в том случае, если уровень сигнала становится выше максимального (пикового).</li>
+  <li>Начать / остановить вопроизведение аудио можно нажимая клавишу "Пробел". Осуществлять перемотку можно с помощью клавиш <kbd>◄</kbd> и <kbd>►</kbd>. Эти же операции можно осуществить с помощью соответствующих значков на панели инструментов.</li>
+  <li>"Создать из" → "Выбор" – будет создан новый аудиофайл из выбранного участка (также можно нажать <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>); "Создать из" → "Буфер обмена" – будет создан новый аудиофайл из буфера обмена.</li>
+  <li>В левой панели перемещаться между файлами можно с помощью клавиш <kbd>▲</kbd> и <kbd>▼</kbd>.</li>
+  <li>Левую панель можно скрыть, нажав на значок в виде прямоугольника слева от значка записи в виде красного круга.</li>
+</ul>
+
+<h3 class="center" id="шумоподавление">Шумоподавление</h3>
+
+<ol>
+  <li>Выделяем участок тишины, обычно, в начале или в конце, но не той тишины, которая была нами сгенерирована, а тишины естественной – той тишины, в которой присутствуют шумы.</li>
+  <li>Выбираем в главном меню "Эффекты" → "Шумоподавление" → "Шумоподавление…" и в открышемся окне  "Шумоподавление" на первой вкладке "Профилировщик шума" нажимаем на кнопку "Получить профиль" – это действие позволит программе получить модель шума. Затем нажимаем на кнопку "Закрыть".</li>
+  <li>Затем, если мы хотим применить шумоподавление на протяжении всей аудиодорожки, мы можем или выделить всю аудиодорожку, сделав двойной клик левой клавишей мышки по осциллограмме или, наоборот, снять выделение, однократно кликнув по осциллограмме левой клавишей мышки (в программе Audasity для выполнения подобной операции пришлось бы выделить весь участок звука). Если же нам нужно применить шумоподавление на определённом участке аудиодорожки, то участок тишины для получения профиля нужно будет найти именно на этом участке и затем, после получения профиля, не снимать выделение, а, наоборот, сделать выделение на участке, где мы хотим применить шумоподавление.</li>
+  <li>Снова выбираем в главном меню "Эффекты" → "Шумоподавление" → "Шумоподавление…" и в открышемся окне "Шумоподавление" переходим на вторую вкладку "Шумоподавление" – здесь, переключая соответствующие радиокнопки, вы можете выбрать либо первый вариант "Уменьшить шум" – в этом случае вы можете настроить коэффициент уменьшения шумов (по умолчанию 12дб), либо второй вариант "Удалить шум". Что касается третьего варианта "Шум", то в этом случае программа удалит всё, кроме шума – такой вариант нам не подходит. Затем нажимаем на кнопку "Применить".</li>
+</ol>
+
+<p>В аудиоредакторе имеется и автоматическое шумоподавление ("Эффекты" → "Шумоподавление" → "Авто-шумоподавление"). Если результат работы данной функции вас не устроит, выполните шумоподавление как описано выше.</p>
+
+<p class="cornice">Надо сказать, что любые эффекты, в том числе и шумоподавление, могут привести к потери естественности звучания. Поэтому эффекты нужно применять с большой осторожностью или не применять их вовсе. Например, применение эффектов постепенного нарастания силы звука и постепенного уменьшения силы звука будет совершенно неуместным при составлении альбома произведений классической музыки (исключение составляет тот случай, когда нужно плавно свести на нет продолжительные аплодисменты).</p>
+
+<h3 class="center" id="нормализация">Нормализация</h3>
+
+<p>Эффект "Нормализация" применяется для того, чтобы сделать звук насколько возможно громче без искажений. Для нормализации выделите всю дорожку или её часть, затем выберите в меню "Эффекты" → "Нормализовать" или нажмите на значок <img src="/img/ocenaudio/normalize.png" alt="normalize" class="inln" />. В этом случае нормализация произойдёт автоматически. Также можно вручню установить пиковый уровень звука. Для этого после выделения всей дорожки или её участка выберите в главном меню "Эффекты" → "Амплитуда" → "Нормализация…" – откроется окно "Нормализовать". В разделе "Усилитель" вы можете выбрать в каких единицах будет исчисляться нормализацию – в децибелах или процентах:</p>
+
+<p><img src="/img/ocenaudio/normalizing.png" alt="normalizing" /></p>
+
+<p>На <a href="https://www.macaulaylibrary.org/resources/audio-editing-tutorials/prepare-sound-files-in-ocenaudio/" target="_blank" rel="noopener noreferrer">сайте</a> медиатеки Маколея<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> я нашёл информацию, что пиковый уровень записей, хранящихся в этой медиатеке, составляет -3dB и, насколько я понимаю, является неким стандартом.</p>
+
+<h3 class="center" id="звукозапись">Звукозапись</h3>
+
+<p>Я, конечно, не звукорежиссёр и не специалист по звуку, но кое-чему пришлось научиться и мне. В основном я записываю мою игру на фортепиано – это очень полезно – слушать себя со стороны. Микрофон у меня USB – один из самых недорогих, с кардиоидной направленностью (возможно мне стоило приобрести всенаправленный микрофон). Конечно же это монофонический микрофон и в аудиоредакторе я тоже выбираю моно. В свойствах микрофона я выбираю стандартные значения разрядности и частоты дискретизации: 24 бит, 44100 Гц или 24 бит, 48000 Гц:</p>
+
+<p><img src="/img/ocenaudio/microphone-properties.png" alt="свойства микрофона" /></p>
+
+<p>Как видите, звуковая карта позволяет также выбрать частоту дискретизации 192000 Гц, и если вы хотите порадовать летучих мышей или дельфинов и записать для них что-нибудь в ультразвуковом диапазоне, то можете выбрать такую частоту дискретизации (если, конечно, звуковая карта вашего микрофона её поддерживает). Для человека же это не имеет никакого смысла.</p>
+
+<p>При первом подключении USB микрофона в систему устанавливается драйвер и микрофон становится устройством записи по умолчанию (когда он подключен). Если аудиоредактор "не видит" микрофон, нужно выбрать его в "Настройках звука" программы (в разделе "Устройства/параметры записи" выбран мой микрофон):</p>
+
+<p><img src="/img/ocenaudio/sound-preferences.png" alt="sound preferences" /></p>
+
+<p>Для того, чтобы открыть это окно вы можете кликнуть на значок динамика, который находится справа от регулятора громкости или выбрать в главном меню "Правка" → "Настройки" и в открывшемся окне перейти во вкладку "Звук".</p>
+
+<p>Для того, чтобы начать запись можно непосредственно кликнуть на значок записи в виде красного круга – откроется окно "Новый звук", где я указываю разрешение 24 бит, частоту дискретизации 48000 Гц (48 кГц) и в разделе "Каналы" выбираю "Моно":</p>
+
+<p><img src="/img/ocenaudio/new-audio.png" alt="новый звук" /></p>
+
+<p>Или же вы можете создать новый проект. Для этого в главном меню выберите "Файл" → "Создать…" или нажмите сочетание клавиш <kbd>Ctrl</kbd> + <kbd>N</kbd> – откроется это же окно.</p>
+
+<p>Когда в разделе "Каналы" следует выбирать "Стерео" (т.е. два канала)? В том случае, если вы записываете двумя микрофонами. В каких случаях запись бывает стереофонической? Когда записывают оркестр, хор, ансамбль, солиста и концертмейстера, большой музыкальный инструмент (например, пианино или рояль) или может быть птичек в лесу – во всех подобных случаях может использоваться два или несколько монофонических микрофонов, распределённых по каналам (как я уже писал, для записи фортепиано мне приходится довольствоваться одним микрофоном). Целью создания стереомикрофона очевидно послужило желание унифицировать звукозаписывающее устройство. Не буду рассуждать в каких случаях уместно использовать такие микрофоны, но скажу, что вокалистам, дикторам, репортёрам и прочим обладателям одного рта микрофон следует использовать монофонический. Сигнал с единственного монофонического микрофона можно конечно записать в аудиоредакторе и на два канала, указав "Стерео" в разделе "Каналы", но такая запись не превратится в стереофоническую, хоть и будет двухканальной.</p>
+
+<p>Поскольку микрофон имеет невысокий уровень звукового сигнала, я обычно после записи или несколько увеличиваю амплитуду звука вручную или применяю "Нормализацию". Шум я не убираю, хотя иногда это и стоило бы сделать.</p>
+
+<h3 class="center" id="vst-плагины">VST-плагины</h3>
+
+<p>VST-плагины представляют собой файлы с расширением dll. Установим бесплатный плагин Verberate Basic для создания эффекта "Реверберация". С <a href="https://acondigital.com/products/verberate-basic" target="_blank" rel="noopener noreferrer">официального сайта плагина</a> загрузите установщик и запустите установку. По завершению установки плагина запустите Ocenaudio – в правом верхнем углу появится окошко, в котором будет указано, что Ocenaudio обнаружил в системе новый VST-плагин и что следует кликнуть на это окошко, чтобы активировать (загрузить) плагин:</p>
+
+<p><img src="/img/ocenaudio/new-vst-plugins-found.png" alt="New VST Plugins Found" /></p>
+
+<p>Через некоторое время окошко закроется и если вы не успели кликнуть на него, то нажмите "Эффекты" → "VST" → "Search new plugins" – окошко появится снова – кликните на него. Откроется окно настроек программы с активной вкладкой "Настройки плагинов" (или же вы можете открыть это окно с активной вкладкой "Настройки плагинов" нажав "Эффекты" → "VST" → "Plugin Preferences"):</p>
+
+<p><img src="/img/ocenaudio/plugins-preferences.png" alt="Настройки плагинов" /></p>
+
+<p>Для активациии плагина установите галочку слева от VerberateBasic2.dll (или кликните на VerberateBasic2.dll правой клавишей мышки и в контекстном меню выберите "Enable Plugin"). Если справа вы увидите запись "Loaded", это будет означать, что плагин активирован:</p>
+
+<p><img src="/img/ocenaudio/load-plugin.png" alt="load plugin" /></p>
+
+<p>Для использования плагина выделите дорожку (<kbd>Ctrl</kbd> + <kbd>A</kbd>) и выберите в меню "Эффекты" → "VST" → "Acon Digital" → "Acon Digital Verberate Basic 2".</p>
+
+<p>Также для установки плагина вы можете указать путь до места нахождения dll-файла. Для этого откройте окно настроек плагинов: "Эффекты" → "VST" → "Plugin Preferences" и нажмите на кнопку "Add Path" внизу окна слева. В открывшемся окне укажите директорию в которой находится dll-файл. Активируйте плагин.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Медиатека Маколея – крупнейшее в мире собрание видео- и аудиоматериалов о поведении животных, расположенное в лаборатории орнитологии Корнеллского университета, США. Входит в состав Национальной научной электронной библиотеки США. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>И. Постольный</name></author><category term="Музыка" /><category term="Software" /><summary type="html"><![CDATA[Почему я решил написать эту статью? Просто потому, что мне захотелось разместить здесь на сайте одно из моих любимых произведений – сонату соль минор Франца Йозефа Гайдна в исполнении Святослава Рихтера. Эту сонату я скопировал с компакт-диска и, поскольку она состоит из двух частей, я получил два файла, которые нужно было объединить в один.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" /><media:content medium="image" url="http://localhost:4000/assets/Rome-Parco-degli-Acquedotti1200x627.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
