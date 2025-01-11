@@ -13,7 +13,7 @@ defaults:
 # Google Analytics
 google_analytics:
 
-  # Author
+# Author
 author:
   name:         Игорь Постольный
   url:          
@@ -27,9 +27,10 @@ kramdown:
 include:
   - _pages
 
+# Assets
 sass:
-  sass_dir: _sass
-  style: compressed
+  sass_dir:     _sass
+  style:        compressed
 
 # Gems
 plugins:
@@ -43,7 +44,7 @@ paginate:       10
 seo_paginator_message: "Страница %<current>s | "
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock ]
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
 exclude_frasario: true
 

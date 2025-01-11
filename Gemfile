@@ -2,9 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.0"
-
-gem "jekyll-sass-converter"
-gem "jekyll-feed"
-gem "jekyll-paginate"
-gem "jekyll-seo-tag"
+gem 'jekyll', '~> 4.3'
+gem 'jekyll-feed', '~> 0.16.0'
+gem 'jekyll-paginate', '~> 1.1'
+gem 'jekyll-seo-tag', '~> 2.5'
