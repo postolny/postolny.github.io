@@ -1,17 +1,15 @@
-@use 'postolny/variables';
-
 .categories,
 .tags {
   &-header {
     &-title {
-      color: variables.$default-shade;
-      font-family: variables.$sans-serif;
+      color: $default-shade;
+      font-family: $sans-serif;
       text-align: center;
     }
   }
 
   &-clouds {
-    font-family: variables.$sans-serif;
+    font-family: $sans-serif;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -20,9 +18,9 @@
 
     a {
       margin: 0 0.1rem 0.2rem;
-      background: variables.$default-shade;
+      background: $default-shade;
       border-radius: 5px;
-      color: variables.$white;
+      color: $white;
       text-decoration: none;
       transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
       height: 2rem;
@@ -32,7 +30,7 @@
       align-items: center;
       &:hover,
       &:active {
-        background: variables.$green;
+        background: $green;
         box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.8) inset;
       }
     }

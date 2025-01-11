@@ -1,14 +1,12 @@
-@use 'postolny/variables';
-
 pre,
 code {
-  font-family: variables.$monospaced;
+  font-family: $monospaced;
 }
 
 code {
-  background-color: variables.$grey-4;
+  background-color: $grey-4;
   border-radius: 3px;
-  color: variables.$code-color;
+  color: $code-color;
   font-size: 85%;
   padding: 0.25em 0.5em;
 }
@@ -31,7 +29,7 @@ pre code {
 }
 
 .highlight {
-  background-color: variables.$grey-4;
+  background-color: $grey-4;
   border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 1rem;
@@ -50,7 +48,7 @@ pre code {
   }
 
   .lineno {
-    color: variables.$default-tint;
+    color: $default-tint;
     margin: 0 0 1rem;
     padding: 1rem 0.75rem 0 0.25rem;
     -webkit-user-select: none;
@@ -64,8 +62,8 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
+  background-color: $grey-4;
+  color: $default-tint;
   font-family: Arial, sans-serif;
   font-size: 0.7rem;
   padding: 0 0.5rem;
@@ -79,8 +77,8 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
+  background-color: $grey-4;
+  color: $default-tint;
   font-family: Arial, sans-serif;
   font-size: 0.7rem;
   padding: 0 0.5rem;
@@ -94,8 +92,8 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
+  background-color: $grey-4;
+  color: $default-tint;
   font-family: Arial, sans-serif;
   font-size: 0.7rem;
   padding: 0 0.5rem;
@@ -109,8 +107,8 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
+  background-color: $grey-4;
+  color: $default-tint;
   font-family: Arial, sans-serif;
   font-size: 0.7rem;
   padding: 0 0.5rem;
@@ -124,8 +122,8 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
+  background-color: $grey-4;
+  color: $default-tint;
   font-family: Arial, sans-serif;
   font-size: 0.7rem;
   padding: 0 0.5rem;
@@ -155,8 +153,8 @@ kbd {
   font-style: normal;
   padding: 1px 4px;
   color: #777;
-  background-color: variables.$white;
+  background-color: $white;
   border: solid 1px #d9d9d9;
   border-radius: 3px;
-  box-shadow: 0 1px 0 0 variables.$grey-2;
+  box-shadow: 0 1px 0 0 $grey-2;
 }

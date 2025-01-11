@@ -1,7 +1,5 @@
-@use 'postolny/variables';
-
 .pagination {
-  font-family: variables.$serif-primary;
+  font-family: $serif-primary;
   font-size: 14px;
   padding-top: 2rem;
   position: relative;
@@ -11,27 +9,27 @@
     padding: 10px 18px;
     margin: auto 5px;
     font-weight: bold;
-    border: 3px solid variables.$default-shade;
-    color: variables.$white;
-    background-color: variables.$default-shade;
+    border: 3px solid $default-shade;
+    color: $white;
+    background-color: $default-shade;
   }
   span.previous {
     display: inline-block;
     padding: 10px 18px;
     margin: auto 5px;
     font-weight: bold;
-    border: 3px solid variables.$default-shade;
-    color: variables.$default-shade;
-    background-color: variables.$white;
+    border: 3px solid $default-shade;
+    color: $default-shade;
+    background-color: $white;
   }
   span.next {
     display: inline-block;
     padding: 10px 18px;
     margin: auto 5px;
     font-weight: bold;
-    border: 3px solid variables.$default-shade;
-    color: variables.$default-shade;
-    background-color: variables.$white;
+    border: 3px solid $default-shade;
+    color: $default-shade;
+    background-color: $white;
   }
 }
 
