@@ -901,7 +901,7 @@ p.capolettera:first-of-type::first-letter {
   gap: 5px;
 }
 .value {
-  font-size: 10px;
+  font-size: 8px;
   width: 22px;
   color: $white;
 }
@@ -944,7 +944,7 @@ p.capolettera:first-of-type::first-letter {
   display: flex;
   justify-content: space-between;
   gap: 5px;
-  font-size: 12px;
+  font-size: 9px;
   color: $white;
 }
 
@@ -977,7 +977,7 @@ p.capolettera:first-of-type::first-letter {
 }
 
 #playlist {
-  font-size: 1.11rem;
+  font-size: 1rem;
   padding: 0 10px;
   list-style: none;
   li {
@@ -1237,7 +1237,7 @@ input:checked + .slider {
 .panel-content {
   padding: 20px;
   color: $white;
-  font-size: 1.11rem;
+  font-size: 1rem;
 }
 
 .sliding-panel.open {
@@ -1322,11 +1322,10 @@ input:checked + .slider {
 
 #spartiti_row {
   width: 100%;
-  max-width: 580px;
+  max-width: 600px;
 
   > div {
-    max-width: 580px;
-    font-size: 1.11rem;
+    font-size: 0.95rem;
     transition: box-shadow 0.5s ease;
   }
 
@@ -1412,7 +1411,8 @@ input:checked + .slider {
       margin: 0;
     }
   }
-  #playlist {
+  #playlist,
+  .panel-content {
     font-size: 0.89rem;
   }
   #gondoliere {
