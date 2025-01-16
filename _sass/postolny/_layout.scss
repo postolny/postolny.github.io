@@ -901,7 +901,7 @@ p.capolettera:first-of-type::first-letter {
   gap: 5px;
 }
 .value {
-  font-size: 8px;
+  font-size: 9px;
   width: 22px;
   color: $white;
 }
@@ -977,7 +977,7 @@ p.capolettera:first-of-type::first-letter {
 }
 
 #playlist {
-  font-size: 1rem;
+  font-size: 0.9em;
   padding: 0 10px;
   list-style: none;
   li {
@@ -1237,7 +1237,7 @@ input:checked + .slider {
 .panel-content {
   padding: 20px;
   color: $white;
-  font-size: 1rem;
+  font-size: 0.85em;
 }
 
 .sliding-panel.open {
@@ -1325,7 +1325,7 @@ input:checked + .slider {
   max-width: 600px;
 
   > div {
-    font-size: 0.95rem;
+    font-size: 0.85em;
     transition: box-shadow 0.5s ease;
   }
 
@@ -1402,7 +1402,7 @@ input:checked + .slider {
 @media screen and (max-width: 768px) {
   #spartiti_row {
     > div {
-      font-size: 0.89rem;
+      font-size: 0.75em;
     }
     ul {
       padding: 0;
@@ -1411,9 +1411,11 @@ input:checked + .slider {
       margin: 0;
     }
   }
-  #playlist,
+  #playlist {
+    font-size: 0.8em;
+  }
   .panel-content {
-    font-size: 0.89rem;
+    font-size: 0.75em;
   }
   #gondoliere {
     width: 80px;
