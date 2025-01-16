@@ -1402,7 +1402,7 @@ input:checked + .slider {
 @media screen and (max-width: 768px) {
   #spartiti_row {
     > div {
-      font-size: 0.75em;
+      font-size: 0.8em;
     }
     ul {
       padding: 0;
@@ -1411,12 +1411,11 @@ input:checked + .slider {
       margin: 0;
     }
   }
-  #playlist {
+  #playlist,
+  .panel-content {
     font-size: 0.8em;
   }
-  .panel-content {
-    font-size: 0.75em;
-  }
+  
   #gondoliere {
     width: 80px;
     height: 53px;
