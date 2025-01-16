@@ -10,13 +10,16 @@ body {
   padding: 0;
 }
 
-main {
-  font-family: $main-primary;
-  font-size: 17px;
+html {
+  font-family: serif-primary;
+  font-size: 18px;
 
   @media (min-width: 600px) {
-    font-size: 18px;
+    font-size: 20px;
   }
+}
+
+main {
   h1 {
     margin: 3rem 0;
     @media (max-width: 768px) {
