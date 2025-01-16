@@ -43,6 +43,8 @@ libri:
         url: /mednyj-zub/
       - page: Музыкант и роза
         url: /muzykant-i-roza/
+      - page: Пять музыкантов и роза
+        url: /pyat-muzykantov-i-roza/
   - titolo: Притчи
     subfolderitems:
       - page: Пиявка
