@@ -46,7 +46,7 @@ main {
   padding-left: 20px;
   float: left;
   line-height: $nav-height;
-  font-size: 1.3em;
+  font-size: 1em;
 
   a,
   a:visited {
@@ -323,6 +323,8 @@ nav {
     display: flex;
     align-items: center;
     width: max-content;
+    font-family: $serif-primary;
+    font-size: 14px;
   }
 }
 
@@ -353,6 +355,8 @@ a:hover .footer-icon--red svg {
 .footer-copyright {
   text-align: center;
   padding: 10px;
+  font-family: $serif-primary;
+  font-size: 14px;
 }
 
 .footer {

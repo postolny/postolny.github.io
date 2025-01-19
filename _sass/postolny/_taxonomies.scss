@@ -23,7 +23,6 @@
       color: $white;
       text-decoration: none;
       transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-      height: 2rem;
 
       display: flex;
       justify-content: center;
@@ -36,10 +35,11 @@
     }
   }
   .tags-clouds a {
-    padding: 0 0.5rem;
+    padding: 0.3rem 0.5rem;
   }
   .categories-clouds a {
-    width: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
   &-list-wrap {
     margin-top: 50px;
