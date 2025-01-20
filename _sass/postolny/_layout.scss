@@ -16,7 +16,12 @@ main {
   max-width: 1200px;
 }
 
+.banner {
+  position: relative;
+}
+
 .banner img {
+  display: block;
   width: 100%;
   height: auto;
   margin: 0;
@@ -1404,6 +1409,17 @@ input:checked + .slider {
 }
 
 @media screen and (max-width: 768px) {
+  .banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+    pointer-events: none;
+  }
   #spartiti_row {
     > div {
       font-size: 0.85em;
