@@ -24,6 +24,7 @@ pre {
 pre code {
   background-color: transparent;
   color: inherit;
+  font-size: 100%;
   padding: 0;
 }
 
@@ -63,7 +64,7 @@ pre code {
   left: 0.3rem;
   background-color: $grey-4;
   color: $default-tint;
-  font-family: $sans-serif;
+  font-family: $font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -78,7 +79,7 @@ pre code {
   left: 0.3rem;
   background-color: $grey-4;
   color: $default-tint;
-  font-family: $sans-serif;
+  font-family: $font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -93,7 +94,7 @@ pre code {
   left: 0.3rem;
   background-color: $grey-4;
   color: $default-tint;
-  font-family: $sans-serif;
+  font-family: $font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -108,7 +109,7 @@ pre code {
   left: 0.3rem;
   background-color: $grey-4;
   color: $default-tint;
-  font-family: $sans-serif;
+  font-family: $font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -123,7 +124,7 @@ pre code {
   left: 0.3rem;
   background-color: $grey-4;
   color: $default-tint;
-  font-family: $sans-serif;
+  font-family: $font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;

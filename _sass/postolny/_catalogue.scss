@@ -12,7 +12,7 @@
 
   &-pinned {
     color: $default-tint;
-    font-family: $serif-secondary;
+    font-family: $font-secondary;
     letter-spacing: 0.5px;
     font-size: 16px;
     background: url(/assets/pinned.png) no-repeat center left;
@@ -24,7 +24,7 @@
 
   &-time {
     color: $default-tint;
-    font-family: $serif-secondary;
+    font-family: $font-secondary;
     letter-spacing: 0.5px;
     font-size: 16px;
     @media (max-width: 768px) {
@@ -35,7 +35,7 @@
   &-title {
     color: $default-shade;
     display: block;
-    font-family: $sans-serif;
+    font-family: $font-headings;
     font-weight: 700;
     margin: 0.5rem 0;
     a {

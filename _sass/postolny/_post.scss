@@ -5,7 +5,7 @@
   .tags-title,
   .categories-title {
     color: $default-tint;
-    font-family: $serif-secondary;
+    font-family: $font-secondary;
     letter-spacing: 0.5px;
     text-align: center;
     font-size: 16px;
@@ -35,7 +35,7 @@
 
   &-title {
     color: $default-shade;
-    font-family: $sans-serif;
+    font-family: $font-headings;
     text-align: center;
   }
 
@@ -54,7 +54,7 @@
     + em {
       color: $default-tint;
       display: block;
-      font-family: sans-serif;
+      font-family: $font-captions;
       font-style: normal;
       text-align: center;
       font-size: 16px;

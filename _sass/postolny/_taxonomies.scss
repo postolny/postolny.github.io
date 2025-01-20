@@ -3,13 +3,13 @@
   &-header {
     &-title {
       color: $default-shade;
-      font-family: $sans-serif;
+      font-family: $font-tags;
       text-align: center;
     }
   }
 
   &-clouds {
-    font-family: $sans-serif;
+    font-family: $font-tags;
     font-size: 16px;
     display: flex;
     justify-content: center;

@@ -23,7 +23,7 @@ main {
 }
 
 .navigation {
-  font-family: $serif-primary;
+  font-family: $font-primary;
   height: $nav-height;
   background: $nav-background;
   box-shadow: 0 5px 30px #000;
@@ -46,7 +46,7 @@ main {
   padding-left: 20px;
   float: left;
   line-height: $nav-height;
-  font-size: 1em;
+  font-size: 1.1em;
 
   a,
   a:visited {
@@ -323,7 +323,7 @@ nav {
     display: flex;
     align-items: center;
     width: max-content;
-    font-family: $serif-primary;
+    font-family: $font-primary;
     font-size: 14px;
   }
 }
@@ -355,12 +355,12 @@ a:hover .footer-icon--red svg {
 .footer-copyright {
   text-align: center;
   padding: 10px;
-  font-family: $serif-primary;
+  font-family: $font-primary;
   font-size: 14px;
 }
 
 .footer {
-  font-family: $serif-secondary;
+  font-family: $font-secondary;
   background-color: $default-shade;
   color: $lightGray;
   box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.4);
@@ -641,7 +641,7 @@ a:hover .footer-icon--red svg {
   position: relative;
   padding: 10px 20px;
   color: $white;
-  font-family: $serif-secondary;
+  font-family: $font-secondary;
   font-size: 14px;
   background: $default-shade;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -712,8 +712,8 @@ a:hover .footer-icon--red svg {
     font-size: 4.8em;
     font-weight: normal;
     float: left;
-    margin: 0.14em 0.1em -0.1em 0;
-    line-height: 0.85;
+    margin: 0.10em 0.1em -0.1em 0;
+    line-height: 0.89;
     color: #ff2400;
     text-shadow: none;
   }
@@ -724,8 +724,8 @@ a:hover .footer-icon--red svg {
       font-size: 5em;
       font-weight: bold;
       float: left;
-      margin: 0.15em 0.1em -0.1em 0;
-      line-height: 0.65;
+      margin: 0.12em 0.1em -0.1em 0;
+      line-height: 0.66;
       color: #c30;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 #fff;
     }
@@ -1329,7 +1329,7 @@ input:checked + .slider {
   max-width: 600px;
 
   > div {
-    font-size: 0.85em;
+    font-size: 0.9em;
     transition: box-shadow 0.5s ease;
   }
 
