@@ -428,6 +428,9 @@ table:not(.highlight table) {
 }
 
 .proverbi .page h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   box-shadow: 5px 5px 0 $green;
   background: $default-shade;
@@ -435,7 +438,6 @@ table:not(.highlight table) {
   margin: 0 auto;
   width: 1.4em;
   height: 1.4em;
-  text-align: center;
 }
 
 .lightbox {
