@@ -1,8 +1,19 @@
 @font-face {
   font-family: 'PeterIvanowitsch';
-  src: url('/fonts/PeterIvanowitsch.woff2') format('woff2'),
-       url('/fonts/PeterIvanowitsch.woff') format('woff');
+  src: url('/fonts/peter-ivanowitsch.woff2') format('woff2'),
+       url('/fonts/peter-ivanowitsch.woff') format('woff')
+       url('/fonts/peter-ivanowitsch.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora.woff2') format('woff2'),
+       url('/fonts/lora.woff') format('woff')
+       url('/fonts/lora.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }

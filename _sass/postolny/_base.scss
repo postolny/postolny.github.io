@@ -11,7 +11,7 @@ body {
 }
 
 html {
-  font-family: $font-primary;
+  font-family: 'Lora', 'Georgia', 'Times New Roman', 'Palatino Linotype', 'Garamond', serif;
   font-size: 16px;
 
   @media (min-width: 600px) {
@@ -121,7 +121,6 @@ sup {
 
 main {
   p a {
-    font-weight: 600;
     transition: color 0.2s linear;
 
     &:hover,
@@ -136,7 +135,6 @@ main {
 
   ul li {
     a {
-      font-weight: 600;
       transition: color 0.2s linear;
 
       &:hover,
@@ -151,7 +149,6 @@ main {
   }
 
   ol li a {
-    font-weight: 600;
     transition: color 0.2s linear;
 
     &:hover,
@@ -161,7 +158,6 @@ main {
   }
 
   table td a {
-    font-weight: 600;
     transition: color 0.2s linear;
 
     &:hover,
@@ -170,7 +166,6 @@ main {
     }
   }
   table td a {
-    font-weight: 600;
     transition: color 0.2s linear;
 
     &:hover,
