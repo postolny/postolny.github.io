@@ -8,7 +8,7 @@ categories:
 tags: [Музыка, Software]
 ---
 
-MuseScore – бесплатный нотный редактор, в котором можно набрать практически любой нотный текст. Именно в MuseScore я набрал [мои сочинения]({{ site.baseurl }}/indice). На [официальном сайте](https://musescore.org/ru){:target="_blank" rel="noopener noreferrer"} программы имеется подробное [руководство](https://musescore.org/ru/handbook){:target="_blank" rel="noopener noreferrer"} по её использованию, а также обучающие [видеоматериалы](https://musescore.org/ru/tutorials){:target="_blank" rel="noopener noreferrer"}. Но некоторые вещи хотелось бы рассмотреть подробнее, что я и постараюсь сделать в этой статье.
+MuseScore – бесплатный нотный редактор, в котором можно набрать практически любой нотный текст. Именно в MuseScore я набрал [мои сочинения]({{ site.baseurl }}/musica/). На [официальном сайте](https://musescore.org/ru){:target="_blank" rel="noopener noreferrer"} программы имеется подробное [руководство](https://musescore.org/ru/handbook){:target="_blank" rel="noopener noreferrer"} по её использованию, а также обучающие [видеоматериалы](https://musescore.org/ru/tutorials){:target="_blank" rel="noopener noreferrer"}. Но некоторые вещи хотелось бы рассмотреть подробнее, что я и постараюсь сделать в этой статье.
 
 <div id="shadow-container">
   <div id="wrapper-toc">
