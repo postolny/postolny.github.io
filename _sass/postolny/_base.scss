@@ -200,6 +200,7 @@ main {
 }
 
 .footnote {
+  font-weight: normal;
   transition: color 0.25s ease-in-out;
   &:before {
     content: "[";
@@ -224,6 +225,10 @@ main {
   p {
     margin: 0 !important;
   }
+}
+
+.reversefootnote {
+  font-weight: normal;
 }
 
 blockquote {
