@@ -17,3 +17,13 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora-bold.woff2') format('woff2'),
+       url('/fonts/lora-bold.woff') format('woff'),
+       url('/fonts/lora-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

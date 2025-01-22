@@ -121,6 +121,7 @@ sup {
 
 main {
   p a {
+    font-weight: 600;
     transition: color 0.2s linear;
 
     &:hover,
@@ -135,6 +136,7 @@ main {
 
   ul li {
     a {
+      font-weight: 600;
       transition: color 0.2s linear;
 
       &:hover,
@@ -149,6 +151,7 @@ main {
   }
 
   ol li a {
+    font-weight: 600;
     transition: color 0.2s linear;
 
     &:hover,
@@ -158,6 +161,7 @@ main {
   }
 
   table td a {
+    font-weight: 600;
     transition: color 0.2s linear;
 
     &:hover,
@@ -166,6 +170,7 @@ main {
     }
   }
   table td a {
+    font-weight: 600;
     transition: color 0.2s linear;
 
     &:hover,
