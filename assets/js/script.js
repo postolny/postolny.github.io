@@ -1373,17 +1373,17 @@ $(function() {
     }
   });
 
-  var Mwidth = 960;
+  var mWidth = 798;
   var headerHeight = $(".navigation").height(); // высота
-  var TopPrev = $(window).scrollTop();
+  var topPrev = $(window).scrollTop();
 
   $(window).on("scroll", function() {
-    if ($(window).width() > Mwidth) {
-      var TopCurrent = $(window).scrollTop();
+    if ($(window).width() > mWidth) {
+      var topCurrent = $(window).scrollTop();
 
-      if (TopCurrent < TopPrev) {
+      if (topCurrent < topPrev) {
         // вверх
-        if (TopCurrent > 0 && $(".navigation").hasClass("fixed-menu")) {
+        if (topCurrent > 0 && $(".navigation").hasClass("fixed-menu")) {
           $(".navigation").addClass("visible-scroll-up");
         } else {
           $(".navigation").removeClass("visible-scroll-up fixed-menu");
@@ -1392,26 +1392,26 @@ $(function() {
         // вниз
         $(".navigation").removeClass("visible-scroll-up");
         if (
-          TopCurrent > headerHeight &&
+          topCurrent > headerHeight &&
           !$(".navigation").hasClass("fixed-menu")
         ) {
           $(".navigation").addClass("fixed-menu");
         }
       }
 
-      TopPrev = TopCurrent;
+      topPrev = topCurrent;
     }
   });
 
   $(window).on("resize", function() {
-    // если ширина окна <= 960
-    if ($(window).width() <= Mwidth) {
+    // если ширина окна <= 798
+    if ($(window).width() <= mWidth) {
       // Удаляем все классы на мобильных устройствах
       $(".navigation").removeClass("visible-scroll-up fixed-menu");
     } else {
       // иначе пересчитываем высоту и текущую позицию скролла для ПК
       headerHeight = $(".navigation").height();
-      TopPrev = $(window).scrollTop();
+      topPrev = $(window).scrollTop();
     }
   });
 
