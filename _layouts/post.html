@@ -34,7 +34,9 @@ layout: default
       {% endif %}
       <div class="tags-clouds">
         {% for tag in page.tags %}
-        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">
+          {{ tag | replace: '-', ' ' }}
+        </a>
         {% endfor %}
       </div>
     </div>
@@ -74,7 +76,9 @@ layout: default
     </div>
     <div class="tags-clouds">
       {% for tag in page.tags %}
-      <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+      <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">
+        {{ tag | replace: '-', ' ' }}
+      </a>
       {% endfor %}
     </div>
   </div>
