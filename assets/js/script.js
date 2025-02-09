@@ -168,6 +168,8 @@ $(function() {
     if (lettere[lettereIndex]) {
       var snd = new Audio("/audio/" + lettere[lettereIndex] + ".mp3");
       snd.play();
+      scrollToAnchor(lettereIndex);
+      return false;
     }
   });
 
@@ -180,7 +182,7 @@ $(function() {
 
     // Если есть ссылка "назад"
     if ($(this).find(".back-to-text").length === 0) {
-      $(this).append(' <a href="#sup-' + noteNum + '" class="back-to-text" data-note="' + noteNum + '">↑</a>');
+      $(this).append(' <a href="#sup-' + noteNum + '" class="back-to-text" data-note="' + noteNum + '">↩</a>');
     }
   });
 
