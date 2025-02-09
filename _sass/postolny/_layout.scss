@@ -698,7 +698,8 @@ a:hover .footer-icon--red svg {
 
   .postilla {
     padding: 10px 0 0;
-    font-size: 14px;
+    font-family: $font-primary;
+    font-size: 13px;
 
     &:before {
       content: "";

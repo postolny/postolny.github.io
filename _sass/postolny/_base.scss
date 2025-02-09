@@ -214,7 +214,8 @@ main {
 }
 
 .footnotes {
-  font-size: 14px;
+  font-family: $font-primary;
+  font-size: 13px;
   &:before {
     content: "";
     display: block;
@@ -229,6 +230,24 @@ main {
 
 .reversefootnote {
   font-weight: normal;
+}
+
+sup[id^="sup-"] {
+  cursor: pointer;
+  color: $green;
+  transition: color 0.25s ease-in-out;
+
+  &::before {
+    content: "[";
+  }
+
+  &::after {
+    content: "]";
+  }
+
+  &:hover {
+    color: $hover-color;
+  }
 }
 
 blockquote {

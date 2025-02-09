@@ -120,51 +120,94 @@ $(function() {
 
   const p1 = "p";
 
+  // Прокрутка к якорю и сноски в постах
   function scrollToAnchor(anchor) {
-    // Декодируем якоря (для работы с кириллицей)
+    if (!anchor.startsWith("#")) return;
+
     const decodedAnchor = decodeURIComponent(anchor);
+    const safeAnchor = decodedAnchor.replace(/:/g, '\\:');
+    const target = $(safeAnchor);
 
-    // отменяем автоматическую прокрутку браузера
-    window.scrollTo(0, 0);
+    if (target.length) {
+      const currentScroll = $(window).scrollTop();
+      const offsetDown = 15;
+      const offsetUp = 85;
 
-    const target = $(decodedAnchor);
+      const targetOffset = target.offset().top;
+      const offset = targetOffset > currentScroll ? offsetDown : offsetUp;
 
-    $("html, body").animate({
-      scrollTop: target.offset().top,
-    }, "fast");
+      $('html, body').animate({
+        scrollTop: target.offset().top - offset
+      }, 800);
 
-    // history.pushState(null, null, decodedAnchor);
-    history.replaceState(null, null, decodedAnchor);
+      history.replaceState(null, null, decodedAnchor);
+    } else {
+      console.warn("Элемент с ID", decodedAnchor, "не найден.");
+    }
   }
 
-  // Проверка хэша при загрузке страницы и прокрутка
+  // Хэш при загрузке страницы
   const hash = window.location.hash;
   if (hash) {
-    // отменяем автоматическую прокрутку браузера
     window.scrollTo(0, 0);
-
-    // устанавливаем задержку для полной загрузки DOM
-    setTimeout(function() {
-      scrollToAnchor(hash);
-    }, 100);
+    setTimeout(() => scrollToAnchor(hash), 300);
   }
 
-  // Прокрутка при клике на ссылку на странице тегов и TOC
-  $(".tags a, .toc a").on("click", function() {
-    const href = $.attr(this, "href");
-    scrollToAnchor(href);
-    return false;
+  $(".tags a, .toc a, a.footnote, a.reversefootnote").on("click", function(e) {
+    const href = $(this).attr("href");
+
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      scrollToAnchor(href);
+    }
   });
 
-  // Прокрутка при клике на ссылку на странице категорий
-  $(".categories a").on("click", function() {
-    var lettereIndex = $(this).attr("href");
-    var snd = new Audio("/audio/" + lettere[lettereIndex] + ".mp3");
-    snd.play();
-    const href = $.attr(this, "href");
-    scrollToAnchor(href);
-    return false;
+  $(".categories a").on("click", function(e) {
+    const lettereIndex = $(this).attr("href");
+
+    if (lettere[lettereIndex]) {
+      var snd = new Audio("/audio/" + lettere[lettereIndex] + ".mp3");
+      snd.play();
+    }
   });
+
+  // Сноски на страницах
+  $(".postilla ol li").each(function() {
+    let noteNum = $(this).index() + 1; // Номер сноски
+    let noteId = "note-" + noteNum; // id для li
+
+    $(this).attr("id", noteId); // Устанавливаем id для li
+
+    // Если есть ссылка "назад"
+    if ($(this).find(".back-to-text").length === 0) {
+      $(this).append(' <a href="#sup-' + noteNum + '" class="back-to-text" data-note="' + noteNum + '">↑</a>');
+    }
+  });
+
+  // Прокрутка от sup к ol
+  $("sup").click(function(e) {
+    e.preventDefault();
+    let noteId = "#note-" + $(this).attr("id").replace("sup-", ""); // id для li
+    smoothScroll(noteId, noteId, 15);
+  });
+
+  // Прокрутка от ol к sup
+  $(".postilla .back-to-text").click(function(e) {
+    e.preventDefault();
+    let noteNum = $(this).data("note");
+    let supId = "#sup-" + noteNum; // id для sup
+    smoothScroll(supId, supId, 85);
+  });
+
+  function smoothScroll(target, hash, offset = 0) {
+    const $target = $(target);
+    if ($target.length) {
+      $('html, body').animate({
+        scrollTop: $target.offset().top - offset
+      }, 800);
+      history.replaceState(null, null, hash);
+    }
+  }
 
   $("#search").keyup(function() {
     var value = this.value.toLowerCase().trim();
@@ -1139,7 +1182,7 @@ $(function() {
       updateRandomElement();
     }, 1500);
   });
-  
+
 
   $('#rt').click(function() {
     $("#pappagallo").addClass("rt");
@@ -1256,53 +1299,12 @@ $(function() {
   function anlocude() {
     const currdn = $(location).attr('href').split('/')[2];
     if (currdn !== gfd()) {
-        document.body.innerHTML = "";
+      document.body.innerHTML = "";
     }
   }
 
   var currentYear = new Date().getFullYear();
   $('#currentYear').html("&copy; " + currentYear + " ");
-
-  $('a.footnote').on('click', function(e) {
-    e.preventDefault();
-
-    var target = $(this).attr('href'); // получаем ID сноски
-
-    // Экранируем символ ':' в ID
-    var targetElement = $(target.replace(/:/g, '\\:'));
-
-    // Проверяем, существует ли элемент с данным ID
-    if (targetElement.length) {
-      // Плавная прокрутка к элементу с сноской
-      $('html, body').animate({
-        scrollTop: targetElement.offset().top - 15
-      }, 800, function() {
-        // Обновляем хеш в URL
-        window.location.hash = target;
-      });
-    } else {
-      console.log('Элемент с id ' + target + ' не найден!');
-    }
-  });
-
-  // Обработка клика по стрелке "назад" для возвращения к сноске
-  $('a.reversefootnote').on('click', function(e) {
-    e.preventDefault();
-
-    const footnoteRefId = $(this).attr('href'); // ID сноски
-    const footnoteSelector = footnoteRefId.replace(/:/g, '\\:');
-    const targetElement = $(footnoteSelector);
-
-    if (targetElement.length) {
-      // Прокручиваем страницу обратно к сноске
-      $('html, body').animate({
-        scrollTop: targetElement.offset().top - 85
-      }, 500, function() {
-        // Обновляем хеш в URL
-        window.location.hash = footnoteRefId;
-      });
-    }
-  });
 
   $('figure.highlight, .highlighter-rouge[class^="language-"]:not(code)').each(function() {
     if (!$(this).find('.copy-btn').length) {
@@ -1442,11 +1444,11 @@ $(function() {
     });
   }
   if (document.fonts) {
-    document.fonts.load('1em PeterIvanowitsch').then(function (fonts) {
+    document.fonts.load('1em PeterIvanowitsch').then(function(fonts) {
       if (!fonts.length) {
         $('main').addClass('fallback-font');
       }
-    }).catch(function () {
+    }).catch(function() {
       $('main').addClass('fallback-font');
     });
   } else {

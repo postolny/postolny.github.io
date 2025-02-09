@@ -78,7 +78,7 @@ permalink: /preparativi/
     <div class="columns">
       <div class="column">
         <p>Per Anna, le cose non erano così facili.</p>
-        <p>Essa usciva ora quasi sempre con l'Albino, che suonava la fisarmonica e con qualcuno dei ragazzi più piccoli della carovana<sup>1</sup>.</p>
+        <p>Essa usciva ora quasi sempre con l'Albino, che suonava la fisarmonica e con qualcuno dei ragazzi più piccoli della carovana<sup id="sup-1"><a href="#note-1">1</a></sup>.</p>
         <p>La sua voce chiara e dolce, ma esile, si perdeva nel frastuono del traffico, ma Anna cantava lo stesso. Nelle vie più silenziose il suo canto faceva apparire gente alle finestre e le monete fioccavano. L'Albino, appoggiato ad un muro a suonare il suo strumento, sorvegliava senza parere ogni gesti di Anna e dei bambini: pareva quasi che contasse le monete che cadevano, e quando gliele chiedeva, non ritirava la mano prima che loro tasche fossero ben vuoti.</p>
       </div>
       <div class="column inn">
@@ -249,12 +249,3 @@ permalink: /preparativi/
 <div class="btn_container">
   <a href="{{ '/e-adesso-avanti/' | prepend: site.baseurl }}" class="btn">Глава XIX. А теперь вперёд!</a>
 </div>
-<script>
-document.ondragstart = function() { return false };
-document.oncontextmenu = function(e) { return false };
-document.onkeydown = function(e) {
-  if (e.ctrlKey && (e.keyCode === 65 || e.keyCode === 67 || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 80 || e.keyCode === 83 || e.keyCode === 85 || e.keyCode === 86 || e.keyCode === 117)) { return false; }
-  if (e.keyCode == 18 || e.keyCode == 123) { return false; }
-  if ((e.ctrlKey || e.metaKey || e.altKey) && (e.key === "p" || e.charCode === 16 || e.charCode === 112)) { return false; }
-};
-</script>
