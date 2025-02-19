@@ -27,6 +27,7 @@ $(function() {
   var giornoSettimana = now.getDay();
   var giornoMese = now.getDate();
   var mese = now.getMonth();
+  const clickSound = new Audio("/audio/click.mp3");
 
   var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
@@ -734,8 +735,156 @@ $(function() {
       });
       $('.score').html("Правильных ответов <strong>" + correctAnswers + "</strong> из <strong>" + total + "</strong>");
     } else {
-      $('.score').text("Нужно ответить на все вопросы!");
+      $('.score').text("Ответьте на все вопросы!");
     }
+  });
+
+  $(".domanda").on("change", 'input[type="radio"]', function() {
+    clickSound.play();
+  });
+
+  var currentQuestion = 0;
+  var correctAnswers = 0;
+  var totalQuestions = $(".quiz-question").length;
+  var answersSummary = [];
+
+  $(".start-quiz").click(function() {
+    $("html").css("overflow", "hidden");
+    $("body,.navigation").css("paddingRight", scrollbarWidth);
+
+    $(".quiz-container").show();
+    $(".summary").hide();
+    $(".quiz-question").removeClass("active").hide().eq(0).addClass("active").show();
+    currentQuestion = 0;
+    correctAnswers = 0;
+    answersSummary = [];
+    $(".quiz-score").text("0/" + totalQuestions);
+    $(".next-question").prop("disabled", true);
+    $(".check-answer").prop("disabled", false);
+  });
+
+  $(".close-btn").on("click", function() {
+    $("html").css("overflow", "auto");
+    $("body,.navigation").css("paddingRight", 0);
+    $(".quiz-container").hide();
+    resetQuiz();
+  });
+
+  function resetQuiz() {
+    $(".quiz-question").removeClass("active").hide();
+    $(".quiz-question").first().addClass("active").show();
+    $(".summary").hide();
+    $(".results-list").empty();
+    $(".quiz-score").text("0/3");
+    $("input[type=radio]").prop("checked", false);
+    $(".quiz-message").empty();
+    correctAnswers = 0;
+    currentQuestion = 0;
+    answersSummary = [];
+    $(".next-question").prop("disabled", true);
+    $(".check-answer").prop("disabled", false);
+  }
+
+  $(".check-answer").click(function() {
+    var question = $(".quiz-question").eq(currentQuestion);
+    var selected = question.find("input:checked");
+    var msgBox = question.find(".quiz-message");
+
+    msgBox.text("").removeClass("answer-correct answer-incorrect");
+
+    if (selected.length === 0) {
+      msgBox.text("Выберите ответ!").addClass("answer-incorrect");
+      return;
+    }
+
+    var isCorrect = selected.is("[data-correct]");
+    var explanation = selected.attr("data-explanation") || "";
+    var correctAnswer = question.find("input[data-correct]").parent().text().trim();
+    var userAnswer = selected.parent().text().trim();
+    var questionText = question.find("p").text();
+
+    const correctSound = new Audio("/audio/correct.mp3");
+    const wrongSound = new Audio("/audio/wrong.mp3");
+
+    if (isCorrect) {
+      msgBox.text("Правильно!").addClass("answer-correct");
+      correctSound.play();
+      correctAnswers++;
+    } else {
+      msgBox.text("Неправильно! Правильный ответ: " + correctAnswer).addClass("answer-incorrect");
+      wrongSound.play();
+    }
+
+    answersSummary.push({
+      question: questionText,
+      userAnswer: userAnswer,
+      correctAnswer: correctAnswer,
+      explanation: explanation
+    });
+
+    $(".quiz-score").text(correctAnswers + "/" + totalQuestions);
+    $(this).prop("disabled", true);
+    $(".next-question").prop("disabled", false);
+  });
+
+  $(".next-question").click(function() {
+    if ($(this).prop("disabled")) return;
+
+    currentQuestion++;
+
+    if (currentQuestion < totalQuestions) {
+      $(".quiz-question").removeClass("active").hide().eq(currentQuestion).addClass("active").show();
+      $(".next-question").prop("disabled", true);
+      $(".check-answer").prop("disabled", false);
+    } else {
+      showSummary();
+    }
+  });
+
+  function showSummary() {
+    $(".quiz-question").removeClass("active").hide();
+    $(".summary").show();
+    var resultsList = $(".results-list").empty();
+
+    answersSummary.forEach(function(ans) {
+      var questionBlock = $("<div>").append("<p class='summary-question'>" + ans.question + "</p>");
+
+      $(".quiz-question").each(function() {
+        var questionText = $(this).find("p").text();
+        if (questionText === ans.question) {
+          $(this).find("input[type='radio']").each(function() {
+            var answerText = $(this).parent().text().trim();
+            var isCorrect = $(this).is("[data-correct]");
+            var explanation = $(this).attr("data-explanation") || "";
+            var isChecked = $(this).is(":checked");
+
+            var icon = isCorrect ? esattoIcon : sbagliatoIcon;
+            var explanationText = explanation ? " [" + explanation + "]" : "";
+            var userAnswer = isChecked ? " <strong>(Ваш ответ)</strong>" : "";
+            questionBlock.append("<p>" + icon + " " + answerText + userAnswer + explanationText + "</p>");
+          });
+        }
+      });
+
+      resultsList.append(questionBlock);
+    });
+  }
+
+  $(".restart-quiz").click(function() {
+    $(".summary").hide();
+    $(".quiz-question").removeClass("active").hide().eq(0).addClass("active").show();
+    $(".quiz-score").text("0/" + totalQuestions);
+    correctAnswers = 0;
+    currentQuestion = 0;
+    $("input[type='radio']").prop("checked", false);
+    $(".quiz-message").text("").removeClass("answer-correct answer-incorrect");
+    answersSummary = [];
+    $(".next-question").prop("disabled", true);
+    $(".check-answer").prop("disabled", false);
+  });
+
+  $(".quiz-question").on("change", 'input[type="radio"]', function() {
+    clickSound.play();
   });
 
   const p6 = "th";

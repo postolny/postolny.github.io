@@ -1,0 +1,167 @@
+<div id="start-quiz-container"><button class="start-quiz">Начать викторину</button></div>
+<div class="quiz-container">
+  <div class="quiz-header">Викторина</div>
+  <span class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2C6.4889971 2 2 6.4889971 2 12C2 17.511003 6.4889971 22 12 22C17.511003 22 22 17.511003 22 12C22 6.4889971 17.511003 2 12 2 z M 12 4C16.430123 4 20 7.5698774 20 12C20 16.430123 16.430123 20 12 20C7.5698774 20 4 16.430123 4 12C4 7.5698774 7.5698774 4 12 4 z M 8.7070312 7.2929688L7.2929688 8.7070312L10.585938 12L7.2929688 15.292969L8.7070312 16.707031L12 13.414062L15.292969 16.707031L16.707031 15.292969L13.414062 12L16.707031 8.7070312L15.292969 7.2929688L12 10.585938L8.7070312 7.2929688 z" />
+    </svg></span>
+  <div class="quiz-score">0/3</div>
+  <div id="quiz-wrapper">
+    <div class="quiz-question active">
+      <p>1. В каком музыкальном термине спрятался знак сложения?</p>
+      <label class="radio"><input type="radio" name="q1" data-explanation="Музыкальный термин «a mezza voce» означает «вполголоса», где прилагательное «mezzo» означает «половинный» («mezza» имеет окончание <em>a</em>, поскольку согласуется с существительным женского рода «voce»)."><span>a mezza voce</span></label>
+      <label class="radio"><input type="radio" name="q1" data-explanation="Музыкальный термин «poco rallentando» означает «немного замедлить», где «poco» переводится как «немного, чуть», а «rallentando» – это герундий глагола «rallentare», одно из значений которого – «замедлять» (например, «rallentare il tempo» – «замедлить темп»)."><span>poco rallentando</span></label>
+      <label class="radio"><input type="radio" name="q1" data-correct data-explanation="Термин «più lento» означает «более медленно» (можно также уточнить: «un po' più lento» – «немного помедленней»), где наречие  «più» – «немного» определяет другое наречие «lento» – «медленней». И вот это наречие «più» может также иметь значение знака сложения в математике, например: due più due fa quattro (due più due è uguale a quattro) – два плюс два равно четыре."><span>più lento</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>2. В каком музыкальном термине спрятался знак вычитания?</p>
+      <label class="radio"><input type="radio" name="q2" data-explanation="Музыкальный указание «diminuendo» означает «постепенно уменьшая силу звука» («diminuendo» – это герундий глагола «diminuire» – «уменьшать, уменьшаться»)">
+        <span>diminuendo</span></label>
+      <label class="radio"><input type="radio" name="q2" data-correct data-explanation="Термин «meno mosso» переводится «менее оживлённо». Слово «mosso» представлено в итальянском языке разными частями речи и имеет различные значения, одно из которых – знак вычитания, например: quattro meno due fa due (quattro meno due è uguale a due) – четыре минус два равно два."><span>meno mosso</span></label>
+      <label class="radio"><input type="radio" name="q2" data-explanation="Музыкальный термин «senza pedale» переводится «без педали»."> <span>senza pedale</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>3. В музыке глагол «arpeggiare» означает «арпеджировать», то есть исполнять ноты аккорда последовательно. В каком переносном значении иногда употребляют глагол «arpeggiare»?</p>
+      <label class="radio"><input type="radio" name="q3" data-correct data-explanation="Из-за жеста, производимого рукой при игре на арфе; слово «воровать» переводится различно: rubare, svaligiare, scippare."><span>воровать</span></label>
+      <label class="radio"><input type="radio" name="q3" data-explanation="Переводится – spolverare."><span>смахивать пыль</span></label>
+      <label class="radio"><input type="radio" name="q3" data-explanation="Переводится – correre via, scappare, fuggire."> <span>убегать</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>4. В каком значении итальянцы обычно употребляют слово «coda»?</p>
+      <label class="radio"><input type="radio" name="q4" data-correct data-explanation="Именно «хвост»! Например, «la coda di un cane» – «хвост собаки». В музыке термин «coda» используется для обозначения заключительной части произведения. Правда, вопрос довольно неоднозначный, ведь это слово может, к примеру, относиться и к концу очереди в магазине: «parte finale di una fila» – «хвост (конец) очереди». Слово «coda» также может иметь ряд других значений."><span>хвост</span></label>
+      <label class="radio"><input type="radio" name="q4" data-explanation="Слово «итог» может быть переведено на итальянский различным образом в зависимости от контекста."><span>итог</span></label>
+      <label class="radio"><input type="radio" name="q4" data-explanation="Чаще всего переводится на итальянский как «fine» и это слово тоже используется как музыкальный термин, например: «da capo al fine» – «с начала до конца»."><span>конец</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>5. Обычно итальянцы употребляют слово «fermata»...</p>
+      <label class="radio"><input type="radio" name="q5" data-correct data-explanation="Если человек задаст вам такой вопрос: «Ti aspetto alla fermata dell'autobus, va bene?» – «А буду ждать тебя на остановке автобуса, хорошо?», то он непременно употребит слово «fermata»."><span>ожидая автобус</span></label>
+      <label class="radio"><input type="radio" name="q5" data-explanation="Если человек немного задумался и не понял вас, то он может вас перепросить: «Scusa, ero sovrappensiero (soprappensiero), che hai detto?» – «Прости, я задумался, что ты сказал?»"><span>чтобы сказать о человеке, который немного задумался</span></label>
+      <label class="radio"><input type="radio" name="q5" data-explanation="Да, коровы тут совсем ни при чём!"><span>на ферме, где отдыхают коровы</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>6. Как перевести фразу «sono allegro»?</p>
+      <label class="radio"><input type="radio" name="q6" data-correct data-explanation="Прилагательное «allegro» означает «весёлый, радостный, бодрый и даже подвыпивший в переносном смысле», а вовсе не быстрый. Существительное «allegrezza» имеет значение «радость, веселье», а возвратный глагол «allegrarsi» («rallegrarsi») – «радоваться, веселиться»."><span>я весёлый / я веселюсь</span></label>
+      <label class="radio"><input type="radio" name="q6" data-explanation="«Я проворный» по-итальянски можно сказать, например: «sono svelto», «я быстрый» – «sono veloce»."><span>я проворный / я быстрый</span></label>
+      <label class="radio"><input type="radio" name="q6" data-explanation="«Я холерик» по-итальянски будет «sono collerico»."> <span>я холерик</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>7. Все знают музыкальный термин «piano» – в каком значении часто его употребляют итальянцы?</p>
+      <label class="radio"><input type="radio" name="q7" data-explanation="Упоминаемое в одном из вариантов ответа слово «покой» может быть описано разными словами в зависимости от контекста. Если вы хотите отдохнуть, но вам кто-то досаждает, то возможно вы скажете ему: lasciami in pace! – оставь меня в покое! Здесь в значении «покой» выступает слово «pace». Это же слово употребляется в значении «мир»: Che la pace sia nel mondo! Пусть в мире будет мир!"><span>покой</span></label>
+      <label class="radio"><input type="radio" name="q7" data-correct data-explanation="Музыкальный термин «piano» употребляется в значении «тихо», однако в обиходе это слово часто употребляется в значении «этаж»: primo piano – второй этаж. Вы спросите: а почему собственно второй, ведь числительное «primo» означает «первый». Но я не ошибся и «первый этаж» по-итальянски будет «pianterreno». И это ещё не всё! Слово «piano» имеет также множество других значений, например, «медленно» – совсем как в русском."><span>этаж</span></label>
+      <label class="radio"><input type="radio" name="q7" data-explanation="Если человек немного глуховат (se una persona è un po' sorda), и все звуки для него кажутся тихими, то это не означает, что слово «piano» имеет какое-либо отношение к глухоте."><span>глухота</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>8. Указание в нотах «Da capo al fine» означает «С начала до слова fine (конец)». В каком ещё значении употребляется слово «capo»?</p>
+      <label class="radio"><input type="radio" name="q8" data-correct data-explanation="«Da capo al fine» дословно можно перевести как «С головы до конца». Таким образом начало это и есть голова. И вашего начальника, кстати, вы тоже можете смело назвать «capo»."><span>голова</span></label>
+      <label class="radio"><input type="radio" name="q8" data-explanation="Открытия бывают разные. Если, к примеру, нам нужно заново открыть Америку, то мы можем употребить глагол «riscopirire» – «открывать заново»: abbiamo bisogno di riscoprire l'America, но, увы, Америка уже давно открыта Христофором Колумбом: l'America fu scoperta da Cristoforo Colombo molto tempo fa, а чтобы сказать открытие Америки, употребим существительное «scoperta»: scoperta dell'America. Те же слова мы будем употреблять, если речь идёт о каком-нибудь научном открытии. Если вы хотите, к примеру, попросить кого-нибудь открыть окно, то возможно сделаете это так: fammi un favore, apri la finestra, употребив глагол «aprire» – «открывать». А об отрытии театра либо театрального сезона можно сказать так: l'apertura del teatro."><span>открытие</span></label>
+      <label class="radio"><input type="radio" name="q8" data-explanation="Что касается «вступления», то и оно может быть разным, а следовательно, и описано разными словами. Например, вступление в музыкальном произведении называется «интродукция» – «introduzione»."><span>вступление</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>9. Музыкальный термин «Presto» означает «быстро». В каком ещё значении употребляется это слово в итальянском языке?</p>
+      <label class="radio"><input type="radio" name="q9" data-correct data-explanation="Да, это правильный ответ: domani mi alzo presto – завтра мне рано вставать."><span>рано</span></label>
+      <label class="radio"><input type="radio" name="q9" data-explanation="Сразу подумаешь о времени: il tempo corre (vola) precipitosamente – время бежит (летит) стремительно. Или о мире: il mondo cambia precipitosamente – мир стремительно меняется. Стремительность здесь задаёт наречие «precipitosamente»."><span>стремительно</span></label>
+      <label class="radio"><input type="radio" name="q9" data-explanation="Когда говорят «просто», то на самом деле часто всё оказывается не так просто. И это слово тоже довольно непростое и употребляется оно при совершенно разных обстоятельствах. Например, мы можем сказать «это просто», если речь идёт о нетрудном деле. В этом случае мы скажем «è facile» – «это просто» или «è facilissimo», если это – проще не придумашь. Но если мы хотим описать причину, по которой, к примеру, мы что-то вдруг позабыли, то в этом случае значение слова «просто» несколько изменится: mi è semplicemente uscito di mente – у меня просто вылетело это из головы. Впрочем неречие semplicemente с глаголом essere тоже может иметь смысл простоты чего-либо."><span>просто</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>10. Музыкальный термин «Andante» означает темп в характере шага (andare – ходить). Может ли глагол «andare» иметь отношение к полётам на самолёте?</p>
+      <label class="radio"><input type="radio" name="q10"> <span>иногда</span></label>
+      <label class="radio"><input type="radio" name="q10" data-correct data-explanation="Чтобы понять, почему всё-таки глагол «andare» может иметь отношения к полётам, давайте вспомним об универсальности глагола «ходить» в русском языке. Русские знают, что ходить могут часы, ходить может транспорт... Вот сообразно такой же логике и употребляется глагол «andare» применительно к самолётам в итальянском языке: andare in aereo – летать на самолёте."><span>да</span></label>
+      <label class="radio"><input type="radio" name="q10"> <span>нет</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>11. «Crescendo» – этим термином в нотах указывают на постепенное усиление звучания. Переведите фразу «io cresco».</p>
+      <label class="radio"><input type="radio" name="q11" data-explanation="Взлетать или отрываться от земли – это глагол «decollare»: l'aereo è decollato – самолёт взлетел."><span>я взлетаю</span></label>
+      <label class="radio"><input type="radio" name="q11" data-explanation="Чтобы сказать «я говорю громче», употребим наречие «forte» – «громко» и определяющее его другое наречие «più»: parlo più forte."><span>я говорю громче</span></label>
+      <label class="radio"><input type="radio" name="q11" data-correct data-explanation="«Crescendo» – это герундий глагола «crescere» – «расти, выращивать», следовательно фраза «io cresco» будет означать «я расту». Я написал, что глагол «crescere» имеет значение «расти, выращивать» и возможно вы спростите как такое возможно – и расти и выращивать. Всё зависит от контекста и от управляющего глагола: если управляющий глагол avere, то – выращивать (в этом случае глагол «crescere» является переходным): l'ho cresciuto – я его вырастил; если управляющий глагол essere, то – расти (в этом случае глагол «crescere» является непереходным): è cresciuto – он вырос. Глагол «crescere» может употребляться также в переносном смысле как и глагол «расти» в русском языке."><span>я расту</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>12. «Diminuendo» – этим термином в нотах указывают на постепенное ослабление звучания. Можно ли использовать глагол «diminuire» в отношении к скорости?</p>
+      <label class="radio"><input type="radio" name="q12" data-explanation=""><span>нет</span></label>
+      <label class="radio"><input type="radio" name="q12" data-correct data-explanation="«Diminuendo» – это герундий глагола «diminuire» – «уменьшать, уменьшаться». Если глагол «diminuire» – переходный, то он переводится «уменьшать»; если глагол «diminuire» – непереходный, то он переводится «уменьшаться». И он имеет отношение к скорости: diminuire la velocità – убавить, снизить скорость."><span>да</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>13. Где следует делать ударение в слове «comodo»?</p>
+      <label class="radio"><input type="radio" name="q13" data-correct data-explanation="Я родился в деревянном доме и там, в чулане, стоял старый комод. Он был очень удобный. В русском слове «комод» [komód] ударение падает на певый слог. Итальянское слово «comodo» имеет ударение на втором слоге, если это прилагательное, которое переводится «удобный, комфортабельный» или существительное, которое переводится «удобство, комфорт» (есть и другие значения слова «comodo», где ударение также падает на первый слог). Конечно же в итальянском языке есть и слово «комод» – оно переводится «cassettone, comò»."><span>còmodo</span></label>
+      <label class="radio"><input type="radio" name="q13" data-explanation="Comòdo в итальянском языке – это остров в Индонезии."> <span>comòdo</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>14. Синонимом слова «allargando» является:</p>
+      <label class="radio"><input type="radio" name="q14" data-explanation="«Accelerando» – «ускоряя» – это герундий глагола «accelerare» – «ускорять»."><span>accelerando</span></label>
+      <label class="radio"><input type="radio" name="q14" data-explanation="«Fumando» – «куря» – это герундий глагола «fumare» – «курить»."><span>fumando</span></label>
+      <label class="radio"><input type="radio" name="q14" data-correct data-explanation="«Rallentando» – «замедляя» – это герундий глагола «rallentare» – «замедлять»; глагол «allargare», который также переводится «замедлять», имеет герундий «allargando» – «замедляя»."><span>rallentando</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>15. Выберите правильный перевод фразы «я играю на фортепиано»:</p>
+      <label class="radio"><input type="radio" name="q15" data-correct data-explanation="В итальянской фразе «suono il pianoforte» – «я играю на фортепиано», равно как и во всех других подобных фразах, касающихся игры на музыкальных инструментах, предлог не нужен."><span>suono il pianoforte</span></label>
+      <label class="radio"><input type="radio" name="q15" data-explanation=""><span>suono al pianoforte</span></label>
+      <label class="radio"><input type="radio" name="q15" data-explanation=""><span>suono in pianoforte</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>16. Кому Людвиг ван Бетховен посвятил симфонию, названную им «Героическая», а затем в гневе разорвал её титульный лист со словами «Он такой же как и все!»?</p>
+      <label class="radio"><input type="radio" name="q15" data-correct data-explanation="Переведём отрывок из воспоминаний ученика и библиографа Бетховена Фердинанда Риса: «Когда Бетховен писал эту симфонию, он думал о Бонапарте, а Бонапарт в то время был первым консулом. Тогда Бетховен питал к нему большое уважение и уподоблял его великим античным римским консулам. Не только я, но и многие наиболее близкие друзья Бетховена видели эту симфонию на его столе, прелестно переписанную на чистовую, со словом «Бонапарт» наверху титульного листа и ниже «Ludwig van Beethoven» [...]. Я был первым, кто сообщил ему новости о Бонапарте, провозгласившим себя императором, после чего он воскликнул в гневе: «Так он больше не простой смертный! Теперь он будет попирать человеческие права, потакать только своему честолюбию; теперь он сочтёт себя выше всех людей, станет тираном!». Бетховен подошел к столу, схватил титульный лист, разорвал его надвое и бросил на пол. Страницу пришлось переписывать заново, но только теперь симфония уже имела название «Героическая симфония».»<br>«Nello scrivere questa sinfonia Beethoven stava pensando a Buonaparte, ma Buonaparte mentre era primo console. In quel tempo Beethoven aveva la più alta stima per lui e lo paragonava ai più grandi consoli di Roma antica. Non solo io, ma molti degli amici più intimi di Beethoven, videro questa sinfonia sul suo tavolo, meravigliosamente copiata in manoscritto, con la parola «Buonaparte» scritta nella parte superiore del frontespizio e «Ludwig van Beethoven» nell'estremità più bassa [...]. Io fui il primo a riferirgli le notizie che Buonaparte si era proclamato Imperatore dopo di che egli si adirò ed esclamò: «Così egli non è più un comune mortale! Ora, egli calpesterà tutti i diritti umani, indulgerà solo sulla sua ambizione; ora egli si crederà superiore a tutti gli uomini, diventerà un tiranno!». Beethoven andò al tavolo, afferrò la parte superiore del frontespizio, la strappò a metà e la gettò sul pavimento. La pagina dovette essere ricopiata e fu solo ora che la sinfonia prese il titolo di Sinfonia eroica»."><span>Наполеону Бонапарту</span></label>
+      <label class="radio"><input type="radio" name="q16" data-explanation=""><span>Карлу IV, королю Испании</span></label>
+      <label class="radio"><input type="radio" name="q16" data-explanation=""><span>Александру I, российскому императору</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="quiz-question">
+      <p>17. Выберите правильный перевод фразы «sei forte nella musica».</p>
+      <label class="radio"><input type="radio" name="q17" data-explanation="«Громче играй эту музыку» – «Suona più forte»"><span>громче играй эту музыку</span></label>
+      <label class="radio"><input type="radio" name="q17" data-explanation="«Твоя музыка слишком громкая» – «Suoni troppo forte»"> <span>твоя музыка слишком громкая</span></label>
+      <label class="radio"><input type="radio" name="q17" data-correct data-explanation="«Ты силён в музыке» – «Sei forte nella musica». Таким образом можно догаться, что слово «forte» означает не только «громко» (в этом случае – это наречие), а также «сильный» в прямом и переносном смысле (в этом случае – это прилагательное). В музыке, как мы знаем, символ «forte» означает громкое исполнение – в этом случае слово «forte» является существительным мужского рода (sostantivo maschile), также слово «forte» употребляется в музыке и как наречие (avverbio) – «громко»."><span>ты силён в музыке</span></label>
+      <button class="check-answer">Проверить</button>
+      <button class="next-question">Дальше</button>
+      <div class="quiz-message"></div>
+    </div>
+    <div class="summary">
+      <h3>Результаты</h3>
+      <div class="results-list"></div>
+      <button class="restart-quiz">Начать сначала</button>
+    </div>
+  </div>
+</div>
