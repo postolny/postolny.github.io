@@ -28,12 +28,29 @@ $(function() {
   var giornoMese = now.getDate();
   var mese = now.getMonth();
   const clickSound = new Audio("/audio/click.mp3");
+  const correctSound = new Audio("/audio/correct.mp3");
+  const wrongSound = new Audio("/audio/wrong.mp3");
+  let isMuted = false;
 
   var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
 
   var mes = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
   var dn = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+
+  function toggleAudio() {
+    isMuted = !isMuted;
+    $("#audioOnIcon").toggle(!isMuted);
+    $("#audioOffIcon").toggle(isMuted);
+  }
+
+  $("#audioOnIcon, #audioOffIcon").click(toggleAudio);
+
+  function playSound(sound) {
+    if (!isMuted) {
+      sound.play();
+    }
+  }
 
   function day() {
     $("#day").html('Oggi è ' + g[giornoSettimana] + ', ' + giornoMese + ' ' + m[mese] + '<br>' + 'Сегодня ' + dn[giornoSettimana] + ', ' + giornoMese + ' ' + mes[mese]);
@@ -670,8 +687,10 @@ $(function() {
         var answer = $("#an_num").val().toLowerCase().trim();
         if (answer == numerali[rand].an) {
           $("#risultato").html(esattoIcon + esattoMsg);
+          correctSound.play();
         } else {
           $("#risultato").html(sbagliatoIcon + sbagliatoMsg);
+          wrongSound.play();
           if (i == 3) {
             $("#suggerimento")
               .html("<div id=''>" + numerali[rand].an + "</div>")
@@ -803,16 +822,13 @@ $(function() {
     var userAnswer = selected.parent().text().trim();
     var questionText = question.find("p").text();
 
-    const correctSound = new Audio("/audio/correct.mp3");
-    const wrongSound = new Audio("/audio/wrong.mp3");
-
     if (isCorrect) {
       msgBox.text("Правильно!").addClass("answer-correct");
-      correctSound.play();
+      playSound(correctSound);
       correctAnswers++;
     } else {
       msgBox.text("Неправильно! Правильный ответ: " + correctAnswer).addClass("answer-incorrect");
-      wrongSound.play();
+      playSound(wrongSound);
     }
 
     answersSummary.push({
@@ -884,7 +900,7 @@ $(function() {
   });
 
   $(".quiz-question").on("change", 'input[type="radio"]', function() {
-    clickSound.play();
+    playSound(clickSound);
   });
 
   const p6 = "th";
@@ -1402,6 +1418,7 @@ $(function() {
       } else if (search == m[mese]) {
         isResult1Correct = true;
         $("#risultato-mese").html(esattoIcon + esattoMsg);
+        correctSound.play();
         $("#search-mese").blur();
 
         if (!isResult2Correct) {
@@ -1409,6 +1426,7 @@ $(function() {
         }
       } else {
         $("#risultato-mese").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + m[mese] + '</span>');
+        wrongSound.play();
         $("#search-mese").val("").focus();
       }
       console.log("Нажата кнопка #btn-mese");
@@ -1423,13 +1441,14 @@ $(function() {
       } else if (search == g[giornoSettimana].replace("ì", "i")) {
         isResult2Correct = true;
         $("#risultato-giorno").html(esattoIcon + esattoMsg);
-
+        correctSound.play();
         $("#search-giorno").blur();
         if (!isResult1Correct) {
           $("#search-mese").focus(); // Передаем фокус на поле #search-mese, только если результат для поля #search-giorno неверен
         }
       } else {
         $("#risultato-giorno").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + g[giornoSettimana] + '</span>');
+        wrongSound.play();
         $("#search-giorno").val("").focus();
       }
       console.log("Нажата кнопка #btn-giorno");

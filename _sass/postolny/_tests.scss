@@ -75,10 +75,8 @@
 .radio {
   display: block;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
+  -webkit-user-select: none;
   text-align: left;
 
   + .radio {
@@ -177,7 +175,7 @@
   -webkit-user-select: none;
 }
 
-.check-answer:active, .next-question:active, .restart-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo, .start-quiz:active {
+.check-answer:active, .next-question:active, .restart-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 $default-shade;
 }
@@ -196,24 +194,45 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: none;
   overflow-y: auto;
-  padding: 20px;
   box-sizing: border-box;
   z-index: 9999;
 }
 
-.quiz-box {
-  background: $white;
-  padding: 20px;
-  width: 90%;
-  max-width: 600px;
-  height: 80vh;
-  overflow-y: auto;
-  border-radius: 10px;
-  position: relative;
-
-  h2 {
-    text-align: center;
+.quiz-header {
+  position: sticky;
+  top: 0;
+  background-color: $default-shade;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: $white;
+  svg {
+    color: $white;
+    vertical-align: middle;
+    cursor: pointer;
   }
+  .controls-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .quiz-score {
+    font-family: $font-primary;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .close-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+}
+
+#quiz-container-inner {
+  padding: 20px;
 }
 
 .quiz-question {
@@ -252,30 +271,8 @@
   display: none;
 }
 
-.quiz-score {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.close-btn {
-  position: fixed;
-  top: 12px;
-  right: 20px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.quiz-header {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-
 #quiz-wrapper {
-  margin: 20px auto 0;
+  margin: 0 auto;
   max-width: 800px;
   border: 2px dashed $grey-3;
   padding: 20px;
@@ -297,7 +294,7 @@
 }
 
 @media (max-width: 768px) {
-  .quiz-container {
+  #quiz-container-inner {
     padding: 10px;
   }
 }
