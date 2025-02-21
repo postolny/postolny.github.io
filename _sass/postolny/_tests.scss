@@ -335,7 +335,7 @@
 }
 
 #acc_dacapo {
-  margin-top: 10px;
+  margin: 10px 0 20px;
 }
 
 /* Completare */
@@ -370,7 +370,8 @@
 
 .result {
   display: inline-block;
-  padding: 5px;
+  vertical-align: middle;
+  padding-left: 3px;
 }
 
 /* Frasario */
@@ -643,6 +644,7 @@
     margin-top: 15px;
   }
   #risultato,
+  .result,
   #risultato-mese,
   #risultato-giorno,
   .score {
