@@ -1,7 +1,7 @@
 /* Numerali */
 
 #wrap_num {
-  padding: 20px 0;
+  margin: 20px 0;
   box-sizing: border-box;
 }
 #risultato {
@@ -64,7 +64,7 @@
 /* Radio buttons */
 
 .domanda {
-  background: #efede7;
+  background: $grey-4;
   margin-bottom: 1em;
   padding: 1em;
   p {
@@ -147,7 +147,7 @@
 }
 .risultati {
   font-size: 14px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .score {

@@ -759,7 +759,7 @@ $(function() {
   });
 
   $(".domanda").on("change", 'input[type="radio"]', function() {
-    clickSound.play();
+    playSound(clickSound);
   });
 
   var currentQuestion = 0;

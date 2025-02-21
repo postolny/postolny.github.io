@@ -5,7 +5,7 @@ description: "1a) v.procompl. CO con valore intens., andare: andarsene a casa, a
 author: "И. Постольный"
 comments: false
 categories: a
-tags:
+tags: Тесты
 ---
 
 ### Significato
@@ -53,6 +53,8 @@ alzare i tacchi[^1]; levare le tende[^2]; sgattaiolare fuori; sloggiare; batters
 |Lui spense il sigaro nel portacenere e si alzò per andarsene.|Он загасил сигару в пепельнице и поднялся, чтобы уйти.|
 |Lui siede in camera mia e non ha intenzione di andarsene.|Он сидит в моей комнате и уходить не собирается.|
 | Ma andarsene, e stato un vero sollievo.|Но для него было большим облегчением уйти в мир иной.|
+
+{% include andarsene.html %}
 
 [^1]: alzare / battere il tacco _шутл_. – пуститься наутёк, дать дёру. _прост_.
 
