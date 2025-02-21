@@ -687,10 +687,10 @@ $(function() {
         var answer = $("#an_num").val().toLowerCase().trim();
         if (answer == numerali[rand].an) {
           $("#risultato").html(esattoIcon + esattoMsg);
-          correctSound.play();
+          playSound(correctSound);
         } else {
           $("#risultato").html(sbagliatoIcon + sbagliatoMsg);
-          wrongSound.play();
+          playSound(wrongSound);
           if (i == 3) {
             $("#suggerimento")
               .html("<div id=''>" + numerali[rand].an + "</div>")
@@ -1418,7 +1418,7 @@ $(function() {
       } else if (search == m[mese]) {
         isResult1Correct = true;
         $("#risultato-mese").html(esattoIcon + esattoMsg);
-        correctSound.play();
+        playSound(correctSound);
         $("#search-mese").blur();
 
         if (!isResult2Correct) {
@@ -1426,7 +1426,7 @@ $(function() {
         }
       } else {
         $("#risultato-mese").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + m[mese] + '</span>');
-        wrongSound.play();
+        playSound(wrongSound);
         $("#search-mese").val("").focus();
       }
       console.log("Нажата кнопка #btn-mese");
@@ -1441,14 +1441,14 @@ $(function() {
       } else if (search == g[giornoSettimana].replace("ì", "i")) {
         isResult2Correct = true;
         $("#risultato-giorno").html(esattoIcon + esattoMsg);
-        correctSound.play();
+        playSound(correctSound);
         $("#search-giorno").blur();
         if (!isResult1Correct) {
           $("#search-mese").focus(); // Передаем фокус на поле #search-mese, только если результат для поля #search-giorno неверен
         }
       } else {
         $("#risultato-giorno").html(sbagliatoIcon + rispostaGiustaMsg + '<span class="evid">' + g[giornoSettimana] + '</span>');
-        wrongSound.play();
+        playSound(wrongSound);
         $("#search-giorno").val("").focus();
       }
       console.log("Нажата кнопка #btn-giorno");
