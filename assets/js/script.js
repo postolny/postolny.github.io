@@ -818,16 +818,16 @@ $(function() {
 
     var isCorrect = selected.is("[data-correct]");
     var explanation = selected.attr("data-explanation") || "";
-    var correctAnswer = question.find("input[data-correct]").parent().text().trim();
-    var userAnswer = selected.parent().text().trim();
+    var correctAnswer = question.find("input[data-correct]").parent().text();
+    var userAnswer = selected.parent().text();
     var questionText = question.find("p").text();
 
     if (isCorrect) {
-      msgBox.text("Правильно!").addClass("answer-correct");
+      msgBox.html(esattoIcon + "Правильно!").addClass("answer-correct");
       playSound(correctSound);
       correctAnswers++;
     } else {
-      msgBox.text("Неправильно! Правильный ответ: " + correctAnswer).addClass("answer-incorrect");
+      msgBox.html(sbagliatoIcon + "Неправильно! Правильный ответ: " + correctAnswer).addClass("answer-incorrect");
       playSound(wrongSound);
     }
 
@@ -869,7 +869,7 @@ $(function() {
         var questionText = $(this).find("p").text();
         if (questionText === ans.question) {
           $(this).find("input[type='radio']").each(function() {
-            var answerText = $(this).parent().text().trim();
+            var answerText = $(this).parent().text();
             var isCorrect = $(this).is("[data-correct]");
             var explanation = $(this).attr("data-explanation") || "";
             var isChecked = $(this).is(":checked");
@@ -877,7 +877,7 @@ $(function() {
             var icon = isCorrect ? esattoIcon : sbagliatoIcon;
             var explanationText = explanation ? " [" + explanation + "]" : "";
             var userAnswer = isChecked ? " <strong>(Ваш ответ)</strong>" : "";
-            questionBlock.append("<p>" + icon + " " + answerText + userAnswer + explanationText + "</p>");
+            questionBlock.append("<p>" + icon + answerText + userAnswer + explanationText + "</p>");
           });
         }
       });
