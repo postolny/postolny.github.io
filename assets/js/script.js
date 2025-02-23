@@ -866,8 +866,8 @@ $(function() {
       var questionBlock = $("<div>").append("<p class='summary-question'>" + ans.question + "</p>");
 
       $(".quiz-question").each(function() {
-        var questionText = $(this).find("p").text();
-        if (questionText === ans.question) {
+        var questionText = $(this).find("p").text().trim();
+        if (questionText === ans.question.trim()) {
           $(this).find("input[type='radio']").each(function() {
             var answerText = $(this).parent().text();
             var isCorrect = $(this).is("[data-correct]");
@@ -877,7 +877,8 @@ $(function() {
             var icon = isCorrect ? esattoIcon : sbagliatoIcon;
             var explanationText = explanation ? " [" + explanation + "]" : "";
             console.log($(this).is(":checked"), answerText);
-            var userAnswer = isChecked ? " <strong>(Ваш ответ)</strong>" : "";
+            // var userAnswer = isChecked ? " <strong>(Ваш ответ)</strong>" : "";
+            var userAnswer = (ans.userAnswer === answerText) ? " <strong>(Ваш ответ)</strong>" : "";
             questionBlock.append("<p>" + icon + answerText + userAnswer + explanationText + "</p>");
           });
         }
