@@ -676,22 +676,26 @@ $(function() {
     console.log(numerali);
 
     var rand = Math.floor(Math.random() * numerali.length);
-    var i = 0;
+    var incorrectAttempts = 0; // неправильные попытки
     $("#q_num").html("<div id='text_num'>" + numerali[rand].q1 + "</div>");
+
     $("#q_ris").click(function() {
-      i = i + 1;
-      if (!$.trim($("#an_num").val())) {
+      var answer = $("#an_num").val().toLowerCase().trim().replace(/é/g, "e");
+      var correctAnswer = numerali[rand].an.toLowerCase().trim().replace(/é/g, "e");
+
+      if (!answer) {
         $("#risultato").html(sbagliatoIcon + scriviQc).show();
-        i = 0;
       } else {
-        var answer = $("#an_num").val().toLowerCase().trim();
-        if (answer == numerali[rand].an) {
+        if (answer === correctAnswer) {
           $("#risultato").html(esattoIcon + esattoMsg);
+          incorrectAttempts = 0; // счётчик обнуляется, если ответы верные
           playSound(correctSound);
         } else {
           $("#risultato").html(sbagliatoIcon + sbagliatoMsg);
+          incorrectAttempts++; // счётчик увеличивается при неверном ответе
           playSound(wrongSound);
-          if (i == 3) {
+
+          if (incorrectAttempts == 3) {
             $("#suggerimento")
               .html("<div id=''>" + numerali[rand].an + "</div>")
               .slideDown();
@@ -713,7 +717,7 @@ $(function() {
       $("#suggerimento")
         .html("<div id=''>" + numerali[rand].an + "</div>")
         .hide();
-      i = 0;
+      incorrectAttempts = 0;
     });
 
   }).fail(function() {
