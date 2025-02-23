@@ -876,6 +876,7 @@ $(function() {
 
             var icon = isCorrect ? esattoIcon : sbagliatoIcon;
             var explanationText = explanation ? " [" + explanation + "]" : "";
+            console.log($(this).is(":checked"), answerText);
             var userAnswer = isChecked ? " <strong>(Ваш ответ)</strong>" : "";
             questionBlock.append("<p>" + icon + answerText + userAnswer + explanationText + "</p>");
           });
