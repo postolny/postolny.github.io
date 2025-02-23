@@ -280,6 +280,29 @@
   color: $red;
 }
 
+.points {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: $red;
+  display: none;
+}
+
+.points-animated {
+  animation: flyUp 0.7s ease-in-out forwards;
+}
+
+@keyframes flyUp {
+  0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-150%) scale(3);
+      opacity: 0;
+  }
+}
+
 .explanation {
   font-style: italic;
   margin-top: 5px;

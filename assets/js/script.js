@@ -826,6 +826,30 @@ $(function() {
       msgBox.html(esattoIcon + "Правильно!").addClass("answer-correct");
       playSound(correctSound);
       correctAnswers++;
+
+      // очки
+      var numberToShow = (correctAnswers === 5 || correctAnswers === 10 || correctAnswers === 15 || correctAnswers === 20 || correctAnswers === 25 || correctAnswers === 30) ? correctAnswers : null;
+
+      if (numberToShow) {
+        var pointsElement = $('#points');
+
+        var mouseX = event.clientX;
+        var mouseY = event.clientY;
+
+        pointsElement.css({
+          left: mouseX,
+          top: mouseY,
+          display: 'block'
+        });
+
+        pointsElement.text(numberToShow);
+
+        pointsElement.addClass('points-animated');
+
+        setTimeout(function() {
+          pointsElement.removeClass('points-animated').css('display', 'none');
+        }, 700);
+      }
     } else {
       msgBox.html(sbagliatoIcon + "Неправильно! Правильный ответ: " + correctAnswer).addClass("answer-incorrect");
       playSound(wrongSound);
