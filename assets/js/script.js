@@ -828,7 +828,7 @@ $(function() {
       correctAnswers++;
 
       // очки
-      var numberToShow = (correctAnswers === 5 || correctAnswers === 10 || correctAnswers === 15 || correctAnswers === 20 || correctAnswers === 25 || correctAnswers === 30) ? correctAnswers : null;
+      var numberToShow = (correctAnswers === 5 || correctAnswers === 10 || correctAnswers === 15 || correctAnswers === 20 || correctAnswers === 25 || correctAnswers === 30 || correctAnswers === 35 || correctAnswers === 40 || correctAnswers === 45 || correctAnswers === 50) ? correctAnswers : null;
 
       if (numberToShow) {
         var pointsElement = $('#points');
