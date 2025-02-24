@@ -49,6 +49,8 @@ $(function() {
 
   function playSound(sound) {
     if (!isMuted) {
+      sound.pause();
+      sound.currentTime = 0;
       sound.play();
     }
   }
@@ -877,17 +879,19 @@ $(function() {
   });
 
   $(".next-question").click(function() {
-    if ($(this).prop("disabled")) return;
+    setTimeout(function() {
+      if ($(this).prop("disabled")) return;
 
-    currentQuestion++;
+      currentQuestion++;
 
-    if (currentQuestion < totalQuestions) {
-      $(".quiz-question").removeClass("active").hide().eq(currentQuestion).addClass("active").show();
-      $(".next-question").prop("disabled", true);
-      $(".check-answer").prop("disabled", false);
-    } else {
-      showSummary();
-    }
+      if (currentQuestion < totalQuestions) {
+        $(".quiz-question").removeClass("active").hide().eq(currentQuestion).addClass("active").show();
+        $(".next-question").prop("disabled", true);
+        $(".check-answer").prop("disabled", false);
+      } else {
+        showSummary();
+      }
+    }, 300);
   });
 
   function showSummary() {
