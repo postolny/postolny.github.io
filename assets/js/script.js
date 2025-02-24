@@ -30,6 +30,7 @@ $(function() {
   const clickSound = new Audio("/audio/click.mp3");
   const correctSound = new Audio("/audio/correct.mp3");
   const wrongSound = new Audio("/audio/wrong.mp3");
+  const victorySound = new Audio("audio/victory.mp3");
   let isMuted = false;
 
   var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
@@ -827,9 +828,13 @@ $(function() {
     var questionText = question.find("p").text();
 
     if (isCorrect) {
-      msgBox.html(esattoIcon + "Правильно!").addClass("answer-correct");
-      playSound(correctSound);
       correctAnswers++;
+      msgBox.html(esattoIcon + "Правильно!").addClass("answer-correct");
+      if (correctAnswers === totalQuestions) {
+        playSound(victorySound);
+      } else {
+        playSound(correctSound);
+      }
 
       // очки
       var numberToShow = (correctAnswers === 5 || correctAnswers === 10 || correctAnswers === 15 || correctAnswers === 20 || correctAnswers === 25 || correctAnswers === 30 || correctAnswers === 35 || correctAnswers === 40 || correctAnswers === 45 || correctAnswers === 50) ? correctAnswers : null;
