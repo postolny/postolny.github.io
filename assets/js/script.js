@@ -30,7 +30,7 @@ $(function() {
   const clickSound = new Audio("/audio/click.mp3");
   const correctSound = new Audio("/audio/correct.mp3");
   const wrongSound = new Audio("/audio/wrong.mp3");
-  const victorySound = new Audio("audio/victory.mp3");
+  const victorySound = new Audio("/audio/victory.mp3");
   let isMuted = false;
 
   var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
