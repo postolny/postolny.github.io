@@ -1,0 +1,263 @@
+<div id="start-quiz-container">
+  <button class="start-stress-quiz">Начать викторину</button>
+</div>
+<div class="quiz-container">
+  <div class="quiz-header">
+    <div class="controls-left">
+      <div class="stress-quiz-score">0/</div>
+      <svg id="audioOnIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14" /></svg>
+      <svg id="audioOffIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display: none;">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+          <path d="m22 15l-6-6m6 0l-6 6" />
+          <path stroke-linejoin="round" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041" />
+        </g>
+      </svg>
+    </div>
+    <div class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2C6.4889971 2 2 6.4889971 2 12C2 17.511003 6.4889971 22 12 22C17.511003 22 22 17.511003 22 12C22 6.4889971 17.511003 2 12 2 z M 12 4C16.430123 4 20 7.5698774 20 12C20 16.430123 16.430123 20 12 20C7.5698774 20 4 16.430123 4 12C4 7.5698774 7.5698774 4 12 4 z M 8.7070312 7.2929688L7.2929688 8.7070312L10.585938 12L7.2929688 15.292969L8.7070312 16.707031L12 13.414062L15.292969 16.707031L16.707031 15.292969L13.414062 12L16.707031 8.7070312L15.292969 7.2929688L12 10.585938L8.7070312 7.2929688 z" /></svg></div>
+  </div>
+  <div id="quiz-container-inner">
+    <div id="quiz-wrapper">
+      <div id="quiz-stress"></div>
+      <div id="word-list" style="display: none;">
+        <div class="word-item" data-word="аввакум" data-correct="4,6"></div>
+        <div class="word-item" data-word="банты" data-correct="2"></div>
+        <div class="word-item" data-word="балованный" data-correct="4"></div>
+        <div class="word-item" data-word="балуясь" data-correct="4"></div>
+        <div class="word-item" data-word="брала" data-correct="5"></div>
+        <div class="word-item" data-word="бралась" data-correct="5"></div>
+        <div class="word-item" data-word="бухгалтеров" data-correct="5"></div>
+        <div class="word-item" data-word="вовремя" data-correct="2"></div>
+        <div class="word-item" data-word="вероисповедание" data-correct="10"></div>
+        <div class="word-item" data-word="взяла" data-correct="5"></div>
+        <div class="word-item" data-word="взялась" data-correct="5"></div>
+        <div class="word-item" data-word="влилась" data-correct="5"></div>
+        <div class="word-item" data-word="возглас" data-correct="2,6"></div>
+        <div class="word-item" data-word="водопровод" data-correct="9"></div>
+        <div class="word-item" data-word="ворвалась" data-correct="7"></div>
+        <div class="word-item" data-word="воспринять" data-correct="8"></div>
+        <div class="word-item" data-word="восприняла" data-correct="10"></div>
+        <div class="word-item" data-word="воссоздать" data-correct="8"></div>
+        <div class="word-item" data-word="воссоздала" data-correct="10"></div>
+        <div class="word-item" data-word="вручит" data-correct="5"></div>
+        <div class="word-item" data-word="вручить" data-correct="5"></div>
+        <div class="word-item" data-word="газопровод" data-correct="9"></div>
+        <div class="word-item" data-word="гнала" data-correct="5"></div>
+        <div class="word-item" data-word="гналась" data-correct="5"></div>
+        <div class="word-item" data-word="гражданство" data-correct="6"></div>
+        <div class="word-item" data-word="доверху" data-correct="2"></div>
+        <div class="word-item" data-word="донизу" data-correct="2"></div>
+        <div class="word-item" data-word="досуха" data-correct="2"></div>
+        <div class="word-item" data-word="дециметр" data-correct="6"></div>
+        <div class="word-item" data-word="дояр" data-correct="3"></div>
+        <div class="word-item" data-word="добела" data-correct="6"></div>
+        <div class="word-item" data-word="добрала" data-correct="7"></div>
+        <div class="word-item" data-word="добралась" data-correct="7"></div>
+        <div class="word-item" data-word="дождалась" data-correct="7"></div>
+        <div class="word-item" data-word="дозировать" data-correct="4"></div>
+        <div class="word-item" data-word="дозвонится" data-correct="7"></div>
+        <div class="word-item" data-word="дозвониться" data-correct="7"></div>
+        <div class="word-item" data-word="дозвонятся" data-correct="7"></div>
+        <div class="word-item" data-word="документ" data-correct="6"></div>
+        <div class="word-item" data-word="донельзя" data-correct="4"></div>
+        <div class="word-item" data-word="досуг" data-correct="4"></div>
+        <div class="word-item" data-word="ектения" data-correct="4,7"></div>
+        <div class="word-item" data-word="жалюзи" data-correct="6"></div>
+        <div class="word-item" data-word="ждала" data-correct="5"></div>
+        <div class="word-item" data-word="жилось" data-correct="4"></div>
+        <div class="word-item" data-word="загнутый" data-correct="2"></div>
+        <div class="word-item" data-word="загодя" data-correct="2"></div>
+        <div class="word-item" data-word="занял" data-correct="2"></div>
+        <div class="word-item" data-word="заняли" data-correct="2"></div>
+        <div class="word-item" data-word="заняло" data-correct="2"></div>
+        <div class="word-item" data-word="занятый" data-correct="2"></div>
+        <div class="word-item" data-word="засветло" data-correct="2"></div>
+        <div class="word-item" data-word="затемно" data-correct="2"></div>
+        <div class="word-item" data-word="завидно" data-correct="4"></div>
+        <div class="word-item" data-word="закупорив" data-correct="4"></div>
+        <div class="word-item" data-word="закупорить" data-correct="4"></div>
+        <div class="word-item" data-word="заняла" data-correct="6"></div>
+        <div class="word-item" data-word="занята" data-correct="6"></div>
+        <div class="word-item" data-word="заперла" data-correct="7"></div>
+        <div class="word-item" data-word="заперлась" data-correct="7"></div>
+        <div class="word-item" data-word="заперта" data-correct="7"></div>
+        <div class="word-item" data-word="заселена" data-correct="8"></div>
+        <div class="word-item" data-word="защемит" data-correct="6"></div>
+        <div class="word-item" data-word="звала" data-correct="5"></div>
+        <div class="word-item" data-word="звоним" data-correct="5"></div>
+        <div class="word-item" data-word="звонит" data-correct="5"></div>
+        <div class="word-item" data-word="звонишь" data-correct="5"></div>
+        <div class="word-item" data-word="избалованный" data-correct="6"></div>
+        <div class="word-item" data-word="иксы" data-correct="1"></div>
+        <div class="word-item" data-word="исчерпать" data-correct="4"></div>
+        <div class="word-item" data-word="кухонный" data-correct="2"></div>
+        <div class="word-item" data-word="каталог" data-correct="6"></div>
+        <div class="word-item" data-word="квартал" data-correct="6"></div>
+        <div class="word-item" data-word="километр" data-correct="6"></div>
+        <div class="word-item" data-word="клала" data-correct="3"></div>
+        <div class="word-item" data-word="кормящий" data-correct="5"></div>
+        <div class="word-item" data-word="кралась" data-correct="3"></div>
+        <div class="word-item" data-word="краны" data-correct="3"></div>
+        <div class="word-item" data-word="красивее" data-correct="5"></div>
+        <div class="word-item" data-word="красивейший" data-correct="5"></div>
+        <div class="word-item" data-word="кремень" data-correct="5"></div>
+        <div class="word-item" data-word="кремня" data-correct="6"></div>
+        <div class="word-item" data-word="кровоточащий" data-correct="9"></div>
+        <div class="word-item" data-word="лгала" data-correct="5"></div>
+        <div class="word-item" data-word="лила" data-correct="4"></div>
+        <div class="word-item" data-word="лилась" data-correct="4"></div>
+        <div class="word-item" data-word="местностей" data-correct="2"></div>
+        <div class="word-item" data-word="миллиметр" data-correct="7"></div>
+        <div class="word-item" data-word="мозаичный" data-correct="5"></div>
+        <div class="word-item" data-word="молящий" data-correct="4"></div>
+        <div class="word-item" data-word="мусоропровод" data-correct="11"></div>
+        <div class="word-item" data-word="мытарь" data-correct="2,4"></div>
+        <div class="word-item" data-word="нажитый" data-correct="2"></div>
+        <div class="word-item" data-word="начал" data-correct="2"></div>
+        <div class="word-item" data-word="начали" data-correct="2"></div>
+        <div class="word-item" data-word="начатый" data-correct="2"></div>
+        <div class="word-item" data-word="недруг" data-correct="2"></div>
+        <div class="word-item" data-word="ногтя" data-correct="2"></div>
+        <div class="word-item" data-word="наверх" data-correct="4"></div>
+        <div class="word-item" data-word="наврала" data-correct="7"></div>
+        <div class="word-item" data-word="надолго" data-correct="4"></div>
+        <div class="word-item" data-word="наделит" data-correct="6"></div>
+        <div class="word-item" data-word="наживший" data-correct="4"></div>
+        <div class="word-item" data-word="нажита" data-correct="6"></div>
+        <div class="word-item" data-word="накренится" data-correct="7"></div>
+        <div class="word-item" data-word="накрениться" data-correct="7"></div>
+        <div class="word-item" data-word="наливший" data-correct="4"></div>
+        <div class="word-item" data-word="налила" data-correct="6"></div>
+        <div class="word-item" data-word="налита" data-correct="6"></div>
+        <div class="word-item" data-word="нанявшийся" data-correct="4"></div>
+        <div class="word-item" data-word="нарост" data-correct="4"></div>
+        <div class="word-item" data-word="нарвала" data-correct="7"></div>
+        <div class="word-item" data-word="насорит" data-correct="6"></div>
+        <div class="word-item" data-word="начав" data-correct="4"></div>
+        <div class="word-item" data-word="начавший" data-correct="4"></div>
+        <div class="word-item" data-word="начавшись" data-correct="4"></div>
+        <div class="word-item" data-word="начать" data-correct="4"></div>
+        <div class="word-item" data-word="начала" data-correct="6"></div>
+        <div class="word-item" data-word="начата" data-correct="6"></div>
+        <div class="word-item" data-word="недуг" data-correct="4"></div>
+        <div class="word-item" data-word="некролог" data-correct="7"></div>
+        <div class="word-item" data-word="ненадолго" data-correct="6"></div>
+        <div class="word-item" data-word="нефтепровод" data-correct="10"></div>
+        <div class="word-item" data-word="нормировать" data-correct="9"></div>
+        <div class="word-item" data-word="обзвонит" data-correct="7"></div>
+        <div class="word-item" data-word="обзвонить" data-correct="7"></div>
+        <div class="word-item" data-word="облиться" data-correct="4"></div>
+        <div class="word-item" data-word="облегчит" data-correct="7"></div>
+        <div class="word-item" data-word="облегчить" data-correct="7"></div>
+        <div class="word-item" data-word="облилась" data-correct="6"></div>
+        <div class="word-item" data-word="обнялась" data-correct="6"></div>
+        <div class="word-item" data-word="обогнала" data-correct="8"></div>
+        <div class="word-item" data-word="ободрить" data-correct="6"></div>
+        <div class="word-item" data-word="ободриться" data-correct="6"></div>
+        <div class="word-item" data-word="ободришься" data-correct="6"></div>
+        <div class="word-item" data-word="ободрала" data-correct="8"></div>
+        <div class="word-item" data-word="ободрена" data-correct="8"></div>
+        <div class="word-item" data-word="обострить" data-correct="7"></div>
+        <div class="word-item" data-word="одолжит" data-correct="6"></div>
+        <div class="word-item" data-word="одолжить" data-correct="6"></div>
+        <div class="word-item" data-word="озлобить" data-correct="4"></div>
+        <div class="word-item" data-word="окружит" data-correct="6"></div>
+        <div class="word-item" data-word="окружить" data-correct="6"></div>
+        <div class="word-item" data-word="опошлить" data-correct="3"></div>
+        <div class="word-item" data-word="опломбировать" data-correct="11"></div>
+        <div class="word-item" data-word="оптовый" data-correct="4"></div>
+        <div class="word-item" data-word="осведомиться" data-correct="4"></div>
+        <div class="word-item" data-word="осведомишься" data-correct="4"></div>
+        <div class="word-item" data-word="отбыть" data-correct="4"></div>
+        <div class="word-item" data-word="отбыла" data-correct="6"></div>
+        <div class="word-item" data-word="отдав" data-correct="4"></div>
+        <div class="word-item" data-word="отдать" data-correct="4"></div>
+        <div class="word-item" data-word="отдала" data-correct="6"></div>
+        <div class="word-item" data-word="откупорил" data-correct="4"></div>
+        <div class="word-item" data-word="откупорить" data-correct="4"></div>
+        <div class="word-item" data-word="отозвать" data-correct="6"></div>
+        <div class="word-item" data-word="отозваться" data-correct="6"></div>
+        <div class="word-item" data-word="отозвала" data-correct="8"></div>
+        <div class="word-item" data-word="отозвалась" data-correct="8"></div>
+        <div class="word-item" data-word="отрочество" data-correct="1"></div>
+        <div class="word-item" data-word="поручни" data-correct="2"></div>
+        <div class="word-item" data-word="партер" data-correct="5"></div>
+        <div class="word-item" data-word="перезвонит" data-correct="9"></div>
+        <div class="word-item" data-word="перезвонить" data-correct="9"></div>
+        <div class="word-item" data-word="перелила" data-correct="8"></div>
+        <div class="word-item" data-word="плодоносить" data-correct="9"></div>
+        <div class="word-item" data-word="повторит" data-correct="7"></div>
+        <div class="word-item" data-word="подняв" data-correct="5"></div>
+        <div class="word-item" data-word="позыв" data-correct="4"></div>
+        <div class="word-item" data-word="позвала" data-correct="7"></div>
+        <div class="word-item" data-word="позвонит" data-correct="7"></div>
+        <div class="word-item" data-word="позвонишь" data-correct="7"></div>
+        <div class="word-item" data-word="полить" data-correct="4"></div>
+        <div class="word-item" data-word="полила" data-correct="6"></div>
+        <div class="word-item" data-word="поняв" data-correct="4"></div>
+        <div class="word-item" data-word="понявший" data-correct="4"></div>
+        <div class="word-item" data-word="портфель" data-correct="6"></div>
+        <div class="word-item" data-word="послала" data-correct="5"></div>
+        <div class="word-item" data-word="прибыл" data-correct="3"></div>
+        <div class="word-item" data-word="прибыло" data-correct="3"></div>
+        <div class="word-item" data-word="принял" data-correct="3"></div>
+        <div class="word-item" data-word="приняли" data-correct="3"></div>
+        <div class="word-item" data-word="принятый" data-correct="3"></div>
+        <div class="word-item" data-word="премировать" data-correct="9"></div>
+        <div class="word-item" data-word="прибыв" data-correct="5"></div>
+        <div class="word-item" data-word="прибыть" data-correct="5"></div>
+        <div class="word-item" data-word="прибыла" data-correct="7"></div>
+        <div class="word-item" data-word="принудить" data-correct="5"></div>
+        <div class="word-item" data-word="принять" data-correct="5"></div>
+        <div class="word-item" data-word="приняла" data-correct="7"></div>
+        <div class="word-item" data-word="проживший" data-correct="5"></div>
+        <div class="word-item" data-word="прозорлива" data-correct="5,8"></div>
+        <div class="word-item" data-word="рвала" data-correct="5"></div>
+        <div class="word-item" data-word="согнутый" data-correct="2"></div>
+        <div class="word-item" data-word="сантиметр" data-correct="7"></div>
+        <div class="word-item" data-word="сверлит" data-correct="6"></div>
+        <div class="word-item" data-word="сверлить" data-correct="6"></div>
+        <div class="word-item" data-word="сверлишь" data-correct="6"></div>
+        <div class="word-item" data-word="сироты" data-correct="4"></div>
+        <div class="word-item" data-word="сливовый" data-correct="4"></div>
+        <div class="word-item" data-word="сняла" data-correct="5"></div>
+        <div class="word-item" data-word="снята" data-correct="5"></div>
+        <div class="word-item" data-word="созыв" data-correct="4"></div>
+        <div class="word-item" data-word="создав" data-correct="5"></div>
+        <div class="word-item" data-word="создать" data-correct="5"></div>
+        <div class="word-item" data-word="создала" data-correct="7"></div>
+        <div class="word-item" data-word="сорит" data-correct="4"></div>
+        <div class="word-item" data-word="сорить" data-correct="4"></div>
+        <div class="word-item" data-word="сорвала" data-correct="7"></div>
+        <div class="word-item" data-word="сортировать" data-correct="9"></div>
+        <div class="word-item" data-word="статуя" data-correct="3"></div>
+        <div class="word-item" data-word="столяр" data-correct="5"></div>
+        <div class="word-item" data-word="тортов" data-correct="2"></div>
+        <div class="word-item" data-word="торты" data-correct="2"></div>
+        <div class="word-item" data-word="трапезная" data-correct="3,5"></div>
+        <div class="word-item" data-word="убрала" data-correct="6"></div>
+        <div class="word-item" data-word="углубить" data-correct="6"></div>
+        <div class="word-item" data-word="укрепит" data-correct="6"></div>
+        <div class="word-item" data-word="укрепить" data-correct="6"></div>
+        <div class="word-item" data-word="формировать" data-correct="9"></div>
+        <div class="word-item" data-word="цемент" data-correct="4"></div>
+        <div class="word-item" data-word="цепочка" data-correct="4"></div>
+        <div class="word-item" data-word="церковка" data-correct="2,5"></div>
+        <div class="word-item" data-word="челюстей" data-correct="2"></div>
+        <div class="word-item" data-word="черпать" data-correct="2"></div>
+        <div class="word-item" data-word="шарфы" data-correct="2"></div>
+        <div class="word-item" data-word="щемит" data-correct="4"></div>
+        <div class="word-item" data-word="щемить" data-correct="4"></div>
+        <div class="word-item" data-word="эксперт" data-correct="5"></div>
+      </div>
+      <button id="check-answer-btn">Проверить</button>
+      <button id="next-question-btn" disabled>Дальше</button>
+      <button id="restart-stress-quiz" style="display: none;">Начать сначала</button>
+      <button id="viewListOfWords" style="display: none;">Показать все слова</button>
+      <div id="quiz-result-message"></div>
+      <div id="listOfWords"></div>
+    </div>
+  </div>
+  <div id="points" class="points"></div>
+</div>

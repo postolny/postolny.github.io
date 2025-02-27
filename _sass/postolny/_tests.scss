@@ -164,8 +164,8 @@
   margin: 20px 0; 
 }
 
-.check-answer, .next-question, .restart-quiz, .quiz-submit, .mostrami,
-#btn-mese, #btn-giorno, #acc_dacapo, .start-quiz {
+.check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz, .quiz-submit, .mostrami,
+#btn-mese, #btn-giorno, #acc_dacapo, .start-quiz, .start-stress-quiz {
   display: inline-block;
   font: inherit;
   cursor: pointer;
@@ -182,12 +182,12 @@
   -webkit-user-select: none;
 }
 
-.check-answer:active, .next-question:active, .restart-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active {
+.check-answer:active, .next-question:active, .restart-quiz:active, #check-answer-btn:active, #next-question-btn:active, #viewListOfWords:active, #restart-stress-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active, .start-stress-quiz:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 $default-shade;
 }
 
-.check-answer, .next-question, .restart-quiz {
+.check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz {
   margin-top: 10px;
 }
 
@@ -224,7 +224,8 @@
     align-items: center;
     gap: 10px;
   }
-  .quiz-score {
+  .quiz-score,
+  .stress-quiz-score {
     font-family: $font-primary;
     font-size: 16px;
     user-select: none;
@@ -336,6 +337,70 @@
   #quiz-wrapper {
     padding: 10px;
   }
+}
+
+/* Accento ru*/
+
+.word {
+  font-size: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-word;
+  letter-spacing: -1px;
+  line-height: 10%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.letter {
+  padding: 3px;
+  line-height: 1;
+}
+
+.letter.selected {
+  font-weight: bold;
+  color: $red;
+}
+
+#quiz-result-message {
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#quiz-result-message svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+#allWords {
+  color: $green;
+}
+
+@keyframes bounce-scale {
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-3px) scale(1.1);
+  }
+}
+
+.stressed {
+  font-weight: bold;
+  color:$red;
+  display: inline-block;
+  animation: bounce-scale 0.4s ease-in-out infinite alternate;
+}
+
+#listOfWords .stressed {
+  animation: none;
 }
 
 /* Accento */
