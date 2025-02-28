@@ -1158,6 +1158,19 @@ body.is-playing {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
   }
 
+  #nav-toggle {
+    span,
+    span:before,
+    span:after {
+      background: $white;
+    }
+  }
+  
+  .brand a,
+  .brand a:visited {
+    color: $white;
+  }
+
   main {
     h1,
     h2,

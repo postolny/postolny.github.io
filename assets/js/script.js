@@ -951,150 +951,156 @@ $(function() {
     restartStressQuiz();
   });
 
-  var words = [];
+  if ($(".word-item").length > 0) {
 
-  $(".word-item").each(function() {
-    var correctIndexes = $(this).data("correct").toString().split(",").map(Number);
-    words.push({
-      word: $(this).data("word"),
-      correct: correctIndexes
+    var words = [];
+
+    $(".word-item").each(function() {
+      var correctIndexes = $(this).data("correct").toString().split(",").map(Number);
+      words.push({
+        word: $(this).data("word"),
+        correct: correctIndexes
+      });
     });
-  });
 
-  var currentIndex = 0,
-    correctAnswers = 0,
-    totalAnswers = words.length;
+    var currentIndex = 0,
+      correctAnswers = 0,
+      totalAnswers = words.length;
 
-  function shuffleWords() {
-    words.sort(() => Math.random() - 0.5);
-  }
-
-  function showWord(index) {
-    var wordObj = words[index];
-    var html = "";
-    for (var i = 0; i < wordObj.word.length; i++) {
-      html += '<span class="letter" data-index="' + (i + 1) + '">' + wordObj.word[i] + '</span>';
-    }
-    $("#quiz-stress").html('<div class="word">' + html + '</div>');
-    $("#quiz-result-message").text("");
-    $("#check-answer-btn").prop("disabled", false);
-    $("#next-question-btn").prop("disabled", true);
-  }
-
-  shuffleWords();
-  showWord(currentIndex);
-
-  $(document).on("click", ".letter", function() {
-    var $this = $(this);
-    if ($this.hasClass("selected")) {
-      $this.removeClass("selected");
-    } else {
-      $this.addClass("selected");
-    }
-    playSound(clickSound);
-  });
-
-  $("#check-answer-btn").click(function() {
-    var selected = $(".letter.selected").map(function() {
-      return $(this).data("index");
-    }).get();
-    var correct = words[currentIndex].correct;
-
-    if (selected.length === 0) {
-      $("#quiz-result-message").text("Выберите букву(ы)!").addClass("answer-incorrect").removeClass("answer-correct");
-      return;
+    function shuffleWords() {
+      words.sort(() => Math.random() - 0.5);
     }
 
-    selected.sort(function(a, b) { return a - b; });
-    correct.sort(function(a, b) { return a - b; });
-
-    if (JSON.stringify(selected) === JSON.stringify(correct)) {
-      $("#quiz-result-message").html(esattoIcon + "Правильно!").addClass("answer-correct").removeClass("answer-incorrect");
-      correctAnswers++;
-      playSound(correctSound);
-
-      var numberToShow = (correctAnswers % 5 === 0) ? correctAnswers : null;
-
-      if (numberToShow) {
-        var pointsElement = $('#points');
-
-        var mouseX = event.clientX;
-        var mouseY = event.clientY;
-
-        pointsElement.css({
-          left: mouseX,
-          top: mouseY,
-          display: 'block'
-        });
-
-        pointsElement.text(numberToShow);
-
-        pointsElement.addClass('points-animated');
-
-        setTimeout(function() {
-          pointsElement.removeClass('points-animated').css('display', 'none');
-        }, 700);
+    function showWord(index) {
+      var wordObj = words[index];
+      var html = "";
+      for (var i = 0; i < wordObj.word.length; i++) {
+        html += '<span class="letter" data-index="' + (i + 1) + '">' + wordObj.word[i] + '</span>';
       }
-    } else {
-      var correctWord = "";
-      for (var i = 0; i < words[currentIndex].word.length; i++) {
-        if (correct.includes(i + 1)) {
-          correctWord += '<span class="stressed">' + words[currentIndex].word[i] + '</span>';
-        } else {
-          correctWord += words[currentIndex].word[i];
-        }
-      }
-
-      $("#quiz-result-message").html(sbagliatoIcon + "<span>Неправильно! Правильный ответ: <span style='color: #555; white-space: nowrap;'>" + correctWord + "</span></span>").addClass("answer-incorrect").removeClass("answer-correct");
-      playSound(wrongSound);
+      $("#quiz-stress").html('<div class="word">' + html + '</div>');
+      $("#quiz-result-message").text("");
+      $("#check-answer-btn").prop("disabled", false);
+      $("#next-question-btn").prop("disabled", true);
     }
 
-    $(".stress-quiz-score").text(correctAnswers + "/" + totalAnswers);
-    $(this).prop("disabled", true);
-    $("#next-question-btn").prop("disabled", false);
-  });
-
-  $("#next-question-btn").click(function() {
-    if (currentIndex < words.length - 1) {
-      currentIndex++;
-      showWord(currentIndex);
-    } else {
-      $("#quiz-result-message").text("Викторина завершена!").addClass("answer-correct").removeClass("answer-incorrect");
-      $("#check-answer-btn, #next-question-btn").hide();
-      $("#restart-stress-quiz, #viewListOfWords").show();
-    }
-  });
-
-  function restartStressQuiz() {
-    correctAnswers = 0;
-    currentIndex = 0;
     shuffleWords();
-    $(".stress-quiz-score").text(correctAnswers + "/" + totalAnswers);
-    $("#restart-stress-quiz, #viewListOfWords").hide();
-    $("#check-answer-btn, #next-question-btn").show();
     showWord(currentIndex);
-    $("#listOfWords").hide();
-  }
-  $("#restart-stress-quiz").click(restartStressQuiz);
 
-  function highlightStress(words) {
-    return words.map(function(item) {
-      return item.word.split("").map(function(letter, i) {
-        return item.correct.includes(i + 1) ?
-          '<span class="stressed">' + letter + '</span>' : letter;
-      }).join("");
+    $(document).on("click", ".letter", function() {
+      var $this = $(this);
+      if ($this.hasClass("selected")) {
+        $this.removeClass("selected");
+      } else {
+        $this.addClass("selected");
+      }
+      playSound(clickSound);
     });
+
+    $("#check-answer-btn").click(function() {
+      var selected = $(".letter.selected").map(function() {
+        return $(this).data("index");
+      }).get();
+      var correct = words[currentIndex].correct;
+
+      if (selected.length === 0) {
+        $("#quiz-result-message").text("Выберите букву(ы)!").addClass("answer-incorrect").removeClass("answer-correct");
+        return;
+      }
+
+      selected.sort(function(a, b) { return a - b; });
+      correct.sort(function(a, b) { return a - b; });
+
+      if (JSON.stringify(selected) === JSON.stringify(correct)) {
+        $("#quiz-result-message").html(esattoIcon + "Правильно!").addClass("answer-correct").removeClass("answer-incorrect");
+        correctAnswers++;
+        playSound(correctSound);
+
+        var numberToShow = (correctAnswers % 5 === 0) ? correctAnswers : null;
+
+        if (numberToShow) {
+          var pointsElement = $('#points');
+
+          var mouseX = event.clientX;
+          var mouseY = event.clientY;
+
+          pointsElement.css({
+            left: mouseX,
+            top: mouseY,
+            display: 'block'
+          });
+
+          pointsElement.text(numberToShow);
+
+          pointsElement.addClass('points-animated');
+
+          setTimeout(function() {
+            pointsElement.removeClass('points-animated').css('display', 'none');
+          }, 700);
+        }
+      } else {
+        var correctWord = "";
+        for (var i = 0; i < words[currentIndex].word.length; i++) {
+          if (correct.includes(i + 1)) {
+            correctWord += '<span class="stressed">' + words[currentIndex].word[i] + '</span>';
+          } else {
+            correctWord += words[currentIndex].word[i];
+          }
+        }
+
+        $("#quiz-result-message").html(sbagliatoIcon + "<span>Неправильно! Правильный ответ: <span style='color: #555; white-space: nowrap;'>" + correctWord + "</span></span>").addClass("answer-incorrect").removeClass("answer-correct");
+        playSound(wrongSound);
+      }
+
+      $(".stress-quiz-score").text(correctAnswers + "/" + totalAnswers);
+      $(this).prop("disabled", true);
+      $("#next-question-btn").prop("disabled", false);
+    });
+
+    $("#next-question-btn").click(function() {
+      if (currentIndex < words.length - 1) {
+        currentIndex++;
+        showWord(currentIndex);
+      } else {
+        $("#quiz-result-message").text("Викторина завершена!").addClass("answer-correct").removeClass("answer-incorrect");
+        $("#check-answer-btn, #next-question-btn").hide();
+        $("#restart-stress-quiz, #viewListOfWords").show();
+      }
+    });
+
+    function restartStressQuiz() {
+      correctAnswers = 0;
+      currentIndex = 0;
+      shuffleWords();
+      $(".stress-quiz-score").text(correctAnswers + "/" + totalAnswers);
+      $("#restart-stress-quiz, #viewListOfWords").hide();
+      $("#check-answer-btn, #next-question-btn").show();
+      showWord(currentIndex);
+      $("#listOfWords").hide();
+    }
+    $("#restart-stress-quiz").click(restartStressQuiz);
+
+    function highlightStress(words) {
+      return words.map(function(item) {
+        return item.word.split("").map(function(letter, i) {
+          return item.correct.includes(i + 1) ?
+            '<span class="stressed">' + letter + '</span>' : letter;
+        }).join("");
+      });
+    }
+
+    // $("#viewListOfWords").click(function() {
+    //   $("#listOfWords").html(highlightStress(words).join("<br>")).show();
+    // });
+
+    // С сортировкой в алфавитном порядке перед выводом списка
+    $("#viewListOfWords").click(function() {
+      const sortedWords = [...words].sort((a, b) => a.word.localeCompare(b.word)); // Сортируем копию массива
+      $("#listOfWords").html(highlightStress(sortedWords).join("<br>")).show();
+    });
+
+  } else {
+    console.warn("на этой странице нет .word-item");
   }
-
-  // $("#viewListOfWords").click(function() {
-  //   $("#listOfWords").html(highlightStress(words).join("<br>")).show();
-  // });
-
-  // С сортировкой в алфавитном порядке перед выводом списка
-  $("#viewListOfWords").click(function() {
-    const sortedWords = [...words].sort((a, b) => a.word.localeCompare(b.word)); // Сортируем копию массива
-    $("#listOfWords").html(highlightStress(sortedWords).join("<br>")).show();
-  });
 
   const p6 = "th";
 
