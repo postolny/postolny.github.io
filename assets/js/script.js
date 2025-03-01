@@ -774,6 +774,36 @@ $(function() {
   var totalQuestions = $(".quiz-question").length;
   var answersSummary = [];
 
+  function showPoints(event) {
+
+    // очки
+    // var numberToShow = (correctAnswers === 5 || correctAnswers === 10 || correctAnswers === 15 || correctAnswers === 20 || correctAnswers === 25 || correctAnswers === 30 || correctAnswers === 35 || correctAnswers === 40 || correctAnswers === 45 || correctAnswers === 50) ? correctAnswers : null;
+
+    // если значение correctAnswers кратно 5
+    var numberToShow = (correctAnswers % 5 === 0) ? correctAnswers : null;
+
+    if (numberToShow) {
+      var pointsElement = $('#points');
+
+      var mouseX = event.clientX;
+      var mouseY = event.clientY;
+
+      pointsElement.css({
+        left: mouseX,
+        top: mouseY,
+        display: 'block'
+      });
+
+      pointsElement.text(numberToShow);
+
+      pointsElement.addClass('points-animated');
+
+      setTimeout(function() {
+        pointsElement.removeClass('points-animated').css('display', 'none');
+      }, 700);
+    }
+  }
+
   $(".start-quiz").click(function() {
     $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
@@ -811,7 +841,7 @@ $(function() {
     $(".check-answer").prop("disabled", false);
   }
 
-  $(".check-answer").click(function() {
+  $(".check-answer").click(function(event) {
     var question = $(".quiz-question").eq(currentQuestion);
     var selected = question.find("input:checked");
     var msgBox = question.find(".quiz-message");
@@ -837,32 +867,7 @@ $(function() {
       } else {
         playSound(correctSound);
       }
-
-      // очки
-      // var numberToShow = (correctAnswers === 5 || correctAnswers === 10 || correctAnswers === 15 || correctAnswers === 20 || correctAnswers === 25 || correctAnswers === 30 || correctAnswers === 35 || correctAnswers === 40 || correctAnswers === 45 || correctAnswers === 50) ? correctAnswers : null;
-      // если значение correctAnswers кратно 5
-      var numberToShow = (correctAnswers % 5 === 0) ? correctAnswers : null;
-
-      if (numberToShow) {
-        var pointsElement = $('#points');
-
-        var mouseX = event.clientX;
-        var mouseY = event.clientY;
-
-        pointsElement.css({
-          left: mouseX,
-          top: mouseY,
-          display: 'block'
-        });
-
-        pointsElement.text(numberToShow);
-
-        pointsElement.addClass('points-animated');
-
-        setTimeout(function() {
-          pointsElement.removeClass('points-animated').css('display', 'none');
-        }, 700);
-      }
+      showPoints(event);
     } else {
       msgBox.html(sbagliatoIcon + "Неправильно! Правильный ответ: " + correctAnswer).addClass("answer-incorrect");
       playSound(wrongSound);
@@ -996,7 +1001,7 @@ $(function() {
       playSound(clickSound);
     });
 
-    $("#check-answer-btn").click(function() {
+    $("#check-answer-btn").click(function(event) {
       var selected = $(".letter.selected").map(function() {
         return $(this).data("index");
       }).get();
@@ -1014,29 +1019,7 @@ $(function() {
         $("#quiz-result-message").html(esattoIcon + "Правильно!").addClass("answer-correct").removeClass("answer-incorrect");
         correctAnswers++;
         playSound(correctSound);
-
-        var numberToShow = (correctAnswers % 5 === 0) ? correctAnswers : null;
-
-        if (numberToShow) {
-          var pointsElement = $('#points');
-
-          var mouseX = event.clientX;
-          var mouseY = event.clientY;
-
-          pointsElement.css({
-            left: mouseX,
-            top: mouseY,
-            display: 'block'
-          });
-
-          pointsElement.text(numberToShow);
-
-          pointsElement.addClass('points-animated');
-
-          setTimeout(function() {
-            pointsElement.removeClass('points-animated').css('display', 'none');
-          }, 700);
-        }
+        showPoints(event);
       } else {
         var correctWord = "";
         for (var i = 0; i < words[currentIndex].word.length; i++) {
