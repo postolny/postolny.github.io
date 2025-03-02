@@ -14,4 +14,4 @@ categories:
 1. Tieni premuto la lettera che bisogna accentare.
 2. Dopo un secondo apparirà un menu in qui puoi scegliere la lettera coll'accento.
 
-Allo stesso modo si può anche digitare le lettere ё e ъ sulla tastiera russa. [Qui]({{ site.baseurl }}/tastiera-italiana/){:target="_blank" rel="noopener noreferrer"} avevo già scritto come digitare le lettere accentate su un computer.
+Allo stesso modo si può anche digitare le lettere **ё** e **ъ** sulla tastiera russa. [Qui]({{ site.baseurl }}/tastiera-italiana/){:target="_blank" rel="noopener noreferrer"} avevo già scritto come digitare le lettere accentate su un computer.
