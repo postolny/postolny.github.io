@@ -32,6 +32,9 @@ $(function() {
   const wrongSound = new Audio("/audio/wrong.mp3");
   const victorySound = new Audio("/audio/victory.mp3");
   let isMuted = false;
+  let time = 0;
+  let interval;
+  let isStopped = false;
 
   var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
@@ -54,6 +57,53 @@ $(function() {
       sound.play();
     }
   }
+
+  function startTimer() {
+    if (interval) clearInterval(interval);
+
+    if (isStopped) {
+      $(".timer-bar").hide();
+      return;
+    }
+
+    $(".timer-bar").show().css({ transition: "none", width: "0%" });
+
+    setTimeout(() => {
+      $(".timer-bar").css("transition", "width 1s linear");
+    }, 50);
+
+    interval = setInterval(() => {
+      if (!isStopped) {
+        time += 10;
+        $(".timer-bar").css("width", time + "%");
+
+        if (time >= 100) {
+          clearInterval(interval);
+          console.log("Время вышло!");
+          $(".next-question").prop("disabled", false);
+          $(".check-answer").prop("disabled", true);
+          $("#next-question-btn").prop("disabled", false);
+          $("#check-answer-btn").prop("disabled", true);
+        }
+      }
+    }, 1000);
+  }
+
+  function toggleTimer() {
+    isStopped = !isStopped;
+    $("#timerOnIcon").toggle(!isStopped);
+    $("#timerOffIcon").toggle(isStopped);
+
+    if (isStopped) {
+      clearInterval(interval);
+      $(".timer-bar").hide();
+    } else {
+      time = 0;
+      startTimer();
+    }
+  }
+
+  $("#timerOnIcon, #timerOffIcon").click(toggleTimer);
 
   function day() {
     $("#day").html('Oggi è ' + g[giornoSettimana] + ', ' + giornoMese + ' ' + m[mese] + '<br>' + 'Сегодня ' + dn[giornoSettimana] + ', ' + giornoMese + ' ' + mes[mese]);
@@ -817,6 +867,9 @@ $(function() {
     $(".quiz-score").text("0/" + totalQuestions);
     $(".next-question").prop("disabled", true);
     $(".check-answer").prop("disabled", false);
+
+    time = 0;
+    startTimer();
   });
 
   $(".close-btn").on("click", function() {
@@ -853,6 +906,8 @@ $(function() {
       return;
     }
 
+    clearInterval(interval);
+
     var isCorrect = selected.is("[data-correct]");
     var explanation = selected.attr("data-explanation") || "";
     var correctAnswer = question.find("input[data-correct]").parent().text();
@@ -887,6 +942,9 @@ $(function() {
 
   $(".next-question").click(function() {
     setTimeout(function() {
+      time = 0;
+      if (!isStopped) startTimer();
+
       if ($(this).prop("disabled")) return;
 
       currentQuestion++;
@@ -902,6 +960,7 @@ $(function() {
   });
 
   function showSummary() {
+    $(".timer-bar").hide();
     $(".quiz-question").removeClass("active").hide();
     $(".summary").show();
     var resultsList = $(".results-list").empty();
@@ -933,6 +992,8 @@ $(function() {
   }
 
   $(".restart-quiz").click(function() {
+    time = 0;
+    if (!isStopped) startTimer();
     $(".summary").hide();
     $(".quiz-question").removeClass("active").hide().eq(0).addClass("active").show();
     $(".quiz-score").text("0/" + totalQuestions);
@@ -954,6 +1015,8 @@ $(function() {
     $("body,.navigation").css("paddingRight", scrollbarWidth);
     $(".quiz-container").show();
     restartStressQuiz();
+    time = 0;
+    startTimer();
   });
 
   if ($(".word-item").length > 0) {
@@ -1012,6 +1075,8 @@ $(function() {
         return;
       }
 
+      clearInterval(interval);
+
       selected.sort(function(a, b) { return a - b; });
       correct.sort(function(a, b) { return a - b; });
 
@@ -1040,6 +1105,8 @@ $(function() {
     });
 
     $("#next-question-btn").click(function() {
+      time = 0;
+      if (!isStopped) startTimer();
       if (currentIndex < words.length - 1) {
         currentIndex++;
         showWord(currentIndex);
@@ -1047,6 +1114,7 @@ $(function() {
         $("#quiz-result-message").text("Викторина завершена!").addClass("answer-correct").removeClass("answer-incorrect");
         $("#check-answer-btn, #next-question-btn").hide();
         $("#restart-stress-quiz, #viewListOfWords").show();
+        $(".timer-bar").hide();
       }
     });
 
@@ -1059,6 +1127,8 @@ $(function() {
       $("#check-answer-btn, #next-question-btn").show();
       showWord(currentIndex);
       $("#listOfWords").hide();
+      time = 0;
+      if (!isStopped) startTimer();
     }
     $("#restart-stress-quiz").click(restartStressQuiz);
 

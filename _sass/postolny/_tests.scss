@@ -403,6 +403,16 @@
   animation: none;
 }
 
+.timer-bar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background: $green;
+  transition: width 1s linear;
+}
+
 /* Accento */
 
 #accento {
