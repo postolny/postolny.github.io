@@ -35,6 +35,7 @@ $(function() {
   let time = 0;
   let interval;
   let isStopped = false;
+  let answered = false;
 
   var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
@@ -61,7 +62,7 @@ $(function() {
   function startTimer() {
     if (interval) clearInterval(interval);
 
-    if (isStopped) {
+    if (answered) {
       $(".timer-bar").hide();
       return;
     }
@@ -905,7 +906,7 @@ $(function() {
       msgBox.text("Выберите ответ!").addClass("answer-incorrect");
       return;
     }
-
+    answered = true;
     clearInterval(interval);
 
     var isCorrect = selected.is("[data-correct]");
@@ -943,6 +944,7 @@ $(function() {
   $(".next-question").click(function() {
     setTimeout(function() {
       time = 0;
+      answered = false;
       if (!isStopped) startTimer();
 
       if ($(this).prop("disabled")) return;
@@ -993,6 +995,7 @@ $(function() {
 
   $(".restart-quiz").click(function() {
     time = 0;
+    answered = false;
     if (!isStopped) startTimer();
     $(".summary").hide();
     $(".quiz-question").removeClass("active").hide().eq(0).addClass("active").show();
@@ -1075,6 +1078,7 @@ $(function() {
         return;
       }
 
+      answered = true;
       clearInterval(interval);
 
       selected.sort(function(a, b) { return a - b; });
@@ -1106,6 +1110,7 @@ $(function() {
 
     $("#next-question-btn").click(function() {
       time = 0;
+      answered = false;
       if (!isStopped) startTimer();
       if (currentIndex < words.length - 1) {
         currentIndex++;
@@ -1128,6 +1133,7 @@ $(function() {
       showWord(currentIndex);
       $("#listOfWords").hide();
       time = 0;
+      answered = false;
       if (!isStopped) startTimer();
     }
     $("#restart-stress-quiz").click(restartStressQuiz);
