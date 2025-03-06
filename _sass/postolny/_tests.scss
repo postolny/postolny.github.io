@@ -165,7 +165,7 @@
 }
 
 .check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz, .quiz-submit, .mostrami,
-#btn-mese, #btn-giorno, #acc_dacapo, .start-quiz, .start-stress-quiz {
+#btn-mese, #btn-giorno, #acc_dacapo, .start-quiz, .start-stress-quiz, .fill-answers {
   display: inline-block;
   font: inherit;
   cursor: pointer;
@@ -182,12 +182,12 @@
   -webkit-user-select: none;
 }
 
-.check-answer:active, .next-question:active, .restart-quiz:active, #check-answer-btn:active, #next-question-btn:active, #viewListOfWords:active, #restart-stress-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active, .start-stress-quiz:active {
+.check-answer:active, .next-question:active, .restart-quiz:active, #check-answer-btn:active, #next-question-btn:active, #viewListOfWords:active, #restart-stress-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active, .start-stress-quiz:active, .fill-answers:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 $default-shade;
 }
 
-.check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz {
+.check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz, .fill-answers {
   margin-top: 10px;
 }
 
@@ -454,7 +454,7 @@
 .questions input[type="text"] {
   display: inline-block;
   font: inherit !important;
-  width: 100px;
+  width: 155px;
   height: 20px;
   border: 1px solid $grey-3;
   border-width: 0px 0px 1px 0px;
@@ -473,6 +473,9 @@
 .errato {
   background: coral !important;
   color: $white !important;
+}
+.errato::placeholder {
+  color: $white !important; 
 }
 .block-result {
   font-size: 14px;

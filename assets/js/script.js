@@ -1196,6 +1196,13 @@ $(function() {
     $(".result").text("Правильных ответов: " + score + " из " + total);
   });
 
+  $('.fill-answers').on('click', function() {
+    $('span[data-answer]').each(function() {
+      let answer = $(this).data("answer").toLowerCase();
+      $(this).find('input').val(answer).removeClass("errato").addClass("corretto");
+    });
+  });
+
   const p7 = "ub";
 
   $.getJSON('/assets/frasario.json').done(function(data) {
