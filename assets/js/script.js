@@ -1186,7 +1186,7 @@ $(function() {
       total++;
       let input = $(this).find("input");
       input.removeClass();
-      if ($(this).data("answer") == input.val().toUpperCase()) {
+      if ($(this).data("answer") == input.val().trim().toLowerCase()) {
         score++;
         input.addClass("corretto");
       } else {
@@ -1198,7 +1198,7 @@ $(function() {
 
   $('.fill-answers').on('click', function() {
     $('span[data-answer]').each(function() {
-      let answer = $(this).data("answer").toLowerCase();
+      let answer = $(this).data("answer");
       $(this).find('input').val(answer).removeClass("errato").addClass("corretto");
     });
   });
