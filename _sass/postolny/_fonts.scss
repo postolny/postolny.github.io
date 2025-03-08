@@ -27,3 +27,13 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora-italic.woff2') format('woff2'),
+       url('/fonts/lora-italic.woff') format('woff'),
+       url('/fonts/lora-italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
