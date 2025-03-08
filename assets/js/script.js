@@ -1193,7 +1193,7 @@ $(function() {
 
       input.removeClass("corretto errato");
 
-      let userAnswer = input.val().trim().replace(/\s+/g, ' ').replace(/'\s+/g, "'").toLowerCase();
+      let userAnswer = input.val().trim().replace(/\s+/g, ' ').replace(/\s*([.,:;!?'])\s*/g, '$1').toLowerCase();
 
       if (!userAnswer) {
         allFilled = false;
@@ -1208,7 +1208,7 @@ $(function() {
     if (allFilled) {
       $("span[data-answer]").each(function() {
         let input = $(this).find("input");
-        let userAnswer = input.val().trim().replace(/\s+/g, ' ').replace(/'\s+/g, "'").toLowerCase();
+        let userAnswer = input.val().trim().replace(/\s+/g, ' ').replace(/\s*([.,:;!?'])\s*/g, '$1').toLowerCase();
 
         if ($(this).data("answer") == userAnswer) {
           score++;
