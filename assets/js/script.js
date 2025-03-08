@@ -1179,28 +1179,66 @@ $(function() {
     $("#accento input").first().focus();
   });
 
+  let canFill = false;
+
   $(".mostrami").on("click", function() {
     var score = 0;
     var total = 0;
+    var allFilled = true;
+    var allCorrect = true;
+
     $("span[data-answer]").each(function() {
       total++;
       let input = $(this).find("input");
-      input.removeClass();
-      if ($(this).data("answer") == input.val().trim().toLowerCase()) {
-        score++;
-        input.addClass("corretto");
-      } else {
-        input.addClass("errato");
+
+      input.removeClass("corretto errato");
+
+      let userAnswer = input.val().trim().replace(/\s+/g, ' ').replace(/'\s+/g, "'").toLowerCase();
+
+      if (!userAnswer) {
+        allFilled = false;
       }
+
+      if ($(this).data("answer") !== userAnswer) {
+        allCorrect = false;
+      }
+
     });
-    $(".result").text("Правильных ответов: " + score + " из " + total);
+
+    if (allFilled) {
+      $("span[data-answer]").each(function() {
+        let input = $(this).find("input");
+        let userAnswer = input.val().trim().replace(/\s+/g, ' ').replace(/'\s+/g, "'").toLowerCase();
+
+        if ($(this).data("answer") == userAnswer) {
+          score++;
+          input.addClass("corretto");
+        } else {
+          input.addClass("errato");
+        }
+      });
+
+      $(".result").text("Правильных ответов: " + score + " из " + total);
+      if (allCorrect) {
+        $(".fill-answers").css("display", "none");
+      } else {
+        $(".fill-answers").css("display", "inline-block");
+        canFill = true;
+      }
+    } else {
+      $(".result").text("Сначала заполните все поля!");
+      canFill = false;
+      $(".fill-answers").css("display", "none");
+    }
   });
 
-  $('.fill-answers').on('click', function() {
-    $('span[data-answer]').each(function() {
-      let answer = $(this).data("answer");
-      $(this).find('input').val(answer).removeClass("errato").addClass("corretto");
-    });
+  $(".fill-answers").on("click", function() {
+    if (canFill) {
+      $("span[data-answer]").each(function() {
+        let answer = $(this).data("answer");
+        $(this).find("input").val(answer).addClass("corretto").removeClass("errato");
+      });
+    }
   });
 
   const p7 = "ub";
