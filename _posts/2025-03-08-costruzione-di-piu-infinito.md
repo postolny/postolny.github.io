@@ -22,6 +22,9 @@ _Penso di andare a Roma domani._
 
 Первый пример русскоговорящему человеку понять легко и _«Penso che Maria vada a Roma domani»_ буквально переводится _«Я думаю, что Мария поедет в Рим завтра»_. Но как понять использование конструкции _di + infinito_ во втором примере? Для этого можно провести параллель с русским языком и перевести _«Penso di andare a Roma domani»_ не _«Я думаю, что я поеду в Рим завтра»_, а _«Я думаю поехать в Рим завтра»_.
 
+**In breve:** Abbiamo una frase con due soggetti. Se i soggetti sono diversi, usiamo il _congiuntivo_. Se il soggetto è lo stesso, usiamo la costruzione _di + infinito_.
+{: .cornice}
+
 А теперь поупражняемся.
 
 {% include di-piu-infinito.html %}

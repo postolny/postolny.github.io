@@ -64,9 +64,11 @@
 /* Radio buttons */
 
 .domanda {
-  background: $grey-4;
+  background: #fffafa;
+  border-radius: 10px;
   margin-bottom: 1em;
   padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   p {
     margin-bottom: 10px;
   }
@@ -74,10 +76,11 @@
     padding: 0.2em 0.3em;
   }
   label.correct {
-    background: #8dc692;
+    background: #e8ffc6;
     color: $white;
   }
 }
+
 .radio {
   display: block;
   cursor: pointer;
@@ -135,16 +138,20 @@
     }
   }
 }
+
 .quiz-msg {
   margin-top: 1em;
   padding: 0.5em;
 }
+
 .quiz-msg.correct {
   background: #e8ffc6;
 }
+
 .quiz-msg.incorrect {
   background: #ffe5cc;
 }
+
 .risultati {
   font-size: 14px;
   margin: 20px 0;
@@ -154,6 +161,12 @@
   display: inline-block;
   vertical-align: middle;
   padding-left: 3px;
+}
+
+.svg-icon-container {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
 }
 
 /* Radio buttons - 2 */
