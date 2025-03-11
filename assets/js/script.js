@@ -800,12 +800,12 @@ $(function() {
         var correctRadio = $(this).find("input[data-correct]");
         var correctRadioLabel = correctRadio.parent();
         if (correct == 1) {
-          var msgHTML = '<div class="quiz-msg correct">Правильно!</div>';
+          var msgHTML = '<div class="quiz-msg correct">' + esattoIcon + '<span>Правильно!</span></div>';
           $(this).append(msgHTML);
           correctRadioLabel.removeClass("correct");
           correctAnswers++;
         } else {
-          var _msgHTML = '<div class="quiz-msg incorrect">Неправильно!</div>';
+          var _msgHTML = '<div class="quiz-msg incorrect">' + sbagliatoIcon + '<span>Неправильно!</span></div>';
           $(this).append(_msgHTML);
           correctRadioLabel.addClass("correct");
         }

@@ -77,7 +77,6 @@
   }
   label.correct {
     background: #e8ffc6;
-    color: $white;
   }
 }
 
@@ -140,8 +139,15 @@
 }
 
 .quiz-msg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   margin-top: 1em;
   padding: 0.5em;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .quiz-msg.correct {
@@ -166,7 +172,7 @@
 .svg-icon-container {
   width: 24px;
   height: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 /* Radio buttons - 2 */
