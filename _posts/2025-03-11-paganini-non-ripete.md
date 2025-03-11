@@ -10,9 +10,9 @@ tags: Переводы
 
 Questo popolare detto ebbe origine nel febbraio del 1818 al Teatro Carignano di Torino, quando Carlo Felice[^1], dopo aver assistito a un concerto di Paganini, fece pregare il maestro di ripetere un brano. Paganini, che subiva spesso lesioni ai polpastrelli ed amava improvvisare al momento, rendendo le sue esecuzioni difficilmente ripetibili, gli fece rispondere con disappunto: «Paganini non ripete». A seguito del[^2] rifiuto di concedere il bis, gli fu negato il permesso di eseguire un terzo concerto in programma[^3].
 
-La controversia causò l'annullamento dei concerti previsti a Vercelli e Alessandria. In due lettere inviate all'amico avvocato Luigi Guglielmo Germi scrisse: «La mia costellazione in questo cielo è contraria[^4]. Per non aver potuto replicare a richiesta le variazioni della seconda Accademia[^5], il Sig. Governatore ha creduto bene di sospendermi la terza…» (il 25 febbraio 1818) e poi, ancora: «In questo regno, il mio violino spero di non farlo più sentire» (l'11 marzo dello stesso anno). Nel 1836 tornò comunque a suonare proprio a Torino, per ringraziare Carlo Alberto per la concessione di legittimazione del figlio Achille[^6].
+La controversia causò l'annullamento dei concerti previsti a Vercelli e Alessandria. In due lettere inviate all'amico avvocato Luigi Guglielmo Germi scrisse: «La mia costellazione in questo cielo è contraria[^4]. Per non aver potuto replicare a richiesta le variazioni della seconda Accademia[^5], il Sig. Governatore ha creduto bene di sospendermi la terza…» (il 25 febbraio 1818) e poi, ancora: «In questo regno, il mio violino spero di non farlo più sentire» (l'11 marzo dello stesso anno). Nel 1836 tornò comunque a suonare proprio a Torino, per ringraziare Carlo Alberto per la concessione di legittimazione[^6] del figlio Achille.
 
-La frase «Paganini non ripete» è usata tuttora nel linguaggio comune per motivare il rifiuto di ripetere un gesto o una frase.
+La frase «Paganini non ripete» è usata tuttora nel linguaggio comune per motivare il rifiuto di ripetere un gesto o una frase[^7].
 
 Это популярное изречение родилось в феврале 1818 года в туринском театре Кариньяно. После посещения концерта Никколо Паганини герцог Карло Феличе попросил маэстро повторить одно из произведений. Однако Паганини, который нередко травмировал подушечки пальцев и любил импровизировать на ходу, делая каждое своё исполнение уникальным, с досадой ответил: «Паганини не повторяет». Из-за отказа дать бис музыканту запретили выступать с третьим запланированным концертом.
 
@@ -24,12 +24,14 @@ Traduzione dell'articolo da [Wikipedia](https://it.wikipedia.org/wiki/Niccol%C3%
 
 [^1]: Carlo Felice di Savoia fu re di Sardegna, duca di Savoia, e sovrano dello Stato sabaudo dal 1821 fino alla sua morte. Карло Феличе Савойский был королём Сардинии, герцогом Савойи и правителем Савойского государства с 1821 года до своей смерти.
 
-[^2]: in seguito a..., a seguito di... — вследствие, по причине
+[^2]: in seguito a..., a seguito di... — вследствие, по причине.
 
-[^3]: concerto in programma — буквально — концерт в(по) программе
+[^3]: concerto in programma — букв. — концерт в(по) программе.
 
-[^4]: è contraria — буквально — противостоит (мне)
+[^4]: è contraria — здесь: противостоит (мне).
 
-[^5]: Academia — (торжественный) концерт, литературный вечер; академия уст. dare un'accademia — дать концерт
+[^5]: Academia — (торжественный) концерт, литературный вечер; академия _уст._ dare un'accademia — дать концерт.
 
-[^6]: la concessione di legittimazione — разрешение признать знаконным
+[^6]: la concessione di legittimazione — разрешение признать знаконным.
+
+[^7]: Questa frase viene anche usata spesso in Italia in modo scherzoso o per pigrizia (nota del traduttore). Эта выражение также часто используется в Италии в шутливой форме или из лени (прим. переводчика).
