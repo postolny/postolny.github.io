@@ -5,7 +5,7 @@ description: "Это популярное изречение родилось в
 author: "И. Постольный"
 comments: false
 categories:
-tags: Переводы
+tags: [Переводы, Modi-di-dire]
 ---
 
 Questo popolare detto ebbe origine nel febbraio del 1818 al Teatro Carignano di Torino, quando Carlo Felice[^1], dopo aver assistito a un concerto di Paganini, fece pregare il maestro di ripetere un brano. Paganini, che subiva spesso lesioni ai polpastrelli ed amava improvvisare al momento, rendendo le sue esecuzioni difficilmente ripetibili, gli fece rispondere con disappunto: «Paganini non ripete». A seguito del[^2] rifiuto di concedere il bis, gli fu negato il permesso di eseguire un terzo concerto in programma[^3].
