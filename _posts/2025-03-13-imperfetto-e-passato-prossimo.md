@@ -33,7 +33,7 @@ _Quando Giada è entrata, Maria è uscita (Когда Джада вошла, М�
 
 Как я писал выше, _azione lunga_ — это длительное действие, выраженное _imperfetto_ и в данном случае прилагательное _lunga_ так и переводится на русский: _долгая_, _длительная_, _продолжительная_. Прилагательное _puntuale_ в грамматичеком термине _azione puntuale_ имеет значение _точный_, _пунктуальный_, но какое отношение это имеет к прошедшему времени? Попробую объяснить на примере: «Quando ho aperto la finestra, è cominciato a piovere» — «Когда я открыл окно, начался дождь». И вот оно наше _azione puntuale_: _ho aperto_ — _открыл и всё_, _è cominciato_ — _начался и всё_.
 
-1) _impefetto_ + _passato prossimo_
+3) _impefetto_ + _passato prossimo_
 
 В третьем случае мы видим глагол в _impefetto_ в главном предложении и глагол в _passato prossimo_ в придаточном (nel terzo caso vediamo il verbo all'imperfetto nella prima frase e il verbo al passato prossimo nella seconda).
 
@@ -41,3 +41,7 @@ Mentre mangiavo, è suonato il telefono (В то время как я ел, за
 
 - Mentre mangiavo — azione lunga.
 - è suonato il telefono — azione puntuale che avviene nel momento in cui mangiavo.
+
+А теперь поупражняемся. Заполните поля, поставив глаголы в правильную форму (imperfetto или passato prossimo).
+
+{% include imperfetto-e-passato-prossimo.html %}
