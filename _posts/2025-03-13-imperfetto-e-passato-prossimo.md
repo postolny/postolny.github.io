@@ -5,7 +5,7 @@ description: "Сегодня посмотрел видео, в котором д
 author: "И. Постольный"
 comments: false
 categories:
-tags: Грамматика
+tags: [Тесты, Грамматика]
 ---
 
 Сегодня посмотрел видео, в котором девушка по имени Эмма рассматривает случай, когда в предложении одновременно происходят два действия в прошлом (Oggi ho visto un video in cui una ragazza di nome Emma considera il caso in cui in una frase ci sono due azioni passate che avvengono contemporaneamente):
@@ -42,6 +42,6 @@ Mentre mangiavo, è suonato il telefono (В то время как я ел, за
 - Mentre mangiavo — azione lunga.
 - è suonato il telefono — azione puntuale che avviene nel momento in cui mangiavo.
 
-А теперь поупражняемся. Заполните поля, поставив глаголы в правильную форму (imperfetto или passato prossimo).
+А теперь поупражняемся. Заполните поля, поставив глаголы в правильную форму (imperfetto или passato prossimo). В тесте вам понадобится глагол _essere_ в 3 л. ед. ч.  [Здесь]({{ site.baseurl }}/tastiera-italiana/){:target="_blank" rel="noopener noreferrer"} вы можете прочитать как набирать подобные буквы.
 
 {% include imperfetto-e-passato-prossimo.html %}
