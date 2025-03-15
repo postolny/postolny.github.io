@@ -12,24 +12,78 @@ permalink: /categories/
   </div>
   <div class="categories-clouds">
     {% assign categories = site.categories | sort %}
-    {% for category in categories %}
-    <span class="site-category">
-      <a href="#{{ category | first | slugify }}">
-        {{ category[0] | replace:'-', ' ' | capitalize }}
-      </a>
-    </span>
-    {% endfor %}
+
+    <div class="categories-group it">
+      <h2>Italiano</h2>
+      <div class="categories-clouds-list">
+        {% for category in categories %}
+        {% assign category_name = category[0] | replace:'-', ' ' %}
+        {% assign first_letter = category_name | slice: 0, 1 %}
+
+        {% if first_letter != "" and "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" contains first_letter %}
+        <span class="site-category category-it">
+          <a href="#{{ category_name | slugify }}">{{ category_name | capitalize }}</a>
+        </span>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="categories-group ru">
+      <h2>Русский</h2>
+      <div class="categories-clouds-list">
+        {% for category in categories %}
+        {% assign category_name = category[0] | replace:'-', ' ' %}
+        {% assign first_letter = category_name | slice: 0, 1 %}
+
+        {% if first_letter != "" and "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя" contains
+        first_letter %}
+        <span class="site-category category-ru">
+          <a href="#{{ category_name | slugify }}">{{ category_name | capitalize }}</a>
+        </span>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
   </div>
+
   <div class="categories-list-wrap">
     {% assign sorted_cats = site.categories | sort %}
+
+    <h2>Italiano</h2>
     {% for category in sorted_cats %}
-    {% assign sorted_posts = category[1] | sort: 'title' %}
-    <h3 class="categories-list-title" id="{{category[0] | downcase }}">{{category[0] | replace:'-', ' ' | capitalize }} ({{ category | last | size }})</h3>
+    {% assign category_name = category[0] | replace:'-', ' ' %}
+    {% assign first_letter = category_name | slice: 0 | downcase %}
+
+    {% if "abcdefghilmnopqrstuvzjkwxy" contains first_letter %}
+    <h3 class="categories-list-title" id="{{ category[0] | downcase }}">
+      {{ category[0] | replace:'-', ' ' | capitalize }} ({{ category[1] | size }})
+    </h3>
     <ul class="categories-list">
+      {% assign sorted_posts = category[1] | sort: 'title' %}
       {% for post in sorted_posts %}
-      <li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
+    {% endif %}
+    {% endfor %}
+
+    <h2>Русский</h2>
+    {% for category in sorted_cats %}
+    {% assign category_name = category[0] | replace:'-', ' ' %}
+    {% assign first_letter = category_name | slice: 0 | downcase %}
+
+    {% if "абвгдеёжзийклмнопрстуфхцчшщъыьэюя" contains first_letter %}
+    <h3 class="categories-list-title" id="{{ category[0] | downcase }}">
+      {{ category[0] | replace:'-', ' ' | capitalize }} ({{ category[1] | size }})
+    </h3>
+    <ul class="categories-list">
+      {% assign sorted_posts = category[1] | sort: 'title' %}
+      {% for post in sorted_posts %}
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
     {% endfor %}
   </div>
 </div>
