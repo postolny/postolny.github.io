@@ -41,6 +41,30 @@
     width: 1.5rem;
     height: 1.5rem;
   }
+  .categories-clouds {
+    gap: 20px;
+  }
+  .categories-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    &.it {
+      background-color: #baffce;
+    }
+    &.ru {
+      background-color: #c3dbff;
+    }
+    .categories-clouds-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }  
   &-list-wrap {
     margin-top: 50px;
   }
@@ -62,18 +86,4 @@
   &-post-meta {
     color: #b7b7b7;
   }
-}
-
-.categories-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 500px;
-}
-
-.categories-clouds-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
