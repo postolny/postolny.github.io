@@ -3,7 +3,6 @@ layout: post
 title: "Разбираемся с imperfetto и passato prossimo"
 description: "Сегодня посмотрел видео, в котором девушка по имени Эмма рассматривает случай, когда в предложении одновременно происходят два действия в прошлом (Oggi ho visto un video in cui una ragazza di nome Emma considera il caso in cui in una frase ci sono due azioni passate che avvengono contemporaneamente)"
 author: "И. Постольный"
-comments: false
 categories:
 tags: [Тесты, Грамматика]
 ---

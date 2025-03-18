@@ -3,7 +3,6 @@ layout: post
 title:  "Разбираем выражение «ce l'hai messa tutta»"
 description: "Прочитал в группе флорентийской школы Istituto Il David диалог, в котором есть такая реплика: «Immagino, conoscendoti so che ti sei impegnata molto, so che ce l'hai messa tutta.» Разберём эту реплику."
 author: "И. Постольный"
-comments: false
 tags: [Тесты, Грамматика]
 categories:
 ---

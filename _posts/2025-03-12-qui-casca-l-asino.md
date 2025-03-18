@@ -3,7 +3,6 @@ layout: post
 title: "Идиома «Qui casca l'asino»"
 description: "В этом коротком уроке преподавательница языковой школы Istituto Il David знакомит с довольно популярной идиомой «Qui casca l'asino»: [video]"
 author: "И. Постольный"
-comments: false
 categories:
 tags: Modi-di-dire
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "pavoneggiarsi"
 description: "1. tenere un atteggiamento vanitoso e superbo (вести себя тщеславно и гордо): pavoneggiarsi con gli amici (хвалиться перед друзьями). Sinonimi: darsi delle arie, fare la ruota, farsi bello."
 author: "И. Постольный"
-comments: false
 categories: p
 tags:
 ---

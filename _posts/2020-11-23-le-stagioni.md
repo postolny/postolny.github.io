@@ -2,7 +2,6 @@
 layout: post
 title:  "Le stagioni"
 author: "И. Постольный"
-comments: false
 categories:
 tags: Un-po'-di-tutto
 ---

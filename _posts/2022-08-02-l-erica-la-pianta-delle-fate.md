@@ -3,7 +3,6 @@ layout: post
 title: "L'erica, la pianta delle fate"
 description: "Он всегда считался волшебной травой. Легенда гласит, что в нём селились маленькие феи, которые безмятежно спали среди его цветов, в безопасности от озорных духов."
 author: "И. Постольный"
-comments: false
 categories:
 tags: Переводы
 ---

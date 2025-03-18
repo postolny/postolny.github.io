@@ -3,7 +3,6 @@ layout: post
 title: "Il pronome «quello» nelle costruzioni comparative o nella funzione di sostituzione del sostantivo"
 description: "Il pronome «quello» può sostituire un sostantivo con cui concorda, evitando così ripetizioni e rendendo la frase più fluida, scorrevole e naturale."
 author: "И. Постольный"
-comments: false
 categories:
 tags: Грамматика
 ---
