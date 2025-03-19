@@ -3,7 +3,6 @@ layout: post
 title: "судя по…"
 description: "L'espressione «судя по…» si può tradurre in italiano come «a giudicare da…» o «stando a…» e, in certi casi, come «secondo…» (quando indica una fonte di informazione o si riferisce all'opinione di qualcuno)."
 author: "И. Постольный"
-comments: false
 categories: с
 tags:
 ---
