@@ -84,4 +84,4 @@ _Vivere nella zona di comfort è facile, ma uscirne richiede molto sforzo. Жи�
 
 Qui, «uscirne» significa «uscire dalla zona di comfort, da lì»; la particella «ne» sostituisce «dalla zona di comfort».
 
-La particella «ne» può essere usata anche con i verbi pronominali.
+Il «ne» può essere usato anche con i verbi pronominali.
