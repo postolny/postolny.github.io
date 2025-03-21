@@ -19,6 +19,10 @@ _Questa pizza è enorme! Ne mangio solo una fetta. Эта пицца огром�
 
 Qui, «Ne mangio solo una fetta» significa «mangio solo una fetta della pizza»; la particella «ne» sostituisce «di queste fette».
 
+_Quanti ne abbiamo oggi? Какое сегодня число?_
+
+La frase completa potrebbe essere riformulata come «Quanti giorni del mese abbiamo oggi?».
+
 La particella «ne» si usa anche per indicare una quantità nulla.
 
 Un esempio:

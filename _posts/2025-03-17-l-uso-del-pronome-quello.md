@@ -34,6 +34,7 @@ Altri esempi:
 |il suo talento non è più quello di una volta|его талант потускнел|
 |riconvertire l'industria bellica in quella di pace|перевести военную промышленность на мирные рельсы|
 |Prendo la mia bici e tu puoi prendere quella di tuo fratello.|Я возму свой велосипед, а ты можешь взять велосипед своего брата.|
+|Oggi ha l'esame d'italiano, domani quello di francese.|Сегодня у него экзамен по итальянскому языку, а завтра по французскому.|
 |dopo il dottorato ottenne il titolo di candidato in scienze, cinque anni dopo gli fu conferito quello di dottore in scienze|после аспирантуры он получил степень кандидата наук, через пять лет он закончил докторантуру и ему присудили степень доктора наук|
 |«Ricordava aneddoti dei tempi passati, da quelli di Romolo ai giorni nostri» (A. Puškin)|«Но дней минувших анекдоты От Ромула до наших дней Хранил он в памяти своей» (А. Пушкин)|
 |«La donna di Kazan' è furba e saggia, ma ancor più furba è quella di Astrachan'» (Mel'nikov-Pečerskij)|«Хитра, мудра баба казанская, похитрей её астраханская» (Мельников-Печерский)|

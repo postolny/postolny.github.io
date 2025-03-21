@@ -25,4 +25,4 @@ Vorrei anche spiegare perché in questo esempio prima dell'aggettivo «bel» si 
 
 E l'ultima cosa.
 
-Perché «bel» e non «bello»? Perché, prima dei sostantivi che iniziano con consonante, l'aggettivo «bello» si scrive «bel».
+Perché «bel» e non «bello»? Perché davanti ai sostantivi singolari che iniziano per consonante l'aggettivo «bello» diventa «bel». Tuttavia, se il sostantivo inizia per «z» o per «s» seguita da un'altra consonante, si scrive «bello», cioè si usa la forma completa dell'aggettivo.
