@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "но это отдельная тема"
-description: "L'espressione «но это отдельная тема» si può trasmettere in italiano in vari modi. Ecco alcuni esempi. Ma quello è un discorso a parte (in questo contesto «a parte» in russo significa «в стороне, отдельно»)"
+description: "L'espressione «но это отдельная тема» si può rendere in italiano in vari modi. Ecco alcuni esempi. Ma quello è un discorso a parte (in questo contesto «a parte» in russo significa «в стороне, отдельно»)"
 author: "И. Постольный"
 categories: н
 tags:
 ---
 
-L'espressione «но это отдельная тема» si può trasmettere in italiano in vari modi. Ecco alcuni esempi:
+L'espressione «но это отдельная тема» si può rendere in italiano in vari modi. Ecco alcuni esempi:
 
 - Ma quello è un discorso a parte (in questo contesto «a parte» in russo significa «в стороне, отдельно»);
 - Ma questa è un'altra storia;
