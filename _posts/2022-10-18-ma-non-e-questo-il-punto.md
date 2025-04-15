@@ -3,7 +3,6 @@ layout: post
 title: "но дело не в этом"
 description: "Alcune espressioni che possono essere tradotte come \"но дело не в этом\", \"но не в этом суть\" etc."
 author: "И. Постольный"
-comments: false
 categories: н
 tags:
 ---

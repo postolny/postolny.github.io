@@ -3,7 +3,6 @@ layout: post
 title: "Видеоредактор LosslessCut"
 description: "В статье я расскажу как обрезать видео без потери качества по ключевым кадрам или по произвольным точкам, а также как объединить видео в видеоредакторе LosslessCut."
 author: "И. Постольный"
-comments: false
 categories: 
 tags: [YouTube, Музыка, Software]
 ---

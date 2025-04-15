@@ -3,7 +3,6 @@ layout: post
 title: "Как создать обложку для видео YouTube"
 description: "В статье я описываю свой способ создания обложки для видео YouTube в графическом редакторе GIMP."
 author: "И. Постольный"
-comments: false
 categories: 
 tags: [YouTube, Музыка, GIMP, OpenShot, Software]
 ---

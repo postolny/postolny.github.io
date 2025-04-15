@@ -3,7 +3,6 @@ layout: post
 title: "Как настроить Quick Access Popup"
 description: "В статье я расскажу как настроить утилиту для быстрого доступа к любым часто используемым файлам, папкам, приложениям, веб-сайтам, документам и системным командам Quick Access Popup."
 author: "И. Постольный"
-comments: false
 compress_html: false
 categories: 
 tags: [Software, CMD]

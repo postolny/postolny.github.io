@@ -3,7 +3,6 @@ layout: post
 title: "il fatto è che..."
 description: "La locuzione italiana \"il fatto è che...\" è simile a quella russa \"дело в том, что...\". Si usa quando vogliamo spiegare a qualcuno la causa di un problema o di una situazione oppure dire che qualcosa è un fatto evidente (dire di qualcosa che è un fatto evidente)."
 author: "И. Постольный"
-comments: false
 categories: i
 tags:
 ---

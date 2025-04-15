@@ -3,7 +3,6 @@ layout: post
 title:  "Конструкция «di + infinito»"
 description: "Разберёмся когда следует использовать сослагательное наклонение, а когда — конструкцию «di + infinito»? Вот простой пример: Penso che Maria vada a Roma domani."
 author: "И. Постольный"
-comments: false
 tags: [Тесты, Грамматика]
 categories:
 ---

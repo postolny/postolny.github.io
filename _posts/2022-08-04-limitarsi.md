@@ -3,7 +3,6 @@ layout: post
 title: "limitarsi"
 description: "contenersi (ограничиваться), non eccedere: limitarsi nel cibo, nel fumo (ограничивать себя в еде, в курении) / limitarsi a dire, a fare qcs., dire o fare soltanto quella (просто / только сказать, делать что-либо, говорить или делать только это)."
 author: "И. Постольный"
-comments: false
 categories: l
 tags:
 ---

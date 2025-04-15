@@ -3,7 +3,6 @@ layout: post
 title: "è (proprio) per questo che..."
 description: "La costruzione italiana \"è per questo che...\" viene tradotta in russo come: \"вот почему..., поэтому..., именно поэтому..., потому-то и т. д.\"."
 author: "И. Постольный"
-comments: false
 categories: e
 tags:
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "dietro le spalle"
 description: "L'espressione russo \"говорить за глаза\" equivale (corrisponde) a quello italiano \"dire dietro le spalle\" che significa alla lettera \"говорить за спиной\" o viene tradotta parola per parola come \"dire dietro gli occhi\", per esempio: \"Solo una persona ignobile può lodare in faccia e calunniare dietro gli occhi.\" (Pitagora)."
 author: "И. Постольный"
-comments: false
 categories: d
 tags:
 ---

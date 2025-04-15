@@ -3,7 +3,6 @@ layout: post
 title: "che razza di..."
 description: "La locuzione italiana \"che razza di...\" viene tradotta in russo come \"что за...\", \"что за порода (раса, вид, тип)...\" e viene spesso usata in senso ironico, per descrivere qualcuno o cualcosa o per esprimere sdegno, biasimo."
 author: "И. Постольный"
-comments: false
 categories: c
 tags:
 ---

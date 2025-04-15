@@ -3,7 +3,6 @@ layout: post
 title: "Dietro il o dietro a?"
 description: "Alcune osservazioni sull'uso corretto di dietro che ha molteplici funzioni e che non tutti conoscono. Cominciamo con quella veramente sconosciuta ai più: la funzione aggettivale. Несколько замечаний о правильном использовании слова dietro, которое имеет множество функций, о которых знают не все. Начнем с наиболее неизвестной для большинства: функции прилагательного."
 author: "И. Постольный"
-comments: false
 categories: 
 tags: Грамматика
 ---

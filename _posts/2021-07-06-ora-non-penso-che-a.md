@@ -3,7 +3,6 @@ layout: post
 title: "ora non penso che a..."
 description: "La costruzione italiana \"ora non penso che a…\" viene tradotta in russo come: \"сейчас (теперь) я только и думаю о...\". La congiunzione \"che\" cambia completamente il senso della frase."
 author: "И. Постольный"
-comments: false
 categories: o
 tags:
 ---

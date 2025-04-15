@@ -3,7 +3,6 @@ layout: post
 title: "è da tempo che..."
 description: "La costruzione \"è da tempo che...\" viene tradotta in russo come \"давно (уже)...\", \"давненько...\" etc."
 author: "И. Постольный"
-comments: false
 categories: e
 tags:
 ---

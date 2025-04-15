@@ -3,7 +3,6 @@ layout: post
 title: "rendersi conto"
 description: "accorgersi, comprendere pienamente; capacitarsi: ti sei reso conto del guaio che hai combinato?, ancora non si rende conto di quel che è successo (осознавать, полностью понимать; убеждаться: ты осознал, какие неприятности ты учинил? он все ещё не осознает, что произошло)."
 author: "И. Постольный"
-comments: false
 categories: r
 tags:
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "un certo non so che"
 description: "qcs. di indefinibile, che suscita un sentimento, un'impressione e sim.: quella donna ha un certo non so che che mi piace (что-то необъяснимое, невыразимое, что вызывает чувство, впечатление и т. п.: в этой женщине есть что-то, что мне нравится)."
 author: "И. Постольный"
-comments: false
 categories: u
 tags: Музыка
 ---

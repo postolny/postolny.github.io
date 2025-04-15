@@ -3,7 +3,6 @@ layout: post
 title: "Le mie ricette"
 description: "Vorrei dedicare questo post alla mia mamma, che mi ha insegnato a cucinare."
 author: "И. Постольный"
-comments: false
 categories:
 tags: Un-po'-di-tutto
 ---

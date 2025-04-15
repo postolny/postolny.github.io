@@ -3,7 +3,6 @@ layout: post
 title: "non che non..."
 description: "La costruzione \"non che non...\" viene tradotta in russo come \"не то чтобы...\", \"это не значит, что...\" etc."
 author: "И. Постольный"
-comments: false
 categories: n
 tags:
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "mettercela tutta"
 description: "L'espressione italiana \"mettercela tutta\" viene tradotta in russo come: \"стараться изо всех сил, прилагать все усилия\". Si usa per esprimere la volontà di impegnarsi a fondo."
 author: "И. Постольный"
-comments: false
 categories: m
 tags:
 ---

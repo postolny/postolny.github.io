@@ -3,7 +3,6 @@ layout: post
 title: "Frasi concessive: uso e significato (anche se, sebbene, nonostante, malgrado, pur)"
 description: "Уступительные предложения, безусловно, являются одной из самых сложных тем для изучающих итальянский язык... Как они используются? Что они означают? Давайте посмотрим, сможет ли наш урок прояснить твои сомнения раз и навсегда!"
 author: "И. Постольный"
-comments: false
 categories: 
 tags:  [Тесты, Грамматика]
 ---
