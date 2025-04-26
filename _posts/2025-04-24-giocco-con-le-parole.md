@@ -38,3 +38,9 @@ _Lui è il mio sopporto, ma non sopporto le sue bugie (il mio sopporto — мо�
 _Hanno spinto piano il piano all'ottavo piano, ma è caduto da lì velocemente (piano — медленно, piano — пианино, piano — этаж). Они межденно затащили пианино на девятый этаж, но оно быстро оттуда свалилось._
 
 _È arrivata la mosca a Mosca ed è volata dentro la bocca del presidente (mosca — муха, Mosca — Москва). Прилетела муха в Москву и залетела в рот президенту._
+
+_Non ci vuole un Trump grande, ma un grande Trump, per fare l'America grande (grande — большой, grande — великий, grande — великая)[^1]. Нужен не большой Трамп, а Трамп великий, чтобы сделать Америку великой._
+
+_Ci hanno promesso un grande presidente, ma ci è arrivato un presidente grande (grande — великий, grande — большой). Нам обещали великого президента, а пришёл просто большой._
+
+[^1]: Questa frase è una parodia del famoso spot dei Pennelli Cinghiale, in cui un imbianchino con un enorme pennello legato alla schiena pronuncia una battuta in cui l'aggettivo qualificativo grande cambia significato a seconda che preceda o segua il nome. Potete saperne di più sulla posizione dell'aggettivo qualificativo in [questo post]({{ site.baseurl }}/2021-03-25/la-posizione-dell-aggettivo-qualificativo).
