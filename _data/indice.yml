@@ -69,6 +69,8 @@ libri:
         url: /poesia/
       - page: Моя музыка 𝄞
         url: /musica/
+      - page: Мамино тепло
+        url: /il-calore-della-mamma/
   - titolo: Переводы
     subfolderitems:
       - page: Крестьянин-астролог • Итало Кальвино
