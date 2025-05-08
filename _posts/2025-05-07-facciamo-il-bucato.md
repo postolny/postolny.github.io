@@ -26,7 +26,11 @@ tags: Un-po'-di-tutto
 
 ### Lavare i panni (стирать бельё)
 
-Существительное «panni» также является собирательным и в данном контексте означает «бельё». В словаре Г. Ф. Зорько этому слову даются такие определения: 1) материя, ткань; сукно 2) _pl._ одежда, платье, бельё 3) перепонка, оболочка; плёнка, налёт (на вине, уксусе); однако значение «платье» здесь видимо следует понимать как «бельё, одежда» — об этом также говорит и то, что слово в данном контексте употребляется во множественном числе. Если к примеру русский скажет итальянке, желая похвалить её платье: _Signora, che bel panno indossa!_, то для неё это прозвучит по крайней мере странно. В этом случае следует сказать: _Signora, che bel vestito indossa!_, _Che bel vestito che ha addosso!_, _Signora, sta benissimo con quel vestito!_, _Signora, è bellissima / elegantissima con quel vestito!_, _Signora, quel vestito è bellissimo e le sta davvero benissimo!_, _Che bel abito!_
+Существительное «panni» также является собирательным и в данном контексте означает «бельё». В словаре Г. Ф. Зорько этому слову даются такие определения: 1) материя, ткань; сукно 2) _pl._ одежда, платье, бельё 3) перепонка, оболочка; плёнка, налёт (на вине, уксусе); однако значение «платье» здесь видимо следует понимать как «бельё, одежда» — об этом также говорит и то, что слово в данном контексте употребляется во множественном числе. Если к примеру русский скажет итальянке, желая похвалить её платья: _Signora, che bei panni indossa!_, то для неё это прозвучит по крайней мере странно. В этом случае следует сказать: _Signora, che bel vestito indossa!_, _Che bel vestito che ha addosso!_, _Signora, sta benissimo con quel vestito!_, _Signora, è bellissima / elegantissima con quel vestito!_, _Signora, quel vestito è bellissimo e le sta davvero benissimo!_, _Che bel abito!_
+
+Выражение nei _panni di..._ означает _оказаться в той же роли, в той же ситуации или положении, что и кто-то другой:_ _che faresti nei miei panni?_ — _что бы ты сделал на моём месте?_ [De Mauro](https://dizionario.internazionale.it/parola/nei-panni-di){:target="_blank" rel="noopener noreferrer"}<br>
+Выражение _mettersi nei panni (di qd)_ означает _поставить себя на место кого-то, залезть в чужую шкуру:_ _mettiti nei miei panni!_ — _поставь себя на моё место!_ [De Mauro](https://dizionario.internazionale.it/parola/mettersi-nei-panni){:target="_blank" rel="noopener noreferrer"}
+{: .cornice}
 
 И теперь несколько примеров выражений, который так или иначе связаны со стиркой белья:
 
