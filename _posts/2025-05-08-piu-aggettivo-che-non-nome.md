@@ -7,7 +7,7 @@ categories: p
 tags:
 ---
 
-In questo frammento di Calvino: «...nella frutta e verdura l'arsenico degli insetticidi era concentrato in percentuali più forti che non le vitamine...», lo scrittore utilizza la costruzione «più (aggettivo) che non (nome)». Qui la particella _non_ non è obbligatoria, e nel parlato quotidiano si direbbe: «più forti che le vitamine».
+In questo frammento di Calvino: «...nella frutta e verdura l'arsenico degli insetticidi era concentrato in percentuali più forti che non le vitamine...», lo scrittore utilizza la costruzione «più (aggettivo) che non (nome)». Qui la particella _non_ non è obbligatoria, e nel parlato quotidiano si direbbe: «più forti che le vitamine», ma nel testo di Calvino la _non_ rende la contrapposizione più forte.
 
 Ecco alcuni esempi simili:
 
