@@ -184,7 +184,7 @@
 }
 
 .check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz, .quiz-submit, .mostrami,
-#btn-mese, #btn-giorno, #acc_dacapo, .start-quiz, .start-stress-quiz, .fill-answers {
+#btn-mese, #btn-giorno, #acc_dacapo, .start-quiz, .start-stress-quiz, .fill-answers, .toggle-risposta {
   display: inline-block;
   font: inherit;
   cursor: pointer;
@@ -201,7 +201,7 @@
   -webkit-user-select: none;
 }
 
-.check-answer:active, .next-question:active, .restart-quiz:active, #check-answer-btn:active, #next-question-btn:active, #viewListOfWords:active, #restart-stress-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active, .start-stress-quiz:active, .fill-answers:active {
+.check-answer:active, .next-question:active, .restart-quiz:active, #check-answer-btn:active, #next-question-btn:active, #viewListOfWords:active, #restart-stress-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active, .start-stress-quiz:active, .fill-answers:active, .toggle-risposta:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 $default-shade;
 }
@@ -771,6 +771,20 @@
   &:focus {
     outline: none;
     border-color: $default-tint;
+  }
+}
+
+.compito {
+  margin-bottom: 20px;
+  .risposta {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: $grey-4;
+    border-left: 3px solid $green;
+    p:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 

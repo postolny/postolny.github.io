@@ -1927,4 +1927,19 @@ $(function() {
   } else {
     $('main').addClass('fallback-font');
   }
+  $('.toggle-risposta').click(function() {
+    var $button = $(this);
+    var $risposta = $button.next('.risposta');
+    
+    if ($risposta.is(':hidden')) {
+      $('.risposta').slideUp();
+      $('.toggle-risposta').text('Mostra la risposta');
+
+      $risposta.slideDown();
+      $button.text('Nascondi la risposta');
+    } else {
+      $risposta.slideUp();
+      $button.text('Mostra la risposta');
+    }
+  });
 });
