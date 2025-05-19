@@ -213,6 +213,22 @@ _Prima di iniziare a lavorare, pensa a cosa facevi ieri. — Прежде чем
 
 _Ora mi sento molto più sicuro dopo aver capito in che sbagliavo. — Сейчас я чувствую себя намного увереннее после того, как понял, в чём ошибался._ (dopo + infinito passato)
 
+**Presente + trapassato prossimo (temporale esplicita)**
+
+_Non capisco perché se ne fosse già andato prima che io arrivassi. — Я не понимаю, почему он уже ушёл до того, как я пришёл._
+
+**Presente + infinito passato (temporale implicita)**
+
+_Mi sembra strano non avermi avvisato prima di venire. — Мне кажется странным, что ты не предупредил меня о своём приезде._
+
+**Presente + passato remoto**
+
+_Ricordo quando partì per la guerra. — Я помню, как он ушёл на войну._
+
+**Presente + gerundio passato**
+
+_Avendo finito i compiti, posso uscire. — Сделав домашку, я могу пойти погулять._ (в разговорной речи может использоваться сокращённая форма «finito i compiti, posso uscire»)
+
 #### Proposizioni subordinate interrogative indirette
 
 **Presente + imperfetto (interrogative indirette esplicite)**
@@ -223,7 +239,7 @@ _Non so se andrebbero senza te. — Я не знаю, поехали бы ли �
 
 _Non capisco cosa volesse dire. — Я не понимаю, что он хотел сказать._ (congiuntivo после отрицания)
 
-**presente + condizionale passato (interrogative indirette esplicite)**
+**Presente + condizionale passato (interrogative indirette esplicite)**
 
 _Non so se avrebbero pagato. — Я не знаю, заплатили бы они._ (здесь прошедшее время условного наклонения (condizionale passato attivo) выражает сомнение)
 
