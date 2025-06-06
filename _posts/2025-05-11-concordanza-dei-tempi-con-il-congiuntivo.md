@@ -51,13 +51,17 @@ _Non credere che io non lo sapessi. — Не думай, что я этого н
 
 Если действие придаточного предложения выполняется после действия главного, то в нём можно использовать как congiuntivo presente, так и futuro semplice (у Zanichelli — только futuro semplice):
 
-_Spero che venga con me al concerto_<br>
-_Spero che verrai con me al concerto_
+_Spero che venga con me al concerto._<br>
+_Spero che verrai con me al concerto._
 
 То есть подобно тому как в изъявительном наклонении для выражения будущего можно использовать futuro semplice или presente в значении будущего:
 
-_So che vieni con me al concerto_<br>
-_So che verrai con me al concerto_
+_So che vieni con me al concerto._<br>
+_So che verrai con me al concerto._
+
+Penso che Natalia imparerà presto l'italiano. (Действие произойдёт в будущем)<br>
+Penso che Natalia impari presto l'italiano. (Мнение и неопределённость)<br>
+Spero che tutto vada bene e che questa terribile guerra finisca.
 
 ### Condizionale
 
