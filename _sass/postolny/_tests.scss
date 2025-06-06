@@ -184,7 +184,7 @@
 }
 
 .check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz, .quiz-submit, .mostrami,
-#btn-mese, #btn-giorno, #acc_dacapo, .start-quiz, .start-stress-quiz, .fill-answers, .toggle-risposta {
+#btn-mese, #btn-giorno, #acc_dacapo, .start-quiz, .start-stress-quiz, .fill-answers, .toggle-risposta, .concordareBtn {
   display: inline-block;
   font: inherit;
   cursor: pointer;
@@ -201,12 +201,12 @@
   -webkit-user-select: none;
 }
 
-.check-answer:active, .next-question:active, .restart-quiz:active, #check-answer-btn:active, #next-question-btn:active, #viewListOfWords:active, #restart-stress-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active, .start-stress-quiz:active, .fill-answers:active, .toggle-risposta:active {
+.check-answer:active, .next-question:active, .restart-quiz:active, #check-answer-btn:active, #next-question-btn:active, #viewListOfWords:active, #restart-stress-quiz:active, .quiz-submit:active, .mostrami:active, #btn-mese:active, #btn-giorno:active, #acc_dacapo:active, .start-quiz:active, .start-stress-quiz:active, .fill-answers:active, .toggle-risposta:active, .concordareBtn:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 $default-shade;
 }
 
-.check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz, .fill-answers {
+.check-answer, .next-question, .restart-quiz, #check-answer-btn, #next-question-btn, #viewListOfWords, #restart-stress-quiz, .fill-answers, .concordareBtn {
   margin-top: 10px;
 }
 
@@ -787,6 +787,93 @@
     }
   }
 }
+#concordanzaWrap {
+  .columns {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  label {
+    max-width: 230px;
+  }
+
+  #verbo {
+    box-sizing: border-box;
+    font: inherit !important;
+    width: 100%;
+    max-width: 230px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    transition: all ease-out 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: $default-tint;
+    }
+  }
+
+  select {
+    width: 100%;
+    max-width: 230px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all ease-out 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: $default-tint;
+    }
+  }
+}
+
+.concordanzaResult {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: $green;
+}
+
+.concordanzaHint {
+  margin-top: 10px;
+  font-style: italic;
+  color: $default-color;
+  white-space: pre-wrap;
+}
+
+#traduzioneResult {
+  font-style: italic;
+}
+
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.spoiler-container > :first-child {
+  margin-bottom: 5px;
+}
+
+.spoiler-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.spoiler-content {
+  display: none;
+}
 
 @media only screen and (max-width: 479px) {
   #wrap_mg label {
@@ -806,5 +893,22 @@
   }
   #text_num {
     font-size: 3em;
+  }
+
+  #concordanzaWrap {
+    #verbo, select {
+      max-width: none;
+    }
+    .columns {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .concordareBtn {
+      margin: 0;
+      width: 100%;
+    }
+    label {
+      width: 100%;
+    }
   }
 }
