@@ -1212,6 +1212,30 @@ $(function() {
     $("#concordareBtn").prop("disabled", false);
   });
 
+  $('#verbo').on('input focus', function() {
+    const hasValue = this.value.length > 0;
+    $('.clear-button').toggle(hasValue);
+
+    if (!hasValue) {
+      $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
+    }
+  });
+
+  $('#verbo').on('blur', function() {
+    setTimeout(() => {
+      if (!this.value.length) {
+        $('.clear-button').hide();
+        $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
+      }
+    }, 100);
+  });
+
+  $('.clear-button').on('click', function() {
+    $('#verbo').val('').focus();
+    $(this).hide();
+    $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
+  });
+
   function descriviPersona(p, genereSelezionato) {
     let descr = {};
 
@@ -1672,29 +1696,32 @@ $(function() {
     let subAzione = $("#subordinateAzione").val();
     let persona = $("#persona").val();
     let genere = $("#genere").val();
+
     console.log("Verbo:", verbo, "Tempo:", mainTempo, "Subordinata:", subAzione, "Persona:", persona, "Genere:", genere);
 
     if (!verbo) {
-      $("#concordanzaHint").text("Inserisci il verbo in forma base (infinito).");
-      $("#concordanzaResult").text("");
+      $("#concordanzaHint").text("Inserisci il verbo in forma base (infinito).").show();
+      $("#concordanzaResult").text("").hide();
+      $("#traduzioneResult").hide();
       return;
     }
 
     let verbData = participiPassati[verbo] || participiPassatiRiflessivi[verbo];
 
     if (!verbData) {
-      $("#concordanzaResult").text("");
-      $("#concordanzaHint").text("Глагол \"" + verbo + "\" не найден в словаре!");
+      $("#concordanzaResult").text("").hide();
+      $("#concordanzaHint").text("Глагол " + verbo + " не найден в словаре!").show();
+      $("#traduzioneResult").hide();
       return;
     }
 
     let result = concordanza(mainTempo, subAzione, verbo, persona, genere);
 
-    $("#concordanzaHint").text("");
-    $("#concordanzaResult").text("Forma corretta: " + result.forma);
-    $("#concordanzaHint").text(result.hint);
+    $("#concordanzaResult").text("Forma corretta: " + result.forma).show();
+    $("#concordanzaHint").text(result.hint).show();
 
     if (verbData.traduzione && verbData.traduzione.length) {
+      $("#traduzioneResult").show();
       renderTraduzione(verbData, verbo);
     } else {
       $("#traduzioneResult").hide();
