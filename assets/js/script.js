@@ -1415,10 +1415,44 @@ $(function() {
         };
       }
 
+      // только futuro semplice
+
+      // if (subordinateAzione === "posteriore") {
+      //   return {
+      //     forma: forma(verboFuturoVerb(verbo, persona)),
+      //     hint: descrizionePersona + " Concordanza: futuro semplice per esprimere un'azione posteriore al presente."
+      //   };
+      // }
+
+      // futuro semplice и congiuntivo presente
+
       if (subordinateAzione === "posteriore") {
+        const futuro = forma(verboFuturoVerb(verbo, persona));
+
+        let congiuntivoPresRaw = null;
+
+        if (congiuntivo_presente[verbo] && congiuntivo_presente[verbo][personaLookup]) {
+          congiuntivoPresRaw = congiuntivo_presente[verbo][personaLookup];
+        } else if (congiuntivo_presente[baseVerb] && congiuntivo_presente[baseVerb][personaLookup]) {
+          congiuntivoPresRaw = congiuntivo_presente[baseVerb][personaLookup];
+        }
+
+        let congiuntivoPres = "";
+        if (congiuntivoPresRaw) {
+          congiuntivoPres = forma(congiuntivoPresRaw);
+        } else {
+          congiuntivoPres = null;
+        }
+
+        let result = futuro;
+
+        if (congiuntivoPres) {
+          result += ", " + "oppure " + congiuntivoPres;
+        }
+
         return {
-          forma: forma(verboFuturoVerb(verbo, persona)),
-          hint: descrizionePersona + " Concordanza: futuro semplice per esprimere un'azione posteriore al presente."
+          forma: result,
+          hint: descrizionePersona + " Concordanza: normalmente si usa il futuro semplice per un'azione posteriore al presente, ma anche il congiuntivo presente è possibile (soprattutto in linguaggio formale)."
         };
       }
 
