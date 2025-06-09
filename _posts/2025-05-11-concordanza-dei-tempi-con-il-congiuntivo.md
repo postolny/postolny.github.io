@@ -59,9 +59,10 @@ _Spero che verrai con me al concerto._
 _So che vieni con me al concerto._<br>
 _So che verrai con me al concerto._
 
-Penso che Natalia imparerà presto l'italiano. (Действие произойдёт в будущем)<br>
-Penso che Natalia impari presto l'italiano. (Мнение и неопределённость)<br>
-Spero che tutto vada bene e che questa terribile guerra finisca.
+_Penso che Natalia imparerà presto l'italiano._ (Действие произойдёт в будущем)<br>
+_Penso che Natalia impari presto l'italiano._ (Мнение и неопределённость)
+
+_Spero che tutto vada bene e che questa terribile guerra finisca._
 
 ### Condizionale
 
@@ -72,3 +73,35 @@ Spero che tutto vada bene e che questa terribile guerra finisca.
 |Avrei voluto che …|… tu _fossi stato_ più buono (trapassato congiuntivo)|Anteriorità<br>Contemporaneità<br>Posteriorità|
 
 Как следует из таблицы, после condizionale passato в любом случае используется trapassato congiuntivo и понять является ли действие придаточного по отношению к главному предстоящим, одновременным или последующим возможно согласно контексту.
+
+### Prima che e altre congiunzioni subordinanti che vogliono il congiuntivo
+
+Если главное предложение стоит в прошедшем времени, а придаточное вводится например союзом prima che, то использовать condizionale passato нельзя. Во-первых, потому что prima che, как и другие подобные союзы, требует после себя congiuntivo, а во-вторых, prima che выражает действие, которое должно было произойти (или не произойти) до другого действия, а не гипотетический результат или условие. Вот несколько примеров:
+
+_È successo <span style="color: red;">prima che</span> arrivassi. — Это произошло до того, как ты пришёл._
+
+_È successo <span style="color: red;">prima che</span> fossi arrivato. — Это произошло до того, как ты пришёл._ (Если нужно подчеркнуть последовательность событий) 
+
+_Ti ho scritto <span style="color: red;">affinché</span> tu sapessi cosa fare. — Я написал тебе, чтобы ты знал, что делать._
+
+_I genitori furono molto severi con noi, <span style="color: red;">affinché / perché</span> imparassimo a comportarci bene. — Родители были очень строги с нами, чтобы мы научились вести себя хорошо._
+
+_Saremmo usciti, <span style="color: red;">a meno che</span> non piovesse. — Мы бы вышли, если бы только не шёл дождь._
+
+_È successo, <span style="color: red;">sebbene</span> lui non volesse. — Это произошло, хотя он не хотел._
+
+_<span style="color: red;">Nonostante / benché / per quanto / quantunque / sebbene</span> lo avessi messo in guardia, non mi ha ascoltato. — Хотя я предупреждал его, он не послушался._
+
+_È cambiato qualcosa <span style="color: red;">senza che</span> me ne accorgessi. — Что-то изменилось, хотя я этого не заметил._
+
+_Se ne è andato <span style="color: red;">senza che</span> nessuno ne sapesse niente. — Он ушёл так, что об этом никто ничего не узнал (возможный перевод: он умер тихо, незаметно).
+
+_La prova era più semplice <span style="color: red;">di quanto</span> avessi immaginato. — Экзамен оказался проще, чем я себе представлял._
+
+_Ti ho prestato la macchina, <span style="color: red;">a patto che</span> tu la riportassi entro sera. — Я одолжил тебе машину при условии, что ты её вернёшь до вечера._
+
+_Avresti potuto uscire <span style="color: red;">a patto che</span> tu avessi fatto i compiti. — Ты мог бы пойти гулять, если бы сделал домашку._ (condizionale passato nel principale + congiuntivo trapassato nella subordinata)
+
+Ну, а если нужно выразить будущее в прошлом или ожидаемое, но не произошедшее событие, то используем condizionale passato в придаточном согласно таблице выше:
+
+_Credevo che saresti arrivato. — Я думал, ты приедешь._
