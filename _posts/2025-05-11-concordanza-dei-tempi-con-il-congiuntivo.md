@@ -105,3 +105,52 @@ _Avresti potuto uscire <span style="color: red;">a patto che</span> tu avessi fa
 Ну, а если нужно выразить будущее в прошлом или ожидаемое, но не произошедшее событие, то используем condizionale passato в придаточном согласно таблице выше:
 
 _Credevo che saresti arrivato. — Я думал, ты приедешь._
+
+### Alternanza tra congiuntivo e indicativo nel parlato quotidiano
+
+_– Credi che Mario venga alla festa? — Думаешь, Марио придёт на вечеринку?_<br>
+_– Sì, credo che verrà. — Думаю, придёт._
+
+Как мы видим, в вопросе сослагательное наклонение (congiuntivo presente), поскольку вопрошающий не знает придёт ли Марио, а в ответе — изъявительное (futuro semplice), поскольку отвечающий уверен, что Марио придёт.
+
+### Congiuntivo in frasi indipendenti
+
+В итальянском языке congiuntivo также используется в независимых предложениях.
+
+#### Congiuntivo esortativo
+
+Выражает приказ и используется вместо императива:
+
+_Che mi dicano almeno chi verrà. — Пусть хотя-бы скажут кто придёт._
+
+_Che venga subito! — Пусть он немедленно явится!_
+
+_Che ognuno faccia il suo dovere. — Пусть каждый выполняет свой долг._
+
+_Ma la smetta! — Да перестаньте уже!_ (Для вежливой формы Lei не существует формы императива и используется congiuntivo)
+
+#### Congiuntivo ottativo
+
+Выражает пожелания, желания, надежды:
+
+_Che Dio ti benedica! — Да благословит тебя Господь!_
+
+_Magari piovesse! — Пусть пойдёт дождь!_ (congiuntivo imperfetto)
+
+_Magari finisse la guerra! — Хоть бы закончилась война!_
+
+_Ah, se finisse la guerra! — Ах, если бы война закончилась!_
+
+#### Congiuntivo concessivo
+
+Выражает допущение или уступку:
+
+_Faccia come vuole: non me ne importa. — Пусть делает как хочет / Делайте как хотите (на Вы): мне всё равно._
+
+#### Congiuntivo dubitativo
+
+Выражет сомнение, предположение:
+
+_Che caldo! Che sia già estate? — Как жарко! Неужели уже лето?_
+
+_Che siano pazzi? — Они что, с ума сошли?_
