@@ -1214,11 +1214,11 @@ $(function() {
     var countParticipiPassati = Object.keys(data.participiPassati).length;
     var countRiflessivi = Object.keys(data.participiPassatiRiflessivi).length;
     var countVerbiConEssere = Object.keys(data.verbiConEssere).length;
-    var verbiConDoppioAusiliare = Object.keys(data.verbiConDoppioAusiliare).length;
+    var countDoppioAusiliare = Object.keys(data.verbiConDoppioAusiliare).length;
 
     var total = countParticipiPassati + countRiflessivi;
 
-    console.log("Общее количество глаголов: " + total + "; возвратных глаголов: " + countRiflessivi + "; глаголов c essere: " + countVerbiConEssere + "; verbi con doppio ausiliare: " + verbiConDoppioAusiliare);
+    console.log("Общее количество глаголов: " + total + "; возвратных глаголов: " + countRiflessivi + "; глаголов c essere: " + countVerbiConEssere + "; verbi con doppio ausiliare: " + countDoppioAusiliare);
   });
 
   $('#verbo').on('input focus', function() {
