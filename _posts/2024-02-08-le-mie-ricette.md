@@ -11,7 +11,7 @@ Vorrei dedicare questo post alla mia mamma, che mi ha insegnato a cucinare.
 
 ### Zuppa di piselli con ossa
 
-Sciacquare i piselli secchi più volte sotto l'acqua corrente. Mettere a bagno in acqua. Di quando in quando è bene cambiare l'acqua. Tagliare le ossa a pezzettoni. Bollire per 5 minuti e poi sciacquare in acqua fredda. Mettere le ossa in una grande pentola di smalto e lasciare cucinare per circa un'ora. Aggiungere i piselli e far cuocere per altro un'ora. Nel frattempo sbucciare la cipolla dalla pelle e tagliarla finemente. Si può anche prendere un spicchio d'aglio. Strofinare la carota pelata su una grattugia. Soffriggere cipolla, aglio e carota in una padella fino a doratura. Aggiungere alla zuppa per 15 minuti prima di essere pronta. Aggiungere anche sale, prezzemolo, aneto, sedano a piacere.
+Sciacquare i piselli secchi più volte sotto l'acqua corrente. Metterli in ammollo in acqua, cambiandola di tanto in tanto (se sono molto secchi, lessarli brevemente dopo l'ammollo). Spezzare le ossa a pezzi grossi. Farle bollire per 5 minuti e poi sciacquarle in acqua fredda. Mettere le ossa in una grande pentola smaltata e lasciarle cuocere per circa un'ora. Aggiungere i piselli e far cuocere per un'altra ora. Nel frattempo sbucciare e tagliare finemente la cipolla. Grattugiare la carota pelata e, se si desidera, tritare uno spicchio d'aglio e il sedano. Soffriggere cipolla, carota e, se desiderato, aglio e sedano in una padella fino a doratura. Aggiungere alla zuppa il soffritto circa 15 minuti prima che sia pronta. Poco prima della fine della cottura, aggiungere sale, pepe nero macinato e le erbe, secche o fresche tritate (prezzemolo, aneto e sedano) a piacere.
 
 #### Ingredienti
 
@@ -22,7 +22,8 @@ Sciacquare i piselli secchi più volte sotto l'acqua corrente. Mettere a bagno i
 - un spicchio d'aglio
 - 1 cipolla grande
 - 1 carota grande o media
-- sedano, prezzemolo e aneto tritati
+- pepe nero macinato
+- sedano, prezzemolo e aneto, tritati freschi o secchi
 - sale grosso
 
 ### Syrniki
