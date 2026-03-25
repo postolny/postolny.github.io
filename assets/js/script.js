@@ -36,10 +36,8 @@ $(function() {
   let interval;
   let isStopped = false;
   let answered = false;
-
   var m = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
-
   var mes = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
   var dn = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
 
@@ -48,7 +46,6 @@ $(function() {
     $("#audioOnIcon").toggle(!isMuted);
     $("#audioOffIcon").toggle(isMuted);
   }
-
   $("#audioOnIcon, #audioOffIcon").click(toggleAudio);
 
   function playSound(sound) {
@@ -61,23 +58,18 @@ $(function() {
 
   function startTimer() {
     if (interval) clearInterval(interval);
-
     if (answered) {
       $(".timer-bar").hide();
       return;
     }
-
     $(".timer-bar").show().css({ transition: "none", width: "0%" });
-
     setTimeout(() => {
       $(".timer-bar").css("transition", "width 1s linear");
     }, 50);
-
     interval = setInterval(() => {
       if (!isStopped) {
         time += 10;
         $(".timer-bar").css("width", time + "%");
-
         if (time >= 100) {
           clearInterval(interval);
           console.log("Время вышло!");
@@ -94,7 +86,6 @@ $(function() {
     isStopped = !isStopped;
     $("#timerOnIcon").toggle(!isStopped);
     $("#timerOffIcon").toggle(isStopped);
-
     if (isStopped) {
       clearInterval(interval);
       $(".timer-bar").hide();
@@ -103,31 +94,25 @@ $(function() {
       startTimer();
     }
   }
-
   $("#timerOnIcon, #timerOffIcon").click(toggleTimer);
 
   function day() {
     $("#day").html('Oggi è ' + g[giornoSettimana] + ', ' + giornoMese + ' ' + m[mese] + '<br>' + 'Сегодня ' + dn[giornoSettimana] + ', ' + giornoMese + ' ' + mes[mese]);
   }
-
   $("nav ul li a:not(:only-child)").click(function(e) {
     $(this).siblings(".nav-dropdown").toggle();
     $(".nav-dropdown").not($(this).siblings()).hide();
     e.stopPropagation();
   });
-
   $("html").click(function() {
     $(".nav-dropdown").hide();
   });
-
   $("#nav-toggle").click(function() {
     $("nav ul").slideToggle();
   });
-
   $("#nav-toggle").on("click", function() {
     this.classList.toggle("active");
   });
-
   var lettere = {
     "#a": "a",
     "#b": "bi",
@@ -189,54 +174,42 @@ $(function() {
     "#ю": "ю_",
     "#я": "я_",
   };
-
   const p1 = "p";
-
   // Прокрутка к якорю и сноски в постах
   function scrollToAnchor(anchor) {
     if (!anchor.startsWith("#")) return;
-
     const decodedAnchor = decodeURIComponent(anchor);
     const safeAnchor = decodedAnchor.replace(/:/g, '\\:');
     const target = $(safeAnchor);
-
     if (target.length) {
       const currentScroll = $(window).scrollTop();
       const offsetDown = 15;
       const offsetUp = 85;
-
       const targetOffset = target.offset().top;
       const offset = targetOffset > currentScroll ? offsetDown : offsetUp;
-
       $('html, body').animate({
         scrollTop: target.offset().top - offset
       }, 800);
-
       history.replaceState(null, null, decodedAnchor);
     } else {
       console.warn("Элемент с ID", decodedAnchor, "не найден.");
     }
   }
-
   // Хэш при загрузке страницы
   const hash = window.location.hash;
   if (hash) {
     window.scrollTo(0, 0);
     setTimeout(() => scrollToAnchor(hash), 300);
   }
-
   $(".tags a, .toc a, a.footnote, a.reversefootnote").on("click", function(e) {
     const href = $(this).attr("href");
-
     if (href.startsWith("#")) {
       e.preventDefault();
       scrollToAnchor(href);
     }
   });
-
   $(".categories a").on("click", function(e) {
     const lettereIndex = $(this).attr("href");
-
     if (lettere[lettereIndex]) {
       var snd = new Audio("/audio/" + lettere[lettereIndex] + ".mp3");
       snd.play();
@@ -244,27 +217,22 @@ $(function() {
       return false;
     }
   });
-
   // Сноски на страницах
   $(".postilla ol li").each(function() {
     let noteNum = $(this).index() + 1; // Номер сноски
     let noteId = "note-" + noteNum; // id для li
-
     $(this).attr("id", noteId); // Устанавливаем id для li
-
     // Если есть ссылка "назад"
     if ($(this).find(".back-to-text").length === 0) {
       $(this).append(' <a href="#sup-' + noteNum + '" class="back-to-text" data-note="' + noteNum + '">↩</a>');
     }
   });
-
   // Прокрутка от sup к ol
   $("sup").click(function(e) {
     e.preventDefault();
     let noteId = "#note-" + $(this).attr("id").replace("sup-", ""); // id для li
     smoothScroll(noteId, noteId, 15);
   });
-
   // Прокрутка от ol к sup
   $(".postilla .back-to-text").click(function(e) {
     e.preventDefault();
@@ -282,30 +250,24 @@ $(function() {
       history.replaceState(null, null, hash);
     }
   }
-
   $("#search").keyup(function() {
     var value = this.value.toLowerCase().trim();
-    $(".search")
-      .find("tr")
-      .each(function(index) {
-        var id = $(this).find("td").first().text().toLowerCase().trim();
-        $(this).toggle(id.indexOf(value) !== -1);
-      });
+    $(".search").find("tr").each(function(index) {
+      var id = $(this).find("td").first().text().toLowerCase().trim();
+      $(this).toggle(id.indexOf(value) !== -1);
+    });
   });
-
   $("#search-all").on("keyup", function() {
     var s = $(this).val().toLowerCase();
     $(".search-all tbody tr").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(s) > -1);
     });
   });
-
   var audioPlayer = $('#audioPlayer');
   const progressImage = $('#gondoliere');
   const p2 = "ost";
   let wakeLock = null;
   let togglePlayPause = false;
-
   // Запрос Wake Lock
   async function requestWakeLock() {
     try {
@@ -320,7 +282,6 @@ $(function() {
       console.error('Не удалось активировать Wake Lock');
     }
   }
-
   // Отключение Wake Lock
   function releaseWakeLock() {
     if (wakeLock !== null) {
@@ -329,7 +290,6 @@ $(function() {
       console.log('Wake Lock отключён');
     }
   }
-
   // Отслеживаем переход на другую вкладку или сворачивание окна, что снова активировать Wake Lock по возвращению
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
@@ -340,9 +300,7 @@ $(function() {
       releaseWakeLock(); // Отключение Wake Lock
     }
   });
-
   const p3 = "ol";
-
   if (audioPlayer.length > 0) {
     $(audioPlayer).attr("src", $("#playlist li:first").data("src"));
     $("#playlist li:first").addClass("playing");
@@ -357,7 +315,6 @@ $(function() {
       audioPlayer[0].play();
       updatePlayPauseButton(true);
     });
-
     $('#play-pause').on('click', function() {
       playpause();
     });
@@ -388,14 +345,12 @@ $(function() {
         $('#play-pause').find('.icon-pause').addClass('hidden');
       }
     }
-
     $('#next').click(nextTrack);
     $('#prev').click(prevTrack);
 
     function prevTrack() {
       var current = $("#playlist li.playing");
       var prev = current.prev("li");
-
       if (prev.length) {
         $("#playlist li").removeClass("playing");
         prev.addClass("playing");
@@ -443,10 +398,8 @@ $(function() {
       const volume = $("#volume-control").val();
       audioPlayer[0].volume = volume;
       $(".value").text(volume);
-
       localStorage.setItem('playerVolume', volume);
     }
-
     const savedVolume = localStorage.getItem('playerVolume');
     if (savedVolume !== null) {
       $("#volume-control").val(savedVolume);
@@ -455,7 +408,6 @@ $(function() {
     } else {
       updateVolume();
     }
-
     $('#volume-control').on('input', updateVolume);
 
     function showImages() {
@@ -464,7 +416,6 @@ $(function() {
           transform: 'translate(20%, -25%) rotate(20deg) scale(1.5)',
           'transform-origin': 'bottom center',
         });
-
         $('.image.right').css({
           transform: 'translate(-20%, -25%) rotate(-20deg) scale(1.5)',
           'transform-origin': 'bottom center',
@@ -474,7 +425,6 @@ $(function() {
           transform: 'translate(-20%, -40%) rotate(-30deg) scale(1.5)',
           'transform-origin': 'bottom center',
         });
-
         $('.image.right').css({
           transform: 'translate(20%, -40%) rotate(30deg) scale(1.5)',
           'transform-origin': 'bottom center',
@@ -486,12 +436,10 @@ $(function() {
       $('.image.left').css({
         transform: 'translate(0, 0) scale(1)',
       });
-
       $('.image.right').css({
         transform: 'translate(0, 0) scale(1)',
       });
     }
-
     const toggleBodyClass = $('#toggleBodyClass');
     const toggleImages = $('#toggleImages');
     const toggleProgress = $('#toggleProgress');
@@ -499,17 +447,14 @@ $(function() {
     function setupToggle(toggleElement, toggleName) {
       const isChecked = localStorage.getItem(toggleName) !== 'false';
       toggleElement.prop('checked', isChecked);
-
       toggleElement.change(function() {
         const checked = toggleElement.is(':checked');
         localStorage.setItem(toggleName, checked);
       });
     }
-
     setupToggle(toggleBodyClass, 'toggleBodyClass');
     setupToggle(toggleImages, 'toggleImages');
     setupToggle(toggleProgress, 'toggleProgress');
-
     toggleBodyClass.on('change', function() {
       if (!audioPlayer[0].paused) {
         if (toggleBodyClass.is(':checked')) {
@@ -535,16 +480,13 @@ $(function() {
         progressImage.hide();
       }
     });
-
     $('#panel-toggle').click(function() {
       $('.sliding-panel').toggleClass('open');
     });
-
     // audioPlayer.on('timeupdate', function() {
     //   if (toggleProgress.is(':checked')) {
     //     const currentTime = audioPlayer[0].currentTime;
     //     const duration = audioPlayer[0].duration;
-
     //     if (duration > 0) {
     //       const progress = (currentTime / duration) * 100;
     //       progressImage.css('left', progress + '%');
@@ -553,7 +495,6 @@ $(function() {
     //     progressImage.hide();
     //   }
     // });
-
     const progressBar = $('#progressBar');
     const progressValue = $('#progressValue');
     const currentTimeElement = $('#currentTime');
@@ -564,18 +505,14 @@ $(function() {
       const remainingSeconds = Math.floor(seconds % 60).toString().padStart(2, '0');
       return minutes + ':' + remainingSeconds;
     }
-
     audioPlayer.on('loadedmetadata', function() {
       const duration = audioPlayer[0].duration;
       totalTimeElement.text(formatTime(duration));
     });
-
     audioPlayer.on('timeupdate', function() {
       const currentTime = audioPlayer[0].currentTime;
       const duration = audioPlayer[0].duration;
-
       currentTimeElement.text(formatTime(currentTime));
-
       if (duration > 0) {
         const progress = (currentTime / duration) * 100;
         progressValue.css('width', progress + '%');
@@ -586,10 +523,8 @@ $(function() {
         }
       }
     });
-
     progressBar.on('click touchstart', function(e) {
       let clickPositionX;
-
       if (e.type === 'touchstart') {
         // Сенсорные уст-ва
         const touch = e.originalEvent.touches[0];
@@ -598,16 +533,12 @@ $(function() {
         // Мышь
         clickPositionX = e.offsetX;
       }
-
       const progressBarWidth = $(this).width();
       const duration = audioPlayer[0].duration;
-
       const newTime = (clickPositionX / progressBarWidth) * duration;
       audioPlayer[0].currentTime = newTime;
-
       console.log('Новое время:', newTime);
     });
-
     audioPlayer.on('play', function() {
       requestWakeLock();
       if (toggleBodyClass.is(':checked')) {
@@ -626,16 +557,13 @@ $(function() {
         togglePlayPause = false;
         return;
       }
-
       progressImage.hide();
       progressImage.css('left', '-150px');
-
       setTimeout(() => {
         progressImage.addClass('visible');
         progressImage.show();
       }, 50);
     });
-
     audioPlayer.on('pause', function() {
       if (!audioPlayer[0].ended) {
         hideImages();
@@ -646,7 +574,6 @@ $(function() {
       }
       releaseWakeLock();
     });
-
     audioPlayer.on('ended', function() {
       if (currentIndex + 1 < $('#playlist li').length) {
         updatePlayPauseButton(true);
@@ -663,7 +590,6 @@ $(function() {
       }
       progressImage.hide();
       progressImage.css('left', '-150px');
-
       setTimeout(() => {
         progressImage.addClass('visible');
         progressImage.show();
@@ -674,16 +600,12 @@ $(function() {
       const playlistContainer = $('#playlist-container');
       const playlistItem = $('#playlist li');
       const currentTrack = playlistItem.eq(currentIndex);
-
       if (!currentTrack.length || !playlistContainer.length) return;
-
       const containerOffsetTop = playlistContainer.offset().top;
       const containerTop = playlistContainer.scrollTop();
       const containerBottom = containerTop + playlistContainer.innerHeight();
-
       const trackTop = currentTrack.offset().top - containerOffsetTop + containerTop;
       const trackBottom = trackTop + currentTrack.outerHeight();
-
       if (trackTop < containerTop) {
         playlistContainer.animate({
           scrollTop: trackTop,
@@ -695,48 +617,36 @@ $(function() {
       }
     }
   }
-
   const p4 = "ny";
-
   $("video").on("play", function() {
     var id = $(this).attr("id");
-
-    $("video")
-      .not(this)
-      .each(function(index, video) {
-        video.pause();
-        video.currentTime = 0;
-        var src = $(this).attr("src");
-        $(this).attr("src", src);
-      });
+    $("video").not(this).each(function(index, video) {
+      video.pause();
+      video.currentTime = 0;
+      var src = $(this).attr("src");
+      $(this).attr("src", src);
+    });
     frasarioIconContainer.fadeOut(300);
   });
-
   $("video").on("pause", function() {
     frasarioIconContainer.fadeIn(300);
   });
-
   $("video").on("ended", function() {
     $("video").currentTime = 0;
     var src = $(this).attr("src");
     $(this).attr("src", src);
     frasarioIconContainer.fadeIn(300);
   });
-
   const p5 = ".gi";
-
   $.getJSON('/assets/numerali.json').done(function(data) {
     numerali = data;
     console.log(numerali);
-
     var rand = Math.floor(Math.random() * numerali.length);
     var incorrectAttempts = 0; // неправильные попытки
     $("#q_num").html("<div id='text_num'>" + numerali[rand].q1 + "</div>");
-
     $("#q_ris").click(function() {
       var answer = $("#an_num").val().toLowerCase().trim().replace(/é/g, "e");
       var correctAnswer = numerali[rand].an.toLowerCase().trim().replace(/é/g, "e");
-
       if (!answer) {
         $("#risultato").html(sbagliatoIcon + scriviQc).show();
       } else {
@@ -748,11 +658,8 @@ $(function() {
           $("#risultato").html(sbagliatoIcon + sbagliatoMsg);
           incorrectAttempts++; // счётчик увеличивается при неверном ответе
           playSound(wrongSound);
-
           if (incorrectAttempts == 3) {
-            $("#suggerimento")
-              .html("<div id=''>" + numerali[rand].an + "</div>")
-              .slideDown();
+            $("#suggerimento").html("<div id=''>" + numerali[rand].an + "</div>").slideDown();
           }
         }
         $("#an_num").val("").focus();
@@ -768,20 +675,15 @@ $(function() {
       $("#q_num").html("<div id='text_num'>" + numerali[newRand].q1 + "</div>");
       $("#risultato").hide();
       $("#an_num").val("").focus();
-      $("#suggerimento")
-        .html("<div id=''>" + numerali[rand].an + "</div>")
-        .hide();
+      $("#suggerimento").html("<div id=''>" + numerali[rand].an + "</div>").hide();
       incorrectAttempts = 0;
     });
-
   }).fail(function() {
     console.log("Не удалось загрузить данные из frasario.json.");
   });
-
   if ($(".brand a:not(:contains('Игорь Постольный'))").length) {
     $("body").css("display", "none");
   }
-
   $(".quiz-submit").on("click", function() {
     var correctAnswers = 0;
     var total = 0;
@@ -815,50 +717,38 @@ $(function() {
       $('.score').text("Ответьте на все вопросы!");
     }
   });
-
   $(".domanda").on("change", 'input[type="radio"]', function() {
     playSound(clickSound);
   });
-
   var currentQuestion = 0;
   var correctAnswers = 0;
   var totalQuestions = $(".quiz-question").length;
   var answersSummary = [];
 
   function showPoints(event) {
-
     // очки
     // var numberToShow = (correctAnswers === 5 || correctAnswers === 10 || correctAnswers === 15 || correctAnswers === 20 || correctAnswers === 25 || correctAnswers === 30 || correctAnswers === 35 || correctAnswers === 40 || correctAnswers === 45 || correctAnswers === 50) ? correctAnswers : null;
-
     // если значение correctAnswers кратно 5
     var numberToShow = (correctAnswers % 5 === 0) ? correctAnswers : null;
-
     if (numberToShow) {
       var pointsElement = $('#points');
-
       var mouseX = event.clientX;
       var mouseY = event.clientY;
-
       pointsElement.css({
         left: mouseX,
         top: mouseY,
         display: 'block'
       });
-
       pointsElement.text(numberToShow);
-
       pointsElement.addClass('points-animated');
-
       setTimeout(function() {
         pointsElement.removeClass('points-animated').css('display', 'none');
       }, 700);
     }
   }
-
   $(".start-quiz").click(function() {
     $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
-
     $(".quiz-container").show();
     $(".summary").hide();
     $(".quiz-question").removeClass("active").hide().eq(0).addClass("active").show();
@@ -868,11 +758,9 @@ $(function() {
     $(".quiz-score").text("0/" + totalQuestions);
     $(".next-question").prop("disabled", true);
     $(".check-answer").prop("disabled", false);
-
     time = 0;
     startTimer();
   });
-
   $(".close-btn").on("click", function() {
     $("html").css("overflow", "auto");
     $("body,.navigation").css("paddingRight", 0);
@@ -894,27 +782,22 @@ $(function() {
     $(".next-question").prop("disabled", true);
     $(".check-answer").prop("disabled", false);
   }
-
   $(".check-answer").click(function(event) {
     var question = $(".quiz-question").eq(currentQuestion);
     var selected = question.find("input:checked");
     var msgBox = question.find(".quiz-message");
-
     msgBox.text("").removeClass("answer-correct answer-incorrect");
-
     if (selected.length === 0) {
       msgBox.text("Выберите ответ!").addClass("answer-incorrect");
       return;
     }
     answered = true;
     clearInterval(interval);
-
     var isCorrect = selected.is("[data-correct]");
     var explanation = selected.attr("data-explanation") || "";
     var correctAnswer = question.find("input[data-correct]").parent().text();
     var userAnswer = selected.parent().text();
     var questionText = question.find("p").text();
-
     if (isCorrect) {
       correctAnswers++;
       msgBox.html(esattoIcon + "Правильно!").addClass("answer-correct");
@@ -928,29 +811,23 @@ $(function() {
       msgBox.html(sbagliatoIcon + "Неправильно! Правильный ответ: " + correctAnswer).addClass("answer-incorrect");
       playSound(wrongSound);
     }
-
     answersSummary.push({
       question: questionText,
       userAnswer: userAnswer,
       correctAnswer: correctAnswer,
       explanation: explanation
     });
-
     $(".quiz-score").text(correctAnswers + "/" + totalQuestions);
     $(this).prop("disabled", true);
     $(".next-question").prop("disabled", false);
   });
-
   $(".next-question").click(function() {
     setTimeout(function() {
       time = 0;
       answered = false;
       if (!isStopped) startTimer();
-
       if ($(this).prop("disabled")) return;
-
       currentQuestion++;
-
       if (currentQuestion < totalQuestions) {
         $(".quiz-question").removeClass("active").hide().eq(currentQuestion).addClass("active").show();
         $(".next-question").prop("disabled", true);
@@ -966,10 +843,8 @@ $(function() {
     $(".quiz-question").removeClass("active").hide();
     $(".summary").show();
     var resultsList = $(".results-list").empty();
-
     answersSummary.forEach(function(ans) {
       var questionBlock = $("<div>").append("<p class='summary-question'>" + ans.question + "</p>");
-
       $(".quiz-question").each(function() {
         var questionText = $(this).find("p").text().trim();
         if (questionText === ans.question.trim()) {
@@ -978,7 +853,6 @@ $(function() {
             var isCorrect = $(this).is("[data-correct]");
             var explanation = $(this).attr("data-explanation") || "";
             var isChecked = $(this).is(":checked");
-
             var icon = isCorrect ? esattoIcon : sbagliatoIcon;
             var explanationText = explanation ? " [" + explanation + "]" : "";
             console.log($(this).is(":checked"), answerText);
@@ -988,11 +862,9 @@ $(function() {
           });
         }
       });
-
       resultsList.append(questionBlock);
     });
   }
-
   $(".restart-quiz").click(function() {
     time = 0;
     answered = false;
@@ -1008,11 +880,9 @@ $(function() {
     $(".next-question").prop("disabled", true);
     $(".check-answer").prop("disabled", false);
   });
-
   $(".quiz-question").on("change", 'input[type="radio"]', function() {
     playSound(clickSound);
   });
-
   $(".start-stress-quiz").click(function() {
     $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
@@ -1021,11 +891,8 @@ $(function() {
     time = 0;
     startTimer();
   });
-
   if ($(".word-item").length > 0) {
-
     var words = [];
-
     $(".word-item").each(function() {
       var correctIndexes = $(this).data("correct").toString().split(",").map(Number);
       words.push({
@@ -1033,7 +900,6 @@ $(function() {
         correct: correctIndexes
       });
     });
-
     var currentIndex = 0,
       correctAnswers = 0,
       totalAnswers = words.length;
@@ -1053,10 +919,8 @@ $(function() {
       $("#check-answer-btn").prop("disabled", false);
       $("#next-question-btn").prop("disabled", true);
     }
-
     shuffleWords();
     showWord(currentIndex);
-
     $(document).on("click", ".letter", function() {
       var $this = $(this);
       if ($this.hasClass("selected")) {
@@ -1066,24 +930,19 @@ $(function() {
       }
       playSound(clickSound);
     });
-
     $("#check-answer-btn").click(function(event) {
       var selected = $(".letter.selected").map(function() {
         return $(this).data("index");
       }).get();
       var correct = words[currentIndex].correct;
-
       if (selected.length === 0) {
         $("#quiz-result-message").text("Выберите букву(ы)!").addClass("answer-incorrect").removeClass("answer-correct");
         return;
       }
-
       answered = true;
       clearInterval(interval);
-
       selected.sort(function(a, b) { return a - b; });
       correct.sort(function(a, b) { return a - b; });
-
       if (JSON.stringify(selected) === JSON.stringify(correct)) {
         $("#quiz-result-message").html(esattoIcon + "Правильно!").addClass("answer-correct").removeClass("answer-incorrect");
         correctAnswers++;
@@ -1098,16 +957,13 @@ $(function() {
             correctWord += words[currentIndex].word[i];
           }
         }
-
         $("#quiz-result-message").html(sbagliatoIcon + "<span>Неправильно! Правильный ответ: <span style='color: #555; white-space: nowrap;'>" + correctWord + "</span></span>").addClass("answer-incorrect").removeClass("answer-correct");
         playSound(wrongSound);
       }
-
       $(".stress-quiz-score").text(correctAnswers + "/" + totalAnswers);
       $(this).prop("disabled", true);
       $("#next-question-btn").prop("disabled", false);
     });
-
     $("#next-question-btn").click(function() {
       time = 0;
       answered = false;
@@ -1141,28 +997,22 @@ $(function() {
     function highlightStress(words) {
       return words.map(function(item) {
         return item.word.split("").map(function(letter, i) {
-          return item.correct.includes(i + 1) ?
-            '<span class="stressed">' + letter + '</span>' : letter;
+          return item.correct.includes(i + 1) ? '<span class="stressed">' + letter + '</span>' : letter;
         }).join("");
       });
     }
-
     // $("#viewListOfWords").click(function() {
     //   $("#listOfWords").html(highlightStress(words).join("<br>")).show();
     // });
-
     // С сортировкой в алфавитном порядке перед выводом списка
     $("#viewListOfWords").click(function() {
       const sortedWords = [...words].sort((a, b) => a.word.localeCompare(b.word)); // Сортируем копию массива
       $("#listOfWords").html(highlightStress(sortedWords).join("<br>")).show();
     });
-
   } else {
     console.warn("на этой странице нет .word-item");
   }
-
   const p6 = "th";
-
   let participiPassati = {};
   let participiPassatiRiflessivi = {};
   let verbiConEssere = [];
@@ -1173,7 +1023,6 @@ $(function() {
   let condizionale_passato = {};
   let futuro_semplice = {};
   let verbiConDoppioAusiliare = [];
-
   $.getJSON("/assets/concordanzaCongiuntivi.json", function(data) {
     participiPassati = data.participiPassati;
     participiPassatiRiflessivi = data.participiPassatiRiflessivi;
@@ -1183,53 +1032,39 @@ $(function() {
     condizionale_passato = data.condizionale_passato;
     futuro_semplice = data.futuro_semplice;
     verbiConDoppioAusiliare = data.verbiConDoppioAusiliare;
-
     congiuntivo_presente_aus = {
       "essere": congiuntivo_presente["essere"],
       "avere": congiuntivo_presente["avere"]
     };
-
     trapassato_prossimo_aus = {
       "essere": congiuntivo_imperfetto["essere"],
       "avere": congiuntivo_imperfetto["avere"]
     };
     var verbiList = Object.keys(participiPassati).concat(Object.keys(participiPassatiRiflessivi));
-
     $('#verbo').autocomplete({
       source: function(request, response) {
         const term = $.trim(request.term).toLowerCase();
-
-        const matches = verbiList
-          .filter(word => word.toLowerCase().startsWith(term))
-          .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
-
+        const matches = verbiList.filter(word => word.toLowerCase().startsWith(term)).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
         response(matches);
       },
       minLength: 1,
       autoFocus: true
     });
-
     $("#concordareBtn").prop("disabled", false);
-
     var countParticipiPassati = Object.keys(data.participiPassati).length;
     var countRiflessivi = Object.keys(data.participiPassatiRiflessivi).length;
     var countVerbiConEssere = Object.keys(data.verbiConEssere).length;
     var countDoppioAusiliare = Object.keys(data.verbiConDoppioAusiliare).length;
-
     var total = countParticipiPassati + countRiflessivi;
-
     console.log("Общее количество глаголов: " + total + "; возвратных глаголов: " + countRiflessivi + "; глаголов c essere: " + countVerbiConEssere + "; verbi con doppio ausiliare: " + countDoppioAusiliare);
   });
-
   $('#verbo').on('input focus', function() {
     const hasValue = this.value.length > 0;
     $('.clear-button').toggle(hasValue);
-
     if (!hasValue) {
       $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
     }
   });
-
   $('#verbo').on('blur', function() {
     setTimeout(() => {
       if (!this.value.length) {
@@ -1238,7 +1073,6 @@ $(function() {
       }
     }, 100);
   });
-
   $('.clear-button').on('click', function() {
     $('#verbo').val('').focus();
     $(this).hide();
@@ -1247,13 +1081,11 @@ $(function() {
 
   function descriviPersona(p, genereSelezionato) {
     let descr = {};
-
     if (["io", "tu", "lui_lei"].includes(p)) {
       descr.numero = "singolare";
     } else {
       descr.numero = "plurale";
     }
-
     if (genereSelezionato) {
       descr.genere = genereSelezionato;
     } else {
@@ -1263,7 +1095,6 @@ $(function() {
         descr.genere = "maschile";
       }
     }
-
     return descr;
   }
 
@@ -1287,13 +1118,9 @@ $(function() {
 
   function getParticipioConcordato(verbo, persona, desc, aus) {
     const baseVerb = getBaseVerb(verbo);
-
     let verbData = participiPassatiRiflessivi[verbo] || participiPassatiRiflessivi[baseVerb] || participiPassati[verbo] || participiPassati[baseVerb];
-
     if (!verbData || !verbData.partPassato) return "??";
-
     let participio = verbData.partPassato;
-
     if (aus === "essere") {
       let base = participio.replace(/[aeio]$/i, '');
       if (desc.numero === "plurale") {
@@ -1303,61 +1130,50 @@ $(function() {
       }
       return base;
     }
-
     return participio;
   }
 
   function verboCongVerb(verbo, persona, modo) {
     let pNorm = normalizzaPersona(persona);
-
     if (modo === "congiuntivo_presente" && congiuntivo_presente[verbo]) {
       return congiuntivo_presente[verbo][pNorm];
     }
     if (modo === "congiuntivo_imperfetto" && congiuntivo_imperfetto[verbo]) {
       return congiuntivo_imperfetto[verbo][pNorm];
     }
-
     return verbo + (modo === "congiuntivo_presente" ? "i" : "ssi");
   }
 
   function verboCondPassVerb(verbo, persona) {
     let pNorm = normalizzaPersona(persona);
-
     if (condizionale_passato[verbo] && condizionale_passato[verbo][pNorm]) {
       return condizionale_passato[verbo][pNorm];
     }
-
     let base = getBaseVerb(verbo);
     if (condizionale_passato[base] && condizionale_passato[base][pNorm]) {
       return condizionale_passato[base][pNorm];
     }
-
     return "?";
   }
 
   function verboCondPassVerb(verbo, persona) {
     let pNorm = normalizzaPersona(persona);
     const aus = getAusiliare(verbo);
-
     if (condizionale_passato[aus] && condizionale_passato[aus][pNorm]) {
       return condizionale_passato[aus][pNorm];
     }
-
     return "?";
   }
 
   function verboFuturoVerb(verbo, persona) {
     let pNorm = normalizzaPersona(persona);
-
     if (futuro_semplice[verbo] && futuro_semplice[verbo][pNorm]) {
       return futuro_semplice[verbo][pNorm];
     }
-
     let base = getBaseVerb(verbo);
     if (futuro_semplice[base] && futuro_semplice[base][pNorm]) {
       return futuro_semplice[base][pNorm];
     }
-
     return "?";
   }
 
@@ -1413,26 +1229,21 @@ $(function() {
     function forma(v) {
       return "che " + formaConPronome(v);
     }
-
     const aus = getAusiliare(verbo);
     const participio = getParticipioConcordato(verbo, persona, desc, aus);
     const congiuntivoPresAus = congiuntivo_presente_aus[aus][personaLookup];
     const congiuntivoImpAus = trapassato_prossimo_aus[aus][personaLookup];
     const trapassatoAus = congiuntivo_imperfetto[aus][personaLookup];
-
     const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
     const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
-
     const presAusAvere = congiuntivo_presente_aus["avere"][personaLookup];
     const presAusEssere = congiuntivo_presente_aus["essere"][personaLookup];
-
     const impAusAvere = trapassato_prossimo_aus["avere"][personaLookup];
     const impAusEssere = trapassato_prossimo_aus["essere"][personaLookup];
 
     function tempoReadable(t) {
       return t.replace(/_/g, " ");
     }
-
     if (mainTempo === "presente") {
       if (subordinateAzione === "anteriore") {
         var formaRisultato;
@@ -1441,54 +1252,42 @@ $(function() {
         } else {
           formaRisultato = forma(congiuntivoPresAus + " " + participio);
         }
-
         return {
           forma: formaRisultato,
           hint: descrizionePersona + " Concordanza: congiuntivo passato per esprimere un'azione anteriore al presente."
         };
       }
-
       // только futuro semplice
-
       // if (subordinateAzione === "posteriore") {
       //   return {
       //     forma: forma(verboFuturoVerb(verbo, persona)),
       //     hint: descrizionePersona + " Concordanza: futuro semplice per esprimere un'azione posteriore al presente."
       //   };
       // }
-
       // futuro semplice и congiuntivo presente
-
       if (subordinateAzione === "posteriore") {
         const futuro = forma(verboFuturoVerb(verbo, persona));
-
         let congiuntivoPresRaw = null;
-
         if (congiuntivo_presente[verbo] && congiuntivo_presente[verbo][personaLookup]) {
           congiuntivoPresRaw = congiuntivo_presente[verbo][personaLookup];
         } else if (congiuntivo_presente[baseVerb] && congiuntivo_presente[baseVerb][personaLookup]) {
           congiuntivoPresRaw = congiuntivo_presente[baseVerb][personaLookup];
         }
-
         let congiuntivoPres = "";
         if (congiuntivoPresRaw) {
           congiuntivoPres = forma(congiuntivoPresRaw);
         } else {
           congiuntivoPres = null;
         }
-
         let result = futuro;
-
         if (congiuntivoPres) {
           result += ", " + "oppure " + congiuntivoPres;
         }
-
         return {
           forma: result,
           hint: descrizionePersona + " Concordanza: normalmente si usa il futuro semplice per un'azione posteriore al presente, ma anche il congiuntivo presente è possibile (soprattutto in linguaggio formale)."
         };
       }
-
       // contemporaneità
       var formaCont = null;
       if (congiuntivo_presente[verbo] && congiuntivo_presente[verbo][personaLookup]) {
@@ -1496,13 +1295,11 @@ $(function() {
       } else {
         formaCont = verboCongVerb(baseVerb, persona, "congiuntivo_presente");
       }
-
       return {
         forma: forma(formaCont),
         hint: descrizionePersona + " Concordanza: congiuntivo presente per esprimere un'azione contemporanea al presente."
       };
     }
-
     if (mainTempo === "imperfetto") {
       if (subordinateAzione === "anteriore") {
         if (verbiConDoppioAusiliare.includes(baseVerb)) {
@@ -1522,7 +1319,6 @@ $(function() {
           const condEssere = condizionale_passato["essere"][personaLookup];
           const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
           const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
-
           return {
             forma: forma(condAvere + " " + participioAvere) + ", " + forma(condEssere + " " + participioEssere),
             hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore all'imperfetto (verbo con doppio ausiliare)."
@@ -1531,7 +1327,6 @@ $(function() {
           const aus = getAusiliare(verbo);
           const condPassAus = condizionale_passato[aus][personaLookup];
           const participioConcordato = getParticipioConcordato(verbo, persona, desc, aus);
-
           return {
             forma: forma(condPassAus + " " + participioConcordato),
             hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore all'imperfetto."
@@ -1541,15 +1336,11 @@ $(function() {
         // contemporaneità
         return {
           forma: forma(
-            (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ?
-            congiuntivo_imperfetto[verbo][personaLookup] :
-            verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")
-          ),
+            (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
           hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea all'imperfetto."
         };
       }
     }
-
     if (mainTempo === "condizionale_presente") {
       if (subordinateAzione === "anteriore") {
         if (verbiConDoppioAusiliare.includes(baseVerb)) {
@@ -1564,17 +1355,12 @@ $(function() {
           };
         }
       }
-
       return {
         forma: forma(
-          (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ?
-          congiuntivo_imperfetto[verbo][personaLookup] :
-          verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")
-        ),
+          (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
         hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea o posteriore al condizionale presente."
       };
     }
-
     if (mainTempo === "condizionale_passato") {
       if (subordinateAzione === "anteriore") {
         if (verbiConDoppioAusiliare.includes(baseVerb)) {
@@ -1591,15 +1377,11 @@ $(function() {
       } else {
         return {
           forma: forma(
-            (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ?
-            congiuntivo_imperfetto[verbo][personaLookup] :
-            verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")
-          ),
+            (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
           hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea o posteriore al condizionale passato."
         };
       }
     }
-
     if (["passato_prossimo", "passato_remoto", "trapassato_prossimo"].includes(mainTempo)) {
       if (subordinateAzione === "anteriore") {
         if (verbiConDoppioAusiliare.includes(baseVerb)) {
@@ -1619,7 +1401,6 @@ $(function() {
           const condEssere = condizionale_passato["essere"][personaLookup];
           const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
           const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
-
           return {
             forma: forma(condAvere + " " + participioAvere) + ", " + forma(condEssere + " " + participioEssere),
             hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore al " + tempoReadable(mainTempo) + " (verbo con doppio ausiliare)."
@@ -1629,26 +1410,20 @@ $(function() {
           const verboCondPass = verboCondPassVerb(verbo, persona);
           const participioConcordato = getParticipioConcordato(verbo, persona, desc, aus);
           const formaFinale = forma(verboCondPass + " " + participioConcordato);
-
           return {
             forma: formaFinale,
             hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore al " + tempoReadable(mainTempo) + "."
           };
         }
       } else {
-        const verboCong = (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ?
-          congiuntivo_imperfetto[verbo][personaLookup] :
-          verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto");
-
+        const verboCong = (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto");
         return {
           forma: forma(verboCong),
           hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea al " + tempoReadable(mainTempo) + "."
         };
       }
-
     }
     console.warn("Concordanza non trovata per mainTempo:", mainTempo, "subAzione:", subordinateAzione, "verbo:", verbo);
-
     return {
       forma: "Non disponibile",
       hint: ""
@@ -1660,20 +1435,15 @@ $(function() {
       $("#traduzioneResult").hide();
       return;
     }
-
     const container = $("#traduzioneResult");
     container.empty();
-
     if (verbo) {
       container.append("<div style='margin-top:10px;'><b>Infinito:</b> " + verbo + "</div>");
     }
-
     if (data.partPassato) {
       container.append("<div><b>Participio Passato:</b> " + data.partPassato + "</div>");
     }
-
     container.append("<p><b>Перевод:</b> " + data.traduzione + "</p>");
-
     if (data.esempi && data.esempi.length > 0) {
       const ul = $("<ul></ul>");
       data.esempi.forEach(esempio => {
@@ -1682,7 +1452,6 @@ $(function() {
       container.append("<p><b>Esempi:</b></p>");
       container.append(ul);
     }
-
     if (data.sinonimi && data.sinonimi.length > 0) {
       const p = $("<p><b>Sinonimi:</b> </p>");
       data.sinonimi.forEach(sin => {
@@ -1695,40 +1464,31 @@ $(function() {
       });
       container.append(p);
     }
-
     container.show();
   }
-
   $("#concordareBtn").click(function() {
     const verbo = $("#verbo").val().trim().toLowerCase();
     let mainTempo = $("#mainTempo").val();
     let subAzione = $("#subordinateAzione").val();
     let persona = $("#persona").val();
     let genere = $("#genere").val();
-
     console.log("Verbo:", verbo, "Tempo:", mainTempo, "Subordinata:", subAzione, "Persona:", persona, "Genere:", genere);
-
     if (!verbo) {
       $("#concordanzaHint").text("Inserisci il verbo in forma base (infinito).").show();
       $("#concordanzaResult").text("").hide();
       $("#traduzioneResult").hide();
       return;
     }
-
     let verbData = participiPassati[verbo] || participiPassatiRiflessivi[verbo];
-
     if (!verbData) {
       $("#concordanzaResult").text("").hide();
       $("#concordanzaHint").text("Глагол " + verbo + " не найден в словаре!").show();
       $("#traduzioneResult").hide();
       return;
     }
-
     let result = concordanza(mainTempo, subAzione, verbo, persona, genere);
-
     $("#concordanzaResult").text("Forma corretta: " + result.forma).show();
     $("#concordanzaHint").text(result.hint).show();
-
     if (verbData.traduzione && verbData.traduzione.length) {
       $("#traduzioneResult").show();
       renderTraduzione(verbData, verbo);
@@ -1736,17 +1496,11 @@ $(function() {
       $("#traduzioneResult").hide();
     }
   });
-
   $('.spoiler-icon').click(function() {
     $(this).parent().next('.spoiler-content').slideToggle(300);
   });
-
   $("#accento input").keyup(function() {
-    if (
-      $(this)
-      .val()
-      .match(/^\d{1}$/)
-    ) {
+    if ($(this).val().match(/^\d{1}$/)) {
       $(this).closest("li").next("li").find("input").focus();
     } else {
       $(this).val("");
@@ -1756,38 +1510,28 @@ $(function() {
     $("input").val("");
     $("#accento input").first().focus();
   });
-
   let canFill = false;
-
   $(".mostrami").on("click", function() {
     var score = 0;
     var total = 0;
     var allFilled = true;
     var allCorrect = true;
-
     $("span[data-answer]").each(function() {
       total++;
       let input = $(this).find("input");
-
       input.removeClass("corretto errato");
-
       let userAnswer = input.val().trim().replace(/\s+/g, ' ').replace(/\s*([.,:;!?'])\s*/g, '$1').toLowerCase();
-
       if (!userAnswer) {
         allFilled = false;
       }
-
       if ($(this).data("answer") !== userAnswer) {
         allCorrect = false;
       }
-
     });
-
     if (allFilled) {
       $("span[data-answer]").each(function() {
         let input = $(this).find("input");
         let userAnswer = input.val().trim().replace(/\s+/g, ' ').replace(/\s*([.,:;!?'])\s*/g, '$1').toLowerCase();
-
         if ($(this).data("answer") == userAnswer) {
           score++;
           input.addClass("corretto");
@@ -1795,7 +1539,6 @@ $(function() {
           input.addClass("errato");
         }
       });
-
       $(".result").text("Правильных ответов: " + score + " из " + total);
       if (allCorrect) {
         $(".fill-answers").css("display", "none");
@@ -1809,7 +1552,6 @@ $(function() {
       $(".fill-answers").css("display", "none");
     }
   });
-
   $(".fill-answers").on("click", function() {
     if (canFill) {
       $("span[data-answer]").each(function() {
@@ -1818,9 +1560,7 @@ $(function() {
       });
     }
   });
-
   const p7 = "ub";
-
   $.getJSON('/assets/frasario.json').done(function(data) {
     frasario = data;
     console.log(frasario);
@@ -1829,33 +1569,21 @@ $(function() {
       var remainingItems = frasario.filter(function(item) {
         return !playedItems.includes(item);
       });
-
       if (remainingItems.length === 0) {
         playedItems = [];
         remainingItems = frasario.slice();
       }
-
       var randomIndex = Math.floor(Math.random() * remainingItems.length);
       var randomItem = remainingItems[randomIndex];
-
       playedItems.push(randomItem);
-
       var viewTraduzioneMarkup = randomItem.value ? '<span>' + viewTraduzione + '</span>' : '';
-
-      $("#frasarioIcons").html(viewTraduzioneMarkup +
-        '<span>' + reloadBtnRand + '</span>' +
-        '<span>' + playBtnRand + '</span>' +
-        '<span>' + toc + '</span>' +
-        '<span>' + close + '</span>');
-
+      $("#frasarioIcons").html(viewTraduzioneMarkup + '<span>' + reloadBtnRand + '</span>' + '<span>' + playBtnRand + '</span>' + '<span>' + toc + '</span>' + '<span>' + close + '</span>');
       tableOfContents();
-
       var fraseWrapContent = '<div id="frase">' + randomItem.label + '</div>';
       if (randomItem.value) {
         fraseWrapContent += '<div id="traduzione">' + randomItem.value + '</div>';
       }
       $("#fraseWrap").html(fraseWrapContent);
-
       handlePlayButton(randomItem);
       handleReloadButton();
       handleViewButton();
@@ -1863,12 +1591,10 @@ $(function() {
       displayImages();
       day();
     }
-
     var tocIconClicked = false;
 
     function tableOfContents() {
       var tocElement = $("#tocIcon");
-
       tocElement.off("click").on("click", function() {
         tocIconClicked = true;
         stopCurrentAudio();
@@ -1882,38 +1608,30 @@ $(function() {
         if (!$("#tocWrap").length) {
           $("#fraseWrap").after('<div id="tocWrap"></div>');
         }
-
         var titles = frasario.filter(function(item) {
           return item.title;
         });
-
         if (titles.length === 0) {
           $("#tocWrap").html('<p>Нет доступных заголовков.</p>');
           return;
         }
-
         var tocContent = '<ul>';
         titles.forEach(function(item, index) {
           tocContent += '<li data-index="' + index + '">' + item.title + '</li>';
         });
         tocContent += '</ul>';
-
         $("#tocWrap").html(tocContent);
-
         // Обработка кликов на элементы списка в оглавлении
         $("#tocWrap li").off("click").on("click", function() {
           var index = $(this).data("index");
           var selectedItem = titles[index]; // Находим нужный элемент по его индексу
-
           loadSelectedItem(selectedItem);
-
           $("#tocWrap").hide(); // Скрываем оглавление
           $("#fraseWrap").show(); // Показываем основной контент
           disableButtons(false); // Снимаем блокировку с кнопок
         });
       }
     }
-
     // Функция блокировки кнопок
     function disableButtons(isBlocked) {
       if (isBlocked) {
@@ -1928,24 +1646,14 @@ $(function() {
 
     function loadSelectedItem(item) {
       if (!item) return;
-
       playedItems.push(item);
-
       var viewTraduzioneMarkup = item.value ? '<span>' + viewTraduzione + '</span>' : '';
-
-      $("#frasarioIcons").html(viewTraduzioneMarkup +
-        '<span>' + reloadBtnRand + '</span>' +
-        '<span>' + playBtnRand + '</span>' +
-        '<span>' + toc + '</span>' +
-        '<span>' + close + '</span>'
-      );
-
+      $("#frasarioIcons").html(viewTraduzioneMarkup + '<span>' + reloadBtnRand + '</span>' + '<span>' + playBtnRand + '</span>' + '<span>' + toc + '</span>' + '<span>' + close + '</span>');
       var fraseWrapContent = '<div id="frase">' + item.label + '</div>';
       if (item.value) {
         fraseWrapContent += '<div id="traduzione">' + item.value + '</div>';
       }
       $("#fraseWrap").html(fraseWrapContent);
-
       handlePlayButton(item);
       handleReloadButton();
       handleViewButton();
@@ -1959,10 +1667,8 @@ $(function() {
       var playButton = $("#playButtonRandom");
       var playIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>';
       var stopIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12"/><path fill="currentColor" d="M8 8h8v8H8z"/></svg>';
-
       if (item.audio) {
         var audio = new Audio(item.audio);
-
         setPlayButtonIcon(false);
 
         function setPlayButtonIcon(isPlaying) {
@@ -1970,13 +1676,11 @@ $(function() {
           playButton.html(iconPath);
           item.isPlaying = isPlaying;
         }
-
         playButton.on("click", function() {
           if (currentAudio && currentAudio !== audio) {
             currentAudio.pause();
             if (currentPlayItem) currentPlayItem.isPlaying = false;
           }
-
           if (!item.isPlaying || audio.paused) {
             audio.currentTime = 0;
             audio.play();
@@ -1988,13 +1692,11 @@ $(function() {
             setPlayButtonIcon(false);
           }
         });
-
         $(audio).on("ended", function() {
           setPlayButtonIcon(false);
           currentAudio = null;
           currentPlayItem = null;
         });
-
         playButton.show();
       } else {
         playButton.hide();
@@ -2008,7 +1710,6 @@ $(function() {
         if (currentPlayItem) currentPlayItem.isPlaying = false;
         currentAudio = null;
         currentPlayItem = null;
-
         $("#playButtonRandom").html('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>');
       }
     }
@@ -2017,16 +1718,10 @@ $(function() {
       $(".random-icon").click(function() {
         stopCurrentAudio();
         loadRandomData();
-
         var timeout;
         var icon = $(this);
-
         if (!icon.hasClass("running")) {
-          icon.removeClass("running paused")
-            .hide(0)
-            .show(0)
-            .addClass("running");
-
+          icon.removeClass("running paused").hide(0).show(0).addClass("running");
           clearTimeout(timeout);
           timeout = setTimeout(function() {
             icon.addClass("paused").removeClass("running");
@@ -2037,13 +1732,11 @@ $(function() {
 
     function displayImages() {
       var folderPath = "/assets/frasario/";
-
       $('#fraseWrap').html(function(index, html) {
         return html.replace(/#(\w+)/g, function(match, p1) {
           return '<img src="' + folderPath + p1 + '.png">';
         });
       });
-
       $('#fraseWrap img').each(function() {
         var src = $(this).attr('src');
         if (!src.startsWith(folderPath)) {
@@ -2052,7 +1745,6 @@ $(function() {
         }
       });
     }
-
     $('#frasario-icon').click(function() {
       showAlert();
       loadRandomData();
@@ -2077,28 +1769,13 @@ $(function() {
     }
 
     function handleViewButton() {
-      var toggleViewTraduzione =
-        getLocalStorage("toggleViewTraduzione") === "true";
-
-      toggleViewTraduzione
-        ?
-        enableViewTraduzione() :
-        disableViewTraduzione();
-
-      $(".view-icon")
-        .off("click")
-        .on("click", function() {
-          toggleViewTraduzione = !toggleViewTraduzione;
-          toggleViewTraduzione
-            ?
-            enableViewTraduzione() :
-            disableViewTraduzione();
-
-          setLocalStorage(
-            "toggleViewTraduzione",
-            toggleViewTraduzione
-          );
-        });
+      var toggleViewTraduzione = getLocalStorage("toggleViewTraduzione") === "true";
+      toggleViewTraduzione ? enableViewTraduzione() : disableViewTraduzione();
+      $(".view-icon").off("click").on("click", function() {
+        toggleViewTraduzione = !toggleViewTraduzione;
+        toggleViewTraduzione ? enableViewTraduzione() : disableViewTraduzione();
+        setLocalStorage("toggleViewTraduzione", toggleViewTraduzione);
+      });
     }
 
     function enableViewTraduzione() {
@@ -2120,52 +1797,20 @@ $(function() {
     function setLocalStorage(key, value) {
       localStorage.setItem(key, value);
     }
-
   }).fail(function() {
     console.log("Не удалось загрузить данные из frasario.json.");
   });
-
   var pappagallo = new Audio("/audio/pappagallo.mp3");
   const p8 = ".io";
   var randomArray;
   var currentArray = 0; // Индекс текущего массива
   var arrays = [
-    ["Тебе подарят новое платье",
-      "Друг пригласит тебя на танец",
-      "Друг сочинит для тебя стихи",
-      "Получишь письмо от друга",
-      "У тебя будут розовые туфли",
-      "Тебя пригласят на праздник",
-      "Ты пойдёшь в школу",
-      "Научишься играть на пианино",
-      "Накопишь денег и отдашь их маме",
-      "Угостят конфеткой", "Скоро влюбишься",
-      "У тебя будет кошка",
-      "Ты найдёшь подругу"
-    ],
-    ["Тебе подарят новые ботинки",
-      "Завтра найдёшь одну лиру",
-      "Тебя пригласят на праздник",
-      "Угостят конфеткой",
-      "Подарят новую куртку",
-      "Ты найдёшь друга",
-      "Сможешь отдыхать весь день",
-      "Получишь письмо",
-      "Прокатишься на велосипеде",
-      "Ты поправишься",
-      "Найдёшь хорошую работу",
-      "Тебя угостят кофе",
-      "Посетишь Рим",
-      "У тебя будет собака",
-      "Жди гостей",
-      "Улыбнёшься прямо сейчас",
-      "Получишь пятёрку"
-    ]
+    ["Тебе подарят новое платье", "Друг пригласит тебя на танец", "Друг сочинит для тебя стихи", "Получишь письмо от друга", "У тебя будут розовые туфли", "Тебя пригласят на праздник", "Ты пойдёшь в школу", "Научишься играть на пианино", "Накопишь денег и отдашь их маме", "Угостят конфеткой", "Скоро влюбишься", "У тебя будет кошка", "Ты найдёшь подругу"],
+    ["Тебе подарят новые ботинки", "Завтра найдёшь одну лиру", "Тебя пригласят на праздник", "Угостят конфеткой", "Подарят новую куртку", "Ты найдёшь друга", "Сможешь отдыхать весь день", "Получишь письмо", "Прокатишься на велосипеде", "Ты поправишься", "Найдёшь хорошую работу", "Тебя угостят кофе", "Посетишь Рим", "У тебя будет собака", "Жди гостей", "Улыбнёшься прямо сейчас", "Получишь пятёрку"]
   ];
 
   function toggleArray() {
     currentArray = (currentArray + 1) % arrays.length; // Переключение между массивами
-
     // Обновление иконки
     if (currentArray === 0) {
       setTimeout(function() {
@@ -2178,11 +1823,9 @@ $(function() {
       }, 1500);
       $("#btn-icon").html('<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><path fill="#e59600" d="M26.28 94.88c-7.33 0-13.29-5.71-13.29-12.73s5.96-12.73 13.29-12.73h75.43c7.33 0 13.29 5.71 13.29 12.73s-5.96 12.73-13.29 12.73z"/><path fill="#ffca28" d="M64 122.47c-21.41 0-44.46-16.31-44.46-52.12c0-16.64 4.87-31.97 13.71-43.17C41.51 16.71 52.72 10.71 64 10.71s22.49 6 30.75 16.47c8.84 11.2 13.71 26.53 13.71 43.17c0 16.24-4.79 29.81-13.86 39.22c-8.01 8.32-18.88 12.9-30.6 12.9"/><path fill="#e59600" d="M69.07 87.13a1.63 1.63 0 0 0-.42-.11h-9.3c-.14.02-.28.05-.42.11c-.84.34-1.31 1.22-.91 2.14c.4.93 2.25 3.54 5.98 3.54c3.73 0 5.58-2.61 5.98-3.54s-.07-1.8-.91-2.14"/><path fill="#6d4c41" d="M32.18 68.42c4.07-5.82 13.42-6.04 18.48-1.5c.98.88 2.25 2.17 1.61 3.61c-.58 1.31-1.98 1.42-3.12.92c-3.49-1.53-6.41-1.97-9.9-1.34c-.9.16-1.77.42-2.64.7c-.69.22-1.31.62-2 .83c-1.88.59-3.56-1.52-2.43-3.22m61.08 3.16C90 70 87.67 69.5 84.24 69.93c-1.7.21-3.34.66-4.92 1.31c-1.09.45-2.3.86-3.22-.17c-2.41-2.68 3.32-5.81 5.2-6.52c3.55-1.34 7.66-1.01 10.98.79c1.38.75 2.96 1.85 3.68 3.3c.86 1.71-.9 3.68-2.7 2.94"/><g fill="#404040"><ellipse cx="42.14" cy="80.34" rx="6.48" ry="6.71"/><ellipse cx="85.86" cy="80.34" rx="6.48" ry="6.71"/></g><path fill="#795548" d="M75.06 97.97c-4.19 2.49-17.91 2.49-22.1 0c-2.4-1.43-4.86.76-3.86 2.94c.98 2.15 8.47 7.13 14.95 7.13c6.47 0 13.87-4.98 14.85-7.13c.99-2.19-1.43-4.37-3.84-2.94"/><path fill="#543930" d="M103.98 18.49c-5.97-6.22-11.63-8.85-12.18-8.92c-6.92-3.17-15.85-5.58-27.42-5.58c-50.85 0-54.38 41.64-52.33 59.88c1.25 11.14 5.65 16.47 8.24 18.7c0 0 .3-12.67 2.97-22.87c2.11-8.08 7.16-14.07 7.16-14.07s9.17 7.99 26.27 13.17c8.24 2.5 18.81 1.24 18.81 1.24l-5.93-10.49s9.68 7.13 15.72 8.5c7.73 1.75 13.4 1 13.4 1l-2.84-11.08s4.91 3.24 8.59 12.06c3.68 8.83 2.71 23.11 2.71 23.11c2.51-1.8 7.88-7.01 8.96-19.28c1.76-20.19-.66-32.28-12.13-45.37"/><radialGradient id="notoBoy0" cx="64.126" cy="53.457" r="54.554" gradientTransform="matrix(.9997 .0227 -.0211 .9325 1.146 2.158)" gradientUnits="userSpaceOnUse"><stop offset=".699" stop-color="#6d4c41" stop-opacity="0"/><stop offset="1" stop-color="#6d4c41"/></radialGradient><path fill="url(#notoBoy0)" d="M91.8 9.57C84.88 6.4 75.95 3.99 64.38 3.99C13.53 3.99 10 45.63 12.05 63.87c1.25 11.14 5.65 16.47 8.24 18.7c0 0 .3-12.67 2.97-22.87c2.11-8.08 7.16-14.07 7.16-14.07s9.17 7.99 26.27 13.17c8.24 2.5 18.81 1.24 18.81 1.24l-5.93-10.49s9.68 7.13 15.72 8.5c7.73 1.75 13.4 1 13.4 1l-2.84-11.08s4.91 3.24 8.59 12.06c3.68 8.83 2.71 23.11 2.71 23.11c2.51-1.8 7.88-7.01 8.96-19.28c1.76-20.19-.66-32.28-12.13-45.37c-5.97-6.22-11.63-8.85-12.18-8.92"/></svg>');
     }
-
     // Обнуление массива случайных элементов при переключении массивов
     randomArray = null;
   }
-
   // Функция для перемешивания массива
   function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -2195,7 +1838,6 @@ $(function() {
   function gfd() {
     return p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8;
   }
-
   // Функция для отображения случайного элемента
   function updateRandomElement() {
     if (randomArray && randomArray.length > 0) {
@@ -2208,20 +1850,15 @@ $(function() {
       $("biglietto-text").text("Все элементы массива использованы.");
     }
   }
-
   // Инициализация иконки при загрузке страницы
   toggleArray();
-
   $("#icon-container").click(function() {
     toggleArray(); // Обработчик клика по кнопке
-
     $("#pappagallo").addClass("rt");
-
     setTimeout(function() {
       pappagallo.play();
       $("#pappagallo").removeClass("rt");
       $("#biglietto").css("display", "block");
-
       if (!randomArray || randomArray.length === 0) {
         // Если массив пуст или не определен, заполняем его заново
         randomArray = shuffleArray(arrays[currentArray].slice());
@@ -2230,14 +1867,12 @@ $(function() {
       updateRandomElement();
     }, 1500);
   });
-
   $('#rt').click(function() {
     $("#pappagallo").addClass("rt");
     setTimeout(function() {
       pappagallo.play();
       $("#pappagallo").removeClass("rt");
       $("#biglietto").css("display", "block");
-
       if (!randomArray || randomArray.length === 0) {
         // Если массив пуст или не определен, заполняем его заново
         randomArray = shuffleArray(arrays[currentArray].slice());
@@ -2246,7 +1881,6 @@ $(function() {
       updateRandomElement();
     }, 1500);
   });
-
   var scrollbarWidth = window.innerWidth - $(window).width() + "px";
   $(".lightbox").click(function() {
     $(".overlay").fadeIn(300);
@@ -2255,7 +1889,6 @@ $(function() {
     $(".albero").css("marginRight", scrollbarWidth);
     $("html").css("overflow", "hidden");
   });
-
   $(".overlay").click(function() {
     $(this).fadeOut(300);
     setTimeout(function() {
@@ -2264,7 +1897,6 @@ $(function() {
       $("html").css("overflow", "auto");
     }, 300);
   });
-
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
       $(".overlay").fadeOut(300);
@@ -2275,7 +1907,6 @@ $(function() {
       }, 300);
     }
   });
-
   if (ore < 5) {
     $("#benvenuto").text("Ciao! Cosa ci fai qui di notte?");
   } else if (ore < 12) {
@@ -2285,7 +1916,6 @@ $(function() {
   } else {
     $("#benvenuto").text("Buona sera!");
   }
-
   var isResult1Correct = false;
   var isResult2Correct = false;
   $('.btn-mg').click(function() {
@@ -2300,7 +1930,6 @@ $(function() {
         $("#risultato-mese").html(esattoIcon + esattoMsg);
         playSound(correctSound);
         $("#search-mese").blur();
-
         if (!isResult2Correct) {
           $("#search-giorno").focus(); // Передаем фокус на поле #search-giorno, только если результат для поля #search-mese неверен
         }
@@ -2312,9 +1941,7 @@ $(function() {
       console.log("Нажата кнопка #btn-mese");
     } else if (buttonId === 'btn-giorno') {
       var search = $("#search-giorno").val().replace("ì", "i").toLowerCase().trim();
-
       console.log('Значение поля #search-giorno', search);
-
       if (!$.trim($("#search-giorno").val())) {
         $("#risultato-giorno").html(sbagliatoIcon + scriviQc);
         $("#search-giorno").focus();
@@ -2334,7 +1961,6 @@ $(function() {
       console.log("Нажата кнопка #btn-giorno");
     }
   });
-
   $('#search-mese, #search-giorno').keydown(function(event) {
     if (event.keyCode === 13) {
       var inputId = $(this).attr('id');
@@ -2352,22 +1978,17 @@ $(function() {
       document.body.innerHTML = "";
     }
   }
-
   var currentYear = new Date().getFullYear();
   $('#currentYear').html("&copy; " + currentYear + " ");
-
   $('figure.highlight, .highlighter-rouge[class^="language-"]:not(code)').each(function() {
     if (!$(this).find('.copy-btn').length) {
       $(this).css('position', 'relative').prepend(copy);
     }
   });
-
   $('.copy-btn').click(function() {
     let codeHtml;
-
     const figureBlock = $(this).closest('figure.highlight'); // Для figure
     const preBlock = $(this).siblings('.highlight').find('code'); // Для .highlight
-
     if (figureBlock.length) {
       const codeElement = figureBlock.find('code');
       if (codeElement.length) {
@@ -2378,19 +1999,16 @@ $(function() {
       // Для CSS-блоков и других
       codeHtml = preBlock.clone();
     }
-
     // если код найден
     if (codeHtml && codeHtml.length) {
       // Убираем все теги и получаем только текст
       const codeTextWithoutHTML = codeHtml.html().replace(/<[^>]*>/g, '');
-
       // Копируем в буфер обмена
       const tempInput = $('<textarea>');
       $('body').append(tempInput);
       tempInput.val(codeTextWithoutHTML).select();
       document.execCommand('copy');
       tempInput.remove();
-
       // Изменяем значок
       $(this).html(copied);
       setTimeout(() => {
@@ -2400,39 +2018,29 @@ $(function() {
       console.error('Не удалось найти код для копирования.');
     }
   });
-
   const visibleCount = 3;
   const listItems = $('#showMoreList li');
   const showMoreLink = $('#showMoreLink');
-
   listItems.slice(visibleCount).hide();
-
-  function updateShowMoreText() {
-    const hiddenCount = listItems.filter(':hidden').length;
-    showMoreLink.text('Показать ещё (' + hiddenCount + ')');
-  }
-
-  updateShowMoreText();
-  anlocude();
-
-  showMoreLink.click(function(e) {
+  updateText();
+  showMoreLink.on('click', function(e) {
     e.preventDefault();
-    listItems.slice(visibleCount).slideDown();
-    updateShowMoreText();
-
-    if (listItems.filter(':hidden').length === 0) {
-      showMoreLink.hide();
-    }
+    listItems.slice(visibleCount).slideToggle(200, function() {
+      updateText();
+    });
   });
 
+  function updateText() {
+    const hiddenCount = listItems.filter(':hidden').length;
+    showMoreLink.text(hiddenCount > 0 ? 'Показать ещё (' + hiddenCount + ')' : 'Скрыть');
+  }
+  anlocude();
   var mWidth = 798;
   var headerHeight = $(".navigation").height(); // высота
   var topPrev = $(window).scrollTop();
-
   $(window).on("scroll", function() {
     if ($(window).width() > mWidth) {
       var topCurrent = $(window).scrollTop();
-
       if (topCurrent < topPrev) {
         // вверх
         if (topCurrent > 0 && $(".navigation").hasClass("fixed-menu")) {
@@ -2443,18 +2051,13 @@ $(function() {
       } else {
         // вниз
         $(".navigation").removeClass("visible-scroll-up");
-        if (
-          topCurrent > headerHeight &&
-          !$(".navigation").hasClass("fixed-menu")
-        ) {
+        if (topCurrent > headerHeight && !$(".navigation").hasClass("fixed-menu")) {
           $(".navigation").addClass("fixed-menu");
         }
       }
-
       topPrev = topCurrent;
     }
   });
-
   $(window).on("resize", function() {
     // если ширина окна <= 798
     if ($(window).width() <= mWidth) {
@@ -2466,21 +2069,16 @@ $(function() {
       topPrev = $(window).scrollTop();
     }
   });
-
   let hasAnimated = false;
   const animatedImage = $('.animated-image');
-
   if (animatedImage.length) {
     function isElementFullyInView() {
       const imageTop = animatedImage.offset().top;
       const imageBottom = imageTop + animatedImage.outerHeight();
-
       const viewportTop = $(window).scrollTop();
       const viewportBottom = viewportTop + $(window).height();
-
       return imageTop >= viewportTop && imageBottom <= viewportBottom;
     }
-
     $(window).on('scroll', function() {
       if (isElementFullyInView() && !hasAnimated) {
         hasAnimated = true;
@@ -2507,11 +2105,9 @@ $(function() {
   $('.toggle-risposta').click(function() {
     var $button = $(this);
     var $risposta = $button.next('.risposta');
-
     if ($risposta.is(':hidden')) {
       $('.risposta').slideUp();
       $('.toggle-risposta').text('Mostra la risposta');
-
       $risposta.slideDown();
       $button.text('Nascondi la risposta');
     } else {
