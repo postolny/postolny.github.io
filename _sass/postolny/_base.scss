@@ -470,29 +470,60 @@ table:not(.highlight table) {
 }
 .overlay {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
   display: none;
-  background: $charcoalGrey;
-  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
   z-index: 10000;
   .parent {
-    width: 100%;
-    height: 100%;
+    position: relative;
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
-    padding: 20px;
-    .image {
-      width: 100%;
-      max-width: 1280px;
-      height: 100%;
-      max-height: 800px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    img {
+      display: block;
+      margin: 0;
+      max-width: 90vw;
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      .close-bg {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s ease, transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        color: $white;
+        pointer-events: none;
+      }
+      &:hover .close-bg {
+        background: rgba(0, 0, 0, 0.6);
+      }
+      &:active .close-bg {
+        transform: scale(0.92);
+      }
     }
   }
 }

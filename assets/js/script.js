@@ -201,11 +201,22 @@ $(function() {
     window.scrollTo(0, 0);
     setTimeout(() => scrollToAnchor(hash), 300);
   }
+  // $(".tags a, .toc a, a.footnote, a.reversefootnote").on("click", function(e) {
+  //   const href = $(this).attr("href");
+  //   if (href.startsWith("#")) {
+  //     e.preventDefault();
+  //     scrollToAnchor(href);
+  //   }
+  // });
   $(".tags a, .toc a, a.footnote, a.reversefootnote").on("click", function(e) {
     const href = $(this).attr("href");
     if (href.startsWith("#")) {
       e.preventDefault();
-      scrollToAnchor(href);
+      $(".search-all tbody tr").show();
+      $("#search-all").val("");
+      setTimeout(() => {
+        scrollToAnchor(href);
+      }, 0);
     }
   });
   $(".categories a").on("click", function(e) {
@@ -1883,28 +1894,28 @@ $(function() {
   });
   var scrollbarWidth = window.innerWidth - $(window).width() + "px";
   $(".lightbox").click(function() {
-    $(".overlay").fadeIn(300);
-    $(".image").css("background-image", "url(" + $(this).attr("src") + ")");
+    const src = $(this).attr("src");
+    $(".overlay img").attr("src", src);
+    $(".overlay").fadeIn(200).css("display", "flex");
+    $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
     $(".albero").css("marginRight", scrollbarWidth);
-    $("html").css("overflow", "hidden");
   });
-  $(".overlay").click(function() {
-    $(this).fadeOut(300);
+
+  function closeLightbox() {
+    $(".overlay").fadeOut(200);
     setTimeout(function() {
       $("body,.navigation").css("paddingRight", 0);
       $(".albero").css("marginRight", 0);
       $("html").css("overflow", "auto");
     }, 300);
+  }
+  $(".close").click(function(e) {
+    closeLightbox();
   });
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
-      $(".overlay").fadeOut(300);
-      setTimeout(function() {
-        $("body,.navigation").css("paddingRight", 0);
-        $(".albero").css("marginRight", 0);
-        $("html").css("overflow", "auto");
-      }, 300);
+      closeLightbox();
     }
   });
   if (ore < 5) {
