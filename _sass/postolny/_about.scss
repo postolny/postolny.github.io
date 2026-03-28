@@ -1,0 +1,107 @@
+.blob-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 0 0 0;
+
+  .blob {
+    width: 45%;
+    background: #d2e4ff;
+    animation: pulse 8s infinite ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    .content {
+      padding: 20px;
+      margin: 10px;
+    }
+
+    h3 {
+      margin: 0 0 15px;
+      color: #1f3b57;
+      font-size: 32px;
+      font-weight: 700;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6), 0 -1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    a.blob-link {
+      color: #1f3b57;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0 6px;
+      background-image: linear-gradient(rgba(22, 160, 133, 0.35), rgba(22, 160, 133, 0.35));
+      background-repeat: no-repeat;
+      background-size: 100% 0.4em;
+      background-position: 0 90%;
+      transition: background-size 0.2s ease;
+
+      &:hover {
+        color: #1f3b57;
+        background-size: 100% 100%;
+      }
+    }
+
+    a.blob-btn {
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+      padding: 14px 28px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: $white;
+      background: #16a085;
+      border-radius: 18px 30px 22px 28px / 28px 22px 30px 18px;
+      box-shadow: 0 8px 0 #0e6b5c;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.2s ease;
+
+      &:hover {
+        color: $white;
+        filter: brightness(1.05);
+      }
+
+      &:active {
+        transform: translateY(5px) scale(0.97);
+        box-shadow: 0 3px 0 #148f77;
+      }
+    }
+
+    &:nth-child(odd) {
+      margin-right: auto;
+    }
+
+    &:nth-child(even) {
+      margin-left: auto;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    border-radius: 25% 15% 30% 20% / 20% 30% 15% 25%;
+  }
+
+  50% {
+    border-radius: 20% 25% 35% 15% / 25% 20% 30% 10%;
+  }
+
+  100% {
+    border-radius: 25% 15% 30% 20% / 20% 30% 15% 25%;
+  }
+}
+
+@media screen and (max-width:599px) {
+  .blob-container {
+    gap: 12px;
+    padding: 16px 0 0 0;
+
+    .blob {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
