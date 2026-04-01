@@ -2126,4 +2126,53 @@ $(function() {
       $button.text('Mostra la risposta');
     }
   });
+  const cloudImages = ['/assets/cloud1.png', '/assets/cloud2.png', '/assets/cloud3.png', '/assets/cloud4.png', '/assets/cloud5.png'];
+  const clouds = [];
+
+  function randomCloudY(size) {
+    const h = window.innerHeight * 2;
+    return Math.random() * h;
+  }
+
+  function createCloud() {
+    const size = 80 + Math.random() * 220;
+    const cloud = {
+      el: $('<div class="cloud"></div>'),
+      x: Math.random() * window.innerWidth,
+      y: randomCloudY(size),
+      size: size,
+      speed: (0.06 + Math.random() * 0.04),
+      driftAmplitude: (2 + Math.random() * 2),
+      driftSpeed: (0.0003 + Math.random() * 0.0002),
+      phase: Math.random() * Math.PI * 2
+    };
+    cloud.speed *= (200 / cloud.size);
+    cloud.el.css({
+      width: cloud.size + 'px',
+      height: cloud.size * 0.6 + 'px',
+      backgroundImage: 'url(' + cloudImages[Math.floor(Math.random() * cloudImages.length)] + ')',
+      opacity: 0.3 + Math.random() * 0.5
+    });
+    $('#cloudsContainer').append(cloud.el);
+    clouds.push(cloud);
+  }
+  for (let i = 0; i < 70; i++) {
+    createCloud();
+  }
+
+  function animate() {
+    const time = Date.now();
+    const width = window.innerWidth;
+    clouds.forEach(cloud => {
+      cloud.x -= cloud.speed;
+      if (cloud.x < -cloud.size) {
+        cloud.x = width + 100 + Math.random() * 300;
+        cloud.y = randomCloudY(cloud.size);
+      }
+      const drift = Math.sin(time * cloud.driftSpeed + cloud.phase) * cloud.driftAmplitude;
+      cloud.el.css('transform', 'translate(' + cloud.x + 'px, ' + (cloud.y + drift) + 'px)');
+    });
+    requestAnimationFrame(animate);
+  }
+  animate();
 });
