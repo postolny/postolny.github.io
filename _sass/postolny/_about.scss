@@ -8,6 +8,11 @@
     z-index: 1;
   }
 
+  #about-wrap {
+    position: relative;
+    z-index: 1;
+  }
+
   p.capolettera {
     margin: 0;
   }
@@ -48,6 +53,76 @@
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  #birds-behind,
+  #birds-front {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  #birds-behind {
+    z-index: 0;
+  }
+
+  #birds-front {
+    z-index: 2;
+  }
+
+  .bird {
+    position: fixed;
+    width: 35px;
+    height: auto;
+
+    .wing {
+      fill: none;
+      stroke: #222;
+      stroke-width: 2;
+      stroke-linecap: round;
+      transform-origin: 20px 10px;
+
+      &.front {
+        animation: flap-front 0.4s infinite ease-in-out;
+      }
+
+      &.back {
+        animation: flap-back 0.4s infinite ease-in-out;
+        opacity: 0.6;
+        animation-delay: 0.02s;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 26px;
+    }
+  }
+
+  @keyframes flap-front {
+
+    0%,
+    100% {
+      transform: rotate(20deg) scaleY(1);
+    }
+
+    50% {
+      transform: rotate(-60deg) scaleX(0.95) scaleY(1.2);
+    }
+  }
+
+  @keyframes flap-back {
+
+    0%,
+    100% {
+      transform: rotate(-15deg) scaleY(1);
+    }
+
+    50% {
+      transform: rotate(45deg) scaleY(1.05);
+    }
   }
 }
 

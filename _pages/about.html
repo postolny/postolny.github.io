@@ -10,81 +10,89 @@ header_margin_top: 4rem
 ---
 
 <div id="cloudsContainer"></div>
-<div class="flex-container card">
-  <div class="flex-text">
-    <p class="capolettera">Великий Микеланджело говорил: «Bisogna saper vedere» — «Нужно уметь видеть». Это я к тому, что видеть теперь, в наш суетливый век, никто ничего не желает. Тем не менее, скажу я вам, взглянуть (умеючи видеть, конечно) иногда крайне пользительно, даже если вам всё до предела наскучило. «Но ваши творчества, — скажете вы, — нам безынтересны, — мы простого человеческого счастья хотим». Ну, я вас понимаю, конечно. А что если и простое человеческое счастье вам вдруг наскучит и захочется чего-нибудь эдакого? Я не буду вас уговаривать — уходите прямо сейчас, ежели хотите. Но может кто и останется посмотреть на мои тщетные усилия сделать чуточку прекрасней и без того уже прекрасный мир. Итак...</p>
-  </div>
-  <div class="flex-image">
-    <img class="lightbox" src="{{ site.baseurl }}/img/io.jpg" alt="Игорь Постольный" draggable="false">
-  </div>
-</div>
-<div class="blob-container">
-  <div class="blob">
-    <div class="content">
-      <h3>Сочинения</h3>
-      <p>В первую очередь позвольте представить вашему вниманию страницу с оглавлением моих сочинений и переводов с итальянского. В оглавлении есть ссылка и на мои музыкальные сочинения.</p>
-      <a class="blob-btn" href="https://postolny.github.io/indice/" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+<div id="birds-behind"></div>
+<div id="birds-front"></div>
+<svg id="bird-template" class="bird" viewBox="0 -10 40 40" style="display:none;">
+  <path class="wing back" d="M20 10 Q13 7 11 8" />
+  <path class="wing front" d="M20 10 Q26 4 32 7" />
+</svg>
+<div id="about-wrap">
+  <div class="flex-container card">
+    <div class="flex-text">
+      <p class="capolettera">Великий Микеланджело говорил: «Bisogna saper vedere» — «Нужно уметь видеть». Это я к тому, что видеть теперь, в наш суетливый век, никто ничего не желает. Тем не менее, скажу я вам, взглянуть (умеючи видеть, конечно) иногда крайне пользительно, даже если вам всё до предела наскучило. «Но ваши творчества, — скажете вы, — нам безынтересны, — мы простого человеческого счастья хотим». Ну, я вас понимаю, конечно. А что если и простое человеческое счастье вам вдруг наскучит и захочется чего-нибудь эдакого? Я не буду вас уговаривать — уходите прямо сейчас, ежели хотите. Но может кто и останется посмотреть на мои тщетные усилия сделать чуточку прекрасней и без того уже прекрасный мир. Итак...</p>
+    </div>
+    <div class="flex-image">
+      <img class="lightbox" src="{{ site.baseurl }}/img/io.jpg" alt="Игорь Постольный" draggable="false">
     </div>
   </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Музыка</h3>
-      <p>Отдельно представляю мои музыкальные сочинения 𝄞. Некоторые из них можно послушать с помощью аудиоплеера, который, как и всё на этом сайте, также является творением рук моих.</p>
-      <a class="blob-btn" href="https://postolny.github.io/musica" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+  <div class="blob-container">
+    <div class="blob">
+      <div class="content">
+        <h3>Сочинения</h3>
+        <p>В первую очередь позвольте представить вашему вниманию страницу с оглавлением моих сочинений и переводов с итальянского. В оглавлении есть ссылка и на мои музыкальные сочинения.</p>
+        <a class="blob-btn" href="https://postolny.github.io/indice/" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+      </div>
     </div>
-  </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Статьи</h3>
-      <p>Это самый обыкновенный блог с полезными и бесполезными статьями и главная страница сайта.</p>
-      <a class="blob-btn" href="https://postolny.github.io/" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+    <div class="blob">
+      <div class="content">
+        <h3>Музыка</h3>
+        <p>Отдельно представляю мои музыкальные сочинения 𝄞. Некоторые из них можно послушать с помощью аудиоплеера, который, как и всё на этом сайте, также является творением рук моих.</p>
+        <a class="blob-btn" href="https://postolny.github.io/musica" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+      </div>
     </div>
-  </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Тесты</h3>
-      <p>Тесты (или викторины) — это то, что многие точно обойдут стороной. Да, в основном это тесты по грамматике итальянского языка (кроме одного на ударение в русском), но некоторые из них в техническом плане сделаны мной довольно оригинально, например, <a class="blob-link" href="https://postolny.github.io/2020-12-02/numerali" target="_blank" rel="noopener noreferrer">тест на числа</a> или <a class="blob-link" href="https://postolny.github.io/2023-10-24/in-che-mese-siamo-che-giorno-e-oggi" target="_blank" rel="noopener noreferrer">тест на день недели и месяц</a>. Чтобы увидеть полный список тестов, нажмите на кнопку ниже.</p>
-      <a class="blob-btn" href="https://postolny.github.io/tests/" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+    <div class="blob">
+      <div class="content">
+        <h3>Статьи</h3>
+        <p>Это самый обыкновенный блог с полезными и бесполезными статьями и главная страница сайта.</p>
+        <a class="blob-btn" href="https://postolny.github.io/" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+      </div>
     </div>
-  </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Словари</h3>
-      <p>Маленькие наглядные словарики <a class="blob-link" href="https://postolny.github.io/2021-03-19/animali" target="_blank" rel="noopener noreferrer">животных</a> и <a class="blob-link" href="https://postolny.github.io/2022-09-02/cucina" target="_blank" rel="noopener noreferrer">на тему кухни</a>.</p>
+    <div class="blob">
+      <div class="content">
+        <h3>Тесты</h3>
+        <p>Тесты (или викторины) — это то, что многие точно обойдут стороной. Да, в основном это тесты по грамматике итальянского языка (кроме одного на ударение в русском), но некоторые из них в техническом плане сделаны мной довольно оригинально, например, <a class="blob-link" href="https://postolny.github.io/2020-12-02/numerali" target="_blank" rel="noopener noreferrer">тест на числа</a> или <a class="blob-link" href="https://postolny.github.io/2023-10-24/in-che-mese-siamo-che-giorno-e-oggi" target="_blank" rel="noopener noreferrer">тест на день недели и месяц</a>. Чтобы увидеть полный список тестов, нажмите на кнопку ниже.</p>
+        <a class="blob-btn" href="https://postolny.github.io/tests/" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+      </div>
     </div>
-  </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Игрушка</h3>
-      <p>А точнее, электронная иллюстрация к IV главе «Клетка с попугаем» переведённого мною романа Джанни Родари «Маленькие бродяги». К сожалению на узких экранах (портретная ориентация телефона) посмотреть игрушку не получится, но вы сможете её увидеть на ПК или в ландшафтной ориентации телефона.</p>
-      <a class="blob-btn" href="https://postolny.github.io/la-gabbia-col-pappagallo/" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+    <div class="blob">
+      <div class="content">
+        <h3>Словари</h3>
+        <p>Маленькие наглядные словарики <a class="blob-link" href="https://postolny.github.io/2021-03-19/animali" target="_blank" rel="noopener noreferrer">животных</a> и <a class="blob-link" href="https://postolny.github.io/2022-09-02/cucina" target="_blank" rel="noopener noreferrer">на тему кухни</a>.</p>
+      </div>
     </div>
-  </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Разработки</h3>
-      <p>Этот <a class="blob-link" href="https://postolny.github.io/veronica/" target="_blank" rel="noopener noreferrer">тест-стихотворение</a> я сделал для моей ученицы по фортепиано Вероники Ломакиной (её специальный инструмент — скрипка). Радиоплеер <a class="blob-link" href="https://postolny.github.io/venice-classic-radio-2/" target="_blank" rel="noopener noreferrer">Venice Classic Radio</a> (к сожалению эта итальянская радиостанция теперь не работает в России). <a class="blob-link" href="https://postolny.github.io/gif/" target="_blank" rel="noopener noreferrer">Баловство с графикой</a>. Просто для <a class="blob-link" href="https://postolny.github.io/buon-anno/" target="_blank" rel="noopener noreferrer">новогоднего настроения</a>.</p>
+    <div class="blob">
+      <div class="content">
+        <h3>Игрушка</h3>
+        <p>А точнее, электронная иллюстрация к IV главе «Клетка с попугаем» переведённого мною романа Джанни Родари «Маленькие бродяги». К сожалению на узких экранах (портретная ориентация телефона) посмотреть игрушку не получится, но вы сможете её увидеть на ПК или в ландшафтной ориентации телефона.</p>
+        <a class="blob-btn" href="https://postolny.github.io/la-gabbia-col-pappagallo/" target="_blank" rel="noopener noreferrer">Хочу увидеть</a>
+      </div>
     </div>
-  </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Пословицы</h3>
-      <p>Хотите почитать итальянские пословицы. Жмите на кнопку!</p>
-      <a class="blob-btn" href="https://postolny.github.io/proverbi/" target="_blank" rel="noopener noreferrer">Хочу почитать</a>
+    <div class="blob">
+      <div class="content">
+        <h3>Разработки</h3>
+        <p>Этот <a class="blob-link" href="https://postolny.github.io/veronica/" target="_blank" rel="noopener noreferrer">тест-стихотворение</a> я сделал для моей ученицы по фортепиано Вероники Ломакиной (её специальный инструмент — скрипка). Радиоплеер <a class="blob-link" href="https://postolny.github.io/venice-classic-radio-2/" target="_blank" rel="noopener noreferrer">Venice Classic Radio</a> (к сожалению эта итальянская радиостанция теперь не работает в России). <a class="blob-link" href="https://postolny.github.io/gif/" target="_blank" rel="noopener noreferrer">Баловство с графикой</a>. Просто для <a class="blob-link" href="https://postolny.github.io/buon-anno/" target="_blank" rel="noopener noreferrer">новогоднего настроения</a>.</p>
+      </div>
     </div>
-  </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Подсказки</h3>
-      <p>На сайте имеется меню. Чтобы раскрыть его на телефоне, кликните на тривертикальные полоски в правом верхнем углу (такой значок, кстати, прозвали гамбургером). Если справа от пункта меню имеется треугольник, остриём направленный вниз, то это значит, что этот пункт можно раскрыть. Пункт <a class="blob-link" href="https://postolny.github.io/categories/" target="_blank" rel="noopener noreferrer">A-Z</a> это навигатор по статьям об итальянских словах и выражениях, а пункт <a class="blob-link" href="https://postolny.github.io/tags/" target="_blank" rel="noopener noreferrer">Теги</a> — навигатор по тегам статей в блоге.</p>
+    <div class="blob">
+      <div class="content">
+        <h3>Пословицы</h3>
+        <p>Хотите почитать итальянские пословицы. Жмите на кнопку!</p>
+        <a class="blob-btn" href="https://postolny.github.io/proverbi/" target="_blank" rel="noopener noreferrer">Хочу почитать</a>
+      </div>
     </div>
-  </div>
-  <div class="blob">
-    <div class="content">
-      <h3>Связаться</h3>
-      <p>Вы можете написать мне по адресу: <span style="white-space: nowrap;">igor.postolny(<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392.747 392.747" width="16" height="16">
-            <path d="m379.498 90.453-40.104-16.18c-2.449-12.946-12.287-23.311-24.947-26.528l-2.169-24.992a9 9 0 0 0-15.634-5.266l-10.492 11.572-6.437-22.531a9.001 9.001 0 0 0-8.341-6.522c-3.898-.121-7.443 2.258-8.774 5.928l-55.536 153.21c-39.95 10.374-74.835 35.938-96.262 70.724-19.626 31.862-25.722 68.366-17.165 102.786 5.001 20.117 14.496 33.373 24.209 42.065h-7.639l-.216.003c-36.135.881-69.622-19.663-85.259-52.307-2.147-4.483-7.522-6.375-12.005-4.229a9 9 0 0 0-4.228 12.005c18.31 38.226 57.078 62.557 99.286 62.557h171.829a9 9 0 0 0 9-9c0-24.226-19.323-35.268-36.377-39.321 7.974-15.546 8.663-29.218 7.759-38.162l2.352-.314 53.943 82.713a9.002 9.002 0 0 0 7.539 4.083h32.755a9 9 0 0 0 7.614-13.797c-.348-.552-34.166-54.247-52.346-84.309V143.416c2.676.308 5.681.463 8.335.463 26.109 0 50.664-14.73 63.885-40.848.011-.021.35-.729.404-.865a8.999 8.999 0 0 0-4.979-11.713z" /></svg>)gmail.com</span>
-      </p>
+    <div class="blob">
+      <div class="content">
+        <h3>Подсказки</h3>
+        <p>На сайте имеется меню. Чтобы раскрыть его на телефоне, кликните на тривертикальные полоски в правом верхнем углу (такой значок, кстати, прозвали гамбургером). Если справа от пункта меню имеется треугольник, остриём направленный вниз, то это значит, что этот пункт можно раскрыть. Пункт <a class="blob-link" href="https://postolny.github.io/categories/" target="_blank" rel="noopener noreferrer">A-Z</a> это навигатор по статьям об итальянских словах и выражениях, а пункт <a class="blob-link" href="https://postolny.github.io/tags/" target="_blank" rel="noopener noreferrer">Теги</a> — навигатор по тегам статей в блоге.</p>
+      </div>
+    </div>
+    <div class="blob">
+      <div class="content">
+        <h3>Связаться</h3>
+        <p>Вы можете написать мне по адресу: <span style="white-space: nowrap;">igor.postolny(<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392.747 392.747" width="16" height="16">
+              <path d="m379.498 90.453-40.104-16.18c-2.449-12.946-12.287-23.311-24.947-26.528l-2.169-24.992a9 9 0 0 0-15.634-5.266l-10.492 11.572-6.437-22.531a9.001 9.001 0 0 0-8.341-6.522c-3.898-.121-7.443 2.258-8.774 5.928l-55.536 153.21c-39.95 10.374-74.835 35.938-96.262 70.724-19.626 31.862-25.722 68.366-17.165 102.786 5.001 20.117 14.496 33.373 24.209 42.065h-7.639l-.216.003c-36.135.881-69.622-19.663-85.259-52.307-2.147-4.483-7.522-6.375-12.005-4.229a9 9 0 0 0-4.228 12.005c18.31 38.226 57.078 62.557 99.286 62.557h171.829a9 9 0 0 0 9-9c0-24.226-19.323-35.268-36.377-39.321 7.974-15.546 8.663-29.218 7.759-38.162l2.352-.314 53.943 82.713a9.002 9.002 0 0 0 7.539 4.083h32.755a9 9 0 0 0 7.614-13.797c-.348-.552-34.166-54.247-52.346-84.309V143.416c2.676.308 5.681.463 8.335.463 26.109 0 50.664-14.73 63.885-40.848.011-.021.35-.729.404-.865a8.999 8.999 0 0 0-4.979-11.713z" /></svg>)gmail.com</span>
+        </p>
+      </div>
     </div>
   </div>
 </div>

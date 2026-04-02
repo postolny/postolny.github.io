@@ -2175,4 +2175,53 @@ $(function() {
     requestAnimationFrame(animate);
   }
   animate();
+
+  function createBird() {
+    const bird = $('#bird-template').clone().removeAttr('id').show();
+    const isFront = Math.random() > 0.6;
+    if (isFront) {
+      $('#birds-front').append(bird);
+    } else {
+      $('#birds-behind').append(bird);
+    }
+    flyBird(bird);
+  }
+
+  function flyBird(bird) {
+    const startTop = Math.random() * 300 + 50;
+    const duration = 6000 + Math.random() * 4000;
+    const distance = $(window).width() + 100;
+    const delay = Math.random() * 0.3;
+    bird.find('.front').css('animation-delay', delay + 's');
+    bird.find('.back').css('animation-delay', (delay + 0.02) + 's');
+    const phase = Math.random() * Math.PI * 2;
+    bird.css({
+      top: startTop,
+      left: '100%',
+      transform: 'translateX(0)'
+    });
+    bird.animate({ dummy: 1 }, {
+      duration: duration,
+      // step: function (now, fx) {
+      //   const progress = fx.pos;
+      //   const x = -distance * progress;
+      //   const wave = Math.sin(progress * Math.PI * 2 + phase) * 20;
+      //   bird.css('transform', 'translate(' + x + 'px, ' + wave + 'px)');
+      // },
+      step: function(now, fx) {
+        const progress = fx.pos;
+        const distance = $(window).width() + 100;
+        const x = -distance * progress;
+        const wave = Math.sin(progress * Math.PI * 2 + phase) * 20;
+        bird.css('transform', 'translate(' + x + 'px, ' + wave + 'px)');
+      },
+      complete: function() {
+        bird.remove();
+        createBird();
+      }
+    });
+  }
+  for (let i = 0; i < 5; i++) {
+    setTimeout(createBird, i * 800);
+  }
 });
