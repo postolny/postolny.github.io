@@ -2224,4 +2224,11 @@ $(function() {
   for (let i = 0; i < 5; i++) {
     setTimeout(createBird, i * 800);
   }
+  var sp = $('.settings-panel');
+  $('.settings-open').on('click', function() {
+    sp.addClass('open');
+  });
+  $('.settings-close').on('click', function() {
+    sp.removeClass('open');
+  });
 });
