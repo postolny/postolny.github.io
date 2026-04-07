@@ -1,5 +1,6 @@
 .about {
-  background-color: #bae2fc;
+  background-color: #c1dfff;
+  transition: background 0.3s ease;
 
   .page-title {
     color: #ecedef;
@@ -18,7 +19,7 @@
   }
 
   .card {
-    background: #d2e4ff;
+    background: $pale-blue;
     padding: 30px;
     border-radius: 12px;
     gap: 10px;
@@ -134,7 +135,7 @@
 
   .blob {
     width: 45%;
-    background: #d2e4ff;
+    background: $pale-blue;
     animation: pulse 8s infinite ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.7);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -146,7 +147,7 @@
 
     h3 {
       margin: 0 0 15px;
-      color: #1f3b57;
+      color: $dark-blue;
       font-size: 32px;
       font-weight: 700;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6), 0 -1px 1px rgba(0, 0, 0, 0.1);
@@ -157,7 +158,7 @@
     }
 
     a.blob-link {
-      color: #1f3b57;
+      color: $dark-blue;
       text-decoration: none;
       font-weight: 600;
       padding: 0 6px;
@@ -168,7 +169,7 @@
       transition: background-size 0.2s ease;
 
       &:hover {
-        color: #1f3b57;
+        color: $dark-blue;
         background-size: 100% 100%;
       }
     }
@@ -183,7 +184,7 @@
       cursor: pointer;
       font-size: 16px;
       color: $white;
-      background: #16a085;
+      background: $teal;
       border-radius: 18px 30px 22px 28px / 28px 22px 30px 18px;
       box-shadow: 0 8px 0 #0e6b5c;
       transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.2s ease;
@@ -247,10 +248,14 @@
 }
 
 .settings-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   position: fixed;
-  left: 0;
+  right: 0;
   bottom: 0;
   width: 100%;
+  max-width: 400px;
   z-index: 2;
   transform: translateY(100%);
   transition: transform 0.3s ease;
@@ -266,25 +271,122 @@
     padding: 16px;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
 
-    .settings-close {
-      position: absolute;
-      right: 15px;
-      top: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-
-      svg {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
     .settings-content {
       display: flex;
       flex-direction: column;
       gap: 12px;
+
+      .settings-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        .settings-title {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex: 1;
+          min-width: 0;
+
+          .settings-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+          }
+        }
+
+        .settings-close {
+          flex-shrink: 0;
+          cursor: pointer;
+          padding: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+
+          &:hover svg {
+            transform: scale(1.1);
+          }
+
+          &:active svg {
+            transform: scale(0.95);
+          }
+        }
+      }
+
+      input {
+        &:checked+.slider {
+          background-color: $teal;
+        }
+      }
+
+      .panel-item {
+        display: flex;
+        align-items: center;
+        font-size: 0.9em;
+
+        &.range {
+          gap: 12px;
+
+          label {
+            font-size: 0.9em;
+            line-height: 1.2;
+            flex: 0 0 160px;
+            min-width: 0;
+          }
+
+          input[type="range"] {
+            flex: 1;
+            min-width: 0;
+          }
+        }
+
+        &.toggle {
+          gap: 8px;
+
+          span {
+            font-size: 0.9em;
+          }
+        }
+
+        &.palette {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 1px;
+
+          .color-swatch {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              border: 2px solid transparent;
+              pointer-events: none;
+              box-sizing: border-box;
+              transition: border-color 0.15s ease;
+            }
+
+            &:hover::before {
+              border-color: #262626;
+            }
+
+            &.active::before {
+              border-color: #262626;
+            }
+          }
+        }
+      }
     }
   }
 }

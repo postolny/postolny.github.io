@@ -40,6 +40,7 @@ $(function() {
   var g = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
   var mes = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
   var dn = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+  var sp = $('.settings-panel');
 
   function toggleAudio() {
     isMuted = !isMuted;
@@ -1899,14 +1900,20 @@ $(function() {
     $(".overlay").fadeIn(200).css("display", "flex");
     $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
-    $(".albero").css("marginRight", scrollbarWidth);
+    $(".albero, .settings-open, .settings-panel").css("marginRight", scrollbarWidth);
+  });
+  $('.settings-open').on('click', function() {
+    sp.addClass('open');
+  });
+  $('.settings-close').on('click', function() {
+    sp.removeClass('open');
   });
 
   function closeLightbox() {
     $(".overlay").fadeOut(200);
     setTimeout(function() {
       $("body,.navigation").css("paddingRight", 0);
-      $(".albero").css("marginRight", 0);
+      $(".albero, .settings-open, .settings-panel").css("marginRight", 0);
       $("html").css("overflow", "auto");
     }, 300);
   }
@@ -1916,7 +1923,273 @@ $(function() {
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
       closeLightbox();
+      if (sp.length) {
+        sp.removeClass('open');
+      }
     }
+  });
+  const swatches = $('.color-swatch');
+  const defaultColor = swatches.first().data('color');
+  const saved = localStorage.getItem('bg-color') || defaultColor;
+  $('body.about').css('background', saved);
+  setActiveSwatch(saved);
+  swatches.on('click', function() {
+    let color = $(this).data('color');
+    $('body.about').css('background', color);
+    localStorage.setItem('bg-color', color);
+    setActiveSwatch(color);
+  });
+
+  function setActiveSwatch(color) {
+    swatches.removeClass('active');
+    swatches.filter('[data-color="' + color + '"]').addClass('active');
+  }
+  const cloudsManager = {
+    enabled: true,
+    speedMultiplier: 1,
+    count: 70,
+    load() {
+      const savedEnabled = localStorage.getItem('cloudsEnabled');
+      this.enabled = savedEnabled === null ? true : savedEnabled === 'true';
+      $('#clouds-toggle').prop('checked', this.enabled);
+      const savedSpeed = localStorage.getItem('cloudSpeed');
+      this.speedMultiplier = savedSpeed ? parseFloat(savedSpeed) : 1;
+      $('#cloud-speed').val(this.speedMultiplier);
+      const savedCount = localStorage.getItem('cloudsCount');
+      this.count = savedCount ? parseInt(savedCount) : 70;
+      $('#clouds-count').val(this.count);
+    },
+    setSpeed(value) {
+      this.speedMultiplier = value;
+      localStorage.setItem('cloudSpeed', value);
+    },
+    setCount(value) {
+      this.count = value;
+      localStorage.setItem('cloudsCount', value);
+      this.adjustClouds();
+    },
+    toggle(value) {
+      this.enabled = value;
+      localStorage.setItem('cloudsEnabled', value);
+      $('#cloudsContainer').toggle(this.enabled);
+    },
+    adjustClouds() {
+      const current = clouds.length;
+      if (current < this.count) {
+        const diff = this.count - current;
+        for (let i = 0; i < diff; i++) {
+          createCloud();
+        }
+      }
+      if (current > this.count) {
+        const diff = current - this.count;
+        for (let i = 0; i < diff; i++) {
+          const cloud = clouds.pop();
+          cloud.el.remove();
+        }
+      }
+    }
+  };
+  const cloudImages = ['/assets/cloud1.png', '/assets/cloud2.png', '/assets/cloud3.png', '/assets/cloud4.png', '/assets/cloud5.png'];
+  const clouds = [];
+
+  function randomCloudY(size) {
+    const h = window.innerHeight * 2;
+    return Math.random() * h;
+  }
+
+  function createCloud() {
+    const size = 80 + Math.random() * 220;
+    const cloud = {
+      el: $('<div class="cloud"></div>'),
+      x: Math.random() * window.innerWidth,
+      y: randomCloudY(size),
+      size: size,
+      speed: (0.06 + Math.random() * 0.04),
+      driftAmplitude: (2 + Math.random() * 2),
+      driftSpeed: (0.0003 + Math.random() * 0.0002),
+      phase: Math.random() * Math.PI * 2
+    };
+    cloud.speed *= (200 / cloud.size);
+    cloud.el.css({
+      width: cloud.size + 'px',
+      height: cloud.size * 0.6 + 'px',
+      backgroundImage: 'url(' + cloudImages[Math.floor(Math.random() * cloudImages.length)] + ')',
+      opacity: 0.3 + Math.random() * 0.5
+    });
+    $('#cloudsContainer').append(cloud.el);
+    clouds.push(cloud);
+  }
+
+  function animate() {
+    if (!cloudsManager.enabled) {
+      requestAnimationFrame(animate);
+      return;
+    }
+    const time = Date.now();
+    const width = window.innerWidth;
+    clouds.forEach(cloud => {
+      // if (cloudsManager.enabled) {
+      cloud.x -= cloud.speed * cloudsManager.speedMultiplier;
+      // }
+      if (cloud.x < -cloud.size) {
+        cloud.x = width + 100 + Math.random() * 300;
+        cloud.y = randomCloudY(cloud.size);
+      }
+      const drift = Math.sin(time * cloud.driftSpeed + cloud.phase) * cloud.driftAmplitude;
+      cloud.el.css('transform', 'translate(' + cloud.x + 'px, ' + (cloud.y + drift) + 'px)');
+    });
+    requestAnimationFrame(animate);
+  }
+  cloudsManager.load();
+  for (let i = 0; i < cloudsManager.count; i++) {
+    createCloud();
+  }
+  cloudsManager.toggle(cloudsManager.enabled);
+  animate();
+  $('#cloud-speed').on('input', function() {
+    cloudsManager.setSpeed(parseFloat(this.value));
+  });
+  $('#clouds-count').on('input', function() {
+    cloudsManager.setCount(parseInt(this.value));
+  });
+  $('#clouds-toggle').on('change', function() {
+    cloudsManager.toggle(this.checked);
+  });
+  const birdsManager = {
+    enabled: true,
+    speed: 1,
+    count: 5,
+    birds: [],
+    load() {
+      const saved = localStorage.getItem('birdsEnabled');
+      this.enabled = saved === null ? true : saved === 'true';
+      $('#birds-toggle').prop('checked', this.enabled);
+      const savedSpeed = localStorage.getItem('birdsSpeed');
+      this.speed = savedSpeed ? parseFloat(savedSpeed) : 1;
+      $('#birds-speed').val(this.speed);
+      const savedCount = localStorage.getItem('birdsCount');
+      this.count = savedCount ? parseInt(savedCount) : 5;
+      $('#birds-count').val(this.count);
+    },
+    save() {
+      localStorage.setItem('birdsEnabled', this.enabled);
+    },
+    setSpeed(speed) {
+      this.speed = speed;
+      localStorage.setItem('birdsSpeed', speed);
+    },
+    setCount(count) {
+      this.count = count;
+      localStorage.setItem('birdsCount', count);
+      this.adjustBirds();
+    },
+    start() {
+      if (!this.enabled) return;
+      for (let i = 0; i < this.count; i++) {
+        setTimeout(() => this.createBird(), i * 800);
+      }
+    },
+    stop() {
+      this.enabled = false;
+      this.birds.forEach(b => {
+        b.element.stop(true);
+        b.element.remove();
+      });
+      this.birds = [];
+      $('#birds-front').empty();
+      $('#birds-behind').empty();
+    },
+    createBird() {
+      if (!this.enabled) return;
+      const bird = $('#bird-template').clone().removeAttr('id').show();
+      const isFront = Math.random() > 0.6;
+      const container = isFront ? $('#birds-front') : $('#birds-behind');
+      container.append(bird);
+      const birdObj = { element: bird };
+      this.birds.push(birdObj);
+      this.flyBird(bird, birdObj);
+    },
+    flyBird(bird, birdObj) {
+      const self = this;
+      const startTop = Math.random() * 300 + 50;
+      // const baseDuration = 6000 + Math.random() * 4000;
+      // const duration = baseDuration / self.speed;
+      const baseDuration = 6000 + Math.random() * 4000;
+      const adjustedSpeed = Math.pow(self.speed, 0.7);
+      let duration = baseDuration / adjustedSpeed;
+      duration = Math.max(duration, 1500);
+      const phase = Math.random() * Math.PI * 2;
+      bird.css({
+        top: startTop,
+        left: '100%',
+        transform: 'translateX(0)'
+      });
+      bird.animate({ dummy: 1 }, {
+        duration: duration,
+        step: function(now, fx) {
+          if (!self.enabled) {
+            bird.stop(true);
+            bird.remove();
+            return;
+          }
+          const progress = fx.pos;
+          const distance = $(window).width() + 100;
+          const x = -distance * progress;
+          const wave = Math.sin(progress * Math.PI * 2 + phase) * 20;
+          bird.css('transform', `translate(${x}px, ${wave}px)`);
+        },
+        complete: function() {
+          bird.remove();
+          self.birds = self.birds.filter(b => b.element[0] !== bird[0]);
+          if (self.enabled) {
+            self.createBird();
+          }
+        }
+      });
+    },
+    adjustBirds() {
+      if (!this.enabled) return;
+      const current = this.birds.length;
+      if (current < this.count) {
+        const diff = this.count - current;
+        for (let i = 0; i < diff; i++) {
+          this.createBird();
+        }
+      }
+      if (current > this.count) {
+        const diff = current - this.count;
+        for (let i = 0; i < diff; i++) {
+          const index = Math.floor(Math.random() * this.birds.length);
+          const bird = this.birds[index];
+          bird.element.stop(true);
+          bird.element.remove();
+          this.birds.splice(index, 1);
+        }
+      }
+    },
+    toggle(state) {
+      this.enabled = state;
+      this.save();
+      if (this.enabled) {
+        this.start();
+      } else {
+        this.stop();
+      }
+    }
+  };
+  birdsManager.load();
+  if (birdsManager.enabled) {
+    birdsManager.start();
+  }
+  $('#birds-toggle').on('change', function() {
+    birdsManager.toggle(this.checked);
+  });
+  $('#birds-speed').on('input', function() {
+    birdsManager.setSpeed(parseFloat(this.value));
+  });
+  $('#birds-count').on('input', function() {
+    birdsManager.setCount(parseInt(this.value));
   });
   if (ore < 5) {
     $("#benvenuto").text("Ciao! Cosa ci fai qui di notte?");
@@ -2125,110 +2398,5 @@ $(function() {
       $risposta.slideUp();
       $button.text('Mostra la risposta');
     }
-  });
-  const cloudImages = ['/assets/cloud1.png', '/assets/cloud2.png', '/assets/cloud3.png', '/assets/cloud4.png', '/assets/cloud5.png'];
-  const clouds = [];
-
-  function randomCloudY(size) {
-    const h = window.innerHeight * 2;
-    return Math.random() * h;
-  }
-
-  function createCloud() {
-    const size = 80 + Math.random() * 220;
-    const cloud = {
-      el: $('<div class="cloud"></div>'),
-      x: Math.random() * window.innerWidth,
-      y: randomCloudY(size),
-      size: size,
-      speed: (0.06 + Math.random() * 0.04),
-      driftAmplitude: (2 + Math.random() * 2),
-      driftSpeed: (0.0003 + Math.random() * 0.0002),
-      phase: Math.random() * Math.PI * 2
-    };
-    cloud.speed *= (200 / cloud.size);
-    cloud.el.css({
-      width: cloud.size + 'px',
-      height: cloud.size * 0.6 + 'px',
-      backgroundImage: 'url(' + cloudImages[Math.floor(Math.random() * cloudImages.length)] + ')',
-      opacity: 0.3 + Math.random() * 0.5
-    });
-    $('#cloudsContainer').append(cloud.el);
-    clouds.push(cloud);
-  }
-  for (let i = 0; i < 70; i++) {
-    createCloud();
-  }
-
-  function animate() {
-    const time = Date.now();
-    const width = window.innerWidth;
-    clouds.forEach(cloud => {
-      cloud.x -= cloud.speed;
-      if (cloud.x < -cloud.size) {
-        cloud.x = width + 100 + Math.random() * 300;
-        cloud.y = randomCloudY(cloud.size);
-      }
-      const drift = Math.sin(time * cloud.driftSpeed + cloud.phase) * cloud.driftAmplitude;
-      cloud.el.css('transform', 'translate(' + cloud.x + 'px, ' + (cloud.y + drift) + 'px)');
-    });
-    requestAnimationFrame(animate);
-  }
-  animate();
-
-  function createBird() {
-    const bird = $('#bird-template').clone().removeAttr('id').show();
-    const isFront = Math.random() > 0.6;
-    if (isFront) {
-      $('#birds-front').append(bird);
-    } else {
-      $('#birds-behind').append(bird);
-    }
-    flyBird(bird);
-  }
-
-  function flyBird(bird) {
-    const startTop = Math.random() * 300 + 50;
-    const duration = 6000 + Math.random() * 4000;
-    const distance = $(window).width() + 100;
-    const delay = Math.random() * 0.3;
-    bird.find('.front').css('animation-delay', delay + 's');
-    bird.find('.back').css('animation-delay', (delay + 0.02) + 's');
-    const phase = Math.random() * Math.PI * 2;
-    bird.css({
-      top: startTop,
-      left: '100%',
-      transform: 'translateX(0)'
-    });
-    bird.animate({ dummy: 1 }, {
-      duration: duration,
-      // step: function (now, fx) {
-      //   const progress = fx.pos;
-      //   const x = -distance * progress;
-      //   const wave = Math.sin(progress * Math.PI * 2 + phase) * 20;
-      //   bird.css('transform', 'translate(' + x + 'px, ' + wave + 'px)');
-      // },
-      step: function(now, fx) {
-        const progress = fx.pos;
-        const distance = $(window).width() + 100;
-        const x = -distance * progress;
-        const wave = Math.sin(progress * Math.PI * 2 + phase) * 20;
-        bird.css('transform', 'translate(' + x + 'px, ' + wave + 'px)');
-      },
-      complete: function() {
-        bird.remove();
-        createBird();
-      }
-    });
-  }
-  for (let i = 0; i < 5; i++) {
-    setTimeout(createBird, i * 800);
-  }
-  var sp = $('.settings-panel');
-  $('.settings-open').on('click', function() {
-    sp.addClass('open');
-  });
-  $('.settings-close').on('click', function() {
-    sp.removeClass('open');
   });
 });

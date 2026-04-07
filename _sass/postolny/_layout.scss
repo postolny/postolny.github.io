@@ -131,7 +131,6 @@ nav {
   /*background: $nav-background;*/
   height: $nav-height;
   width: $nav-height;
-
   z-index: 1;
 }
 
@@ -140,6 +139,7 @@ nav {
     display: block;
 
     #nav-toggle {
+
       span,
       span:before,
       span:after {
@@ -147,12 +147,13 @@ nav {
       }
 
       &.active {
+
         span:before,
         span:after {
           background: $white;
         }
       }
-      
+
       &.active span {
         background-color: transparent;
       }
@@ -161,8 +162,8 @@ nav {
 
   nav {
     width: 100%;
-    /*padding: $nav-height 0 15px;*/
 
+    /*padding: $nav-height 0 15px;*/
     ul {
       display: none;
 
@@ -179,6 +180,7 @@ nav {
         ul li a {
           padding-left: 30px;
         }
+
         /* Отступ первого эл-та li для выравнивания с гамбургером */
         &:first-child {
           padding-top: 9px;
@@ -190,12 +192,14 @@ nav {
   .nav-dropdown {
     position: static;
   }
+
   .navigation {
     background: transparent;
     box-shadow: none;
   }
 
   .brand {
+
     a,
     a:visited {
       color: var(--header-color);
@@ -205,7 +209,7 @@ nav {
       color: var(--header-color);
     }
   }
-  
+
   .banner::after {
     content: '';
     position: absolute;
@@ -224,8 +228,10 @@ nav {
   display: flex;
   align-items: center;
 }
+
 .nav-icon {
-  margin-right: 5px;
+  margin-right: 6px;
+
   svg {
     width: 20px;
     height: 20px;
@@ -236,6 +242,7 @@ nav {
     transition: fill 0.25s ease-in-out;
   }
 }
+
 .nav-subitem {
   &:hover {
     .nav-icon {
@@ -326,15 +333,13 @@ nav {
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
   padding-left: 20px;
+  gap: 20px;
 }
 
 .footer-column {
   flex: 1;
-  margin-right: 20px;
 
   a {
     display: flex;
@@ -342,14 +347,19 @@ nav {
     width: max-content;
     font-family: $font-primary;
     font-size: 14px;
+    gap: 6px;
   }
+}
+
+.footer-icon {
+  line-height: 0;
 }
 
 .footer-icon svg {
   width: 20px;
   height: 20px;
-  display: flex;
-  margin-right: 5px;
+  display: block;
+  flex-shrink: 0;
   transition: fill 0.2s linear;
 }
 
@@ -387,6 +397,7 @@ a:hover .footer-icon--red svg {
   margin: 30px 0;
   text-shadow: none;
 }
+
 #frame {
   width: 500px;
   margin: 0 auto;
@@ -403,6 +414,7 @@ a:hover .footer-icon--red svg {
   position: relative;
   overflow: hidden;
 }
+
 #pappagallo {
   width: 223px;
   height: 314px;
@@ -413,9 +425,11 @@ a:hover .footer-icon--red svg {
   transform-origin: 49% 68.5%;
   transition: 1s;
 }
+
 .rt {
   transform: rotate(-60deg);
 }
+
 #trespolo {
   width: 12px;
   height: 12px;
@@ -430,6 +444,7 @@ a:hover .footer-icon--red svg {
     inset rgba(252, 255, 255, 0.7) 0 3px 8px,
     rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
 }
+
 #cassettina {
   width: 200px;
   height: 125px;
@@ -441,6 +456,7 @@ a:hover .footer-icon--red svg {
   border-radius: 0 0 15px 15px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
 #biglietto {
   width: 110px;
   height: 50px;
@@ -453,6 +469,7 @@ a:hover .footer-icon--red svg {
   box-sizing: border-box;
   display: none;
   transform: rotate(-5deg);
+
   &::after {
     content: "";
     position: absolute;
@@ -463,6 +480,7 @@ a:hover .footer-icon--red svg {
     transform: rotate(-28deg);
   }
 }
+
 #biglietto-text {
   position: absolute;
   top: 50%;
@@ -477,6 +495,7 @@ a:hover .footer-icon--red svg {
   padding: 5px;
   width: 100%;
 }
+
 .fbtn {
   cursor: pointer;
   border-radius: 5px;
@@ -488,27 +507,33 @@ a:hover .footer-icon--red svg {
   background: transparent;
   color: #3cb371;
   border: 2px #3cb371 solid;
+
   &:hover {
     color: $white;
     background-color: #3cb371;
   }
 }
+
 .button {
   text-align: center;
   margin-top: 25px;
   background: transparent !important;
 }
+
 #btn-container {
   display: inline-flex;
   align-items: center;
 }
+
 #icon-container {
   margin-left: 10px;
+
   svg {
     width: 100%;
     height: 100%;
   }
 }
+
 #btn-icon {
   display: inline-block;
   width: 50px;
@@ -516,6 +541,7 @@ a:hover .footer-icon--red svg {
   vertical-align: middle;
   cursor: pointer;
 }
+
 .smartphone {
   display: none;
   border: 2px solid #000;
@@ -525,10 +551,12 @@ a:hover .footer-icon--red svg {
   background-color: #fff484;
   border-color: #dcc600;
 }
+
 @media only screen and (max-width: 554px) {
   .smartphone {
     display: block;
   }
+
   #fortuna {
     display: none;
   }
@@ -628,7 +656,6 @@ a:hover .footer-icon--red svg {
 }
 
 /* Сочинения */
-
 .monte_cassino {
   background: url(/assets/Monte_Cassino_View_WWII.jpg) no-repeat center;
   background-size: cover;
@@ -641,6 +668,7 @@ a:hover .footer-icon--red svg {
   height: 500px;
   max-height: 100vh;
   margin-bottom: 30px;
+
   h2 {
     color: $white;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -652,6 +680,7 @@ a:hover .footer-icon--red svg {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .btn {
   text-decoration: none;
   display: inline-block;
@@ -663,6 +692,7 @@ a:hover .footer-icon--red svg {
   background: $default-shade;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   margin: 2px;
+
   &:before {
     content: "";
     position: absolute;
@@ -674,6 +704,7 @@ a:hover .footer-icon--red svg {
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
   }
+
   &:hover {
     &:before {
       width: 20px;
@@ -721,11 +752,14 @@ a:hover .footer-icon--red svg {
 }
 
 .drop-cap {
-  p:first-of-type, h2 + p {
+
+  p:first-of-type,
+  h2+p {
     text-indent: 0;
   }
 
-  p:first-of-type::first-letter, h2 + p::first-letter {
+  p:first-of-type::first-letter,
+  h2+p::first-letter {
     font-family: 'PeterIvanowitsch', 'Georgia', serif;
     font-size: 4.8em;
     font-weight: normal;
@@ -737,7 +771,9 @@ a:hover .footer-icon--red svg {
   }
 
   &.fallback-font {
-    p:first-of-type::first-letter, h2 + p::first-letter {
+
+    p:first-of-type::first-letter,
+    h2+p::first-letter {
       font-family: Georgia;
       font-size: 5em;
       font-weight: bold;
@@ -791,9 +827,11 @@ p.capolettera:first-of-type::first-letter {
     display: flex;
     flex-direction: column;
     margin-bottom: 28px;
+
     &:last-child {
       margin-bottom: 0;
     }
+
     .columns {
       display: flex;
       justify-content: space-between;
@@ -801,10 +839,12 @@ p.capolettera:first-of-type::first-letter {
       flex-wrap: wrap;
       /*Для IE*/
       flex: 0 0 auto;
+
       .column {
         padding-left: 20px;
         margin-bottom: 10px;
         flex: 1 300px;
+
         h4 {
           text-align: left;
           word-break: break-all;
@@ -870,6 +910,7 @@ p.capolettera:first-of-type::first-letter {
   display: flex;
   justify-content: center;
 }
+
 #audio-player {
   width: 100%;
   max-width: 400px;
@@ -878,6 +919,7 @@ p.capolettera:first-of-type::first-letter {
   background-color: $white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 #player-controls {
   position: sticky;
   top: 0;
@@ -888,23 +930,27 @@ p.capolettera:first-of-type::first-letter {
   border-radius: 5px 5px 0 0;
   justify-content: space-between;
   z-index: 1;
+
   button {
     background: none;
     border: none;
     cursor: pointer;
+
     svg {
       color: $white;
       vertical-align: middle;
     }
+
     &:focus {
       outline: none;
     }
+
     &:focus-visible {
       outline: none;
     }
   }
 
-  & + hr {
+  &+hr {
     height: 2px;
     margin: 0;
     border: none;
@@ -913,15 +959,18 @@ p.capolettera:first-of-type::first-letter {
     box-shadow: inset 0 1px 0 0 #0d0e0f, inset 0 -1px 0 0 #3a3d42;
   }
 }
+
 .buttons {
   display: flex;
   gap: 10px;
 }
+
 .slider-wrapper {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .value {
   font-size: 9px;
   width: 22px;
@@ -974,7 +1023,7 @@ p.capolettera:first-of-type::first-letter {
   max-height: 200px;
   overflow-y: auto;
   border-top: 1px solid $grey-2;
-  
+
   &::-webkit-scrollbar {
     width: 20px;
   }
@@ -1002,14 +1051,17 @@ p.capolettera:first-of-type::first-letter {
   font-size: 0.9em;
   padding: 0 10px;
   list-style: none;
+
   li {
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
     &:hover {
       background: $grey-4;
     }
   }
+
   li.active {
     background: $grey-4;
   }
@@ -1043,24 +1095,30 @@ p.capolettera:first-of-type::first-letter {
     inset 0 1px 0 0 #0d0e0f,
     inset 0 -1px 0 0 #3a3d42;
   outline: 0;
+
   &::-moz-range-track {
     border: inherit;
     background: 0 0;
   }
+
   &::-ms-track {
     border: inherit;
     color: transparent;
     background: 0 0;
   }
+
   &::-ms-fill-lower {
     background: 0 0;
   }
+
   &::-ms-fill-upper {
     background: 0 0;
   }
+
   &::-ms-tooltip {
     display: none;
   }
+
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px;
@@ -1071,6 +1129,7 @@ p.capolettera:first-of-type::first-letter {
     background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);
     background: linear-gradient(to bottom, #99f2c8, #1f4037);
   }
+
   &::-moz-range-thumb {
     width: 30px;
     height: 8px;
@@ -1079,6 +1138,7 @@ p.capolettera:first-of-type::first-letter {
     background: #1f4037;
     background: linear-gradient(to bottom, #99f2c8, #1f4037);
   }
+
   &::-ms-thumb {
     width: 30px;
     height: 8px;
@@ -1143,6 +1203,7 @@ body {
 }
 
 main {
+
   h1,
   h2 {
     transition: color 0.5s ease;
@@ -1159,19 +1220,21 @@ body.is-playing {
   }
 
   #nav-toggle {
+
     span,
     span:before,
     span:after {
       background: $white;
     }
   }
-  
+
   .brand a,
   .brand a:visited {
     color: $white;
   }
 
   main {
+
     h1,
     h2,
     p {
@@ -1179,13 +1242,13 @@ body.is-playing {
     }
   }
 
-  .drop-cap p:first-of-type::first-letter, 
+  .drop-cap p:first-of-type::first-letter,
   .drop-cap.fallback-font p:first-of-type::first-letter {
     color: #4caf50;
   }
 
-  #spartiti_row > div {
-    box-shadow: 
+  #spartiti_row>div {
+    box-shadow:
       #777 0px 0px 0px 2px inset,
       #222 14px 14px 0px -2px,
       #777 14px 14px;
@@ -1217,7 +1280,7 @@ body.is-playing {
   margin-right: 5px;
   vertical-align: middle;
 
-  ~ span {
+  ~span {
     vertical-align: middle;
   }
 
@@ -1252,7 +1315,7 @@ body.is-playing {
   }
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #ffdd00;
 
   &:before {
@@ -1309,7 +1372,7 @@ input:checked + .slider {
 }
 
 #wrapper-toc,
-#spartiti_row > div {
+#spartiti_row>div {
   width: 100%;
   padding: 1em;
   box-shadow:
@@ -1325,21 +1388,25 @@ input:checked + .slider {
     font-weight: 900;
     font-size: $font-size-h3-toc;
     line-height: $line-height-h3-toc;
+
     @media (max-width: 768px) {
       font-size: 1.25rem;
       line-height: 1.3;
     }
   }
+
   ol {
     counter-reset: myCounter;
     padding-left: 10px;
     list-style: none;
   }
+
   li {
     margin: 0 0 5px 0;
     position: relative;
     padding-left: 45px;
     line-height: 30px;
+
     &:before {
       position: absolute;
       left: 0;
@@ -1359,7 +1426,7 @@ input:checked + .slider {
   width: 100%;
   max-width: 600px;
 
-  > div {
+  >div {
     font-size: 0.9em;
     transition: box-shadow 0.5s ease;
   }
@@ -1394,8 +1461,6 @@ input:checked + .slider {
   }
 }
 
-
-
 #albero-di-natale {
   margin-top: 50px;
 
@@ -1414,21 +1479,27 @@ input:checked + .slider {
   0% {
     transform: scale3d(1, 1, 1);
   }
+
   30% {
     transform: scale3d(1.25, 0.75, 1);
   }
+
   40% {
     transform: scale3d(0.75, 1.25, 1);
   }
+
   50% {
     transform: scale3d(1.15, 0.85, 1);
   }
+
   65% {
     transform: scale3d(0.95, 1.05, 1);
   }
+
   75% {
     transform: scale3d(1.05, 0.95, 1);
   }
+
   100% {
     transform: scale3d(1, 1, 1);
   }
@@ -1436,16 +1507,19 @@ input:checked + .slider {
 
 @media screen and (max-width: 768px) {
   #spartiti_row {
-    > div {
+    >div {
       font-size: 0.85em;
     }
+
     ul {
       padding: 0;
     }
+
     #showMoreLink {
       margin: 0;
     }
   }
+
   #playlist,
   .panel-content {
     font-size: 0.85em;
@@ -1455,14 +1529,17 @@ input:checked + .slider {
     width: 80px;
     height: 53px;
   }
+
   /* Отменить обтекание */
   .float_left,
   .float_right {
     float: none;
     margin: 0 auto;
   }
+
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
-  } 
+    gap: 12px;
+  }
 }

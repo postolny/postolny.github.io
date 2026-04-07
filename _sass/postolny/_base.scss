@@ -23,6 +23,7 @@ html {
 main {
   h1 {
     margin: 3rem 0;
+
     @media (max-width: 768px) {
       margin: 2rem 0;
     }
@@ -170,6 +171,7 @@ main {
       color: $hover-color;
     }
   }
+
   table td a {
     font-weight: 600;
     transition: color 0.2s linear;
@@ -180,13 +182,19 @@ main {
     }
   }
 }
+
 .footer-column {
   ul {
     margin: 0;
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
+
   ul li {
     list-style-type: none;
+
     a {
       color: $lightGray;
       transition: color 0.2s linear;
@@ -202,12 +210,15 @@ main {
 .footnote {
   font-weight: normal;
   transition: color 0.25s ease-in-out;
+
   &:before {
     content: "[";
   }
+
   &:after {
     content: "]";
   }
+
   &:hover {
     color: $hover-color;
   }
@@ -216,6 +227,7 @@ main {
 .footnotes {
   font-family: $font-primary;
   font-size: 13px;
+
   &:before {
     content: "";
     display: block;
@@ -223,6 +235,7 @@ main {
     height: 1px;
     background: $default-shade;
   }
+
   p {
     margin: 0 !important;
   }
@@ -284,9 +297,11 @@ video {
   &:active {
     outline: none;
   }
+
   &:focus {
     outline: none;
   }
+
   &::-moz-focus-inner {
     border: 0;
   }
@@ -315,12 +330,14 @@ table:not(.highlight table) {
   width: 100%;
   table-layout: fixed;
   margin: 0 0 1rem;
+
   td {
     padding: 10px;
     border: 1px solid $grey-2;
     vertical-align: top;
     width: 100%;
   }
+
   th {
     padding: 10px;
     border: 1px solid $grey-2;
@@ -353,14 +370,17 @@ table:not(.highlight table) {
   outline: 0;
   margin-bottom: 12px;
   transition: all ease-out 0.2s;
+
   &:focus {
     outline: none;
     border-color: #aaa;
   }
 }
+
 .gatto {
   background-image: url("/assets/search-icon.png");
 }
+
 .cucina {
   background-image: url("/assets/cooking-icon.png");
 }
@@ -416,6 +436,7 @@ table:not(.highlight table) {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
+
   iframe {
     position: absolute;
     top: 0;
@@ -430,6 +451,7 @@ table:not(.highlight table) {
   padding-bottom: 56.25%;
   height: 0;
   background-color: black;
+
   video {
     position: absolute;
     top: 0;
@@ -468,6 +490,7 @@ table:not(.highlight table) {
 .lightbox {
   cursor: pointer;
 }
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -478,6 +501,7 @@ table:not(.highlight table) {
   padding: 20px;
   box-sizing: border-box;
   z-index: 10000;
+
   .parent {
     position: relative;
     display: flex;
@@ -485,6 +509,7 @@ table:not(.highlight table) {
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
+
     img {
       display: block;
       margin: 0;
@@ -495,11 +520,13 @@ table:not(.highlight table) {
       border-radius: 10px;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
     }
+
     .close {
       position: absolute;
       top: 10px;
       right: 10px;
       cursor: pointer;
+
       .close-bg {
         width: 36px;
         height: 36px;
@@ -512,15 +539,18 @@ table:not(.highlight table) {
         justify-content: center;
         transition: background 0.2s ease, transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
       }
+
       svg {
         width: 20px;
         height: 20px;
         color: $white;
         pointer-events: none;
       }
+
       &:hover .close-bg {
         background: rgba(0, 0, 0, 0.6);
       }
+
       &:active .close-bg {
         transform: scale(0.92);
       }
@@ -533,16 +563,19 @@ table:not(.highlight table) {
     thead {
       display: none;
     }
+
     tr {
       display: block;
       border: 1px solid #e8e9eb;
       margin-bottom: 1rem;
     }
+
     td {
       display: block;
       border: none;
       padding: 7px;
       border: 1px solid $grey-2;
+
       &:before {
         content: attr(aria-label);
         float: left;
@@ -550,16 +583,19 @@ table:not(.highlight table) {
       }
     }
   }
+
   .overlay {
     .parent {
       padding: 0;
     }
   }
+
   .footer-column {
     ul {
       padding: 0 10px;
     }
   }
+
   main {
     ul {
       padding: 0 20px;
