@@ -110,9 +110,7 @@ $(function() {
   });
   $("#nav-toggle").click(function() {
     $("nav ul").slideToggle();
-  });
-  $("#nav-toggle").on("click", function() {
-    this.classList.toggle("active");
+    $(this).toggleClass("active");
   });
   var lettere = {
     "#a": "a",
@@ -1904,6 +1902,10 @@ $(function() {
   });
   $('.settings-open').on('click', function() {
     sp.addClass('open');
+    if ($("#nav-toggle").is(":visible")) {
+      $("nav ul").slideUp();
+      $("#nav-toggle").removeClass("active");
+    }
   });
   $('.settings-close').on('click', function() {
     sp.removeClass('open');
