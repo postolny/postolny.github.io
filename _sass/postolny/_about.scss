@@ -345,6 +345,16 @@
             flex: 1;
             min-width: 0;
           }
+
+          input.intervalli-range {
+            max-width: 120px;
+          }
+
+          .intervalli-slider-value {
+            display: flex;
+            gap: 2px;
+            white-space: nowrap;
+          }
         }
 
         &.toggle {

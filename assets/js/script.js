@@ -41,6 +41,10 @@ $(function() {
   var mes = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
   var dn = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
   var sp = $('.settings-panel');
+  let lastPlayedInterval = "";
+  let lastNameInterval = "";
+  let intervalli = {};
+  let playClicked = false;
 
   function toggleAudio() {
     isMuted = !isMuted;
@@ -1810,6 +1814,100 @@ $(function() {
   }).fail(function() {
     console.log("Не удалось загрузить данные из frasario.json.");
   });
+  let savedDelayTime = parseInt(localStorage.getItem("delayTime")) || 1000;
+  let delayTime = savedDelayTime;
+  $.getJSON('/assets/intervalli.json').done(function(data) {
+    intervalli = data;
+    console.log('Данные из intervalli.json', intervalli);
+    const wrap = $(".switch-wrap");
+    const toggle = $("#toggleTimeout");
+    const icons = $(".switch-wrap svg");
+    $("#delayControl").val(savedDelayTime);
+    $("#delayValue").text(savedDelayTime);
+    toggle.prop("checked", false);
+    wrap.removeClass("mode-right").addClass("mode-left");
+    $("#delayControl").on("input", function() {
+      savedDelayTime = parseInt(this.value);
+      delayTime = savedDelayTime;
+      $("#delayValue").text(delayTime);
+      localStorage.setItem("delayTime", savedDelayTime);
+    });
+    $('#toggleTimeout').change(function() {
+      if (this.checked) {
+        delayTime = 0;
+        wrap.removeClass("mode-left").addClass("mode-right");
+      } else {
+        delayTime = savedDelayTime;
+        wrap.removeClass("mode-right").addClass("mode-left");
+      }
+      $("#delayControl").val(savedDelayTime);
+      $("#delayValue").text(savedDelayTime);
+    });
+    icons.eq(0).on("click", function() {
+      toggle.prop("checked", false).trigger("change");
+    });
+    icons.eq(1).on("click", function() {
+      toggle.prop("checked", true).trigger("change");
+    });
+
+    function playSound(note) {
+      const audioElement = document.getElementById('audio' + note);
+      if (!audioElement) {
+        console.error("audioElement не найден", note);
+        return;
+      }
+      audioElement.currentTime = 0;
+      audioElement.play().catch(function(error) {
+        console.error("Ошибка воспроизведения звука:", error);
+      });
+    }
+
+    function handleIntervalCheck(expectedIntervalType) {
+      if (!playClicked) {
+        showResult("Сначала нажмите кнопку Проиграть интервал");
+        return;
+      }
+      var currentIntervalName = intervalli[lastNameInterval];
+      var resultMessage;
+      if (currentIntervalName === expectedIntervalType) {
+        resultMessage = "Верно! " + currentIntervalName + ".";
+      } else {
+        resultMessage = "Неверно! Не " + expectedIntervalType + ", а " + currentIntervalName + ".";
+      }
+      showResult(resultMessage);
+      playClicked = false;
+    }
+    $(".intervalloPlayButton").click(function() {
+      playClicked = true;
+      var allNotes = Object.keys(intervalli).flatMap(interval => interval.split('-'));
+      var note1 = allNotes[Math.floor(Math.random() * allNotes.length)];
+      var note2 = allNotes[Math.floor(Math.random() * allNotes.length)];
+      playSound(note1);
+      setTimeout(function() {
+        playSound(note2);
+        lastPlayedInterval = note1 + "-" + note2;
+        lastNameInterval = lastPlayedInterval;
+        console.log("Проигран интервал:", lastPlayedInterval);
+        console.log("Название интервала:", intervalli[lastPlayedInterval]);
+      }, delayTime);
+    });
+    $(".intervallo").on("click", function() {
+      handleIntervalCheck($(this).data("answer"));
+    });
+  });
+
+  function showResult(text) {
+    $('#resultModalContent').text(text);
+    $('#resultModal').addClass('active');
+  }
+  $('.result-close').on('click', function() {
+    $('#resultModal').removeClass('active');
+  });
+  $(window).on('click', function(e) {
+    if ($(e.target).is('#resultModal')) {
+      $('#resultModal').removeClass('active');
+    }
+  });
   var pappagallo = new Audio("/audio/pappagallo.mp3");
   const p8 = ".io";
   var randomArray;
@@ -1909,6 +2007,11 @@ $(function() {
   });
   $('.settings-close').on('click', function() {
     sp.removeClass('open');
+  });
+  $(document).on('keydown', function(e) {
+    if (e.ctrlKey && e.altKey && e.code === 'KeyS') {
+      sp.addClass('open');
+    }
   });
 
   function closeLightbox() {
