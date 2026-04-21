@@ -1883,17 +1883,40 @@ $(function() {
       var note1 = allNotes[Math.floor(Math.random() * allNotes.length)];
       var note2 = allNotes[Math.floor(Math.random() * allNotes.length)];
       playSound(note1);
+      pressKey(note1);
       setTimeout(function() {
         playSound(note2);
+        pressKey(note2);
         lastPlayedInterval = note1 + "-" + note2;
         lastNameInterval = lastPlayedInterval;
         console.log("Проигран интервал:", lastPlayedInterval);
         console.log("Название интервала:", intervalli[lastPlayedInterval]);
       }, delayTime);
     });
+
+    function pressKey(note) {
+      const key = $('[data-note="' + note + '"]');
+      key.addClass('active');
+      setTimeout(() => {
+        key.removeClass('active');
+      }, 200);
+    }
+    $('.white, .black').on('click', function() {
+      const note = $(this).data('note');
+      playSound(note);
+      pressKey(note);
+    });
     $(".intervallo").on("click", function() {
       handleIntervalCheck($(this).data("answer"));
     });
+  });
+  $('.togglePiano').on('click', function() {
+    $('#piano').toggle();
+  });
+  $(document).on('keydown', function(e) {
+    if (e.ctrlKey && e.altKey && e.code === 'KeyP') {
+      $('#piano').toggle();
+    }
   });
 
   function showResult(text) {
