@@ -15,18 +15,18 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    gap: 5px;
 
     a {
-      margin: 0 0.1rem 0.2rem;
       background: $default-shade;
       border-radius: 5px;
       color: $white;
       text-decoration: none;
       transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-
       display: flex;
       justify-content: center;
       align-items: center;
+
       &:hover,
       &:active {
         background: $green;
@@ -34,16 +34,20 @@
       }
     }
   }
+
   .tags-clouds a {
     padding: 0.3rem 0.5rem;
   }
+
   .categories-clouds a {
     width: 1.5rem;
     height: 1.5rem;
   }
+
   .categories-clouds {
     gap: 20px;
   }
+
   .categories-group {
     display: flex;
     flex-direction: column;
@@ -53,25 +57,32 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
     &.it {
       background-color: #baffce;
     }
+
     &.ru {
       background-color: #c3dbff;
     }
+
     .categories-clouds-list {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 5px;
     }
-  }  
+  }
+
   &-list-wrap {
     margin-top: 50px;
   }
+
   &-list-title {
     margin: 0.5rem 0;
     display: flex;
     align-items: center;
+
     &::after {
       content: "";
       flex: 1 0 auto;
@@ -80,9 +91,11 @@
       background: currentColor;
     }
   }
+
   &-list {
     margin: 0;
   }
+
   &-post-meta {
     color: #b7b7b7;
   }

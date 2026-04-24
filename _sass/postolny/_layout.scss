@@ -692,6 +692,7 @@ a:hover .footer-icon--red svg {
   background: $default-shade;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   margin: 2px;
+  -webkit-tap-highlight-color: transparent;
 
   &:before {
     content: "";
@@ -781,7 +782,7 @@ a:hover .footer-icon--red svg {
       margin: 0.10em 0.1em -0.1em 0;
       line-height: 0.68;
       color: #c30;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 $white;
     }
   }
 }
@@ -809,7 +810,7 @@ p.capolettera:first-of-type::first-letter {
   margin: 0.10em 0.1em -0.1em 0;
   line-height: 0.68;
   color: #c30;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 $white;
 }
 
 .float_left {

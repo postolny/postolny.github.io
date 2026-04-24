@@ -18,12 +18,13 @@
     }
   }
 
-  .tags-clouds a,
-  .categories-clouds a { 
+  .tags-clouds a { 
     padding: 0.3rem 0.5rem;
   }
 
   .categories-clouds a {
+    width: 1.5rem;
+    height: 1.5rem;
     text-transform: uppercase;
   }
 
