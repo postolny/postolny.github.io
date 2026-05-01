@@ -45,6 +45,12 @@ $(function() {
   let lastNameInterval = "";
   let intervalli = {};
   let playClicked = false;
+  let dizionari = {};
+  let globalIndex = {};
+  let dizionarioCorrente = null;
+  const dizSearch = $("#dizionario-search");
+  const inputClear = $(".clear-btn");
+  const charMenu = $('.char-menu');
 
   function toggleAudio() {
     isMuted = !isMuted;
@@ -276,6 +282,348 @@ $(function() {
     $(".search-all tbody tr").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(s) > -1);
     });
+  });
+
+  function scrollToElement(targetSelector) {
+    var target = $(targetSelector);
+    $('html, body').animate({
+      scrollTop: target.offset().top - 10
+    }, 500);
+  }
+  $('.char-toggle').on('click', function(e) {
+    e.stopPropagation();
+    charMenu.toggleClass('open');
+  });
+  $('.char-item').on('click', function() {
+    var char = $(this).text();
+    var cursorPos = dizSearch.prop('selectionStart');
+    var textBefore = dizSearch.val().substring(0, cursorPos);
+    var textAfter = dizSearch.val().substring(cursorPos);
+    dizSearch.val(textBefore + char + textAfter);
+    dizSearch.focus();
+    var newPos = cursorPos + char.length;
+    dizSearch.prop('selectionStart', newPos);
+    dizSearch.prop('selectionEnd', newPos);
+    dizSearch.trigger('input');
+  });
+  $(document).on('click', function() {
+    charMenu.removeClass('open');
+  });
+
+  function showTooltip(el, text) {
+    const tip = $("#tooltip");
+    tip.text(text).show();
+    const rect = el.getBoundingClientRect();
+    const tipW = tip.outerWidth();
+    const tipH = tip.outerHeight();
+    const winW = window.innerWidth;
+    const winH = window.innerHeight;
+    let left = rect.right + 10;
+    let top = rect.top;
+    if (left + tipW > winW) {
+      left = rect.left - tipW - 10;
+    }
+    if (top + tipH > winH) {
+      top = winH - tipH - 10;
+    }
+    if (left < 10) left = 10;
+    if (top < 10) top = 10;
+    tip.css({ left, top });
+  }
+
+  function hideTooltip() {
+    $("#tooltip").hide();
+  }
+  $.getJSON("/assets/tooltips.json").done(function(data) {
+    tooltips = data;
+  });
+  const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  if (!isTouch) {
+    let hoverTimer;
+    $(document).on("mouseenter", "i", function() {
+      const el = this;
+      hoverTimer = setTimeout(() => {
+        const word = $(el).text().trim();
+        const tooltip = tooltips[word];
+        if (tooltip) showTooltip(el, tooltip);
+      }, 200);
+    });
+    $(document).on("mouseleave", "i", function() {
+      clearTimeout(hoverTimer);
+      hideTooltip();
+    });
+  }
+  if (isTouch) {
+    $(document).on("click", "i", function(e) {
+      const word = $(this).text().trim();
+      const tooltip = tooltips[word];
+      if (tooltip) {
+        showTooltip(this, tooltip);
+      } else {
+        hideTooltip();
+      }
+      e.stopPropagation();
+    });
+    $(document).on("click", function(e) {
+      if (!$(e.target).closest("#tooltip, i").length) {
+        hideTooltip();
+      }
+    });
+  }
+  $(window).on("scroll", hideTooltip);
+
+  function normalize(str) {
+    return str.toLowerCase().trim();
+  }
+  dizSearch.on("input", function() {
+    const value = this.value;
+    inputClear.toggle(!!value);
+    if (!value) {
+      $("#dizionario-results").html("");
+      stopAudio();
+      $(this).autocomplete("close");
+    }
+  });
+  inputClear.on("click", function() {
+    dizSearch.val("").trigger("input").focus();
+    $("#dizionario-results").html("");
+    stopAudio();
+    dizSearch.autocomplete("close");
+  });
+  $.getJSON("/assets/dizionari.json").done(function(data) {
+    dizionari = data;
+    for (let dizionario in dizionari) {
+      for (let key in dizionari[dizionario]) {
+        const normalized = key.toLowerCase().trim();
+        if (!globalIndex[normalized]) {
+          globalIndex[normalized] = [];
+        }
+        globalIndex[normalized].push({
+          dizionario: dizionario,
+          key: key
+        });
+      }
+    }
+    $("#dizionario").append($("<option>").val("all").text("Все словари"));
+    for (let dizionario in dizionari) {
+      $("#dizionario").append($("<option>").val(dizionario).text(dizionario));
+    }
+    dizionarioCorrente = "all";
+    initAutocomplete();
+  });
+
+  function initAutocomplete() {
+    $("#dizionario-search").autocomplete({
+      source: function(request, response) {
+        const term = normalize(request.term);
+        let exact = [];
+        let startsWith = [];
+        let includes = [];
+        const useIncludes = term.length >= 3;
+        for (let key in globalIndex) {
+          const normalizedKey = normalize(key);
+          if (normalizedKey === term) {
+            globalIndex[key].forEach(e => {
+              exact.push({
+                label: e.key + " (" + e.dizionario + ")",
+                value: e.key,
+                dizionario: e.dizionario
+              });
+            });
+          } else if (normalizedKey.startsWith(term)) {
+            globalIndex[key].forEach(e => {
+              startsWith.push({
+                label: e.key + " (" + e.dizionario + ")",
+                value: e.key,
+                dizionario: e.dizionario
+              });
+            });
+          } else if (normalizedKey.includes(term)) {
+            globalIndex[key].forEach(e => {
+              includes.push({
+                label: e.key + " (" + e.dizionario + ")",
+                value: e.key,
+                dizionario: e.dizionario
+              });
+            });
+          }
+        }
+        response([...exact, ...startsWith, ...(useIncludes ? includes : [])]);
+      },
+      select: function(event, ui) {
+        if (ui.item.dizionario) {
+          dizionarioCorrente = ui.item.dizionario;
+          $("#dizionario").val(dizionarioCorrente);
+        }
+        showDefinition(ui.item.value);
+        stopAudio();
+      }
+    });
+  }
+  $("#dizionario-search").on("keydown", function(e) {
+    if (e.key === "Enter") {
+      const ac = $(this).autocomplete("instance");
+      if (ac && ac.menu.element.is(":visible")) {
+        e.preventDefault();
+        const active = ac.menu.element.find(".ui-state-active");
+        if (active.length) {
+          active.trigger("click");
+        } else {
+          ac.menu.element.children().first().trigger("click");
+        }
+        return;
+      }
+      e.preventDefault();
+      const term = $(this).val().trim();
+      if (!term) return;
+      showDefinition(term);
+      stopAudio();
+    }
+  });
+  $("#dizionario").on("change", function() {
+    dizionarioCorrente = $(this).val();
+    $("#dizionario-search").val("");
+    $("#dizionario-results").html("");
+    $("#dizionario-search").autocomplete("destroy");
+    initAutocomplete();
+    stopAudio();
+  });
+
+  function showDefinition(term) {
+    const normalized = normalize(term);
+    let matches = globalIndex[normalized];
+    let value;
+    let match;
+    if (!matches && normalized.length >= 3) {
+      let bestEntry = null;
+      for (let key in globalIndex) {
+        const normalizedKey = normalize(key);
+        if (normalizedKey.startsWith(normalized)) {
+          if (!bestEntry || key.length < bestEntry.key.length) {
+            bestEntry = {
+              key,
+              matches: globalIndex[key],
+              priority: 1
+            };
+          }
+        } else if (normalizedKey.includes(normalized)) {
+          if (!bestEntry || (bestEntry.priority > 2) || (bestEntry.priority === 2 && key.length < bestEntry.key.length)) {
+            bestEntry = {
+              key,
+              matches: globalIndex[key],
+              priority: 2
+            };
+          }
+        }
+      }
+      if (bestEntry) {
+        matches = bestEntry.matches;
+      }
+    }
+    if (matches && matches.length > 0) {
+      if (dizionarioCorrente === "all") {
+        match = matches[0];
+      } else {
+        match = matches.find(m => m.dizionario === dizionarioCorrente);
+      }
+      if (!match) {
+        match = matches[0];
+      }
+      if (match) {
+        value = dizionari[match.dizionario][match.key];
+        if (dizionarioCorrente === "all") {
+          dizionarioCorrente = match.dizionario;
+          $("#dizionario").val(match.dizionario);
+        }
+      }
+    }
+    if (!value) {
+      $("#dizionario-results").html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
+      return;
+    }
+    let audioBtn = "";
+    if (typeof value === "object" && value.audio) {
+      audioBtn = '<button class="audio-btn" data-audio="' + value.audio + '">' + '<svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>' + '<svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display:none;"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12"/><path fill="currentColor" d="M8 8h8v8H8z"/></svg>' + '</button>';
+    }
+    let html = "<div class='info-block'>" + "<div class='info-row'>" + "<span class='info-label'>Словарь:</span>" + "<span class='info-value'>" + (dizionarioCorrente === "all" ? "Все словари" : dizionarioCorrente) + "</span>" + "</div>" + "<div class='info-row'>" + "<span class='info-label'>Слово:</span>" + "<span class='info-value'>" + (match ? match.key : term) + audioBtn + "</span>" + "</div>" + "</div>" + "<hr>";
+    if (typeof value === "string") {
+      html += "<div>" + value + "</div>";
+    } else if (typeof value === "object") {
+      // сортировка ключей в json
+      const keys = Object.keys(value).sort((a, b) => {
+        const getIndex = k => {
+          const match = k.match(/\d+$/);
+          return match ? parseInt(match[0]) : 0;
+        };
+        return getIndex(a) - getIndex(b);
+      });
+      keys.forEach(key => {
+        if (key === "audio") return;
+        const field = value[key];
+        // текст
+        if (typeof field === "string" && key.startsWith("text")) {
+          html += "<div class='word-text'>" + field + "</div>";
+        }
+        // изображения
+        else if (typeof field === "string" && key.startsWith("image")) {
+          html += "<div class='word-image'>" + "<img src='" + field + "' class='word-image__img'>" + "</div>";
+        }
+        // списки
+        else if (Array.isArray(field) && key.startsWith("list")) {
+          html += "<ul class='word-list'>";
+          field.forEach(item => {
+            html += "<li>" + item + "</li>";
+          });
+          html += "</ul>";
+        }
+      });
+    }
+    $("#dizionario-results").html(html);
+  }
+  $(document).on("click", ".audio-btn", function() {
+    const btn = $(this);
+    const src = btn.data("audio");
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+    currentAudio = new Audio(src);
+    currentAudio.play();
+    $(".audio-btn .icon-play").show();
+    $(".audio-btn .icon-pause").hide();
+    btn.find(".icon-play").hide();
+    btn.find(".icon-pause").show();
+    currentAudio.onended = function() {
+      btn.find(".icon-play").show();
+      btn.find(".icon-pause").hide();
+      currentAudio = null;
+    };
+  });
+
+  function stopAudio() {
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio = null;
+    }
+    $(".audio-btn .icon-play").show();
+    $(".audio-btn .icon-pause").hide();
+  }
+  $(document).on("click", ".ref", function() {
+    const wordRaw = $(this).text().trim();
+    const word = normalize($(this).text());
+    stopAudio();
+    scrollToElement('.controls');
+    const matches = globalIndex[word];
+    if (matches && matches.length > 0) {
+      let match = matches.find(m => m.dizionario === dizionarioCorrente) || matches[0];
+      dizionarioCorrente = match.dizionario;
+      $("#dizionario").val(match.dizionario);
+      $("#dizionario-search").val(match.key);
+      showDefinition(match.key);
+    } else {
+      $("#dizionario-search").val(wordRaw);
+      showDefinition(wordRaw);
+    }
   });
   var audioPlayer = $('#audioPlayer');
   const progressImage = $('#gondoliere');

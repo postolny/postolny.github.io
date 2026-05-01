@@ -1239,6 +1239,263 @@
   background: rgb(38, 38, 38);
 }
 
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+
+  .control {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input,
+    select {
+      box-sizing: border-box;
+      font: inherit !important;
+      width: 100%;
+      height: 36px;
+      border: 1px solid #ddd;
+      padding: 5px;
+      line-height: 1;
+      transition: all ease-out 0.2s;
+
+      &:focus {
+        outline: none;
+        border-color: $default-tint;
+      }
+    }
+
+    input {
+      &::placeholder {
+        color: #999;
+      }
+    }
+
+    .input-holder {
+      position: relative;
+      width: 100%;
+
+      input {
+        width: 100%;
+        padding-right: 65px;
+      }
+
+      .input-tools {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+
+      .clear-btn {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 24px;
+        color: $grey-1;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.2s;
+      }
+
+      .char-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .char-toggle svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      input:not(:placeholder-shown)~.input-tools .clear-btn {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .char-dropdown {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        button {
+          outline: none;
+        }
+      }
+
+      .char-menu {
+        position: absolute;
+        right: 0;
+        bottom: 122%;
+        display: none;
+        background: $white;
+        border: 1px solid #ddd;
+        padding: 4px;
+        gap: 4px;
+        flex-direction: row;
+        white-space: nowrap;
+      }
+
+      .char-menu.open {
+        display: flex;
+      }
+
+      .char-item {
+        width: 28px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ddd;
+        background: $white;
+        cursor: pointer;
+
+        &:hover {
+          border-color: $grey-1;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15px;
+
+    .control {
+      flex: 1;
+
+      &:first-child {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+#dizionario-results {
+  margin: 15px 0;
+
+  .word-text {
+    margin-top: 5px;
+  }
+
+  .word-list {
+    margin-top: 5px;
+    padding-left: 20px;
+  }
+
+  .ref {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: normal;
+    transition: none;
+    cursor: pointer;
+    text-underline-offset: 2px;
+  }
+
+  .word-image {
+    margin-top: 10px;
+  }
+
+  .word-image__img {
+    margin: 0;
+    max-width: 200px;
+    border-radius: 8px;
+  }
+
+  i {
+    color: $green;
+    cursor: help;
+  }
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+
+  .info-label {
+    font-weight: bold;
+  }
+
+  .info-value {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    font-style: italic;
+  }
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: center;
+  }
+}
+
+#tooltip {
+  position: fixed;
+  background: $default-shade;
+  color: $white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  max-width: 260px;
+  z-index: 9999;
+  display: none;
+  pointer-events: none;
+}
+
+.audio-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+}
+
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ui-menu-item-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media only screen and (max-width: 479px) {
   #wrap_mg label {
     display: block;

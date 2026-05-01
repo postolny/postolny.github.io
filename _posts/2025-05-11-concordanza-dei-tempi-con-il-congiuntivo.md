@@ -5,8 +5,6 @@ description: "Strumento per scegliere correttamente il congiuntivo nelle subordi
 author: "И. Постольный"
 categories:
 tags: [Тесты, Грамматика, Vocabolario]
-sticky: true
-hidden: true
 ---
 
 {% include concordanza-congiuntivo.html %}
