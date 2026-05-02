@@ -422,31 +422,23 @@ $(function() {
         const useIncludes = term.length >= 3;
         for (let key in globalIndex) {
           const normalizedKey = normalize(key);
-          if (normalizedKey === term) {
-            globalIndex[key].forEach(e => {
-              exact.push({
-                label: e.key + " (" + e.dizionario + ")",
-                value: e.key,
-                dizionario: e.dizionario
-              });
-            });
-          } else if (normalizedKey.startsWith(term)) {
-            globalIndex[key].forEach(e => {
-              startsWith.push({
-                label: e.key + " (" + e.dizionario + ")",
-                value: e.key,
-                dizionario: e.dizionario
-              });
-            });
-          } else if (normalizedKey.includes(term)) {
-            globalIndex[key].forEach(e => {
-              includes.push({
-                label: e.key + " (" + e.dizionario + ")",
-                value: e.key,
-                dizionario: e.dizionario
-              });
-            });
-          }
+          globalIndex[key].forEach(e => {
+            if (dizionarioCorrente !== "all" && e.dizionario !== dizionarioCorrente) {
+              return;
+            }
+            const item = {
+              label: e.key + " (" + e.dizionario + ")",
+              value: e.key,
+              dizionario: e.dizionario
+            };
+            if (normalizedKey === term) {
+              exact.push(item);
+            } else if (normalizedKey.startsWith(term)) {
+              startsWith.push(item);
+            } else if (normalizedKey.includes(term)) {
+              includes.push(item);
+            }
+          });
         }
         response([...exact, ...startsWith, ...(useIncludes ? includes : [])]);
       },
