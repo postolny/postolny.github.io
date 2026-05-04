@@ -193,25 +193,7 @@
   margin: 20px 0;
 }
 
-.check-answer,
-.next-question,
-.restart-quiz,
-#check-answer-btn,
-#next-question-btn,
-#viewListOfWords,
-#restart-stress-quiz,
-.quiz-submit,
-.mostrami,
-#btn-mese,
-#btn-giorno,
-#acc_dacapo,
-.start-quiz,
-.start-stress-quiz,
-.fill-answers,
-.toggle-risposta,
-.concordareBtn,
-.intervalloBtn,
-.intervallo-btn {
+.btns {
   display: inline-block;
   font: inherit;
   color: $default-color;
@@ -230,38 +212,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.check-answer:active,
-.next-question:active,
-.restart-quiz:active,
-#check-answer-btn:active,
-#next-question-btn:active,
-#viewListOfWords:active,
-#restart-stress-quiz:active,
-.quiz-submit:active,
-.mostrami:active,
-#btn-mese:active,
-#btn-giorno:active,
-#acc_dacapo:active,
-.start-quiz:active,
-.start-stress-quiz:active,
-.fill-answers:active,
-.toggle-risposta:active,
-.concordareBtn:active,
-.intervalloBtn:active,
-.intervallo-btn:active {
+.btns:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 $default-shade;
 }
 
-.check-answer,
-.next-question,
-.restart-quiz,
-#check-answer-btn,
-#next-question-btn,
-#viewListOfWords,
-#restart-stress-quiz,
-.fill-answers,
-.concordareBtn {
+.top10 {
   margin-top: 10px;
 }
 
@@ -598,7 +554,7 @@
 
 #frasario-icon,
 #playButtonRandom,
-.random-icon,
+.randomIcon,
 .view-icon,
 .close-icon {
   cursor: pointer;
@@ -745,25 +701,8 @@
 }
 
 .random-icon {
-  animation: rotateOnce 1s linear;
-}
-
-@keyframes rotateOnce {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.running {
-  animation-play-state: running !important;
-}
-
-.paused {
-  animation-play-state: paused !important;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 #tocWrap {
@@ -1494,6 +1433,37 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#randomBtnWrap {
+  margin: 20px 0;
+}
+
+#random-entry {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.random-icon {
+  width: 20px;
+  height: 20px;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.random-icon.animate {
+  animation: smoothSpin 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@keyframes smoothSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 479px) {

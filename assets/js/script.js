@@ -10,7 +10,7 @@ $(function() {
   var sbagliatoMsg = '<span>Sbagliato!';
   var rispostaGiustaMsg = '<span>Sbagliato! La risposta giusta è</span>';
   var playBtnRand = '<span id="playButtonRandom"></span>';
-  var reloadBtnRand = '<span class="random-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10 11H7.101l.001-.009a4.956 4.956 0 0 1 .752-1.787a5.054 5.054 0 0 1 2.2-1.811c.302-.128.617-.226.938-.291a5.078 5.078 0 0 1 2.018 0a4.978 4.978 0 0 1 2.525 1.361l1.416-1.412a7.036 7.036 0 0 0-2.224-1.501a6.921 6.921 0 0 0-1.315-.408a7.079 7.079 0 0 0-2.819 0a6.94 6.94 0 0 0-1.316.409a7.04 7.04 0 0 0-3.08 2.534a6.978 6.978 0 0 0-1.054 2.505c-.028.135-.043.273-.063.41H2l4 4zm4 2h2.899l-.001.008a4.976 4.976 0 0 1-2.103 3.138a4.943 4.943 0 0 1-1.787.752a5.073 5.073 0 0 1-2.017 0a4.956 4.956 0 0 1-1.787-.752a5.072 5.072 0 0 1-.74-.61L7.05 16.95a7.032 7.032 0 0 0 2.225 1.5c.424.18.867.317 1.315.408a7.07 7.07 0 0 0 2.818 0a7.031 7.031 0 0 0 4.395-2.945a6.974 6.974 0 0 0 1.053-2.503c.027-.135.043-.273.063-.41H22l-4-4z" /></svg></span>';
+  var reloadBtnRand = '<span class="randomIcon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16H5v5m9-13h5V3M4.583 9.003a8 8 0 0 1 14.331-1.027m.504 7.021a8 8 0 0 1-14.332 1.027"/></svg></span>';
   var viewTraduzione = '<svg class="view-icon down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m-5.28 7.78l-1.44 1.44l6 6l.72.686l.72-.687l6-6l-1.44-1.44L16 18.064l-5.28-5.282z" /></svg><svg class="view-icon up" xmlns="http://www.w3.org/2000/svg" style="display: none;" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m0 6.094l-.72.687l-6 6l1.44 1.44L16 13.937l5.28 5.28l1.44-1.437l-6-6z" /></svg>';
   var close = '<svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.4889971 2 2 6.4889971 2 12C2 17.511003 6.4889971 22 12 22C17.511003 22 22 17.511003 22 12C22 6.4889971 17.511003 2 12 2 z M 12 4C16.430123 4 20 7.5698774 20 12C20 16.430123 16.430123 20 12 20C7.5698774 20 4 16.430123 4 12C4 7.5698774 7.5698774 4 12 4 z M 8.7070312 7.2929688L7.2929688 8.7070312L10.585938 12L7.2929688 15.292969L8.7070312 16.707031L12 13.414062L15.292969 16.707031L16.707031 15.292969L13.414062 12L16.707031 8.7070312L15.292969 7.2929688L12 10.585938L8.7070312 7.2929688 z" /></svg>';
   var toc = '<span id="tocIcon"><svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M8 17q.425 0 .713-.288T9 16t-.288-.712T8 15t-.712.288T7 16t.288.713T8 17m0-4q.425 0 .713-.288T9 12t-.288-.712T8 11t-.712.288T7 12t.288.713T8 13m0-4q.425 0 .713-.288T9 8t-.288-.712T8 7t-.712.288T7 8t.288.713T8 9m3 8h6v-2h-6zm0-4h6v-2h-6zm0-4h6V7h-6zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/></svg></span>';
@@ -480,12 +480,12 @@ $(function() {
     initAutocomplete();
     stopAudio();
   });
+  let match;
 
   function showDefinition(term) {
     const normalized = normalize(term);
     let matches = globalIndex[normalized];
     let value;
-    let match;
     if (!matches && normalized.length >= 3) {
       let bestEntry = null;
       for (let key in globalIndex) {
@@ -523,10 +523,10 @@ $(function() {
       }
       if (match) {
         value = dizionari[match.dizionario][match.key];
-        if (dizionarioCorrente === "all") {
-          dizionarioCorrente = match.dizionario;
-          $("#dizionario").val(match.dizionario);
-        }
+        // if (dizionarioCorrente === "all") {
+        //   dizionarioCorrente = match.dizionario;
+        //   $("#dizionario").val(match.dizionario);
+        // }
       }
     }
     if (!value) {
@@ -537,7 +537,8 @@ $(function() {
     if (typeof value === "object" && value.audio) {
       audioBtn = '<button class="audio-btn" data-audio="' + value.audio + '">' + '<svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>' + '<svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display:none;"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12"/><path fill="currentColor" d="M8 8h8v8H8z"/></svg>' + '</button>';
     }
-    let html = "<div class='info-block'>" + "<div class='info-row'>" + "<span class='info-label'>Словарь:</span>" + "<span class='info-value'>" + (dizionarioCorrente === "all" ? "Все словари" : dizionarioCorrente) + "</span>" + "</div>" + "<div class='info-row'>" + "<span class='info-label'>Слово:</span>" + "<span class='info-value'>" + (match ? match.key : term) + audioBtn + "</span>" + "</div>" + "</div>" + "<hr>";
+    // let html = "<div class='info-block'>" + "<div class='info-row'>" + "<span class='info-label'>Словарь:</span>" + "<span class='info-value'>" + (dizionarioCorrente === "all" ? "Все словари" : dizionarioCorrente) + "</span>" + "</div>" + "<div class='info-row'>" + "<span class='info-label'>Слово:</span>" + "<span class='info-value'>" + (match ? match.key : term) + audioBtn + "</span>" + "</div>" + "</div>" + "<hr>";
+    let html = "<div class='info-block'>" + "<div class='info-row'>" + "<span class='info-label'>Словарь:</span>" + "<span class='info-value'>" + (dizionarioCorrente === "all" ? match.dizionario : dizionarioCorrente) + "</span>" + "</div>" + "<div class='info-row'>" + "<span class='info-label'>Слово:</span>" + "<span class='info-value'>" + (match ? match.key : term) + audioBtn + "</span>" + "</div>" + "</div>" + "<hr>";
     if (typeof value === "string") {
       html += "<div>" + value + "</div>";
     } else if (typeof value === "object") {
@@ -572,6 +573,37 @@ $(function() {
     }
     $("#dizionario-results").html(html);
   }
+
+  function showRandomEntry() {
+    const dizionarioEntries = [];
+    for (let key in globalIndex) {
+      globalIndex[key].forEach(e => {
+        if (dizionarioCorrente !== "all" && e.dizionario !== dizionarioCorrente) {
+          return;
+        }
+        // dizionarioEntries.push(e.key);
+        dizionarioEntries.push(e);
+      });
+    }
+    if (dizionarioEntries.length === 0) {
+      console.warn("Нет доступных статей");
+      return;
+    }
+    const random = dizionarioEntries[Math.floor(Math.random() * dizionarioEntries.length)];
+    // if (dizionarioCorrente === "all") {
+    //   $("#dizionario").val(random.dizionario);
+    // }
+    showDefinition(random.key);
+    stopAudio();
+  }
+  $("#random-entry").on("click", function() {
+    const icon = $(this).find('.random-icon');
+    icon.removeClass('animate');
+    requestAnimationFrame(() => {
+      icon.addClass('animate');
+    });
+    showRandomEntry();
+  });
   $(document).on("click", ".audio-btn", function() {
     const btn = $(this);
     const src = btn.data("audio");
@@ -1990,7 +2022,7 @@ $(function() {
     function disableButtons(isBlocked) {
       if (isBlocked) {
         $("#frasarioIcons .view-icon").parent().addClass("disabled");
-        $("#frasarioIcons .random-icon").parent().addClass("disabled");
+        $("#frasarioIcons .randomIcon").parent().addClass("disabled");
         $("#frasarioIcons #playButtonRandom").parent().addClass("disabled");
         $("#frasarioIcons #tocIcon").parent().addClass("disabled");
       } else {
@@ -2069,18 +2101,9 @@ $(function() {
     }
 
     function handleReloadButton() {
-      $(".random-icon").click(function() {
+      $(".randomIcon").click(function() {
         stopCurrentAudio();
         loadRandomData();
-        var timeout;
-        var icon = $(this);
-        if (!icon.hasClass("running")) {
-          icon.removeClass("running paused").hide(0).show(0).addClass("running");
-          clearTimeout(timeout);
-          timeout = setTimeout(function() {
-            icon.addClass("paused").removeClass("running");
-          }, 1000);
-        }
       });
     }
 
