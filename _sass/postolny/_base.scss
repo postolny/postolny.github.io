@@ -133,7 +133,7 @@ main {
   }
 
   ul {
-    padding: 0 30px;
+    padding-left: 1.75em;
   }
 
   ul li {
@@ -593,12 +593,6 @@ table:not(.highlight table) {
   .footer-column {
     ul {
       padding: 0 10px;
-    }
-  }
-
-  main {
-    ul {
-      padding: 0 20px;
     }
   }
 }
