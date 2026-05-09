@@ -150,6 +150,63 @@
       "text5": "в ит. яз. это слово употр. для обознач. какого-либо медленного действия (mangiare, parlare adagio - есть, говорить медленно); часто оно потребляется и для призыва к осторожности (adagio <a class='ref'>con</a> quei bicchieri - поосторожней с этими бокалами); сдержанности в выражениях (adagio <a class='ref'>con</a> le parole! - поосторожней со словами!)",
       "audio": "/audio/dizionario/adagio.mp3"
     },
+    "adagio espressivo": {
+      "text1": "[a'daʤo espres'sivo]",
+      "text2": "<i>муз.</i> медленно и выразительно",
+      "text3": "см. <a class='ref'>adagio</a>, <a class='ref'>espressivo</a>"
+    },
+    "adagio grazioso": {
+      "text1": "[a'daʤo grat'tsjoso], [a'daʤo grat'tsjozo]",
+      "text2": "<i>муз.</i> медленно и грациозно",
+      "text3": "см. <a class='ref'>adagio</a>, <a class='ref'>grazioso</a>"
+    },
+    "adagio maestoso": {
+      "text1": "[a'daʤo maes'toso], [a'daʤo maes'tozo]",
+      "text2": "<i>муз.</i> медленно и величественно",
+      "text3": "см. <a class='ref'>adagio</a>, <a class='ref'>maestoso</a>"
+    },
+    "adagio ma non troppo": {
+      "text1": "[a'daʤo 'ma 'non 'troppo]",
+      "text2": "<i>муз.</i> медленно, но не слишком",
+      "text3": "см. <a class='ref'>adagio</a>, <a class='ref'>troppo</a>"
+    },
+    "adagio molto": {
+      "text1": "[a'daʤo 'molto]",
+      "text2": "<i>муз.</i> очень спокойно, очень медленно",
+      "text3": "см. <a class='ref'>adagio</a>, <a class='ref'>molto</a>"
+    },
+    "adirato": {
+      "text1": "[adi'rato]",
+      "text2": "1) <i>p.pass.</i> глаг. <em>adirare</em> <i>vt</i> <i>уст.</i> - <em>сердить, раздражать; гневить</em>",
+      "text3": "2) <i>agg</i> сердитый, рассерженный, раздражённый; гневный",
+      "list3": [
+        "essere adirato - быть рассерженным",
+        "tuo fratello era fortemente adirato - твой брат был очень сердит",
+        "sei adirato <a class='ref'>con</a> / contro di me? - ты на меня сердишься?",
+        "era fortemente adirato per l'inutile attesa - он был очень рассержен напрасным ожиданием",
+        "mostrarsi adirato - проявлять гнев",
+        "sguardo adirato - сердитый взгляд",
+        "parole adirate - гневные слова",
+        "gesto adirato - злой жест",
+        "volto adirato - злое / сердитое лицо",
+        "aspetto adirato - сердитый взгляд"
+      ],
+      "text4": "3) <i>муз.</i> гневно, сердито"
+    },
+    "affannato": {
+      "text1": "[affan'nato]",
+      "text2": "1) <i>p.pass.</i> глаг. <em>affannare</em> <i>vt</i> - <em>1) вызывать одышку 2) <i>перен.</i> печалить, огорчать; беспокоить, тревожить; мучить</em>",
+      "text3": "2) <i>agg</i> задыхающийся",
+      "list3": [
+        "respiro affannato - затруднённое / тяжёлое дыхание",
+        "eravamo tutti affannati per il caldo e la salita - мы все запыхались от жары и подъёма",
+        "era tutto affannato e sudato - он был весь запыхавшийся и потный",
+        "Calandrino tutto sudato, rosso e affannato si fece alla finestra (Boccaccio) - Каландрино подошел к окну весь в поту, красный и запыхавшийся (Боккаччо)",
+        "tutti sembrano affannati dietro a chissà cosa - все, похоже, заняты непонятно чем"
+      ],
+      "text4": "3) <i>agg</i> <i>перен.</i> тревожный, беспокойный, озабоченный",
+      "text5": "4) <i>муз.</i> тревожно, беспокойно"
+    },
     "affettazione": {
       "text1": "[affettat'tsjone]",
       "text2": "<i>f</i>",
@@ -200,6 +257,35 @@
       "text2": "1) <i>avv</i> <i>муз.</i> ускоряя; см. <a class='ref'>accelerando</a>, <a class='ref'>stringendo</a>",
       "text3": "2) герундий <i>ger</i> глаг. <em>аffrettare</em> ((-etto) <i>vt</i>) <em>ускорять, торопить; спешить</em>"
     },
+    "agilità": {
+      "text1": "[aʤili'ta]",
+      "text2": "<i>f</i>",
+      "text3": "1) лёгкость, подвижность, гибкость; проворство, ловкость",
+      "list3": [
+        "acquisire / perdere agilità - приобрести / потерять ловкость",
+        "eseguire un esercizio <a class='ref'>con</a> grande agilità - выполненять упражнение с большой ловкостью",
+        "agilità di corpo - гибкость / пластичность тела"
+      ],
+      "text4": "2) <i>fig.</i> сообразительность, живость, легкость интуиции",
+      "list1": [
+        "agilità di pensiero - гибкость ума; сообразительность",
+        "agilità mentale / di mento - проворство ума",
+        "agilità di parola - мастерство речи",
+        "agilità di stile - гибкость стиля",
+        "agilità d'ingegno - гибкость ума"
+      ],
+      "text5": "3) <i>муз.</i> умение выполнять быстрые вокальные и инструментальные пассажи точно и естественно",
+      "list5": [
+        "agilità di dita - подвижность пальцев",
+        "sviluppare l'agilità nelle dita - развивать подвижность пальцев",
+        "esercizi di agilità - упражнения на беглость",
+        "agilità di mano - лёгкость (игры пианиста)",
+        "agilità di voce - гибкость голоса",
+        "agilità di dita - подвижность пальцев",
+        "acquisire / perdere agilità - приобрести / потерять ловкость",
+        "<a class='ref'>con agilità</a> - указание, предписывающее исполнять бегло, легко, живо"
+      ]
+    },
     "agitato": {
       "text1": "[aʤi'tato]",
       "text2": "<i>p.pass.</i> глаг. <em>agitare</em> <i>vt</i>, значение которого - колебать, приводить в движение, встряхивать, часто употр. в отношения моря <em>mare agitato</em>; в фигуральном смысле описывает состояние человека: взволнованное, возбуждённое; наконец, в муз. предписывает вышеописанный характер исполнения, напр.: <a class='ref'>allegro</a> agitato, <a class='ref'>presto</a> agitato",
@@ -224,6 +310,11 @@
         "Le prime indicazioni di agogica appaiono già in epoca rinascimentale, <a class='ref'>con</a> Frescobaldi e Monteverdi e nelle epoche successive diventano imprescindibili, favorendo nel periodo classico la lingua italiana (soprattutto grazie alle opere di Mozart) e integrando il tedesco nell'epoca romantica. - Первые указания агогики появились еще в эпоху Возрождения, у Фрескобальди и Монтеверди, а в последующие эпохи она стала неотъемлемой частью, отдавая в классический период предпочтение итальянскому языку (особенно благодаря творчеству Моцарта) и внедряя немецкий язык в эпоху романтизма.",
         "segni agogici - агогические символы"
       ]
+    },
+    "alla breve": {
+      "text1": "['alla 'brɛve]",
+      "text2": "<i>муз.</i> указание исполнять музыку, написанную в четырёхчетвертном размере не на 4/4, а на 2/2 («на два»), т. е. отсчитывать в каждом такте 2, а не 4 удара",
+      "text3": " см. <a class='ref'>breve</a>"
     },
     "allargando": {
       "text1": "[allar'gando]",
@@ -252,6 +343,46 @@
         "Ludwig van Beethoven Sinfonia n. 7 in la maggiore Op. 92, II Allegretto - Людвиг ван Бетховен <a class='ref'>Симфония</a> №7 в ля мажоре, соч. 92, II Allegretto"
       ]
     },
+    "allegretto amabile": {
+      "text1": "[alle'gretto a'mabile]",
+      "text2": "<i>муз.</i> оживлённо и нежно",
+      "text3": "см. <a class='ref'>allegretto</a>, <a class='ref'>amabile</a>"
+    },
+    "allegretto animato": {
+      "text1": "[alle'gretto ani'mato]",
+      "text2": "<i>муз.</i> воодушевлённо",
+      "text3": "см. <a class='ref'>allegretto</a>, <a class='ref'>animato</a>"
+    },
+    "allegretto brillante": {
+      "text1": "[alle'gretto bril'lante]",
+      "text2": "<i>муз.</i> оживлённо с блеском",
+      "text3": "см. <a class='ref'>allegretto</a>, <a class='ref'>brillante</a>"
+    },
+    "allegretto giocoso": {
+      "text1": "[alle'gretto ʤo'koso], [alle'gretto ʤo'kozo]",
+      "text2": "<i>муз.</i> оживлённо и игриво",
+      "text3": "см. <a class='ref'>allegretto</a>, <a class='ref'>giocoso</a>"
+    },
+    "allegretto grazioso": {
+      "text1": "[alle'gretto grat'tsjoso], [alle'gretto grat'tsjozo]",
+      "text2": "<i>муз.</i> оживлённо с изяществом",
+      "text3": "см. <a class='ref'>allegretto</a>, <a class='ref'>grazioso</a>"
+    },
+    "allegretto moderato": {
+      "text1": "[alle'gretto mode'rato]",
+      "text2": "<i>муз.</i> оживлённо умеренно",
+      "text3": "см. <a class='ref'>allegretto</a>, <a class='ref'>moderato</a>"
+    },
+    "allegretto poco mosso": {
+      "text1": "[alle'gretto 'pɔko 'mɔsso]",
+      "text2": "<i>муз.</i> слегка оживлённо",
+      "text3": "см. <a class='ref'>allegretto</a>, <a class='ref'>poco</a>, <a class='ref'>mosso</a>"
+    },
+    "allegretto sostenuto": {
+      "text1": "[alle'gretto soste'nuto]",
+      "text2": "<i>муз.</i> умеренно оживлённо",
+      "text3": "см. <a class='ref'>allegretto</a>, <a class='ref'>sostenuto</a>"
+    },
     "allegro": {
       "text1": "[al'lɛgro]",
       "text2": "1) <i>avv</i>, <i>m</i>, <i>муз.</i> скоро, весело",
@@ -262,6 +393,11 @@
         "<i>перен.</i> colori allegri - яркие цвета"
       ]
     },
+    "allegro agitato": {
+      "text1": "[al'lɛgro aʤi'tato]",
+      "text2": "<i>муз.</i> быстро и возбуждённо",
+      "text3": "см. <a class='ref'>allegro</a>, <a class='ref'>agitato</a>"
+    },
     "allegro appassionato": {
       "text1": "[al'lɛgro] [appassjo'nato]",
       "text2": "<i>муз.</i> быстро и страстно",
@@ -271,6 +407,16 @@
       "text1": "[al'lɛgro] [as'saj]",
       "text2": "<i>муз.</i> очень быстро",
       "text3": "см. <a class='ref'>assai</a>"
+    },
+    "allegro brioso": {
+      "text1": "[al'lɛgro bri'oso], [al'lɛgro bri'ozo]",
+      "text2": "<i>муз.</i> быстро и блестяще",
+      "text3": "см. <a class='ref'>allegro</a>, <a class='ref'>brioso</a>"
+    },
+    "allegro comodo": {
+      "text1": "[al'lɛgro 'kɔmodo]",
+      "text2": "<i>муз.</i> быстро, но не слишком",
+      "text3": "см. <a class='ref'>allegro</a>, <a class='ref'>comodo</a>"
     },
     "allegro con brio": {
       "text1": "[al'lɛgro] ['kon] ['brio]",
@@ -284,12 +430,33 @@
     },
     "allegro con moto": {
       "text1": "[al'lɛgro] ['kon] ['mɔto]",
-      "text2": "<i>муз.</i> скорее, чем <a class='ref'>allegro</a>; см. <a class='ref'>moto</a>"
+      "text2": "<i>муз.</i> скорее, чем <a class='ref'>allegro</a>",
+      "text3": "см. <a class='ref'>moto</a>"
+    },
+    "allegro di bravura": {
+      "text1": "[al'lɛgro 'di bra'vura]",
+      "text2": "<i>муз.</i> быстро и бравурно",
+      "text3": "см. <a class='ref'>allegro</a>, <a class='ref'>bravura</a>"
+    },
+    "allegro maestoso": {
+      "text1": "[al'lɛgro maes'toso], [al'lɛgro maes'tozo]",
+      "text2": "<i>муз.</i> быстро и величественно",
+      "text3": "см. <a class='ref'>allegro</a>, <a class='ref'>maestoso</a>"
+    },
+    "allegro moderato": {
+      "text1": "[al'lɛgro mode'rato]",
+      "text2": "<i>муз.</i> умеренно скоро",
+      "text3": "см. <a class='ref'>allegro</a>, <a class='ref'>moderato</a>"
     },
     "allegro sostenuto": {
       "text1": "[al'lɛgro] [soste'nuto]",
       "text2": "<i>муз.</i> умеренно быстро",
       "text3": "см. <a class='ref'>allegro</a>, <a class='ref'>sostenuto</a>"
+    },
+    "allegro vivace": {
+      "text1": "[al'lɛgro vi'vaʧe]",
+      "text2": "<i>муз.</i> быстро и оживлённо",
+      "text3": "см. <a class='ref'>allegro</a>, <a class='ref'>vivace</a>"
     },
     "allentando": {
       "text1": "[allen'tando]",
@@ -304,6 +471,69 @@
       "text2": "<i>муз.</i>",
       "text3": "(all'ott. или 8<sup>va</sup>) <a class='ref'>исполнять</a> на октаву выше см. <a class='ref'>ottava</a>"
     },
+    "al rigore di tempo": {
+      "text1": "['al ri'gore 'di 'tɛmpo]",
+      "text2": "<i>муз.</i> строго в темпе, см. <a class='ref'>rigore</a>, <a class='ref'>tempo</a>"
+    },
+    "al segno": {
+      "text1": "['al 'seɲɲo]",
+      "text2": "<i>муз.</i> до знака"
+    },
+    "amabile": {
+      "text1": "[a'mabile]",
+      "text2": "<i>agg</i>",
+      "text3": "1) вызывающий симпатию; достойный любви; обладающий качествами, чтобы быть любимым",
+      "list3": [
+        "fanciulla amabile - милая девушка",
+        "non ha un carattere amabile - он не отличается приятным характером",
+        "ha un carattere assai amabile - он обрадает весьма приятным характером",
+        "un amabile sorriso - доброжелательная, милая улыбка",
+        "lo accolse <a class='ref'>con</a> un amabile sorriso - она приветливо улыбнулась ему",
+        "maniere amabili - любезные манеры",
+        "è una donna veramente amabile - она поистине прекрасная женщина",
+        "una persona amabile - приятный, доброжелательный человек",
+        "una natura amabile - приветливый характер",
+        "chi vuol essere amato, divenga amabile <i>prov</i> - кто хочет быть любимым, становится достойным любви",
+        "chi vuol farsi amare, amabile deve diventare <i>prov</i> - кто хочет, чтобы его любили, должен стать достойным любви",
+        "per essere amabili, bisogna amare <i>prov</i> - чтобы быть любимым, нужно любить"
+      ],
+      "text4": "2) приятный, доставляющий удовольствие",
+      "list4": [
+        "un paesaggio amabile - приятный пейзаж"
+      ],
+      "text5": "3) сладковатый (о вине)",
+      "list5": [
+        "vino amabile - приятное вино"
+      ]
+    },
+    "a mezza voce": {
+      "text1": "['a 'mɛddza 'voʧe]",
+      "text2": "<i>муз.</i> вполголоса"
+    },
+    "amoroso": {
+      "text1": "[amo'roso], [amo'rozo]",
+      "text2": "I <i>agg</i>",
+      "text3": "1) любящий",
+      "list3": [
+        "uno sguardo dolce e amoroso - нежный и любящий взгляд",
+        "parole amorose - нежные слова"
+      ],
+      "text4": "2) любовный",
+      "list4": [
+        "avventure / esperienze amorose - любовные похождения",
+        "appuntamento amoroso - любовное свидание",
+        "poesia amorosa - любовная поэзия"
+      ],
+      "text5": "II <i>avv</i> <i>муз.</i>",
+      "text6": "нежно, страстно, любовно",
+      "list6": [
+        "<a class='ref'>andantino</a> amoroso, <a class='ref'>andante</a> amoroso"
+      ],
+      "text7": "III <i>m</i>",
+      "text8": "1) любовник, возлюбленный",
+      "text9": "2) <i>театр</i> первый любовник",
+      "text10": "3) <i>муз.</i> музыкальная пьеса, часть муз. пр-я с таким названием"
+    },
     "andante": {
       "text1": "[an'dante]",
       "text2": "(букв. ходящий)",
@@ -311,9 +541,40 @@
       "text4": "1) не спеша, в темпе спокойного шага, несколько медленней, чем <a class='ref'>andantino</a>",
       "text5": "2) назв. муз. пьесы или части муз. пр-я (симфонии, квартета, сонаты и др) в этом темпе"
     },
+     "andante affettuoso": {
+      "text1": "[an'dante affettu'oso], [an'dante affettu'ozo]",
+      "text2": "<i>муз.</i> медленно и с чувством",
+      "text3": "см. <a class='ref'>andante</a>, <a class='ref'>affettuoso</a>"
+    },
+    "andante cantabile": {
+      "text1": "[an'dante kan'tabile]",
+      "text2": "<i>муз.</i> медленно и певуче",
+      "text3": "см. <a class='ref'>andante</a>, <a class='ref'>cantabile</a>"
+    },
     "andante con moto": {
       "text1": "[an'dante] ['kon] ['mɔto]",
-      "text2": "<i>муз.</i> скорее, чем <a class='ref'>andante</a>; см. <a class='ref'>moto</a>"
+      "text2": "<i>муз.</i> скорее, чем <a class='ref'>andante</a>",
+      "text3": "см. <a class='ref'>moto</a>"
+    },
+    "andante leggero": {
+      "text1": "[an'dante led'ʤɛro]",
+      "text2": "<i>муз.</i> слегка медленно",
+      "text3": "см. <a class='ref'>andante</a>, <a class='ref'>leggero</a>"
+    },
+    "andante maestoso": {
+      "text1": "[an'dante maes'toso], [an'dante maes'tozo]",
+      "text2": "<i>муз.</i> медленно и торжественно",
+      "text3": "см. <a class='ref'>andante</a>, <a class='ref'>maestoso</a>"
+    },
+    "andante sostenuto": {
+      "text1": "[an'dante soste'nuto]",
+      "text2": "<i>муз.</i> медленно и сдержанно",
+      "text3": "см. <a class='ref'>andante</a>, <a class='ref'>sostenuto</a>"
+    },
+    "andante sostenuto quasi": {
+      "text1": "[an'dante soste'nuto 'kwazi]",
+      "text2": "<i>муз.</i> медленно и сдержанно, почти в темпе",
+      "text3": "см. <a class='ref'>andante</a>, <a class='ref'>sostenuto</a>, <a class='ref'>quasi</a>"
     },
     "andantino": {
       "text1": "[andan'tino]",
@@ -330,7 +591,7 @@
         "una persona senz'anima - бездушный человек",
         "anima nera - чёрная душа",
         "buon'anima - добрая душа",
-        "con tutta l'anima - со всей душой",
+        "<a class='ref'>con</a> tutta l'anima - со всей душой",
         "dare l'anima a qc - отдать душу кому-л.",
         "darsi anima e corpo a - вкладывать всю душу в + <i>acc.</i>",
         "anima gemella - родственная душа",
@@ -362,6 +623,10 @@
       "text2": "по желанию, по усмотрению",
       "text3": "cм. <a class='ref'>piacimento</a>, <a class='ref'>a piacere</a>, <a class='ref'>a bene placito</a>, <a class='ref'>a suo arbitrio</a>, <a class='ref'>a suo comodo</a>, <a class='ref'>ad libitum</a>"
     },
+    "a piena voce": {
+      "text1": "['a 'pjɛna 'voʧe]",
+      "text2": "<i>муз.</i> полным голосом"
+    },
     "a poco a poco": {
       "text1": "['a] ['pɔko] ['a] ['pɔko]",
       "text2": "см. <a class='ref'>poco</a>"
@@ -386,6 +651,58 @@
         "leggere la musica a prima vista - читать <a class='ref'>ноты</a> с листа",
         "amore a prima vista - любовь с первого взгляда",
         "innamorarsi a prima vista - влюбиться с первого взгляда"
+      ]
+    },
+    "ardente": {
+      "text1": "[ar'dɛnte]",
+      "text2": "1) <i>p.pres.</i> глаг. <em>ardere</em> <i>непр.</i> <i>vt</i> - <em>жечь, сжигать</em>; <i>перен.</i> <em>воспламенять / пробуждать страсть</em>; <i>непр.</i> <i>vi</i> (<i>e</i>) <em>гореть, пылать</em>; <i>перен.</i> <em>пылать, сгорать; томиться</em>",
+      "text3": "2) горящий, огненный, пылающий",
+      "list3": [
+        "fiamme ardenti - пылающие языки пламени",
+        "tizzoni ardenti - пылающие угли",
+        "carboni ardenti - раскалённые угли",
+        "raggi ardenti - палящие лучи",
+        "un sole ardente - палящее солнце",
+        "fornace ardente - раскалённая печь",
+        "un ardente pomeriggio estivo - жаркий летний полдень",
+        "sabbie ardenti - раскалённые пески"
+      ],
+      "text4": "3) <i>перен.</i> пылкий, пламенный, жгучий, страстный",
+      "list4": [
+        "parole ardenti - пылкие слова",
+        "ardente desiderio - жгучее желание",
+        "ardente preghiera - пламенная молитва",
+        "un'anima ardente - пламенная душа",
+        "ardente passione amorosa - пылкая любовная страсть",
+        "ardente desiderio di pace - страстное желание мира",
+        "amore ardente - пламенная любовь",
+        "un carattere <a class='ref'>molto</a> ardente - очень пылкий характер",
+        "temperamento ardente - пылкий темперамент",
+        "aveva il volto ardente per la lunga corsa - от долгого бега у него пылало лицо",
+        "fronte ardente - горячий лоб",
+        "viso ardente - пылающее лицо",
+        "occhi ardenti - горящие глаза",
+        "occhi ardenti per la febbre - горящие глаза от лихорадки",
+        "sguardo ardente - горящий взгляд"
+      ],
+      "text5": "4) <i>перен.</i> когда речь идёт о человеке: желающий, жаждущий",
+      "list5": [
+        "ardente di sapere - жгучее стремление к знаниям",
+        "ardente di conoscere - пылкое желание узнать",
+        "ardente di affrontare la prova - сильное стремление  выдержать испытание",
+        "ardente di viaggiare - сильное желание путешествовать",
+        "ardente di combattere - пылкое желание сражаться",
+        "il lupo d'esser frate ha voglia ardente mentre è infermo; ma sano se ne pente <i>prov</i> - пожелал волк монахом стать, когда ему нездоровилось и пожалел о том, когда выздоровел"
+      ],
+      "text6": "5) <i>перен.</i> о человеке, полном рвения, ревностном человеке",
+      "list6": [
+        "un ardente fautore della pace - ярый сторонник мира",
+        "i più ardenti sostenitori - самые ярые сторонники",
+        "ardente sostenitore politico - ярый политический сторонник"
+      ],
+      "text7": "6) яркий (о цвете)",
+      "list7": [
+        "rosso ardente - ярко- / огненно-красный"
       ]
     },
     "arbitrio": {
@@ -540,9 +857,68 @@
       "text2": "в свободном темпе",
       "text3": "см. <a class='ref'>tempo</a>"
     },
+    "attaccare": {
+      "text1": "[attak'kare]",
+      "text2": "I <i>муз.</i> <i>vt</i>",
+      "list2": [
+        "attaccare un pezzo di musica / un brano musicale - заиграть",
+        "attaccare a cantare - затянуть песню",
+        "attacca, maestro! - начинай, <a class='ref'>musicista</a>",
+        "la musica attaccò all'<a class='ref'>improvviso</a> - неожиданно зазвучала музыка",
+        "il concerto attaccò <a class='ref'>con</a> una suite di Bach - концерт начался сюитой Баха"
+      ],
+      "text3": "II <i>муз.</i> <i>vi</i>",
+      "list3": [
+        "attaccare in battere - начинать на сильную долю",
+        "attaccare in levare - начинать на слабую долю",
+        "вступать без паузы"
+      ],
+      "text4": "II <i>vt</i>",
+      "text5": "1) соединять; прикреплять",
+      "list5": [
+        "attaccare la spina - воткнуть штепсель",
+        "attaccare un bottone - пришить пуговицу"
+      ],
+      "text6": "2) (a qc) вешать",
+      "list6": [
+        "attaccare un quadro alla parete - повесить картину на стену"
+      ],
+      "text7": "3) прикладывать; ставить (банки, пиявки)",
+      "text8": "4) запрягать (лошадей)",
+      "text9": "5) заражать, передавать (болезнь)",
+      "text10": "6) атаковать; нападать (также <i>перен.</i>)",
+      "text11": "7) начинать, завязывать; вступить в разговор",
+      "list11": [
+          "attaccare sonno - заснуть, уснуть",
+          "attaccare la volata - начать гонку"
+        ],
+      "text12": "8) травить, разъедать, корродировать",
+      "text13": "III <i>vi</i> (<i>a</i>)",
+      "text14": "1) приставать, прилипать; приклеиваться",
+      "list14": [
+        "la vernice non attacca - краска не ложится"
+      ],
+      "text15": "2) примыкать",
+      "text16": "3) приниматься (о растениях); <i>перен.</i> прививаться",
+      "text17": "4) начинать, приниматься",
+      "list17": [
+        "attaccare alle otto <i>разг.</i> - начать (работу) в восемь (часов утра)",
+        "attaccò a piovere - полил дождь"
+      ],
+      "text18": "5) <i>перен.</i> привязываться",
+      "list18": [
+        "non attaccare la gente - не уметь подойти к людям",
+        "non attacca! - не действует!",
+        "<a class='ref'>con</a> me non attacca! - со мной это дело не пройдёт!, со мной шутки плохи!, меня не проведёшь!"
+      ]   
+    },
+    "a voce bassa": {
+      "text1": "['a 'voʧe 'bassa]",
+      "text2": "<i>муз.</i> негромко, тихо"
+    },
     "basso ostinato": {
       "text1": "['basso] [osti'nato]",
-      "text2": "<i>муз.</i> <a class='ref'>произведение</a> полифонического склада, в котором бас непрерывно повторяет одну тему, в то время как верхние голоса движутся свободно, видоизменяясь, варьируясь и образуя мелодии самостоятельного значения; бас, постоянно повторяющий одну и ту же мелодию",
+      "text2": "<i>муз.</i> <a class='ref'>произведение</a> полифонического склада, в котором <a class='ref'>бас</a> непрерывно повторяет одну тему, в то время как верхние голоса движутся свободно, видоизменяясь, варьируясь и образуя мелодии самостоятельного значения; <a class='ref'>бас</a>, постоянно повторяющий одну и ту же мелодию",
       "text3": "см. <a class='ref'>ostinato</a>"
     },
     "beneplacito": {
@@ -569,6 +945,71 @@
         "lo farete secondo il suo beneplacito - вы сделаете это как он захочет"
       ],
       "text5": "см. <a class='ref'>a bene placito</a>"
+    },
+    "bravura": {
+      "text1": "[bra'vura]",
+      "text2": "<i>f</i>",
+      "text3": "1) умение, искусство, мастерство; виртуозность",
+      "list3": [
+        "di bravura - виртуозный (также <i>перен.</i>)",
+        "bravura di stile - стилистическое мастерство",
+        "un pittore di grande bravura - выдающийся художник",
+        "eseguire un lavoro <a class='ref'>con</a> molta bravura - выполнять работу с большим мастерством",
+        "questo lavoro è fatto <a class='ref'>con</a> molta bravura - эта работа выполнена с большим мастерством",
+        "dimostrare bravura in un lavoro - демонстрировать мастерство в работе",
+        "ha eseguito il compito <a class='ref'>con</a> grande bravura - он выполнил <a class='ref'>задание</a> с большим мастерством",
+        "ha dimostrato la sua bravura nel convincere - он продемонстрировал свое искусство убеждения",
+        "provare la propria bravura - доказывать свое мастерство",
+        "ammirare la bravura di qualcuno - восхищаться чьим-то мастерством",
+        "mostrare la propria bravura - выказывать своё мастерство",
+        "saltare <a class='ref'>con</a> bravura - ловко прыгать",
+        "battersi <a class='ref'>con</a> bravura - храбро сражаться",
+        "menare un colpo <a class='ref'>con</a> bravura - мастерски нанести удар",
+        "condurre <a class='ref'>con</a> bravura un'impresa - умело вести дела на предприятии"
+      ],
+      "text4": "2) <i>ирон.</i> смелый шаг; вызывающий поступок",
+      "list4": [
+        "bella bravura! - тоже мне храбрец!, гляди какой смелый!",
+        "ci vuole una gran bravura! - тут мастером нужно быть!"
+      ],
+      "text5": "3) <i>лит.</i> дерзость, наглость (spavalderia, arroganza)",
+      "text6": "4) <i>лит.</i> храбрость, смелость, отвага (audacia, ardimento)",
+      "text7": "5) <i>муз.</i> бравурность",
+      "list7": [
+        "<a class='ref'>allegro di bravura</a>",
+        "aria di bravura - бравурная ария",
+        "pezzo di bravura - бравурная <a class='ref'>пьеса</a>"
+      ]
+    },
+    "breve": {
+      "text1": "['brɛve]",
+      "text2": "I",
+      "text3": "1. <i>agg</i>",
+      "text4": "1) краткий, непродолжительный",
+      "list4": [
+        "<i>муз.</i> <a class='ref'>alla breve</a>",
+        "fra / tra breve - в скором времени, вскоре"
+      ],
+      "text5": "2) короткий, небольшой",
+      "list5": [
+        "novella breve - короткий рассказ",
+        "romanzo breve - повесть",
+        "a breve (<em>употребляется как</em>) - a) <i>agg</i> <i>invar</i> краткосрочный b) <i>avv</i> в скором времени",
+        "un breve viaggio - короткая поездка",
+        "la vita è breve - жизнь коротка",
+        "in breve - вкратце",
+        "a dirla / a farla breve - короче говоря, вкратце",
+        "esser breve - быть кратким / немногословным",
+        "le scriveva brevi lettere - он ей писал краткие письма"
+      ],
+      "text6": "2. <i>f</i>",
+      "text7": "1) <i>лингв.</i> краткий гласный; краткий слог",
+      "text8": "2) <i>муз.</i> бревис (<i>лат.</i> brevis) - обозначение ноты, равной по длительности двум целым (т. е. восьми четвертным); название b. возникло в старинной нотной системе в отличие от более долгих нот <i>лат.</i> longa (<i>ит.</i> lunga) и <i>лат.</i> maxima (<i>ит.</i> massima); см. <a class='ref'>нота</a>",
+      "text9": "3) точка (в азбуке Морзе)",
+      "text10": "4) andare per le brevi - a) не распространяться, рассказывать вкратце b) идти кратчайшим путём",
+      "text11": "II <i>m</i>",
+      "text12": "1) папское послание, папская грамота",
+      "text13": "2) ладанка, амулет, талисман"
     },
     "brillante": {
       "text1": "[bril'lante]",
@@ -614,6 +1055,34 @@
       ],
       "text7": "см. <a class='ref'>allegro</a>, <a class='ref'>allegro con brio</a>"
     },
+    "brioso": {
+      "text1": "[bri'oso], [bri'ozo]",
+      "text2": "<i>agg</i>",
+      "text3": "1) живой, весёлый, оживлённый, остроумный",
+      "list3": [
+        "carattere brioso - пылкий темперамент",
+        "recitazione briosa - живая актёрская игра",
+        "una briosa commedia - весёлая комедия",
+        "<a class='ref'>fantasia</a> briosa - живая фантазия",
+        "stile brioso - живой стиль",
+        "scrittore brioso - яркий писатель",
+        "uomo brioso - подвижный, живой человек",
+        "persona briosa - энергичный человек",
+        "giovane brioso - энергичный молодой человек",
+        "ragazzo brioso - энергичный мальчик",
+        "un vecchietto brioso - бодрый старичок",
+        "musica briosa - бодрая <a class='ref'>музыка</a>",
+        "conversazione briosa - оживлённая беседа",
+        "discorso brioso - яркая речь"
+      ],
+      "text4": "2) <i>fig.</i> горячий, резвый (о коне)",
+      "text5": "3) <i>fig.</i> весёлый (о цвете)",
+      "text6": "4) <i>fig.</i> молодое и слегка игристое вино (о вине)",
+      "list6": [
+        "barbera briosa - игристое вино сорта barbera (<em>красное пьемонтское вино</em>)"
+      ],
+      "audio": "/audio/dizionario/brioso.mp3"
+    },
     "calando": {
       "text1": "[ka'lando]",
       "text2": "1) <i>avv</i> <i>муз.</i> стихая, уменьшая силу звука; то же самое, но менее распространённое, что и <a class='ref'>decrescendo</a> или <a class='ref'>diminuendo</a>",
@@ -622,6 +1091,14 @@
         "<i>муз.</i> calare di <a class='ref'>tono</a> - снизить <a class='ref'>тон</a> <a class='ref'>исполнять</a> ниже",
         "il sole sta calando - солнце уже низко"
       ]
+    },
+    "calmato": {
+      "text1": "[kal'mato]",
+      "text2": "1) <i>agg</i> и <i>p.pass.</i> глаг. <em>calmare</em> <i>vt</i> - <em>успокаивать, унимать</em>",
+      "list2": [
+        "quando, calmato il giovanil bollore, l'uomo ha imparato a vivere, allora muore <i>prov</i> - когда, успокоив юношеский пыл, человек научился жить, тогда он умирает"
+      ],
+      "text3": "2) <i>муз.</i> спокойно, успокоенно"
     },
     "cantabile": {
       "text1": "[kan'tabile]",
@@ -647,7 +1124,7 @@
       "text6": "4) <i>муз.</i> капелла (<a class='ref'>хор</a>)",
       "text7": "см. <a class='ref'>a cappella</a>",
       "text8": "5) <i>анатом.</i> крайняя плоть (prepuzio)",
-      "text9": "6) camera / cappella ardente - траурный зал",
+      "text9": "6) camera / cappella <a class='ref'>ardente</a> - траурный <a class='ref'>зал</a>",
       "text10": "II <i>f</i>",
       "text11": "1) шляпка (гриба, гвоздя)",
       "text12": "2) <i>воен.</i> <i>жарг.</i> новобранец",
@@ -656,7 +1133,7 @@
         "coro <a class='ref'>a cappella</a> - <a class='ref'>хор</a> a cappella",
         "maestro di cappella - регент / капельмейстер",
         "cappella gentilizia - фамильный склеп",
-        "camera / cappella ardente - траурный зал",
+        "camera / cappella <a class='ref'>ardente</a> - траурный <a class='ref'>зал</a>",
         "<i>перен.</i> fare / prendere una cappella - ляпнуть некстати"
       ]
     },
@@ -724,6 +1201,33 @@
       ],
       "audio": "/audio/dizionario/capriccioso.mp3"
     },
+    "carezzevole": {
+      "text1": "[karet'tsevole]",
+      "text2": "<i>agg</i>",
+      "text3": "1) ласкающий, слегка касающийся, производящий ощущение ласки",
+      "list3": [
+        "il soffio carezzevole della brezza - ласкающее дыхание ветерка",
+        "il carezzevole soffio del vento - ласкающее дыхание ветра",
+        "un venticello carezzevole - ласковый ветерок"
+      ],
+      "text4": "2) <i>редко</i> ласковый, нежный",
+      "list4": [
+        "bambino carezzevole - ласковый ребёнок",
+        "donna carezzevole - ласковая женщина"
+      ],
+      "text5": "3) <i>fig.</i> сладкий, сладостный, нежный, приятный",
+      "list5": [
+        "voce carezzevole - ласковый <a class='ref'>голос</a>",
+        "tono di voce carezzevole - ласковый тон голоса",
+        "voce insinuante e carezzevole - льстивый и ласковый <a class='ref'>голос</a>",
+        "il suono carezzevole di una voce - ласковое звучание голоса",
+        "maniere carezzevoli - приятные манеры",
+        "modi carezzevoli - ласковые манеры",
+        "carezzevole mano - ласковая рука",
+        "gesto carezzevole - ласковый жест",
+        "sguardo carezzevole - ласковый взгляд"
+      ]
+    },
     "coda": {
       "text1": "['koda]",
       "text2": "<i>f</i>",
@@ -738,6 +1242,11 @@
         "la coda del treno - задняя часть поезда",
         "и т.д."
       ]
+    },
+    "colla parte": {
+      "text1": "['kolla 'parte]",
+      "text2": "<i>муз.</i> (с партией, голосом) указание второстепенным голосам следовать за главным",
+      "text3": "см. <a class='ref'>партия</a>"
     },
     "comodo": {
       "text1": "['kɔmodo]",
@@ -774,6 +1283,11 @@
       "text1": "['kon] [af'fɛtto]",
       "text2": "с чувством",
       "text3": "см. <a class='ref'>affettuoso</a>"
+    },
+    "con agilità": {
+      "text1": "['kon aʤili'ta]",
+      "text2": "<i>муз.</i> бегло, легко, живо",
+      "text3": "см. <a class='ref'>agilità</a>"
     },
     "con anima": {
       "text1": "['kon] ['anima]",
@@ -880,7 +1394,7 @@
       "text3": "2) <i>p.pass.</i> глаг. <em>decidere</em> <i>непр.</i> <i>vt</i> - <em>решать, разрешать (вопрос, спор)</em>",
       "list3": [
         "deciso a tutto - на всё готовый",
-        "un <a class='ref'>tono</a> molto deciso - решительный <a class='ref'>тон</a>",
+        "un <a class='ref'>tono</a> <a class='ref'>molto</a> deciso - решительный <a class='ref'>тон</a>",
         "carattere fermo (deciso) - сильный характер",
         "ha deciso di fare un salto a Kiev - он надумал съездить в Киев",
         "«Mi dimetto. Basta! Ci ho pensato cinque anni e finalmente ho deciso» (A. Čechov) - «Подаю в отставку. Баста! Пять лет раздумывал и, наконец решил» (А. Чехов)"
@@ -1173,6 +1687,24 @@
         "intensità espressiva della recitazione - яркость актёрской игры"
       ]
     },
+    "estinto": {
+      "text1": "[es'tinto]",
+      "text2": "I <i>agg</i>",
+      "text3": "1) погашенный, потушенный",
+      "text4": "2) <i>перен.</i> погашенный (о долгах)",
+      "text5": "3) <i>перен.</i> угасший; умерший, усопший",
+      "list5": [
+        "una stirpe estinta - угасший род"
+      ],
+      "text6": "4) <i>перен.</i> выцветший, вылинявший; стёртый",
+      "text7": "5) <i>перен.</i>",
+      "list7": [
+        "calce estinta <i>тех.</i> - гашёная известь"
+      ],
+      "text8": "6) <i>муз.</i> ослабленно, приглушённо",
+      "text9": "II <i>m</i>",
+      "text10": "покойник"
+    },
     "fantasia": {
       "text1": "[fanta'zia]",
       "text2": "<i>f</i>",
@@ -1312,7 +1844,7 @@
         "logorare / perdere le forze - потерять силы, обессилеть",
         "mancare le proprie forze - обессилеть",
         "gli sono mancate le forze - ему изменили силы",
-        "gli sono venute meno le forze - силы его покинули",
+        "gli sono venute <a class='ref'>meno</a> le forze - силы его покинули",
         "le forze sono in decrescenza - силы убывают",
         "essere al limite delle (proprie) forze - быть на пределе сил",
         "riacquistare le forze, rimettersi in forze - восстановить силы",
@@ -1529,7 +2061,7 @@
       "text4": "4) <i>agg</i> неотложный, настоятельный, насущный; непреодолимый",
       "list4": [
         "tono perentorio (imperioso) повелительный (властный) <a class='ref'>тон</a>",
-        "con voce imperiosa / lamentevole - повелительным / жалобным тоном",
+        "<a class='ref'>con</a> voce imperiosa / lamentevole - повелительным / жалобным тоном",
         "bisogno imperioso - настоятельная необходимость",
         "interessi imperiosi - насущные интересы",
         "<a class='ref'>passione</a> imperiosa - непреодолимая страсть"
@@ -1591,6 +2123,11 @@
         "gli improvvisi di Chopin - экспромты Шопена"
       ]
     },
+    "incalzando": {
+      "text1": "[inkal'tsando]",
+      "text2": "<i>avv</i> <i>m</i>",
+      "text3": "<i>муз.</i> указание, предписывающее заметное ускорение темпа"
+    },
     "innocente": {
       "text1": "[inno'ʧɛnte]",
       "text2": "<i>муз.</i> невинно, просто, наивно, простодушно, безыскусственно",
@@ -1638,9 +2175,9 @@
         "intervallo eccedente - увеличенный <a class='ref'>интервал</a>",
         "intervallo diatonico - диатонический <a class='ref'>интервал</a>",
         "intervallo cromatico - хроматический <a class='ref'>интервал</a>",
-        "intervallo nudo - соло, без аккомпанемента",
+        "intervallo nudo - <a class='ref'>соло</a>, без аккомпанемента",
         "<a class='ref'>rivolto degli intervalli</a> - обращение интервалов",
-        "triade rivoltata - обращённое трезвучие"
+        "<a class='ref'>triade</a> rivoltata - обращённое трезвучие"
       ],
       "text4": "2) <a class='ref'>интервал</a>, <a class='ref'>промежуток</a>; расстояние; зазор; диапазон",
       "list4": [
@@ -1680,7 +2217,7 @@
       "text2": "<i>муз.</i>",
       "text3": "уменьшенный <a class='ref'>интервал</a>",
       "list3": [
-        "Gli intervalli minori e giusti diventano diminuiti se si diminuisce l'estensione di un semitono con un'alterazione cromatica. - Малые и чистые интервалы становятся уменьшенными, если с хроматической альтерацией уменьшается их диапазон на <a class='ref'>полутон</a>."
+        "Gli intervalli minori e giusti diventano diminuiti se si diminuisce l'estensione di un semitono <a class='ref'>con</a> un'alterazione cromatica. - Малые и чистые интервалы становятся уменьшенными, если с хроматической альтерацией уменьшается их диапазон на <a class='ref'>полутон</a>."
       ],
       "text4": "см. <a class='ref'>intervallo</a>"
     },
@@ -1689,7 +2226,7 @@
       "text2": "<i>муз.</i>",
       "text3": "увеличенный <a class='ref'>интервал</a>",
       "list3": [
-        "Gli intervalli Maggiori e giusti diventano eccedenti se si aumenta l'estensione con un'alterazione cromatica. - Большие и чистые интервалы становятся увеличенными, если с хроматической альтерацией увеличивается их диапазон."
+        "Gli intervalli Maggiori e giusti diventano eccedenti se si aumenta l'estensione <a class='ref'>con</a> un'alterazione cromatica. - Большие и чистые интервалы становятся увеличенными, если с хроматической альтерацией увеличивается их диапазон."
       ],
       "text4": "см. <a class='ref'>intervallo</a>"
     },
@@ -1902,6 +2439,25 @@
       "text2": "марш",
       "text3": "Marcia trionfale (Дж. Верди, <a class='ref'>опера</a> Aida)"
     },
+    "martelé": {
+      "text1": "[maʀtəle]",
+      "text2": "<i>фр.</i> <i>m</i> <i>муз.</i>",
+      "text3": "отчеканивая; акцентированное стаккато при игре на смычковых инструментах - резко вести смычок, т. е. деташе с остановками",
+      "text4": "см. <a class='ref'>martellato</a>"
+    },
+    "martellato": {
+      "text1": "[martel'lato]",
+      "text2": "1) <i>agg</i> и <i>p.pass.</i> глаг. <em>martellare</em> <em>(-ello)</em> <i>vt</i> - <em>бить молотом; ковать (молотом)</em>; <em>(-ello)</em> <i>vi</i> (<i>a</i>) - <em>стучать молотком</em>",
+      "text3": "2) <i>муз.</i> указание играть очень отрывисто, извлекая звуки резко и сильно; то же, что <a class='ref'>martelé</a>",
+      "list3": [
+        "note martellate - отрывистые ноты, стаккато"
+      ],
+      "text4": "3) выкованный, кованый",
+      "list4": [
+        "ferro martellato - кованое железо"
+      ],
+      "text5": "4) отчеканенный; отчётливый"
+    },
     "marziale": {
       "text1": "[mar'tsjale]",
       "text2": "<i>agg</i>",
@@ -1910,16 +2466,44 @@
     "m. d.": {
       "text1": "см. <a class='ref'>mano</a>"
     },
-    "mezzoforte": {
-      "text1": "[,mɛddzo'fɔrte]",
-      "text2": "<i>avv</i> <i>m</i>",
-      "text3": "<i>муз.</i> умеренно громко, среднее между <a class='ref'>piano</a> и <a class='ref'>forte</a>; аббр. <em>mf</em>"
+    "medesimo": {
+      "audio": "/audio/dizionario/medesimo.mp3",
+      "text1": "[me'dezimo]",
+      "text2": "I <i>agg</i>",
+      "text3": "1) тот же, тот (же) самый",
+      "list3": [
+        "medesimo <a class='ref'>tempo</a> <i>муз.</i> - в том же темпе, тот же темп",
+        "il medesimo giorno, il giorno medesimo - в тот же день",
+        "oggi medesimo - сегодня же",
+        "nel medesimo <a class='ref'>tempo</a> / nello stesso/nel medesimo tratto - в то же самое время, одновременно",
+        "essere della medesima idea - быть того же мнения",
+        "si tratta della stessa medesima cosa - речь идёт об одном и том же",
+        "la fortuna si stanca di portar sempre in spalla il medesimo uomo <i>prov</i> - фортуна устаёт таскать на спине одного и того же человека",
+        "pazzia e orgoglio crescono nel medesimo ceppo <i>prov</i> - сумасшествие и гордость растут на одном корню"
+      ],
+      "text4": "2) такой же, одинаковый",
+      "text5": "3) (<em>с личным местоимением</em>) сам",
+      "list5": [
+        "io medesimo - я сам"
+      ],
+      "text6": "II <i>m</i>",
+      "text7": "1) он, вышеупомянутый, тот (же) самый",
+      "text8": "2) то (же) самое",
+      "list8": [
+        "io dico il medesimo - я говорю то же самое"
+      ],
+      "text9": "3) <i>pl</i> близкие, родные",
+      "list9": [
+        "i suoi medesimi - его близкие",
+        "i miei medesimi - наши / мои близкие"
+      ],
+      "text10": "4) siamo alle medesime - всё по-старому / как всегда / как обычно"
     },
-    "mezzopiano": {
-      "text1": "[,mɛddzo'pjano]",
-      "text2": "<i>avv</i> <i>m</i>",
-      "text3": "также mezzo-piano",
-      "text4": "<i>муз.</i> умеренно тихо, среднее между <a class='ref'>piano</a> и <a class='ref'>mezzoforte</a>; аббр. <em>mp</em>"
+
+    "medesimo tempo": {
+      "text1": "[me'dezimo 'tɛmpo]",
+      "text2": "<i>муз.</i> в том же темпе, тот же темп",
+      "text3": "см. <a class='ref'>medesimo</a>, <a class='ref'>tempo</a>, <a class='ref'>tempo primo</a>, <a class='ref'>a tempo</a>, <a class='ref'>l'istesso tempo</a>, <a class='ref'>lo stesso tempo</a>"
     },
     "mf": {
       "text1": "см. <a class='ref'>mezzoforte</a>"
@@ -1931,6 +2515,112 @@
       "text4": "2) мелодичность",
       "text5": "3) музыкальное <a class='ref'>произведение</a>, пьеса",
       "audio": "/audio/dizionario/melodia.mp3"
+    },
+    "meno": {
+      "text1": "['mɛno]",
+      "text2": "1) <i>муз.</i>",
+      "list2": [
+        "meno <a class='ref'>mosso</a> - менее подвижно",
+        "meno <a class='ref'>presto</a> - менее быстро",
+        "meno <a class='ref'>piano</a> / <a class='ref'>forte</a> - менее тихо / громко",
+        "<a class='ref'>poco</a> meno - немного меньше"
+      ],
+      "text3": "2) <i>avv</i> менее; меньше",
+      "list3": [
+        "<a class='ref'>molto</a> meno - гораздо меньше",
+        "<a class='ref'>poco</a> meno - без малого, почти",
+        "meno che niente - почти ничего",
+        "meno freddo - не так холодно",
+        "meno di / che - менее чем (в сравнениях)",
+        "dimostra non meno di cinquant'anni - на вид ему добрых пятьдесят лет",
+        "meno che (+ <i>agg</i>) - совсем (не)",
+        "meno che utile - совсем бесполезный",
+        "non meno - не менее, столько же",
+        "non di meno - тем не менее, однако",
+        "men che (mai) - меньше, чем когда-либо",
+        "men che meno... - и меньше всего...",
+        "niente meno che... - не менее и не более как...",
+        "<a class='ref'>tanto</a> meno! - и подавно!",
+        "<a class='ref'>tanto</a> meno, ancor meno - тем более",
+        "«<a class='ref'>Tanto</a> <a class='ref'>più</a> amiamo una donna, <a class='ref'>Tanto</a> meno si è riamati» (A. Puškin) - «Чем больше женщину мы любим, Тем меньше нравимся мы ей» (А. Пушкин)",
+        "«Il pane, grazie al cielo, è meno caro, ma lo zucchero costa di <a class='ref'>più</a>» (A. Čechov) - «Хлеб, <a class='ref'>слава</a> Богу, стал дешевле, а сахар подорожал» (А. Чехов)",
+        "stare meno male - лучше себя чувствовать",
+        "parlare meno - меньше говорить",
+        "essere da meno a <i>qd</i> in qc - уступать кому-либо в чём-либо",
+        "comprare / avere per meno - купить дешевле",
+        "dimmi, sei d'accordo o meno? - скажи мне, ты согласен или нет?",
+        "Scriveteci se verrete o meno. - Напишите нам, приедете вы или нет.",
+        "«Non sapeva mai il giorno prima se l'indomani avrebbe mangiato o meno» (I. Turgenev) - «Она никогда не знала накануне, будет ли сыта завтра» (И. Тургенев)",
+        "Devi lavorare meno. - Ты должен работать меньше.",
+        "Adesso lavoro di meno. - Сейчас я работаю меньше.",
+        "nè <a class='ref'>più</a> nè meno - (вот) именно",
+        "Quel che dici è meno convincente. - То, что ты говоришь, менее убедительно",
+        "<a class='ref'>più</a> o meno, <a class='ref'>poco</a> <a class='ref'>più</a> <a class='ref'>poco</a> meno - более или менее",
+        "di meno - меньше",
+        "ciò non di meno - тем не менее",
+        "Mi dia qualcosa di meno caro, per favore. - Дайте мне, пожалуйста, что-нибудь подешевле."
+      ],
+      "text4": "3) <i>agg</i> <i>invar</i> меньший, худший; менее значительный / важный",
+      "list4": [
+        "di meno prezzo - дешевле",
+        "in meno <a class='ref'>tempo</a> - в более короткий срок",
+        "oggi c'è meno gente - сегодня меньше людей"
+      ],
+      "text5": "4) <i>m</i> <i>invar</i> меньшее, наименьшее",
+      "list5": [
+        "il meno <a class='ref'>possibile</a> - наименьшее, минимум",
+        "i meno - меньшинство",
+        "È il meno che si poteva attendere da loro. - Это самое меньшее, что можно было от них ожидать.",
+        "parlare del <a class='ref'>più</a> e del meno - болтать о том, о сём",
+        "in men che non si dica (amen) - в одно мгновенье, в один миг"
+      ],
+      "text6": "5) <i>prep</i> без, кроме, исключая; <i>мат.</i> минус",
+      "list6": [
+        "a meno che..., a meno di... - за исключением ..., если только не ...",
+        "tutti meno lui - все, кроме него",
+        "sono le tre meno venti - без двадцати три",
+        "dieci meno due fa otto - десять минус два равняется восьми",
+        "oggi fa meno quaranta - сегодня сорокаградусный мороз",
+        "siamo a meno 20° - (сейчас) у нас минус 20 / 20 градусов мороза",
+        "... in meno - на... меньше",
+        "Mi ritrovai <a class='ref'>con</a> centomila lire in meno. - У меня оказалось на сто тысяч лир меньше",
+        "mi hai dato mille rubli in meno - ты мне недодал тысячу рублей",
+        "fare a meno di qc - обходиться без чего-либо",
+        "fare a meno di dire qc - смолчать",
+        "«Chi visse e meditò, in cuor suo non può fare a meno di disprezzare gli uomini» (A. Puškin) - «Кто жил и мыслил, тот не может в душе не презирать людей» (А. Пушкин)",
+        "«Un contadino non può fare a meno del cavallo» (M. Gor'kij) - «Без лошади - зарез мужику» (М. Горький)",
+        "«Non poteva fare a meno degli occhiali: era <a class='ref'>troppo</a> miope» (L. Tolstoj) - «Очки он не мог снять: он был слишком близорук» (Л. Толстой)",
+        "«Se non le va di ascoltarmi, posso fare a meno di parlare» (A. Čechov) - «А если вам неугодно слушать, то я могу не говорить» (А. Чехов)",
+        "«Parlando delle persone che ebbero un ascendente su Puškin non si può fare a meno di ricordare la sua tata, Arina Rodionovna» (N. Dobroljubov) - «Говоря о домашних влияниях на Пушкина, нельзя умолчать о няне его, Арине Родионовне» (Н. Добролюбов)"
+      ],
+      "text7": "6)",
+      "list7": [
+        "per lo meno - по меньшей / по крайней мере; хотя бы",
+        "meno male che... - хорошо ещё, что ..., к счастью...",
+        "meno male che me ne sono accorto. - Хорошо ещё, что я это заметил",
+        "meno male che qualcosa guadagna! - хорошо, что он хоть сколько-то зарабатывает!",
+        "meno male! - <a class='ref'>слава</a> Богу!, тем лучше!",
+        "«E meno male che si è imbattuta in un idiota» (F. Dostoevskij) - «Ещё хорошо, что на идиота напала» (Ф. Достоевский)",
+        "«Che sollievo! Meno male!, - disse Pjotr Ivanovič dopo che Aleksandr se ne era andato» (I. Gončarov) - «ух!! гора с плеч, <a class='ref'>слава</a> Богу!, - сказал Пётр Иванович, когда Александр уехал» (И. Гончаров)",
+        "venir meno - a) недоставать; иссякнуть, пропасть b) лишиться чувств c) обмануть, подвести",
+        "il mio ottimismo non viene meno - я остаюсь оптимистом",
+        "Gli sono venute meno le forze. - Силы его покинули",
+        "venire meno a qc - не сделать чего-либо",
+        "venir meno alla parola data - нарушать слово",
+        "venire meno alla promessa - не выполнить / не сдержать обещания",
+        "mancare / venir meno a un obbligo - не выполнить обещания",
+        "venir meno alle aspettative - не оправдать ожиданий",
+        "è venuto meno ai suoi principi - он отступил от своих принципов",
+        "senza meno <i>обл.</i> - несомненно, обязательно; непременно",
+        "alla meno peggio - как-нибудь, кое-как, абы как, халтурно",
+        "lavorare alla meno peggio - работать спустя рукава",
+        "studiare alla meno peggio - <a class='ref'>учиться</a> через пень колоду"
+      ]
+    },
+    "meno mosso": {
+      "text1": "['mɛno 'mɔsso]",
+      "text2": "менее подвижно, оживлённее",
+      "text3": "см. <a class='ref'>meno</a>, <a class='ref'>mosso</a>"
     },
     "menuetto": {
       "text1": "см. <a class='ref'>minuetto</a>"
@@ -1946,6 +2636,17 @@
         "sorriso mesto - страдальческая улыбка",
         "fare un sorriso mesto - грустно улыбнуться"
       ]
+    },
+    "mezzoforte": {
+      "text1": "[,mɛddzo'fɔrte]",
+      "text2": "<i>avv</i> <i>m</i>",
+      "text3": "<i>муз.</i> умеренно громко, среднее между <a class='ref'>piano</a> и <a class='ref'>forte</a>; аббр. <em>mf</em>"
+    },
+    "mezzopiano": {
+      "text1": "[,mɛddzo'pjano]",
+      "text2": "<i>avv</i> <i>m</i>",
+      "text3": "также mezzo-piano",
+      "text4": "<i>муз.</i> умеренно тихо, среднее между <a class='ref'>piano</a> и <a class='ref'>mezzoforte</a>; аббр. <em>mp</em>"
     },
     "minuetto": {
       "text1": "[minu'etto]",
@@ -1966,6 +2667,20 @@
         "moderare i termini - выбирать выражения"
       ],
       "text4": "см. <a class='ref'>andante</a>, <a class='ref'>andantino</a>"
+    },
+    "moderato assai": {
+      "text1": "[mode'rato as'saj]",
+      "text2": "<i>муз.</i> очень умеренно; см. <a class='ref'>moderato</a>, <a class='ref'>assai</a>"
+    },
+    "moderato assai quasi andante": {
+      "text1": "[mode'rato as'saj 'kwazi an'dante]",
+      "text2": "<i>муз.</i> очень умеренно, почти как <a class='ref'>andante</a>",
+      "text3": "см. <a class='ref'>moderato</a>, <a class='ref'>quasi</a>"
+    },
+    "moderato cantabile": {
+      "text1": "[mode'rato kan'tabile]",
+      "text2": "<i>муз.</i> умеренно и певуче",
+      "text3": "см. <a class='ref'>moderato</a>, <a class='ref'>cantabile</a>"
     },
     "molto": {
       "text1": "['molto]",
@@ -1992,7 +2707,7 @@
       ],
       "text5": "3) (с <i>agg</i> или <i>avv</i> в сравнительной степени) гораздо",
       "list5": [
-        "molto <a class='ref'>più</a> / meno - гораздо больше / меньше",
+        "molto <a class='ref'>più</a> / <a class='ref'>meno</a> - гораздо больше / меньше",
         "molto meglio - гораздо лучше"
       ],
       "text6": "II <i>agg</i>",
@@ -2027,6 +2742,25 @@
         "Sto morendo di sete. - смерть как пить хочется.",
         "«Sto morendo, è la fine» (I. Bunin) - «Я помираю, шабаш!» (И. Бунин)",
         "«Respingeva il cibo <a class='ref'>con</a> un cenno: stava morendo, fiero, taciturno» (M. Lermontov) - «Он знаком пищу отвергал, И тихо, гордо умирал» (М. Лермонтов)"
+      ]
+    },
+    "mosso": {
+      "text1": "['mɔsso]",
+      "text2": "1) <i>муз.</i> <i>avv</i> оживлённо, быстро; в сочетании со словом указывающим темп, означает его ускорение, напр.: <a class='ref'>allegro</a> mosso - скорее, чем <a class='ref'>allegro</a>; <a class='ref'>più</a> mosso - живее, подвижнее, скорее.",
+      "text3": "2) <i>p.pass.</i> глаг. <em>muovere</em> <i>непр.</i> <i>vt</i> - <em>двигать, сдвигать, передвигать</em>",
+      "text4": "3) <i>agg</i>",
+      "list4": [
+        "terra mossa - взрытая / разрыхлённая земля",
+        "mare mosso - неспокойное море",
+        "paesaggio mosso - изменчивый пейзаж",
+        "capelli mossi - завитые волосы",
+        "fotografia mossa - размытая фотография (которая получена из-за движения фотокамеры в момент щелчка затвора)",
+        "mosso a compassione... - движимый состраданием..."
+      ],
+      "text5": "4) <i>agg</i> живой быстрый (также <i>fig.</i>)",
+      "list5": [
+        "un ritmo alquanto mosso - довольно подвижный ритм",
+        "prosa mossa e spiritosa - остроумная, живая проза"
       ]
     },
     "moto": {
@@ -2065,7 +2799,7 @@
         "un moto di rabbia - порыв ярости",
         "moto del cuore - порыв души (букв. порыв сердца)",
         "un generoso moto dell'animo - сильный порыв души",
-        "cedere a un moto improvviso di simpatia - поддаваться внезапному влечению",
+        "cedere a un moto <a class='ref'>improvviso</a> di simpatia - поддаваться внезапному влечению",
         "dare ascolto ai moti dell'animo - прислушиваться к порывам души",
         "moti di stomaco - позывы к рвоте, тошнота",
         "di moto proprio - произвольно, по своей воле"
@@ -2106,10 +2840,24 @@
       ],
       "text5": "<a class='ref'>piano</a> nobile в ит. яз. означ.: 1) этаж особняка, расположенный над мезонином, используемый для церемений и в качестве резиденции хозяина 2) <i>teatr.</i> бельэтаж"
     },
+    "nobilmente": {
+      "text1": "[nobil'mente]",
+      "text2": "<i>avv</i>",
+      "text3": "1) с достоинством, по-джентльменски",
+      "text4": "2) перен. с благородством души, возвышенно",
+      "list4": [
+        "sacrificarsi nobilmente per qcn. - благородно жертвовать собой ради кого-л.",
+        "è <a class='ref'>nobile</a> colui che nobilmente si comporta <i>prov</i> - благороден тот, кто ведёт себя благородно"
+      ]
+    },
     "non": {
       "text1": "['non]",
       "text2": "<i>avv</i>",
       "text3": "не, выражает отрицание следующего слова, напр.: <a class='ref'>non legato</a> - <em>не связанно</em> (не путать с <em>no - нет</em>)"
+    },
+    "non allegro": {
+      "text1": "['non al'lɛgro]",
+      "text2": "<i>муз.</i> не быстро; см. <a class='ref'>non</a>, <a class='ref'>allegro</a>"
     },
     "non legato": {
       "text1": "<i>муз.</i>",
@@ -2234,7 +2982,7 @@
         "industria pesante (leggera) - тяжёлая (лёгкая) промышленность",
         "ha un trucco troppo pesante - она слишком сильно мажется",
         "che trucco pesante! - как она наштукатурилась!",
-        "«La situazione al fronte è molto pesante» (A. Tolstoj) - «Дела на фронте очень тяжёлые» (А. Толстой)"
+        "«La situazione al fronte è <a class='ref'>molto</a> pesante» (A. Tolstoj) - «Дела на фронте очень тяжёлые» (А. Толстой)"
       ],
       "text8": "3) тёплый (об одежде)",
       "list8": [
@@ -2285,7 +3033,7 @@
         "le fa piacere sentirlo - ей лестно это слышать",
         "mi fa piacere che ti sia sistemato - я рад, что ты устроился",
         "Piacere di conoscerla. - Приятно (с Вами) познакомиться.",
-        "Grazie, <a class='ref'>con</a> molto piacere. - Спасибо, с удовольствием.",
+        "Grazie, <a class='ref'>con</a> <a class='ref'>molto</a> piacere. - Спасибо, с удовольствием.",
         "«Quando i discorsi sono intelligenti è un piacere ascoltarli» (F. Dostoevskij) - «Умные речи приятно и <a class='ref'>слушать</a>» (Ф. Достоевский)",
         "«Mi farebbe un gran piacere se venisse a trovarmi oggi» (F. Dostoevskij) - «Весьма бы вы утешили меня, если б пришли сегодня» (Ф. Достоевский)",
         "«Mi fa un gran piacere che gli abbiano fatto abbassare la cresta» (A. Ostrovskij) - «А уж как я довольна, что им форс-то сбили!» (А. Островский)",
@@ -2440,7 +3188,7 @@
       "text3": "1) больше, более",
       "list3": [
         "trattenersi più del necessario - задержаться дольше, чем это (было) необходимо",
-        "costare (molto) di più - стоить (намного) дороже",
+        "costare (<a class='ref'>molto</a>) di più - стоить (намного) дороже",
         "<a class='ref'>sempre</a> più - всё больше",
         "c'è di più - больше того",
         "in più - сверх того, в придачу",
@@ -2450,7 +3198,7 @@
         "non viene più - он больше не приходит",
         "non lo farò più - я больше не буду (этого делать)",
         "è diventato più cauto - он стал более осторожным",
-        "<a class='ref'>tanto</a> più, molto più, ancor più - намного больше",
+        "<a class='ref'>tanto</a> più, <a class='ref'>molto</a> più, ancor più - намного больше",
         "non mi fido di lui, <a class='ref'>tanto</a> più adesso - я ему не доверяю, тем более сейчас"
       ],
       "text4": "2) (<em>образует степени сравнения прилагательных с di или che - сравнительная степень</em>) более",
@@ -2476,8 +3224,8 @@
         "nulla di più - ничего больше",
         "non più che - немного, не больше, чем",
         "essere da più - быть лучше, стоить лучшего / большего",
-        "né più né meno - ни больше ни меньше",
-        "più o meno <i>разг.</i> - более или менее, так себе",
+        "né più né <a class='ref'>meno</a> - ни больше ни меньше",
+        "più o <a class='ref'>meno</a> <i>разг.</i> - более или менее, так себе",
         "più... e più - чем больше..., тем больше...",
         "più passano gli anni e più diventa bella - чем больше лет проходит, тем красивее она становится"
       ],
@@ -2490,7 +3238,7 @@
       "text9": "7) сверх, и, да; плюс (<em>при сложении</em>)",
       "list9": [
         "due più tre è uguale a cinque / fa cinque - два плюс три - пять",
-        "giorno più giorno meno... - днём больше, днём меньше...; днём раньше, днём позже...",
+        "giorno più giorno <a class='ref'>meno</a>... - днём больше, днём меньше...; днём раньше, днём позже...",
         "dieci più - пять с плюсом, высшая оценка",
         "ho guadagnato un milione più centomila lire - я заработал миллион плюс сто тысяч лир"
       ],
@@ -2522,22 +3270,53 @@
         "non poterne più - выбиться из сил, дойти до точки",
         "non ne posso più - я больше (так) не могу, мочи нет",
         "per lo più = perlopiù - по большей части, преимущественно, в большинстве, чаще всего",
-        "parlare del più e del meno - говорить о том о сём",
+        "parlare del più e del <a class='ref'>meno</a> - говорить о том о сём",
         "manca il più e il meglio <i>ирон.</i> - лишь самой малости не хватает",
         "fare il di più - важничать, заноситься, корчить из себя (большую шишку)",
-        "il più conosce il meno - от такого слышу",
+        "il più conosce il <a class='ref'>meno</a> - от такого слышу",
         "più da noi è bramato quel che ci è negato <i>prov</i> - запретный плод сладок",
-        "i più tirano i meno; il più tira il meno <i>prov</i> - a) куда конь с копытом, туда и рак с клешнёй b) деньга на деньгу набегает",
+        "i più tirano i <a class='ref'>meno</a>; il più tira il <a class='ref'>meno</a> <i>prov</i> - a) куда конь с копытом, туда и рак с клешнёй b) деньга на деньгу набегает",
         "chi più n'ha più ne vorrebbe; chi più ha più vuole / desidera <i>prov</i> - чем больше есть, тем больше надо / хочется; будешь богат, будешь и скуп",
-        "chi più fa, meno fa <i>prov</i> - кто делает больше, делает меньше",
+        "chi più fa, <a class='ref'>meno</a> fa <i>prov</i> - кто делает больше, делает меньше",
         "vincere il proprio cuore è più che vincere il proprio nemico <i>prov</i> - победить собственное сердце - это больше, чем победить своего врага"
       ]
     },
+    "più adagio": {
+      "text1": "['pju a'daʤo]",
+      "text2": "более медленно",
+      "text3": "см. <a class='ref'>più</a>, <a class='ref'>adagio</a>"
+    },
+    "più animato": {
+      "text1": "['pju ani'mato]",
+      "text2": "более одушевлённо, оживлённо",
+      "text3": "см. <a class='ref'>più</a>, <a class='ref'>animato</a>"
+    },
     "più f": {
-      "text1": "более громко, громче; см. <a class='ref'>più</a>"
+      "text1": "более громко, громче",
+      "text2": "см. <a class='ref'>più</a>"
+    },
+    "più lento": {
+      "text1": "['pju 'lɛnto]",
+      "text2": "более медленно, тягуче",
+      "text3": "см. <a class='ref'>più</a>, <a class='ref'>lento</a>"
+    },
+    "più mosso": {
+      "text1": "['pju 'mɔsso]",
+      "text2": "более подвижно, оживлённее",
+      "text3": "см. <a class='ref'>più</a>, <a class='ref'>mosso</a>"
     },
     "più p": {
-      "text1": "более тихо, тише; см. <a class='ref'>più</a>"
+      "text1": "более тихо, тише",
+      "text2": "см. <a class='ref'>più</a>"
+    },
+    "pizz.": {
+      "text1": "<i>муз.</i>, <i>сокр. от</i> <a class='ref'>pizzicato</a>"
+    },
+    "pizzicato": {
+      "text1": "[pittsi'kato]",
+      "text2": "1) <i>agg</i> и <i>p.pass.</i> глаг. <em>pizzicare</em> <i>непр.</i> <i>vt</i> - <em> a) щипать; ощипывать; выщипывать; b) <i>перен.</i> схватить, поймать с поличным, застукать; c) клевать (о птице); <i>перен.</i> поклевать, перекусить; d) <i>муз.</i> исполнять пиццикато</em>",
+      "text3": "2) <i>m</i> <i>муз.</i> игра щипком; аббр. <em>pizz.</em>",
+      "text4": "3) музыкальное произведение с таким названием"
     },
     "poco": {
       "text1": "['pɔko]",
@@ -2554,13 +3333,13 @@
         "poco serio - несерьёзный",
         "poco bene - нехорошо, плохо",
         "stare poco bene - быть нездоровым",
-        "poco meno / <a class='ref'>più</a> - немного меньше / больше",
+        "poco <a class='ref'>meno</a> / <a class='ref'>più</a> - немного меньше / больше",
         "un poco in su / in giù - немного выше / ниже",
         "poco prima / dopo - немного раньше / позже",
         "press'a poco - приблизительно, почти, около",
         "e dico poco! <i>разг.</i> - и это(го) ещё мало!, и это ещё не всё!",
         "<a class='ref'>assai</a> poco <i>разг.</i> - довольно(-таки) мало",
-        "molto poco <i>разг.</i> - очень мало",
+        "<a class='ref'>molto</a> poco <i>разг.</i> - очень мало",
         "troppo poco - слишком мало",
         "né poco né <a class='ref'>assai</a> <i>разг.</i> - ничуть, нисколько",
         "di qui a poco - через некоторое время",
@@ -2603,6 +3382,11 @@
       "text1": "['pɔko] ['a] ['pɔko]",
       "text2": "см. <a class='ref'>poco</a>"
     },
+    "poco più mosso": {
+      "text1": "['pɔko 'pju 'mɔsso]",
+      "text2": "немного более подвижно",
+      "text3": "см. <a class='ref'>poco</a>, <a class='ref'>più</a>, <a class='ref'>mosso</a>"
+    },
     "poco rit.": {
       "text1": "<i>муз.</i> аббр. <em>poco ritenuto</em> - немного растягивая, см. <a class='ref'>poco</a>, <a class='ref'>ritenuto</a>"
     },
@@ -2610,6 +3394,29 @@
       "text1": "[polirit'mia]",
       "text2": "<i>f</i>",
       "text3": "<a class='ref'>полиритмия</a>"
+    },
+    "possibile": {
+      "text1": "[pos'sibile]",
+      "text2": "1) <i>agg</i> возможный",
+      "list2": [
+        "come è possibile? - как это возможно?",
+        "è mai possibile? - возможно ли это вообще?",
+        "è mai possibile che il treno arrivi sempre in ritardo? - как такое может быть, что поезд всё время опаздывает?",
+        "è possibile essere così distratti? - как можно быть такими рассеянными?",
+        "non è possibile farlo - это невозможно сделать",
+        "il più presto possibile - как можно скорее / раньше",
+        "te lo mando il prima possibile - я отправлю это тебе в самое ближайшее время",
+        "devi rimanere il più possibile a riposo - ты должен соблюдать покой как можно дольше",
+        "non è possibile che le cose stiano così - это невозможно, этого не может быть",
+        "fare quant'è umanamente possibile - сделать всё, что в человеческих силах",
+        "se mi sarà possibile... - если мне представится возможность...",
+        "(sarebbe) possibile? - неужели это возможно?"
+      ],
+      "text3": "2) <i>m</i> возможное",
+      "list3": [
+        "fare tutto il / nei limiti del possibile - (с)делать всё возможное, в пределах возможного",
+        "al possibile - по возможности, насколько возможно"
+      ]
     },
     "portamento": {
       "text1": "[porta'mento]",
@@ -2626,6 +3433,16 @@
         "di una donna il piú nobile ornamento, è modestia di volto e portamento <i>prov</i> - самым благородным украшением женщины является скромность лица и поведения"
       ]
     },
+    "prestissimo": {
+      "text1": "[pres'tissimo]",
+      "text2": "1) <i>superl.</i> от <a class='ref'>presto</a>",
+      "text3": "2) <i>муз.</i> указание, предписывающее более быстрое исполнение, чем <a class='ref'>presto</a>"
+    },
+    "prestissimo possibile": {
+      "text1": "[pres'tissimo pos'sibile]",
+      "text2": "<i>муз.</i> как можно скорее",
+      "text3": "см. <a class='ref'>prestissimo</a>, <a class='ref'>possibile</a>"
+    },
     "presto": {
       "text1": "['prɛsto]",
       "text2": "1) быстро",
@@ -2634,6 +3451,11 @@
       "list4": [
         "alzarsi presto - вставать рано"
       ]
+    },
+    "presto assai": {
+      "text1": "['prɛsto as'saj]",
+      "text2": "<i>муз.</i> очень быстро",
+      "text3": "см. <a class='ref'>presto</a>, <a class='ref'>assai</a>"
     },
     "quasi": {
       "text1": "['kwazi]",
@@ -2667,6 +3489,53 @@
       "text2": "1) <i>avv</i> <i>муз.</i> замедляя; указание, предписывающее постепенное замедление",
       "text3": "2) герундий <i>ger</i> глаг. <em>rallentare</em> <i>vi</i>, <i>vt</i> - <em>замедлять; задерживать, приостанавливать;</em> то же самое, что и <a class='ref'>allargando</a>"
     },
+    "ricercato": {
+      "text1": "[riʧer'kato]",
+      "text2": "I <i>agg</i>",
+      "text3": "1) пользующийся большим спросом; популярный",
+      "list3": [
+        "un artista <a class='ref'>molto</a> ricercato - популярный, востребованный художник",
+        "merce ricercata sul mercato - товар, пользующийся большим спросом на рынке"
+      ],
+      "text4": "2) изысканный, утончённый; рафинированный",
+      "list4": [
+        "essere ricercato nel parlare / nel vestire - быть изысканным в речи / в одежде",
+        "veste in modo ricercato - она девается изысканно"
+      ],
+      "text5": "3) манерный, вычурный",
+      "text6": "II <i>m</i>",
+      "text7": "разыскиваемый (полицией)",
+      "list7": [
+        "il suo nome figura nell'elenco dei ricercati - его имя значится в списке разыскиваемых",
+        "la polizia ha arrestato due persone ricercate - полиция арестовала двух разыскиваемых"
+      ]
+    },
+    "rigore": {
+      "text1": "[ri'gore]",
+      "text2": "<i>m</i>",
+      "text3": "1) суровость (климата)",
+      "list3": [
+        "i rigori dell'inverno - зимние холода, зимняя стужа"
+      ],
+      "text4": "2) строгость, непреклонность; неукоснительность",
+      "list4": [
+        "al rigore di <a class='ref'>tempo</a> <i>муз.</i> - строго в темпе",
+        "il rigore della disciplina - строгость дисциплины",
+        "il rigore della condanna - суровость приговора",
+        "di rigore - обязательный / обязательно",
+        "è di rigore... <i>офиц.</i> - (строго) обязательно...; необходимо...",
+        "a tutto / a <a class='ref'>stretto</a> rigore - со всей строгостью; строжайшим образом",
+        "a rigor di logica - если быть логичным, по логике, строго говоря",
+        "a rigor di termine - в буквальном смысле (слова)",
+        "a rigor di termini - в узком смысле слова, строго говоря"
+      ],
+      "text5": "3)",
+      "list5": [
+        "giorno di rigore <i>фин.</i> - последний день платежа по векселю",
+        "area di rigore - штрафная площадка (в футболе)",
+        "calcio / tiro di rigore - штрафной удар"
+      ]
+    },
     "risoluto": {
       "text1": "[riso'luto]",
       "text2": "1) <i>муз.</i> решительно, определённо, мужественно, твёрдо",
@@ -2682,6 +3551,10 @@
     },
     "rit.": {
       "text1": "<i>сокр. от</i> <a class='ref'>ritenuto</a>, <a class='ref'>ritardando</a>"
+    },
+    "ritardando": {
+      "text1": "[ritar'dando]",
+      "text2": "<i>муз.</i> то же самое, что и <a class='ref'>rallentando</a>, <a class='ref'>ritenuto</a>, но менее распространённое; аббр. <em>rit.</em>"
     },
     "riten.": {
       "text1": "см. <a class='ref'>ritenuto</a>"
@@ -2710,6 +3583,37 @@
         "Per rivolto dell'intervallo s'intende lo spostamento della nota grave alla parte acuta. Nel rivolto gli intervalli cambiano natura, i maggiori diventano minori e viceversa; gli eccedenti diventano diminuiti e viceversa. Gli intervalli giusti restano giusti. - Под обращением интервала подразумевается перемещение его нижней ноты на место верхней. В обращении интервалы меняют свойство: большие становятся малыми и наоборот; восходящие становятся нисходящими и наоборот. Чистые интервалы остаются чистыми."
       ],
       "text3": "см. <a class='ref'>intervallo</a>"
+    },
+    "robusto": {
+      "text1": "[ro'busto]",
+      "text2": "<i>agg</i>",
+      "text3": "1) сильный, крепкий; здоровый; мощный",
+      "list3": [
+        "pasto robusto - плотная еда",
+        "vino robusto - крепкое вино",
+        "avere un robusto appetito - иметь хороший аппетит",
+        "corpo robusto - крепкий организм",
+        "avere braccia robuste - иметь крепкие руки",
+        "vecchio, ma robusto - старый, но крепкий",
+        "robusto di costituzione - крепкого сложения",
+        "corporatura robusta - крепкое телосложение",
+        "avere un fisico <a class='ref'>molto</a> robusto - быть крепкого телосложения",
+        "è robusto - он широк в кости",
+        "uomo di forte fibra / di fibra robusta - сильный человек, здоровяк",
+        "è una donna robusta, ha i fianchi un po' troppo robusti - это крепкая женщина, её бёдра чересчур широки",
+        "discorso robusto - убедительная речь",
+        "stile robusto - выразительный стиль",
+        "ha un'intelligenza robusta e vivace - у него крепкий и живой ум"
+      ],
+      "text4": "2) прочный",
+      "list4": [
+        "un divano robusto, un tavolo robusto; scarpe robuste, bastone robusto - прочный диван, стол; прочные ботинки, прочная палка"
+      ],
+      "text5": "3) стойкий, твёрдый, непоколебимый",
+      "list5": [
+        "fede robusta - крепкая вера"
+      ],
+      "text6": "4) <i>муз.</i> крепко, твёрдо, кряжисто"
     },
     "rubato": {
       "text1": "[ru'bato]",
@@ -2749,7 +3653,7 @@
       "text3": "1) <i>муз.</i> скерцо",
       "text4": "2) шутка (также <i>перен.</i>)",
       "list4": [
-        "scherzo innocente - безобидная шутка",
+        "scherzo <a class='ref'>innocente</a> - безобидная шутка",
         "brutto scherzo / scherzo cattivo - злая шутка / выходка",
         "scherzo spinto - вольная шутка",
         "scherzo insulso - плоская шутка",
@@ -2815,7 +3719,7 @@
       ],
       "text4": "2) всё ещё, всё так же",
       "list4": [
-        "È sempre molto bella. - Она всё так же красива",
+        "È sempre <a class='ref'>molto</a> bella. - Она всё так же красива",
         "è sempre in collera <a class='ref'>con</a> me - он всё ещё сердит на меня",
         "c'è sempre tempo - успеется!"
       ],
@@ -2831,6 +3735,26 @@
       "list7": [
         "Lo farò sempre che tu lo voglia. - Я это сделаю, если только ты этого захочешь"
       ]
+    },
+    "severo": {
+      "text1": "[se'vɛro]",
+      "text2": "<i>agg</i>",
+      "text3": "1) строгий; суровый",
+      "list3": [
+        "giudice severo - строгий судья",
+        "davanti al giudice severo, non si può celare il vero <i>prov</i> - перед суровым судьёй невозможно скрыть истину",
+        "stile / aspetto severo - строгий стиль / вид",
+        "la severa semplicità / bellezza - суровая простота / красота"
+      ],
+      "text4": "2) глубокий, серьёзный",
+      "list4": [
+        "studi severi - глубокое исследование / изучение"
+      ],
+      "text5": "3) серьёзный, значительный",
+      "list5": [
+        "subire severe perdite - понести значительные потери"
+      ],
+      "text6": "4) <i>муз.</i> сурово, строго, точно"
     },
     "sf": {
       "text1": "см. <a class='ref'>sforzando</a>"
@@ -2881,6 +3805,19 @@
       "text3": "1) <i>мед.</i> синкопе, обморок, обморочное состояние",
       "text4": "2) <i>муз.</i>, <i>лингв.</i> <a class='ref'>синкопа</a>"
     },
+    "slargando": {
+      "text1": "[zlar'gando]",
+      "text2": "<i>avv</i> <i>m</i>",
+      "text3": "1) герундий <i>ger</i> глаг. <em>slargare</em> <i>vt</i> - <em>расширять</em>",
+      "text4": "2) указание, предписывающее постепенное замедление темпа, иногда используемое, особенно в прошлом, вместо более распространённого термина <a class='ref'>allargando</a>",
+      "audio": "/audio/dizionario/slargando.mp3"
+    },
+    "slentando": {
+      "text1": "[zlen'tando]",
+      "text2": "<i>m</i>",
+      "text3": "указание, предписывающее постепенное замедление темпа; то же самое, но менее употребительное, чем <a class='ref'>rallentando</a>",
+      "audio": "/audio/dizionario/slentando.mp3"
+    },
     "smorz.": {
       "text1": "см. <a class='ref'>smorzando</a>"
     },
@@ -2911,7 +3848,7 @@
         "<a class='ref'>con</a> <a class='ref'>aria</a> solenne - с торжественным видом",
         "«Fece un discorso solenne, ampolloso» (K. Čukovskij) - «Он произнёс торжественную, витиеватую речь» (К. Чуковский)"
       ],
-      "text4": "2) знаменитый",
+      "text4": "2) <a class='ref'>знаменитый</a>",
       "list4": [
         "un imbroglione solenne - отъявленный плут"
       ],
@@ -2960,6 +3897,35 @@
       ],
       "text5": "4) герундий <i>ger</i> глаг. <em>sostenere</em> <i>vt</i> <i>непр.</i> - <em>выдерживать, поддерживать</em>"
     },
+    "sotto voce": {
+      "text1": "['sotto 'voʧe]",
+      "text2": "<i>муз.</i> шёпотом, вполголоса"
+    },
+    "spianato": {
+      "text1": "[spja'nato]",
+      "text2": "1) <i>p.pass.</i> глаг. <em>spianare</em> <i>vt</i> - <em>выравнивать, разглаживать, сглаживать</em>",
+      "text3": "2) <i>agg</i> ставший плоским, выровненным",
+      "list3": [
+        "terreno spianato - выровненный участок земли"
+      ],
+      "text4": "3) <i>agg</i> снесённый, сровненный с землёй",
+      "list4": [
+        "i bulldozer hanno spianato la vecchia casa - бульдозеры снесли старый дом"
+      ],
+      "text5": "4) <i>agg</i> относится к частям тела: плоский, гладкий",
+      "list5": [
+        "avere il petto spianato - иметь плоскую грудь"
+      ],
+      "text6": "5) <i>m</i> свободный, ровный и плоский участок земли",
+      "list6": [
+        "davanti alla casa c'è un grande spianato erboso - перед домом находится большой ровный участок, поросший травой"
+      ],
+      "text7": "6) <i>муз.</i>",
+      "list7": [
+        "<i>m</i> указание Ф. Шопена в <a class='ref'>Andante</a>, предшествующем Полонезу op. 22, предписывающее спокойное, умиротворённое исполнение с небольшой динамической вариативностью",
+        "сanto spianato - бельканто-кантилена"
+      ]
+    },
     "spiritoso": {
       "text1": "[spiri'toso], [spiri'tozo]",
       "text2": "<i>agg</i>",
@@ -2989,6 +3955,24 @@
         "se non si fosse accorta in tempo di non avere staccato il ferro da stiro sarebbe scoppiato un incendio - если бы она вовремя не спохватилась, что не выключила утюг, был бы пожар",
         "il bordò stacca bene sul grigio - бордо хорошо смотрится на сером"
       ]
+    },
+    "strascicando": {
+      "text1": "[straʃʃi'kando]",
+      "text2": "1) герундий <i>ger</i> глаг. <em>strascicare</em> <i>vt</i> - <em>тащить, волочить</em>",
+      "text3": "2) cм. 2) <a class='ref'>strascinando</a>",
+      "audio": "/audio/dizionario/strascicando.mp3"
+    },
+    "strascinando": {
+      "text1": "[straʃʃi'nando]",
+      "text2": "1) герундий <i>ger</i> глаг. <em>strascinare</em> <i>vt</i> - <em>тащить с трудом, волочить</em>",
+      "text3": "2) <i>avv</i> <i>муз.</i> (букв. таща, волоча) протянуто, протяжно, растягивая, расширяя (замедляя); см. <a class='ref'>strascicando</a>",
+      "audio": "/audio/dizionario/strascinando.mp3"
+    },
+    "stretto": {
+      "text1": "['stretto]",
+      "text2": "<i>m</i> <i>муз.</i> от <i>agg</i> <em>stretto - узкий, сжатый</em>",
+      "text3": "1) в фуге - приём, при котором голос начинает вступать с основной темой фуги до того, как завершится её проведение, создавая таким образом наложение голосов",
+      "text4": "2) указывает на увеличение темпа в конце музыкального произведения или раздела"
     },
     "string.": {
       "text1": "см. <a class='ref'>stringendo</a>"
@@ -3059,6 +4043,15 @@
       "text1": "<i>муз.</i>, <i>сокр. от</i> <a class='ref'>tempo primo</a>, = Tempo I°",
       "text2": "см. <a class='ref'>tempo</a>"
     },
+    "tace": {
+      "text1": "['taʧe]",
+      "text2": "<i>муз.</i> молчит (форма <i>vi</i> tacere - молчать, 1-е л., ед. ч)",
+      "text3": "указание долгой паузы в ансамблевой партии, напр., в продолжение целого номера или такта, также <a class='ref'>tacet</a>"
+    },
+    "tacet": {
+      "text1": "<i>лат.</i> <i>муз.</i>",
+      "text2": "см. <a class='ref'>tace</a>"
+    },
     "tanto": {
       "text1": "['tanto]",
       "text2": "в качестве муз. термина использ. нареч. <i>avv</i> очень, так, столько, так много",
@@ -3071,7 +4064,7 @@
       "text2": "<i>муз.</i> <i>agg</i> немецкая, название пьесы в характере нем. <i>муз.</i> (обычно в жанре вальса), может присутствовать в названии части пр-я (tedesco - немецкий)",
       "list2": [
         "<a class='ref'>presto</a> alla tedesca (Л. ван Бетховен, соната для фп. соль-мажор №25, I)",
-        "Dov'è la sala della pittura tedesca? - Где зал немецкой живописи?",
+        "Dov'è la sala della pittura tedesca? - Где <a class='ref'>зал</a> немецкой живописи?",
         "la birra tedesca è <a class='ref'>più</a> buona di quella italiana - немецкое пиво лучше, чем итальянское",
         "pastore tedesco - немецкая овчарка"
       ],
@@ -3092,7 +4085,7 @@
       "text3": "бурно, взволнованно",
       "text4": "это ит. прил. происходит от сущ. tempesta <i>f</i> - буря, шторм, ураган, использ. в различных описаниях:",
       "list4": [
-        "applausi tempestosi - бурные аплодисменты",
+        "applausi tempestosi - бурные <a class='ref'>аплодисменты</a>",
         "animo tempestoso - смятенный дух",
         "notte tempestosa - грозовая ночь"
       ]
@@ -3199,7 +4192,7 @@
       "text3": "2) <i>agg</i> обязанный",
       "list3": [
         "tenuto a pagare - обязанный уплатить",
-        "le sono molto tenuto per la sua cortesia - я вам весьма обязан за вашу любезность",
+        "le sono <a class='ref'>molto</a> tenuto per la sua cortesia - я вам весьма обязан за вашу любезность",
         "le Parti sono tenute a rispettare gli obblighi reciproci pattuiti <i>бюр.</i> - стороны обязуются соблюдать все взаимообязательства по договору"
       ]
     },
@@ -3257,7 +4250,7 @@
         "tono irritato - раздражённый <a class='ref'>тон</a>",
         "tono caustico (beffardo, stizzoso, pieno di bile, di astio) - жёлчный <a class='ref'>тон</a>",
         "tono <a class='ref'>deciso</a> - решительный <a class='ref'>тон</a>",
-        "un tono molto <a class='ref'>deciso</a> - очень решительный <a class='ref'>тон</a>",
+        "un tono <a class='ref'>molto</a> <a class='ref'>deciso</a> - очень решительный <a class='ref'>тон</a>",
         "tono estasiato - мечтательный <a class='ref'>тон</a>",
         "tono <a class='ref'>scherzoso</a> (di burla) - дурашливый <a class='ref'>тон</a>, шаловливый <a class='ref'>тон</a>",
         "in modo / <a class='ref'>con</a> tono istrionico - паясничая, дурачась",
@@ -3409,7 +4402,7 @@
         "tirare (troppo) la corda - слишком сильно тянуть верёвку: a) неразумно расходовать свои силы (non tirare troppo la corda, ormai hai una certa età - не старайся так, ты уже немолод); b) слишком настаивать в просьбе или домогательстве; c) усугублять и без того сложную ситуацию; доводить ситуацию до предела (non tirare troppo la corda, se no rischi di non ottenere nulla - не настаивай, иначе вообще ничего не получишь)",
         "chi parla troppo <a class='ref'>adagio</a>, a chi l'ascolta dà disagio <i>prov</i> - кто говорит слишком медленно, тот слушателю - пытка",
         "chi proibisce il male troppo severamente, insegna ciò che è vietato <i>prov</i> - слишком строго запрещай - запрещённому научишь",
-        "chi tropp'alto monta, con dolor dismonta <i>prov</i> - чем выше заберёшься, тем больнее падать"
+        "chi tropp'alto monta, <a class='ref'>con</a> dolor dismonta <i>prov</i> - чем выше заберёшься, тем больнее падать"
       ],
       "text6": "3. <i>m</i>",
       "text7": "лишнее, излишек"
@@ -3435,6 +4428,23 @@
         "all'unisono - в унисон (также <i>перен.</i>)"
       ],
       "text3": "2) <i>муз.</i> <i>agg</i> однозвучный - указание <a class='ref'>играть</a> всей группе вместе (после раздельного исполнения); аббр. <em>unis.</em>"
+    },
+    "velato": {
+      "text1": "[ve'lato]",
+      "text2": "1) <i>p.pass.</i> глаг. <em>velare</em> <i>vt</i> - <em>1) окутывать покрывалом; завешивать вуалью 2) окутывать дымкой, заволакивать</em>",
+      "text3": "2) <i>agg</i> покрытый, завешанный, закутанный (покрывалом, вуалью)",
+      "text4": "3) <i>agg</i> подёрнутый дымкой, затуманенный",
+      "list4": [
+        "cielo velato - облачное небо",
+        "occhi velati - потускневшие глаза",
+        "sguardo velato - затуманенный взор"
+      ],
+      "text5": "4) <i>муз.</i> приглушённый, неясный (о голосе, звуке)",
+      "text6": "5) <i>agg</i> завуалированный, замаскированный; скрытый",
+      "list6": [
+        "minaccia velata - скрытая угроза",
+        "ostilità velata - скрытая неприязнь"
+      ]
     },
     "veloce": {
       "text1": "[ve'loʧe], [ve'lɔʧe]",
@@ -3535,6 +4545,17 @@
         "иметь абсолютный <a class='ref'>слух</a> - avere l'orecchio assoluto"
       ]
     },
+    "авансцена": {
+      "text1": "[avanscéna]",
+      "text2": "<i>f</i>",
+      "text3": "proscenio (<i>m</i>), ribalta",
+      "list3": [
+        "выйти на авансцену - presentarsi sul proscenio (alla ribalta)",
+        "вызывать на сцену (актёров, автора) - chiamare alla ribalta",
+        "вновь появиться на арене, вновь стать объектом общего внимания - venire / tornare alla ribalta"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
+    },
     "агогика": {
       "text1": "[agógika]",
       "text2": "<i>f</i>",
@@ -3577,7 +4598,7 @@
       "text1": "[akcént]",
       "text2": "<i>m</i>",
       "text3": "<a class='ref'>accento</a>",
-      "text4": "Акценты делятся на метрические, ритмические и мелодические. Метрический акцент - первый в каждом такте, а также самый сильный. Ритмический акцент совпадает с сильными и слабыми долями такта, он образуется группами звуков в зависимости от их количества и длительности, поэтому каждый <a class='ref'>звук</a> будет иметь свой акцент, который может быть более или менее важным, в зависимости от его положения. Мелодический или выразительный акцент может падать на любой <a class='ref'>звук</a>; он служит для того, чтобы сделать <a class='ref'>произведение</a> более выразительным. Gli accenti musicali sono: metrico - ritmico - melodico. L'accento metrico è il primo di ogni misura ed è anche il <a class='ref'>più</a> <a class='ref'>forte</a>. L'accento ritmico coincide <a class='ref'>con</a> i tempi forti e deboli della misura; è costituito dai raggruppamenti dei suoni in rapporto alla loro quantità e durata, quindi, ogni suono avrà il suo accento che può essere <a class='ref'>più</a> o meno importante, secondo la sua posizione. L'accento melodico o di espressione può cadere su qualsiasi suono; esso serve a rendere la composizione <a class='ref'>più</a> gradevole."
+      "text4": "Акценты делятся на метрические, ритмические и мелодические. Метрический акцент - первый в каждом такте, а также самый сильный. Ритмический акцент совпадает с сильными и слабыми долями такта, он образуется группами звуков в зависимости от их количества и длительности, поэтому каждый <a class='ref'>звук</a> будет иметь свой акцент, который может быть более или менее важным, в зависимости от его положения. Мелодический или выразительный акцент может падать на любой <a class='ref'>звук</a>; он служит для того, чтобы сделать <a class='ref'>произведение</a> более выразительным. Gli accenti musicali sono: metrico - ritmico - melodico. L'accento metrico è il primo di ogni misura ed è anche il <a class='ref'>più</a> <a class='ref'>forte</a>. L'accento ritmico coincide <a class='ref'>con</a> i tempi forti e deboli della misura; è costituito dai raggruppamenti dei suoni in rapporto alla loro quantità e durata, quindi, ogni suono avrà il suo accento che può essere <a class='ref'>più</a> o <a class='ref'>meno</a> importante, secondo la sua posizione. L'accento melodico o di espressione può cadere su qualsiasi suono; esso serve a rendere la composizione <a class='ref'>più</a> gradevole."
     },
     "альтерация": {
       "text1": "[al'terácija]",
@@ -3633,10 +4654,76 @@
         "актёры кланялись, публика долго аплодировала - gli attori ringraziavano il pubblico che applaudì a lungo"
       ]
     },
+    "аплодисменты": {
+      "text1": "[aplodisménty]",
+      "text2": "<i>pl</i> applausi (реже <i>m</i> applauso), <i>m</i> battimano (рукоплескание), <i>pl</i> battimani (аплодисменты)",
+      "list2": [
+        "бурные аплодисменты - applausi fragorosi / clamorosi / scroscianti / tempestosi",
+        "он уходил со сцены под гром аплодисментов - lasciava il palcoscenico accompagnato da applausi fragorosi",
+        "бурные, долго не смолкающие аплодисменты - un applauso prorompente",
+        "долго не смолкающие аплодисменты - un subisso di applausi",
+        "шумные аплодисменты - applausi strepitosi",
+        "дружные аплодисменты - applausi unanimi",
+        "восторженные аплодисменты - applausi entusiastici / un delirio di applausi",
+        "неистовые аплодисменты - applausi frenetici",
+        "продолжительные аплодисменты - applausi prolungati",
+        "буря / взрыв / гром аплодисментов - uno scroscio di applausi",
+        "взрыв аплодисментов - scoppio di applausi",
+        "буря аплодисментов - un uragano di applausi",
+        "fremito di applausi - гром аплодисментов, взрыв рукоплесканий",
+        "шум / грохот аплодисментов - il fragore degli applausi",
+        "под аплодисменты - tra gli applausi",
+        "сорвать аплодисменты - strappare un applauso",
+        "вызвать аплодисменты / нарекания - suscitare gli applausi / lamentele",
+        "наградить горячими аплодисментами - tributare a qd calorose ovazioni",
+        "его наградили бурными аплодисментами - ha riscosso forti applausi",
+        "его встретили взрывом аплодисментов - fu accolto da uno scroscio di applausi",
+        "раздались аплодисменты - fioccarono gli applausi",
+        "<a class='ref'>зал</a> гремел аплодисментами / от аплодисментов - la sala echeggiò di applausi",
+        "послышались вялые аплодисменты - si sentì un applauso fiacco",
+        "Аплодисменты подтвердили триумф Ирины Архиповой с первой арии («È l'amore uno strano angelo»). (имеется в виду ария из оперы «Кармен» Жоржа Бизе «Любовь - непокорная птица» («L'amour est un oiseau rebelle» («L'amore è un uccello ribelle»)) больше известная как «Хабанера»). - Gli applausi hanno comfermato il trionfo di Irina Arkhipova fin dalla sua prima aria («È l'amore uno strano angelo»)."
+      ],
+      "text3": "см. <a class='ref'>аплодировать</a>"
+    },
     "аппликатура": {
       "text1": "[applikatúra]",
       "text2": "<i>f</i>",
       "text3": "<a class='ref'>diteggiatura</a>"
+    },
+    "балкон": {
+      "text1": "[balkón]",
+      "text2": "<i>m</i>",
+      "text3": "<i>театр</i> balconata (<i>f</i>), galleria",
+      "list3": [
+        "балкон первого / второго яруса - prima / seconda galleria"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>концерт</a>"
+    },
+    "баритон": {
+      "text1": "[baritón]",
+      "text2": "<i>m</i>",
+      "text3": "baritono",
+      "list3": [
+        "высокий баритон, драматический или лирический - baritono alto, drammatico o lirico",
+        "баритональный <a class='ref'>бас</a> - basso baritono",
+        "петь баритоном - cantare da baritono"
+      ],
+      "text4": "см. <a class='ref'>голос</a>, <a class='ref'>тенор</a>"
+    },
+    "бас": {
+      "text1": "[bas]",
+      "text2": "<i>m</i> (<i>pl</i> басы)",
+      "text3": "basso",
+      "list3": [
+        "высокий бас - basso cantante",
+        "низкий (густой) бас, бас профундо - basso profondo",
+        "комический бас, бас буффо - basso buffo",
+        "баритональный бас - basso baritono",
+        "<a class='ref'>петь</a> басом - cantare di basso",
+        "<a class='ref'>петь</a> в басовом регистре - cantare nel registro di basso",
+        "у Шаляпина был могучий бас - Šaljapin aveva una poderosa <a class='ref'>voce</a> di basso"
+      ],
+      "text4": "см. <a class='ref'>голос</a>, <a class='ref'>петь</a>, <a class='ref'>тенор</a>, <a class='ref'>баритон</a>"
     },
     "биения": {
       "text1": "[biénja]",
@@ -3675,10 +4762,15 @@
         "прослушивать певца - fare un'audizione a un cantante",
         "он стал певцом - diventò cantante",
         "выход певца - l'uscita del cantante",
-        "высокий / низкий бас - basso cantante / profondo",
+        "высокий / низкий <a class='ref'>бас</a> - basso cantante / profondo",
         "Мои любимые певцы - это... - I miei cantanti preferiti sono...",
         "его следует причислить к самым блестящим певцам своего времени... - è annoverabile tra i più brillanti cantanti del suo tempo"
       ]
+    },
+    "вступление": {
+      "text1": "[vstuplénie]",
+      "text2": "<i>n.</i>",
+      "text3": "introduzione (<i>f</i>); также <a class='ref'>интродукция</a>"
     },
     "высота": {
       "text1": "[vysotá]",
@@ -3705,6 +4797,15 @@
       "text2": "<i>vi</i> <i>pf.</i> (выступлю, выступишь)",
       "text3": "esibirsi",
       "text4": "см. <a class='ref'>выступать</a>"
+    },
+    "галёрка": {
+      "text1": "[galjórka]",
+      "text2": "<i>f</i>",
+      "text3": "loggione (<i>m</i>), piccionaia <i>жарг.</i> букв. голубятня",
+      "list3": [
+        "он сунул капельнику трёшку и он пустил его на галёрку - diede tre rubli alla maschera che lo lasciò salire in piccionaia"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
     },
     "гамма": {
       "text1": "[gámma]",
@@ -3743,6 +4844,28 @@
         "трактат по гармонии - trattato di <a class='ref'>armonia</a>",
         "уроки гармонии - lezioni di <a class='ref'>armonia</a>"
       ]
+    },
+    "гений": {
+      "text1": "[génij]",
+      "text2": "<i>m</i>",
+      "text3": "genio",
+      "list3": [
+        "они считают, что он гений (они считают его гением) - lo considerano un genio",
+        "печать гения - impronta del genio",
+        "злой гений - genio maligno / malefico",
+        "быть чьим-либо злым гением - essere l'anima dannata di qd",
+        "добрый гений - nume tutelare (angelo custode)",
+        "добрый дух, добрый гений; ангел-хранитель - buon genio, genio tutelare",
+        "преклонение перед гением - culto del genio",
+        "стать в позу непонятого гения - atteggiarsi a genio incompreso",
+        "непризнанный гений (также <i>ирон.</i>) - genio incompreso",
+        "его нельзя относить к гениям, но он был очень талантлив - non è il caso di annoverarlo tra i geni, ma aveva un talento eccezionale",
+        "одарённый человек - un uomo di genio",
+        "гениальная башка! - è un genio! (ha una testa!)",
+        "озарение, гениальная гениальная мысль - un lampo / colpo di genio",
+        "меня вдруг осенило - ho avuto un lampo di genio"
+      ],
+      "text4": "см. <a class='ref'>талант</a>"
     },
     "голос": {
       "text1": "[gólos]",
@@ -3790,7 +4913,7 @@
         "у неё дивный голос - ha una splendida voce",
         "обладать глубоким голосом (Фёдор Шаляпин) - avere una voce profonda",
         "неповторимый голос Шаляпина - la voce portentosa di Šaljapin",
-        "у Шаляпина был могучий бас - Šaljapin aveva una poderosa voce di basso",
+        "у Шаляпина был могучий <a class='ref'>бас</a> - Šaljapin aveva una poderosa voce di basso",
         "голос широкого / большого диапазона - voce sfogata / estesa",
         "диапазон / сила голоса - il volume della voce",
         "шикарный голос - una voce tutta chic",
@@ -3806,8 +4929,8 @@
         "сопрано - voce (di) soprano",
         "альт - voce di ragazzo",
         "тенор - voce tenorile",
-        "бас - basso, voce di basso",
-        "мощный бас - poderosa voce di basso",
+        "<a class='ref'>бас</a> - basso, voce di basso",
+        "мощный <a class='ref'>бас</a> - poderosa voce di basso",
         "потерять голос - perder la voce",
         "охрипнуть - diventare rauco; perdere la voce",
         "потерять / сорвать голос - avere un abbassamento di voce",
@@ -3822,7 +4945,7 @@
         "«А голос так дивно звучал» (А. К. Толстой) - «E la voce era meravigliosa» (A. K. Tolstoj)",
         "«Он начал хорошо <a class='ref'>петь</a> - сначала альтом, потом, когда переломился голос, тенором» (С. Сергеев-Ценский) - «Cominciò a cantare bene, prima <a class='ref'>con</a> voce bianca, poi, quando la voce di adolescente cambiò, da tenore» (S. Sergeev-Censkij)",
         "«Дивный голос твой, низкий и странный, Славит бурю цыганских страстей» (А. Блок) - «La tua voce divina, profonda e strana, canta le burrascose passioni zigane» (A. Blok)",
-        "«И слышался голос Тамары: он весь был желанье и страсть» (М. Лермонтов) - «Si sentiva la voce di Tamara, ardente di desiderio e di <a class='ref'>passione</a>» (M. Lermontov)",
+        "«И слышался голос Тамары: он весь был желанье и страсть» (М. Лермонтов) - «Si sentiva la voce di Tamara, <a class='ref'>ardente</a> di desiderio e di <a class='ref'>passione</a>» (M. Lermontov)",
         "«И я забыл твой голос нежный, твои небесные черты» (А. Пушкин) - «E dimenticai la tua <a class='ref'>dolce</a> voce e i bei tratti del tuo viso» (A. Puškin)",
         "«С такой наружностью, с таким чудным голосом нельзя, грешно сидеть в деревне» (А. Чехов) - «Bella com'è e <a class='ref'>con</a> quella sua voce meravigliosa è un peccato che viva in campagna» (A. Čechov)",
         "«Нежные женские голоса звенели в тёплом ночном воздухе» (Э. Казакевич) - «Tenere voci femminili risuonavano nell'<a class='ref'>aria</a> tiepida della notte» (E. Kazakevič)",
@@ -3841,7 +4964,7 @@
       "list3": [
         "intensità del suono - сила (интенсивность) звука",
         "сделать радио погромче - alzare il volume della radio",
-        "Интенсивность позволяет отличить громкий <a class='ref'>звук</a> от слабого (тихого). Интенсивность зависит от величины колебаний: чем больше колебания, тем громче <a class='ref'>звук</a>, чем меньше колебания, тем слабее <a class='ref'>звук</a>. - L'intensità permette di distinguere un suono <a class='ref'>forte</a> da un suono debole (<a class='ref'>piano</a>). L'intensità dipende dalla grandezza delle vibrazioni: <a class='ref'>più</a> ampie sono le vibrazioni <a class='ref'>più</a> <a class='ref'>forte</a> è il suono, meno ampie sono le vibrazioni <a class='ref'>più</a> debole è il suono."
+        "Интенсивность позволяет отличить громкий <a class='ref'>звук</a> от слабого (тихого). Интенсивность зависит от величины колебаний: чем больше колебания, тем громче <a class='ref'>звук</a>, чем меньше колебания, тем слабее <a class='ref'>звук</a>. - L'intensità permette di distinguere un suono <a class='ref'>forte</a> da un suono debole (<a class='ref'>piano</a>). L'intensità dipende dalla grandezza delle vibrazioni: <a class='ref'>più</a> ampie sono le vibrazioni <a class='ref'>più</a> <a class='ref'>forte</a> è il suono, <a class='ref'>meno</a> ampie sono le vibrazioni <a class='ref'>più</a> debole è il suono."
       ]
     },
     "диатоническая гамма": {
@@ -3879,11 +5002,60 @@
         "на протяжении всего спектакля - per tutta la durata dello spettacolo"
       ]
     },
+    "дневник": {
+      "text1": "[dnevník]",
+      "text2": "<i>m</i> (<i>gen.</i> дневника, <i>pl</i> дневники)",
+      "text3": "pagella (<i>f</i>)",
+      "list3": [
+        "школьный дневник, табель успеваемости (ученика) - pagella scolastica"
+      ],
+      "text4": "см. <a class='ref'>ученик</a>, <a class='ref'>успеваемость</a>, <a class='ref'>класс</a>"
+    },
     "дополнительная линейка": {
       "text1": "[dopolnítel'naja] [linéjka]",
       "text2": "taglo addizionale",
       "text3": "Дополнительные линейки представляют собой фрагменты нотоносца, используемые для лучшего распознавания нот над или под нотоносцем. Такие линейки называются «in testa» (в голове), если они разрезают ноту пополам, и «in gola» (в горле), если они находятся под нотой. - I tagli addizionali sono di frammenti di pentagramma usati per riconoscere meglio le note sopra o sotto il pentagramma. I tagli si dicono «in testa» se tagliano la nota a metà e «in gola» se stanno sotto la nota.",
       "text4": "см. <a class='ref'>линейка</a>"
+    },
+    "задание": {
+      "text1": "[zadánie]",
+      "text2": "<i>n.</i>",
+      "text3": "compito <i>m</i> (a scuola)",
+      "text4": "см. <a class='ref'>урок</a>"
+    },
+    "зал": {
+      "text1": "[zal]",
+      "text2": "<i>m</i>",
+      "text3": "sala (<i>f</i>)",
+      "list3": [
+        "концертный зал - sala (da concerto)",
+        "Большой зал Московской консерватории - sala Magna del Conservatorio di Mosca",
+        "гимнастический (спортивный) зал - palestra (<i>f</i>)",
+        "актовый зал - aula magna",
+        "читальный зал - sala di lettura",
+        "зал ожидания - sala d'aspetto"
+      ],
+      "text4": "см. <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
+    },
+    "занавес": {
+      "text1": "[zánaves]",
+      "text2": "<i>m</i>",
+      "text3": "sipario",
+      "list3": [
+        "открыть / закрыть занавес - aprire / chiudere il sipario",
+        "поднять / опустить занавес - alzare / calare il sipario"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
+    },
+    "заявка": {
+      "text1": "[zajávka]",
+      "text2": "<i>f</i> (<i>gen.</i> <i>pl</i> заявок на + <i>acc.</i>)",
+      "text3": "domanda",
+      "list3": [
+        "подать заявку / заявление - inoltrare domanda",
+        "Заявки должны быть поданы до 11 сентября 2024 года. - Le domande dovranno essere inoltrate entro l'11 settembre 2024."
+      ],
+      "text4": "см. <a class='ref'>прослушивания</a>, <a class='ref'>конкурс</a>"
     },
     "звук": {
       "text1": "[zvuk]",
@@ -3918,6 +5090,26 @@
         "«Попляши-тка ты под нашу балалайку!» (А. Пушкин) - «Dai, balla un po' al suono della nostra balalajka!» (A. Puškin)"
       ]
     },
+    "здороваться": {
+      "text1": "[zdoróvat'sja]",
+      "text2": "<i>vi</i> <i>impf.</i>(<i>pf.</i> поздороваться - поздороваюсь, поздороваешься)",
+      "text3": "salutare, dare il buon giorno (пожелать доброго дня)<br>глагол <em>salutare</em> происходит от <i>лат.</i> <em>salutāre</em>, что означает <em>желать здоровья (augurare salute, salutare)</em>; в употреблении глагол <em>salutare</em> похож на глагол в русском языке <a class='ref'>приветствовать</a>, который также не требует предлога, однако предлог потребуется, если нужно сослаться на способ приветствия: salutare <a class='ref'>con</a> un cenno del capo - приветствовать кивком головы; salutare <a class='ref'>con</a> la <a class='ref'>mano</a> - послать приветствие рукой",
+      "list3": [
+        "<a class='ref'>приветствовать</a> педагога - salutare l'insegnante / il maestro / la maestra",
+        "почему ты не поздоровался с тётей? - perché non hai dato il buon giorno alla zia?",
+        "передавай от меня привет отцу - saluta tuo padre da parte mia",
+        "поздоровайся от меня с твоим отцом - salutami tuo padre",
+        "он не соблаговолил с нами поздороваться - non si degna di salutarci",
+        "он ни с кем здоровается - non saluta nessuno",
+        "поприветствовать присутствующих - salutare i presenti",
+        "ответить на приветствие - rispondere al / rendere il saluto",
+        "передать чей-либо привет - portare / recare il saluto di qd",
+        "Привет! - Tanti saluti!",
+        "здравствуй(те)! - salute!, salve!, buongiorno! (<em>утром и вечером</em>), buonasera! (<em>вечером</em>)",
+        "сделать знак приветствия - fare un cenno di saluto",
+        "перестать здороваться с кем-либо - levare / togliere il saluto a qd"
+      ]
+    },
     "знаки альтерации": {
       "text1": "[znáki] [al'terácii]",
       "text2": "<i>pl</i>",
@@ -3928,10 +5120,30 @@
       ],
       "text4": "см. <a class='ref'>альтерация</a>"
     },
+    "знаменитый": {
+      "text1": "[znamenítyj]",
+      "text2": "<i>agg</i> (знаменит, знаменита, знаменито, знамениты)",
+      "text3": "celebre, famoso, rinomato, illustre",
+      "list3": [
+        "знаменитый <a class='ref'>музыкант</a> - un celebre musicista",
+        "знаменитое <a class='ref'>произведение</a> искусства - una celebre opera d'arte",
+        "славиться - essere famoso per...",
+        "громкое имя - nome famoso",
+        "un(a) celebre soprano - знаменитое <a class='ref'>сопрано</a>",
+        "сделаться знаменитым, прославиться - diventare famoso",
+        "прославлять - rendere famoso (celebre, illustre)",
+        "он знаменитый математик, а также <a class='ref'>музыкант</a> - è un famoso matematico e anche musicista",
+        "жизнеописания / биографии знаменитых людей - le vite degli uomini illustri",
+        "печально известный - tristemente famoso / noto",
+        "«Явление Христа народу»: так называется знаменитая картина Александра Иванова - «L'apparizione di Cristo»: così si chiama il famoso quadro di Aleksandr Ivanov",
+        "«Быть знаменитым некрасиво» (Б. Пастернак) - «Essere celebre è brutto» (B. Pasternak)"
+      ]
+    },
     "играть": {
       "text1": "[igrát']",
       "text2": "<i>vi</i> <i>impf.</i>",
-      "list2": [
+      "text3": "suonare",
+      "list3": [
         "ты играешь на каком-нибудь инструменте? - tu suoni uno strumento?",
         "играть на фортепиано - suonare il <a class='ref'>pianoforte</a>",
         "он неплохо играет на рояле - suona il <a class='ref'>pianoforte</a> discretamente",
@@ -3958,7 +5170,12 @@
         "«И музыка играет для них так обаятельно» (Л. Андреев) - «E la musica suona per loro, incantevole» (L. Andreev)",
         "играть первую скрипку - far la parte del primo violino"
       ],
-      "text3": "см. <a class='ref'>инструмент</a>, <a class='ref'>музыкальный инструмент</a>, <a class='ref'>исполнитель</a>, <a class='ref'>исполнение</a>, <a class='ref'>концертировать</a>, <a class='ref'>солировать</a>, <a class='ref'>выступать</a>"
+      "text4": "см. <a class='ref'>инструмент</a>, <a class='ref'>музыкальный инструмент</a>, <a class='ref'>музыкант</a>, <a class='ref'>музыкальность</a>, <a class='ref'>исполнение</a>, <a class='ref'>исполнитель</a>, <a class='ref'>исполнять</a>, <a class='ref'>выступать</a>, <a class='ref'>концертировать</a>, <a class='ref'>солировать</a>, <a class='ref'>солист</a>, <a class='ref'>соло</a>, <a class='ref'>дирижёр</a>, <a class='ref'>знаменитый</a>"
+    },
+    "известность": {
+      "text1": "[izvéstnost']",
+      "text2": "<i>f</i>",
+      "text3": "см. <a class='ref'>слава</a>, <a class='ref'>знаменитый</a>"
     },
     "инструмент": {
       "text1": "[instrumént]",
@@ -3984,6 +5201,12 @@
       "text3": "Под интервалом подразумевается разница в высоте между двумя нотами, другими словами сколько тонов и полутонов их разделяют. - Per intervallo s'intende la differenza in altezza fra due note, in altre parole quanti toni e semitoni le separano.",
       "text4": "см. <a class='ref'>intervallo</a>"
     },
+    "интродукция": {
+      "text1": "[introdúkcija]",
+      "text2": "<i>f</i>",
+      "text3": "introduzione",
+      "text4": "см. <a class='ref'>вступление</a>"
+    },
     "исполнение": {
       "text1": "[ispolnénie]",
       "text2": "<i>n.</i>",
@@ -3991,7 +5214,7 @@
       "list3": [
         "исполнять музыкальные пьесы, отрывки - esecuzione di brani musicali",
         "фортепианное исполнение - esecuzione pianistica",
-        "исполнение соло - un'esecuzione solistica",
+        "исполнение <a class='ref'>соло</a> - un'esecuzione solistica",
         "исполнение квартета, романса - esecuzione di un quartetto, di una romanza",
         "исполнение балета - esecuzione di un balletto",
         "точное, аккуратное, механическое исполнение - esecuzione fedele, puntuale, meccanica",
@@ -4065,6 +5288,20 @@
       ],
       "text4": "см. <a class='ref'>клавиатура</a>"
     },
+    "класс": {
+      "text1": "[klass]",
+      "text2": "<i>m</i>",
+      "text3": "aula, classe",
+      "list3": [
+        "класс, классная комната; учебная аудитория - aula scolastica",
+        "актовый <a class='ref'>зал</a> - aula magna",
+        "он окончил консерваторию по (классу) фортепьяно - si è diplomato in <a class='ref'>pianoforte</a> al conservatorio",
+        "учиться в классе скрипки - studiare nella classe di violino",
+        "первый (второй) класс - prima (seconda) classe",
+        "<a class='ref'>ученик</a> третьего класса - allievo di terza"
+      ],
+      "text4": "см. <a class='ref'>факультет</a>, <a class='ref'>студент</a>, <a class='ref'>студентка</a>, <a class='ref'>дневник</a>, <a class='ref'>успеваемость</a>"
+    },
     "ключ": {
       "text1": "[ključ]",
       "text2": "<i>m</i> (<i>gen.</i> ключа, <i>pl</i> ключи, <i>dim.</i> ключик)",
@@ -4130,8 +5367,8 @@
         "учиться в консерватории - studiare al conservatorio",
         "окончить консерваторию - laurearsi al Conservatorio (in Russia ), diplomarsi al Conservatorio (in Italia)",
         "он окончил консерваторию по классу фортепьяно - si è diplomato in pianoforte al conservatorio",
-        "Большой зал Московской консерватории - Sala magna del Conservatorio di Mosca",
-        "Малый зал консерватории - Sala piccola del conservatorio (di Mosca)"
+        "Большой <a class='ref'>зал</a> Московской консерватории - Sala magna del Conservatorio di Mosca",
+        "Малый <a class='ref'>зал</a> консерватории - Sala piccola del conservatorio (di Mosca)"
       ],
       "text5": "см. <a class='ref'>студент</a>, <a class='ref'>студентка</a>",
       "text6": "2) (disus.) Collegio femminile, educandato. - (<i>редко</i>) Женский пансион, монастырская школа",
@@ -4158,7 +5395,7 @@
         "новогодний концерт - il concerto di Capodanno",
         "на концерте - al concerto",
         "концертный - di (da) concerto",
-        "концертный зал - sala (da concerto)",
+        "концертный <a class='ref'>зал</a> - sala (da concerto)",
         "устраивать концерт - organizzare un concerto",
         "давать концерт - dare (tenere) un concerto",
         "записывать концерт - registrare un concerto",
@@ -4184,7 +5421,7 @@
         "Когда будет концерт? - Quando ci sarà il concerto?",
         "Какие концерты идут сегодня? - Quali concerti ci sono oggi?",
         "Сколько частей в концерте? - Di quanti atti è il concerto?",
-        "Это очень хороший концерт. - Questo è un concerto molto bello.",
+        "Это очень хороший концерт. - Questo è un concerto <a class='ref'>molto</a> bello.",
         "концерт прошёл с большим успехом - il concerto ha avuto un grande successo",
         "Рихтер исполнил первый концерт Чайковского - Richter eseguì il concerto n.1 di Čajkovskij",
         "Так называемые Бранденбургские концерты - это шесть концертов, написанных Иоганном Себастьяном Бахом в период его пребывания в Кётене, герцогство Саксония, с 1717 по 1723 год. Они были посвящены маркграфу Кристиану Людвигу Бранденбург-Шведтскому 24 marzo 1721 года. - I cosiddetti concerti brandeburghesi sono sei concerti composti da Johann Sebastian Bach nel periodo che trascorse a Köthen, ducato della Sassonia, dal 1717 al 1723. Essi furono dedicati al margravio Cristiano Ludovico di Brandeburgo-Schwedt il 24 marzo 1721."
@@ -4202,6 +5439,25 @@
       "text2": "<i>m</i>",
       "text3": "1) primo violino, prima viola; maestro concertatore",
       "text4": "2) accompagnatore (al pianoforte); см. <a class='ref'>аккомпаниатор</a>"
+    },
+    "кресло": {
+      "text1": "[kréslo]",
+      "text2": "<i>n.</i> (<i>gen.</i> <i>pl</i> кресел, креслице)",
+      "text3": "poltrone",
+      "list3": [
+        "место в последних рядах партера / в амфитеатре - poltroncina"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
+    },
+    "кулисы": {
+      "text1": "[kulísy]",
+      "text2": "<i>pl</i>",
+      "text3": "quinte",
+      "list3": [
+        "за кулисами - dietro / tra le quinte (anche <i>fig.</i>)",
+        "вести закулисную игру <i>перен.</i> - fare qc dietro le quinte"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кресло</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
     },
     "лад": {
       "text1": "[lad]",
@@ -4259,6 +5515,36 @@
       ],
       "text4": "см. <a class='ref'>дополнительная линейка</a>"
     },
+    "ложа": {
+      "text1": "[lóža]",
+      "text2": "<i>f</i>",
+      "text3": "palco (<i>m</i>)",
+      "list3": [
+        "ложа против сцены - palco di prospetto",
+        "ложа первого яруса - un palco di prim'ordine",
+        "ложа второго яруса - palco di seconda fila",
+        "ложа бенуара - palco di platea",
+        "литерные / боковые ложи - palchi di proscenio",
+        "ложа для прессы - palco per la stampa",
+        "бельэтаж - primo ordine di palchi",
+        "большая ложа у просцениума - barcaccia"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
+    },
+    "любитель": {
+      "text1": "[ljubítel']",
+      "text2": "<i>m</i> (<i>f</i> любительница)",
+      "text3": "<a class='ref'>appassionato</a>; dilettante; <a class='ref'>cultore</a>",
+      "list3": [
+        "любитель оперы - <a class='ref'>appassionato</a> di opera lirica",
+        "любитель бельканто - un <a class='ref'>appassionato</a> di belcanto",
+        "быть музыкантом-любителем - essere un dilettante di musica",
+        "художник-дилетант - dilettante di pittura",
+        "любительская труппа - compagnia di dilettanti",
+        "но он не занимается этим как любитель - ma lui non se ne occupa da dilettante",
+        "ценитель искусства - cultore dell'arte"
+      ]
+    },
     "мажорная гамма": {
       "text1": "[mažórnaja] [gámma]",
       "text2": "scala maggiore",
@@ -4271,7 +5557,7 @@
       "text3": "<a class='ref'>melodia</a>",
       "list3": [
         "Под мелодией подразумевается последовательность звуков, идущих друг за другом. - Per <a class='ref'>melodia</a> s'intende una serie di suoni eseguiti uno dopo l'altro.",
-        "очень известная мелодия - una <a class='ref'>melodia</a> molto popolare",
+        "очень известная мелодия - una <a class='ref'>melodia</a> <a class='ref'>molto</a> popolare",
         "колдовская мелодия - una <a class='ref'>melodia</a> ammaliante",
         "восхитительная мелодия - una <a class='ref'>melodia</a> deliziosa",
         "от этой мелодии веет романтикой - questa <a class='ref'>melodia</a> ha un profumo di romanticismo",
@@ -4315,7 +5601,7 @@
         "<a class='ref'>пьеса</a> для фортепиано / скрипки - musica per <a class='ref'>pianoforte</a> / violino",
         "глубоко понимать и любить музыку, поэзию - sentire la musica, la poesia",
         "положить текст на музыку - mettere in musica un testo = musicare un testo",
-        "читать, <a class='ref'>играть</a>, <a class='ref'>исполнять</a> музыку экспромтом - leggere musica, suonare, interpretare all'improvviso",
+        "читать, <a class='ref'>играть</a>, <a class='ref'>исполнять</a> музыку экспромтом - leggere musica, suonare, interpretare all'<a class='ref'>improvviso</a>",
         "фортепианная музыка - musica pianistica",
         "Какую музыку Вы любите? - Che musica preferisce?",
         "Какая музыка Вам нравится? - Quale tipo di musica Le piace?",
@@ -4350,6 +5636,26 @@
         "<a class='ref'>играть</a> на музыкальном инструменте - suonare uno strumento musicale"
       ],
       "text3": "см. <a class='ref'>инструмент</a>"
+    },
+    "музыкант": {
+      "text1": "[muzykánt]",
+      "text2": "<i>m</i> (<i>f</i> музыкантша) (<i>colloq.</i>)",
+      "text3": "musicista, suonatore",
+      "list3": [
+        "одарённый, способный музыкант - musicista dotato",
+        "юный музыкант - piccolo musicista",
+        "у него есть данные стать музыкантом - c'è in lui la stoffa del musicista",
+        "(какой-то) музыкантишка - un musicista da strapazzo",
+        "воображать себя музыкантом - pretenderla a musicista",
+        "он сколотил группу музыкантов - ha messo insieme un gruppo di musicisti",
+        "проиграв восемь тактов, музыканты вдруг остановились - eseguite le prime otto battute i musicisti smisero improvvisamente di suonare",
+        "«А вы, друзья, как ни садитесь, всё в музыканты не годитесь» (И. Крылов) - «Potete cambiarvi di posto quanto volete, ma musicisti mai sarete» (I. Krylov)"
+      ]
+    },
+    "музыковед": {
+      "text1": "[muzykovéd]",
+      "text2": "<i>m</i> e <i>f</i>",
+      "text3": "musicologo (<i>m</i>), dotto nella musica"
     },
     "мультиоль": {
       "text1": "[mul'tiól']",
@@ -4440,6 +5746,20 @@
         "разбирать ноты - leggere lo spartito"
       ]
     },
+    "образование": {
+      "text1": "[obrazovánie]",
+      "text2": "<i>n.</i>",
+      "text3": "formazione (<i>f</i>)",
+      "list3": [
+        "музыкальное образование - formazione musicale"
+      ]
+    },
+    "общежитие": {
+      "text1": "[obščežítie]",
+      "text2": "<i>n.</i>",
+      "text3": "casa dello studente; pensione dello studente (студенческое общежитие)",
+      "text4": "см. <a class='ref'>студент</a>, <a class='ref'>студентка</a>"
+    },
     "октава": {
       "text1": "[oktáva]",
       "text2": "<i>f</i>",
@@ -4518,6 +5838,15 @@
         "Аккорды могут принимать основной вид или быть обращёными: в первом случае мы имеем в басу самую главную ноту, называемую основным тоном, в противном случае в басу будет другая <a class='ref'>нота</a> (терция, квинта и т.д.). - Gli accordi possono essere allo stato fondamentale o rivoltati: nel primo caso abbiamo la nota più importante, detta fondamentale, al basso altrimenti una nota diversa (la terza, la quinta, ecc.)."
       ]
     },
+    "партер": {
+      "text1": "[partér]",
+      "text2": "<i>m</i>",
+      "text3": "platea (<i>f</i>)",
+      "list3": [
+        "место в партере - poltrona (<i>f</i>)"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>концерт</a>"
+    },
     "партия": {
       "text1": "[pártija]",
       "text2": "<i>f</i> <i>муз.</i>",
@@ -4527,7 +5856,7 @@
         "партия фортепиано - la parte del pianista / del <a class='ref'>pianoforte</a>",
         "сольная партия - parte solistica",
         "фуга на четыре голоса - fuga a quattro parti",
-        "бас, басовая партия - bordone",
+        "<a class='ref'>бас</a>, басовая партия - bordone",
         "<a class='ref'>репетировать</a> роль - provare la parte",
         "<a class='ref'>играть</a> роль... - fare la parte di...",
         "Дузе исполняла роль Норы - La Duse interpretò la parte di Nora"
@@ -4565,7 +5894,7 @@
         "мне нравится петь - mi piace cantare",
         "давай споём вместе - su, cantiamo insieme",
         "e ora cantiamo! - а теперь давайте споём!",
-        "начать петь, затянуть песню - attaccare a cantare",
+        "начать петь, затянуть песню - <a class='ref'>attaccare</a> a cantare",
         "петь песню - cantare una canzone",
         "петь романс - cantare una romanza",
         "петь дуэтом - duettare, cantare in duetto",
@@ -4615,6 +5944,40 @@
       ],
       "text4": "см. <a class='ref'>тембр</a>"
     },
+    "повторять": {
+      "text1": "[povtorját']",
+      "text2": "<i>vt</i> <i>impf.</i> (<i>pf.</i>повторить - повторю, повторишь)",
+      "text3": "1) ripetere, dire (fare) la stessa cosa",
+      "list3": [
+        "повторять ошибку - ripetere l'errore",
+        "повторять просьбу - rivolgere la stessa preghiera",
+        "повторять чужие слова - ripetere quanto dicono gli altri",
+        "долбить <i>разг.</i> - ripetere infinite volte",
+        "повторять одно и то же бесчётное число раз, долдонить <i>разг.</i> - ripetere infinite volte la stessa cosa",
+        "повторять бессчётное число раз <i>разг.</i> - ripetere all'infinito",
+        "повторять стократ <i>разг.</i> - ripetere mille volte",
+        "повторять тысячу раз <i>разг.</i> - ripetere per l'ennesima <a class='ref'>volta</a>",
+        "я тебе опять-таки повторяю - ti ripeto per l'ennesima <a class='ref'>volta</a>",
+        "он это методически повторял - non smetteva mai di ripeterlo",
+        "талдычить одно и то же <i>разг.</i> - ripetere ottusamente, dire e ridire, battere sullo stesso tasto (ударять по одной и той же клавише, см. <a class='ref'>клавиша</a>)",
+        "он не уставал повторять... - non si stancava di ripetere...",
+        "он устало повторял, что ему ничего не нужно - ripeteva stancamente di non aver bisogno di nulla",
+        "переспрашивать - pregare / chiedere di ripetere, ridomandare",
+        "повторять про себя - ripetere tra sé e sé",
+        "повтори как следует / точно - ripetilo perbene",
+        "повторите, пожалуйста - ripeta, per favore",
+        "повторите еще раз, будьте добры - sia gentile, ripeta ancora una <a class='ref'>volta</a>",
+        "остаться на второй год - ripetere l'anno / la classe",
+        "«Ах, ах, ах! - приговаривал он с отчаянием» (Л. Толстой) - «Povero, povero me! - ripeteva disperato» (L. Tolstoj)",
+        "Paganini non ripete - Паганини не бисирует"
+      ],
+      "text4": "2) ripassare",
+      "list4": [
+        "повторять <a class='ref'>урок</a> - ripassare la lezione",
+        "повторить задание - ripetere il compito",
+        "повторять номер - concedere il bis"
+      ]
+    },
     "полиритмия": {
       "text1": "[poliritmíja]",
       "text2": "<i>f</i>",
@@ -4645,6 +6008,42 @@
         "Натуральная гамма (диатоническая, мажорная) - это последовательность тонов и полутонов. - La scala naturale (diatonica maggiore) è una sequenza di toni e semitoni."
       ],
       "text4": "см. <a class='ref'>гамма</a>, <a class='ref'>тон</a>, <a class='ref'>полутон</a>"
+    },
+    "предмет": {
+      "text1": "[predmét]",
+      "text2": "<i>m</i>",
+      "text3": "materia <i>f</i> (di studio), disciplina <i>f</i>",
+      "list3": [
+        "сдать экзамены по всем предметам - passare l'esame in tutte le materie",
+        "обязательный предмет - materia obbligatoria",
+        "дополнительный предмет - materia complementare",
+        "факультативные / необязательные предметы - materie facoltative",
+        "предмет обучения - materia d'insegnamento",
+        "научный предмет - materia scientifica",
+        "углублённо изучать предмет - approfondire la materia",
+        "учить, изучать предмет - studiare la materia",
+        "знать предмет - conoscere la materia",
+        "повторение пройденного - ripetizione della materia (studiata)",
+        "в совершенстве знать предмет - padroneggiare la materia",
+        "в совершенстве знать все предметы - conoscere perfettamente tutte le materie",
+        "иметь проходные баллы по всем предметам - avere tutte sufficienze nelle materie",
+        "отставать по какому-либо предмету - essere insufficiente in una materia",
+        "для неё математика тяжёлый предмет - per lei la matematica è una materia ostica",
+        "общее повторение предмета в конце года - un ripasso generale di tutta la materia alla fine d'anno",
+        "он знает предмет настолько, насколько это нужно для того, чтобы сдать <a class='ref'>экзамен</a> - conosce la materia tanto quanto occorre per passare l'esame",
+        "у него два хвоста - ha avuto due materie",
+        "интересный предмет - materia interessante",
+        "творческие предметы / дициплины в средней школе - discipline artistiche nella scuola secondaria"
+      ]
+    },
+    "приветствовать": {
+      "text1": "[privétstvovat']",
+      "text2": "<i>vi</i> <i>impf.</i> (приветствую, приветствуешь)",
+      "text3": "salutare, dare il benvenuto; far festa a qd",
+      "list3": [
+        "приветствовать друг друга - scambiarsi i saluti"
+      ],
+      "text4": "см. <a class='ref'>здороваться</a>"
     },
     "программа": {
       "text1": "[prográmma]",
@@ -4695,7 +6094,7 @@
         "вокальное <a class='ref'>произведение</a> - un pezzo vocale",
         "исполненение музыкальной пьесы - esecuzione di un pezzo musicale",
         "это красивая пьеса - è un bel pezzo",
-        "заиграть - attaccare un pezzo di musica",
+        "заиграть - <a class='ref'>attaccare</a> un pezzo di musica",
         "<a class='ref'>дирижёр</a> требует повторить это место - il maestro esige che questo pezzo sia risonato",
         "заключительная часть музыкальной пьесы - <a class='ref'>coda</a> di un pezzo musicale",
         "<a class='ref'>играть</a> пьесу на фортепиано - suonare un pezzo al <a class='ref'>pianoforte</a>",
@@ -4722,6 +6121,18 @@
         "неправильные размеры - tempi irregolari"
       ]
     },
+    "репертуар": {
+      "text1": "[repertuár]",
+      "text2": "<i>m</i>",
+      "text3": "repertorio (anche <i>fig.</i>)",
+      "list3": [
+        "учить / <a class='ref'>играть</a> репертуар - studiare / suonare il repertorio",
+        "он проиграл нам весь свой репертуар - ci suonò tutto il suo repertorio",
+        "репертуар певца - repertorio di un cantante",
+        "почитатели творчества Верди - i cultori del repertorio verdiano",
+        "иметь обширный, богатый, скудный, скромный репертуар - avere un repertorio vasto, ricco, scarso, modesto"
+      ]
+    },
     "репетировать": {
       "text1": "[repetírovat']",
       "text2": "<i>vt</i> <i>impf.</i> e <i>pf.</i> (репетирую, репетируешь)",
@@ -4731,6 +6142,60 @@
         "репетировать, разучивать - ripetere"
       ],
       "text4": "см. <a class='ref'>концерт</a>, <a class='ref'>концертировать</a>, <a class='ref'>играть</a>, <a class='ref'>исполнитель</a>, <a class='ref'>исполнение</a>, <a class='ref'>солировать</a>, <a class='ref'>выступать</a>"
+    },
+    "репетитор": {
+      "text1": "[repetítor]",
+      "text2": "<i>m</i> (<i>f</i> репетиторша)",
+      "text3": "insegnante che dà lezioni private, см. <a class='ref'>урок</a>"
+    },
+    "репетиция": {
+      "text1": "[repetícija]",
+      "text2": "<i>f</i>",
+      "text3": "prova",
+      "list3": [
+        "генеральная репетиция - prova generale (anteprima)",
+        "репетиция концерта - prova del concerto",
+        "репетиция оркестра - prova d'orchestra",
+        "репетиция пьесы - prova (di uno spettacolo teatrale)"
+      ],
+      "text4": "см. <a class='ref'>репетировать</a>"
+    },
+    "романс": {
+      "text1": "[románs]",
+      "text2": "<i>f</i>",
+      "text3": "романс - это музыкальное <a class='ref'>произведение</a> сентиментального характера с инструментальным сопровождением (часто фортепианным) - la romanza è una composizione vocale di carattere sentimentale <a class='ref'>con</a> accompagnamento strumentale (spesso di <a class='ref'>pianoforte</a>)",
+      "list3": [
+        "романс для двух голосов - romanza per due voci",
+        "цыганский романс - romanza russa cantata alla zigana",
+        "<a class='ref'>исполнять</a> романс - eseguire una romanza",
+        "<a class='ref'>исполнение</a> романса - esecuzione di una romanza",
+        "<a class='ref'>петь</a> романс - cantare una romanza",
+        "«В романсе говорилось о какой-то девушке» (А. Чехов) - «Nella romanza si raccontava di una fanciulla» (A. Čechov)"
+      ]
+    },
+    "рука": {
+      "text1": "[ruká]",
+      "text2": "<i>f</i> (<i>pl</i> руки, <i>dim.</i> ручка, ручонка)",
+      "text3": "<a class='ref'>mano</a> (кисть)",
+      "list3": [
+        "<a class='ref'>mano</a> destra, m. d. - правая рука (<a class='ref'>играть</a> правой рукой)",
+        "<a class='ref'>mano</a> sinistra, m. s. - левая рука (<a class='ref'>играть</a> левой рукой)",
+        "партия правой / левой руки - la parte della <a class='ref'>mano</a> destra / sinistra",
+        "постановка правой (левой) руки - impostazione della <a class='ref'>mano</a> destra (sinistra)",
+        "alzare la <a class='ref'>mano</a> - поднять руку",
+        "abbassare la <a class='ref'>mano</a> - опустить руку",
+        "rilassare la <a class='ref'>mano</a> - расслабить руку",
+        "tenere la <a class='ref'>mano</a> rilassata - держать руку расслабленной",
+        "tenere la <a class='ref'>mano</a> rilassata e le dita ben aperte - держать руку расслабленной и пальцы хорошо расставленными",
+        "piegare il polso - согнуть запястье",
+        "posizionare le mani sulla tastiera correttamente - правильно располагать руки на клавиатуре",
+        "cambiare posizione delle mani - менять положение рук",
+        "utilizzare entrambe le mani - использовать обе руки",
+        "coordinare i movimenti delle mani - координировать движения рук",
+        "fare attenzione alla posizione del pollice - обращать внимание на положение большого пальца",
+        "упражнения для руки - esercizi per la <a class='ref'>mano</a>",
+        "<a class='ref'>играть</a> в четыре руки - suonare a quattro mani"
+      ]
     },
     "симфония": {
       "text1": "[simfónija]",
@@ -4759,6 +6224,23 @@
         "Смещение акцента с сильной доли на слабую являет собой исключение в ритмическом акцентировании, такой феномен называется синкопой и имеет место тогда, когда одна или более нот большей длительности заключаются между двумя нотами меньшей длительности. - Lo spostamento dell'accento forte a quello debole causa una eccezione all'accentuazione ritmica, tale fenomeno è detto sincope, ossia una о <a class='ref'>più</a> note di maggior valore vengono racchiuse fra due di minor valore."
       ]
     },
+    "слава": {
+      "text1": "[sláva]",
+      "text2": "<i>f</i>",
+      "text3": "fama",
+      "list3": [
+        "всемирная слава - fama mondiale",
+        "пользоваться (мировой) известностью - godere fama (mondiale)",
+        "всемирно известный, с мировым именем - di fama mondiale",
+        "прославиться - salire / venire in fama",
+        "печально известный - di trista fama",
+        "сомнительной репутации - di dubbia fama",
+        "он известен своей скупостью - ha fama d'avaro",
+        "бесчестить - denigrare / macchiare la fama",
+        "оставить по себе добрую память - lasciare fama di sé"
+      ],
+      "text4": "см. <a class='ref'>знаменитый</a>"
+    },
     "слух": {
       "text1": "[sluch]",
       "text2": "<i>m</i>",
@@ -4780,7 +6262,7 @@
         "превратиться / обращаться в слух - essere tutt'orecchi",
         "музыкальный слух - orecchio (musicale)",
         "<a class='ref'>играть</a> по слуху / <a class='ref'>петь</a> на слух - suonare / cantare a orecchio",
-        "петь / <a class='ref'>играть</a> на слух - cantare / suonare ad <a class='ref'>aria</a>",
+        "<a class='ref'>петь</a> / <a class='ref'>играть</a> на слух - cantare / suonare ad <a class='ref'>aria</a>",
         "у него хороший слух - ha orecchio",
         "у него нет слуха - non ha orecchio (è stonato)",
         "<a class='ref'>абсолютный</a> слух - orecchio assoluto",
@@ -4793,6 +6275,264 @@
         "идут слухи, что... - si dice che..."
       ],
       "text5": "3) notizia (<i>f</i>)"
+    },
+    "слушать": {
+      "text1": "[slúšat']",
+      "text2": "<i>vt</i> <i>impf.</i> (<i>pf.</i> послушать - послушаю, послушаешь)",
+      "text3": "ascoltare",
+      "list3": [
+        "слушать музыку - ascoltare la musica",
+        "я слушаю разную музыку - ascolto diversa musica",
+        "какую музыку Вы больше всего слушаете - che musica ascolta di <a class='ref'>più</a>?",
+        "слушать песню - ascoltare una canzone",
+        "наслаждаться пением - godere ad ascoltare il canto",
+        "а теперь послушайте песню в исполнении... - ed ora ascoltate la canzone per la <a class='ref'>voce</a> di...",
+        "мне бы хотелось послушать оперу (<a class='ref'>концерт</a>) - vorrei ascoltare un opera (un concerto)",
+        "он внимательно слушал (букв. с открытым ртом) - ascoltava a bocca aperta"
+      ]
+    },
+    "смычок": {
+      "text1": "[smyčók]",
+      "text2": "<i>m</i> (<i>gen.</i> смычка, <i>pl</i> смычки)",
+      "text3": "archetto, arco",
+      "list3": [
+        "смычковые инструменты - strumenti ad arco",
+        "водить смычком по струнам - far andare l'archetto sulle corde"
+      ],
+      "text4": "см. <a class='ref'>инструмент</a>, <a class='ref'>струна</a>"
+    },
+    "солировать": {
+      "text1": "[solírovat']",
+      "text2": "<i>vi</i> <i>impf.</i> e <i>pf.</i> (солирую, солируешь)",
+      "text3": "eseguire un pezzo in assolo (come solista); fare il solista",
+      "text4": "см. <a class='ref'>соло</a>, <a class='ref'>сольный</a>, <a class='ref'>играть</a>, <a class='ref'>исполнять</a>, <a class='ref'>исполнитель</a>, <a class='ref'>концертировать</a>, <a class='ref'>выступать</a>"
+    },
+    "солист": {
+      "text1": "[solíst]",
+      "text2": "<i>m</i> (<i>f</i> солистка)",
+      "text3": "solista, solo",
+      "list3": [
+        "вокалисты-солисты в Реквиеме Верди - i solisti vocali del Requiem di Verdi",
+        "солист концертов Моцарта - il solista dei concerti di Mozart",
+        "для голоса и хора - per solista e coro",
+        "<a class='ref'>солировать</a> - eseguire un pezzo in assolo (come solista)",
+        "<a class='ref'>концертировать</a> - dare concerti, esibirsi in concerti come solista",
+        "Кто солирует? - Chi è il solista?",
+        "<a class='ref'>сочинение</a> per solisti e orchestra"
+      ]
+    },
+    "соло": {
+      "text1": "[sólo]",
+      "text2": "1) <i>n.</i> <i>invar.</i> (<i>муз.</i>)",
+      "text3": "assolo, solo (<i>m</i>)",
+      "list3": [
+        "соло для скрипки / трубы - assolo per violino / tromba",
+        "соло гобоя - un'assolo dell'oboe",
+        "соло тенора - l'assolo del tenore",
+        "соло скрипки - un assolo di violino",
+        "соло <a class='ref'>сопрано</a> - l'assolo del soprano"
+      ],
+      "text4": "2) <i>avv</i> a solo, assolo",
+      "list4": [
+        "<a class='ref'>играть</a> (<a class='ref'>петь</a>, <a class='ref'>танцевать</a>) соло - suonare (cantare, ballare) in assolo",
+        "сюита для скрипки solo - suite per violino solo",
+        "пьеса для скрипки solo - brano per violino solo"
+      ],
+      "text5": "см. <a class='ref'>сольный</a>"
+    },
+    "сольный": {
+      "text1": "[sól'nyj]",
+      "text2": "<i>agg</i>",
+      "text3": "a solo, solistico",
+      "list3": [
+        "сольный номер - assolo (<i>m</i>)",
+        "сольное пение - canto assolo",
+        "сольный <a class='ref'>концерт</a> - recital (<i>m</i>)",
+        "<a class='ref'>исполнение</a> <a class='ref'>соло</a> - un'esecuzione solistica",
+        "сольная <a class='ref'>партия</a> - parte solistica"
+      ],
+      "text4": "см. <a class='ref'>солировать</a>"
+    },
+    "сопрано": {
+      "text1": "[sopráno]",
+      "text2": "<i>n.</i> <i>invar</i>",
+      "text3": "soprano (<i>m</i>)",
+      "list3": [
+        "<a class='ref'>voce</a> (di) soprano - голос сопрано",
+        "soprano leggero - лёгкое, колоратурное сопрано",
+        "soprano lirico - лирическое сопрано",
+        "soprano drammatico - драматическое сопрано",
+        "soprano lirico-drammatico - лирико-драматическое сопрано",
+        "mezzo soprano - меццо-сопрано",
+        "un(a) celebre soprano - знаменитое сопрано",
+        "<a class='ref'>петь</a> da soprano - петь сопрано",
+        "<a class='ref'>соло</a> soprano - l'assolo del soprano"
+      ]
+    },
+    "сочинение": {
+      "text1": "[sočinénie]",
+      "text2": "<i>n.</i>",
+      "text3": "composizione (musicale); opera (letteraria)",
+      "list3": [
+        "музыкальное сочинение - un'opera musicale / una composizione musicale",
+        "сочинение для фортепиано - una composizione per <a class='ref'>pianoforte</a>",
+        "сочинение для солистов и оркестра - una composizione per soli e orchestra",
+        "романс - это музыкальное <a class='ref'>произведение</a> сентиментального характера с инструментальным сопровождением (часто фортепианным) - la romanza è una composizione vocale di carattere sentimentale <a class='ref'>con</a> accompagnamento strumentale (spesso di <a class='ref'>pianoforte</a>)",
+        "музыкальная <a class='ref'>пьеса</a> - pezzo di musica",
+        "сочинение музыки, <a class='ref'>сочинять</a> музыку - comporre musica",
+        "сочинение мелодии, <a class='ref'>сочинять</a> мелодию - comporre una <a class='ref'>melodia</a>",
+        "искусство и tecnica del comporre - arte e tecnica del comporre"
+      ]
+    },
+    "сочинять": {
+      "text1": "[sočinját']",
+      "text2": "<i>vt</i> <i>impf.</i> (<i>pf.</i> сочинить - сочиню, сочинишь)",
+      "text3": "comporre musica; scrivere (creare)",
+      "list3": [
+        "сочинять музыку - comporre musica",
+        "сочинять симфонию - comporre una sinfonia",
+        "сочинять оперу - comporre un'opera (lirica)",
+        "у него появилась склонность к сочинительству - gli è venuto il gusto di comporre",
+        "сочинять на фортепиано - comporre al <a class='ref'>pianoforte</a>",
+        "импровизировать - comporre all'improvviso = improvvisare",
+        "иметь необходимость в покое для сочинения - avere bisogno di pace per comporre",
+        "Россини очень рано перестал сочинять - Rossini smise di comporre <a class='ref'>molto</a> presto",
+        "«Слагаю я весёлые стихи о жизни тленной, тленной и прекрасной» (А. Ахматова) - «Compongo versi allegri su una vita caduca, caduca e bella» (A. Achmatova)",
+        "сочинять рассказ - scrivere un racconto"
+      ]
+    },
+    "спеваться": {
+      "text1": "",
+      "text2": "<i>см.</i> <a class='ref'>спеться</a> ; -аюсь, -аешься; <i>нсв.</i>"
+    },
+    "спевка": {
+      "text1": "[spévka]",
+      "text2": "<i>f</i> (<i>gen.</i> <i>pl</i> спевок)",
+      "text3": "prova del coro",
+      "text4": "см. <a class='ref'>спеться</a>, <a class='ref'>хор</a>"
+    },
+    "спеться": {
+      "text1": "[spét'sja]",
+      "text2": "<i>vi</i> <i>pf.</i> (споюсь, споёшься)",
+      "text3": "1) (<i>fig.</i>) accordarsi; affiatarsi",
+      "list3": [
+        "<a class='ref'>хор</a> ещё не спелся - il coro non è ancora ben affiatato"
+      ],
+      "text4": "2) (<i>colloq.</i>) fare comunella <a class='ref'>con</a>, mettersi in combutta <a class='ref'>con</a>",
+      "list4": [
+        "они спелись с мафией - sono in combutta <a class='ref'>con</a> la mafia"
+      ]
+    },
+    "стипендия": {
+      "text1": "[stipéndija]",
+      "text2": "<i>f</i>",
+      "text3": "borsa di studio",
+      "list3": [
+        "«Я мечтал даже учредить стипендию в университете» (Ф. Достоевский) - «Mi sarebbe piaciuto istituire una borsa di studio per studenti universitari» (F. Dostoevskij)"
+      ],
+      "text4": "см. <a class='ref'>учиться</a>, <a class='ref'>студент</a>, <a class='ref'>студентка</a>"
+    },
+    "строка": {
+      "text1": "[stroká]",
+      "text2": "<i>f</i> (<i>acc.</i> строку, <i>pl</i> строки) (строчка)",
+      "text3": "см. <a class='ref'>линейка</a>"
+    },
+    "строчка": {
+      "text1": "[stróčka]",
+      "text2": "<i>f</i>",
+      "text3": "см. <a class='ref'>линейка</a>"
+    },
+    "струна": {
+      "text1": "[struná]",
+      "text2": "<i>f</i>",
+      "text3": "corda (di strumento musicale)",
+      "list3": [
+        "струнный <a class='ref'>инструмент</a> - strumento a corda",
+        "струнный щипковый <a class='ref'>инструмент</a> - strumento a corde pizzicate",
+        "струнный смычковый <a class='ref'>инструмент</a> - strumento a corde sfregate",
+        "струны скрипки, арфы - le corde del violino, dell'arpa",
+        "семиструнная гитара - chitarra a sette corde",
+        "перебирать струны - toccare le corde (di una chitarra)",
+        "водить смычком по струнам - far andare l'archetto sulle corde",
+        "применить левую педаль на фортепиано - <a class='ref'>una corda</a>",
+        "не применять левую педаль на фортепиано - tre corde, tutte le corde",
+        "открытая струна - corda vuota",
+        "струна, играемая смычком - corda fregata",
+        "обвитая струна - corda ramata",
+        "перекрёстные струны (перекрёстно расположенные струны в фортепиано) - corde incrociate",
+        "быть слишком чувствительным <i>перен.</i> - essere come le corde del violino",
+        "задеть за живое <i>перен.</i> - toccare una corda (sensibile)",
+        "натянутый как струна скрипки, очень напряжённый, возбуждённый, встревоженный <i>перен.</i> - teso come le corde di un violino, <a class='ref'>molto</a> teso, <a class='ref'>agitato</a>, inquieto",
+        "голосовая связка, голосовая струна (Феррейна) (<em>chorda vocalis</em>) - corda vocale"
+      ]
+    },
+    "студент": {
+      "text1": "[studént]",
+      "text2": "<i>m</i>",
+      "text3": "studente",
+      "list3": [
+        "студент по классу виолончели в Академии музыки Святая Чечилия в Риме - studente di violoncello all'Accademia di musica Santa Cecilia di Roma",
+        "студент оркестрового факультета - studente della facolta d'orchestra",
+        "студент консерватории - studente al Conservatorio"
+      ],
+      "text4": "см. <a class='ref'>консерватория</a>, <a class='ref'>факультет</a>, <a class='ref'>класс</a>, <a class='ref'>студентка</a>, <a class='ref'>учиться</a>, <a class='ref'>стипендия</a>, <a class='ref'>общежитие</a>"
+    },
+    "студентка": {
+      "text1": "[studéntka]",
+      "text2": "<i>f</i>",
+      "text3": "studentessa",
+      "list3": [
+        "Мария - студентка по классу <a class='ref'>pianoforte</a> Московской консерватории - Maria è studentessa di pianoforte al Conservatorio di Mosca",
+        "Мария - студентка факультета пения - Maria è studentessa della facolta di canto"
+      ],
+      "text4": "см. <a class='ref'>консерватория</a>, <a class='ref'>факультет</a>, <a class='ref'>класс</a>, <a class='ref'>студент</a>, <a class='ref'>учиться</a>, <a class='ref'>стипендия</a>, <a class='ref'>общежитие</a>"
+    },
+    "стул": {
+      "text1": "[stul]",
+      "text2": "<i>m</i> (<i>pl</i> стулья)",
+      "text3": "sedia (<i>f</i>), seggiola (<i>f</i>)",
+      "list3": [
+        "сидеть на стуле - sedere su una sedia",
+        "садись, присаживайся - siediti",
+        "садись, пожалуйста, на тот стул - siediti pure su quella seggiola",
+        "встать со стула - alzarsi dalla sedia",
+        "вставать на стул - salire su una sedia",
+        "сидеть на краешке стула - sedere in punta di sedia",
+        "ёрзать на стуле - agitarsi sulla sedia",
+        "предложить стул - offrire una sedia",
+        "приставить стул к фортепиано - avvicinare la sedia al <a class='ref'>pianoforte</a>",
+        "он приставил стул к столу - lui avvicinò la sedia al tavolo",
+        "поставить стул к стене - appoggiare la sedia alla parete",
+        "отодвинуть стул от стены - scostare la sedia dalla parete",
+        "он придвинул стул к кровати - ha accostato la sedia al letto",
+        "стулья / кресла первого, второго, третьего ряда в театрах, концертных залах - sedia / poltrona di prima, di seconda, di terza fila, in teatri, sale da concerto",
+        "штаны просиживать, ничего не делать (букв. греть стул / место / скамейку) - scaldare la sedia / il posto / il banco",
+        "«Дюжина стульев базарной работы да диван, на котором жутко сидеть» (М. Салтыков-Щедрин) - «Una dozzina di sedie rozze e un divano scomodissimo» (M. Saltykov-Ščedrin)"
+      ]
+    },
+    "ступень": {
+      "text1": "[stupén']",
+      "text2": "<i>f</i> <i>муз.</i>",
+      "text3": "grado",
+      "list3": [
+        "Ступени гаммы имеют следующие названия: I° Тоника (нижняя), II° Верхний вводный <a class='ref'>тон</a>, III° Верхняя медианта, IV° Субдоминанта (нижняя доминанта), V° Доминанта (верхняя), VI° Нижняя медианта, VII° Вводный <a class='ref'>тон</a> (нижний). - I gradi della scala hanno le seguenti denominazioni: I° Tonica, II° Sopratonica, III° Caratteristica o Mediante, IV° Sottodominante, V° Dominante, VI° Sopradominante, VII° Sensibile."
+      ],
+      "text4": "см. <a class='ref'>гамма</a>"
+    },
+    "сцена": {
+      "text1": "[scéna]",
+      "text2": "<i>f</i>",
+      "text3": "scena; palco (театральные подмостки)",
+      "list3": [
+        "итальянская музыкальная сцена - la scena musicale italiana",
+        "в середине сцены - nel mezzo della scena",
+        "в глубине сцены - in fondo alla scena",
+        "по бокам сцены - ai lati della scena",
+        "за кулисами - dietro (la) scena / le scene; dietro le quinte, fuori scena",
+        "выйти на сцену - entrare / comparire / uscire in scena",
+        "«На маленькой сцене сидел у пианино длинный молодой человек» (А. Толстой) - «Sul palco, al <a class='ref'>pianoforte</a>, sedeva uno spilungone» (A. Tolstoj)"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
     },
     "такт": {
       "text1": "[takt]",
@@ -4813,6 +6553,55 @@
         "от первой октавы до ля, тактовая черта - Do centrale su fino al La, stanghetta",
         "Красная Шапочка дёрнула за верёвочку - дверь и открылась. - Cappuccetto Rosso tirò la stanghetta e la porta si aprì."
       ]
+    },
+    "талант": {
+      "text1": "[talánt]",
+      "text2": "<i>m</i>",
+      "text3": "talento, ingegno (ум, интеллект; умственные способности), dote",
+      "list3": [
+        "обладать большим талантом - avere un gran talento, essere <a class='ref'>molto</a> dotato",
+        "крупный талант - gran talento",
+        "она - большой талант - è un'artista di grande talento",
+        "обладать талантом - avere talento",
+        "в ней угадывается большой талант - deve avere un gran talento",
+        "многогранный талант - talento poliedrico",
+        "могучий талант - talento portentoso",
+        "несравненный талант - talento inarrivabile",
+        "ярко выраженный талант - uno spiccato talento",
+        "поэтический талант - talento poetico",
+        "педагогический талант - talento pedagogico",
+        "взлёт таланта - talento in ascesa",
+        "яркость таланта - forza del talento",
+        "талантом его Бог не обидел - era pieno di talento",
+        "он не лишён таланта - non gli manca il talento",
+        "почитать талант - ammirare il talento",
+        "он восхищается её талантом - ammira il suo talento",
+        "поклонение таланту - ammirazione del talento",
+        "поклонники его таланта - i suoi estimatori",
+        "зарыть талант в землю - buttare alle ortiche il proprio talento (букв. бросить свой талант в заросли крапивы)",
+        "загубить / закопать талант - sprecare il (proprio) talento",
+        "пропивать талант - rovinare il proprio talento abusando nel bere",
+        "его талант потускнел - il suo talento non è più quello di una volta",
+        "как могут уживаться в одном человеке талант и злодейство? - possibile che in una persona convivano talento e cattiveria?!",
+        "«Краткость - сестра таланта» (А. Чехов) - «La brevità è sorella del talento» (A. Čechov)",
+        "«Угораздило меня с умом и талантом родиться в России!» (А. Пушкин) - «Che disdetta l'esser nato in Russia con cotanto cervello e talento!» (A. Puškin)",
+        "«Свои рассказы Куприн писал легко, не задумываясь, брал талантом» (К. Паустовский) - «Kuprin scrisse i suoi racconti senza fatica, senza scervellarsi, raggiungendo il suo scopo esclusivamente grazie al suo talento» (K. Paustovskij)",
+        "какой талант! - è un genio!",
+        "рождающийся талант - ingegno che sboccia",
+        "талант, не имеющий возможности раскрыться / развернуться; загубленный талант - un ingegno sacrificato",
+        "загубить, растратить свой талант по мелочам - sciupare il proprio ingegno",
+        "врождённый талант, природные способности - capacità ingenite",
+        "талантливый человек - uomo d'ingegno",
+        "талантливая работа - lavoro d'ingegno",
+        "интеллектуальный труд - lavoro dell'ingegno",
+        "гениальное <a class='ref'>произведение</a> - opera d'ingegno",
+        "<a class='ref'>произведение</a>, свидетельствующее о большом таланте (автора) - opera che rivela un grande ingegno",
+        "его талант иссяк - la sua vena creativa si è disseccata",
+        "иметь много дарований - avere molte doti",
+        "иметь кучу дарований (букв. мешок) - avere un sacco di doti",
+        "врождённые способности - naturali"
+      ],
+      "text4": "см. <a class='ref'>гений</a>, <a class='ref'>музыкальность</a>"
     },
     "театр": {
       "text1": "[teátr]",
@@ -4895,6 +6684,21 @@
         "см. <a class='ref'>петь</a>"
       ]
     },
+    "тенор": {
+      "text1": "[ténor]",
+      "text2": "<i>m</i> (<i>pl</i> тенора, <i>dim.</i> тенорок)",
+      "text3": "tenore, <a class='ref'>voce</a> di tenore, <a class='ref'>voce</a> tenorile",
+      "list3": [
+        "первый тенор - primo tenore",
+        "первый тенор в комической опере - primo tenore nell'opera buffa",
+        "драматический тенор или сильный (героический) - tenore drammatico, o potente (eroico)",
+        "лирический тенор - tenore lirico",
+        "лирико-драматический тенор - tenore lirico spinto",
+        "теноровая <a class='ref'>партия</a> - la parte del tenore",
+        "<a class='ref'>соло</a> тенора - l'assolo del tenore"
+      ],
+      "text4": "см. <a class='ref'>голос</a>, <a class='ref'>петь</a>, <a class='ref'>баритон</a>, <a class='ref'>бас</a>"
+    },
     "тон": {
       "text1": "[ton]",
       "text2": "<i>m</i> (<i>pl</i> тоны, тона)",
@@ -4923,6 +6727,73 @@
       "text3": "<a class='ref'>triade</a>",
       "text4": "см. <a class='ref'>аккорд</a>, <a class='ref'>accordo</a>"
     },
+    "урок": {
+      "text1": "[urók]",
+      "text2": "<i>m</i>",
+      "text3": "1) lezione (<i>f</i>); compito",
+      "list3": [
+        "задавать задание - assegnare il compito",
+        "учить (делать) уроки - fare i compiti",
+        "хорошо знать <a class='ref'>урок</a> - sapere bene il compito",
+        "повторить задание - ripetere il compito",
+        "повторить урок - ripassare la lezione",
+        "повторить / пробежать урок - dare una passata alla lezione",
+        "учить урок - studiare una lezione",
+        "не знать урока - non sapere la lezione",
+        "присутствовать на уроках / на занятиях - assistere alle lezioni",
+        "прогулять урок; сачкануть <i>разг.</i> - salare / marinare la lezione <i>школ.</i> <i>жарг.</i>",
+        "её не было на лекции (уроке) - è stata assente alla lezione",
+        "задать много уроков (на дом) - dare molti compiti per casa",
+        "давать уроки (зарабатывать деньги уроками) - dare lezioni",
+        "частные уроки - ripetizioni (lezioni private)",
+        "дать / <i>перен.</i> преподать урок, проучить - dare una lezione",
+        "брать (частные) уроки - andare a ripetizione",
+        "я беру уроки игры на фортепьяно (в школе) - prendo lezioni di <a class='ref'>pianoforte</a> (a scuola)",
+        "урок музыки - lezione di musica",
+        "урок гармонии - lezione di <a class='ref'>armonia</a>",
+        "lezione sulla storia della musica italiana - урок / лекция об истории итальянской музыки",
+        "он проучился на фортепиано четыре года - studiò il <a class='ref'>pianoforte</a> per quattro anni",
+        "продолжительность урока - la durata della lezione",
+        "урок длится 45 минут - la lezione dura 45 minuti",
+        "перерыв между уроками - intervallo tra una lezione e l'altra",
+        "полезный урок - lezione salutifera",
+        "нерегулярные занятия - lezioni saltuarie",
+        "он занимается нерегулярно - salta le lezioni",
+        "не посещать лекций / уроков; не ходить в школу - disertare le lezioni",
+        "прочитать курс лекций - dare un corso di lezioni",
+        "(прослушать) слушать курс лекций - seguire le lezioni",
+        "он читает лекции неинтересно - le sue lezioni non sono interessanti (coinvolgenti)",
+        "его лекции действуют на студентов усыпляюще - le sue lezioni sono soporifere",
+        "у меня окно - ho un buco (una pausa tra due lezioni)",
+        "занятия начались - le lezioni sono ricominciate",
+        "итоговые занятия - ultime lezioni"
+      ],
+      "text4": "2)",
+      "list4": [
+        "дать (преподать) хороший урок - dare una bella lezione",
+        "извлечь полезный урок из чего-л. - trarre utili insegnamenti da qc",
+        "послужить уроком - servire di lezione",
+        "ему в назидание - che gli serva di lezione",
+        "это послужит ему уроком - gli servirà da lezione",
+        "это тебе наука! - ti servirà da lezione",
+        "надо его хорошенечко проучить - bisogna dargli una bella lezione",
+        "получить (хороший) урок / нагоняй - buscarsi una (sonora) lezione",
+        "проучить - dare una lezione a <i>qd</i>, insegnare a vivere",
+        "получить суровый урок - ricevere una dura lezione",
+        "«хамов надо учить!» (А. Степанов) - «Sono dei villani, e hanno bisogno di una lezione!» (A. Stepanov)"
+      ]
+    },
+    "успеваемость": {
+      "text1": "[uspeváemost']",
+      "text2": "<i>f</i>",
+      "text3": "profitto scolastico",
+      "list3": [
+        "плохая успеваемость - scarso profitto",
+        "у него хорошая успеваемость - è bravo a scuola",
+        "судить учеников по успеваемости - valutare secondo il rendimento"
+      ],
+      "text4": "см. <a class='ref'>класс</a>, <a class='ref'>ученик</a>, <a class='ref'>дневник</a>"
+    },
     "участвовать": {
       "text1": "[učástvovat']",
       "text2": "<i>vi</i> <i>impf.</i> e <i>pf.</i> (участвую, участвуешь в + <i>prepos.</i>)",
@@ -4943,6 +6814,124 @@
         "исключить кого-либо из числа участников конкурса - escludere qd dal numero dei partecipanti al concorso"
       ]
     },
+    "ученик": {
+      "text1": "[učeník]",
+      "text2": "<i>m</i> (<i>gen.</i> ученика, <i>pl</i> ученики, <i>f</i> ученица)",
+      "text3": "allievo, alunno, scolaro; studente",
+      "list3": [
+        "ученик второго класса - alunno di seconda",
+        "ученик средней школы - studente della scuola media",
+        "ученик (ученица); практикант (практикантка); подмастерье - apprendista",
+        "ученик (ученица); стажёр (стажёрка), практикант (практикантка) - tirocinante",
+        "ученик (ученица) частной школы; экстерн - privatista",
+        "способный ученик - bravo scolaro",
+        "неспособный ученик (к музыке) - alunno incapace (alla musica)",
+        "неспособный ученик, зубрила <i>школ.</i> - sgobbone",
+        "нерадивый (ученик), лоботряс, лодырь, филон - scaldabanchi (букв. греющий скамьи; существует также выражение: scaldare la sedia / il posto / il banco - штаны просиживать, ничего не делать)",
+        "успевающий ученик - alunno che ha ottenuto la sufficienza",
+        "неуспевающий ученик - alunno pieno di insufficienze",
+        "нерадивый ученик - un ragazzo negligente nello studio",
+        "последний (ученик) в классе - l'ultimo della classe",
+        "прилежный ученик - allievo diligente (secchione) / uno scolaro <a class='ref'>molto</a> preciso",
+        "uno scolaro ordinato - аккуратный ученик",
+        "лучший (первый) ученик - il primo della classe",
+        "он лучший ученик - è il miglior alunno della scuola",
+        "примерный ученик - un modello di scolaro",
+        "ученик, переведённый в следующий <a class='ref'>класс</a> - promosso",
+        "опрашивать учеников - interrogare gli alunni",
+        "она довольна своими учениками - è contenta dei suoi allievi",
+        "она терроризирует учеников - gli allievi hanno paura di lei",
+        "ученик ей нагрубил - l'allievo le ha risposto male",
+        "пересадить ученика - far spostare un alunno (in classe)",
+        "воспитывать, приобретать учеников - fare allievi",
+        "подтягивать отстающего ученика - recuperare un alunno insufficiente",
+        "учительница тянет слабых учеников - la maestra aiuta gli allievi insufficienti",
+        "учительница занялась с отстающими учениками - la maestra si occupò degli allievi insufficienti",
+        "подтягивать дисциплину - migliorare la disciplina",
+        "никогда у меня не было такого бестолкового ученика! - mai avuto un allievo così duro di comprendonio!",
+        "ты должен равняться на лучших учеников - prendi esempio dagli allievi migliori",
+        "учительница следила, чтобы ученики не списывали друг у друга - la maestra badava a che gli alunni non copiassero",
+        "она не любила, когда ученики ябедничали ей на товарищей - non le piaceva che i suoi allievi facessero la spia",
+        "«Способные и прилежные ученики не наушничали никогда» (Н. Помяловский) - «Gli allievi dotati e bravi non facevano mai la spia» (N. Pomjalovskij)",
+        "он наушничал на своих товарищей учителю - denunciava al maestro le marachelle dei suoi compagni",
+        "распустить учеников (по домам, на каникулы) - licenziare la scolaresca"
+      ]
+    },
+    "учиться": {
+      "text1": "[učít'sja]",
+      "text2": "studiare",
+      "list2": [
+        "учиться во втором классе - studiare in seconda classe",
+        "Марио учится в первом классе - Mario fa la prima elementare",
+        "на каком курсе ты учишься? - che anno fai?",
+        "я учусь на четвёртом курсе - il quattro anno / faccio il quattro anno",
+        "учиться игре на рояле - studiare il pianoforte",
+        "учиться в классе фортепиано - studiare nella classe di <a class='ref'>pianoforte</a>",
+        "он учится играть на скрипке - lui studia il violino",
+        "учиться пению - studiare il canto",
+        "учиться рисованию - studiare disegno, imparare a disegnare",
+        "изучать язык - studiare una lingua",
+        "я изучаю итальянский язык - studio la lingua italiana",
+        "он решил заняться языками - decise di studiare le lingue",
+        "выучить язык самоучкой - studiare una lingua da solo",
+        "учиться в академии - studiare all'accademia",
+        "учиться в университете - studiare all'università",
+        "учиться на юридическом факультете - studiare legge",
+        "учиться заочно - studiare per corrispondenza",
+        "усердно учиться - studiare <a class='ref'>con</a> fervore",
+        "упорно работать / учиться - lavorare / studiare <a class='ref'>con</a> accanimento",
+        "охотно учиться - avere la volontà di studiare",
+        "заставлять учиться - far studiare",
+        "хоть тресни не могу заставить его заниматься - non riesco a farlo studiare neanche a morire",
+        "взяться за ученье - mettersi a studiare",
+        "заниматься много, но безуспешно - studiare <a class='ref'>molto</a> ma non profittare",
+        "ему трудно учиться - trova difficoltà a studiare",
+        "ему лень заниматься - non ha voglia di studiare",
+        "у неё нет настроения заниматься сегодня - oggi non se la sente proprio di studiare",
+        "у него нет ни малейшего желания учиться - non ha nessuna voglia di studiare",
+        "учиться через пень колоду - studiare alla meno peggio",
+        "он не хочет учиться, и я не знаю, как быть - lui non vuole studiare e io non so come fare",
+        "вместо того, чтобы заниматься, он спит - invece di studiare dorme",
+        "следовало больше заниматься - bisognava studiare di più",
+        "учиться у хороших учителей - studiare sotto buoni maestri",
+        "он побуждает их учиться - li fa studiare",
+        "ты, главное дело, занимайся! - il tuo compito principale è studiare",
+        "он не даёт им заниматься - non li lascia studiare",
+        "он мешает нам заниматься - ci impedisce di studiare",
+        "он начал заниматься по-настоящему - si è messo a studiare sul serio",
+        "он решил по-настоящему взяться за учёбу - (lui) decise di mettersi davvero a studiare",
+        "вновь взяться за учение / учёбу - riporsi a studiare",
+        "снова взяться за работу / за учёбу - tornare a lavorare / a studiare",
+        "с головой уйти в учёбу - mettersi a studiare a corpo morto",
+        "учиться на медные деньги - studiare disponendo di pochi mezzi"
+      ],
+      "text3": "<a class='ref'>студент</a>, <a class='ref'>студентка</a>, <a class='ref'>стипендия</a>"
+    },
+    "факультет": {
+      "text1": "[fakul'tét]",
+      "text2": "<i>m</i>",
+      "text3": "facoltà (<i>f</i>)",
+      "list3": [
+        "факультет пения - facoltà di canto",
+        "филологический факультет - facoltà di lettere (di lingue e lettere)",
+        "педагогический факультет - facoltà di pedagogia / di magistero",
+        "философский факультет - facoltà di filosofia",
+        "переводческий факультет - facoltà (scuola superiore) per interpreti e traduttori",
+        "богословский факультет - facoltà di teologia",
+        "юридический факультет - facoltà di giurisprudenza",
+        "поступить на факультет - iscriversi a",
+        "он поступил на биологический факультет - si è iscritto a biologia",
+        "кончить философский факультет - laurearsi in filosofia",
+        "перейти на другой факультет - cambiare facoltà",
+        "он перешёл с физического факультета на биологический - è passato da fisica a biologia",
+        "декан факультета - preside (<i>m</i>)",
+        "деканат - presidenza di facoltà",
+        "он гордость факультета - è l'orgoglio della facoltà tutta",
+        "на факультете преобладали девушки - in quella facoltà prevalevano le ragazze",
+        "у него шестьдесят часов в год на филологическом факультете - fa sessanta ore all'anno alla facoltà di lettere"
+      ],
+      "text4": "см. <a class='ref'>консерватория</a>, <a class='ref'>студент</a>, <a class='ref'>студентка</a>, <a class='ref'>учиться</a>"
+    },
     "фермата": {
       "text1": "[fermáta]",
       "text2": "-ы; <i>ж.</i> <i>муз.</i>",
@@ -4950,6 +6939,20 @@
       "list3": [
         "Фермата (ит. corona, иногда punto coronato) - это знак, используемый в музыкальной нотации для увеличения длительности ноты или паузы сверх ее обычного значения. - La corona, a volte anche detta punto coronato, è un segno usato nella notazione musicale per prolungare la durata di una nota o di una pausa oltre al valore abituale."
       ]
+    },
+    "филармония": {
+      "text1": "[filarmónija]",
+      "text2": "<i>f</i>",
+      "text3": "filarmonica, società filarmonica",
+      "text4": "В Италии словом <em>филармония</em> называют ассоциацию любителей мызыки, устраивающую концерты, а иногда и курсы; также этим словом называют резиденцию такой ассоциации и место проведения концертов:",
+      "list4": [
+        "билеты на <a class='ref'>концерт</a> продаются в филармонии - i biglietti del concerto si vendono alla filarmonica",
+        "<a class='ref'>концерт</a> состоится в 9,30 в Филармонии (<a class='ref'>концерт</a>, устраиваемый филармоническим обществом, состоится в 9,30) - il concerto si terrа alle 9,30 alla Filarmonica",
+        "Филармонический <a class='ref'>оркестр</a> делла Скала - la Filarmonica della Scala",
+        "Региональный <a class='ref'>оркестр</a> Филармонии Венета - Orchestra Regionale Filarmonia Veneta",
+        "филармонический <a class='ref'>оркестр</a> - orchestra filarmonica"
+      ],
+      "text5": "однако в Италии чаще всего когда хотят пойти на <a class='ref'>концерт</a>, ссылаются на конкретный <a class='ref'>театр</a>, например: «andiamo al Teatro alla Scala»"
     },
     "хор": {
       "text1": "[chor]",
@@ -5023,12 +7026,48 @@
         "Хроматическая <a class='ref'>гамма</a> состоит только из полутонов (5 хроматических и 7 диатонических). Хроматическая <a class='ref'>гамма</a> может начинаться с любого звука, следуя вплоть до октавы. - La scala cromatica è formata di soli semitoni (5 cromatici e 7 diatonici). La scala cromatica può iniziare da un suono qualsiasi, seguendo fino all'ottava."
       ]
     },
+    "экзамен": {
+      "text1": "[ekzámen]",
+      "text2": "<i>m</i>",
+      "text3": "esame, prova (<i>f</i>)",
+      "list3": [
+        "письменный экзамен - esame scritto (prova scritta, lo scritto)",
+        "устный экзамен - esame orale (l'orale)",
+        "экзамен по истории - esame di storia",
+        "экзамен по скрипке - esame di violino",
+        "экзамены по курсу фортепиано - esami del corso di pianoforte",
+        "сертифицированные экзамены для подтверждения музыкального уровня в области пения, инструментов, композиции, камерной музыки - esami certificati per attestare livelli musicali in canto, strumento, composizione, musica da camera",
+        "экзамены на аттестацию музыкальных навыков - esami per la certificazione delle competenze musicali",
+        "вступительный экзамен (приёмные экзамены) - esame d'ammissione",
+        "экзамены на аттестат зрелости (выпускные экзамены) - esami di maturità",
+        "держать экзамен - sostenere (dare) un esame",
+        "направление на экзамен - statino",
+        "сдать экзамены по всем предметам - passare l'esame in tutte le materie",
+        "выдержать экзамены - superare (passare) gli esami",
+        "выдержать экзамен с отличием - passare l'esame a pieni voti",
+        "не выдержать экзамен (провалиться на экзамене) - essere bocciato",
+        "он еле еле сдал экзамен - ha passato l'esame per il rotto della cuffia",
+        "государственные экзамены - esami di laurea",
+        "принимать экзамен у кого-л. - fare un esame"
+      ]
+    },
     "энгармонизм": {
       "text1": "[engarmonízm]",
       "text2": "-а; <i>m</i> (от <i>греч.</i> en - в и harmonía - созвучие);",
       "list2": [
         "Две ноты одинаковой высоты, но с различными именами называются omologhi или omofoni DO♯ RE♭. - Due note della stessa altezza ma di nome diverso si dicono omologhi o omofoni DO♯ RE♭."
       ]
+    },
+    "ярус": {
+      "text1": "[járus]",
+      "text2": "<i>m</i> <i>театр</i>",
+      "text3": "ordine di palchi",
+      "list3": [
+        "первый / второй ярус - primo / secondo ordine di palchi",
+        "бельэтаж - primo ordine di palchi",
+        "трёхъярусный - a tre ordini di palchi"
+      ],
+      "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>концерт</a>"
     }
   },
   "Композиторы": {
