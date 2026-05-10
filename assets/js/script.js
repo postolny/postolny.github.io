@@ -337,15 +337,18 @@ $(function() {
   $.getJSON("/assets/tooltips.json").done(function(data) {
     tooltips = data;
   });
-  const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  const isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+  let hoverTimer;
   if (!isTouch) {
-    let hoverTimer;
     $(document).on("mouseenter", "i", function() {
+      clearTimeout(hoverTimer);
       const el = this;
       hoverTimer = setTimeout(() => {
         const word = $(el).text().trim();
         const tooltip = tooltips[word];
-        if (tooltip) showTooltip(el, tooltip);
+        if (tooltip) {
+          showTooltip(el, tooltip);
+        }
       }, 200);
     });
     $(document).on("mouseleave", "i", function() {
@@ -413,7 +416,7 @@ $(function() {
   });
 
   function initAutocomplete() {
-    $("#dizionario-search").autocomplete({
+    dizSearch.autocomplete({
       source: function(request, response) {
         const term = normalize(request.term);
         let exact = [];
@@ -447,12 +450,15 @@ $(function() {
           dizionarioCorrente = ui.item.dizionario;
           $("#dizionario").val(dizionarioCorrente);
         }
+        setTimeout(function() {
+          dizSearch.blur();
+        }, 100);
         showDefinition(ui.item.value);
         stopAudio();
       }
     });
   }
-  $("#dizionario-search").on("keydown", function(e) {
+  dizSearch.on("keydown", function(e) {
     if (e.key === "Enter") {
       const ac = $(this).autocomplete("instance");
       if (ac && ac.menu.element.is(":visible")) {
@@ -474,9 +480,9 @@ $(function() {
   });
   $("#dizionario").on("change", function() {
     dizionarioCorrente = $(this).val();
-    $("#dizionario-search").val("");
+    dizSearch.val("");
     $("#dizionario-results").html("");
-    $("#dizionario-search").autocomplete("destroy");
+    dizSearch.autocomplete("destroy");
     initAutocomplete();
     stopAudio();
   });
@@ -642,10 +648,10 @@ $(function() {
       let match = matches.find(m => m.dizionario === dizionarioCorrente) || matches[0];
       dizionarioCorrente = match.dizionario;
       $("#dizionario").val(match.dizionario);
-      $("#dizionario-search").val(match.key);
+      dizSearch.val(match.key);
       showDefinition(match.key);
     } else {
-      $("#dizionario-search").val(wordRaw);
+      dizSearch.val(wordRaw);
       showDefinition(wordRaw);
     }
   });
