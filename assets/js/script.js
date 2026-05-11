@@ -47,8 +47,13 @@ $(function() {
   let playClicked = false;
   let dizionari = {};
   let globalIndex = {};
+  let prefixIndex = {};
+  let allEntries = [];
+  let entriesByDictionary = {};
   let dizionarioCorrente = null;
   const dizSearch = $("#dizionario-search");
+  const dizResult = $("#dizionario-results");
+  const diz = $("#dizionario");
   const inputClear = $(".clear-btn");
   const charMenu = $('.char-menu');
 
@@ -382,34 +387,47 @@ $(function() {
     const value = this.value;
     inputClear.toggle(!!value);
     if (!value) {
-      $("#dizionario-results").html("");
+      dizResult.html("");
       stopAudio();
       $(this).autocomplete("close");
     }
   });
   inputClear.on("click", function() {
     dizSearch.val("").trigger("input").focus();
-    $("#dizionario-results").html("");
+    dizResult.html("");
     stopAudio();
     dizSearch.autocomplete("close");
   });
   $.getJSON("/assets/dizionari.json").done(function(data) {
     dizionari = data;
     for (let dizionario in dizionari) {
+      entriesByDictionary[dizionario] = [];
       for (let key in dizionari[dizionario]) {
-        const normalized = key.toLowerCase().trim();
+        const normalized = normalize(key);
+        const entry = {
+          dizionario,
+          key
+        };
+        allEntries.push(entry);
+        entriesByDictionary[dizionario].push(entry);
         if (!globalIndex[normalized]) {
           globalIndex[normalized] = [];
         }
-        globalIndex[normalized].push({
-          dizionario: dizionario,
-          key: key
-        });
+        globalIndex[normalized].push(entry);
+        for (let i = 1; i <= normalized.length; i++) {
+          const prefix = normalized.slice(0, i);
+          if (!prefixIndex[prefix]) {
+            prefixIndex[prefix] = [];
+          }
+          if (!prefixIndex[prefix].includes(normalized)) {
+            prefixIndex[prefix].push(normalized);
+          }
+        }
       }
     }
-    $("#dizionario").append($("<option>").val("all").text("Все словари"));
+    diz.append($("<option>").val("all").text("Все словари"));
     for (let dizionario in dizionari) {
-      $("#dizionario").append($("<option>").val(dizionario).text(dizionario));
+      diz.append($("<option>").val(dizionario).text(dizionario));
     }
     dizionarioCorrente = "all";
     initAutocomplete();
@@ -448,7 +466,7 @@ $(function() {
       select: function(event, ui) {
         if (ui.item.dizionario) {
           dizionarioCorrente = ui.item.dizionario;
-          $("#dizionario").val(dizionarioCorrente);
+          diz.val(dizionarioCorrente);
         }
         setTimeout(function() {
           dizSearch.blur();
@@ -479,10 +497,10 @@ $(function() {
       stopAudio();
     }
   });
-  $("#dizionario").on("change", function() {
+  diz.on("change", function() {
     dizionarioCorrente = $(this).val();
     dizSearch.val("");
-    $("#dizionario-results").html("");
+    dizResult.html("");
     dizSearch.autocomplete("destroy");
     initAutocomplete();
     stopAudio();
@@ -494,46 +512,27 @@ $(function() {
     let matches = globalIndex[normalized];
     let value;
     if (!matches && normalized.length >= 3) {
-      let bestEntry = null;
-      for (let key in globalIndex) {
-        const normalizedKey = normalize(key);
-        if (normalizedKey.startsWith(normalized)) {
-          if (!bestEntry || key.length < bestEntry.key.length) {
-            bestEntry = {
-              key,
-              matches: globalIndex[key],
-              priority: 1
-            };
-          }
-        } else if (normalizedKey.includes(normalized)) {
-          if (!bestEntry || bestEntry.priority > 2 || (bestEntry.priority === 2 && key.length < bestEntry.key.length)) {
-            bestEntry = {
-              key,
-              matches: globalIndex[key],
-              priority: 2
-            };
-          }
-        }
-      }
-      if (bestEntry) {
-        matches = bestEntry.matches;
+      const candidates = prefixIndex[normalized];
+      if (candidates && candidates.length > 0) {
+        const bestKey = candidates[0];
+        matches = globalIndex[bestKey];
       }
     }
     if (!matches) {
-      $("#dizionario-results").html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
+      dizResult.html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
       return;
     }
     if (dizionarioCorrente !== "all") {
       matches = matches.filter(m => m.dizionario === dizionarioCorrente);
     }
     if (matches.length === 0) {
-      $("#dizionario-results").html("Не найдено в этом словаре");
+      dizResult.html("Не найдено в этом словаре");
       return;
     }
     const match = matches[0];
     value = dizionari[match.dizionario][match.key];
     if (!value) {
-      $("#dizionario-results").html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
+      dizResult.html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
       return;
     }
     let audioBtn = "";
@@ -574,28 +573,13 @@ $(function() {
         }
       });
     }
-    $("#dizionario-results").html(html);
+    dizResult.html(html);
   }
 
   function showRandomEntry() {
-    const dizionarioEntries = [];
-    for (let key in globalIndex) {
-      globalIndex[key].forEach(e => {
-        if (dizionarioCorrente !== "all" && e.dizionario !== dizionarioCorrente) {
-          return;
-        }
-        // dizionarioEntries.push(e.key);
-        dizionarioEntries.push(e);
-      });
-    }
-    if (dizionarioEntries.length === 0) {
-      console.warn("Нет доступных статей");
-      return;
-    }
-    const random = dizionarioEntries[Math.floor(Math.random() * dizionarioEntries.length)];
-    // if (dizionarioCorrente === "all") {
-    //   $("#dizionario").val(random.dizionario);
-    // }
+    let list = dizionarioCorrente === "all" ? allEntries : entriesByDictionary[dizionarioCorrente];
+    if (!list || list.length === 0) return;
+    const random = list[Math.floor(Math.random() * list.length)];
     showDefinition(random.key);
     stopAudio();
   }
@@ -650,7 +634,7 @@ $(function() {
     if (matches && matches.length > 0) {
       let match = matches.find(m => m.dizionario === dizionarioCorrente) || matches[0];
       dizionarioCorrente = match.dizionario;
-      $("#dizionario").val(match.dizionario);
+      diz.val(match.dizionario);
       dizSearch.val(match.key);
       showDefinition(match.key);
     } else {
