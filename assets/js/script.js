@@ -603,7 +603,9 @@ $(function() {
     const icon = $(this).find('.random-icon');
     icon.removeClass('animate');
     requestAnimationFrame(() => {
-      icon.addClass('animate');
+      requestAnimationFrame(() => {
+        icon.addClass('animate');
+      });
     });
     dizSearch.val("");
     showRandomEntry();
