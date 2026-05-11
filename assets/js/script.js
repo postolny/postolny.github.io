@@ -454,6 +454,7 @@ $(function() {
           dizSearch.blur();
         }, 100);
         showDefinition(ui.item.value);
+        scrollToElement('.controls');
         stopAudio();
       }
     });
@@ -505,7 +506,7 @@ $(function() {
             };
           }
         } else if (normalizedKey.includes(normalized)) {
-          if (!bestEntry || (bestEntry.priority > 2) || (bestEntry.priority === 2 && key.length < bestEntry.key.length)) {
+          if (!bestEntry || bestEntry.priority > 2 || (bestEntry.priority === 2 && key.length < bestEntry.key.length)) {
             bestEntry = {
               key,
               matches: globalIndex[key],
@@ -518,23 +519,19 @@ $(function() {
         matches = bestEntry.matches;
       }
     }
-    if (matches && matches.length > 0) {
-      if (dizionarioCorrente === "all") {
-        match = matches[0];
-      } else {
-        match = matches.find(m => m.dizionario === dizionarioCorrente);
-      }
-      if (!match) {
-        match = matches[0];
-      }
-      if (match) {
-        value = dizionari[match.dizionario][match.key];
-        // if (dizionarioCorrente === "all") {
-        //   dizionarioCorrente = match.dizionario;
-        //   $("#dizionario").val(match.dizionario);
-        // }
-      }
+    if (!matches) {
+      $("#dizionario-results").html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
+      return;
     }
+    if (dizionarioCorrente !== "all") {
+      matches = matches.filter(m => m.dizionario === dizionarioCorrente);
+    }
+    if (matches.length === 0) {
+      $("#dizionario-results").html("Не найдено в этом словаре");
+      return;
+    }
+    const match = matches[0];
+    value = dizionari[match.dizionario][match.key];
     if (!value) {
       $("#dizionario-results").html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
       return;
@@ -608,7 +605,11 @@ $(function() {
     requestAnimationFrame(() => {
       icon.addClass('animate');
     });
+    dizSearch.val("");
     showRandomEntry();
+    setTimeout(function() {
+      scrollToElement('.controls');
+    }, 900);
   });
   $(document).on("click", ".audio-btn", function() {
     const btn = $(this);
