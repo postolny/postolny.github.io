@@ -1616,7 +1616,7 @@
       "text3": "энергичный; сильный",
       "text4": "происходит от сущ. <em>energia</em> <i>f</i> <em>энергия, сила</em>",
       "list4": [
-        "un insegnante energico - энергичный, деятельный преподаватель",
+        "un <a class='ref'>insegnante</a> energico - энергичный, деятельный <a class='ref'>преподаватель</a>",
         "un genitore energico - энергичный, активный родитель",
         "avere un carattere energico - иметь энергичный характер",
         "aspetto energico - бодрый вид",
@@ -2128,6 +2128,30 @@
       "text2": "<i>avv</i> <i>m</i>",
       "text3": "<i>муз.</i> указание, предписывающее заметное ускорение темпа"
     },
+    "insegnante": {
+      "audio": "/audio/dizionario/insegnante.mp3",
+      "text1": "[inseɲˈɲante]",
+      "text2": "<i>m</i> <i>f</i>",
+      "text3": "человек, занимающийся профессиональной преподавательской деятельностью; учитель (слово <em>insegnante</em> как название профессии обычно употребляется в школьной среде, тогда как в вузах чаще используется <em>docente</em> (docente universitario)",
+      "list3": [
+        "insegnante di matematica / musica - <a class='ref'>преподаватель</a> математики / музыки",
+        "insegnante di <a class='ref'>pianoforte</a> - <a class='ref'>преподаватель</a> по фортепиано",
+        "è un'insegnante eccellente - она прекрасный <a class='ref'>педагог</a>",
+        "bravo insegnante - хороший учитель",
+        "insegnante pagato a ore - почасовик",
+        "farsi insegnante - стать учителем",
+        "insegnante (ancora) novizio - (ещё) неопытный <a class='ref'>преподаватель</a>",
+        "un insegnante deve essere esigente - требовательность - необходимое качество учителя",
+        "insegnante di poche pretese (non esigente) - нетребовательный учитель",
+        "un insegnante di Mosca ci insegna a parlare russo - <a class='ref'>преподаватель</a> из Москвы учит нас говорить по-русски",
+        "senza accorgersene imitava la sua insegnante - она бессознательно подражала своей учительнице",
+        "non solo è un traduttore, ma è anche un bravo insegnante - он не только переводчик, но и прекрасный <a class='ref'>преподаватель</a>",
+        "pur non essendo un gran pittore, fu un ottimo insegnante - не будучи крупным художником, он был даровитым педагогом",
+        "insegnante di sostegno - (букв. учитель поддержки) <a class='ref'>педагог</a>, работающий с учениками с ООП (учащимися с особыми образовательными потребностями)",
+        "i medici e gli insegnanti non si possono mai pagare abbastanza <i>prov</i> - врачам и учителям всегда платят мало"
+      ],
+      "text4": "см. <a class='ref'>преподавательский состав</a>, <a class='ref'>репетитор</a>, <a class='ref'>учительская</a>"
+    },
     "innocente": {
       "text1": "[inno'ʧɛnte]",
       "text2": "<i>муз.</i> невинно, просто, наивно, простодушно, безыскусственно",
@@ -2253,7 +2277,7 @@
     "lamento": {
       "text1": "[la'mento]",
       "text2": "<i>m</i>",
-      "text3": "1) вопль, стон, скулёж <em>прост.</em>; жалоба, стенание; причитание",
+      "text3": "1) вопль, стон, скулёж <i>прост.</i>; жалоба, стенание; причитание",
       "list3": [
         "lamento funebre - надгробный / погребальный плач; оплакивание (покойника)"
       ],
@@ -2349,7 +2373,7 @@
       "text2": "1) <i>avv</i> легко; муз. указание, предписывающее лёгкость в исполнении",
       "text3": "2) <i>agg</i> лёгкий, слабый",
       "list3": [
-        "<a class='ref'>musica</a> leggera - лёгкая <a class='ref'>музыка</a>",
+        "musica leggera - лёгкая <a class='ref'>музыка</a>",
         "letture leggere - лёгкое чтение",
         "andatura leggera - лёгкая походка",
         "avere il passo leggero - легко ступать",
@@ -5095,7 +5119,7 @@
       "text2": "<i>vi</i> <i>impf.</i>(<i>pf.</i> поздороваться - поздороваюсь, поздороваешься)",
       "text3": "salutare, dare il buon giorno (пожелать доброго дня)<br>глагол <em>salutare</em> происходит от <i>лат.</i> <em>salutāre</em>, что означает <em>желать здоровья (augurare salute, salutare)</em>; в употреблении глагол <em>salutare</em> похож на глагол в русском языке <a class='ref'>приветствовать</a>, который также не требует предлога, однако предлог потребуется, если нужно сослаться на способ приветствия: salutare <a class='ref'>con</a> un cenno del capo - приветствовать кивком головы; salutare <a class='ref'>con</a> la <a class='ref'>mano</a> - послать приветствие рукой",
       "list3": [
-        "<a class='ref'>приветствовать</a> педагога - salutare l'insegnante / il maestro / la maestra",
+        "<a class='ref'>приветствовать</a> педагога - salutare l'<a class='ref'>insegnante</a> / il maestro / la maestra",
         "почему ты не поздоровался с тётей? - perché non hai dato il buon giorno alla zia?",
         "передавай от меня привет отцу - saluta tuo padre da parte mia",
         "поздоровайся от меня с твоим отцом - salutami tuo padre",
@@ -5250,6 +5274,11 @@
       ],
       "text5": "см. <a class='ref'>играть</a>, <a class='ref'>исполнитель</a>, <a class='ref'>исполнение</a>, <a class='ref'>концертировать</a>, <a class='ref'>солировать</a>, <a class='ref'>выступать</a>, <a class='ref'>симфония</a>"
     },
+    "история музыки": {
+      "text1": "[istóríja múzyki]",
+      "text2": "Storia della musica (предмет)",
+      "text3": "см. <a class='ref'>теория музыки</a>, <a class='ref'>музыка</a>, <a class='ref'>педагог</a>, <a class='ref'>insegnante</a>"
+    },
     "камертон": {
       "text1": "[kamertón]",
       "text2": "-а <i>m</i>; (<i>нем.</i> Kammerton)",
@@ -5361,7 +5390,7 @@
       "text1": "[konservatórija]",
       "text2": "<i>f</i>",
       "text3": "conservatorio (<i>m</i>)",
-      "text4": "1) Учебное заведение, где обучаются музыке, искусству игре на инструментах и пению (liceo musicale - консерватория; музыкальное училище). - Pubblico istituto ove si insegna la musica, l'arte di suonare gli strumenti e il canto (Liceo musicale).",
+      "text4": "1) Высшее профессиональное учебное заведение, где обучаются музыке, искусству игре на музыкальных инструментах и пению. - Pubblico istituto di alta formazione musicale dove si insegnano musica, strumenti e canto.",
       "list4": [
         "поступить в консерваторию - entrare in conservatorio",
         "учиться в консерватории - studiare al conservatorio",
@@ -5885,6 +5914,15 @@
         "знак повторения (segno di ripetizione) тактов с паузами - battute di pausa"
       ]
     },
+    "педагог": {
+      "text1": "[pedagóg]",
+      "text2": "pedagogo; docente (официально в консерваториях (conservatorio), музыкальных лицеях (liceo musicale); professore (нейтрально-официальное обращение в консерваториях, музыкальных лицеях, различных вузах); maestro (уважительно, об авторитете), <a class='ref'>insegnante</a> (учитель вообще, тот, кто учит (docente, professore, maestro) - преподаватель в музыкальной школе (<a class='ref'>insegnante</a> presso una scuola di musica), учитель средней школы (<a class='ref'>insegnante</a> di scuola secondaria), преподаватель университета (universitario)",
+      "list2": [
+        "преподаватели Миланской консерватории - docenti del Conservatorio di Milano",
+        "преподаватель в университете - docente universitario"
+      ],
+      "text3": "см. <a class='ref'>преподавательский состав</a>, <a class='ref'>консерватория</a>"
+    },
     "петь": {
       "text1": "[pet']",
       "text2": "<i>vt</i> <i>impf.</i> (<i>pf.</i> спеть - спою, споёшь)",
@@ -6036,6 +6074,15 @@
         "творческие предметы / дициплины в средней школе - discipline artistiche nella scuola secondaria"
       ]
     },
+    "преподаватель": {
+      "text1": "[prepodavátel']",
+      "text2": "см. <a class='ref'>педагог</a>, <a class='ref'>insegnante</a>, <a class='ref'>преподавательский состав</a>"
+    },
+    "преподавательский состав": {
+      "text1": "[prepodavátel'skij sastáv]']",
+      "text2": "corpo <a class='ref'>insegnante</a> / docente",
+      "text3": "см. <a class='ref'>педагог</a>"
+    },
     "приветствовать": {
       "text1": "[privétstvovat']",
       "text2": "<i>vi</i> <i>impf.</i> (приветствую, приветствуешь)",
@@ -6146,7 +6193,7 @@
     "репетитор": {
       "text1": "[repetítor]",
       "text2": "<i>m</i> (<i>f</i> репетиторша)",
-      "text3": "insegnante che dà lezioni private, см. <a class='ref'>урок</a>"
+      "text3": "<a class='ref'>insegnante</a> che dà lezioni private, см. <a class='ref'>урок</a>"
     },
     "репетиция": {
       "text1": "[repetícija]",
@@ -6699,6 +6746,16 @@
       ],
       "text4": "см. <a class='ref'>голос</a>, <a class='ref'>петь</a>, <a class='ref'>баритон</a>, <a class='ref'>бас</a>"
     },
+    "теория музыки": {
+      "text1": "[teoríja múzyki]",
+      "text2": "teoria musicale",
+      "list2": [
+        "Teoria musicale - Теория музыки (название учебника, предмета)",
+        "Manuale di teoria musicale - Учебник по теории музыки",
+        "corso di teoria musicale - курс по теории музыки"
+      ],
+      "text3": "см. <a class='ref'>история музыки</a>, <a class='ref'>музыка</a>, <a class='ref'>педагог</a>, <a class='ref'>insegnante</a>"
+    },
     "тон": {
       "text1": "[ton]",
       "text2": "<i>m</i> (<i>pl</i> тоны, тона)",
@@ -6856,6 +6913,15 @@
         "он наушничал на своих товарищей учителю - denunciava al maestro le marachelle dei suoi compagni",
         "распустить учеников (по домам, на каникулы) - licenziare la scolaresca"
       ]
+    },
+    "учитель": {
+      "text1": "[učítel']",
+      "text2": "см. <a class='ref'>педагог</a>, <a class='ref'>преподавательский состав</a>"
+    },
+    "учительская": {
+      "text1": "[učítel'skaja]",
+      "text2": "sala professori (insegnanti)",
+      "text3": "см. <a class='ref'>преподавательский состав</a>, <a class='ref'>педагог</a>, <a class='ref'>insegnante</a>"
     },
     "учиться": {
       "text1": "[učít'sja]",
