@@ -5,6 +5,7 @@
 $(function() {
   var esattoIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="#03C03C" d="m14 21.414l-5-5.001L10.413 15L14 18.586L21.585 11L23 12.415z"/><path fill="#03C03C" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m0 26a12 12 0 1 1 12-12a12 12 0 0 1-12 12"/></svg>';
   var sbagliatoIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="#FE2A41" d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12"/><path fill="#FE2A41" d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z"/></svg>';
+  var notAnsweredIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="#fbbf24" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m0 26a12 12 0 1 1 12-12a12 12 0 0 1-12 12"/><path fill="#fbbf24" d="M15 8h2v11h-2zm1 14a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 16 22"/></svg>';
   var scriviQc = '<span>Scrivi qualcosa!</span>';
   var esattoMsg = '<span>Esatto!</span>';
   var sbagliatoMsg = '<span>Sbagliato!';
@@ -93,6 +94,7 @@ $(function() {
           $(".check-answer").prop("disabled", true);
           $("#next-question-btn").prop("disabled", false);
           $("#check-answer-btn").prop("disabled", true);
+          timeExpired = true;
         }
       }
     }, 1000);
@@ -1101,6 +1103,7 @@ $(function() {
   });
   var currentQuestion = 0;
   var correctAnswers = 0;
+  var timeExpired = false;
   var totalQuestions = $(".quiz-question").length;
   var answersSummary = [];
 
@@ -1138,6 +1141,7 @@ $(function() {
     $(".next-question").prop("disabled", true);
     $(".check-answer").prop("disabled", false);
     time = 0;
+    timeExpired = false;
     startTimer();
   });
   $(".close-btn").on("click", function() {
@@ -1192,7 +1196,7 @@ $(function() {
     }
     answersSummary.push({
       question: questionText,
-      userAnswer: userAnswer,
+      userAnswer: timeExpired ? "Не отвечено" : userAnswer,
       correctAnswer: correctAnswer,
       explanation: explanation
     });
@@ -1206,11 +1210,23 @@ $(function() {
       answered = false;
       if (!isStopped) startTimer();
       if ($(this).prop("disabled")) return;
+      var question = $(".quiz-question").eq(currentQuestion);
+      if (question.find("input:checked").length === 0 || timeExpired) {
+        var questionText = question.find("p").text();
+        var correctAnswer = question.find("input[data-correct]").parent().text();
+        answersSummary.push({
+          question: questionText,
+          userAnswer: "Не отвечено",
+          correctAnswer: correctAnswer,
+          explanation: ""
+        });
+      }
       currentQuestion++;
       if (currentQuestion < totalQuestions) {
         $(".quiz-question").removeClass("active").hide().eq(currentQuestion).addClass("active").show();
         $(".next-question").prop("disabled", true);
         $(".check-answer").prop("disabled", false);
+        timeExpired = false;
       } else {
         showSummary();
       }
@@ -1224,6 +1240,9 @@ $(function() {
     var resultsList = $(".results-list").empty();
     answersSummary.forEach(function(ans) {
       var questionBlock = $("<div>").append("<p class='summary-question'>" + ans.question + "</p>");
+      if (ans.userAnswer === "Не отвечено") {
+        questionBlock.append("<p class='not-answered'>" + notAnsweredIcon + "Не отвечено</p>");
+      }
       $(".quiz-question").each(function() {
         var questionText = $(this).find("p").text().trim();
         if (questionText === ans.question.trim()) {
