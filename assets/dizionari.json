@@ -1929,7 +1929,7 @@
         "<a class='ref'>marcia</a> funebre - похоронный марш",
         "messa funebre / di requiem - заупокойная месса",
         "celebrare una messa funebre - отпевать покойника",
-        "nenia funebre - похоронное пение, погребальная песня",
+        "nenia funebre - похоронное <a class='ref'>пение</a>, погребальная <a class='ref'>песня</a>",
         "pianto funebre - причитания",
         "lamento funebre - надгробный / погребальный плач; оплакивание",
         "giochi funebri - в античности, спортивные игры, проводившиеся в честь умершего"
@@ -2121,7 +2121,8 @@
       "list3": [
         "gli improvvisi di Schubert - экспромты Шуберта",
         "gli improvvisi di Chopin - экспромты Шопена"
-      ]
+      ],
+      "text4": "см. <a class='ref'>интерпретация</a>"
     },
     "incalzando": {
       "text1": "[inkal'tsando]",
@@ -2448,6 +2449,23 @@
         "la mano sinistra non sappia quel che fa la destra <i>prov</i> - левая рука да не ведает, что творит правая"
       ]
     },
+    "mantice": {
+      "audio": "/audio/dizionario/mantice.mp3",
+      "text1": "[ˈmantiʧe]",
+      "text2": "<i>m</i>",
+      "text3": "1) мех, меха - устройство, предназначенное для создания потока воздуха с целью разжигания огня в кузнице, домашнем камине или для извлечения звука в некоторых инструментах (орган (organo), фисгармония (armonium), аккордеон (fisarmonica))",
+      "list3": [
+        "armonica a mantice - баян; гармоника; гармонь, гармошка",
+        "suonatore di armonica a mantice - баянист",
+        "mantice, soffietto - гармошка"
+      ],
+      "text4": "2) откидной верх (экипажа)",
+      "text5": "3) символ прерывистого и затруднённого дыхания (ansare, sbuffare come un mantice - тяжело дышать, пыхтеть как меха) или изобилия (avere il portafoglio a mantice - иметь кошелёк, «раздувшийся как меха», то есть полный денег)",
+      "list5": [
+        "soffiare / ans(im)are come un mantice - пыхтеть (как паровоз)"
+      ],
+      "text6": "см. <a class='ref'>инструмент</a>"
+    },
     "marcatissimo": {
       "text1": "[marka'tissimo]",
       "text2": "1) <i>avv</i> <i>муз.</i> в высшей степени выделяя",
@@ -2754,7 +2772,7 @@
       "text10": "IV <i>pron</i> <i>pl</i> многие (люди)",
       "list10": [
         "molti sono venuti - многие пришли",
-        "<a class='ref'>dolce</a> canto, molti ne ha ingannati <i>prov</i> - приятное пение - многие им обмануты"
+        "<a class='ref'>dolce</a> canto, molti ne ha ingannati <i>prov</i> - приятное <a class='ref'>пение</a> - многие им обмануты"
       ]
     },
     "morendo": {
@@ -3593,7 +3611,7 @@
       "text2": "<i>m</i>",
       "text3": "1) припев, ритурнель",
       "list3": [
-        "<a class='ref'>sempre</a> lo stesso ritornello!; è <a class='ref'>sempre</a> il solito ritornello! - опять старая песня!"
+        "<a class='ref'>sempre</a> lo stesso ritornello!; è <a class='ref'>sempre</a> il solito ritornello! - опять старая <a class='ref'>песня</a>!"
       ],
       "text4": "2) <i>муз.</i> знак повторения",
       "list4": [
@@ -3737,7 +3755,7 @@
         "ti amerò per sempre - я буду любить тебя всегда",
         "separarsi per sempre - разлучаться навсегда",
         "ripetere sempre la solita <a class='ref'>solfa</a> - бубнить",
-        "sempre lo stesso <a class='ref'>ritornello</a>!; è sempre il solito ritornello! - опять старая песня!",
+        "sempre lo stesso <a class='ref'>ritornello</a>!; è sempre il solito ritornello! - опять старая <a class='ref'>песня</a>!",
         "chi nulla prevede, spesso resta ingannato e chi troppo prevede, è sempre disgraziato <i>prov</i> - кто ничего не предвидит, часто остаётся обманутым, а кто предвидит слишком много, тот - всегда несчастен",
         "chi ruba una <a class='ref'>volta</a>, è sempre ladro <i>prov</i> - кто раз украдёт -  всегда вор"
       ],
@@ -3891,7 +3909,7 @@
       ],
       "text4": "2) <i>перен.</i> тоска, скука",
       "list4": [
-        "<a class='ref'>sempre</a> la stessa solfa - всё та же песенка; старая песня",
+        "<a class='ref'>sempre</a> la stessa solfa - всё та же песенка; старая <a class='ref'>песня</a>",
         "è <a class='ref'>sempre</a> la solita solfa - всегда одно и то же!",
         "in questa casa è <a class='ref'>sempre</a> la stessa solfa - в этом доме ничего не меняется!",
         "ogni giorno è la solita solfa - каждый день одно и тоже!",
@@ -4714,6 +4732,15 @@
       "text2": "<i>f</i>",
       "text3": "<a class='ref'>diteggiatura</a>"
     },
+    "атака": {
+      "text1": "[atáka]",
+      "text2": "<i>f</i>",
+      "text3": "attacco",
+      "list3": [
+        "атака нот - l'attacco delle note"
+      ],
+      "text4": "<a class='ref'>затухание</a>, <a class='ref'>нота</a>"
+    },
     "балкон": {
       "text1": "[balkón]",
       "text2": "<i>m</i>",
@@ -4770,26 +4797,7 @@
       "text1": "[vokalíst]",
       "text2": "<i>m</i> (<i>f</i> вокалистка)",
       "text3": "cantante",
-      "list3": [
-        "оперный певец - cantante lirico",
-        "эстрадная певица - cantante di musica leggera (canzonettista, cantante di varietà)",
-        "отличный певец - bravo cantante",
-        "популярнейший певец - un cantante megagalattico, звезда",
-        "очень популярный певец - un cantante che spopola",
-        "популярный певец / актёр - cantante / attore di richiamo",
-        "она от этого певца тащится - muore dietro a quel cantante",
-        "безголосый певец - pessimo cantante, un cane",
-        "певец, приглашённый за неимением лучшего - cantante di ripiego",
-        "<a class='ref'>аплодировать</a> певцу - applaudire un cantante",
-        "создание имени / славы певцу - lancio d'un cantante",
-        "освистать певицу - fischiare una cantante",
-        "прослушивать певца - fare un'audizione a un cantante",
-        "он стал певцом - diventò cantante",
-        "выход певца - l'uscita del cantante",
-        "высокий / низкий <a class='ref'>бас</a> - basso cantante / profondo",
-        "Мои любимые певцы - это... - I miei cantanti preferiti sono...",
-        "его следует причислить к самым блестящим певцам своего времени... - è annoverabile tra i più brillanti cantanti del suo tempo"
-      ]
+      "text4": "см. <a class='ref'>певец</a>, <a class='ref'>певица</a>"
     },
     "вступление": {
       "text1": "[vstuplénie]",
@@ -4920,7 +4928,7 @@
         "слабым голосом, слабеньким голоском - <a class='ref'>con</a> voce fievole",
         "монотонный / невыразительный голос - voce priva di colore",
         "детские голоса - voci di bambini",
-        "голос / пение соловья - il canto dell'usignolo",
+        "голос / <a class='ref'>пение</a> соловья - il canto dell'usignolo",
         "романс для двух голосов - romanza per due voci",
         "для голоса и хора - per solista e coro",
         "хорошо поставленный голос - voce intonata",
@@ -4963,8 +4971,8 @@
         "у него ещё не установился голос - non ha mutato ancora la voce",
         "<a class='ref'>тон</a> / <a class='ref'>тембр</a> голоса - timbro di voce",
         "приятный <a class='ref'>тембр</a> голоса - bel tono di voce",
-        "безголосый певец - pessimo cantante, un cane",
-        "она вновь доказала / показала, что она лучшая певица сезона - si è riaffermata la miglior voce della stagione lirica",
+        "безголосый <a class='ref'>певец</a> - pessimo cantante, un cane",
+        "она вновь доказала / показала, что она лучшая <a class='ref'>певица</a> сезона - si è riaffermata la miglior voce della stagione lirica",
         "вести голос, не отрываясь от нот; <a class='ref'>исполнять</a> <a class='ref'>portamento</a> - portare la voce",
         "«А голос так дивно звучал» (А. К. Толстой) - «E la voce era meravigliosa» (A. K. Tolstoj)",
         "«Он начал хорошо <a class='ref'>петь</a> - сначала альтом, потом, когда переломился голос, тенором» (С. Сергеев-Ценский) - «Cominciò a cantare bene, prima <a class='ref'>con</a> voce bianca, poi, quando la voce di adolescente cambiò, da tenore» (S. Sergeev-Censkij)",
@@ -5041,6 +5049,16 @@
       "text3": "Дополнительные линейки представляют собой фрагменты нотоносца, используемые для лучшего распознавания нот над или под нотоносцем. Такие линейки называются «in testa» (в голове), если они разрезают ноту пополам, и «in gola» (в горле), если они находятся под нотой. - I tagli addizionali sono di frammenti di pentagramma usati per riconoscere meglio le note sopra o sotto il pentagramma. I tagli si dicono «in testa» se tagliano la nota a metà e «in gola» se stanno sotto la nota.",
       "text4": "см. <a class='ref'>линейка</a>"
     },
+    "дыхание": {
+      "text1": "[dychánije]",
+      "text2": "<i>n.</i>",
+      "text3": "respiro; fiato",
+      "list3": [
+        "музыкальное дыхание - respiro musicale",
+        "взять дыхание - prendere fiato",
+        "Для многих фразировочная <a class='ref'>лига</a> означает, что все ноты связаны между собой. Ответ - и да и нет. Поскольку фразировочная <a class='ref'>лига</a> обозначает, где начинается и заканчивается <a class='ref'>фраза</a>, а стало быть указывает на место, где следует «дышать» и взять дыхание, и, опять же, это понятие связано с исполнительским жестом. - Per molti la legatura di frase indica che le note sono tutte legate tra loro. La risposta è né sì né no. Poiché una legatura di frase indica dove inizia e termina una frase e quindi il punto in cui si dovrà respirare e prendere fiato e quindi nuovamente un concetto correlato alla gestualità."
+      ]
+    },
     "задание": {
       "text1": "[zadánie]",
       "text2": "<i>n.</i>",
@@ -5071,6 +5089,15 @@
       ],
       "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>балкон</a>, <a class='ref'>концерт</a>"
     },
+    "затухание": {
+      "text1": "[zatuxánije]",
+      "text2": "<i>n.</i>",
+      "text3": "rilascio",
+      "list3": [
+        "затухание (завершение звучания) нот - il rilascio delle note"
+      ],
+      "text4": "<a class='ref'>атака</a>, <a class='ref'>нота</a>"
+    },
     "заявка": {
       "text1": "[zajávka]",
       "text2": "<i>f</i> (<i>gen.</i> <i>pl</i> заявок на + <i>acc.</i>)",
@@ -5087,7 +5114,7 @@
       "text3": "suono",
       "list3": [
         "высокий / низкий звук - suono acuto / <a class='ref'>grave</a>",
-        "высота звука - altezza del suono",
+        "<a class='ref'>высота</a> звука - altezza del suono",
         "звук голоса - il suono della <a class='ref'>voce</a>",
         "звукооператор - tecnico del suono / fonico",
         "с музыкой и пением - <a class='ref'>con</a> suoni e canti",
@@ -5213,7 +5240,7 @@
         "язычковые инструменты - strumenti a ancia",
         "медные духовые инструменты - strumenti a ottone",
         "деревянные духовые инструменты - strumenti a legno",
-        "инструменты с мехами - strumenti a mantice",
+        "инструменты с мехами - strumenti a <a class='ref'>mantice</a>",
         "ударные инструменты - strumenti a percussione",
         "хорошо настроенный инструмент - strumento intonato"
       ],
@@ -5224,6 +5251,25 @@
       "text2": "<i>m</i>",
       "text3": "Под интервалом подразумевается разница в высоте между двумя нотами, другими словами сколько тонов и полутонов их разделяют. - Per intervallo s'intende la differenza in altezza fra due note, in altre parole quanti toni e semitoni le separano.",
       "text4": "см. <a class='ref'>intervallo</a>"
+    },
+    "интерпретатор": {
+      "text1": "[interpretátor]",
+      "text2": "<i>m</i>",
+      "text3": "interprete (<i>m</i> e <i>f</i>)",
+      "list3": [
+        "музыкальная <a class='ref'>интерпретация</a> - interpretazione musicale",
+        "актёр, <a class='ref'>певец</a> или <a class='ref'>музыкант</a>, который исполняет роль или музыкальное <a class='ref'>произведение</a>: великий <a class='ref'>исполнитель</a> шекспировских ролей, произведений Россини - attore, cantante o musicista che interpreta una parte o un brano musicale: un grande interprete shakespeariano, rossiniano"
+      ]
+    },
+    "интерпретация": {
+      "text1": "[interpretácija]",
+      "text2": "<i>f</i>",
+      "text3": "interpretazione",
+      "list3": [
+        "музыкальная интерпретация - interpretazione musicale",
+        "В музыке под интерпретацией понимают искусство воспроизведения (наиболее выразительным образом) музыкального произведения, исходя из нотного текста. - In musica, per interpretazione, si intende l'arte di riprodurre (nel modo più efficace) un brano musicale partendo dallo spartito."
+      ],
+      "text4": "см. <a class='ref'>произведение</a>, <a class='ref'>интерпретатор</a>"
     },
     "интродукция": {
       "text1": "[introdúkcija]",
@@ -5749,6 +5795,7 @@
         "высокая нота - nota alta, acuto (<i>m</i>)",
         "грустные ноты - nota (velo) di tristezza",
         "нотка грусти - un pizzico di tristezza",
+        "l'attacco e il rilascio delle note - атака и затухание нот",
         "хвостик ноты называют <a class='ref'>coda</a> или cediglia; ножку ноты называют gambo или collo; круглую часть ноты называют testa или pallino (il pallino vuoto - пустая, незакрашенная нота); нота может быть с точкой - <a class='ref'>con</a> il punto; ноты могут быть связаны между собой - collegate tra loro"
       ]
     },
@@ -5811,7 +5858,7 @@
         "(В театре) идёт новая опера. - (Al teatro) danno una nuova opera",
         "какую оперу не назовёшь, он все слышал - qualsiasi opera venga menzionata, lui le ha sentite tutte",
         "оперное либретто - libretto d'opera (<em>libretto</em> - <i>dim.</i> от слова <em>libro</em> - <em>книга</em>)",
-        "оперный певец / певица - cantante d'opera"
+        "оперный <a class='ref'>певец</a> / <a class='ref'>певица</a> - cantante d'opera"
       ],
       "text4": "2) teatro lirico, opera (оперный <a class='ref'>театр</a>)",
       "list4": [
@@ -5914,6 +5961,42 @@
         "знак повторения (segno di ripetizione) тактов с паузами - battute di pausa"
       ]
     },
+    "певец": {
+      "text1": "[pevéc]",
+      "text2": "<i>m</i> (<i>gen.</i> певца, <i>pl</i> певцы)",
+      "text3": "cantante",
+      "list3": [
+        "оперный певец - cantante lirico",
+        "отличный певец - bravo cantante",
+        "популярнейший певец - un cantante megagalattico, звезда",
+        "очень популярный певец - un cantante che spopola",
+        "популярный певец / актёр - cantante / attore di richiamo",
+        "она от этого певца тащится - muore dietro a quel cantante",
+        "безголосый певец - pessimo cantante, un cane",
+        "певец, приглашённый за неимением лучшего - cantante di ripiego",
+        "<a class='ref'>аплодировать</a> певцу - applaudire un cantante",
+        "создание имени / славы певцу - lancio d'un cantante",
+        "освистать певицу - fischiare una cantante",
+        "прослушивать певца - fare un'audizione a un cantante",
+        "он стал певцом - diventò cantante",
+        "выход певца - l'uscita del cantante",
+        "высокий / низкий <a class='ref'>бас</a> - basso cantante / profondo",
+        "Мои любимые певцы - это... - I miei cantanti preferiti sono...",
+        "его следует причислить к самым блестящим певцам своего времени... - è annoverabile tra i più brillanti cantanti del suo tempo"
+      ],
+      "text4": "см. <a class='ref'>певица</a>"
+    },
+    "певица": {
+      "text1": "[pevíca]",
+      "text2": "<i>f</i>",
+      "text3": "cantante",
+      "list3": [
+        "оперная певица - cantante lirica",
+        "камерная певица - cantante da camera",
+        "эстрадная певица - cantante di musica leggera (canzonettista, cantante di varietà)"
+      ],
+      "text4": "см. <a class='ref'>певец</a>"
+    },
     "педагог": {
       "text1": "[pedagóg]",
       "text2": "pedagogo; docente (официально в консерваториях (conservatorio), музыкальных лицеях (liceo musicale); professore (нейтрально-официальное обращение в консерваториях, музыкальных лицеях, различных вузах); maestro (уважительно, об авторитете), <a class='ref'>insegnante</a> (учитель вообще, тот, кто учит (docente, professore, maestro) - преподаватель в музыкальной школе (<a class='ref'>insegnante</a> presso una scuola di musica), учитель средней школы (<a class='ref'>insegnante</a> di scuola secondaria), преподаватель университета (universitario)",
@@ -5922,6 +6005,114 @@
         "преподаватель в университете - docente universitario"
       ],
       "text3": "см. <a class='ref'>преподавательский состав</a>, <a class='ref'>консерватория</a>"
+    },
+    "пение": {
+      "text1": "[pénie]",
+      "text2": "<i>n.</i>",
+      "text3": "canto",
+      "list3": [
+        "<a class='ref'>учитель</a> пения - maestro di canto",
+        "<a class='ref'>учиться</a> <a class='ref'>петь</a> - studiare canto",
+        "<a class='ref'>урок</a> пения - lezione di canto",
+        "брать уроки пения - prendere lezioni di canto",
+        "школа пения - scuola di canto",
+        "сольное пение - canto assolo",
+        "пение фортепиано - il canto di un <a class='ref'>pianoforte</a>",
+        "пение скрипки разносилось в воздухе - il canto di un violino risuonava nell'aria",
+        "меланходичное пение скрипки - canto malinconico del violino",
+        "слушать пение скрипки - ascoltare il canto di un violino",
+        "одноголосое пение - monodia",
+        "монотонное / однообразное пение - salmodia",
+        "похоронное пение - trenodia",
+        "похоронное пение; стенание, плач; причитание - treno",
+        "похоронное пение, погребальная <a class='ref'>песня</a> - nenia funebre",
+        "погребальное пение - canto lugubre",
+        "григорианское пение - canto gregoriano",
+        "амвросианское пение - canto ambrosiano",
+        "речитативное пение - canto recitativo",
+        "пение на два голоса, двухголосное пение - canto a due voci",
+        "хоровое пение - canto corale",
+        "литургическое пение - canti liturgici",
+        "надоедливое мурлыканье, пение вполголоса - canterellio",
+        "фальшивое пение - canto stonato",
+        "пение соловья - verso dell'usignolo",
+        "из леса доносилось пение соловья - dal bosco giungeva il canto di un usignolo",
+        "с пляжа доносилось пение мальчишек - dalla spiaggia arrivavano i canti dei ragazzi",
+        "прекрасное пение - bel canto",
+        "радостное пение - canto gioioso",
+        "наполнять дом пением (песнями) - riempire la casa di canti",
+        "с музыкой и пением - <a class='ref'>con</a> suoni e canti",
+        "<a class='ref'>учитель</a> пения - maestro di canto",
+        "<a class='ref'>учиться</a> пению - studiare canto",
+        "искусство пения - l'arte di cantare",
+        "речитатив - canto recitativo",
+        "Вам понравилось пение? - Le è piaciuto il canto?",
+        "наслаждаться пением - godere ad ascoltare il canto",
+        "его / её пение - просто / сплошной восторг - canta che è una delizia",
+        "(всем) известна его любовь к пению - è nota la sua predilezione per il canto",
+        "на него нашла блажь заняться пением <i>шутл.</i> <i>ирон.</i> - gli è venuto il prurito di cantare",
+        "пение - способ выразить свои чувства - il canto è un mezzo per esprimere i propri sentimenti",
+        "приятное пение - многие им обмануты - <a class='ref'>dolce</a> canto, molti ne ha ingannati <i>prov</i>",
+        "лучше среди пения птиц, нежели среди звучания арф - meglio fra il canto degli uccelli che fra il suono delle arpe <i>prov</i>",
+        "«Не берусь описывать это пение» (А. Чехов) - «Mi sarebbe difficile descrivere quel canto» (A. Čechov)"
+      ],
+      "text4": "см. <a class='ref'>петь</a>, <a class='ref'>певец</a>, <a class='ref'>певица</a>, <a class='ref'>сольный</a>, <a class='ref'>хор</a>"
+    },
+    "песня": {
+      "text1": "[pésnja]",
+      "text2": "<i>f</i> (<i>pl</i> песен, <i>dim.</i> песенка)",
+      "text3": "canzone, canto",
+      "list3": [
+        "петь песню - cantare una canzone",
+        "складывать песню - comporre una canzone",
+        "автор слов песни - paroliere",
+        "написать текст песни - scrivere il testo di una canzone",
+        "грянуть песню - intonare una canzone",
+        "начать <a class='ref'>петь</a>, затянуть песню - attaccare a cantare",
+        "заорать песню - mettersi a ragliare una canzone",
+        "он подхватил песню - si mise a cantare insieme agli altri",
+        "моя любимая песня - la mia canzone preferita",
+        "напоследок он спел нашу любимую песню - alla fine cantò la nostra canzone preferita",
+        "вновь запеть / продолжить / подхватить песню - riattaccare la canzone",
+        "а теперь послушайте песню в исполнении... - ed ora ascoltate la canzone per la <a class='ref'>voce</a> di...",
+        "фестиваль песни - festival della canzone",
+        "выпуск новой песни - il lancio di una nuova canzone",
+        "народная песня - canzone popolare / folclorico",
+        "<a class='ref'>исполнитель</a> народных песен - esecutore di canzoni popolari",
+        "собиратель народных песен - raccoglitore di canti popolari",
+        "популярная песня - canzone di successo",
+        "эта песня стала шлягером - la canzone ebbe <a class='ref'>molto</a> successo",
+        "авторская песня - canzone di un cantautore (canzone d'autore)",
+        "старая песня <i>перен.</i> - la solita canzone",
+        "военные песни - canti di guerra",
+        "патриотические песни - canti patriottici",
+        "лебединая песня - il canto del cigno",
+        "застольная песня - canzone conviviale",
+        "колыбельная (песня) - ninnananna",
+        "тирольская песня - tirolese",
+        "эпиталама, свадебная песня - epitalamio",
+        "удалая песня - canzone briosa",
+        "танцевальная песня - canzone a ballo (ballata)",
+        "майская песня - maggiolata",
+        "задушевная песня - canzone che viene dal cuore",
+        "любовная песня - canzone d'amore",
+        "разухабистая песня - canzone spinta",
+        "крестьянские песни - canti agresti",
+        "неаполитанские песни - canzoni napoletane",
+        "карнавальные песни - canti carnascialeschi",
+        "песня радости - canto di gioia",
+        "тоскливая песня - canzone malinconica",
+        "заунывная песня; монотонное <a class='ref'>пение</a> - nenia",
+        "жалобная песня - nenia (<i>f</i>), litania, canzone triste",
+        "тягучая песня - nenia (<i>f</i>), canzone monotona",
+        "погребальная песня - epicedio",
+        "Песнь Песней - Cantico dei Cantici",
+        "«чу!, песня! Знакомые звуки...» (Н. Некрасов) - «Senti la canzone? suoni famigliari...» (N. Nekrasov)",
+        "всяк народ любит свою песню - ogni popolo ha la sua canzone <i>prov</i>",
+        "не у всех птиц одинаковая песня (пение) - non tutti gli uccelli hanno lo stesso canto <i>prov</i>",
+        "каждая птица поёт свою песню - ogni uccel fà il suo canto <i>prov</i>",
+        "сегодня поёшь, а завтра плачешь - oggi in canto, domani in pianto <i>prov</i>"
+      ]
     },
     "петь": {
       "text1": "[pet']",
@@ -5969,7 +6160,7 @@
         "напоследок он спел нашу любимую песню - alla fine cantò la nostra canzone preferita",
         "петь на фортепиано (<a class='ref'>играть</a выразительно>) - cantare col <a class='ref'>pianoforte</a>",
         "немногие могут петь на фортепиано так, как он - pochi sanno cantare col <a class='ref'>pianoforte</a> come lui",
-        "в ночной тиши слышалось пение скрипки - nel silenzio della notte, si sentiva cantare un violino",
+        "в ночной тиши слышалось <a class='ref'>пение</a> скрипки - nel silenzio della notte, si sentiva cantare un violino",
         "Шопен мелодичней Шумана - Chopin canta <a class='ref'>più</a> di Schumann",
         "«Хочу воспеть свободу» (А. Пушкин) - «Voglio cantare la libertà» (A. Puškin)",
         "«Ну, в знак того, что ты совсем уж не сердита, Лаура, спой ещё» (А. Пушкин) - «Laura, per mostrare che non sei più arrabbiata, canta ancora» (A. Puškin)",
@@ -5977,8 +6168,8 @@
         "«Пропой, дружок, хотя немножко» (И. Крылов) - «Canta, amico mio, almeno un po'» (I. Krylov)",
         "«Дивный <a class='ref'>голос</a> твой, низкий и странный, Славит бурю цыганских страстей» (А. Блок) - «La tua <a class='ref'>voce</a> divina, profonda e strana, canta le burrascose passioni zigane» (A. Blok)",
         "«Он начал хорошо петь - сначала альтом, потом, когда переломился <a class='ref'>голос</a>, тенором» (С. Сергеев-Ценский) - «Cominciò a cantare bene, prima <a class='ref'>con</a> <a class='ref'>voce</a> bianca, poi, quando la <a class='ref'>voce</a> di adolescente cambiò, da tenore» (S. Sergeev-Censkij)",
-        "поют на ветке не то что в клетке <i>prov</i> - uccello in gabbia non canta per amor; canta per rabbia",
-        "нельзя сделать два дела сразу <i>prov</i> (букв. нельзя петь и нести крест) - non si può cantare e portar la croce"
+        "поют на ветке не то что в клетке - uccello in gabbia non canta per amor; canta per rabbia <i>prov</i>",
+        "нельзя сделать два дела сразу (букв. нельзя петь и нести крест) - non si può cantare e portar la croce <i>prov</i>"
       ],
       "text4": "см. <a class='ref'>тембр</a>"
     },
@@ -6029,7 +6220,7 @@
       "text2": "-и; <i>f</i> (от <i>греч.</i> polýs - многочисленный и phōn'ē - <a class='ref'>звук</a>)",
       "text3": "polifonia",
       "list3": [
-        "<a class='ref'>Гомофония</a> - это пение или игра в унисон, в один <a class='ref'>голос</a>. Полифония - объединение множества голосов или звуков, идущих одновременно. - L'omofonia è il cantare о suonare all'<a class='ref'>unisono</a>, ad una <a class='ref'>voce</a>. Polifonia, un insieme di <a class='ref'>più</a> voci о suoni eseguito simultaneamente."
+        "<a class='ref'>Гомофония</a> - это <a class='ref'>пение</a> или игра в унисон, в один <a class='ref'>голос</a>. Полифония - объединение множества голосов или звуков, идущих одновременно. - L'omofonia è il cantare о suonare all'<a class='ref'>unisono</a>, ad una <a class='ref'>voce</a>. Polifonia, un insieme di <a class='ref'>più</a> voci о suoni eseguito simultaneamente."
       ]
     },
     "полутон": {
@@ -6244,6 +6435,16 @@
         "<a class='ref'>играть</a> в четыре руки - suonare a quattro mani"
       ]
     },
+    "сборник": {
+      "text1": "[sbórnik]",
+      "text2": "<i>m</i>",
+      "text3": "raccolta (<i>f</i>), miscellanea (<i>f</i>)",
+      "list3": [
+        "сборник песен - canzoniere",
+        "сборник популярных песен - una raccolta di canti popolari",
+        "сборник рассказов - libro di racconti"
+      ]
+    },
     "симфония": {
       "text1": "[simfónija]",
       "text2": "<i>f</i>",
@@ -6393,7 +6594,7 @@
       "text3": "a solo, solistico",
       "list3": [
         "сольный номер - assolo (<i>m</i>)",
-        "сольное пение - canto assolo",
+        "сольное <a class='ref'>пение</a> - canto assolo",
         "сольный <a class='ref'>концерт</a> - recital (<i>m</i>)",
         "<a class='ref'>исполнение</a> <a class='ref'>соло</a> - un'esecuzione solistica",
         "сольная <a class='ref'>партия</a> - parte solistica"
@@ -6767,7 +6968,7 @@
       "text2": "<i>f</i>",
       "text3": "tonalità",
       "list3": [
-        "Тональность - это система, состоящая из двух элементов: лада и тона. <a class='ref'>Лад</a> определяется различным расположением звуков в гамме. <a class='ref'>Тон</a> - это высота звука, начальная <a class='ref'>нота</a>, от которой <a class='ref'>гамма</a> получила свое название. - La tonalità è un sistema costituito da due elementi: modo e tono. Il modo è determinato dalla diversa disposizione dei suoni nella scala. Il tono è l'intonazione, la nota d'inizio da cui la scala prende il nome."
+        "Тональность - это система, состоящая из двух элементов: лада и тона. <a class='ref'>Лад</a> определяется различным расположением звуков в гамме. <a class='ref'>Тон</a> - это <a class='ref'>высота</a> звука, начальная <a class='ref'>нота</a>, от которой <a class='ref'>гамма</a> получила свое название. - La tonalità è un sistema costituito da due elementi: modo e tono. Il modo è determinato dalla diversa disposizione dei suoni nella scala. Il tono è l'intonazione, la nota d'inizio da cui la scala prende il nome."
       ]
     },
     "транспозиция": {
@@ -7020,6 +7221,14 @@
       ],
       "text5": "однако в Италии чаще всего когда хотят пойти на <a class='ref'>концерт</a>, ссылаются на конкретный <a class='ref'>театр</a>, например: «andiamo al Teatro alla Scala»"
     },
+    "фраза": {
+      "text1": "[fráza]",
+      "text2": "<i>f</i>",
+      "text3": "frase",
+      "list3": [
+        "музыкальная фраза - frase musicale"
+      ]
+    },
     "хор": {
       "text1": "[chor]",
       "text2": "<i>m</i> (<i>f</i> в хоре, в хору, <i>pl</i> хоры)",
@@ -7037,7 +7246,7 @@
         "<a class='ref'>хормейстер</a>; регент - maestro del coro",
         "<a class='ref'>хоровой</a> - corale, di (del) coro",
         "стройный хор - coro affiatato",
-        "нестройный хор / нескладное пение - coro non affiatato",
+        "нестройный хор / нескладное <a class='ref'>пение</a> - coro non affiatato",
         "капелла (без инструментального сопровождения) - coro a cappella",
         "состоять в хоре - far parte di un coro",
         "хор театра Ла Скала - il coro della Scala",
