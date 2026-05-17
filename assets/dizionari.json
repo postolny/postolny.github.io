@@ -1425,7 +1425,7 @@
       "text4": "<a class='ref'>аппликатура</a>",
       "list4": [
         "suonare tramite la diteggiatura - <a class='ref'>играть</a> по аппликатуре",
-        "la diteggiatura per pianoforte - <a class='ref'>аппликатура</a> для фортепиано",
+        "la diteggiatura per <a class='ref'>pianoforte</a> - <a class='ref'>аппликатура</a> для фортепиано",
         "diteggiatura della mano destra - <a class='ref'>аппликатура</a> правой руки",
         "<a class='ref'>con</a> diteggiatura - с аппликатурой",
         "diteggiare - ставить аппликатуру"
@@ -2814,7 +2814,7 @@
         "moto discendente - нисходящее движение (от более высокой ноты к более низкой)",
         "moto retto = moto parallelo - прямолинейное движение = параллельное движение (все голоса идут в одном и том же восходящем или нисходящем направлении)",
         "moto obliquo - косое движение (один голос остается на одной высоте, а другой повышается или понижается)",
-        "moto perpetuo - музыкальное произведение, исполняемое полностью или почти полностью на одной и той же фигурации и, как правило, призванное подчеркнуть виртуозность исполнителя (Niccolò Paganini, Moto Perpetuo in Do maggiore, Op. 11, per violino e pianoforte (o orchestra) - Николо Паганини, Moto Perpetuo до мажор, Соч. 11, для скрипки и фортепиано (или оркестра))",
+        "moto perpetuo - музыкальное произведение, исполняемое полностью или почти полностью на одной и той же фигурации и, как правило, призванное подчеркнуть виртуозность исполнителя (Niccolò Paganini, Moto Perpetuo in Do maggiore, Op. 11, per violino e <a class='ref'>pianoforte</a> (o orchestra) - Николо Паганини, Moto Perpetuo до мажор, Соч. 11, для скрипки и фортепиано (или оркестра))",
         "<a class='ref'>con</a> moto - указание, обычно добавляемое к другому, которое предписывает гораздо более быстрое движение, чем обычное (<a class='ref'>andante con moto</a>, <a class='ref'>allegro con moto</a>)"
       ],
       "text4": "2) движение, перемещение; ход",
@@ -3222,7 +3222,7 @@
         "«Sul palco, al pianoforte, sedeva uno spilungone» (A. Tolstoj) - «На маленькой сцене сидел у пианино длинный молодой человек» (А. Толстой)",
         "«Si mise al pianoforte e stette a <a class='ref'>improvvisare</a> per una mezz'ora» (M. Lermontov) - «Он сел за фортепьяно и с полчаса фантазировал» (М. Лермонтов)"
       ],
-      "text4": "см. <a class='ref'>coda</a>"
+      "text4": "см. <a class='ref'>coda</a>, <a class='ref'>банкетка</a>"
     },
     "più": {
       "text1": "['pju]",
@@ -4624,7 +4624,7 @@
     "аккомпаниатор": {
       "text1": "[akkompaniátor]",
       "text2": "<i>m</i> (<i>f</i> аккомпаниаторша)",
-      "text3": "accompagnatore (al pianoforte)",
+      "text3": "accompagnatore (al <a class='ref'>pianoforte</a>)",
       "text4": "см. <a class='ref'>концертмейстер</a>"
     },
     "аккомпанировать": {
@@ -4750,6 +4750,32 @@
       ],
       "text4": "см. <a class='ref'>зал</a>, <a class='ref'>сцена</a>, <a class='ref'>авансцена</a>, <a class='ref'>ложа</a>, <a class='ref'>ярус</a>, <a class='ref'>партер</a>, <a class='ref'>галёрка</a>, <a class='ref'>занавес</a>, <a class='ref'>кулисы</a>, <a class='ref'>кресло</a>, <a class='ref'>концерт</a>"
     },
+    "банкетка": {
+      "text1": "[bankétka]",
+      "text2": "<i>f</i>",
+      "text3": "panchetta (<i>f</i>), sgabello (<i>m</i>)",
+      "text4": "Слова <em>panchetta</em> и <em>sgabello</em> часто взаимозаменяемы.",
+      "list4": [
+        "одинарная банкетка - panchetta singola",
+        "регулируемая прямоугольная банкетка - panchetta rettangolare regolabile",
+        "лучше иметь прямоугольну регулируемую банкетку, а не круглый табурет - è meglio avere la panchetta rettangolare regolabile e non lo sgabello rotondo",
+        "двойная регулируемая банкетка для фортепиано - panchetta doppia regolabile per <a class='ref'>pianoforte</a>",
+        "табурет для фортепиано - sgabello per <a class='ref'>pianoforte</a>",
+        "регулируемый табурет для фортепиано - sgabello regolabile per <a class='ref'>pianoforte</a>",
+        "табурет на резьбе / круглый - sgabello a vite / rotondo",
+        "регулировать высоту банкетки - regolare l'altezza della panchetta",
+        "банкетка для фортепиано Gear4music с отсеком для хранения, чёрная - Sgabello per <a class='ref'>pianoforte</a> <a class='ref'>con</a> Vano Portaoggetti di Gear4music, Nero",
+        "банкетка должна быть выровнена относительно фортепиано - la panchetta deve essere allineata al <a class='ref'>pianoforte</a>",
+        "Сиди прямо, лишь слегка наклонившись вперёд, на передней части табурета / банкетки; очень прошу, не усаживайся на всю банкетку целиком. - Siedi dritto, solo leggermente inclinato in avanti, sulla parte anteriore dello sgabello / panchetta, mi raccomando non su tutta la panchetta.",
+        "поставить банкетку к / перед фортепиано - mettere la panchetta al / davanti al <a class='ref'>pianoforte</a>",
+        "поставь банкетку перед фортепиано - metti la panchetta davanti al <a class='ref'>pianoforte</a>",
+        "придвинуть банкетку к фортепиано - avvicinare la panchetta al <a class='ref'>pianoforte</a>",
+        "придвинь немного банкетку - avvicina un po' la panchetta",
+        "подвинь банкетку поближе к фортепиано - sposta la panchetta più vicino al <a class='ref'>pianoforte</a>",
+        "отодвинуть банкетку от фортепиано - allontanare la panchetta dal <a class='ref'>pianoforte</a>",
+        "подвинуть банкетку назад - spostare la panchetta più indietro"
+      ]
+    },
     "баритон": {
       "text1": "[baritón]",
       "text2": "<i>m</i>",
@@ -4820,7 +4846,7 @@
       "text3": "esibirsi",
       "list3": [
         "выступать в концерте - esibirsi in un concerto",
-        "он выступил на фортепиано - si è esibito al pianoforte"
+        "он выступил на фортепиано - si è esibito al <a class='ref'>pianoforte</a>"
       ],
       "text4": "см. <a class='ref'>концертировать</a>"
     },
@@ -5200,7 +5226,7 @@
         "он неплохо играет на рояле - suona il <a class='ref'>pianoforte</a> discretamente",
         "особенно талантливо он исполняет Шопена - è bravissimo quando suona soprattutto Chopin",
         "пианист упражняется по пять часов в день - un pianista suona cinque ore al giorno",
-        "учиться игре на фортепьяно - imparare a suonare il pianoforte",
+        "учиться игре на фортепьяно - imparare a suonare il <a class='ref'>pianoforte</a>",
         "играть на флейте - suonare il flauto",
         "он играет на скрипке - lui suona il violino",
         "играть Бетховена - suonare Beethoven",
@@ -5441,7 +5467,7 @@
         "поступить в консерваторию - entrare in conservatorio",
         "учиться в консерватории - studiare al conservatorio",
         "окончить консерваторию - laurearsi al Conservatorio (in Russia ), diplomarsi al Conservatorio (in Italia)",
-        "он окончил консерваторию по классу фортепьяно - si è diplomato in pianoforte al conservatorio",
+        "он окончил консерваторию по классу фортепьяно - si è diplomato in <a class='ref'>pianoforte</a> al conservatorio",
         "Большой <a class='ref'>зал</a> Московской консерватории - Sala magna del Conservatorio di Mosca",
         "Малый <a class='ref'>зал</a> консерватории - Sala piccola del conservatorio (di Mosca)"
       ],
@@ -5513,7 +5539,7 @@
       "text1": "[koncertméjster]",
       "text2": "<i>m</i>",
       "text3": "1) primo violino, prima viola; maestro concertatore",
-      "text4": "2) accompagnatore (al pianoforte); см. <a class='ref'>аккомпаниатор</a>"
+      "text4": "2) accompagnatore (al <a class='ref'>pianoforte</a>); см. <a class='ref'>аккомпаниатор</a>"
     },
     "кресло": {
       "text1": "[kréslo]",
@@ -6002,7 +6028,8 @@
       "text2": "pedagogo; docente (официально в консерваториях (conservatorio), музыкальных лицеях (liceo musicale); professore (нейтрально-официальное обращение в консерваториях, музыкальных лицеях, различных вузах); maestro (уважительно, об авторитете), <a class='ref'>insegnante</a> (учитель вообще, тот, кто учит (docente, professore, maestro) - преподаватель в музыкальной школе (<a class='ref'>insegnante</a> presso una scuola di musica), учитель средней школы (<a class='ref'>insegnante</a> di scuola secondaria), преподаватель университета (universitario)",
       "list2": [
         "преподаватели Миланской консерватории - docenti del Conservatorio di Milano",
-        "преподаватель в университете - docente universitario"
+        "преподаватель в университете - docente universitario",
+        "преподаватель частных уроков - insegnante privato"
       ],
       "text3": "см. <a class='ref'>преподавательский состав</a>, <a class='ref'>консерватория</a>"
     },
@@ -6358,6 +6385,48 @@
         "правильные размеры - tempi regolari",
         "неправильные размеры - tempi irregolari"
       ]
+    },
+    "расписание": {
+      "text1": "[raspisánie]",
+      "text2": "<i>n.</i>",
+      "text3": "1.",
+      "text4": "orario (<i>m</i>)",
+      "list4": [
+        "расписание занятий - orario delle lezioni / l'orario delle lezioni scolastiche",
+        "школьное расписание - orario della scuola / orario scolastico",
+        "расписание (<m>занятий, экзаменов</m>) - calendario accademico / scolastico",
+        "изменения в расписании учителей - cambio orario dei professori",
+        "рабочее время - orario di lavoro",
+        "иметь удобное расписание - avere un orario di lavoro comodo",
+        "не иметь расписания - non avere orario",
+        "читать расписание - leggere l'orario",
+        "диктовать расписание - dettare l'orario",
+        "записывать расписание - scrivere l'orario",
+        "переписывать расписание - trascrivere l'orario",
+        "вывешивать расписание - esporre l'orario",
+        "расписание поездов (железнодорожное расписание) - orario ferroviario",
+        "по расписанию - in orario",
+        "прибыть (точно) по расписанию / вовремя - arrivare / essere in perfetto orario",
+        "поезд идёт по расписанию - siamo in orario",
+        "опережать график / расписание - essere in anticipo sull'orario",
+        "опаздывать по графику / по расписанию - essere in ritardo sull'orario",
+        "всё идёт по графику / по расписанию - siamo in orario",
+        "гибкое рабочее расписание - orario flessibile",
+        "сокращённое расписние - orario ridotto",
+        "проверить расписание - confrontare l'orario",
+        "сверяться с расписанием - consultare l'orario",
+        "летнее расписание - orario estivo",
+        "зимнее расписание - orario invernale",
+        "расписание на неделю - orario settimanale",
+        "он звонил, якобы, узнать расписание - avrebbe telefonato solo per informarsi sull'orario",
+        "это ты заиграл у меня расписание? - sei stato tu a soffiarmi l'orario?",
+        "не иметь расписания, не знать точно своего времени - non avere ore fisse"
+      ],
+      "text5": "2.",
+      "list5": [
+        "штатное расписание - ruolo (<i>m</i>), organigramma (<i>m</i>)"
+      ],
+      "text6": "см. <a class='ref'>урок</a>, <a class='ref'>педагог</a>"
     },
     "репертуар": {
       "text1": "[repertuár]",
@@ -6730,7 +6799,7 @@
       "text2": "<i>f</i>",
       "text3": "studentessa",
       "list3": [
-        "Мария - студентка по классу <a class='ref'>pianoforte</a> Московской консерватории - Maria è studentessa di pianoforte al Conservatorio di Mosca",
+        "Мария - студентка по классу <a class='ref'>pianoforte</a> Московской консерватории - Maria è studentessa di <a class='ref'>pianoforte</a> al Conservatorio di Mosca",
         "Мария - студентка факультета пения - Maria è studentessa della facolta di canto"
       ],
       "text4": "см. <a class='ref'>консерватория</a>, <a class='ref'>факультет</a>, <a class='ref'>класс</a>, <a class='ref'>студент</a>, <a class='ref'>учиться</a>, <a class='ref'>стипендия</a>, <a class='ref'>общежитие</a>"
@@ -7039,7 +7108,8 @@
         "проучить - dare una lezione a <i>qd</i>, insegnare a vivere",
         "получить суровый урок - ricevere una dura lezione",
         "«хамов надо учить!» (А. Степанов) - «Sono dei villani, e hanno bisogno di una lezione!» (A. Stepanov)"
-      ]
+      ],
+      "text6": "см. <a class='ref'>расписание</a>, <a class='ref'>педагог</a>"
     },
     "успеваемость": {
       "text1": "[uspeváemost']",
@@ -7132,7 +7202,7 @@
         "Марио учится в первом классе - Mario fa la prima elementare",
         "на каком курсе ты учишься? - che anno fai?",
         "я учусь на четвёртом курсе - il quattro anno / faccio il quattro anno",
-        "учиться игре на рояле - studiare il pianoforte",
+        "учиться игре на рояле - studiare il <a class='ref'>pianoforte</a>",
         "учиться в классе фортепиано - studiare nella classe di <a class='ref'>pianoforte</a>",
         "он учится играть на скрипке - lui studia il violino",
         "учиться пению - studiare il canto",
@@ -7310,7 +7380,7 @@
         "устный экзамен - esame orale (l'orale)",
         "экзамен по истории - esame di storia",
         "экзамен по скрипке - esame di violino",
-        "экзамены по курсу фортепиано - esami del corso di pianoforte",
+        "экзамены по курсу фортепиано - esami del corso di <a class='ref'>pianoforte</a>",
         "сертифицированные экзамены для подтверждения музыкального уровня в области пения, инструментов, композиции, камерной музыки - esami certificati per attestare livelli musicali in canto, strumento, composizione, musica da camera",
         "экзамены на аттестацию музыкальных навыков - esami per la certificazione delle competenze musicali",
         "вступительный экзамен (приёмные экзамены) - esame d'ammissione",
