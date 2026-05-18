@@ -54,6 +54,7 @@
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
+    will-change: transform;
   }
 
   #birds-behind,
@@ -78,6 +79,7 @@
     position: fixed;
     width: 35px;
     height: auto;
+    will-change: transform;
 
     .wing {
       fill: none;
@@ -419,6 +421,20 @@
     .blob {
       width: 100%;
       margin: 0 auto;
+    }
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .about .card {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+  }
+
+  .blob-container {
+    .blob {
+      animation: none;
+      border-radius: 25% 15% 30% 20% / 20% 30% 15% 25%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
     }
   }
 }

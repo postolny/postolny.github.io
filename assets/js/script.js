@@ -277,18 +277,20 @@ $(function() {
       history.replaceState(null, null, hash);
     }
   }
-  $("#search").keyup(function() {
-    var value = this.value.toLowerCase().trim();
-    $(".search").find("tr").each(function(index) {
-      var id = $(this).find("td").first().text().toLowerCase().trim();
-      $(this).toggle(id.indexOf(value) !== -1);
+  var tableSearchRows = $('.search tbody tr');
+  tableSearchRows.each(function() {
+    $(this).data('tableSearchText', $(this).text().toLowerCase());
+  });
+  $('.input-search').on('input', function() {
+    var currentSearchValue = $(this).val().toLowerCase().trim();
+    $(this).siblings('.clear-search').toggle(currentSearchValue.length > 0);
+    tableSearchRows.each(function() {
+      $(this).toggle($(this).data('tableSearchText').indexOf(currentSearchValue) !== -1);
     });
   });
-  $("#search-all").on("keyup", function() {
-    var s = $(this).val().toLowerCase();
-    $(".search-all tbody tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(s) > -1);
-    });
+  $('.clear-search').on('click', function() {
+    var currentInputField = $(this).siblings('.input-search');
+    currentInputField.val('').trigger('input');
   });
 
   function scrollToElement(targetSelector) {

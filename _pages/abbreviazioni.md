@@ -7,7 +7,10 @@ permalink: /abbreviazioni/
 
 In questa pagina vi metterò una lista delle abbreviazioni che potete trovare nei post.
 
-<input class="input-search" id="search" type="text" placeholder="Найти...">
+<div class="search-wrapper">
+	<input class="input-search" type="text" placeholder="Найти...">
+	<span class="clear-search">&times;</span>
+</div>
 
 ### Abbreviazioni
 
