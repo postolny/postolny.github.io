@@ -2810,7 +2810,6 @@ $(function() {
   const visibleCount = 3;
   const listItems = $('#showMoreList li');
   const showMoreLink = $('#showMoreLink');
-  listItems.slice(visibleCount).hide();
   updateText();
   showMoreLink.on('click', function(e) {
     e.preventDefault();
