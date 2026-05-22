@@ -228,8 +228,7 @@ $(function() {
     const href = $(this).attr("href");
     if (href.startsWith("#")) {
       e.preventDefault();
-      $(".search-all tbody tr").show();
-      $("#search-all").val("");
+      $(".input-search").val("").trigger("input");
       setTimeout(() => {
         scrollToAnchor(href);
       }, 0);
