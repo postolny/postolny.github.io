@@ -69,10 +69,20 @@
 
   #birds-behind {
     z-index: 0;
+
+    .bird-behind {
+      transform: scale(0.7);
+      opacity: 0.7;
+      transform-origin: center;
+    }
   }
 
   #birds-front {
     z-index: 2;
+
+    .bird-front {
+      transform: scale(1);
+    }
   }
 
   .bird {
@@ -100,7 +110,7 @@
     }
 
     @media (max-width: 768px) {
-      width: 26px;
+      width: 28px;
     }
   }
 
@@ -129,6 +139,7 @@
   }
 
   .footer-image {
+    position: relative;
     width: 100%;
     aspect-ratio: 1600 / 453;
     background: url("/assets/footer-desktop.webp") center bottom / cover no-repeat;
@@ -136,6 +147,7 @@
     line-height: 0;
     margin: 0;
     padding: 0;
+    z-index: 1;
   }
 
   @media (max-width: 768px) {

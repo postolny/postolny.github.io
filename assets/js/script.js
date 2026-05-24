@@ -2609,6 +2609,9 @@ $(function() {
       const bird = $('#bird-template').clone().removeAttr('id').show();
       const isFront = Math.random() > 0.6;
       const container = isFront ? $('#birds-front') : $('#birds-behind');
+      bird.addClass(isFront ? 'bird-front' : 'bird-behind');
+      const scale = isFront ? 1 : 0.7;
+      bird.data('scale', scale);
       container.append(bird);
       const birdObj = { element: bird };
       this.birds.push(birdObj);
@@ -2641,7 +2644,8 @@ $(function() {
           const distance = $(window).width() + 100;
           const x = -distance * progress;
           const wave = Math.sin(progress * Math.PI * 2 + phase) * 20;
-          bird.css('transform', `translate(${x}px, ${wave}px)`);
+          const scale = bird.data('scale') || 1;
+          bird.css('transform', 'translate(' + x + 'px, ' + wave + 'px) scale(' + scale + ')');
         },
         complete: function() {
           bird.remove();
