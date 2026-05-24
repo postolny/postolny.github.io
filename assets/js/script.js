@@ -2494,7 +2494,7 @@ $(function() {
       }
     }
   };
-  const cloudImages = ['/assets/cloud1.png', '/assets/cloud2.png', '/assets/cloud3.png', '/assets/cloud4.png', '/assets/cloud5.png'];
+  const cloudImages = ['/assets/cloud1.webp', '/assets/cloud2.webp', '/assets/cloud3.webp', '/assets/cloud4.webp', '/assets/cloud5.webp'];
   const clouds = [];
 
   function randomCloudY(size) {
