@@ -12,6 +12,7 @@
   #about-wrap {
     position: relative;
     z-index: 1;
+    padding-bottom: clamp(140px, 28vw, 420px);
   }
 
   p.capolettera {
@@ -139,31 +140,26 @@
   }
 
   .footer-image {
-    position: relative;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    aspect-ratio: 1600 / 453;
-    background: url("/assets/footer-desktop.webp") center bottom / cover no-repeat;
-    display: block;
     line-height: 0;
+    z-index: 0;
+  }
+
+  .footer-image img {
+    display: block;
+    width: 100%;
+    height: auto;
     margin: 0;
-    padding: 0;
-    z-index: 1;
   }
 
-  @media (max-width: 768px) {
-    .footer-image {
-      background-image: url("/assets/footer-tablet.webp");
-    }
-  }
-
-  @media (max-width: 480px) {
-    .footer-image {
-      background-image: url("/assets/footer-mobile.webp");
-    }
-  }
-
-  .footer-container {
+  .footer-container,
+  .footer {
+    position: relative;
     margin-top: 0;
+    z-index: 1;
   }
 }
 

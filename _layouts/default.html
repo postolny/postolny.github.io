@@ -51,6 +51,23 @@ layout: compress
   {% include settings/piano.html %}
   {% endif %}
 
+  {% if page.footer_image %}
+  <picture class="footer-image">
+    <source
+      media="(max-width: 480px)"
+      srcset="/assets/footer-mobile.webp">
+
+    <source
+      media="(max-width: 768px)"
+      srcset="/assets/footer-tablet.webp">
+
+    <img
+      src="/assets/footer-desktop.webp"
+      alt=""
+      loading="lazy">
+  </picture>
+  {% endif %}
+
   <div id="tooltip"></div>
 
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.7.1.min.js"></script>
