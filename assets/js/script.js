@@ -2390,7 +2390,8 @@ $(function() {
   });
   var scrollbarWidth = window.innerWidth - $(window).width() + "px";
   $(".lightbox").click(function() {
-    const src = $(this).attr("src");
+    // const src = $(this).attr("src");
+    const src = this.currentSrc;
     $(".overlay img").attr("src", src);
     $(".overlay").fadeIn(200).css("display", "flex");
     $("html").css("overflow", "hidden");
@@ -2494,7 +2495,7 @@ $(function() {
       }
     }
   };
-  const cloudImages = ['/assets/cloud1.webp', '/assets/cloud2.webp', '/assets/cloud3.webp', '/assets/cloud4.webp', '/assets/cloud5.webp'];
+  const cloudImages = ['/assets/cloud1.png', '/assets/cloud2.png', '/assets/cloud3.png', '/assets/cloud4.png', '/assets/cloud5.png'];
   const clouds = [];
 
   function randomCloudY(size) {

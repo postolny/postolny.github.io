@@ -55,17 +55,23 @@ layout: compress
 
   {% if page.footer_image %}
   <picture class="footer-image">
-    <source media="(max-width: 480px)" srcset="/assets/footer-mobile.webp">
-    <source media="(max-width: 768px)" srcset="/assets/footer-tablet.webp">
-    <img src="/assets/footer-desktop.webp" alt="">
+    <source media="(max-width: 480px)" srcset="/assets/footer-mobile.webp" type="image/webp">
+    <source media="(max-width: 480px)" srcset="/assets/footer-mobile.png">
+    <source media="(max-width: 768px)" srcset="/assets/footer-tablet.webp" type="image/webp">
+    <source media="(max-width: 768px)" srcset="/assets/footer-tablet.png">
+    <source srcset="/assets/footer-desktop.webp" type="image/webp">
+    <img src="/assets/footer-desktop.png" alt="">
   </picture>
   {% endif %}
 
   {% if page.indice-bg %}
   <picture class="indice-bg">
-    <source media="(max-width: 767px)" srcset="/assets/indice-mobile.webp">
-    <source media="(max-width: 1199px)" srcset="/assets/indice-tablet.webp">
-    <img src="/assets/indice-desktop.webp" alt="">
+    <source media="(max-width: 767px)" srcset="/assets/indice-mobile.webp" type="image/webp">
+    <source media="(max-width: 767px)" srcset="/assets/indice-mobile.jpg">
+    <source media="(max-width: 1199px)" srcset="/assets/indice-tablet.webp" type="image/webp">
+    <source media="(max-width: 1199px)" srcset="/assets/indice-tablet.jpg">
+    <source srcset="/assets/indice-desktop.webp" type="image/webp">
+    <img src="/assets/indice-desktop.jpg" alt="">
   </picture>
   {% endif %}
 
