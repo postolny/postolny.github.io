@@ -247,15 +247,13 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    line-height: 0;
     z-index: 0;
-  }
 
-  .footer-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
+    img {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
   }
 
   .footer-container,

@@ -51,24 +51,23 @@ layout: compress
   {% include settings/piano.html %}
   {% endif %}
 
+  <div id="tooltip"></div>
+
   {% if page.footer_image %}
   <picture class="footer-image">
-    <source
-      media="(max-width: 480px)"
-      srcset="/assets/footer-mobile.webp">
-
-    <source
-      media="(max-width: 768px)"
-      srcset="/assets/footer-tablet.webp">
-
-    <img
-      src="/assets/footer-desktop.webp"
-      alt=""
-      loading="lazy">
+    <source media="(max-width: 480px)" srcset="/assets/footer-mobile.webp">
+    <source media="(max-width: 768px)" srcset="/assets/footer-tablet.webp">
+    <img src="/assets/footer-desktop.webp" alt="">
   </picture>
   {% endif %}
 
-  <div id="tooltip"></div>
+  {% if page.indice-bg %}
+  <picture class="indice-bg">
+    <source media="(max-width: 767px)" srcset="/assets/indice-mobile.webp">
+    <source media="(max-width: 1199px)" srcset="/assets/indice-tablet.webp">
+    <img src="/assets/indice-desktop.webp" alt="">
+  </picture>
+  {% endif %}
 
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.7.1.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-ui.min.js"></script>
