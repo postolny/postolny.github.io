@@ -2389,14 +2389,20 @@ $(function() {
     }, 1500);
   });
   var scrollbarWidth = window.innerWidth - $(window).width() + "px";
-  $(".lightbox").click(function() {
-    // const src = $(this).attr("src");
-    const src = this.currentSrc;
-    $(".overlay img").attr("src", src);
+
+  function openLightbox(src, alt, caption) {
+    $(".overlay img").attr("src", src).attr("alt", alt || "");
+    $(".overlay figcaption").text(caption || "").toggle(!!caption);
     $(".overlay").fadeIn(200).css("display", "flex");
     $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
-    $(".albero, .settings-open, .settings-panel").css("marginRight", scrollbarWidth);
+    $(".albero, .settings-open, .settings-panel, .viewPainting").css("marginRight", scrollbarWidth);
+  }
+  $(".lightbox").click(function() {
+    openLightbox(this.currentSrc, $(this).attr("alt"), $(this).data("caption"));
+  });
+  $(".viewPainting").click(function() {
+    openLightbox($(this).data("full"), $(this).data("alt"), $(this).data("caption"));
   });
   $('.settings-open').on('click', function() {
     sp.addClass('open');
@@ -2418,7 +2424,7 @@ $(function() {
     $(".overlay").fadeOut(200);
     setTimeout(function() {
       $("body,.navigation").css("paddingRight", 0);
-      $(".albero, .settings-open, .settings-panel").css("marginRight", 0);
+      $(".albero, .settings-open, .settings-panel, .viewPainting").css("marginRight", 0);
       $("html").css("overflow", "auto");
     }, 300);
   }

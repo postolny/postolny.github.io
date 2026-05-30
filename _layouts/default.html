@@ -39,12 +39,16 @@ layout: compress
   {% include about-bg.html %}
   {% endif %}
 
-  {% if page.settings_panel %}
-  {% include settings/panel.html %}
-  {% endif %}
-
   {% if page.togglePianoButton %}
   {% include settings/togglePianoButton.html %}
+  {% endif %}
+
+  {% if page.viewPaintingButton %}
+  {% include settings/viewPaintingButton.html %}
+  {% endif %}
+
+  {% if page.settings_panel %}
+  {% include settings/panel.html %}
   {% endif %}
 
   {% if page.piano %}

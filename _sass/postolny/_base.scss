@@ -481,33 +481,56 @@ table:not(.highlight table) {
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   box-sizing: border-box;
   z-index: 10000;
+  padding: 20px;
 
   .parent {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
 
+    figure {
+      margin: 0;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      width: min(90vw, 100%);
+      max-height: 90dvh;
+    }
+
+    .image-wrap {
+      position: relative;
+      display: inline-block;
+      justify-self: center;
+      min-height: 0;
+    }
+
     img {
       display: block;
       margin: 0;
-      max-width: 90vw;
-      max-height: 90vh;
+      max-width: 100%;
+      max-height: 100%;
       width: auto;
       height: auto;
+      object-fit: contain;
       border-radius: 10px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    figcaption {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 14px;
+      color: $grey-4;
+      justify-self: center;
     }
 
     .close {
       position: absolute;
       top: 10px;
       right: 10px;
+      z-index: 2;
       cursor: pointer;
 
       .close-bg {
