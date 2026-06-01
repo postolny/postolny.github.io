@@ -14,39 +14,50 @@
     </svg>
   </div>
 </div>
-<div class="panel-item tool">
-  <label>Небесная палитра</label>
-  <div class="panel-item palette">
-    <div class="color-swatch" data-color="#c1dfff" style="background:#c1dfff;"></div>
-    <div class="color-swatch" data-color="#9bbadd" style="background:#9bbadd;"></div>
-    <div class="color-swatch" data-color="#7496ba" style="background:#7496ba;"></div>
+<div class="settings-content">
+  <div class="panel-item toggle">
+    <label class="switch">
+      <input type="checkbox" id="togglePage">
+      <span class="slider"></span>
+    </label>
+    <span>скрыть содержимое</span>
   </div>
-</div>
-<div class="panel-item toggle">
-  <label class="switch">
-    <input type="checkbox" id="clouds-toggle">
-    <span class="slider"></span>
-  </label>
-  <span>облака</span></div>
-<div class="panel-item range">
-  <label>Скорость облаков</label>
-  <input type="range" id="cloud-speed" min="0.1" max="3" step="0.1" value="1">
-</div>
-<div class="panel-item range">
-  <label>Количество облаков</label>
-  <input type="range" id="clouds-count" min="10" max="150" step="1">
-</div>
-<div class="panel-item toggle">
-  <label class="switch">
-    <input type="checkbox" id="birds-toggle">
-    <span class="slider"></span>
-  </label>
-  <span>птицы</span></div>
-<div class="panel-item range">
-  <label>Скорость птиц</label>
-  <input type="range" id="birds-speed" min="0.2" max="1.5" step="0.1" value="1">
-</div>
-<div class="panel-item range">
-  <label>Количество птиц</label>
-  <input type="range" id="birds-count" min="1" max="20" step="1" value="5">
+  <div class="panel-item tool">
+    <label>Небесная палитра</label>
+    <div class="panel-item palette">
+      <div class="color-swatch" data-color="#c1dfff" style="background:#c1dfff;"></div>
+      <div class="color-swatch" data-color="#9bbadd" style="background:#9bbadd;"></div>
+      <div class="color-swatch" data-color="#7496ba" style="background:#7496ba;"></div>
+    </div>
+  </div>
+  <div class="panel-item toggle">
+    <label class="switch">
+      <input type="checkbox" id="clouds-toggle">
+      <span class="slider"></span>
+    </label>
+    <span>скрыть облака</span>
+  </div>
+  <div class="panel-item range">
+    <label>Скорость облаков</label>
+    <input type="range" id="cloud-speed" min="0.1" max="3" step="0.1" value="1">
+  </div>
+  <div class="panel-item range">
+    <label>Количество облаков</label>
+    <input type="range" id="clouds-count" min="10" max="150" step="1">
+  </div>
+  <div class="panel-item toggle">
+    <label class="switch">
+      <input type="checkbox" id="birds-toggle">
+      <span class="slider"></span>
+    </label>
+    <span>скрыть птиц</span>
+  </div>
+  <div class="panel-item range">
+    <label>Скорость птиц</label>
+    <input type="range" id="birds-speed" min="0.2" max="1.5" step="0.1" value="1">
+  </div>
+  <div class="panel-item range">
+    <label>Количество птиц</label>
+    <input type="range" id="birds-count" min="1" max="20" step="1" value="5">
+  </div>
 </div>

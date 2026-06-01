@@ -2439,6 +2439,10 @@ $(function() {
       }
     }
   });
+  $('#togglePage').on('change', function() {
+    $('.navigation, .page, .footer-container, .footer, .viewPainting').toggleClass('interface-hidden', this.checked);
+    $('.about').toggleClass('no-scroll', this.checked);
+  });
   const swatches = $('.color-swatch');
   const defaultColor = swatches.first().data('color');
   const saved = localStorage.getItem('bg-color') || defaultColor;

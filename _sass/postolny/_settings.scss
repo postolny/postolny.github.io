@@ -24,14 +24,13 @@
 .settings-panel {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   position: fixed;
   right: 0;
   bottom: 0;
   width: 100%;
   max-width: 400px;
   z-index: 3;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 0.3s ease;
 
   &.open {
@@ -42,57 +41,67 @@
     background: $white;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100dvh;
+    overflow: hidden;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+
+    .settings-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+      background: $white;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
+
+      .settings-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1;
+        min-width: 0;
+
+        .settings-icon {
+          width: 24px;
+          height: 24px;
+          flex-shrink: 0;
+        }
+      }
+
+      .settings-close {
+        flex-shrink: 0;
+        cursor: pointer;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          display: block;
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover svg {
+          transform: scale(1.1);
+        }
+
+        &:active svg {
+          transform: scale(0.95);
+        }
+      }
+    }
 
     .settings-content {
       display: flex;
       flex-direction: column;
       gap: 12px;
-
-      .settings-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-
-        .settings-title {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          flex: 1;
-          min-width: 0;
-
-          .settings-icon {
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-          }
-        }
-
-        .settings-close {
-          flex-shrink: 0;
-          cursor: pointer;
-          padding: 4px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          svg {
-            display: block;
-            width: 20px;
-            height: 20px;
-          }
-
-          &:hover svg {
-            transform: scale(1.1);
-          }
-
-          &:active svg {
-            transform: scale(0.95);
-          }
-        }
-      }
+      min-height: 0;
+      padding: 16px;
+      overflow-y: auto;
+      flex: 1;
 
       input {
         &:checked+.slider {
@@ -169,7 +178,7 @@
 
             &:hover::before,
             &.active::before {
-              border-color: #262626;
+              border-color: $charcoalGrey
             }
           }
         }

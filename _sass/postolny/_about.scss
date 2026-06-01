@@ -2,8 +2,17 @@
   background-color: #c1dfff;
   transition: background 0.3s ease;
 
+  &.no-scroll {
+    position: fixed;
+    width: 100%;
+  }
+
   main {
     padding-bottom: clamp(140px, 28vw, 420px);
+  }
+
+  .interface-hidden {
+    visibility: hidden;
   }
 
   .page-title {
