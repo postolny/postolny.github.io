@@ -3,9 +3,12 @@ layout: post
 title: "Музыкальные интервалы"
 description: "Тест-упражнение на определение музыкальных интервалов. Если вы вдруг захотите проверить себя насколько хорошо вы различаете музыкальные интервалы, то самостоятельно это сделать никак не сможете, потому как станете проигрывать интервалы заведомо вам известные."
 author: "И. Постольный"
-categories: 
 tags: [Тесты, Музыка]
+
+actionPanel: true
 togglePianoButton: true
+settingButton: true
+
 piano: true
 settings_panel: true
 settings_include: settings/settings-intervalli.html

@@ -2396,7 +2396,7 @@ $(function() {
     $(".overlay").fadeIn(200).css("display", "flex");
     $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
-    $(".albero, .settings-open, .settings-panel, .viewPainting").css("marginRight", scrollbarWidth);
+    $(".albero").css("marginRight", scrollbarWidth);
   }
   $(".lightbox").click(function() {
     openLightbox(this.currentSrc, $(this).attr("alt"), $(this).data("caption"));
@@ -2424,7 +2424,7 @@ $(function() {
     $(".overlay").fadeOut(200);
     setTimeout(function() {
       $("body,.navigation").css("paddingRight", 0);
-      $(".albero, .settings-open, .settings-panel, .viewPainting").css("marginRight", 0);
+      $(".albero").css("marginRight", 0);
       $("html").css("overflow", "auto");
     }, 300);
   }
@@ -2439,9 +2439,11 @@ $(function() {
       }
     }
   });
-  $('#togglePage').on('change', function() {
-    $('.navigation, .page, .footer-container, .footer, .viewPainting').toggleClass('interface-hidden', this.checked);
-    $('.about').toggleClass('no-scroll', this.checked);
+  $('.togglePage').on('click', function() {
+    const btn = $(this);
+    btn.toggleClass('active');
+    $('.navigation, .page, .footer-container, .footer').toggleClass('interface-hidden');
+    $('.about').toggleClass('no-scroll', btn.hasClass('active'));
   });
   const swatches = $('.color-swatch');
   const defaultColor = swatches.first().data('color');
@@ -2459,6 +2461,10 @@ $(function() {
     swatches.removeClass('active');
     swatches.filter('[data-color="' + color + '"]').addClass('active');
   }
+
+  function setToggleText(el, onText, offText) {
+    $(el).closest('.panel-item').find('.toggle-text').text(el.checked ? onText : offText);
+  }
   const cloudsManager = {
     enabled: true,
     speedMultiplier: 1,
@@ -2467,6 +2473,7 @@ $(function() {
       const savedEnabled = localStorage.getItem('cloudsEnabled');
       this.enabled = savedEnabled === null ? true : savedEnabled === 'true';
       $('#clouds-toggle').prop('checked', this.enabled);
+      setToggleText($('#clouds-toggle')[0], 'скрыть облака', 'показать облака');
       const savedSpeed = localStorage.getItem('cloudSpeed');
       this.speedMultiplier = savedSpeed ? parseFloat(savedSpeed) : 1;
       $('#cloud-speed').val(this.speedMultiplier);
@@ -2570,6 +2577,7 @@ $(function() {
   });
   $('#clouds-toggle').on('change', function() {
     cloudsManager.toggle(this.checked);
+    setToggleText(this, 'скрыть облака', 'показать облака');
   });
   const birdsManager = {
     enabled: true,
@@ -2580,6 +2588,7 @@ $(function() {
       const saved = localStorage.getItem('birdsEnabled');
       this.enabled = saved === null ? true : saved === 'true';
       $('#birds-toggle').prop('checked', this.enabled);
+      setToggleText($('#birds-toggle')[0], 'скрыть птиц', 'показать птиц');
       const savedSpeed = localStorage.getItem('birdsSpeed');
       this.speed = savedSpeed ? parseFloat(savedSpeed) : 1;
       $('#birds-speed').val(this.speed);
@@ -2703,6 +2712,7 @@ $(function() {
   }
   $('#birds-toggle').on('change', function() {
     birdsManager.toggle(this.checked);
+    setToggleText(this, 'скрыть птиц', 'показать птиц');
   });
   $('#birds-speed').on('input', function() {
     birdsManager.setSpeed(parseFloat(this.value));

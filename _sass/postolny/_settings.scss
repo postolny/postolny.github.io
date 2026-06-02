@@ -1,8 +1,14 @@
-.settings-open {
+.fixedActionPanel {
   position: fixed;
   right: 10px;
   bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   z-index: 2;
+}
+
+.panelBtn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -18,6 +24,22 @@
     fill: $white;
     width: 20px;
     height: 20px;
+  }
+}
+
+.togglePage {
+  .icon-close {
+    display: none;
+  }
+
+  &.active {
+    .icon-open {
+      display: none;
+    }
+
+    .icon-close {
+      display: block;
+    }
   }
 }
 
