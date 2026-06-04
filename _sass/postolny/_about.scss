@@ -266,6 +266,29 @@
     }
   }
 
+  .footer-image__water {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    will-change: filter;
+
+    img {
+      filter: none;
+      margin: 0;
+    }
+
+    &.is-ripple {
+      img {
+        filter: url(#water-ripple);
+      }
+    }
+
+    &.is-hidden {
+      display: none;
+    }
+  }
+
   .footer-container,
   .footer {
     position: relative;

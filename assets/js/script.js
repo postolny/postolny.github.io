@@ -2465,6 +2465,21 @@ $(function() {
   function setToggleText(el, onText, offText) {
     $(el).closest('.panel-item').find('.toggle-text').text(el.checked ? onText : offText);
   }
+  const rippleManager = {
+    water: $('.footer-image__water'),
+    toggle(enabled) {
+      this.water.toggleClass('is-ripple', enabled).toggleClass('is-hidden', !enabled);
+      localStorage.setItem('waterRippleEnabled', enabled);
+    }
+  };
+  const enabled = localStorage.getItem('waterRippleEnabled') !== 'false';
+  $('#ripple-toggle').prop('checked', enabled);
+  rippleManager.toggle(enabled);
+  setToggleText($('#ripple-toggle')[0], 'рябь включена', 'рябь выключена');
+  $('#ripple-toggle').on('change', function() {
+    rippleManager.toggle(this.checked);
+    setToggleText(this, 'рябь включена', 'рябь выключена');
+  });
   const cloudsManager = {
     enabled: true,
     speedMultiplier: 1,
@@ -2473,7 +2488,7 @@ $(function() {
       const savedEnabled = localStorage.getItem('cloudsEnabled');
       this.enabled = savedEnabled === null ? true : savedEnabled === 'true';
       $('#clouds-toggle').prop('checked', this.enabled);
-      setToggleText($('#clouds-toggle')[0], 'скрыть облака', 'показать облака');
+      setToggleText($('#clouds-toggle')[0], 'облака плывут', 'облака скрыты');
       const savedSpeed = localStorage.getItem('cloudSpeed');
       this.speedMultiplier = savedSpeed ? parseFloat(savedSpeed) : 1;
       $('#cloud-speed').val(this.speedMultiplier);
@@ -2577,7 +2592,7 @@ $(function() {
   });
   $('#clouds-toggle').on('change', function() {
     cloudsManager.toggle(this.checked);
-    setToggleText(this, 'скрыть облака', 'показать облака');
+    setToggleText(this, 'облака плывут', 'облака скрыты');
   });
   const birdsManager = {
     enabled: true,
@@ -2588,7 +2603,7 @@ $(function() {
       const saved = localStorage.getItem('birdsEnabled');
       this.enabled = saved === null ? true : saved === 'true';
       $('#birds-toggle').prop('checked', this.enabled);
-      setToggleText($('#birds-toggle')[0], 'скрыть птиц', 'показать птиц');
+      setToggleText($('#birds-toggle')[0], 'птицы летают', 'птицы скрыты');
       const savedSpeed = localStorage.getItem('birdsSpeed');
       this.speed = savedSpeed ? parseFloat(savedSpeed) : 1;
       $('#birds-speed').val(this.speed);
@@ -2712,7 +2727,7 @@ $(function() {
   }
   $('#birds-toggle').on('change', function() {
     birdsManager.toggle(this.checked);
-    setToggleText(this, 'скрыть птиц', 'показать птиц');
+    setToggleText(this, 'птицы летают', 'птицы скрыты');
   });
   $('#birds-speed').on('input', function() {
     birdsManager.setSpeed(parseFloat(this.value));
