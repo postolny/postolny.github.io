@@ -5,7 +5,32 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding: 5px;
+  background: $default-shade;
+  border-radius: 50px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 2px 8px rgba(0, 0, 0, 0.2);
   z-index: 2;
+  transition: transform .3s ease;
+
+  &.is-collapsed {
+    transform: translateX(calc(100% + 10px));
+  }
+
+  .fixedActionPanel-toggle {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 30px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    color: $white;
+    background: inherit;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 2px 8px rgba(0, 0, 0, 0.2);
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .panelBtn {
@@ -19,6 +44,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-tap-highlight-color: transparent;
 
   svg {
     fill: $white;
@@ -99,6 +125,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        -webkit-tap-highlight-color: transparent;
 
         svg {
           display: block;

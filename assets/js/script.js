@@ -2401,6 +2401,11 @@ $(function() {
   $(".lightbox").click(function() {
     openLightbox(this.currentSrc, $(this).attr("alt"), $(this).data("caption"));
   });
+  $('.fixedActionPanel-toggle').on('click', function() {
+    const fixedActionPanel = $(this).closest('.fixedActionPanel');
+    fixedActionPanel.toggleClass('is-collapsed');
+    $(this).find('span').text(fixedActionPanel.hasClass('is-collapsed') ? '❮' : '❯');
+  });
   $(".viewPainting").click(function() {
     openLightbox($(this).data("full"), $(this).data("alt"), $(this).data("caption"));
   });
@@ -2460,9 +2465,13 @@ $(function() {
     swatches.removeClass('active');
     swatches.filter('[data-color="' + color + '"]').addClass('active');
   }
-
+  // function setToggleText(el, onText, offText) {
+  //   $(el).closest('.panel-item').find('.toggle-text').text(el.checked ? onText : offText);
+  // }
   function setToggleText(el, onText, offText) {
-    $(el).closest('.panel-item').find('.toggle-text').text(el.checked ? onText : offText);
+    const panel = $(el).closest('.panel-item');
+    if (!panel.length) return;
+    panel.find('.toggle-text').text(el.checked ? onText : offText);
   }
   const rippleManager = {
     water: $('.footer-image__water'),

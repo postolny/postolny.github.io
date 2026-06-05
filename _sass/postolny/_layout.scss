@@ -125,6 +125,7 @@ nav {
   height: $nav-height;
   width: $nav-height;
   z-index: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media only screen and (max-width: 798px) {
@@ -824,6 +825,7 @@ p.capolettera:first-of-type::first-letter {
           background: none;
           border: none;
           cursor: pointer;
+          -webkit-tap-highlight-color: transparent;
 
           svg {
             color: $white;
@@ -1011,7 +1013,7 @@ p.capolettera:first-of-type::first-letter {
         .panel-content {
           display: flex;
           flex-direction: column;
-          gap: 4px;
+          gap: 8px;
           padding: 20px;
           color: $white;
           font-size: 0.85em;
@@ -1223,6 +1225,7 @@ body.is-playing {
   cursor: pointer;
   border: 1px solid $grey-2;
   border-top: none;
+  -webkit-tap-highlight-color: transparent;
 
   svg {
     fill: $white;
@@ -1295,39 +1298,43 @@ body.is-playing {
   >div {
     font-size: 0.9em;
     transition: box-shadow 0.5s ease;
-  }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 10px;
-  }
+    #showMoreList {
+      list-style-type: none;
+      margin: 0;
+      padding-left: 10px;
 
-  li:not(:last-child) {
-    padding-bottom: 0.3rem;
-  }
+      li:not(:last-child) {
+        padding-bottom: 0.3rem;
+      }
 
-  svg {
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-    margin-right: 4px;
-  }
-}
+      li:nth-child(n+4) {
+        display: none;
+      }
 
-#showMoreList li:nth-child(n+4) {
-  display: none;
-}
+      a {
+        -webkit-tap-highlight-color: transparent;
 
-#showMoreLink {
-  margin-left: 10px;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
-  transition: color 0.2s linear;
+        svg {
+          width: 32px;
+          height: 32px;
+          vertical-align: middle;
+          margin-right: 4px;
+        }
+      }
+    }
 
-  &:hover {
-    color: #00ff4d;
+    #showMoreLink {
+      margin-left: 10px;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+      transition: color 0.2s linear;
+
+      &:hover {
+        color: #00ff4d;
+      }
+    }
   }
 }
 

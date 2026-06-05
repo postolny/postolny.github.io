@@ -538,6 +538,7 @@ table:not(.highlight table) {
       right: 10px;
       z-index: 2;
       cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
 
       .close-bg {
         width: 36px;
