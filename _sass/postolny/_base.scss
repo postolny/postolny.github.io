@@ -478,12 +478,18 @@ table:not(.highlight table) {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.9);
-  display: none;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  box-sizing: border-box;
+  align-items: center;
   z-index: 10000;
-  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
 
   .parent {
     display: flex;

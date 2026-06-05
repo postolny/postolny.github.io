@@ -276,6 +276,9 @@
     img {
       filter: none;
       margin: 0;
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-drag: none;
     }
 
     &.is-ripple {

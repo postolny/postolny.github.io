@@ -2393,7 +2393,7 @@ $(function() {
   function openLightbox(src, alt, caption) {
     $(".overlay img").attr("src", src).attr("alt", alt || "");
     $(".overlay figcaption").text(caption || "").toggle(!!caption);
-    $(".overlay").fadeIn(200).css("display", "flex");
+    $(".overlay").addClass("is-visible");
     $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
     $(".albero").css("marginRight", scrollbarWidth);
@@ -2421,12 +2421,11 @@ $(function() {
   });
 
   function closeLightbox() {
-    $(".overlay").fadeOut(200);
-    setTimeout(function() {
-      $("body,.navigation").css("paddingRight", 0);
-      $(".albero").css("marginRight", 0);
-      $("html").css("overflow", "auto");
-    }, 300);
+    $(".overlay").removeClass("is-visible");
+    $(".overlay img").attr("src", "");
+    $("html").css("overflow", "");
+    $("body,.navigation").css("paddingRight", 0);
+    $(".albero").css("marginRight", 0);
   }
   $(".close").click(function(e) {
     closeLightbox();
