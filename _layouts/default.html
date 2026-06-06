@@ -40,7 +40,15 @@ layout: compress
   {% endif %}
 
   {% if page.actionPanel %}
-  {% include settings/action-panel.html %}
+  <div class="fixedActionPanel">
+
+    <button class="fixedActionPanel-toggle">
+      <span>❯</span>
+    </button>
+
+    {% include settings/panels/{{ page.actionPanel }}.html %}
+
+  </div>
   {% endif %}
 
   {% if page.settings_panel %}

@@ -5,9 +5,7 @@ description: "Тест-упражнение на определение музы
 author: "И. Постольный"
 tags: [Тесты, Музыка]
 
-actionPanel: true
-togglePianoButton: true
-settingButton: true
+actionPanel: intervalli-settings
 
 piano: true
 settings_panel: true
