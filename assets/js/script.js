@@ -2473,6 +2473,41 @@ $(function() {
     if (!panel.length) return;
     panel.find('.toggle-text').text(el.checked ? onText : offText);
   }
+  const audioManager = {
+    audio: $("#music")[0],
+    button: $("#playpause"),
+    trackInfo: $("#audio-trackInfo"),
+    timer: null
+  };
+  audioManager.button.on("click", function() {
+    const isPaused = audioManager.audio.paused;
+    if (isPaused) {
+      audioManager.audio.play();
+    } else {
+      audioManager.audio.pause();
+    }
+    $(this).find(".iconPlay").toggle(!isPaused).end().find(".iconPause").toggle(isPaused);
+  });
+  $(audioManager.audio).on("ended", function() {
+    audioManager.button.find(".iconPlay").show();
+    audioManager.button.find(".iconPause").hide();
+  });
+  // $(audioManager.audio).on("play", function() {
+  //   audioManager.trackInfo.fadeIn(1000);
+  //   clearTimeout(audioManager.timer);
+  //   audioManager.timer = setTimeout(() => {
+  //     audioManager.trackInfo.fadeOut(1000);
+  //   }, 5000);
+  // });
+  $(audioManager.audio).on("play", function() {
+    clearTimeout(audioManager.timer);
+    setTimeout(() => {
+      audioManager.trackInfo.fadeIn(1000);
+      audioManager.timer = setTimeout(() => {
+        audioManager.trackInfo.fadeOut(1000);
+      }, 5000);
+    }, 2000);
+  });
   const rippleManager = {
     water: $('.footer-image__water'),
     toggle(enabled) {

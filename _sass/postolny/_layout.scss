@@ -680,7 +680,8 @@ p.capolettera {
   text-indent: 0;
 }
 
-p.capolettera:first-of-type::first-letter {
+p.capolettera:first-of-type::first-letter,
+#audio-trackInfo p::first-letter {
   font-family: 'PeterIvanowitsch', 'Georgia', serif;
   font-size: 4.8em;
   font-weight: normal;
@@ -691,7 +692,8 @@ p.capolettera:first-of-type::first-letter {
   text-shadow: none;
 }
 
-.fallback-font p.capolettera:first-of-type::first-letter {
+.fallback-font p.capolettera:first-of-type::first-letter,
+.fallback-font #audio-trackInfo p::first-letter {
   font-family: Georgia;
   font-size: 5em;
   font-weight: bold;
@@ -700,6 +702,11 @@ p.capolettera:first-of-type::first-letter {
   line-height: 0.68;
   color: #c30;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 $white;
+}
+
+#audio-trackInfo p::first-letter,
+.fallback-font #audio-trackInfo p::first-letter {
+  color: #8a6b3f;
 }
 
 .float_left {

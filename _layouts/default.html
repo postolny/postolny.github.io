@@ -29,8 +29,6 @@ layout: compress
 
   {% include lightbox.html %}
 
-  {% include footer.html %}
-
   {% unless page.exclude_frasario or site.exclude_frasario %}
   {% include frasario.html %}
   {% endunless %}
@@ -60,6 +58,19 @@ layout: compress
   {% endif %}
 
   <div id="tooltip"></div>
+
+  {% if page.audio %}
+  <audio id="music" preload="auto" controls>
+    <source src="/audio/{{ page.audio }}.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="audio-trackInfo" style="display:none">
+    <p class="composer">{{ page.audio_composer }}</p>
+    <p class="title">{{ page.audio_title }}</p>
+  </div>
+  {% endif %}
+
+  {% include footer.html %}
 
   {% if page.footer_image %}
   <picture class="footer-image">
