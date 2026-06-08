@@ -2391,10 +2391,21 @@ $(function() {
   var scrollbarWidth = window.innerWidth - $(window).width() + "px";
 
   function openLightbox(src, alt, caption) {
-    $(".overlay img").attr("src", src).attr("alt", alt || "");
-    $(".overlay figcaption").text(caption || "").toggle(!!caption);
-    $(".overlay").addClass("is-visible");
-    $("html").css("overflow", "hidden");
+    // $(".overlay img").attr("src", src).attr("alt", alt || "");
+    // $(".overlay figcaption").text(caption || "").toggle(!!caption);
+    // $(".overlay").addClass("is-visible");
+    // $("html").css("overflow", "hidden");
+    const overlay = $(".overlay");
+    const img = overlay.find("img");
+    overlay.addClass("is-visible is-loading");
+    overlay.find("figcaption").hide();
+    img.removeClass("loaded").off("load").on("load", function() {
+      overlay.removeClass("is-loading");
+      $(this).addClass("loaded");
+      if (caption) {
+        overlay.find("figcaption").text(caption).show();
+      }
+    }).attr("src", src).attr("alt", alt || "");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
     $(".albero").css("marginRight", scrollbarWidth);
   }
