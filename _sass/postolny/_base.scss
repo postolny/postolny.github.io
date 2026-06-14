@@ -328,6 +328,8 @@ video {
 
   p {
     color: #4a3924;
+    display: flow-root;
+    min-height: 3lh; /* если меньше 3 строк, высота будет та же */
   }
 }
 

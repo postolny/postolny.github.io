@@ -2406,8 +2406,8 @@ $(function() {
         overlay.find("figcaption").text(caption).show();
       }
     }).attr("src", src).attr("alt", alt || "");
+    $("html").css("overflow", "hidden");
     $("body,.navigation").css("paddingRight", scrollbarWidth);
-    $(".albero").css("marginRight", scrollbarWidth);
   }
   $(".lightbox").click(function() {
     openLightbox(this.currentSrc, $(this).attr("alt"), $(this).data("caption"));
@@ -2441,7 +2441,6 @@ $(function() {
     $(".overlay img").attr("src", "");
     $("html").css("overflow", "");
     $("body,.navigation").css("paddingRight", 0);
-    $(".albero").css("marginRight", 0);
   }
   $(".close").click(function(e) {
     closeLightbox();

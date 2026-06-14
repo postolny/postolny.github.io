@@ -311,7 +311,6 @@ nav {
 }
 
 .footer-container {
-  margin-top: 30px;
   padding: 20px 10px;
   background-color: $charcoalGrey;
 }
@@ -642,6 +641,11 @@ a:hover .footer-icon--red svg {
 }
 
 .drop-cap {
+  P {
+    display: flow-root;
+    min-height: 3lh;
+    /* если меньше 3 строк, высота будет та же */
+  }
 
   p:first-of-type,
   h2+p {
@@ -678,6 +682,9 @@ a:hover .footer-icon--red svg {
 
 p.capolettera {
   text-indent: 0;
+  display: flow-root;
+  min-height: 3lh;
+  /* если меньше 3 строк, высота будет та же */
 }
 
 p.capolettera:first-of-type::first-letter,
@@ -1346,7 +1353,9 @@ body.is-playing {
 }
 
 #albero-di-natale {
+  position: relative;
   margin-top: 50px;
+  z-index: 1;
 
   img {
     display: block;

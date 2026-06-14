@@ -70,6 +70,10 @@ layout: compress
   </div>
   {% endif %}
 
+  {% if site.show_albero_di_natale %}
+  {% include albero_di_natale.html %}
+  {% endif %}
+  
   {% include footer.html %}
 
   {% if page.footer_image %}
