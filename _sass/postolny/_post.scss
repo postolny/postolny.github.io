@@ -1,11 +1,12 @@
+@use 'variables';
 .post {
   padding: 3rem 0;
 
   &-info,
   .tags-title,
   .categories-title {
-    color: $default-tint;
-    font-family: $font-secondary;
+    color: variables.$default-tint;
+    font-family: variables.$font-secondary;
     letter-spacing: 0.5px;
     text-align: center;
     font-size: 16px;
@@ -35,8 +36,8 @@
   }
 
   &-title {
-    color: $default-shade;
-    font-family: $font-headings;
+    color: variables.$default-shade;
+    font-family: variables.$font-headings;
     text-align: center;
   }
 
@@ -49,13 +50,13 @@
   
     &.border {
       padding: 5px;
-      border: 5px solid $default-shade;
+      border: 5px solid variables.$default-shade;
     }
   
     + em {
-      color: $default-tint;
+      color: variables.$default-tint;
       display: block;
-      font-family: $font-captions;
+      font-family: variables.$font-captions;
       font-style: normal;
       text-align: center;
       font-size: 16px;

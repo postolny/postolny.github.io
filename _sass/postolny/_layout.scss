@@ -1,3 +1,4 @@
+@use 'variables';
 .container {
   margin: 0 auto;
   max-width: 800px;
@@ -28,9 +29,9 @@ main {
 }
 
 .navigation {
-  font-family: $font-primary;
-  height: $nav-height;
-  background: $nav-background;
+  font-family: variables.$font-primary;
+  height: variables.$nav-height;
+  background: variables.$nav-background;
   box-shadow: 0 5px 30px #000;
   left: 0;
   position: absolute;
@@ -43,22 +44,22 @@ main {
   position: absolute;
   padding-left: 20px;
   float: left;
-  line-height: $nav-height;
+  line-height: variables.$nav-height;
   font-size: 1.1em;
 
   a,
   a:visited {
-    color: $nav-font-color;
+    color: variables.$nav-font-color;
     text-decoration: none;
   }
 
   span {
-    color: $white;
+    color: variables.$white;
   }
 }
 
 .nav-container {
-  max-width: $content-width;
+  max-width: variables.$content-width;
   margin: 0 auto;
 }
 
@@ -79,15 +80,15 @@ nav {
         font-size: 16px;
         display: block;
         padding: 0 20px;
-        line-height: $nav-height;
-        background: $nav-background;
-        color: $nav-font-color;
+        line-height: variables.$nav-height;
+        background: variables.$nav-background;
+        color: variables.$nav-font-color;
         text-decoration: none;
         transition: background-color 0.25s ease-in-out;
 
         &:hover {
-          background: $link-hover-color;
-          color: $nav-font-color;
+          background: variables.$link-hover-color;
+          color: variables.$nav-font-color;
         }
 
         &:not(:only-child):after {
@@ -121,9 +122,9 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  /*background: $nav-background;*/
-  height: $nav-height;
-  width: $nav-height;
+  /*background: variables.$nav-background;*/
+  height: variables.$nav-height;
+  width: variables.$nav-height;
   z-index: 1;
   -webkit-tap-highlight-color: transparent;
 }
@@ -144,7 +145,7 @@ nav {
 
         span:before,
         span:after {
-          background: $white;
+          background: variables.$white;
         }
       }
 
@@ -157,14 +158,14 @@ nav {
   nav {
     width: 100%;
 
-    /*padding: $nav-height 0 15px;*/
+    /*padding: variables.$nav-height 0 15px;*/
     ul {
       display: none;
 
       li {
         float: none;
         /* Фон li для исключения просвета, образовавшегося из-за отступа */
-        background: $charcoalGrey;
+        background: variables.$charcoalGrey;
 
         a {
           padding: 15px;
@@ -229,7 +230,7 @@ nav {
   svg {
     width: 20px;
     height: 20px;
-    fill: $red;
+    fill: variables.$red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,13 +242,13 @@ nav {
   &:hover {
     .nav-icon {
       svg {
-        fill: $white;
+        fill: variables.$white;
       }
     }
   }
 }
 
-@media screen and (min-width: $breakpoint) {
+@media screen and (min-width: variables.$breakpoint) {
   .nav-list {
     display: block !important;
   }
@@ -267,7 +268,7 @@ nav {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: $nav-font-color;
+    background: variables.$nav-font-color;
     position: absolute;
     display: block;
     content: "";
@@ -312,7 +313,7 @@ nav {
 
 .footer-container {
   padding: 20px 10px;
-  background-color: $charcoalGrey;
+  background-color: variables.$charcoalGrey;
 }
 
 .footer-inner {
@@ -328,7 +329,7 @@ nav {
     display: flex;
     align-items: center;
     width: max-content;
-    font-family: $font-primary;
+    font-family: variables.$font-primary;
     font-size: 14px;
     gap: 6px;
   }
@@ -347,32 +348,32 @@ nav {
 }
 
 .footer-icon--white svg {
-  fill: $lightGray;
+  fill: variables.$lightGray;
 }
 
 a:hover .footer-icon--white svg {
-  fill: $white;
+  fill: variables.$white;
 }
 
 .footer-icon--red svg {
-  fill: $red;
+  fill: variables.$red;
 }
 
 a:hover .footer-icon--red svg {
-  fill: $white;
+  fill: variables.$white;
 }
 
 .footer-copyright {
   text-align: center;
   padding: 10px;
-  font-family: $font-primary;
+  font-family: variables.$font-primary;
   font-size: 14px;
 }
 
 .footer {
-  font-family: $font-secondary;
-  background-color: $default-shade;
-  color: $lightGray;
+  font-family: variables.$font-secondary;
+  background-color: variables.$default-shade;
+  color: variables.$lightGray;
   box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -446,7 +447,7 @@ a:hover .footer-icon--red svg {
   position: relative;
   margin-left: -70px;
   margin-top: 72px;
-  color: $white;
+  color: variables.$white;
   background-color: LimeGreen;
   border-radius: 3px;
   box-sizing: border-box;
@@ -492,7 +493,7 @@ a:hover .footer-icon--red svg {
   border: 2px #3cb371 solid;
 
   &:hover {
-    color: $white;
+    color: variables.$white;
     background-color: #3cb371;
   }
 }
@@ -558,7 +559,7 @@ a:hover .footer-icon--red svg {
   margin-bottom: 30px;
 
   h2 {
-    color: $white;
+    color: variables.$white;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
   }
 }
@@ -574,10 +575,10 @@ a:hover .footer-icon--red svg {
   display: inline-block;
   position: relative;
   padding: 10px 20px;
-  color: $white;
-  font-family: $font-secondary;
+  color: variables.$white;
+  font-family: variables.$font-secondary;
   font-size: 14px;
-  background: $default-shade;
+  background: variables.$default-shade;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   margin: 2px;
   -webkit-tap-highlight-color: transparent;
@@ -589,7 +590,7 @@ a:hover .footer-icon--red svg {
     width: 0;
     top: 0;
     right: 0;
-    background: linear-gradient(225deg, $white 45%, $default-tint 50%, $grey-2 56%, $white 80%);
+    background: linear-gradient(225deg, variables.$white 45%, variables.$default-tint 50%, variables.$grey-2 56%, variables.$white 80%);
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
   }
@@ -618,7 +619,7 @@ a:hover .footer-icon--red svg {
 
   .postilla {
     padding: 10px 0 0;
-    font-family: $font-primary;
+    font-family: variables.$font-primary;
     font-size: 13px;
 
     &:before {
@@ -626,7 +627,7 @@ a:hover .footer-icon--red svg {
       display: block;
       max-width: 192px;
       height: 1px;
-      background: $default-shade;
+      background: variables.$default-shade;
     }
   }
 
@@ -675,7 +676,7 @@ a:hover .footer-icon--red svg {
       margin: 0.10em 0.1em -0.1em 0;
       line-height: 0.68;
       color: #c30;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 $white;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 variables.$white;
     }
   }
 }
@@ -708,7 +709,7 @@ p.capolettera:first-of-type::first-letter,
   margin: 0.10em 0.1em -0.1em 0;
   line-height: 0.68;
   color: #c30;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 $white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 variables.$white;
 }
 
 #audio-trackInfo p::first-letter,
@@ -819,16 +820,16 @@ p.capolettera:first-of-type::first-letter,
     flex-direction: column;
     width: 100%;
     max-width: 400px;
-    border: 1px solid $grey-2;
+    border: 1px solid variables.$grey-2;
     border-radius: 5px;
-    background-color: $white;
+    background-color: variables.$white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     .top-area {
-      border-bottom: 1px solid $grey-2;
+      border-bottom: 1px solid variables.$grey-2;
 
       #player-controls {
-        background: $default-shade;
+        background: variables.$default-shade;
         display: flex;
         align-items: center;
         padding: 10px;
@@ -842,7 +843,7 @@ p.capolettera:first-of-type::first-letter,
           -webkit-tap-highlight-color: transparent;
 
           svg {
-            color: $white;
+            color: variables.$white;
             vertical-align: middle;
           }
 
@@ -876,7 +877,7 @@ p.capolettera:first-of-type::first-letter,
           .value {
             font-size: 9px;
             width: 22px;
-            color: $white;
+            color: variables.$white;
           }
 
           #volume-control[type="range"] {
@@ -931,7 +932,7 @@ p.capolettera:first-of-type::first-letter,
         gap: 10px;
         width: 100%;
         padding: 5px 10px 6px;
-        background-color: $default-shade;
+        background-color: variables.$default-shade;
         -webkit-tap-highlight-color: transparent;
         user-select: none;
 
@@ -963,7 +964,7 @@ p.capolettera:first-of-type::first-letter,
           justify-content: space-between;
           gap: 5px;
           font-size: 9px;
-          color: $white;
+          color: variables.$white;
         }
       }
     }
@@ -1004,12 +1005,12 @@ p.capolettera:first-of-type::first-letter,
             transition: background-color 0.3s ease;
 
             &:hover {
-              background: $grey-4;
+              background: variables.$grey-4;
             }
           }
 
           li.active {
-            background: $grey-4;
+            background: variables.$grey-4;
           }
         }
       }
@@ -1018,7 +1019,7 @@ p.capolettera:first-of-type::first-letter,
     .bottom-area {
       .sliding-panel {
         width: 100%;
-        background-color: $green;
+        background-color: variables.$green;
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.3s ease-in-out;
@@ -1029,7 +1030,7 @@ p.capolettera:first-of-type::first-letter,
           flex-direction: column;
           gap: 8px;
           padding: 20px;
-          color: $white;
+          color: variables.$white;
           font-size: 0.85em;
         }
       }
@@ -1042,7 +1043,7 @@ p.capolettera:first-of-type::first-letter,
 }
 
 .playing {
-  background-color: $grey-4;
+  background-color: variables.$grey-4;
   transition: none;
 }
 
@@ -1076,7 +1077,7 @@ p.capolettera:first-of-type::first-letter,
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $grey-2;
+  background-color: variables.$grey-2;
   transition: 0.4s;
   border-radius: 17px;
 
@@ -1087,7 +1088,7 @@ p.capolettera:first-of-type::first-letter,
     width: 13px;
     left: 2px;
     bottom: 2px;
-    background-color: $white;
+    background-color: variables.$white;
     transition: 0.4s;
     border-radius: 50%;
   }
@@ -1163,7 +1164,7 @@ main {
 }
 
 .is-playing {
-  background-color: $charcoalGrey;
+  background-color: variables.$charcoalGrey;
 }
 
 body.is-playing {
@@ -1176,13 +1177,13 @@ body.is-playing {
     span,
     span:before,
     span:after {
-      background: $white;
+      background: variables.$white;
     }
   }
 
   .brand a,
   .brand a:visited {
-    color: $white;
+    color: variables.$white;
   }
 
   main {
@@ -1190,7 +1191,7 @@ body.is-playing {
     h1,
     h2,
     p {
-      color: $white;
+      color: variables.$white;
     }
   }
 
@@ -1207,12 +1208,12 @@ body.is-playing {
   }
 
   #spartiti_row a {
-    color: $lightGray;
+    color: variables.$lightGray;
   }
 
   #spartiti_row a:hover,
   #showMoreLink:hover {
-    color: $white;
+    color: variables.$white;
   }
 
   .page img.border {
@@ -1227,7 +1228,7 @@ body.is-playing {
 #panel-toggle {
   width: 54px;
   height: 26px;
-  background-color: $green;
+  background-color: variables.$green;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
   overflow: hidden;
@@ -1237,12 +1238,12 @@ body.is-playing {
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-  border: 1px solid $grey-2;
+  border: 1px solid variables.$grey-2;
   border-top: none;
   -webkit-tap-highlight-color: transparent;
 
   svg {
-    fill: $white;
+    fill: variables.$white;
   }
 }
 
@@ -1259,9 +1260,9 @@ body.is-playing {
   width: 100%;
   padding: 1em;
   box-shadow:
-    $default-shade 0px 0px 0px 2px inset,
-    $white 14px 14px 0px -2px,
-    $default-shade 14px 14px;
+    variables.$default-shade 0px 0px 0px 2px inset,
+    variables.$white 14px 14px 0px -2px,
+    variables.$default-shade 14px 14px;
 }
 
 #wrapper-toc {
@@ -1269,8 +1270,8 @@ body.is-playing {
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: $font-size-h3-toc;
-    line-height: $line-height-h3-toc;
+    font-size: variables.$font-size-h3-toc;
+    line-height: variables.$line-height-h3-toc;
 
     @media (max-width: 768px) {
       font-size: 1.25rem;
@@ -1295,8 +1296,8 @@ body.is-playing {
       left: 0;
       counter-increment: myCounter;
       content: counter(myCounter);
-      color: $white;
-      background: $default-shade;
+      color: variables.$white;
+      background: variables.$default-shade;
       height: 30px;
       width: 30px;
       text-align: center;
