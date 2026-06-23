@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 .notfound {
   position: relative;
   text-align: center;
@@ -10,7 +10,7 @@
   }
 
   &-line {
-    border-top: 0.4rem solid variables.$default-shade;
+    border-top: 0.4rem solid v.$default-shade;
     display: block;
     margin: 0 auto 3rem;
     width: 4rem;

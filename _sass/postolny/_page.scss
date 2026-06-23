@@ -1,10 +1,10 @@
-@use 'variables';
+@use 'variables' as v;
 .page {
   padding: 3rem 0;
 
   &-info {
-    color: variables.$default-tint;
-    font-family: variables.$font-secondary;
+    color: v.$default-tint;
+    font-family: v.$font-secondary;
     letter-spacing: 0.5px;
     text-align: center;
     font-size: 16px;
@@ -18,8 +18,8 @@
   }
 
   &-title {
-    color: variables.$default-shade;
-    font-family: variables.$font-headings;
+    color: v.$default-shade;
+    font-family: v.$font-headings;
     text-align: center;
   }
 
@@ -32,13 +32,13 @@
   
     &.border {
       padding: 5px;
-      border: 5px solid variables.$default-shade;
+      border: 5px solid v.$default-shade;
     }
   
     + em {
-      color: variables.$default-tint;
+      color: v.$default-tint;
       display: block;
-      font-family: variables.$font-captions;
+      font-family: v.$font-captions;
       font-style: normal;
       text-align: center;
       font-size: 16px;

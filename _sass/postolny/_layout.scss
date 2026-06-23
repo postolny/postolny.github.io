@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 .container {
   margin: 0 auto;
   max-width: 800px;
@@ -29,9 +29,9 @@ main {
 }
 
 .navigation {
-  font-family: variables.$font-primary;
-  height: variables.$nav-height;
-  background: variables.$nav-background;
+  font-family: v.$font-primary;
+  height: v.$nav-height;
+  background: v.$nav-background;
   box-shadow: 0 5px 30px #000;
   left: 0;
   position: absolute;
@@ -44,22 +44,22 @@ main {
   position: absolute;
   padding-left: 20px;
   float: left;
-  line-height: variables.$nav-height;
+  line-height: v.$nav-height;
   font-size: 1.1em;
 
   a,
   a:visited {
-    color: variables.$nav-font-color;
+    color: v.$nav-font-color;
     text-decoration: none;
   }
 
   span {
-    color: variables.$white;
+    color: v.$white;
   }
 }
 
 .nav-container {
-  max-width: variables.$content-width;
+  max-width: v.$content-width;
   margin: 0 auto;
 }
 
@@ -80,15 +80,15 @@ nav {
         font-size: 16px;
         display: block;
         padding: 0 20px;
-        line-height: variables.$nav-height;
-        background: variables.$nav-background;
-        color: variables.$nav-font-color;
+        line-height: v.$nav-height;
+        background: v.$nav-background;
+        color: v.$nav-font-color;
         text-decoration: none;
         transition: background-color 0.25s ease-in-out;
 
         &:hover {
-          background: variables.$link-hover-color;
-          color: variables.$nav-font-color;
+          background: v.$link-hover-color;
+          color: v.$nav-font-color;
         }
 
         &:not(:only-child):after {
@@ -122,9 +122,9 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  /*background: variables.$nav-background;*/
-  height: variables.$nav-height;
-  width: variables.$nav-height;
+  /*background: v.$nav-background;*/
+  height: v.$nav-height;
+  width: v.$nav-height;
   z-index: 1;
   -webkit-tap-highlight-color: transparent;
 }
@@ -145,7 +145,7 @@ nav {
 
         span:before,
         span:after {
-          background: variables.$white;
+          background: v.$white;
         }
       }
 
@@ -158,14 +158,14 @@ nav {
   nav {
     width: 100%;
 
-    /*padding: variables.$nav-height 0 15px;*/
+    /*padding: v.$nav-height 0 15px;*/
     ul {
       display: none;
 
       li {
         float: none;
         /* Фон li для исключения просвета, образовавшегося из-за отступа */
-        background: variables.$charcoalGrey;
+        background: v.$charcoalGrey;
 
         a {
           padding: 15px;
@@ -230,7 +230,7 @@ nav {
   svg {
     width: 20px;
     height: 20px;
-    fill: variables.$red;
+    fill: v.$red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,13 +242,13 @@ nav {
   &:hover {
     .nav-icon {
       svg {
-        fill: variables.$white;
+        fill: v.$white;
       }
     }
   }
 }
 
-@media screen and (min-width: variables.$breakpoint) {
+@media screen and (min-width: v.$breakpoint) {
   .nav-list {
     display: block !important;
   }
@@ -268,7 +268,7 @@ nav {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: variables.$nav-font-color;
+    background: v.$nav-font-color;
     position: absolute;
     display: block;
     content: "";
@@ -313,7 +313,7 @@ nav {
 
 .footer-container {
   padding: 20px 10px;
-  background-color: variables.$charcoalGrey;
+  background-color: v.$charcoalGrey;
 }
 
 .footer-inner {
@@ -329,7 +329,7 @@ nav {
     display: flex;
     align-items: center;
     width: max-content;
-    font-family: variables.$font-primary;
+    font-family: v.$font-primary;
     font-size: 14px;
     gap: 6px;
   }
@@ -348,32 +348,32 @@ nav {
 }
 
 .footer-icon--white svg {
-  fill: variables.$lightGray;
+  fill: v.$lightGray;
 }
 
 a:hover .footer-icon--white svg {
-  fill: variables.$white;
+  fill: v.$white;
 }
 
 .footer-icon--red svg {
-  fill: variables.$red;
+  fill: v.$red;
 }
 
 a:hover .footer-icon--red svg {
-  fill: variables.$white;
+  fill: v.$white;
 }
 
 .footer-copyright {
   text-align: center;
   padding: 10px;
-  font-family: variables.$font-primary;
+  font-family: v.$font-primary;
   font-size: 14px;
 }
 
 .footer {
-  font-family: variables.$font-secondary;
-  background-color: variables.$default-shade;
-  color: variables.$lightGray;
+  font-family: v.$font-secondary;
+  background-color: v.$default-shade;
+  color: v.$lightGray;
   box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -447,7 +447,7 @@ a:hover .footer-icon--red svg {
   position: relative;
   margin-left: -70px;
   margin-top: 72px;
-  color: variables.$white;
+  color: v.$white;
   background-color: LimeGreen;
   border-radius: 3px;
   box-sizing: border-box;
@@ -493,7 +493,7 @@ a:hover .footer-icon--red svg {
   border: 2px #3cb371 solid;
 
   &:hover {
-    color: variables.$white;
+    color: v.$white;
     background-color: #3cb371;
   }
 }
@@ -559,7 +559,7 @@ a:hover .footer-icon--red svg {
   margin-bottom: 30px;
 
   h2 {
-    color: variables.$white;
+    color: v.$white;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
   }
 }
@@ -575,10 +575,10 @@ a:hover .footer-icon--red svg {
   display: inline-block;
   position: relative;
   padding: 10px 20px;
-  color: variables.$white;
-  font-family: variables.$font-secondary;
+  color: v.$white;
+  font-family: v.$font-secondary;
   font-size: 14px;
-  background: variables.$default-shade;
+  background: v.$default-shade;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   margin: 2px;
   -webkit-tap-highlight-color: transparent;
@@ -590,7 +590,7 @@ a:hover .footer-icon--red svg {
     width: 0;
     top: 0;
     right: 0;
-    background: linear-gradient(225deg, variables.$white 45%, variables.$default-tint 50%, variables.$grey-2 56%, variables.$white 80%);
+    background: linear-gradient(225deg, v.$white 45%, v.$default-tint 50%, v.$grey-2 56%, v.$white 80%);
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
   }
@@ -619,7 +619,7 @@ a:hover .footer-icon--red svg {
 
   .postilla {
     padding: 10px 0 0;
-    font-family: variables.$font-primary;
+    font-family: v.$font-primary;
     font-size: 13px;
 
     &:before {
@@ -627,7 +627,7 @@ a:hover .footer-icon--red svg {
       display: block;
       max-width: 192px;
       height: 1px;
-      background: variables.$default-shade;
+      background: v.$default-shade;
     }
   }
 
@@ -676,7 +676,7 @@ a:hover .footer-icon--red svg {
       margin: 0.10em 0.1em -0.1em 0;
       line-height: 0.68;
       color: #c30;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 variables.$white;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 v.$white;
     }
   }
 }
@@ -709,7 +709,7 @@ p.capolettera:first-of-type::first-letter,
   margin: 0.10em 0.1em -0.1em 0;
   line-height: 0.68;
   color: #c30;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 variables.$white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 -1px 0 v.$white;
 }
 
 #audio-trackInfo p::first-letter,
@@ -820,16 +820,16 @@ p.capolettera:first-of-type::first-letter,
     flex-direction: column;
     width: 100%;
     max-width: 400px;
-    border: 1px solid variables.$grey-2;
+    border: 1px solid v.$grey-2;
     border-radius: 5px;
-    background-color: variables.$white;
+    background-color: v.$white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     .top-area {
-      border-bottom: 1px solid variables.$grey-2;
+      border-bottom: 1px solid v.$grey-2;
 
       #player-controls {
-        background: variables.$default-shade;
+        background: v.$default-shade;
         display: flex;
         align-items: center;
         padding: 10px;
@@ -843,7 +843,7 @@ p.capolettera:first-of-type::first-letter,
           -webkit-tap-highlight-color: transparent;
 
           svg {
-            color: variables.$white;
+            color: v.$white;
             vertical-align: middle;
           }
 
@@ -877,7 +877,7 @@ p.capolettera:first-of-type::first-letter,
           .value {
             font-size: 9px;
             width: 22px;
-            color: variables.$white;
+            color: v.$white;
           }
 
           #volume-control[type="range"] {
@@ -932,7 +932,7 @@ p.capolettera:first-of-type::first-letter,
         gap: 10px;
         width: 100%;
         padding: 5px 10px 6px;
-        background-color: variables.$default-shade;
+        background-color: v.$default-shade;
         -webkit-tap-highlight-color: transparent;
         user-select: none;
 
@@ -964,7 +964,7 @@ p.capolettera:first-of-type::first-letter,
           justify-content: space-between;
           gap: 5px;
           font-size: 9px;
-          color: variables.$white;
+          color: v.$white;
         }
       }
     }
@@ -1005,12 +1005,12 @@ p.capolettera:first-of-type::first-letter,
             transition: background-color 0.3s ease;
 
             &:hover {
-              background: variables.$grey-4;
+              background: v.$grey-4;
             }
           }
 
           li.active {
-            background: variables.$grey-4;
+            background: v.$grey-4;
           }
         }
       }
@@ -1019,7 +1019,7 @@ p.capolettera:first-of-type::first-letter,
     .bottom-area {
       .sliding-panel {
         width: 100%;
-        background-color: variables.$green;
+        background-color: v.$green;
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.3s ease-in-out;
@@ -1030,7 +1030,7 @@ p.capolettera:first-of-type::first-letter,
           flex-direction: column;
           gap: 8px;
           padding: 20px;
-          color: variables.$white;
+          color: v.$white;
           font-size: 0.85em;
         }
       }
@@ -1043,7 +1043,7 @@ p.capolettera:first-of-type::first-letter,
 }
 
 .playing {
-  background-color: variables.$grey-4;
+  background-color: v.$grey-4;
   transition: none;
 }
 
@@ -1077,7 +1077,7 @@ p.capolettera:first-of-type::first-letter,
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: variables.$grey-2;
+  background-color: v.$grey-2;
   transition: 0.4s;
   border-radius: 17px;
 
@@ -1088,7 +1088,7 @@ p.capolettera:first-of-type::first-letter,
     width: 13px;
     left: 2px;
     bottom: 2px;
-    background-color: variables.$white;
+    background-color: v.$white;
     transition: 0.4s;
     border-radius: 50%;
   }
@@ -1164,7 +1164,7 @@ main {
 }
 
 .is-playing {
-  background-color: variables.$charcoalGrey;
+  background-color: v.$charcoalGrey;
 }
 
 body.is-playing {
@@ -1177,13 +1177,13 @@ body.is-playing {
     span,
     span:before,
     span:after {
-      background: variables.$white;
+      background: v.$white;
     }
   }
 
   .brand a,
   .brand a:visited {
-    color: variables.$white;
+    color: v.$white;
   }
 
   main {
@@ -1191,7 +1191,7 @@ body.is-playing {
     h1,
     h2,
     p {
-      color: variables.$white;
+      color: v.$white;
     }
   }
 
@@ -1208,12 +1208,12 @@ body.is-playing {
   }
 
   #spartiti_row a {
-    color: variables.$lightGray;
+    color: v.$lightGray;
   }
 
   #spartiti_row a:hover,
   #showMoreLink:hover {
-    color: variables.$white;
+    color: v.$white;
   }
 
   .page img.border {
@@ -1228,7 +1228,7 @@ body.is-playing {
 #panel-toggle {
   width: 54px;
   height: 26px;
-  background-color: variables.$green;
+  background-color: v.$green;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
   overflow: hidden;
@@ -1238,12 +1238,12 @@ body.is-playing {
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-  border: 1px solid variables.$grey-2;
+  border: 1px solid v.$grey-2;
   border-top: none;
   -webkit-tap-highlight-color: transparent;
 
   svg {
-    fill: variables.$white;
+    fill: v.$white;
   }
 }
 
@@ -1260,9 +1260,9 @@ body.is-playing {
   width: 100%;
   padding: 1em;
   box-shadow:
-    variables.$default-shade 0px 0px 0px 2px inset,
-    variables.$white 14px 14px 0px -2px,
-    variables.$default-shade 14px 14px;
+    v.$default-shade 0px 0px 0px 2px inset,
+    v.$white 14px 14px 0px -2px,
+    v.$default-shade 14px 14px;
 }
 
 #wrapper-toc {
@@ -1270,8 +1270,8 @@ body.is-playing {
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: variables.$font-size-h3-toc;
-    line-height: variables.$line-height-h3-toc;
+    font-size: v.$font-size-h3-toc;
+    line-height: v.$line-height-h3-toc;
 
     @media (max-width: 768px) {
       font-size: 1.25rem;
@@ -1296,8 +1296,8 @@ body.is-playing {
       left: 0;
       counter-increment: myCounter;
       content: counter(myCounter);
-      color: variables.$white;
-      background: variables.$default-shade;
+      color: v.$white;
+      background: v.$default-shade;
       height: 30px;
       width: 30px;
       text-align: center;

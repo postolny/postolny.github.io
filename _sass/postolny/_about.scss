@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 .about {
   background-color: #c1dfff;
   transition: background 0.3s ease;
@@ -18,7 +18,7 @@
 
   .page-title {
     color: #ecedef;
-    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.7), 0 1px 0 variables.$grey-2, 0 2px 0 #bbb, 0 3px 1px rgba(0, 0, 0, 0.2), 0 4px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.7), 0 1px 0 v.$grey-2, 0 2px 0 #bbb, 0 3px 1px rgba(0, 0, 0, 0.2), 0 4px 3px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 1;
   }
@@ -36,7 +36,7 @@
   }
 
   .card {
-    background: variables.$pale-blue;
+    background: v.$pale-blue;
     padding: 30px;
     border-radius: 12px;
     gap: 10px;
@@ -61,7 +61,7 @@
 
     .blob {
       width: 45%;
-      background: variables.$pale-blue;
+      background: v.$pale-blue;
       animation: pulse 8s infinite ease-in-out;
       border: 1px solid rgba(255, 255, 255, 0.7);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -73,7 +73,7 @@
 
       h3 {
         margin: 0 0 15px;
-        color: variables.$dark-blue;
+        color: v.$dark-blue;
         font-size: 32px;
         font-weight: 700;
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6), 0 -1px 1px rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@
       }
 
       a.blob-link {
-        color: variables.$dark-blue;
+        color: v.$dark-blue;
         text-decoration: none;
         font-weight: 600;
         padding: 0 6px;
@@ -95,7 +95,7 @@
         transition: background-size 0.2s ease;
 
         &:hover {
-          color: variables.$dark-blue;
+          color: v.$dark-blue;
           background-size: 100% 100%;
         }
       }
@@ -109,15 +109,15 @@
         border: none;
         cursor: pointer;
         font-size: 16px;
-        color: variables.$white;
-        background: variables.$teal;
+        color: v.$white;
+        background: v.$teal;
         border-radius: 18px 30px 22px 28px / 28px 22px 30px 18px;
         box-shadow: 0 8px 0 #0e6b5c;
         transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.2s ease;
         -webkit-tap-highlight-color: transparent;
 
         &:hover {
-          color: variables.$white;
+          color: v.$white;
           filter: brightness(1.05);
         }
 

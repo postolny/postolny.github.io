@@ -1,13 +1,13 @@
-@use 'variables';
+@use 'variables' as v;
 pre,
 code {
-  font-family: variables.$monospaced;
+  font-family: v.$monospaced;
 }
 
 code {
-  background-color: variables.$grey-4;
+  background-color: v.$grey-4;
   border-radius: 3px;
-  color: variables.$code-color;
+  color: v.$code-color;
   font-size: 85%;
   padding: 0.25em 0.5em;
 }
@@ -30,7 +30,7 @@ pre code {
 }
 
 .highlight {
-  background-color: variables.$grey-4;
+  background-color: v.$grey-4;
   border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 1rem;
@@ -49,7 +49,7 @@ pre code {
   }
 
   .lineno {
-    color: variables.$default-tint;
+    color: v.$default-tint;
     margin: 0 0 1rem;
     padding: 1rem 0.75rem 0 0.25rem;
     -webkit-user-select: none;
@@ -63,9 +63,9 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
-  font-family: variables.$font-syntax-label;
+  background-color: v.$grey-4;
+  color: v.$default-tint;
+  font-family: v.$font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -78,9 +78,9 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
-  font-family: variables.$font-syntax-label;
+  background-color: v.$grey-4;
+  color: v.$default-tint;
+  font-family: v.$font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -93,9 +93,9 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
-  font-family: variables.$font-syntax-label;
+  background-color: v.$grey-4;
+  color: v.$default-tint;
+  font-family: v.$font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -108,9 +108,9 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
-  font-family: variables.$font-syntax-label;
+  background-color: v.$grey-4;
+  color: v.$default-tint;
+  font-family: v.$font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -123,9 +123,9 @@ pre code {
   position: absolute;
   top: -0.7rem;
   left: 0.3rem;
-  background-color: variables.$grey-4;
-  color: variables.$default-tint;
-  font-family: variables.$font-syntax-label;
+  background-color: v.$grey-4;
+  color: v.$default-tint;
+  font-family: v.$font-syntax-label;
   font-size: 0.6rem;
   padding: 0 0.5rem;
   border-radius: 3px 3px 0 0;
@@ -155,8 +155,8 @@ kbd {
   font-style: normal;
   padding: 1px 4px;
   color: #777;
-  background-color: variables.$white;
+  background-color: v.$white;
   border: solid 1px #d9d9d9;
   border-radius: 3px;
-  box-shadow: 0 1px 0 0 variables.$grey-2;
+  box-shadow: 0 1px 0 0 v.$grey-2;
 }
