@@ -6,7 +6,10 @@
   {% seo %}
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ "/assets/jquery-ui.css" | relative_url }}">
+  {% if page.jquery_ui %}
+    <link rel="stylesheet" href="{{ '/assets/jquery-ui.css' | relative_url }}">
+  {% endif %}
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}?v={{ site.time | date: '%s' }}">
 
   <style>

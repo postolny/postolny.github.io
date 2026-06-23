@@ -7,6 +7,7 @@ categories:
 tags: [Тесты, Vocabolario]
 sticky: true
 hidden: true
+jquery_ui: true
 ---
 
 Сначала я задумывал создать словарь музыкальных терминов, но поскольку словарь получился мультимедийный и может иметь несколько направлений, то возможно я дам ему продолжение. Чтобы ввести символы `à`, `ù`, `'`, нажмите на значок <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle;"><path fill="currentColor" d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-8 3h2v2h-2zm0 4h2v2h-2zM9 7h2v2H9zm0 4h2v2H9zM5 7h2v2H5zm0 4h2v2H5zm12 6H7v-2h10zm2-4h-2v-2h2zm0-4h-2V7h2z"></path></svg> в поле поиска.

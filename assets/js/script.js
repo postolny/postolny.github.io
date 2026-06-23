@@ -382,269 +382,270 @@ $(function() {
     });
   }
   $(window).on("scroll", hideTooltip);
-
-  function normalize(str) {
-    return str.toLowerCase().trim();
-  }
-  dizSearch.on("input", function() {
-    const value = this.value;
-    inputClear.toggle(!!value);
-    if (!value) {
+  if (dizSearch.length) {
+    function normalize(str) {
+      return str.toLowerCase().trim();
+    }
+    dizSearch.on("input", function() {
+      const value = this.value;
+      inputClear.toggle(!!value);
+      if (!value) {
+        dizResult.html("");
+        stopAudio();
+        $(this).autocomplete("close");
+      }
+    });
+    inputClear.on("click", function() {
+      dizSearch.val("").trigger("input").focus();
       dizResult.html("");
       stopAudio();
-      $(this).autocomplete("close");
-    }
-  });
-  inputClear.on("click", function() {
-    dizSearch.val("").trigger("input").focus();
-    dizResult.html("");
-    stopAudio();
-    dizSearch.autocomplete("close");
-  });
-  $.getJSON("/assets/dizionari.json").done(function(data) {
-    dizionari = data;
-    for (let dizionario in dizionari) {
-      entriesByDictionary[dizionario] = [];
-      for (let key in dizionari[dizionario]) {
-        const normalized = normalize(key);
-        const entry = {
-          dizionario,
-          key
-        };
-        allEntries.push(entry);
-        entriesByDictionary[dizionario].push(entry);
-        if (!globalIndex[normalized]) {
-          globalIndex[normalized] = [];
-        }
-        globalIndex[normalized].push(entry);
-        for (let i = 1; i <= normalized.length; i++) {
-          const prefix = normalized.slice(0, i);
-          if (!prefixIndex[prefix]) {
-            prefixIndex[prefix] = [];
+      dizSearch.autocomplete("close");
+    });
+    $.getJSON("/assets/dizionari.json").done(function(data) {
+      dizionari = data;
+      for (let dizionario in dizionari) {
+        entriesByDictionary[dizionario] = [];
+        for (let key in dizionari[dizionario]) {
+          const normalized = normalize(key);
+          const entry = {
+            dizionario,
+            key
+          };
+          allEntries.push(entry);
+          entriesByDictionary[dizionario].push(entry);
+          if (!globalIndex[normalized]) {
+            globalIndex[normalized] = [];
           }
-          if (!prefixIndex[prefix].includes(normalized)) {
-            prefixIndex[prefix].push(normalized);
+          globalIndex[normalized].push(entry);
+          for (let i = 1; i <= normalized.length; i++) {
+            const prefix = normalized.slice(0, i);
+            if (!prefixIndex[prefix]) {
+              prefixIndex[prefix] = [];
+            }
+            if (!prefixIndex[prefix].includes(normalized)) {
+              prefixIndex[prefix].push(normalized);
+            }
           }
         }
       }
-    }
-    diz.append($("<option>").val("all").text("Все словари"));
-    for (let dizionario in dizionari) {
-      diz.append($("<option>").val(dizionario).text(dizionario));
-    }
-    dizionarioCorrente = "all";
-    initAutocomplete();
-  });
+      diz.append($("<option>").val("all").text("Все словари"));
+      for (let dizionario in dizionari) {
+        diz.append($("<option>").val(dizionario).text(dizionario));
+      }
+      dizionarioCorrente = "all";
+      initAutocomplete();
+    });
 
-  function initAutocomplete() {
-    dizSearch.autocomplete({
-      source: function(request, response) {
-        const term = normalize(request.term);
-        let exact = [];
-        let startsWith = [];
-        let includes = [];
-        const useIncludes = term.length >= 3;
-        for (let key in globalIndex) {
-          const normalizedKey = normalize(key);
-          globalIndex[key].forEach(e => {
-            if (dizionarioCorrente !== "all" && e.dizionario !== dizionarioCorrente) {
-              return;
-            }
-            const item = {
-              label: e.key + " (" + e.dizionario + ")",
-              value: e.key,
-              dizionario: e.dizionario
-            };
-            if (normalizedKey === term) {
-              exact.push(item);
-            } else if (normalizedKey.startsWith(term)) {
-              startsWith.push(item);
-            } else if (normalizedKey.includes(term)) {
-              includes.push(item);
-            }
-          });
+    function initAutocomplete() {
+      dizSearch.autocomplete({
+        source: function(request, response) {
+          const term = normalize(request.term);
+          let exact = [];
+          let startsWith = [];
+          let includes = [];
+          const useIncludes = term.length >= 3;
+          for (let key in globalIndex) {
+            const normalizedKey = normalize(key);
+            globalIndex[key].forEach(e => {
+              if (dizionarioCorrente !== "all" && e.dizionario !== dizionarioCorrente) {
+                return;
+              }
+              const item = {
+                label: e.key + " (" + e.dizionario + ")",
+                value: e.key,
+                dizionario: e.dizionario
+              };
+              if (normalizedKey === term) {
+                exact.push(item);
+              } else if (normalizedKey.startsWith(term)) {
+                startsWith.push(item);
+              } else if (normalizedKey.includes(term)) {
+                includes.push(item);
+              }
+            });
+          }
+          response([...exact, ...startsWith, ...(useIncludes ? includes : [])]);
+        },
+        select: function(event, ui) {
+          if (ui.item.dizionario) {
+            dizionarioCorrente = ui.item.dizionario;
+            diz.val(dizionarioCorrente);
+          }
+          setTimeout(function() {
+            dizSearch.blur();
+          }, 100);
+          showDefinition(ui.item.value);
+          scrollToElement('.controls');
+          stopAudio();
         }
-        response([...exact, ...startsWith, ...(useIncludes ? includes : [])]);
-      },
-      select: function(event, ui) {
-        if (ui.item.dizionario) {
-          dizionarioCorrente = ui.item.dizionario;
-          diz.val(dizionarioCorrente);
+      });
+    }
+    dizSearch.on("keydown", function(e) {
+      if (e.key === "Enter") {
+        const ac = $(this).autocomplete("instance");
+        if (ac && ac.menu.element.is(":visible")) {
+          e.preventDefault();
+          const active = ac.menu.element.find(".ui-state-active");
+          if (active.length) {
+            active.trigger("click");
+          } else {
+            ac.menu.element.children().first().trigger("click");
+          }
+          return;
         }
-        setTimeout(function() {
-          dizSearch.blur();
-        }, 100);
-        showDefinition(ui.item.value);
-        scrollToElement('.controls');
+        e.preventDefault();
+        const term = $(this).val().trim();
+        if (!term) return;
+        showDefinition(term);
         stopAudio();
       }
     });
-  }
-  dizSearch.on("keydown", function(e) {
-    if (e.key === "Enter") {
-      const ac = $(this).autocomplete("instance");
-      if (ac && ac.menu.element.is(":visible")) {
-        e.preventDefault();
-        const active = ac.menu.element.find(".ui-state-active");
-        if (active.length) {
-          active.trigger("click");
-        } else {
-          ac.menu.element.children().first().trigger("click");
+    diz.on("change", function() {
+      dizionarioCorrente = $(this).val();
+      dizSearch.val("");
+      dizResult.html("");
+      dizSearch.autocomplete("destroy");
+      initAutocomplete();
+      stopAudio();
+    });
+    let match;
+
+    function showDefinition(term) {
+      const normalized = normalize(term);
+      let matches = globalIndex[normalized];
+      let value;
+      if (!matches && normalized.length >= 3) {
+        const candidates = prefixIndex[normalized];
+        if (candidates && candidates.length > 0) {
+          const bestKey = candidates[0];
+          matches = globalIndex[bestKey];
         }
+      }
+      if (!matches) {
+        dizResult.html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
         return;
       }
-      e.preventDefault();
-      const term = $(this).val().trim();
-      if (!term) return;
-      showDefinition(term);
+      if (dizionarioCorrente !== "all") {
+        matches = matches.filter(m => m.dizionario === dizionarioCorrente);
+      }
+      if (matches.length === 0) {
+        dizResult.html("Не найдено в этом словаре");
+        return;
+      }
+      const match = matches[0];
+      value = dizionari[match.dizionario][match.key];
+      if (!value) {
+        dizResult.html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
+        return;
+      }
+      let audioBtn = "";
+      if (typeof value === "object" && value.audio) {
+        audioBtn = '<button class="audio-btn" data-audio="' + value.audio + '">' + '<svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>' + '<svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display:none;"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12"/><path fill="currentColor" d="M8 8h8v8H8z"/></svg>' + '</button>';
+      }
+      // let html = "<div class='info-block'>" + "<div class='info-row'>" + "<span class='info-label'>Словарь:</span>" + "<span class='info-value'>" + (dizionarioCorrente === "all" ? "Все словари" : dizionarioCorrente) + "</span>" + "</div>" + "<div class='info-row'>" + "<span class='info-label'>Слово:</span>" + "<span class='info-value'>" + (match ? match.key : term) + audioBtn + "</span>" + "</div>" + "</div>" + "<hr>";
+      let html = "<div class='info-block'>" + "<div class='info-row'>" + "<span class='info-label'>Словарь:</span>" + "<span class='info-value'>" + (dizionarioCorrente === "all" ? match.dizionario : dizionarioCorrente) + "</span>" + "</div>" + "<div class='info-row'>" + "<span class='info-label'>Слово:</span>" + "<span class='info-value'>" + (match ? match.key : term) + audioBtn + "</span>" + "</div>" + "</div>" + "<hr>";
+      if (typeof value === "string") {
+        html += "<div>" + value + "</div>";
+      } else if (typeof value === "object") {
+        // сортировка ключей в json
+        const keys = Object.keys(value).sort((a, b) => {
+          const getIndex = k => {
+            const match = k.match(/\d+$/);
+            return match ? parseInt(match[0]) : 0;
+          };
+          return getIndex(a) - getIndex(b);
+        });
+        keys.forEach(key => {
+          if (key === "audio") return;
+          const field = value[key];
+          // текст
+          if (typeof field === "string" && key.startsWith("text")) {
+            html += "<div class='word-text'>" + field + "</div>";
+          }
+          // изображения
+          else if (typeof field === "string" && key.startsWith("image")) {
+            html += "<div class='word-image'>" + "<img src='" + field + "' class='word-image__img'>" + "</div>";
+          }
+          // списки
+          else if (Array.isArray(field) && key.startsWith("list")) {
+            html += "<ul class='word-list'>";
+            field.forEach(item => {
+              html += "<li>" + item + "</li>";
+            });
+            html += "</ul>";
+          }
+        });
+      }
+      dizResult.html(html);
+    }
+
+    function showRandomEntry() {
+      let list = dizionarioCorrente === "all" ? allEntries : entriesByDictionary[dizionarioCorrente];
+      if (!list || list.length === 0) return;
+      const random = list[Math.floor(Math.random() * list.length)];
+      showDefinition(random.key);
       stopAudio();
     }
-  });
-  diz.on("change", function() {
-    dizionarioCorrente = $(this).val();
-    dizSearch.val("");
-    dizResult.html("");
-    dizSearch.autocomplete("destroy");
-    initAutocomplete();
-    stopAudio();
-  });
-  let match;
-
-  function showDefinition(term) {
-    const normalized = normalize(term);
-    let matches = globalIndex[normalized];
-    let value;
-    if (!matches && normalized.length >= 3) {
-      const candidates = prefixIndex[normalized];
-      if (candidates && candidates.length > 0) {
-        const bestKey = candidates[0];
-        matches = globalIndex[bestKey];
-      }
-    }
-    if (!matches) {
-      dizResult.html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
-      return;
-    }
-    if (dizionarioCorrente !== "all") {
-      matches = matches.filter(m => m.dizionario === dizionarioCorrente);
-    }
-    if (matches.length === 0) {
-      dizResult.html("Не найдено в этом словаре");
-      return;
-    }
-    const match = matches[0];
-    value = dizionari[match.dizionario][match.key];
-    if (!value) {
-      dizResult.html(dizionarioCorrente === "all" ? "Не найдено в словарях" : "Не найдено в этом словаре");
-      return;
-    }
-    let audioBtn = "";
-    if (typeof value === "object" && value.audio) {
-      audioBtn = '<button class="audio-btn" data-audio="' + value.audio + '">' + '<svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 14.959V9.04C2 8.466 2.448 8 3 8h3.586a.98.98 0 0 0 .707-.305l3-3.388c.63-.656 1.707-.191 1.707.736v13.914c0 .934-1.09 1.395-1.716.726l-2.99-3.369A.98.98 0 0 0 6.578 16H3c-.552 0-1-.466-1-1.041M16 8.5c1.333 1.778 1.333 5.222 0 7M19 5c3.988 3.808 4.012 10.217 0 14"/></svg>' + '<svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display:none;"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12"/><path fill="currentColor" d="M8 8h8v8H8z"/></svg>' + '</button>';
-    }
-    // let html = "<div class='info-block'>" + "<div class='info-row'>" + "<span class='info-label'>Словарь:</span>" + "<span class='info-value'>" + (dizionarioCorrente === "all" ? "Все словари" : dizionarioCorrente) + "</span>" + "</div>" + "<div class='info-row'>" + "<span class='info-label'>Слово:</span>" + "<span class='info-value'>" + (match ? match.key : term) + audioBtn + "</span>" + "</div>" + "</div>" + "<hr>";
-    let html = "<div class='info-block'>" + "<div class='info-row'>" + "<span class='info-label'>Словарь:</span>" + "<span class='info-value'>" + (dizionarioCorrente === "all" ? match.dizionario : dizionarioCorrente) + "</span>" + "</div>" + "<div class='info-row'>" + "<span class='info-label'>Слово:</span>" + "<span class='info-value'>" + (match ? match.key : term) + audioBtn + "</span>" + "</div>" + "</div>" + "<hr>";
-    if (typeof value === "string") {
-      html += "<div>" + value + "</div>";
-    } else if (typeof value === "object") {
-      // сортировка ключей в json
-      const keys = Object.keys(value).sort((a, b) => {
-        const getIndex = k => {
-          const match = k.match(/\d+$/);
-          return match ? parseInt(match[0]) : 0;
-        };
-        return getIndex(a) - getIndex(b);
-      });
-      keys.forEach(key => {
-        if (key === "audio") return;
-        const field = value[key];
-        // текст
-        if (typeof field === "string" && key.startsWith("text")) {
-          html += "<div class='word-text'>" + field + "</div>";
-        }
-        // изображения
-        else if (typeof field === "string" && key.startsWith("image")) {
-          html += "<div class='word-image'>" + "<img src='" + field + "' class='word-image__img'>" + "</div>";
-        }
-        // списки
-        else if (Array.isArray(field) && key.startsWith("list")) {
-          html += "<ul class='word-list'>";
-          field.forEach(item => {
-            html += "<li>" + item + "</li>";
-          });
-          html += "</ul>";
-        }
-      });
-    }
-    dizResult.html(html);
-  }
-
-  function showRandomEntry() {
-    let list = dizionarioCorrente === "all" ? allEntries : entriesByDictionary[dizionarioCorrente];
-    if (!list || list.length === 0) return;
-    const random = list[Math.floor(Math.random() * list.length)];
-    showDefinition(random.key);
-    stopAudio();
-  }
-  $("#random-entry").on("click", function() {
-    const icon = $(this).find('.random-icon');
-    icon.removeClass('animate');
-    requestAnimationFrame(() => {
+    $("#random-entry").on("click", function() {
+      const icon = $(this).find('.random-icon');
+      icon.removeClass('animate');
       requestAnimationFrame(() => {
-        icon.addClass('animate');
+        requestAnimationFrame(() => {
+          icon.addClass('animate');
+        });
       });
+      dizSearch.val("");
+      showRandomEntry();
+      setTimeout(function() {
+        scrollToElement('.controls');
+      }, 900);
     });
-    dizSearch.val("");
-    showRandomEntry();
-    setTimeout(function() {
-      scrollToElement('.controls');
-    }, 900);
-  });
-  $(document).on("click", ".audio-btn", function() {
-    const btn = $(this);
-    const src = btn.data("audio");
-    if (currentAudio) {
-      currentAudio.pause();
-      currentAudio.currentTime = 0;
-    }
-    currentAudio = new Audio(src);
-    currentAudio.play();
-    $(".audio-btn .icon-play").show();
-    $(".audio-btn .icon-pause").hide();
-    btn.find(".icon-play").hide();
-    btn.find(".icon-pause").show();
-    currentAudio.onended = function() {
-      btn.find(".icon-play").show();
-      btn.find(".icon-pause").hide();
-      currentAudio = null;
-    };
-  });
+    $(document).on("click", ".audio-btn", function() {
+      const btn = $(this);
+      const src = btn.data("audio");
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+      currentAudio = new Audio(src);
+      currentAudio.play();
+      $(".audio-btn .icon-play").show();
+      $(".audio-btn .icon-pause").hide();
+      btn.find(".icon-play").hide();
+      btn.find(".icon-pause").show();
+      currentAudio.onended = function() {
+        btn.find(".icon-play").show();
+        btn.find(".icon-pause").hide();
+        currentAudio = null;
+      };
+    });
 
-  function stopAudio() {
-    if (currentAudio) {
-      currentAudio.pause();
-      currentAudio = null;
+    function stopAudio() {
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio = null;
+      }
+      $(".audio-btn .icon-play").show();
+      $(".audio-btn .icon-pause").hide();
     }
-    $(".audio-btn .icon-play").show();
-    $(".audio-btn .icon-pause").hide();
+    $(document).on("click", ".ref", function() {
+      const wordRaw = $(this).text().trim();
+      const word = normalize($(this).text());
+      stopAudio();
+      scrollToElement('.controls');
+      const matches = globalIndex[word];
+      if (matches && matches.length > 0) {
+        let match = matches.find(m => m.dizionario === dizionarioCorrente) || matches[0];
+        dizionarioCorrente = match.dizionario;
+        diz.val(match.dizionario);
+        dizSearch.val(match.key);
+        showDefinition(match.key);
+      } else {
+        dizSearch.val(wordRaw);
+        showDefinition(wordRaw);
+      }
+    });
   }
-  $(document).on("click", ".ref", function() {
-    const wordRaw = $(this).text().trim();
-    const word = normalize($(this).text());
-    stopAudio();
-    scrollToElement('.controls');
-    const matches = globalIndex[word];
-    if (matches && matches.length > 0) {
-      let match = matches.find(m => m.dizionario === dizionarioCorrente) || matches[0];
-      dizionarioCorrente = match.dizionario;
-      diz.val(match.dizionario);
-      dizSearch.val(match.key);
-      showDefinition(match.key);
-    } else {
-      dizSearch.val(wordRaw);
-      showDefinition(wordRaw);
-    }
-  });
   var audioPlayer = $('#audioPlayer');
   const progressImage = $('#gondoliere');
   const p2 = "ost";
@@ -1422,479 +1423,482 @@ $(function() {
   let condizionale_passato = {};
   let futuro_semplice = {};
   let verbiConDoppioAusiliare = [];
-  $.getJSON("/assets/concordanzaCongiuntivi.json", function(data) {
-    participiPassati = data.participiPassati;
-    participiPassatiRiflessivi = data.participiPassatiRiflessivi;
-    verbiConEssere = data.verbiConEssere;
-    congiuntivo_presente = data.congiuntivo_presente;
-    congiuntivo_imperfetto = data.congiuntivo_imperfetto;
-    condizionale_passato = data.condizionale_passato;
-    futuro_semplice = data.futuro_semplice;
-    verbiConDoppioAusiliare = data.verbiConDoppioAusiliare;
-    congiuntivo_presente_aus = {
-      "essere": congiuntivo_presente["essere"],
-      "avere": congiuntivo_presente["avere"]
-    };
-    trapassato_prossimo_aus = {
-      "essere": congiuntivo_imperfetto["essere"],
-      "avere": congiuntivo_imperfetto["avere"]
-    };
-    var verbiList = Object.keys(participiPassati).concat(Object.keys(participiPassatiRiflessivi));
-    $('#verbo').autocomplete({
-      source: function(request, response) {
-        const term = $.trim(request.term).toLowerCase();
-        const matches = verbiList.filter(word => word.toLowerCase().startsWith(term)).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
-        response(matches);
-      },
-      minLength: 1,
-      autoFocus: true
+  const verbo = $('#verbo');
+  if (verbo.length) {
+    $.getJSON("/assets/concordanzaCongiuntivi.json", function(data) {
+      participiPassati = data.participiPassati;
+      participiPassatiRiflessivi = data.participiPassatiRiflessivi;
+      verbiConEssere = data.verbiConEssere;
+      congiuntivo_presente = data.congiuntivo_presente;
+      congiuntivo_imperfetto = data.congiuntivo_imperfetto;
+      condizionale_passato = data.condizionale_passato;
+      futuro_semplice = data.futuro_semplice;
+      verbiConDoppioAusiliare = data.verbiConDoppioAusiliare;
+      congiuntivo_presente_aus = {
+        "essere": congiuntivo_presente["essere"],
+        "avere": congiuntivo_presente["avere"]
+      };
+      trapassato_prossimo_aus = {
+        "essere": congiuntivo_imperfetto["essere"],
+        "avere": congiuntivo_imperfetto["avere"]
+      };
+      var verbiList = Object.keys(participiPassati).concat(Object.keys(participiPassatiRiflessivi));
+      verbo.autocomplete({
+        source: function(request, response) {
+          const term = $.trim(request.term).toLowerCase();
+          const matches = verbiList.filter(word => word.toLowerCase().startsWith(term)).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+          response(matches);
+        },
+        minLength: 1,
+        autoFocus: true
+      });
+      $("#concordareBtn").prop("disabled", false);
+      var countParticipiPassati = Object.keys(data.participiPassati).length;
+      var countRiflessivi = Object.keys(data.participiPassatiRiflessivi).length;
+      var countVerbiConEssere = Object.keys(data.verbiConEssere).length;
+      var countDoppioAusiliare = Object.keys(data.verbiConDoppioAusiliare).length;
+      var total = countParticipiPassati + countRiflessivi;
+      console.log("Общее количество глаголов: " + total + "; возвратных глаголов: " + countRiflessivi + "; глаголов c essere: " + countVerbiConEssere + "; verbi con doppio ausiliare: " + countDoppioAusiliare);
     });
-    $("#concordareBtn").prop("disabled", false);
-    var countParticipiPassati = Object.keys(data.participiPassati).length;
-    var countRiflessivi = Object.keys(data.participiPassatiRiflessivi).length;
-    var countVerbiConEssere = Object.keys(data.verbiConEssere).length;
-    var countDoppioAusiliare = Object.keys(data.verbiConDoppioAusiliare).length;
-    var total = countParticipiPassati + countRiflessivi;
-    console.log("Общее количество глаголов: " + total + "; возвратных глаголов: " + countRiflessivi + "; глаголов c essere: " + countVerbiConEssere + "; verbi con doppio ausiliare: " + countDoppioAusiliare);
-  });
-  $('#verbo').on('input focus', function() {
-    const hasValue = this.value.length > 0;
-    $('.clear-button').toggle(hasValue);
-    if (!hasValue) {
-      $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
-    }
-  });
-  $('#verbo').on('blur', function() {
-    setTimeout(() => {
-      if (!this.value.length) {
-        $('.clear-button').hide();
+    verbo.on('input focus', function() {
+      const hasValue = this.value.length > 0;
+      $('.clear-button').toggle(hasValue);
+      if (!hasValue) {
         $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
       }
-    }, 100);
-  });
-  $('.clear-button').on('click', function() {
-    $('#verbo').val('').focus();
-    $(this).hide();
-    $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
-  });
+    });
+    verbo.on('blur', function() {
+      setTimeout(() => {
+        if (!this.value.length) {
+          $('.clear-button').hide();
+          $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
+        }
+      }, 100);
+    });
+    $('.clear-button').on('click', function() {
+      verbo.val('').focus();
+      $(this).hide();
+      $("#concordanzaResult, #concordanzaHint, #traduzioneResult").hide();
+    });
 
-  function descriviPersona(p, genereSelezionato) {
-    let descr = {};
-    if (["io", "tu", "lui_lei"].includes(p)) {
-      descr.numero = "singolare";
-    } else {
-      descr.numero = "plurale";
-    }
-    if (genereSelezionato) {
-      descr.genere = genereSelezionato;
-    } else {
-      if (p === "lei") {
-        descr.genere = "femminile";
+    function descriviPersona(p, genereSelezionato) {
+      let descr = {};
+      if (["io", "tu", "lui_lei"].includes(p)) {
+        descr.numero = "singolare";
       } else {
-        descr.genere = "maschile";
+        descr.numero = "plurale";
       }
-    }
-    return descr;
-  }
-
-  function isRiflessivo(verbo) {
-    return verbo.endsWith("si");
-  }
-
-  function getBaseVerb(verbo) {
-    if (isRiflessivo(verbo)) {
-      return verbo.slice(0, -2); // убираем "si"
-    }
-    return verbo;
-  }
-
-  function getAusiliare(verbo) {
-    const baseVerb = getBaseVerb(verbo);
-    if (isRiflessivo(verbo)) return "essere";
-    if (verbiConEssere.includes(baseVerb)) return "essere";
-    return "avere";
-  }
-
-  function getParticipioConcordato(verbo, persona, desc, aus) {
-    const baseVerb = getBaseVerb(verbo);
-    let verbData = participiPassatiRiflessivi[verbo] || participiPassatiRiflessivi[baseVerb] || participiPassati[verbo] || participiPassati[baseVerb];
-    if (!verbData || !verbData.partPassato) return "??";
-    let participio = verbData.partPassato;
-    if (aus === "essere") {
-      let base = participio.replace(/[aeio]$/i, '');
-      if (desc.numero === "plurale") {
-        base += (desc.genere === "femminile") ? "e" : "i";
+      if (genereSelezionato) {
+        descr.genere = genereSelezionato;
       } else {
-        base += (desc.genere === "femminile") ? "a" : "o";
+        if (p === "lei") {
+          descr.genere = "femminile";
+        } else {
+          descr.genere = "maschile";
+        }
       }
-      return base;
+      return descr;
     }
-    return participio;
-  }
 
-  function verboCongVerb(verbo, persona, modo) {
-    let pNorm = normalizzaPersona(persona);
-    if (modo === "congiuntivo_presente" && congiuntivo_presente[verbo]) {
-      return congiuntivo_presente[verbo][pNorm];
+    function isRiflessivo(verbo) {
+      return verbo.endsWith("si");
     }
-    if (modo === "congiuntivo_imperfetto" && congiuntivo_imperfetto[verbo]) {
-      return congiuntivo_imperfetto[verbo][pNorm];
-    }
-    return verbo + (modo === "congiuntivo_presente" ? "i" : "ssi");
-  }
 
-  function verboCondPassVerb(verbo, persona) {
-    let pNorm = normalizzaPersona(persona);
-    if (condizionale_passato[verbo] && condizionale_passato[verbo][pNorm]) {
-      return condizionale_passato[verbo][pNorm];
-    }
-    let base = getBaseVerb(verbo);
-    if (condizionale_passato[base] && condizionale_passato[base][pNorm]) {
-      return condizionale_passato[base][pNorm];
-    }
-    return "?";
-  }
-
-  function verboCondPassVerb(verbo, persona) {
-    let pNorm = normalizzaPersona(persona);
-    const aus = getAusiliare(verbo);
-    if (condizionale_passato[aus] && condizionale_passato[aus][pNorm]) {
-      return condizionale_passato[aus][pNorm];
-    }
-    return "?";
-  }
-
-  function verboFuturoVerb(verbo, persona) {
-    let pNorm = normalizzaPersona(persona);
-    if (futuro_semplice[verbo] && futuro_semplice[verbo][pNorm]) {
-      return futuro_semplice[verbo][pNorm];
-    }
-    let base = getBaseVerb(verbo);
-    if (futuro_semplice[base] && futuro_semplice[base][pNorm]) {
-      return futuro_semplice[base][pNorm];
-    }
-    return "?";
-  }
-
-  function normalizzaPersona(p) {
-    if (p === "lui_lei") return "lui";
-    return p;
-  }
-
-  function visualizzaPersona(p) {
-    if (p === "lui_lei") return "lui / lei";
-    return p;
-  }
-
-  function getRiflessivoPronome(persona) {
-    switch (persona) {
-      case "io":
-        return "mi";
-      case "tu":
-        return "ti";
-      case "lui":
-      case "lei":
-        return "si";
-      case "noi":
-        return "ci";
-      case "voi":
-        return "vi";
-      case "loro":
-        return "si";
-      case "lui_lei":
-        return "si";
-      default:
-        return "";
-    }
-  }
-
-  function concordanza(mainTempo, subordinateAzione, verbo, persona, genere) {
-    const baseVerb = getBaseVerb(verbo);
-    const desc = descriviPersona(persona, genere);
-    const personaLookup = normalizzaPersona(persona);
-    const descrizionePersona = "(" + visualizzaPersona(persona) + ", " + desc.numero + ", " + desc.genere + ")";
-    const riflessiviPronome = isRiflessivo(verbo) ? getRiflessivoPronome(persona) + " " : "";
-
-    function formaConPronome(verboCong) {
+    function getBaseVerb(verbo) {
       if (isRiflessivo(verbo)) {
-        const pron = riflessiviPronome.trim();
-        if (!verboCong.trim().startsWith(pron + " ")) {
-          return riflessiviPronome + verboCong;
-        }
+        return verbo.slice(0, -2); // убираем "si"
       }
-      return verboCong;
+      return verbo;
     }
 
-    function forma(v) {
-      return "che " + formaConPronome(v);
+    function getAusiliare(verbo) {
+      const baseVerb = getBaseVerb(verbo);
+      if (isRiflessivo(verbo)) return "essere";
+      if (verbiConEssere.includes(baseVerb)) return "essere";
+      return "avere";
     }
-    const aus = getAusiliare(verbo);
-    const participio = getParticipioConcordato(verbo, persona, desc, aus);
-    const congiuntivoPresAus = congiuntivo_presente_aus[aus][personaLookup];
-    const congiuntivoImpAus = trapassato_prossimo_aus[aus][personaLookup];
-    const trapassatoAus = congiuntivo_imperfetto[aus][personaLookup];
-    const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
-    const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
-    const presAusAvere = congiuntivo_presente_aus["avere"][personaLookup];
-    const presAusEssere = congiuntivo_presente_aus["essere"][personaLookup];
-    const impAusAvere = trapassato_prossimo_aus["avere"][personaLookup];
-    const impAusEssere = trapassato_prossimo_aus["essere"][personaLookup];
 
-    function tempoReadable(t) {
-      return t.replace(/_/g, " ");
+    function getParticipioConcordato(verbo, persona, desc, aus) {
+      const baseVerb = getBaseVerb(verbo);
+      let verbData = participiPassatiRiflessivi[verbo] || participiPassatiRiflessivi[baseVerb] || participiPassati[verbo] || participiPassati[baseVerb];
+      if (!verbData || !verbData.partPassato) return "??";
+      let participio = verbData.partPassato;
+      if (aus === "essere") {
+        let base = participio.replace(/[aeio]$/i, '');
+        if (desc.numero === "plurale") {
+          base += (desc.genere === "femminile") ? "e" : "i";
+        } else {
+          base += (desc.genere === "femminile") ? "a" : "o";
+        }
+        return base;
+      }
+      return participio;
     }
-    if (mainTempo === "presente") {
-      if (subordinateAzione === "anteriore") {
-        var formaRisultato;
-        if (verbiConDoppioAusiliare.includes(baseVerb)) {
-          formaRisultato = forma(presAusAvere + " " + participioAvere) + ", " + forma(presAusEssere + " " + participioEssere);
-        } else {
-          formaRisultato = forma(congiuntivoPresAus + " " + participio);
-        }
-        return {
-          forma: formaRisultato,
-          hint: descrizionePersona + " Concordanza: congiuntivo passato per esprimere un'azione anteriore al presente."
-        };
+
+    function verboCongVerb(verbo, persona, modo) {
+      let pNorm = normalizzaPersona(persona);
+      if (modo === "congiuntivo_presente" && congiuntivo_presente[verbo]) {
+        return congiuntivo_presente[verbo][pNorm];
       }
-      // только futuro semplice
-      // if (subordinateAzione === "posteriore") {
-      //   return {
-      //     forma: forma(verboFuturoVerb(verbo, persona)),
-      //     hint: descrizionePersona + " Concordanza: futuro semplice per esprimere un'azione posteriore al presente."
-      //   };
-      // }
-      // futuro semplice и congiuntivo presente
-      if (subordinateAzione === "posteriore") {
-        const futuro = forma(verboFuturoVerb(verbo, persona));
-        let congiuntivoPresRaw = null;
-        if (congiuntivo_presente[verbo] && congiuntivo_presente[verbo][personaLookup]) {
-          congiuntivoPresRaw = congiuntivo_presente[verbo][personaLookup];
-        } else if (congiuntivo_presente[baseVerb] && congiuntivo_presente[baseVerb][personaLookup]) {
-          congiuntivoPresRaw = congiuntivo_presente[baseVerb][personaLookup];
-        }
-        let congiuntivoPres = "";
-        if (congiuntivoPresRaw) {
-          congiuntivoPres = forma(congiuntivoPresRaw);
-        } else {
-          congiuntivoPres = null;
-        }
-        let result = futuro;
-        if (congiuntivoPres) {
-          result += ", " + "oppure " + congiuntivoPres;
-        }
-        return {
-          forma: result,
-          hint: descrizionePersona + " Concordanza: normalmente si usa il futuro semplice per un'azione posteriore al presente, ma anche il congiuntivo presente è possibile (soprattutto in linguaggio formale)."
-        };
+      if (modo === "congiuntivo_imperfetto" && congiuntivo_imperfetto[verbo]) {
+        return congiuntivo_imperfetto[verbo][pNorm];
       }
-      // contemporaneità
-      var formaCont = null;
-      if (congiuntivo_presente[verbo] && congiuntivo_presente[verbo][personaLookup]) {
-        formaCont = congiuntivo_presente[verbo][personaLookup];
-      } else {
-        formaCont = verboCongVerb(baseVerb, persona, "congiuntivo_presente");
-      }
-      return {
-        forma: forma(formaCont),
-        hint: descrizionePersona + " Concordanza: congiuntivo presente per esprimere un'azione contemporanea al presente."
-      };
+      return verbo + (modo === "congiuntivo_presente" ? "i" : "ssi");
     }
-    if (mainTempo === "imperfetto") {
-      if (subordinateAzione === "anteriore") {
-        if (verbiConDoppioAusiliare.includes(baseVerb)) {
+
+    function verboCondPassVerb(verbo, persona) {
+      let pNorm = normalizzaPersona(persona);
+      if (condizionale_passato[verbo] && condizionale_passato[verbo][pNorm]) {
+        return condizionale_passato[verbo][pNorm];
+      }
+      let base = getBaseVerb(verbo);
+      if (condizionale_passato[base] && condizionale_passato[base][pNorm]) {
+        return condizionale_passato[base][pNorm];
+      }
+      return "?";
+    }
+
+    function verboCondPassVerb(verbo, persona) {
+      let pNorm = normalizzaPersona(persona);
+      const aus = getAusiliare(verbo);
+      if (condizionale_passato[aus] && condizionale_passato[aus][pNorm]) {
+        return condizionale_passato[aus][pNorm];
+      }
+      return "?";
+    }
+
+    function verboFuturoVerb(verbo, persona) {
+      let pNorm = normalizzaPersona(persona);
+      if (futuro_semplice[verbo] && futuro_semplice[verbo][pNorm]) {
+        return futuro_semplice[verbo][pNorm];
+      }
+      let base = getBaseVerb(verbo);
+      if (futuro_semplice[base] && futuro_semplice[base][pNorm]) {
+        return futuro_semplice[base][pNorm];
+      }
+      return "?";
+    }
+
+    function normalizzaPersona(p) {
+      if (p === "lui_lei") return "lui";
+      return p;
+    }
+
+    function visualizzaPersona(p) {
+      if (p === "lui_lei") return "lui / lei";
+      return p;
+    }
+
+    function getRiflessivoPronome(persona) {
+      switch (persona) {
+        case "io":
+          return "mi";
+        case "tu":
+          return "ti";
+        case "lui":
+        case "lei":
+          return "si";
+        case "noi":
+          return "ci";
+        case "voi":
+          return "vi";
+        case "loro":
+          return "si";
+        case "lui_lei":
+          return "si";
+        default:
+          return "";
+      }
+    }
+
+    function concordanza(mainTempo, subordinateAzione, verbo, persona, genere) {
+      const baseVerb = getBaseVerb(verbo);
+      const desc = descriviPersona(persona, genere);
+      const personaLookup = normalizzaPersona(persona);
+      const descrizionePersona = "(" + visualizzaPersona(persona) + ", " + desc.numero + ", " + desc.genere + ")";
+      const riflessiviPronome = isRiflessivo(verbo) ? getRiflessivoPronome(persona) + " " : "";
+
+      function formaConPronome(verboCong) {
+        if (isRiflessivo(verbo)) {
+          const pron = riflessiviPronome.trim();
+          if (!verboCong.trim().startsWith(pron + " ")) {
+            return riflessiviPronome + verboCong;
+          }
+        }
+        return verboCong;
+      }
+
+      function forma(v) {
+        return "che " + formaConPronome(v);
+      }
+      const aus = getAusiliare(verbo);
+      const participio = getParticipioConcordato(verbo, persona, desc, aus);
+      const congiuntivoPresAus = congiuntivo_presente_aus[aus][personaLookup];
+      const congiuntivoImpAus = trapassato_prossimo_aus[aus][personaLookup];
+      const trapassatoAus = congiuntivo_imperfetto[aus][personaLookup];
+      const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
+      const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
+      const presAusAvere = congiuntivo_presente_aus["avere"][personaLookup];
+      const presAusEssere = congiuntivo_presente_aus["essere"][personaLookup];
+      const impAusAvere = trapassato_prossimo_aus["avere"][personaLookup];
+      const impAusEssere = trapassato_prossimo_aus["essere"][personaLookup];
+
+      function tempoReadable(t) {
+        return t.replace(/_/g, " ");
+      }
+      if (mainTempo === "presente") {
+        if (subordinateAzione === "anteriore") {
+          var formaRisultato;
+          if (verbiConDoppioAusiliare.includes(baseVerb)) {
+            formaRisultato = forma(presAusAvere + " " + participioAvere) + ", " + forma(presAusEssere + " " + participioEssere);
+          } else {
+            formaRisultato = forma(congiuntivoPresAus + " " + participio);
+          }
           return {
-            forma: forma(impAusAvere + " " + participioAvere) + ", " + forma(impAusEssere + " " + participioEssere),
-            hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore all'imperfetto."
-          };
-        } else {
-          return {
-            forma: forma(congiuntivoImpAus + " " + participio),
-            hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore all'imperfetto."
+            forma: formaRisultato,
+            hint: descrizionePersona + " Concordanza: congiuntivo passato per esprimere un'azione anteriore al presente."
           };
         }
-      } else if (subordinateAzione === "posteriore") {
-        if (verbiConDoppioAusiliare.includes(baseVerb)) {
-          const condAvere = condizionale_passato["avere"][personaLookup];
-          const condEssere = condizionale_passato["essere"][personaLookup];
-          const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
-          const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
+        // только futuro semplice
+        // if (subordinateAzione === "posteriore") {
+        //   return {
+        //     forma: forma(verboFuturoVerb(verbo, persona)),
+        //     hint: descrizionePersona + " Concordanza: futuro semplice per esprimere un'azione posteriore al presente."
+        //   };
+        // }
+        // futuro semplice и congiuntivo presente
+        if (subordinateAzione === "posteriore") {
+          const futuro = forma(verboFuturoVerb(verbo, persona));
+          let congiuntivoPresRaw = null;
+          if (congiuntivo_presente[verbo] && congiuntivo_presente[verbo][personaLookup]) {
+            congiuntivoPresRaw = congiuntivo_presente[verbo][personaLookup];
+          } else if (congiuntivo_presente[baseVerb] && congiuntivo_presente[baseVerb][personaLookup]) {
+            congiuntivoPresRaw = congiuntivo_presente[baseVerb][personaLookup];
+          }
+          let congiuntivoPres = "";
+          if (congiuntivoPresRaw) {
+            congiuntivoPres = forma(congiuntivoPresRaw);
+          } else {
+            congiuntivoPres = null;
+          }
+          let result = futuro;
+          if (congiuntivoPres) {
+            result += ", " + "oppure " + congiuntivoPres;
+          }
           return {
-            forma: forma(condAvere + " " + participioAvere) + ", " + forma(condEssere + " " + participioEssere),
-            hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore all'imperfetto (verbo con doppio ausiliare)."
-          };
-        } else {
-          const aus = getAusiliare(verbo);
-          const condPassAus = condizionale_passato[aus][personaLookup];
-          const participioConcordato = getParticipioConcordato(verbo, persona, desc, aus);
-          return {
-            forma: forma(condPassAus + " " + participioConcordato),
-            hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore all'imperfetto."
+            forma: result,
+            hint: descrizionePersona + " Concordanza: normalmente si usa il futuro semplice per un'azione posteriore al presente, ma anche il congiuntivo presente è possibile (soprattutto in linguaggio formale)."
           };
         }
-      } else {
         // contemporaneità
+        var formaCont = null;
+        if (congiuntivo_presente[verbo] && congiuntivo_presente[verbo][personaLookup]) {
+          formaCont = congiuntivo_presente[verbo][personaLookup];
+        } else {
+          formaCont = verboCongVerb(baseVerb, persona, "congiuntivo_presente");
+        }
         return {
-          forma: forma(
-            (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
-          hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea all'imperfetto."
+          forma: forma(formaCont),
+          hint: descrizionePersona + " Concordanza: congiuntivo presente per esprimere un'azione contemporanea al presente."
         };
       }
-    }
-    if (mainTempo === "condizionale_presente") {
-      if (subordinateAzione === "anteriore") {
-        if (verbiConDoppioAusiliare.includes(baseVerb)) {
-          return {
-            forma: forma(impAusAvere + " " + participioAvere) + ", " + forma(impAusEssere + " " + participioEssere),
-            hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore al condizionale presente."
-          };
+      if (mainTempo === "imperfetto") {
+        if (subordinateAzione === "anteriore") {
+          if (verbiConDoppioAusiliare.includes(baseVerb)) {
+            return {
+              forma: forma(impAusAvere + " " + participioAvere) + ", " + forma(impAusEssere + " " + participioEssere),
+              hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore all'imperfetto."
+            };
+          } else {
+            return {
+              forma: forma(congiuntivoImpAus + " " + participio),
+              hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore all'imperfetto."
+            };
+          }
+        } else if (subordinateAzione === "posteriore") {
+          if (verbiConDoppioAusiliare.includes(baseVerb)) {
+            const condAvere = condizionale_passato["avere"][personaLookup];
+            const condEssere = condizionale_passato["essere"][personaLookup];
+            const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
+            const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
+            return {
+              forma: forma(condAvere + " " + participioAvere) + ", " + forma(condEssere + " " + participioEssere),
+              hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore all'imperfetto (verbo con doppio ausiliare)."
+            };
+          } else {
+            const aus = getAusiliare(verbo);
+            const condPassAus = condizionale_passato[aus][personaLookup];
+            const participioConcordato = getParticipioConcordato(verbo, persona, desc, aus);
+            return {
+              forma: forma(condPassAus + " " + participioConcordato),
+              hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore all'imperfetto."
+            };
+          }
         } else {
+          // contemporaneità
           return {
-            forma: forma(trapassatoAus + " " + participio),
-            hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore al condizionale presente."
+            forma: forma(
+              (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
+            hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea all'imperfetto."
           };
         }
       }
+      if (mainTempo === "condizionale_presente") {
+        if (subordinateAzione === "anteriore") {
+          if (verbiConDoppioAusiliare.includes(baseVerb)) {
+            return {
+              forma: forma(impAusAvere + " " + participioAvere) + ", " + forma(impAusEssere + " " + participioEssere),
+              hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore al condizionale presente."
+            };
+          } else {
+            return {
+              forma: forma(trapassatoAus + " " + participio),
+              hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore al condizionale presente."
+            };
+          }
+        }
+        return {
+          forma: forma(
+            (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
+          hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea o posteriore al condizionale presente."
+        };
+      }
+      if (mainTempo === "condizionale_passato") {
+        if (subordinateAzione === "anteriore") {
+          if (verbiConDoppioAusiliare.includes(baseVerb)) {
+            return {
+              forma: forma(impAusAvere + " " + participioAvere) + ", " + forma(impAusEssere + " " + participioEssere),
+              hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore al condizionale passato."
+            };
+          } else {
+            return {
+              forma: forma(trapassatoAus + " " + participio),
+              hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore al condizionale passato."
+            };
+          }
+        } else {
+          return {
+            forma: forma(
+              (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
+            hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea o posteriore al condizionale passato."
+          };
+        }
+      }
+      if (["passato_prossimo", "passato_remoto", "trapassato_prossimo"].includes(mainTempo)) {
+        if (subordinateAzione === "anteriore") {
+          if (verbiConDoppioAusiliare.includes(baseVerb)) {
+            return {
+              forma: forma(impAusAvere + " " + participioAvere) + ", " + forma(impAusEssere + " " + participioEssere),
+              hint: descrizionePersona + " Uso del congiuntivo trapassato per esprimere un'azione anteriore al " + tempoReadable(mainTempo) + "."
+            };
+          } else {
+            return {
+              forma: forma(congiuntivoImpAus + " " + participio),
+              hint: descrizionePersona + " Uso del congiuntivo trapassato per esprimere un'azione anteriore al " + tempoReadable(mainTempo) + "."
+            };
+          }
+        } else if (subordinateAzione === "posteriore") {
+          if (verbiConDoppioAusiliare.includes(baseVerb)) {
+            const condAvere = condizionale_passato["avere"][personaLookup];
+            const condEssere = condizionale_passato["essere"][personaLookup];
+            const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
+            const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
+            return {
+              forma: forma(condAvere + " " + participioAvere) + ", " + forma(condEssere + " " + participioEssere),
+              hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore al " + tempoReadable(mainTempo) + " (verbo con doppio ausiliare)."
+            };
+          } else {
+            const aus = getAusiliare(verbo);
+            const verboCondPass = verboCondPassVerb(verbo, persona);
+            const participioConcordato = getParticipioConcordato(verbo, persona, desc, aus);
+            const formaFinale = forma(verboCondPass + " " + participioConcordato);
+            return {
+              forma: formaFinale,
+              hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore al " + tempoReadable(mainTempo) + "."
+            };
+          }
+        } else {
+          const verboCong = (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto");
+          return {
+            forma: forma(verboCong),
+            hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea al " + tempoReadable(mainTempo) + "."
+          };
+        }
+      }
+      console.warn("Concordanza non trovata per mainTempo:", mainTempo, "subAzione:", subordinateAzione, "verbo:", verbo);
       return {
-        forma: forma(
-          (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
-        hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea o posteriore al condizionale presente."
+        forma: "Non disponibile",
+        hint: ""
       };
     }
-    if (mainTempo === "condizionale_passato") {
-      if (subordinateAzione === "anteriore") {
-        if (verbiConDoppioAusiliare.includes(baseVerb)) {
-          return {
-            forma: forma(impAusAvere + " " + participioAvere) + ", " + forma(impAusEssere + " " + participioEssere),
-            hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore al condizionale passato."
-          };
-        } else {
-          return {
-            forma: forma(trapassatoAus + " " + participio),
-            hint: descrizionePersona + " Concordanza: congiuntivo trapassato per esprimere un'azione anteriore al condizionale passato."
-          };
-        }
-      } else {
-        return {
-          forma: forma(
-            (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto")),
-          hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea o posteriore al condizionale passato."
-        };
-      }
-    }
-    if (["passato_prossimo", "passato_remoto", "trapassato_prossimo"].includes(mainTempo)) {
-      if (subordinateAzione === "anteriore") {
-        if (verbiConDoppioAusiliare.includes(baseVerb)) {
-          return {
-            forma: forma(impAusAvere + " " + participioAvere) + ", " + forma(impAusEssere + " " + participioEssere),
-            hint: descrizionePersona + " Uso del congiuntivo trapassato per esprimere un'azione anteriore al " + tempoReadable(mainTempo) + "."
-          };
-        } else {
-          return {
-            forma: forma(congiuntivoImpAus + " " + participio),
-            hint: descrizionePersona + " Uso del congiuntivo trapassato per esprimere un'azione anteriore al " + tempoReadable(mainTempo) + "."
-          };
-        }
-      } else if (subordinateAzione === "posteriore") {
-        if (verbiConDoppioAusiliare.includes(baseVerb)) {
-          const condAvere = condizionale_passato["avere"][personaLookup];
-          const condEssere = condizionale_passato["essere"][personaLookup];
-          const participioAvere = getParticipioConcordato(verbo, persona, desc, "avere");
-          const participioEssere = getParticipioConcordato(verbo, persona, desc, "essere");
-          return {
-            forma: forma(condAvere + " " + participioAvere) + ", " + forma(condEssere + " " + participioEssere),
-            hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore al " + tempoReadable(mainTempo) + " (verbo con doppio ausiliare)."
-          };
-        } else {
-          const aus = getAusiliare(verbo);
-          const verboCondPass = verboCondPassVerb(verbo, persona);
-          const participioConcordato = getParticipioConcordato(verbo, persona, desc, aus);
-          const formaFinale = forma(verboCondPass + " " + participioConcordato);
-          return {
-            forma: formaFinale,
-            hint: descrizionePersona + " Concordanza: condizionale passato per esprimere un'azione posteriore al " + tempoReadable(mainTempo) + "."
-          };
-        }
-      } else {
-        const verboCong = (congiuntivo_imperfetto[verbo] && congiuntivo_imperfetto[verbo][personaLookup]) ? congiuntivo_imperfetto[verbo][personaLookup] : verboCongVerb(baseVerb, persona, "congiuntivo_imperfetto");
-        return {
-          forma: forma(verboCong),
-          hint: descrizionePersona + " Concordanza: congiuntivo imperfetto per esprimere un'azione contemporanea al " + tempoReadable(mainTempo) + "."
-        };
-      }
-    }
-    console.warn("Concordanza non trovata per mainTempo:", mainTempo, "subAzione:", subordinateAzione, "verbo:", verbo);
-    return {
-      forma: "Non disponibile",
-      hint: ""
-    };
-  }
 
-  function renderTraduzione(data, verbo) {
-    if (!data || !data.traduzione) {
-      $("#traduzioneResult").hide();
-      return;
-    }
-    const container = $("#traduzioneResult");
-    container.empty();
-    if (verbo) {
-      container.append("<div style='margin-top:10px;'><b>Infinito:</b> " + verbo + "</div>");
-    }
-    if (data.partPassato) {
-      container.append("<div><b>Participio Passato:</b> " + data.partPassato + "</div>");
-    }
-    container.append("<p><b>Перевод:</b> " + data.traduzione + "</p>");
-    if (data.esempi && data.esempi.length > 0) {
-      const ul = $("<ul></ul>");
-      data.esempi.forEach(esempio => {
-        ul.append("<li>" + esempio + "</li>");
-      });
-      container.append("<p><b>Esempi:</b></p>");
-      container.append(ul);
-    }
-    if (data.sinonimi && data.sinonimi.length > 0) {
-      const p = $("<p><b>Sinonimi:</b> </p>");
-      data.sinonimi.forEach(sin => {
-        const link = $("<a href='#' class='sinonimo-link'>" + sin + "</a>");
-        link.click(function(e) {
-          e.preventDefault();
-          $("#verbo").val(sin).focus();
+    function renderTraduzione(data, verbo) {
+      if (!data || !data.traduzione) {
+        $("#traduzioneResult").hide();
+        return;
+      }
+      const container = $("#traduzioneResult");
+      container.empty();
+      if (verbo) {
+        container.append("<div style='margin-top:10px;'><b>Infinito:</b> " + verbo + "</div>");
+      }
+      if (data.partPassato) {
+        container.append("<div><b>Participio Passato:</b> " + data.partPassato + "</div>");
+      }
+      container.append("<p><b>Перевод:</b> " + data.traduzione + "</p>");
+      if (data.esempi && data.esempi.length > 0) {
+        const ul = $("<ul></ul>");
+        data.esempi.forEach(esempio => {
+          ul.append("<li>" + esempio + "</li>");
         });
-        p.append(link).append(" ");
-      });
-      container.append(p);
+        container.append("<p><b>Esempi:</b></p>");
+        container.append(ul);
+      }
+      if (data.sinonimi && data.sinonimi.length > 0) {
+        const p = $("<p><b>Sinonimi:</b> </p>");
+        data.sinonimi.forEach(sin => {
+          const link = $("<a href='#' class='sinonimo-link'>" + sin + "</a>");
+          link.click(function(e) {
+            e.preventDefault();
+            $("#verbo").val(sin).focus();
+          });
+          p.append(link).append(" ");
+        });
+        container.append(p);
+      }
+      container.show();
     }
-    container.show();
+    $("#concordareBtn").click(function() {
+      const verbo = $("#verbo").val().trim().toLowerCase();
+      let mainTempo = $("#mainTempo").val();
+      let subAzione = $("#subordinateAzione").val();
+      let persona = $("#persona").val();
+      let genere = $("#genere").val();
+      console.log("Verbo:", verbo, "Tempo:", mainTempo, "Subordinata:", subAzione, "Persona:", persona, "Genere:", genere);
+      if (!verbo) {
+        $("#concordanzaHint").text("Inserisci il verbo in forma base (infinito).").show();
+        $("#concordanzaResult").text("").hide();
+        $("#traduzioneResult").hide();
+        return;
+      }
+      let verbData = participiPassati[verbo] || participiPassatiRiflessivi[verbo];
+      if (!verbData) {
+        $("#concordanzaResult").text("").hide();
+        $("#concordanzaHint").text("Глагол " + verbo + " не найден в словаре!").show();
+        $("#traduzioneResult").hide();
+        return;
+      }
+      let result = concordanza(mainTempo, subAzione, verbo, persona, genere);
+      $("#concordanzaResult").text("Forma corretta: " + result.forma).show();
+      $("#concordanzaHint").text(result.hint).show();
+      if (verbData.traduzione && verbData.traduzione.length) {
+        $("#traduzioneResult").show();
+        renderTraduzione(verbData, verbo);
+      } else {
+        $("#traduzioneResult").hide();
+      }
+    });
   }
-  $("#concordareBtn").click(function() {
-    const verbo = $("#verbo").val().trim().toLowerCase();
-    let mainTempo = $("#mainTempo").val();
-    let subAzione = $("#subordinateAzione").val();
-    let persona = $("#persona").val();
-    let genere = $("#genere").val();
-    console.log("Verbo:", verbo, "Tempo:", mainTempo, "Subordinata:", subAzione, "Persona:", persona, "Genere:", genere);
-    if (!verbo) {
-      $("#concordanzaHint").text("Inserisci il verbo in forma base (infinito).").show();
-      $("#concordanzaResult").text("").hide();
-      $("#traduzioneResult").hide();
-      return;
-    }
-    let verbData = participiPassati[verbo] || participiPassatiRiflessivi[verbo];
-    if (!verbData) {
-      $("#concordanzaResult").text("").hide();
-      $("#concordanzaHint").text("Глагол " + verbo + " не найден в словаре!").show();
-      $("#traduzioneResult").hide();
-      return;
-    }
-    let result = concordanza(mainTempo, subAzione, verbo, persona, genere);
-    $("#concordanzaResult").text("Forma corretta: " + result.forma).show();
-    $("#concordanzaHint").text(result.hint).show();
-    if (verbData.traduzione && verbData.traduzione.length) {
-      $("#traduzioneResult").show();
-      renderTraduzione(verbData, verbo);
-    } else {
-      $("#traduzioneResult").hide();
-    }
-  });
   $('.spoiler-icon').click(function() {
     $(this).parent().next('.spoiler-content').slideToggle(300);
   });
