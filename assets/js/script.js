@@ -2457,11 +2457,36 @@ $(function() {
       }
     }
   });
+  const about = $('.about');
+  let pageActive = false;
+  let timeout;
   $('.togglePage').on('click', function() {
     const btn = $(this);
     btn.toggleClass('active');
     $('.navigation, .page, .footer-container, .footer').toggleClass('interface-hidden');
-    $('.about').toggleClass('no-scroll', btn.hasClass('active'));
+    about.toggleClass('no-scroll', btn.hasClass('active'));
+    pageActive = btn.hasClass('active');
+    // если выключили - показываем курсор
+    if (!pageActive) {
+      about.removeClass('hide-cursor');
+      clearTimeout(timeout);
+    } else {
+      resetCursorTimer(); // перезапуск таймера
+    }
+  });
+
+  function resetCursorTimer() {
+    if (!pageActive) return;
+    about.removeClass('hide-cursor');
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      if (pageActive) {
+        about.addClass('hide-cursor');
+      }
+    }, 3000);
+  }
+  $(document).on('mousemove', function() {
+    resetCursorTimer();
   });
   const swatches = $('.color-swatch');
   const defaultColor = swatches.first().data('color');
@@ -2500,11 +2525,7 @@ $(function() {
     } else {
       audioManager.audio.pause();
     }
-    $(this).find(".iconPlay").toggle(!isPaused).end().find(".iconPause").toggle(isPaused);
-  });
-  $(audioManager.audio).on("ended", function() {
-    audioManager.button.find(".iconPlay").show();
-    audioManager.button.find(".iconPause").hide();
+    // $(this).find(".iconPlay").toggle(!isPaused).end().find(".iconPause").toggle(isPaused);
   });
   // $(audioManager.audio).on("play", function() {
   //   audioManager.trackInfo.fadeIn(1000);
@@ -2521,6 +2542,14 @@ $(function() {
         audioManager.trackInfo.fadeOut(1000);
       }, 5000);
     }, 2000);
+    requestWakeLock();
+    audioManager.button.find(".iconPlay").hide();
+    audioManager.button.find(".iconPause").show();
+  });
+  $(audioManager.audio).on("pause ended", function() {
+    releaseWakeLock();
+    audioManager.button.find(".iconPlay").show();
+    audioManager.button.find(".iconPause").hide();
   });
   const rippleManager = {
     water: $('.footer-image__water'),
