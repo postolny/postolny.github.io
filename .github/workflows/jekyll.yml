@@ -51,7 +51,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: latest
       - name: Minify custom JavaScript
         run: npx terser _site/assets/js/script.js --mangle --keep-fnames --keep-classnames -o _site/assets/js/script.js
       - name: Upload artifact
