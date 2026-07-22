@@ -1062,7 +1062,7 @@ $(function() {
       incorrectAttempts = 0;
     });
   }).fail(function() {
-    console.log("Не удалось загрузить данные из frasario.json.");
+    console.log("Не удалось загрузить данные из numerali.json.");
   });
   if ($(".brand a:not(:contains('Игорь Постольный'))").length) {
     $("body").css("display", "none");
