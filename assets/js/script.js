@@ -195,21 +195,17 @@ $(function() {
   function scrollToAnchor(anchor) {
     if (!anchor.startsWith("#")) return;
     const decodedAnchor = decodeURIComponent(anchor);
-    const safeAnchor = decodedAnchor.replace(/:/g, '\\:');
-    const target = $(safeAnchor);
-    if (target.length) {
-      const currentScroll = $(window).scrollTop();
-      const offsetDown = 15;
-      const offsetUp = 85;
-      const targetOffset = target.offset().top;
-      const offset = targetOffset > currentScroll ? offsetDown : offsetUp;
-      $('html, body').animate({
-        scrollTop: target.offset().top - offset
-      }, 800);
-      history.replaceState(null, null, decodedAnchor);
-    } else {
-      console.warn("Элемент с ID", decodedAnchor, "не найден.");
-    }
+    const element = document.getElementById(decodedAnchor.slice(1));
+    const target = $(element);
+    const currentScroll = $(window).scrollTop();
+    const offsetDown = 15;
+    const offsetUp = 85;
+    const targetOffset = target.offset().top;
+    const offset = targetOffset > currentScroll ? offsetDown : offsetUp;
+    $("html, body").animate({
+      scrollTop: targetOffset - offset,
+    }, 800);
+    history.replaceState(null, null, decodedAnchor);
   }
   // Хэш при загрузке страницы
   const hash = window.location.hash;
