@@ -29,10 +29,6 @@ layout: compress
 
   {% include lightbox.html %}
 
-  {% unless page.exclude_frasario or site.exclude_frasario %}
-  {% include frasario.html %}
-  {% endunless %}
-
   {% if page.about-bg %}
   {% include about-bg.html %}
   {% endif %}
