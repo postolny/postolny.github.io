@@ -859,18 +859,6 @@ $(function() {
     $('#panel-toggle').click(function() {
       $('.sliding-panel').toggleClass('open');
     });
-    // audioPlayer.on('timeupdate', function() {
-    //   if (toggleProgress.is(':checked')) {
-    //     const currentTime = audioPlayer[0].currentTime;
-    //     const duration = audioPlayer[0].duration;
-    //     if (duration > 0) {
-    //       const progress = (currentTime / duration) * 100;
-    //       progressImage.css('left', progress + '%');
-    //     }
-    //   } else {
-    //     progressImage.hide();
-    //   }
-    // });
     const progressBar = $('#progressBar');
     const progressValue = $('#progressValue');
     const currentTimeElement = $('#currentTime');
@@ -885,7 +873,9 @@ $(function() {
       const duration = audioPlayer[0].duration;
       totalTimeElement.text(formatTime(duration));
     });
-    audioPlayer.on('timeupdate', function() {
+    let isDragging = false;
+    audioPlayer.on("timeupdate", function() {
+      if (isDragging) return;
       const currentTime = audioPlayer[0].currentTime;
       const duration = audioPlayer[0].duration;
       currentTimeElement.text(formatTime(currentTime));
@@ -899,21 +889,39 @@ $(function() {
         }
       }
     });
-    progressBar.on('click touchstart', function(e) {
-      let clickPositionX;
-      if (e.type === 'touchstart') {
-        // Сенсорные уст-ва
-        const touch = e.originalEvent.touches[0];
-        clickPositionX = touch.pageX - $(this).offset().left;
-      } else {
-        // Мышь
-        clickPositionX = e.offsetX;
+    // function seek(e) {
+    //   const rect = progressBar[0].getBoundingClientRect();
+    //   let x = e.clientX - rect.left;
+    //   x = Math.max(0, Math.min(x, rect.width));
+    //   const percent = x / rect.width;
+    //   // progressFill.css('width', (percent * 100) + '%');
+    //   progressValue.css('width', (percent * 100) + '%');
+    //   audioPlayer[0].currentTime = percent * audioPlayer[0].duration;
+    // }
+    function seek(e) {
+      const rect = progressBar[0].getBoundingClientRect();
+      let x = e.clientX - rect.left;
+      x = Math.max(0, Math.min(x, rect.width));
+      const percent = x / rect.width;
+      const progress = percent * 100;
+      progressValue.css('width', progress + '%');
+      if (toggleProgress.is(':checked')) {
+        progressImage.css('left', progress + '%').show();
       }
-      const progressBarWidth = $(this).width();
-      const duration = audioPlayer[0].duration;
-      const newTime = (clickPositionX / progressBarWidth) * duration;
-      audioPlayer[0].currentTime = newTime;
-      console.log('Новое время:', newTime);
+      audioPlayer[0].currentTime = percent * audioPlayer[0].duration;
+    }
+
+    progressBar.on("pointerdown", function(e) {
+      isDragging = true;
+      seek(e.originalEvent);
+    });
+    $(document).on("pointermove", function(e) {
+      if (!isDragging) return;
+      seek(e);
+    });
+
+    $(document).on("pointerup", function() {
+      isDragging = false;
     });
     audioPlayer.on('play', function() {
       requestWakeLock();
