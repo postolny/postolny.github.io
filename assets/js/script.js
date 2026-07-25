@@ -771,7 +771,7 @@ $(function() {
     }
 
     function updateVolume() {
-      const volume = $("#volume-control").val();
+      const volume = Number($("#volume-control").val());
       audioPlayer[0].volume = volume;
       $(".value").text(volume);
       localStorage.setItem('playerVolume', volume);
@@ -779,11 +779,8 @@ $(function() {
     const savedVolume = localStorage.getItem('playerVolume');
     if (savedVolume !== null) {
       $("#volume-control").val(savedVolume);
-      audioPlayer[0].volume = savedVolume;
-      $(".value").text(savedVolume);
-    } else {
-      updateVolume();
     }
+    updateVolume();
     $('#volume-control').on('input', updateVolume);
 
     function showImages() {
