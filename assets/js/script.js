@@ -962,7 +962,8 @@ $(function() {
         nextTrack();
       } else {
         updatePlayPauseButton(false);
-        progressValue.css('width', 0);
+        isDragging = false;
+        progressValue.css('width', '0%');
         currentTimeElement.text('0:00');
         hideImages();
         setTimeout(() => {
