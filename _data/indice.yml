@@ -55,6 +55,8 @@ libri:
         url: /suk/
       - page: Состязания
         url: /sostyazaniya/
+      - page: Волк и добыча
+        url: /volk-i-dobycha/
   - titolo: Разные сочинения
     subfolderitems:
       - page: Безмозглый и безухий • повесть

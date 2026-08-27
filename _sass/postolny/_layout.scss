@@ -642,12 +642,6 @@ a:hover .footer-icon--red svg {
 }
 
 .drop-cap {
-  P {
-    display: flow-root;
-    min-height: 3lh;
-    /* если меньше 3 строк, высота будет та же */
-  }
-
   p:first-of-type,
   h2+p {
     text-indent: 0;
